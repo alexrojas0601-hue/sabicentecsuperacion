@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Habla con SABI — SABICENTEC SUPERACIÓN</title>
+<meta name="description" content="Tu tutor SABI: ayuda en todas las materias, enseña a pensar y razonar, y acompaña tu formación como persona íntegra.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,680&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --noche:#0B1F3F; --noche-2:#14315C;
+    --alba:#F5A623; --alba-suave:#FBC873;
+    --papel:#F7F3E9; --tinta:#1B1B18; --tinta-suave:#5B584E;
+    --linea:rgba(27,27,24,0.12); --linea-noche:rgba(247,243,233,0.14);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--noche); color:var(--papel);
+    font-family:'Public Sans', sans-serif;
+    height:100dvh; display:flex; flex-direction:column;
+  }
+  h1,.display{font-family:'Fraunces', serif;}
+  .mono{font-family:'IBM Plex Mono', monospace; letter-spacing:.04em; text-transform:uppercase; font-size:.72rem;}
+
+  header{
+    display:flex; align-items:center; gap:14px;
+    padding:16px 22px; border-bottom:1px solid var(--linea-noche);
+    background:var(--noche);
+  }
+  header img{width:42px; height:42px; border-radius:50%; object-fit:cover; object-position:top;}
+  header .titulos{display:flex; flex-direction:column;}
+  header h1{font-size:1.05rem; font-weight:560;}
+  header .mono{color:var(--alba-suave);}
+  header a.volver{
+    margin-left:auto; color:rgba(247,243,233,.6); text-decoration:none; font-size:.85rem;
+  }
+
+  main{
+    flex:1; overflow-y:auto; padding:24px 16px 12px;
+    display:flex; flex-direction:column; gap:16px;
+    max-width:760px; width:100%; margin:0 auto;
+  }
+  .msg{max-width:82%; padding:14px 16px; border-radius:14px; font-size:.98rem; line-height:1.55; white-space:pre-wrap;}
+  .msg.sabi{
+    align-self:flex-start; background:var(--noche-2); border-bottom-left-radius:4px;
+  }
+  .msg.tu{
+    align-self:flex-end; background:var(--alba); color:var(--noche); font-weight:500;
+    border-bottom-right-radius:4px;
+  }
+  .msg.typing{opacity:.6; font-style:italic;}
+  .bienvenida{
+    align-self:flex-start; max-width:88%;
+    display:flex; gap:12px; align-items:flex-start;
+  }
+  .bienvenida img{width:44px; height:44px; border-radius:50%; object-fit:cover; object-position:top; flex-shrink:0;}
+  .bienvenida .burbuja{background:var(--noche-2); padding:16px 18px; border-radius:14px; border-bottom-left-radius:4px; font-size:.98rem; line-height:1.6;}
+
+  form{
+    display:flex; gap:10px; padding:14px 16px calc(14px + env(safe-area-inset-bottom));
+    border-top:1px solid var(--linea-noche); background:var(--noche);
+    max-width:760px; width:100%; margin:0 auto;
+  }
+  textarea{
+    flex:1; resize:none; border:1px solid var(--linea-noche); background:var(--noche-2);
+    color:var(--papel); border-radius:10px; padding:12px 14px; font-family:inherit; font-size:.98rem;
+    max-height:120px;
+  }
+  textarea:focus{outline:2px solid var(--alba); outline-offset:1px;}
+  button{
+    background:var(--alba); color:var(--noche); border:none; border-radius:10px;
+    padding:0 22px; font-weight:700; font-size:.95rem; cursor:pointer;
+  }
+  button:disabled{opacity:.5; cursor:default;}
+  .aviso{
+    text-align:center; font-size:.75rem; color:rgba(247,243,233,.45);
+    padding:0 16px 10px; max-width:760px; margin:0 auto;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="sabi-avatar.png" alt="SABI">
+  <div class="titulos">
+    <h1>SABI</h1>
+    <span class="mono">Tu Amigo del Saber · CENTEC</span>
+  </div>
+  <a class="volver" href="index.html">← Volver al sitio</a>
+</header>
+
+<main id="hilo">
+  <div class="bienvenida">
+    <img src="sabi-avatar.png" alt="SABI">
+    <div class="burbuja">¡Hola! Soy SABI. Puedo ayudarte con cualquier materia, explicarte un tema paso a paso, o simplemente ayudarte a pensar mejor un problema o una decisión. ¿En qué grado estás y con qué quieres que empecemos hoy?</div>
+  </div>
+</main>
+
+<p class="aviso">SABI puede cometer errores. Si algo no te suena bien, coméntaselo a tu profesor.</p>
+
+<form id="form-chat">
+  <textarea id="input" placeholder="Escríbele a SABI…" rows="1" required></textarea>
+  <button type="submit" id="enviar">Enviar</button>
+</form>
+
+<script>
+  const hilo = document.getElementById('hilo');
+  const form = document.getElementById('form-chat');
+  const input = document.getElementById('input');
+  const enviar = document.getElementById('enviar');
+  const historial = [];
+
+  input.addEventListener('input', () => {
+    input.style.height = 'auto';
+    input.style.height = Math.min(input.scrollHeight, 120) + 'px';
+  });
+
+  function agregarMensaje(texto, quien) {
+    const div = document.createElement('div');
+    div.className = 'msg ' + quien;
+    div.textContent = texto;
+    hilo.appendChild(div);
+    hilo.scrollTop = hilo.scrollHeight;
+    return div;
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const texto = input.value.trim();
+    if (!texto) return;
+
+    agregarMensaje(texto, 'tu');
+    historial.push({ role: 'user', content: texto });
+    input.value = '';
+    input.style.height = 'auto';
+    enviar.disabled = true;
+
+    const cargando = agregarMensaje('SABI está pensando…', 'sabi typing');
+
+    try {
+      const res = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ messages: historial }),
+      });
+      const data = await res.json();
+      cargando.remove();
+
+      if (!res.ok || data.error) {
+        agregarMensaje('No pude responder ahora mismo. Intenta de nuevo en un momento.', 'sabi');
+        console.error(data);
+      } else {
+        agregarMensaje(data.reply, 'sabi');
+        historial.push({ role: 'assistant', content: data.reply });
+      }
+    } catch (err) {
+      cargando.remove();
+      agregarMensaje('Hubo un problema de conexión. Revisa tu internet e intenta de nuevo.', 'sabi');
+      console.error(err);
+    } finally {
+      enviar.disabled = false;
+      input.focus();
+    }
+  });
+</script>
+
+</body>
+</html>
