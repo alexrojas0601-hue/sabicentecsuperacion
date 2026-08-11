@@ -21,6 +21,424 @@
     font-family:'Public Sans', sans-serif;
     height:100dvh; display:flex; flex-direction:column;
   }
+  h1,h2,.display{font-family:'Fraunces', serif;}
+  .mono{font-family:'IBM Plex Mono', monospace; letter-spacing:.04em; text-transform:uppercase; font-size:.72rem;}
+
+  header{
+    display:flex; align-items:center; gap:14px;
+    padding:16px 22px; border-bottom:1px solid var(--linea-noche);
+    background:var(--noche);
+  }
+  header img{width:42px; height:42px; border-radius:50%; object-fit:cover; object-position:top;}
+  header .titulos{display:flex; flex-direction:column;}
+  header h1{font-size:1.05rem; font-weight:560;}
+  header .mono{color:var(--alba-suave);}
+  header a.volver{margin-left:auto; color:rgba(247,243,233,.6); text-decoration:none; font-size:.85rem;}
+  header .cambiar-rol{
+    margin-left:12px; background:none; border:1px solid var(--linea-noche); color:rgba(247,243,233,.7);
+    border-radius:8px; padding:6px 12px; font-size:.78rem; cursor:pointer; font-family:inherit;
+  }
+
+  /* ---------- PANTALLA DE ROL ---------- */
+  #pantalla-rol{
+    flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding:32px 20px; gap:28px; text-align:center;
+  }
+  #pantalla-rol img{width:72px; height:72px; border-radius:50%; object-fit:cover; object-position:top;}
+  #pantalla-rol h2{font-size:1.5rem; max-width:22ch; font-weight:560;}
+  #pantalla-rol p{color:rgba(247,243,233,.65); max-width:40ch; font-size:.95rem;}
+  .roles{display:flex; gap:14px; flex-wrap:wrap; justify-content:center; max-width:520px;}
+  .rol-btn{
+    background:var(--noche-2); border:1px solid var(--linea-noche); color:var(--papel);
+    border-radius:12px; padding:20px 22px; cursor:pointer; font-family:inherit;
+    display:flex; flex-direction:column; align-items:center; gap:8px; width:150px;
+    transition:border-color .2s, transform .15s;
+  }
+  .rol-btn:hover{border-color:var(--alba); transform:translateY(-2px);}
+  .rol-btn .emoji{font-size:1.8rem;}
+  .rol-btn .nombre{font-weight:600; font-size:.95rem;}
+  .rol-btn .desc{font-size:.75rem; color:rgba(247,243,233,.55);}
+
+  /* ---------- FORMULARIO DE IDENTIFICACIÓN ---------- */
+  #pantalla-id{
+    flex:1; display:none; flex-direction:column; align-items:center; justify-content:center;
+    padding:32px 20px; gap:18px;
+  }
+  #pantalla-id.activa{display:flex;}
+  #pantalla-id form{
+    display:flex; flex-direction:column; gap:14px; width:100%; max-width:340px;
+    background:var(--noche-2); border:1px solid var(--linea-noche); border-radius:14px; padding:28px;
+  }
+  #pantalla-id h3{font-size:1.1rem; margin-bottom:4px;}
+  #pantalla-id label{font-size:.82rem; color:rgba(247,243,233,.75); display:flex; flex-direction:column; gap:6px;}
+  #pantalla-id input, #pantalla-id select{
+    background:var(--noche); border:1px solid var(--linea-noche); color:var(--papel);
+    border-radius:8px; padding:10px 12px; font-family:inherit; font-size:.95rem;
+  }
+  #pantalla-id .error{color:#F2A0A0; font-size:.82rem; min-height:1.2em;}
+  #pantalla-id button{
+    background:var(--alba); color:var(--noche); border:none; border-radius:10px;
+    padding:12px; font-weight:700; font-size:.95rem; cursor:pointer; margin-top:4px;
+  }
+  #pantalla-id button:disabled{opacity:.5;}
+  #pantalla-id .volver-rol{background:none; color:rgba(247,243,233,.6); font-weight:500; margin-top:0;}
+
+  /* ---------- CHAT ---------- */
+  #vista-chat{flex:1; display:none; flex-direction:column; min-height:0;}
+  #vista-chat.activa{display:flex;}
+  main{
+    flex:1; overflow-y:auto; padding:24px 16px 12px;
+    display:flex; flex-direction:column; gap:16px;
+    max-width:760px; width:100%; margin:0 auto;
+  }
+  .msg{max-width:82%; padding:14px 16px; border-radius:14px; font-size:.98rem; line-height:1.55; white-space:pre-wrap;}
+  .msg.sabi{align-self:flex-start; background:var(--noche-2); border-bottom-left-radius:4px;}
+  .msg.tu{align-self:flex-end; background:var(--alba); color:var(--noche); font-weight:500; border-bottom-right-radius:4px;}
+  .msg.typing{opacity:.6; font-style:italic;}
+  .bienvenida{align-self:flex-start; max-width:88%; display:flex; gap:12px; align-items:flex-start;}
+  .bienvenida img{width:44px; height:44px; border-radius:50%; object-fit:cover; object-position:top; flex-shrink:0;}
+  .bienvenida .burbuja{background:var(--noche-2); padding:16px 18px; border-radius:14px; border-bottom-left-radius:4px; font-size:.98rem; line-height:1.6;}
+
+  form#form-chat{
+    display:flex; gap:10px; padding:14px 16px calc(14px + env(safe-area-inset-bottom));
+    border-top:1px solid var(--linea-noche); background:var(--noche);
+    max-width:760px; width:100%; margin:0 auto;
+  }
+  textarea{
+    flex:1; resize:none; border:1px solid var(--linea-noche); background:var(--noche-2);
+    color:var(--papel); border-radius:10px; padding:12px 14px; font-family:inherit; font-size:.98rem;
+    max-height:120px;
+  }
+  textarea:focus{outline:2px solid var(--alba); outline-offset:1px;}
+  form#form-chat button{
+    background:var(--alba); color:var(--noche); border:none; border-radius:10px;
+    padding:0 22px; font-weight:700; font-size:.95rem; cursor:pointer;
+  }
+  form#form-chat button:disabled{opacity:.5; cursor:default;}
+  .aviso{text-align:center; font-size:.75rem; color:rgba(247,243,233,.45); padding:0 16px 10px; max-width:760px; margin:0 auto;}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="sabi-avatar.png" alt="SABI">
+  <div class="titulos">
+    <h1 id="titulo-header">SABI</h1>
+    <span class="mono" id="subtitulo-header">Tu Amigo del Saber · CENTEC</span>
+  </div>
+  <button class="cambiar-rol" id="btn-cambiar-rol" style="display:none;">Cambiar de perfil</button>
+  <a class="volver" href="index.html">← Volver al sitio</a>
+</header>
+
+<!-- PANTALLA 1: elegir rol -->
+<div id="pantalla-rol">
+  <img src="sabi-avatar.png" alt="SABI">
+  <h2>¡Hola! Para ayudarte mejor, cuéntame quién eres.</h2>
+  <p>Cada perfil ve solo su propia información — nunca la de otros.</p>
+  <div class="roles">
+    <button class="rol-btn" data-rol="estudiante">
+      <span class="emoji">🎒</span>
+      <span class="nombre">Estudiante</span>
+      <span class="desc">Tu tutor y tu plan personal</span>
+    </button>
+    <button class="rol-btn" data-rol="padre">
+      <span class="emoji">👪</span>
+      <span class="nombre">Padre / Acudiente</span>
+      <span class="desc">Seguimiento de tu hijo/a</span>
+    </button>
+    <button class="rol-btn" data-rol="docente">
+      <span class="emoji">🧑‍🏫</span>
+      <span class="nombre">Docente / Directivo</span>
+      <span class="desc">Informes y planes de mejora</span>
+    </button>
+  </div>
+</div>
+
+<!-- PANTALLA 2: identificación según rol -->
+<div id="pantalla-id">
+  <form id="form-id">
+    <button type="button" class="volver-rol" id="btn-volver-rol">← Elegir otro perfil</button>
+
+    <div data-para="estudiante">
+      <h3>Cuéntame quién eres</h3>
+      <label>Tu nombre
+        <input type="text" id="est-nombre" autocomplete="off">
+      </label>
+      <label>Tu grado
+        <select id="est-grado">
+          <option value="">Selecciona...</option>
+          <option>Transición</option><option>1°</option><option>2°</option><option>3°</option>
+          <option>4°</option><option>5°</option><option>6°</option><option>7°</option>
+          <option>8°</option><option>9°</option><option>10°</option><option>11°</option>
+        </select>
+      </label>
+    </div>
+
+    <div data-para="padre" style="display:none;">
+      <h3>Datos de tu hijo/a</h3>
+      <label>Nombre de tu hijo/a
+        <input type="text" id="pad-nombre-hijo" autocomplete="off">
+      </label>
+      <label>Grado de tu hijo/a
+        <select id="pad-grado-hijo">
+          <option value="">Selecciona...</option>
+          <option>Transición</option><option>1°</option><option>2°</option><option>3°</option>
+          <option>4°</option><option>5°</option><option>6°</option><option>7°</option>
+          <option>8°</option><option>9°</option><option>10°</option><option>11°</option>
+        </select>
+      </label>
+      <label>Código familiar (entregado por el colegio)
+        <input type="password" id="pad-codigo" autocomplete="off">
+      </label>
+    </div>
+
+    <div data-para="docente" style="display:none;">
+      <h3>Acceso docente</h3>
+      <label>Área o materia que enseñas
+        <input type="text" id="doc-area" autocomplete="off">
+      </label>
+      <label>¿Eres director(a) de grupo? ¿De qué grado? (opcional)
+        <select id="doc-grado-director">
+          <option value="">No aplica</option>
+          <option>Transición</option><option>1°</option><option>2°</option><option>3°</option>
+          <option>4°</option><option>5°</option><option>6°</option><option>7°</option>
+          <option>8°</option><option>9°</option><option>10°</option><option>11°</option>
+        </select>
+      </label>
+      <label>Contraseña docente
+        <input type="password" id="doc-clave" autocomplete="off">
+      </label>
+    </div>
+
+    <p class="error" id="msg-error"></p>
+    <button type="submit" id="btn-continuar">Continuar</button>
+  </form>
+</div>
+
+<!-- PANTALLA 3: chat -->
+<div id="vista-chat">
+  <main id="hilo">
+    <div class="bienvenida">
+      <img src="sabi-avatar.png" alt="SABI">
+      <div class="burbuja" id="mensaje-bienvenida">¡Hola! Soy SABI.</div>
+    </div>
+  </main>
+
+  <p class="aviso">SABI puede cometer errores. Si algo no te suena bien, coméntaselo a tu profesor.</p>
+
+  <form id="form-chat">
+    <textarea id="input" placeholder="Escríbele a SABI…" rows="1" required></textarea>
+    <button type="submit" id="enviar">Enviar</button>
+  </form>
+</div>
+
+<script>
+  const LS_KEY = 'sabi_perfil';
+  let perfil = null;
+  const historial = [];
+
+  const pantallaRol = document.getElementById('pantalla-rol');
+  const pantallaId = document.getElementById('pantalla-id');
+  const vistaChat = document.getElementById('vista-chat');
+  const msgError = document.getElementById('msg-error');
+  const btnCambiarRol = document.getElementById('btn-cambiar-rol');
+
+  function mostrarPantalla(id) {
+    [pantallaRol, pantallaId, vistaChat].forEach(p => p.classList.remove('activa'));
+    pantallaId.style.display = 'none';
+    vistaChat.style.display = 'none';
+    pantallaRol.style.display = 'none';
+    if (id === 'rol') pantallaRol.style.display = 'flex';
+    if (id === 'id') { pantallaId.style.display = 'flex'; pantallaId.classList.add('activa'); }
+    if (id === 'chat') { vistaChat.style.display = 'flex'; vistaChat.classList.add('activa'); }
+  }
+
+  // ---------- Selección de rol ----------
+  document.querySelectorAll('.rol-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const rol = btn.dataset.rol;
+      document.querySelectorAll('#pantalla-id [data-para]').forEach(div => {
+        div.style.display = div.dataset.para === rol ? 'block' : 'none';
+      });
+      pantallaId.dataset.rolActual = rol;
+      msgError.textContent = '';
+      mostrarPantalla('id');
+    });
+  });
+
+  document.getElementById('btn-volver-rol').addEventListener('click', () => mostrarPantalla('rol'));
+  btnCambiarRol.addEventListener('click', () => {
+    localStorage.removeItem(LS_KEY);
+    perfil = null;
+    mostrarPantalla('rol');
+    btnCambiarRol.style.display = 'none';
+  });
+
+  // ---------- Envío del formulario de identificación ----------
+  document.getElementById('form-id').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const rol = pantallaId.dataset.rolActual;
+    msgError.textContent = '';
+
+    if (rol === 'estudiante') {
+      const nombre = document.getElementById('est-nombre').value.trim();
+      const grado = document.getElementById('est-grado').value;
+      if (!nombre || !grado) { msgError.textContent = 'Por favor completa tu nombre y grado.'; return; }
+      perfil = { role: 'estudiante', profile: { name: nombre, grade: grado } };
+    }
+
+    if (rol === 'padre') {
+      const childName = document.getElementById('pad-nombre-hijo').value.trim();
+      const childGrade = document.getElementById('pad-grado-hijo').value;
+      const familyCode = document.getElementById('pad-codigo').value.trim();
+      if (!childName || !childGrade || !familyCode) { msgError.textContent = 'Completa todos los campos, incluyendo el código familiar.'; return; }
+      perfil = { role: 'padre', profile: { childName, childGrade, familyCode } };
+    }
+
+    if (rol === 'docente') {
+      const teacherArea = document.getElementById('doc-area').value.trim();
+      const homeroomGrade = document.getElementById('doc-grado-director').value;
+      const docentePassword = document.getElementById('doc-clave').value.trim();
+      if (!teacherArea || !docentePassword) { msgError.textContent = 'Completa el área y la contraseña docente.'; return; }
+      perfil = { role: 'docente', profile: { teacherArea, homeroomGrade, docentePassword } };
+    }
+
+    localStorage.setItem(LS_KEY, JSON.stringify(perfil));
+    iniciarChat();
+  });
+
+  // ---------- Iniciar vista de chat según el perfil ----------
+  function iniciarChat() {
+    const rol = perfil.role;
+    const titulo = document.getElementById('titulo-header');
+    const subtitulo = document.getElementById('subtitulo-header');
+    const bienvenida = document.getElementById('mensaje-bienvenida');
+
+    if (rol === 'estudiante') {
+      titulo.textContent = 'SABI';
+      subtitulo.textContent = `Tu Amigo del Saber · ${perfil.profile.grade}`;
+      bienvenida.textContent = `¡Hola, ${perfil.profile.name}! Soy SABI. Puedo ayudarte con cualquier materia, explicarte un tema paso a paso, o ayudarte a pensar mejor un problema o una decisión. ¿Con qué quieres que empecemos hoy?`;
+    }
+    if (rol === 'padre') {
+      titulo.textContent = 'SABI';
+      subtitulo.textContent = `Seguimiento familiar · ${perfil.profile.childName}`;
+      bienvenida.textContent = `¡Hola! Estoy aquí para contarte cómo va ${perfil.profile.childName} y cómo puedes acompañarlo en casa. ¿En qué te puedo ayudar hoy?`;
+    }
+    if (rol === 'docente') {
+      titulo.textContent = 'SABI';
+      subtitulo.textContent = `Panel docente · ${perfil.profile.teacherArea}`;
+      bienvenida.textContent = `Hola, docente. Puedo generar el informe pedagógico de un estudiante puntual (dime nombre y grado), un plan de mejora de curso, o ayudarte a diseñar una evaluación. ¿Qué necesitas hoy?`;
+    }
+
+    btnCambiarRol.style.display = 'inline-block';
+    mostrarPantalla('chat');
+  }
+
+  // Restaurar perfil guardado (evita repetir el formulario cada vez)
+  (function restaurar() {
+    const guardado = localStorage.getItem(LS_KEY);
+    if (guardado) {
+      try {
+        perfil = JSON.parse(guardado);
+        iniciarChat();
+        return;
+      } catch { /* ignora y sigue al flujo normal */ }
+    }
+    mostrarPantalla('rol');
+  })();
+
+  // ---------- Lógica del chat ----------
+  const hilo = document.getElementById('hilo');
+  const form = document.getElementById('form-chat');
+  const input = document.getElementById('input');
+  const enviar = document.getElementById('enviar');
+
+  input.addEventListener('input', () => {
+    input.style.height = 'auto';
+    input.style.height = Math.min(input.scrollHeight, 120) + 'px';
+  });
+
+  function agregarMensaje(texto, quien) {
+    const div = document.createElement('div');
+    div.className = 'msg ' + quien;
+    div.textContent = texto;
+    hilo.appendChild(div);
+    hilo.scrollTop = hilo.scrollHeight;
+    return div;
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const texto = input.value.trim();
+    if (!texto || !perfil) return;
+
+    agregarMensaje(texto, 'tu');
+    historial.push({ role: 'user', content: texto });
+    input.value = '';
+    input.style.height = 'auto';
+    enviar.disabled = true;
+
+    const cargando = agregarMensaje('SABI está pensando…', 'sabi typing');
+
+    try {
+      const res = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          messages: historial,
+          role: perfil.role,
+          profile: perfil.profile,
+        }),
+      });
+      const data = await res.json();
+      cargando.remove();
+
+      if (!res.ok || data.error) {
+        if (res.status === 401) {
+          agregarMensaje('Tu acceso no pudo verificarse (código o contraseña incorrectos). Usa "Cambiar de perfil" arriba para intentarlo de nuevo.', 'sabi');
+        } else {
+          agregarMensaje('No pude responder ahora mismo. Intenta de nuevo en un momento.', 'sabi');
+        }
+        console.error(data);
+      } else {
+        agregarMensaje(data.reply, 'sabi');
+        historial.push({ role: 'assistant', content: data.reply });
+      }
+    } catch (err) {
+      cargando.remove();
+      agregarMensaje('Hubo un problema de conexión. Revisa tu internet e intenta de nuevo.', 'sabi');
+      console.error(err);
+    } finally {
+      enviar.disabled = false;
+      input.focus();
+    }
+  });
+</script>
+
+</body>
+</html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Habla con SABI — SABICENTEC SUPERACIÓN</title>
+<meta name="description" content="Tu tutor SABI: ayuda en todas las materias, enseña a pensar y razonar, y acompaña tu formación como persona íntegra.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,680&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --noche:#0B1F3F; --noche-2:#14315C;
+    --alba:#F5A623; --alba-suave:#FBC873;
+    --papel:#F7F3E9; --tinta:#1B1B18; --tinta-suave:#5B584E;
+    --linea:rgba(27,27,24,0.12); --linea-noche:rgba(247,243,233,0.14);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--noche); color:var(--papel);
+    font-family:'Public Sans', sans-serif;
+    height:100dvh; display:flex; flex-direction:column;
+  }
   h1,.display{font-family:'Fraunces', serif;}
   .mono{font-family:'IBM Plex Mono', monospace; letter-spacing:.04em; text-transform:uppercase; font-size:.72rem;}
 
