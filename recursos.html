@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laboratorio de retos — SABICENTEC SUPERACIÓN</title>
+<meta name="description" content="Retos reales del barrio y del colegio, con las herramientas STEAM, de robótica y de juego para resolverlos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,680&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --noche:#0B1F3F; --noche-2:#14315C; --alba:#F5A623; --barro:#E8792B;
+    --brote:#4C7A5E; --papel:#F7F3E9; --tinta:#1B1B18; --tinta-suave:#5B584E;
+    --linea:rgba(27,27,24,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--papel);color:var(--tinta);font-family:'Public Sans',sans-serif;font-size:17px;line-height:1.6}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:560;letter-spacing:-.01em}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--alba);outline-offset:2px}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+  @media(max-width:640px){.wrap{padding:0 20px}}
+
+  header.top{border-bottom:1px solid var(--linea)}
+  .top-inner{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:16px}
+  .brand{font-weight:600;text-decoration:none}
+  .cta{background:var(--noche);color:var(--papel);text-decoration:none;padding:9px 16px;border-radius:2px;font-weight:600;font-size:.92rem}
+
+  .intro{background:var(--noche);color:var(--papel);padding:72px 0 56px}
+  .intro h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.08;max-width:18ch;font-weight:450}
+  .intro p{max-width:58ch;margin-top:18px;color:rgba(247,243,233,.82)}
+  .formula{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px;font-size:.95rem}
+  .formula span{border:1px solid rgba(247,243,233,.3);padding:6px 12px;border-radius:2px}
+  .formula b{color:var(--alba);font-weight:600}
+
+  .filtros{position:sticky;top:0;z-index:5;background:rgba(247,243,233,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+  .filtros-inner{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:end;padding:16px 0}
+  .campo{display:flex;flex-direction:column;gap:4px;font-size:.85rem;color:var(--tinta-suave)}
+  select{font:inherit;font-size:.95rem;color:var(--tinta);background:#fff;border:1px solid var(--linea);padding:7px 10px;border-radius:2px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{font:inherit;font-size:.88rem;border:1px solid var(--linea);background:#fff;padding:6px 12px;border-radius:999px;cursor:pointer;color:var(--tinta)}
+  .chip[aria-pressed="true"]{background:var(--noche);color:var(--papel);border-color:var(--noche)}
+  .check{display:flex;align-items:center;gap:8px;font-size:.92rem;color:var(--tinta)}
+  .conteo{margin-left:auto;font-size:.9rem;color:var(--tinta-suave)}
+
+  .lista{padding:40px 0 80px;display:grid;gap:0}
+  .reto{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:32px;padding:32px 0;border-top:1px solid var(--linea)}
+  .reto:first-child{border-top:0}
+  @media(max-width:800px){.reto{grid-template-columns:1fr;gap:16px}}
+  .reto h2{font-size:1.65rem;line-height:1.2;max-width:28ch}
+  .problema{margin-top:10px;max-width:62ch}
+  .producto{margin-top:14px;max-width:62ch;padding-left:14px;border-left:3px solid var(--alba)}
+  .producto strong{font-weight:600}
+  .herramienta{background:#fff;border:1px solid var(--linea);padding:20px;border-radius:2px;align-self:start}
+  .herramienta h3{font-size:1.15rem}
+  .herramienta h3 a{text-decoration-color:var(--alba);text-underline-offset:3px}
+  .herramienta p{font-size:.92rem;color:var(--tinta-suave);margin-top:6px}
+  .datos{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin-top:14px;font-size:.88rem}
+  .datos dt{color:var(--tinta-suave)}
+  .proyecto{display:inline-block;margin-top:12px;font-size:.85rem;background:var(--brote);color:#fff;padding:3px 10px;border-radius:2px}
+  .seguridad{margin-top:12px;font-size:.85rem;color:var(--tinta-suave)}
+  .vacio{padding:60px 0;max-width:52ch}
+  .vacio button{margin-top:12px}
+  footer{border-top:1px solid var(--linea);padding:28px 0;font-size:.88rem;color:var(--tinta-suave)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="index.html">SABICENTEC SUPERACIÓN</a>
+    <a class="cta" href="tutor.html">Hablar con SABI</a>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <h1>Primero el problema del barrio. Después la herramienta.</h1>
+    <p>Cada reto nace de algo que pasa de verdad en Ciudad Córdoba, en el colegio o en la casa. La herramienta (Arduino, Raspberry, un videojuego, una simulación) es el camino para resolverlo, no el objetivo.</p>
+    <div class="formula" aria-label="Estructura de cada reto">
+      <span><b>Problema</b> real y cercano</span>
+      <span><b>Herramienta</b> STEAM, robótica o juego</span>
+      <span><b>Producto</b> que alguien de verdad usa</span>
+    </div>
+  </div>
+</section>
+
+<section class="filtros" aria-label="Filtrar retos">
+  <div class="wrap filtros-inner">
+    <label class="campo">Grado
+      <select id="f-grado">
+        <option value="">Todos</option>
+        <option value="0">Transición</option>
+        <option value="1">1°</option><option value="2">2°</option><option value="3">3°</option>
+        <option value="4">4°</option><option value="5">5°</option><option value="6">6°</option>
+        <option value="7">7°</option><option value="8">8°</option><option value="9">9°</option>
+        <option value="10">10°</option><option value="11">11°</option>
+      </select>
+    </label>
+    <label class="campo">Área
+      <select id="f-area"><option value="">Todas</option></select>
+    </label>
+    <div class="campo">Tipo de herramienta
+      <div class="chips" id="f-tipos" role="group" aria-label="Tipo de herramienta"></div>
+    </div>
+    <label class="check"><input type="checkbox" id="f-sinhw"> Sin comprar materiales</label>
+    <span class="conteo" id="conteo" aria-live="polite"></span>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="lista" id="lista"></div>
+</main>
+
+<footer>
+  <div class="wrap">Catálogo revisado cada semana por el equipo curador de SABI y aprobado por la coordinación académica antes de publicarse. <span id="actualizado"></span></div>
+</footer>
+
+<script>
+  const TIPOS = {steam:'STEAM', robotica:'Robótica', arduino:'Arduino', raspberry:'Raspberry Pi', programacion:'Programación', juego:'Juegos', simulacion:'Simulación', abp:'Proyectos (ABP)', docente:'Para docentes'};
+  const GRADO = g => g === 0 ? 'Transición' : g + '°';
+  const COSTO = {gratis:'Gratis', freemium:'Gratis con opciones de pago', pago:'Requiere licencia'};
+  const HW = {ninguno:'No necesita', opcional:'Opcional', requerido:'Necesario'};
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const seguro = u => /^https:\/\//.test(u) ? u : '#';
+
+  let recursos = [];
+  const activos = new Set();
+  const $ = id => document.getElementById(id);
+
+  function pintarFiltros(){
+    const areas = [...new Set(recursos.flatMap(r => r.areas))].filter(a => a !== 'Todas').sort();
+    $('f-area').insertAdjacentHTML('beforeend', areas.map(a => `<option>${esc(a)}</option>`).join(''));
+    const usados = new Set(recursos.flatMap(r => r.tipo));
+    $('f-tipos').innerHTML = Object.entries(TIPOS).filter(([k]) => usados.has(k))
+      .map(([k,v]) => `<button class="chip" type="button" data-tipo="${k}" aria-pressed="false">${v}</button>`).join('');
+    $('f-tipos').addEventListener('click', e => {
+      const b = e.target.closest('.chip'); if(!b) return;
+      const t = b.dataset.tipo;
+      activos.has(t) ? activos.delete(t) : activos.add(t);
+      b.setAttribute('aria-pressed', activos.has(t));
+      pintar();
+    });
+    ['f-grado','f-area','f-sinhw'].forEach(id => $(id).addEventListener('change', pintar));
+  }
+
+  function filtrar(){
+    const g = $('f-grado').value, a = $('f-area').value, sinhw = $('f-sinhw').checked;
+    return recursos.filter(r =>
+      r.estado === 'activo' &&
+      (g === '' || (r.grados.desde <= +g && +g <= r.grados.hasta)) &&
+      (a === '' || r.areas.includes(a) || r.areas.includes('Todas')) &&
+      (!activos.size || r.tipo.some(t => activos.has(t))) &&
+      (!sinhw || r.hardware !== 'requerido'));
+  }
+
+  function pintar(){
+    const lista = filtrar();
+    $('conteo').textContent = lista.length === 1 ? '1 reto' : `${lista.length} retos`;
+    if(!lista.length){
+      $('lista').innerHTML = `<div class="vacio"><h2>Ningún reto coincide con estos filtros.</h2><p>Prueba con otro grado o quita algún tipo de herramienta.</p><button class="chip" type="button" id="limpiar">Quitar filtros</button></div>`;
+      $('limpiar').onclick = () => { $('f-grado').value=''; $('f-area').value=''; $('f-sinhw').checked=false; activos.clear(); document.querySelectorAll('.chip[data-tipo]').forEach(c=>c.setAttribute('aria-pressed','false')); pintar(); };
+      return;
+    }
+    $('lista').innerHTML = lista.map(r => `
+      <article class="reto">
+        <div>
+          <h2>${esc(r.reto.titulo)}</h2>
+          <p class="problema">${esc(r.reto.problema)}</p>
+          <p class="producto"><strong>Lo que se entrega:</strong> ${esc(r.reto.producto)}</p>
+        </div>
+        <aside class="herramienta">
+          <h3><a href="${esc(seguro(r.url))}" target="_blank" rel="noopener noreferrer">${esc(r.titulo)}</a></h3>
+          <p>${esc(r.descripcion)}</p>
+          <dl class="datos">
+            <dt>Grados</dt><dd>${GRADO(r.grados.desde)} a ${GRADO(r.grados.hasta)}</dd>
+            <dt>Áreas</dt><dd>${esc(r.areas.join(', '))}</dd>
+            <dt>Costo</dt><dd>${COSTO[r.costo] || esc(r.costo)}</dd>
+            <dt>Materiales</dt><dd>${HW[r.hardware] || esc(r.hardware)}</dd>
+            <dt>Idioma</dt><dd>${esc(r.idioma)}</dd>
+          </dl>
+          ${r.proyecto_institucional ? `<span class="proyecto">${esc(r.proyecto_institucional)}</span>` : ''}
+          ${r.seguridad ? `<p class="seguridad">${esc(r.seguridad)}</p>` : ''}
+        </aside>
+      </article>`).join('');
+  }
+
+  fetch('data/recursos.json', {cache:'no-cache'})
+    .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(d => {
+      recursos = d.recursos || [];
+      if(d.actualizado) $('actualizado').textContent = 'Última actualización: ' + d.actualizado + '.';
+      pintarFiltros(); pintar();
+    })
+    .catch(() => {
+      $('lista').innerHTML = '<div class="vacio"><h2>El catálogo no cargó.</h2><p>Revisa tu conexión y recarga la página. Si sigue igual, avisa a coordinación académica.</p></div>';
+    });
+</script>
+</body>
+</html>

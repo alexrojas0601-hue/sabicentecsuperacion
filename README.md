@@ -10,6 +10,13 @@ index.html               ← página institucional (misión, objetivos, arquitec
 tutor.html                ← chat funcional con SABI
 sabi-avatar.png            ← avatar oficial
 functions/api/chat.js       ← backend (Cloudflare Pages Function) que llama a Claude
+recursos.html              ← Laboratorio de retos STEAM, robótica, ABP y juegos
+data/recursos.json         ← catálogo de retos (lo actualiza el equipo curador)
+data/informes/             ← informes semanales para coordinación académica
+scripts/curador.mjs        ← equipo de agentes (investigador + auditores)
+.github/workflows/sabi-curador.yml ← calendario automático del equipo curador
+skills/sabi-curador-steam/ ← la misma metodología como skill para Claude
+AGENTES.md                 ← quién es quién en el equipo de agentes
 ```
 
 ## Despliegue en Cloudflare Pages (conectado a este repo de GitHub)
