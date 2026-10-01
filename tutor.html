@@ -241,6 +241,24 @@
   .plan-camino span.hecho{color:#0B1F3F;}
   .msg.tu{white-space:pre-wrap;}
   .plan-camino span.actual{color:#FBF8F1; background:#0B1F3F; padding:.1em .6em; border-radius:999px;}
+
+  /* ---------- Voz y escritura ---------- */
+  .btn-hablar{background:#FFFFFF !important; color:#0B1F3F !important; border:1.5px solid #0B1F3F !important;}
+  .btn-hablar.grabando{background:#9B2C2C !important; color:#FFFFFF !important; border-color:#9B2C2C !important;}
+  .leer{display:inline-block; margin-top:.5em; background:none; border:none; padding:0; color:#6B655B; font-family:'Public Sans',sans-serif; font-size:.68em; text-decoration:underline; text-underline-offset:3px; cursor:pointer;}
+  .leer:hover{color:#0B1F3F;}
+  .voz .frase{font-size:1.08em; color:#0B1F3F; margin-bottom:.6em;}
+  .voz .botones{display:flex; flex-wrap:wrap; gap:8px;}
+  .voz button, .escribir button{background:#FFFFFF; color:#0B1F3F; border:1.5px solid #0B1F3F; border-radius:999px; padding:.5em 1.1em; font-family:'Public Sans',sans-serif; font-size:.8em; font-weight:600; cursor:pointer;}
+  .voz button.principal, .escribir button{background:#0B1F3F; color:#FBF8F1;}
+  .voz button.grabando{background:#9B2C2C; border-color:#9B2C2C; color:#FFFFFF;}
+  .voz button:disabled, .escribir button:disabled{opacity:.4; cursor:default;}
+  .voz .resultado{margin-top:.8em; font-size:.95em;}
+  .voz .resultado .ok{color:#1F1D1A;}
+  .voz .resultado .falta{color:#9B2C2C; text-decoration:underline wavy #9B2C2C; text-underline-offset:4px;}
+  .voz .nota, .escribir .nota{font-size:.78em; color:#6B655B; margin-top:.5em; font-family:'Public Sans',sans-serif;}
+  .escribir .consigna{color:#0B1F3F; margin-bottom:.5em;}
+  .escribir textarea{width:100%; min-height:6em; resize:vertical; font:inherit; font-size:.95em; padding:.6em .8em; border:1px solid #D9D2C3; border-radius:6px; background:#FBF8F1; color:#1F1D1A; margin-bottom:.7em;}
 </style>
 </head>
 <body>
@@ -442,6 +460,7 @@
   <p class="aviso">SABI puede cometer errores. Si algo no te suena bien, coméntaselo a tu profesor.</p>
 
   <form id="form-chat">
+    <button type="button" id="btn-hablar" class="btn-hablar" title="Hablarle a SABI con tu voz" hidden>Hablar</button>
     <textarea id="input" placeholder="Escríbele a SABI…" rows="1" required></textarea>
     <button type="submit" id="enviar">Enviar</button>
   </form>
@@ -626,6 +645,11 @@
       if (tipo === 'fraccion') return dibujarFraccion(args);
       if (tipo === 'recta') return dibujarRecta(args);
       if (tipo === 'barras') return dibujarBarras(args);
+      if (tipo === 'escuchar' || tipo === 'pronunciar') return dibujarVoz(tipo, args);
+      if (tipo === 'escribir') { const [lg, ...r] = args.split('|'); const consigna = r.join('|').trim() || 'Escribe tu respuesta.';
+        return `<form class="herramienta escribir" data-lang="${esc(lg.trim())}"><p class="consigna">${esc(limpiar(consigna))}</p>
+          <textarea name="texto" spellcheck="false" placeholder="Escribe aquí…"></textarea>
+          <button type="submit">Enviar mi texto</button><p class="nota">Escribe sin corrector automático: así SABI ve lo que de verdad sabes.</p></form>`; }
       if (tipo === 'argumento') return `<form class="herramienta argumento" data-tipo="argumento">
           <label>Mi idea</label><textarea name="idea" placeholder="Lo que yo pienso es…"></textarea>
           <label>Mi razón</label><textarea name="razon" placeholder="Lo pienso porque…"></textarea>
@@ -682,6 +706,108 @@
     const b = e.target.closest('.seguridad .opcion'); if (!b || b.disabled) return;
     b.closest('.seguridad').querySelectorAll('.opcion').forEach(x => x.disabled = true);
     enviarTexto(b.dataset.enviar);
+  });
+
+
+  // ---------- Voz: escuchar, hablar y pronunciar (Web Speech API del navegador) ----------
+  const LANGS = { en: 'en-US', es: 'es-CO', zh: 'zh-CN', fr: 'fr-FR', pt: 'pt-BR', it: 'it-IT', de: 'de-DE' };
+  const lang = c => LANGS[String(c || '').trim().toLowerCase()] || 'es-CO';
+  const Reconocedor = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const puedeHablar = 'speechSynthesis' in window;
+  function hablar(texto, codigo, lento = false) {
+    if (!puedeHablar) return;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(texto);
+    u.lang = codigo; u.rate = lento ? 0.7 : 0.95;
+    const voz = speechSynthesis.getVoices().find(v => v.lang === codigo) || speechSynthesis.getVoices().find(v => v.lang.startsWith(codigo.slice(0, 2)));
+    if (voz) u.voice = voz;
+    speechSynthesis.speak(u);
+  }
+  if (puedeHablar) speechSynthesis.getVoices();
+  function permisoMicrofono() {
+    if (localStorage.getItem('sabi_permiso_voz') === 'si') return true;
+    const ok = confirm('Para usar el micrófono, tu navegador envía tu voz a su propio servicio de reconocimiento (Google en Chrome, Apple en Safari) para convertirla en texto. SABI no graba ni guarda tu voz.\n\nSi eres menor de edad, hazlo con permiso de tu familia. ¿Deseas continuar?');
+    if (ok) localStorage.setItem('sabi_permiso_voz', 'si');
+    return ok;
+  }
+  function escucharVoz(codigo, alTerminar, alEmpezar) {
+    if (!Reconocedor) { alert('Tu navegador no permite usar la voz. Ábrelo en Chrome o en Safari.'); return null; }
+    if (!permisoMicrofono()) return null;
+    const r = new Reconocedor();
+    r.lang = codigo; r.interimResults = false; r.maxAlternatives = 1;
+    r.onresult = e => alTerminar(e.results[0][0].transcript, e.results[0][0].confidence);
+    r.onerror = e => alTerminar('', 0, e.error);
+    try { r.start(); alEmpezar && alEmpezar(); } catch { return null; }
+    return r;
+  }
+  function palabras(t, codigo) {
+    const limpio = String(t).toLowerCase().normalize('NFC').replace(/[.,;:!?¡¿"“”()\[\]…—–-]/g, ' ');
+    return codigo.startsWith('zh') ? [...limpio.replace(/\s+/g, '')] : limpio.split(/\s+/).filter(Boolean);
+  }
+  // Compara frase objetivo y lo que entendió el reconocedor (alineación por subsecuencia común más larga)
+  function comparar(objetivo, dicho, codigo) {
+    // En idiomas con espacios se muestran las palabras originales (con mayúsculas y signos) y se comparan normalizadas
+    const vista = codigo.startsWith('zh') ? palabras(objetivo, codigo) : String(objetivo).split(/\s+/).filter(t => palabras(t, codigo).length);
+    const a = codigo.startsWith('zh') ? vista : vista.map(t => palabras(t, codigo).join('')), b = palabras(dicho, codigo);
+    const L = Array.from({ length: a.length + 1 }, () => Array(b.length + 1).fill(0));
+    for (let i = a.length - 1; i >= 0; i--) for (let j = b.length - 1; j >= 0; j--)
+      L[i][j] = a[i] === b[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+    const ok = new Array(a.length).fill(false);
+    for (let i = 0, j = 0; i < a.length && j < b.length;) {
+      if (a[i] === b[j]) { ok[i] = true; i++; j++; } else if (L[i + 1][j] >= L[i][j + 1]) i++; else j++;
+    }
+    return { a: vista, ok, porcentaje: a.length ? Math.round(100 * ok.filter(Boolean).length / a.length) : 0 };
+  }
+  function dibujarVoz(tipo, args) {
+    const [lg, ...r] = args.split('|'); const frase = limpiar(r.join('|')); if (!frase) return '';
+    const codigo = lang(lg);
+    return `<div class="herramienta voz" data-tipo="${tipo}" data-lang="${codigo}" data-frase="${esc(frase)}">
+      <p class="frase">${esc(frase)}</p>
+      <div class="botones">
+        <button type="button" data-accion="oir">Escuchar</button>
+        <button type="button" data-accion="lento">Escuchar lento</button>
+        ${tipo === 'pronunciar' ? '<button type="button" class="principal" data-accion="grabar">Decirlo con mi voz</button>' : ''}
+      </div>
+      ${tipo === 'pronunciar' ? '<div class="resultado"></div><p class="nota">Escúchala dos o tres veces y después dila con calma, cerca del micrófono.</p>' : ''}
+    </div>`;
+  }
+  document.getElementById('hilo').addEventListener('click', e => {
+    const leer = e.target.closest('.leer');
+    if (leer) { hablar(leer.dataset.texto, 'es-CO'); return; }
+    const b = e.target.closest('.voz button'); if (!b) return;
+    const caja = b.closest('.voz'), codigo = caja.dataset.lang, frase = caja.dataset.frase;
+    if (b.dataset.accion === 'oir') return hablar(frase, codigo);
+    if (b.dataset.accion === 'lento') return hablar(frase, codigo, true);
+    if (b.dataset.accion === 'grabar') {
+      speechSynthesis && speechSynthesis.cancel();
+      escucharVoz(codigo, (dicho, conf, error) => {
+        b.classList.remove('grabando'); b.textContent = 'Intentar otra vez'; b.disabled = false;
+        const res = caja.querySelector('.resultado');
+        if (error || !dicho) { res.textContent = 'No te escuché bien. Revisa que el micrófono tenga permiso e inténtalo otra vez.'; return; }
+        const c = comparar(frase, dicho, codigo), sep = codigo.startsWith('zh') ? '' : ' ';
+        res.innerHTML = `<p>${c.a.map((w, i) => `<span class="${c.ok[i] ? 'ok' : 'falta'}">${esc(w)}</span>`).join(sep)}</p>
+          <p class="nota">Se entendieron ${c.porcentaje} de cada 100 palabras. Las subrayadas son las que el reconocedor no captó.</p>`;
+        enviarTexto(`[Resultado de pronunciación, enviado automáticamente por la app] Frase objetivo: "${frase}". Lo que entendió el reconocedor de voz: "${dicho}". Palabras captadas: ${c.porcentaje}%. Palabras no captadas: ${c.a.filter((w, i) => !c.ok[i]).join(', ') || 'ninguna'}.`, { oculto: true });
+      }, () => { b.classList.add('grabando'); b.textContent = 'Te estoy escuchando…'; b.disabled = true; });
+    }
+  });
+  document.getElementById('hilo').addEventListener('submit', e => {
+    const f = e.target.closest('form.escribir'); if (!f) return;
+    e.preventDefault();
+    const texto = f.texto.value.trim(); if (!texto) { f.texto.focus(); return; }
+    f.querySelectorAll('textarea, button').forEach(x => x.disabled = true);
+    enviarTexto(`Mi texto: ${texto}`);
+  });
+  // Dictado: hablarle a SABI en lugar de escribir (útil para los más pequeños)
+  const btnHablar = document.getElementById('btn-hablar');
+  if (Reconocedor) btnHablar.hidden = false;
+  btnHablar.addEventListener('click', () => {
+    const m = String(perfil?.profile?.materia || '');
+    const codigo = /ingl/i.test(m) ? 'en-US' : /mandar/i.test(m) ? 'zh-CN' : 'es-CO';
+    escucharVoz(codigo, (dicho) => {
+      btnHablar.classList.remove('grabando'); btnHablar.textContent = 'Hablar';
+      if (dicho) { input.value = (input.value ? input.value + ' ' : '') + dicho; input.dispatchEvent(new Event('input')); input.focus(); }
+    }, () => { btnHablar.classList.add('grabando'); btnHablar.textContent = 'Escuchando…'; });
   });
 
   // ---------- Plan de sesión (agente Planificador) y avance (agente Auditor) ----------
@@ -825,6 +951,10 @@
     div.innerHTML = bloques.map(b => b.p ? `<p>${enLinea(b.p)}</p>` : b.herramienta ? dibujarHerramienta(b.herramienta, b.args) : `<ol>${b.ul.map(x => `<li>${enLinea(x)}</li>`).join('')}</ol>`).join('')
       + descubrimientos.map(d => `<div class="descubri">${enLinea(d.replace(/^Descubr[ií]:\s*/i, 'Descubriste '))}</div>`).join('')
       + (proxima ? `<div class="proxima">Para la próxima vez: ${enLinea(proxima)}</div>` : '');
+    if (puedeHablar) {
+      const textoLeer = bloques.filter(b => b.p || b.ul).map(b => b.p ? limpiar(b.p) : b.ul.map(limpiar).join('. ')).join(' ');
+      if (textoLeer) div.insertAdjacentHTML('beforeend', `<button type="button" class="leer" data-texto="${esc(textoLeer)}">Escuchar en voz alta</button>`);
+    }
     hilo.appendChild(div);
     if (perfil.role === 'estudiante') descubrimientos.forEach(d => guardarDescubrimiento(d.replace(/^Descubr[ií]:\s*/i, 'Descubrí ')));
     if (perfil.role === 'estudiante') document.querySelector('.bienvenida').style.display = 'none';
