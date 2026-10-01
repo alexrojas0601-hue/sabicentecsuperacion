@@ -259,7 +259,24 @@
   .voz .nota, .escribir .nota{font-size:.78em; color:#6B655B; margin-top:.5em; font-family:'Public Sans',sans-serif;}
   .escribir .consigna{color:#0B1F3F; margin-bottom:.5em;}
   .escribir textarea{width:100%; min-height:6em; resize:vertical; font:inherit; font-size:.95em; padding:.6em .8em; border:1px solid #D9D2C3; border-radius:6px; background:#FBF8F1; color:#1F1D1A; margin-bottom:.7em;}
+
+  /* ---------- Pantalla de misión: letra grande y legible para todos ---------- */
+  #pantalla-mision{gap:clamp(18px, 2.5vw, 30px);}
+  #pantalla-mision h2{font-size:clamp(2rem, 1.4rem + 2vw, 3rem); line-height:1.15; max-width:24ch;}
+  #pantalla-mision .paso{font-family:'Fraunces', Georgia, serif; font-size:clamp(1.45rem, 1.1rem + 1.2vw, 2rem); font-weight:600; color:#0B1F3F; margin-top:.4em;}
+  #pantalla-mision .animo, #pantalla-mision .chip-m{font-size:clamp(1.1rem, .95rem + .5vw, 1.35rem); padding:.65em 1.2em; border-width:1.5px;}
+  #pantalla-mision .chips, #pantalla-mision .animos{gap:12px;}
+  .mision{padding:clamp(20px, 2vw, 28px);}
+  .mision .nombre{font-size:clamp(1.45rem, 1.15rem + .9vw, 1.9rem);}
+  .mision .que{font-size:clamp(1.08rem, .95rem + .45vw, 1.3rem); line-height:1.5; color:#3D3A34;}
+  .misiones{grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); gap:18px;}
+  .pendiente .txt{font-size:clamp(1.1rem, .95rem + .5vw, 1.35rem);}
+  .pendiente button{font-size:1.1rem; padding:.7em 1.3em;}
+  #btn-editar-intereses{font-size:1.05rem;}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
 </head>
 <body>
 
@@ -394,6 +411,8 @@
     <button type="button" class="chip-m" data-v="Lenguaje">Lenguaje</button>
     <button type="button" class="chip-m" data-v="Inglés">Inglés</button>
     <button type="button" class="chip-m" data-v="Ciencias Naturales">Ciencias</button>
+    <button type="button" class="chip-m" data-v="Biología" data-min="6">Biología</button>
+    <button type="button" class="chip-m" data-v="Comportamiento y Salud">Comportamiento y Salud</button>
     <button type="button" class="chip-m" data-v="Química" data-min="8">Química</button>
     <button type="button" class="chip-m" data-v="Física" data-min="8">Física</button>
     <button type="button" class="chip-m" data-v="Ciencias Sociales">Sociales</button>
@@ -403,10 +422,31 @@
     <button type="button" class="chip-m" data-v="Educación Física">Ed. Física</button>
     <button type="button" class="chip-m" data-v="Tecnología e Informática">Tecnología</button>
     <button type="button" class="chip-m" data-v="Estadística" data-min="6">Estadística</button>
+    <button type="button" class="chip-m" data-v="Trigonometría" data-min="10">Trigonometría</button>
+    <button type="button" class="chip-m" data-v="Cálculo" data-min="11">Cálculo</button>
+    <button type="button" class="chip-m" data-v="Matemáticas Financieras" data-min="9">Matemáticas Financieras</button>
+    <button type="button" class="chip-m" data-v="STEAM y Robótica">STEAM y Robótica</button>
     <button type="button" class="chip-m" data-v="Economía y Finanzas" data-min="4">Economía y Finanzas</button>
     <button type="button" class="chip-m" data-v="Emprendimiento" data-min="6">Emprendimiento</button>
     <button type="button" class="chip-m" data-v="Educación Sexual y Comportamiento">Comportamiento y Sexualidad</button>
     <button type="button" class="chip-m" data-v="Mandarín">Mandarín</button>
+    <button type="button" class="chip-m" data-v="SENA Recursos y Talento Humano" data-min="10">SENA Talento Humano</button>
+    <button type="button" class="chip-m" data-v="SENA Aplicaciones Móviles" data-min="10">SENA Aplicaciones Móviles</button>
+    <button type="button" class="chip-m" data-v="SENA Integración de Contenidos Digitales" data-min="10">SENA Contenidos Digitales</button>
+  </div>
+  <div id="bloque-situaciones" hidden>
+    <p class="paso">¿En qué situación de la vida real quieres practicar?</p>
+    <div class="chips" id="situaciones">
+      <button type="button" class="chip-m" data-v="aeropuerto: registrarse, migración y maleta perdida">En el aeropuerto</button>
+      <button type="button" class="chip-m" data-v="hotel: reservar y resolver un problema en la habitación">En el hotel</button>
+      <button type="button" class="chip-m" data-v="restaurante: pedir comida y pagar">En el restaurante</button>
+      <button type="button" class="chip-m" data-v="tienda: comprar ropa, tallas y precios">De compras</button>
+      <button type="button" class="chip-m" data-v="pedir indicaciones en la calle de una ciudad extranjera">Perdido en la ciudad</button>
+      <button type="button" class="chip-m" data-v="médico o farmacia: explicar qué te duele">En el médico</button>
+      <button type="button" class="chip-m" data-v="chat de voz en un videojuego en línea con jugadores de otros países">En un videojuego</button>
+      <button type="button" class="chip-m" data-v="entrevista de trabajo o de beca" data-min="9">Entrevista de trabajo</button>
+      <button type="button" class="chip-m" data-v="ayudar a un turista perdido en el MIO de Cali">Turista en Cali</button>
+    </div>
   </div>
   <p class="paso">Ahora elige tu misión</p>
   <div class="misiones">
@@ -576,6 +616,28 @@
   }
 
   // Restaurar perfil guardado (evita repetir el formulario cada vez)
+  // ---------- Enlaces desde otras aplicaciones SABI: tutor.html?rol=estudiante&materia=Inglés&mision=MI TAREA&tema=... ----------
+  const PARAMS = new URLSearchParams(location.search);
+  const destino = {
+    rol: (PARAMS.get('rol') || '').toLowerCase(),
+    materia: (PARAMS.get('materia') || '').slice(0, 60),
+    mision: (PARAMS.get('mision') || '').toUpperCase().slice(0, 30),
+    tema: (PARAMS.get('tema') || '').slice(0, 300),
+  };
+  const sinAcentos = t => String(t).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  function aplicarDestino() {
+    if (destino.materia) {
+      const chips = [...document.querySelectorAll('#materias .chip-m')];
+      const objetivo = sinAcentos(destino.materia);
+      const chip = chips.find(c => sinAcentos(c.dataset.v) === objetivo) || chips.find(c => sinAcentos(c.dataset.v).includes(objetivo) || objetivo.includes(sinAcentos(c.dataset.v)));
+      if (chip) { chip.style.display = ''; chip.click(); } else { materia = destino.materia; }
+    }
+    if (destino.tema) perfil.profile.tema = destino.tema;
+    const misionBtn = destino.mision && document.querySelector(`.mision[data-mision="${destino.mision}"]`);
+    destino.materia = ''; destino.tema = '';
+    if (misionBtn) { destino.mision = ''; setTimeout(() => misionBtn.click(), 50); }
+  }
+
   function restaurar() {
     const guardado = localStorage.getItem(LS_KEY);
     if (guardado) {
@@ -614,6 +676,8 @@
     if (pend) document.getElementById('pendiente-texto').textContent = pend.texto;
     btnCambiarRol.style.display = 'inline-block';
     mostrarPantalla('mision');
+    aplicarDestino();
+    mostrarSituaciones();
   }
   document.getElementById('animos').addEventListener('click', e => {
     const b = e.target.closest('.animo'); if (!b) return;
@@ -635,6 +699,7 @@
     const b = e.target.closest('.chip-m'); if (!b) return;
     materia = b.dataset.v;
     document.querySelectorAll('#materias .chip-m').forEach(x => x.setAttribute('aria-pressed', x === b));
+    mostrarSituaciones();
   });
 
 
@@ -714,12 +779,72 @@
   const lang = c => LANGS[String(c || '').trim().toLowerCase()] || 'es-CO';
   const Reconocedor = window.SpeechRecognition || window.webkitSpeechRecognition;
   const puedeHablar = 'speechSynthesis' in window;
-  function hablar(texto, codigo, lento = false) {
+  // Voz clara y fuerte: primero la voz del servidor (MeloTTS) amplificada con Web Audio;
+  // si no está disponible, la voz del navegador con la mejor calidad que tenga el equipo.
+  const MELO = { en: 'en', es: 'es', fr: 'fr', zh: 'zh' };
+  const GANANCIA = 2.4;              // amplificación (el compresor evita que suene distorsionado)
+  let ctxAudio = null, fuentes = [], vozServidor = true;
+  const audiosGuardados = new Map();
+  function asegurarAudio() {
+    const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return null;
+    if (!ctxAudio) ctxAudio = new AC();
+    if (ctxAudio.state === 'suspended') ctxAudio.resume();
+    return ctxAudio;
+  }
+  function detenerVoz() {
+    fuentes.forEach(f => { try { f.stop(); } catch {} }); fuentes = [];
+    if (puedeHablar) speechSynthesis.cancel();
+  }
+  function trozos(texto) {
+    const partes = String(texto).match(/[^.!?¡¿]+[.!?]*/g) || [texto], out = [];
+    let actual = '';
+    for (const p of partes) { if ((actual + p).length > 480 && actual) { out.push(actual.trim()); actual = ''; } actual += p; }
+    if (actual.trim()) out.push(actual.trim());
+    return out;
+  }
+  async function audioServidor(texto, lg) {
+    const k = lg + '|' + texto;
+    if (audiosGuardados.has(k)) return audiosGuardados.get(k);
+    const r = await fetch('/api/voz', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ texto, lang: lg }) });
+    if (r.status === 501) { vozServidor = false; throw new Error('sin voz de servidor'); }
+    if (!r.ok) throw new Error('voz ' + r.status);
+    const { audio } = await r.json();
+    const bin = Uint8Array.from(atob(audio), c => c.charCodeAt(0));
+    const buffer = await ctxAudio.decodeAudioData(bin.buffer);
+    audiosGuardados.set(k, buffer);
+    return buffer;
+  }
+  async function hablar(texto, codigo, lento = false, boton = null) {
+    detenerVoz();
+    const ctx = asegurarAudio();
+    const lg = MELO[codigo.slice(0, 2)];
+    if (ctx && lg && vozServidor) {
+      const original = boton ? boton.textContent : '';
+      if (boton) boton.textContent = 'Preparando la voz…';
+      try {
+        const buffers = [];
+        for (const t of trozos(texto)) buffers.push(await audioServidor(t, lg));
+        const comp = ctx.createDynamicsCompressor();
+        comp.threshold.value = -24; comp.knee.value = 20; comp.ratio.value = 6; comp.attack.value = .003; comp.release.value = .25;
+        const gan = ctx.createGain(); gan.gain.value = GANANCIA;
+        comp.connect(gan); gan.connect(ctx.destination);
+        let t0 = ctx.currentTime + .05;
+        for (const buf of buffers) {
+          const src = ctx.createBufferSource();
+          src.buffer = buf; src.playbackRate.value = lento ? .82 : 1;
+          src.connect(comp); src.start(t0); fuentes.push(src);
+          t0 += buf.duration / src.playbackRate.value + .15;
+        }
+        if (boton) boton.textContent = original;
+        return;
+      } catch (e) { console.warn('Voz del servidor no disponible, uso la del navegador', e); if (boton) boton.textContent = original; }
+    }
     if (!puedeHablar) return;
-    speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(texto);
-    u.lang = codigo; u.rate = lento ? 0.7 : 0.95;
-    const voz = speechSynthesis.getVoices().find(v => v.lang === codigo) || speechSynthesis.getVoices().find(v => v.lang.startsWith(codigo.slice(0, 2)));
+    u.lang = codigo; u.rate = lento ? 0.7 : 0.95; u.volume = 1;
+    const voces = speechSynthesis.getVoices().filter(v => v.lang.replace('_', '-').startsWith(codigo.slice(0, 2)));
+    const calidad = v => (/natural|neural|enhanced|premium|google|siri/i.test(v.name) ? 2 : 0) + (v.lang.replace('_', '-') === codigo ? 1 : 0);
+    const voz = voces.sort((a, b) => calidad(b) - calidad(a))[0];
     if (voz) u.voice = voz;
     speechSynthesis.speak(u);
   }
@@ -773,13 +898,13 @@
   }
   document.getElementById('hilo').addEventListener('click', e => {
     const leer = e.target.closest('.leer');
-    if (leer) { hablar(leer.dataset.texto, 'es-CO'); return; }
+    if (leer) { hablar(leer.dataset.texto, 'es-CO', false, leer); return; }
     const b = e.target.closest('.voz button'); if (!b) return;
     const caja = b.closest('.voz'), codigo = caja.dataset.lang, frase = caja.dataset.frase;
-    if (b.dataset.accion === 'oir') return hablar(frase, codigo);
-    if (b.dataset.accion === 'lento') return hablar(frase, codigo, true);
+    if (b.dataset.accion === 'oir') return hablar(frase, codigo, false, b);
+    if (b.dataset.accion === 'lento') return hablar(frase, codigo, true, b);
     if (b.dataset.accion === 'grabar') {
-      speechSynthesis && speechSynthesis.cancel();
+      detenerVoz();
       escucharVoz(codigo, (dicho, conf, error) => {
         b.classList.remove('grabando'); b.textContent = 'Intentar otra vez'; b.disabled = false;
         const res = caja.querySelector('.resultado');
@@ -841,6 +966,23 @@
     if (desempeno) el.textContent += ` Desempeño de hoy en este aprendizaje: ${desempeno}.${e.para_subir && !/superior/i.test(desempeno) ? ' Para subir: ' + limpiar(e.para_subir) : ''}`;
   }
 
+  let situacion = '';
+  function mostrarSituaciones() {
+    const idioma = /ingl|mandar|chino|franc|portug/i.test(materia);
+    const caja = document.getElementById('bloque-situaciones');
+    caja.hidden = !idioma;
+    if (!idioma) { situacion = ''; return; }
+    const nivel = NIVEL(perfil?.profile?.grade || '');
+    caja.querySelectorAll('.chip-m').forEach(c => { c.style.display = nivel >= (+c.dataset.min || 0) ? '' : 'none'; });
+  }
+  document.getElementById('situaciones').addEventListener('click', e => {
+    const b = e.target.closest('.chip-m'); if (!b) return;
+    const ya = b.getAttribute('aria-pressed') === 'true';
+    document.querySelectorAll('#situaciones .chip-m').forEach(x => x.setAttribute('aria-pressed', 'false'));
+    b.setAttribute('aria-pressed', String(!ya));
+    situacion = ya ? '' : b.dataset.v;
+  });
+
   async function arrancarMision(mision, pendiente) {
     perfil.profile.mision = mision;
     perfil.profile.materia = pendiente ? pendiente.materia : materia;
@@ -848,6 +990,7 @@
     perfil.profile.intereses = leerLS('sabi_intereses:' + claveAlumno(), []);
     perfil.profile.recuerdos = leerBitacora().slice(0, 3).map(d => d.texto);
     perfil.profile.pendiente = pendiente ? pendiente.texto : '';
+    if (situacion && !perfil.profile.tema) perfil.profile.tema = 'Situación de la vida real para practicar el idioma: ' + situacion;
     historial.length = 0;
     hilo.querySelectorAll('.msg, .opciones').forEach(n => n.remove());
     document.querySelector('.bienvenida').style.display = '';
@@ -866,7 +1009,9 @@
     preparando.textContent = 'Comenzamos.';
     const arranque = `[INICIO DE MISIÓN — mensaje automático de la app, no lo escribió el estudiante] Misión: ${perfil.profile.mision}. Asignatura: ${perfil.profile.materia}. Grado: ${perfil.profile.grade}. Cómo llegó hoy: ${perfil.profile.emocion}.`
       + (pendiente ? ` El estudiante eligió continuar su misterio pendiente: "${pendiente.texto}".` : '')
+      + (perfil.profile.tema ? ` Tema o pregunta que trae desde otra aplicación SABI: "${perfil.profile.tema}". Úsalo como punto de partida.` : '')
       + ' Arranca ya con el gancho, en tu primer turno, siguiendo el Motor de Experiencia y la receta de la asignatura.';
+    perfil.profile.tema = '';
     enviarTexto(arranque, { oculto: true });
   }
   document.querySelectorAll('.mision').forEach(b => b.addEventListener('click', () => arrancarMision(b.dataset.mision)));
@@ -953,9 +1098,13 @@
       + (proxima ? `<div class="proxima">Para la próxima vez: ${enLinea(proxima)}</div>` : '');
     if (puedeHablar) {
       const textoLeer = bloques.filter(b => b.p || b.ul).map(b => b.p ? limpiar(b.p) : b.ul.map(limpiar).join('. ')).join(' ');
-      if (textoLeer) div.insertAdjacentHTML('beforeend', `<button type="button" class="leer" data-texto="${esc(textoLeer)}">Escuchar en voz alta</button>`);
+      const paraVoz = textoLeer.replace(/\\[()\[\]]/g, '').replace(/\\frac\{([^}]*)\}\{([^}]*)\}/g, '$1 sobre $2').replace(/\\([a-zA-Z]+)/g, '$1 ').replace(/[{}^_]/g, ' ');
+      if (textoLeer) div.insertAdjacentHTML('beforeend', `<button type="button" class="leer" data-texto="${esc(paraVoz)}">Escuchar en voz alta</button>`);
     }
     hilo.appendChild(div);
+    if (window.renderMathInElement) {
+      try { renderMathInElement(div, { delimiters: [{ left: '\\[', right: '\\]', display: true }, { left: '\\(', right: '\\)', display: false }], throwOnError: false }); } catch {}
+    }
     if (perfil.role === 'estudiante') descubrimientos.forEach(d => guardarDescubrimiento(d.replace(/^Descubr[ií]:\s*/i, 'Descubrí ')));
     if (perfil.role === 'estudiante') document.querySelector('.bienvenida').style.display = 'none';
     if (perfil.role === 'estudiante' && proxima) guardarLS('sabi_pendiente:' + claveAlumno(), { texto: proxima, materia: perfil.profile.materia, mision: perfil.profile.mision });
@@ -1025,6 +1174,9 @@
     if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); }
   });
   restaurar();
+  if (!perfil && ['estudiante', 'padre', 'docente'].includes(destino.rol)) {
+    const b = document.querySelector(`[data-rol="${destino.rol}"]`); if (b) b.click();
+  }
 </script>
 
 </body>
