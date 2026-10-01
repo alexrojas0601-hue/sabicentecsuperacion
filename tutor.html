@@ -7,7 +7,7 @@
 <meta name="description" content="Tu tutor SABI: ayuda en todas las materias, enseña a pensar y razonar, y acompaña tu formación como persona íntegra.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,680&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,680&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --noche:#0B1F3F; --noche-2:#14315C;
@@ -171,6 +171,61 @@
   .proxima{margin-top:10px; padding:10px 12px; border:1px dashed var(--alba); border-radius:8px; font-size:.92rem;}
   .mapa{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;}
   .mapa span{background:var(--noche); border:1px solid var(--linea-noche); border-radius:999px; padding:4px 10px; font-size:.78rem;}
+
+  /* ================= TEMA LIBRO: pantalla completa, letra grande, sin distracciones ================= */
+  body{background:#FBF8F1; color:#1F1D1A;}
+  header{background:#0B1F3F; color:#F7F3E9;}
+  #pantalla-rol, #pantalla-id, #pantalla-mision{background:#FBF8F1; color:#1F1D1A;}
+  #pantalla-rol p, #pantalla-mision .paso{color:#4A463F;}
+  .rol-btn, .mision, .animo, .chip-m{background:#FFFFFF; color:#1F1D1A; border:1px solid #D9D2C3;}
+  .rol-btn .desc, .mision .que{color:#5B574F;}
+  .animo[aria-pressed="true"], .chip-m[aria-pressed="true"]{background:#0B1F3F; color:#FBF8F1; border-color:#0B1F3F;}
+  .mision:hover, .mision:focus-visible, .rol-btn:hover{border-color:#0B1F3F;}
+  #pantalla-id form{background:#FFFFFF; border-color:#D9D2C3; color:#1F1D1A;}
+  #pantalla-id label{color:#4A463F;}
+  #pantalla-id input, #pantalla-id select{background:#FBF8F1; color:#1F1D1A; border-color:#D9D2C3;}
+  #pantalla-id .volver-rol{color:#4A463F;}
+  #pantalla-mision h2, #pantalla-rol h2{font-size:clamp(1.6rem, 1.1rem + 1.5vw, 2.4rem);}
+  .mision .nombre{font-size:clamp(1.2rem, 1rem + .6vw, 1.5rem);}
+  .mision .que{font-size:clamp(.92rem, .85rem + .3vw, 1.08rem);}
+  .pendiente{background:#FFF6E3; border-color:#E8A33A; color:#1F1D1A; max-width:min(1100px, 94vw);}
+  .pendiente small{color:#8A5A12;}
+  .misiones, .chips{max-width:min(1100px, 94vw);}
+
+  #vista-chat{background:#FBF8F1;}
+  main#hilo{max-width:none; width:100%; padding:clamp(20px,4vw,56px) clamp(18px,6vw,96px) 24px; gap:0;}
+  #hilo > *{width:100%; max-width:min(74ch, 100%); margin-left:auto; margin-right:auto;}
+  #hilo, .msg, .plan{font-family:'Literata', Georgia, serif; font-size:clamp(1.18rem, 0.9rem + 0.75vw, 1.55rem); line-height:1.75;}
+  .msg{max-width:none; padding:0; border-radius:0; background:none !important; white-space:normal;}
+  .msg.sabi{color:#1F1D1A; margin:0 0 1.2em;}
+  .msg.sabi p + p{margin-top:.75em;}
+  .msg.sabi ol, .msg.sabi ul{margin:.5em 0 0 1.4em;}
+  .msg.tu{align-self:auto; color:#3D3A34; font-style:italic; font-weight:400; border-left:3px solid #C9BFA8; padding-left:1em; margin:0 0 1.4em;}
+  .msg.tu::before{content:"Tú: "; font-style:normal; font-weight:600; color:#0B1F3F;}
+  .msg.typing{color:#7A746A;}
+  .bienvenida{max-width:min(74ch,100%); margin:0 auto 1.2em; gap:16px;}
+  .bienvenida .burbuja{background:none; padding:0; font-size:inherit; color:#4A463F; font-style:italic;}
+  .descubri{background:none; border-left:3px solid #B8862B; color:#3D3A34; font-style:italic; font-size:.92em; margin-top:.9em; padding:.2em 0 .2em 1em; border-radius:0;}
+  .proxima{border:none; border-top:1px solid #D9D2C3; padding:.8em 0 0; margin-top:1em; color:#3D3A34; font-size:.92em; border-radius:0;}
+  .opciones{max-width:min(74ch,100%); margin:-.4em auto 1.6em; gap:10px;}
+  .opcion{color:#0B1F3F; border:1.5px solid #0B1F3F; background:#FFFFFF; font-family:'Public Sans',sans-serif; font-size:clamp(.95rem, .8rem + .4vw, 1.15rem); padding:.55em 1.1em;}
+  .opcion:hover{background:#0B1F3F; color:#FBF8F1;}
+  .opcion:disabled{opacity:.35; background:#FFFFFF; color:#0B1F3F;}
+  .plan{border-top:2px solid #0B1F3F; border-bottom:1px solid #D9D2C3; padding:1em 0 1.1em; margin-bottom:1.6em; color:#1F1D1A;}
+  .plan-titulo{font-family:'Fraunces',serif; font-weight:600; font-size:1.05em; color:#0B1F3F; margin-bottom:.3em;}
+  .plan-detalle, .plan-avance{font-size:.86em; color:#4A463F; margin-top:.5em;}
+  .aviso{color:#7A746A; max-width:min(74ch,100%);}
+  form#form-chat{max-width:none; padding:14px clamp(18px,6vw,96px) calc(14px + env(safe-area-inset-bottom)); background:#F3EEE3; border-top:1px solid #D9D2C3; justify-content:center;}
+  form#form-chat textarea{background:#FFFFFF; color:#1F1D1A; border-color:#D9D2C3; font-family:'Literata',Georgia,serif; font-size:clamp(1.05rem, .9rem + .4vw, 1.3rem); max-width:calc(min(74ch,100%) - 110px);}
+  form#form-chat button{background:#0B1F3F; color:#FBF8F1;}
+  textarea:focus{outline:2px solid #0B1F3F;}
+  #bitacora{background:#FFFFFF; color:#1F1D1A; border-left:1px solid #D9D2C3; font-family:'Literata',Georgia,serif;}
+  #bitacora p.sub, #bitacora li small{color:#5B574F;}
+  #bitacora li{border-left-color:#B8862B;}
+  #bitacora .cerrar{color:#1F1D1A;}
+  .mapa span{background:#FBF8F1; border-color:#D9D2C3;}
+  header .mono{font-family:'Public Sans',sans-serif; text-transform:none; letter-spacing:0; font-size:.85rem; color:#E9D9B4;}
+  .misiones{grid-template-columns:repeat(auto-fit,minmax(190px,1fr));}
 </style>
 </head>
 <body>
@@ -179,12 +234,12 @@
   <img src="sabi-avatar.png" alt="SABI">
   <div class="titulos">
     <h1 id="titulo-header">SABI</h1>
-    <span class="mono" id="subtitulo-header">Tu Amigo del Saber · CENTEC</span>
+    <span class="mono" id="subtitulo-header">Colegio CENTEC</span>
   </div>
-  <button class="btn-bitacora" id="btn-bitacora" style="display:none;">📓 Mi bitácora</button>
+  <button class="btn-bitacora" id="btn-bitacora" style="display:none;">Mi bitácora</button>
   <button class="cambiar-rol" id="btn-cambiar-mision" style="display:none;">Otra misión</button>
   <button class="cambiar-rol" id="btn-cambiar-rol" style="display:none;">Cambiar de perfil</button>
-  <a class="volver" href="index.html">← Volver al sitio</a>
+  <a class="volver" href="index.html">Volver al sitio</a>
 </header>
 
 <!-- PANTALLA 1: elegir rol -->
@@ -194,17 +249,14 @@
   <p>Cada perfil ve solo su propia información — nunca la de otros.</p>
   <div class="roles">
     <button class="rol-btn" data-rol="estudiante">
-      <span class="emoji">🎒</span>
       <span class="nombre">Estudiante</span>
       <span class="desc">Tu tutor y tu plan personal</span>
     </button>
     <button class="rol-btn" data-rol="padre">
-      <span class="emoji">👪</span>
       <span class="nombre">Padre / Acudiente</span>
       <span class="desc">Seguimiento de tu hijo/a</span>
     </button>
     <button class="rol-btn" data-rol="docente">
-      <span class="emoji">🧑‍🏫</span>
       <span class="nombre">Docente / Directivo</span>
       <span class="desc">Informes y planes de mejora</span>
     </button>
@@ -214,7 +266,7 @@
 <!-- PANTALLA 2: identificación según rol -->
 <div id="pantalla-id">
   <form id="form-id">
-    <button type="button" class="volver-rol" id="btn-volver-rol">← Elegir otro perfil</button>
+    <button type="button" class="volver-rol" id="btn-volver-rol">Elegir otro perfil</button>
 
     <div data-para="estudiante">
       <h3>Cuéntame quién eres</h3>
@@ -281,30 +333,30 @@
   </div>
   <p class="paso">Primero, ¿cómo llegas hoy?</p>
   <div class="animos" id="animos">
-    <button type="button" class="animo" data-animo="con mucha energía">⚡ Con energía</button>
-    <button type="button" class="animo" data-animo="normal, tranquilo">🙂 Normal</button>
-    <button type="button" class="animo" data-animo="cansado">😴 Cansado</button>
-    <button type="button" class="animo" data-animo="preocupado o triste">🌧️ Preocupado</button>
+    <button type="button" class="animo" data-animo="con mucha energía">Con energía</button>
+    <button type="button" class="animo" data-animo="normal, tranquilo">Normal</button>
+    <button type="button" class="animo" data-animo="cansado">Cansado</button>
+    <button type="button" class="animo" data-animo="preocupado o triste">Preocupado</button>
   </div>
-  <button type="button" class="chip-m" id="btn-editar-intereses" style="display:none;">✏️ Cambiar lo que me gusta</button>
+  <button type="button" class="chip-m" id="btn-editar-intereses" style="display:none;">Cambiar lo que me gusta</button>
   <p class="paso" id="titulo-intereses">¿Qué te gusta? Elige las que quieras y SABI las usa en tus retos</p>
   <div class="chips" id="intereses">
-    <button type="button" class="chip-m" data-v="fútbol">⚽ Fútbol</button>
-    <button type="button" class="chip-m" data-v="salsa y baile">💃 Salsa y baile</button>
-    <button type="button" class="chip-m" data-v="música">🎧 Música</button>
-    <button type="button" class="chip-m" data-v="videojuegos">🎮 Videojuegos</button>
-    <button type="button" class="chip-m" data-v="dibujo y arte">🎨 Dibujo</button>
-    <button type="button" class="chip-m" data-v="cocina">🍳 Cocina</button>
-    <button type="button" class="chip-m" data-v="animales">🐾 Animales</button>
-    <button type="button" class="chip-m" data-v="naturaleza">🌿 Naturaleza</button>
-    <button type="button" class="chip-m" data-v="celulares y tecnología">📱 Tecnología</button>
-    <button type="button" class="chip-m" data-v="crear videos y redes">🎬 Videos</button>
-    <button type="button" class="chip-m" data-v="negocios y vender">💰 Negocios</button>
-    <button type="button" class="chip-m" data-v="carros y motos">🏍️ Motores</button>
+    <button type="button" class="chip-m" data-v="fútbol">Fútbol</button>
+    <button type="button" class="chip-m" data-v="salsa y baile">Salsa y baile</button>
+    <button type="button" class="chip-m" data-v="música">Música</button>
+    <button type="button" class="chip-m" data-v="videojuegos">Videojuegos</button>
+    <button type="button" class="chip-m" data-v="dibujo y arte">Dibujo</button>
+    <button type="button" class="chip-m" data-v="cocina">Cocina</button>
+    <button type="button" class="chip-m" data-v="animales">Animales</button>
+    <button type="button" class="chip-m" data-v="naturaleza">Naturaleza</button>
+    <button type="button" class="chip-m" data-v="celulares y tecnología">Tecnología</button>
+    <button type="button" class="chip-m" data-v="crear videos y redes">Videos</button>
+    <button type="button" class="chip-m" data-v="negocios y vender">Negocios</button>
+    <button type="button" class="chip-m" data-v="carros y motos">Motores</button>
   </div>
   <p class="paso">¿De qué materia?</p>
   <div class="chips" id="materias">
-    <button type="button" class="chip-m" data-v="Sorpréndeme" aria-pressed="true">✨ Sorpréndeme</button>
+    <button type="button" class="chip-m" data-v="Sorpréndeme" aria-pressed="true">Sorpréndeme</button>
     <button type="button" class="chip-m" data-v="Matemáticas">Matemáticas</button>
     <button type="button" class="chip-m" data-v="Lenguaje">Lenguaje</button>
     <button type="button" class="chip-m" data-v="Inglés">Inglés</button>
@@ -326,23 +378,23 @@
   <p class="paso">Ahora elige tu misión</p>
   <div class="misiones">
     <button type="button" class="mision" data-mision="DETECTIVE">
-      <span class="icono">🔎</span><span class="nombre">Detective</span>
+      <span class="nombre">Detective</span>
       <span class="que">Un misterio del mundo real que nadie te ha explicado. Tú lo resuelves.</span>
     </button>
     <button type="button" class="mision" data-mision="INVENTOR">
-      <span class="icono">🛠️</span><span class="nombre">Inventor</span>
+      <span class="nombre">Inventor</span>
       <span class="que">Un problema del barrio y tú diseñas la solución, como un ingeniero.</span>
     </button>
     <button type="button" class="mision" data-mision="CALI 2040">
-      <span class="icono">🚀</span><span class="nombre">Cali 2040</span>
+      <span class="nombre">Cali 2040</span>
       <span class="que">Viajas al futuro de la ciudad y tomas decisiones que cambian todo.</span>
     </button>
     <button type="button" class="mision" data-mision="ENSÉÑALE A SABI">
-      <span class="icono">🎓</span><span class="nombre">Enséñale a SABI</span>
+      <span class="nombre">Enséñale a SABI</span>
       <span class="que">Hoy tú eres el profe. SABI no sabe y tú le explicas. ¿Lo pillas en un error?</span>
     </button>
     <button type="button" class="mision" data-mision="MI TAREA">
-      <span class="icono">📚</span><span class="nombre">Mi tarea</span>
+      <span class="nombre">Mi tarea</span>
       <span class="que">Trae el tema del colegio y lo convertimos en un reto que sí se entiende.</span>
     </button>
   </div>
@@ -359,6 +411,12 @@
 <!-- PANTALLA 3: chat -->
 <div id="vista-chat">
   <main id="hilo">
+    <section class="plan" id="plan" hidden>
+      <p class="plan-titulo">Propósito de esta sesión</p>
+      <p id="plan-proposito"></p>
+      <p class="plan-detalle" id="plan-detalle"></p>
+      <p class="plan-avance" id="plan-avance"></p>
+    </section>
     <div class="bienvenida">
       <img src="sabi-avatar.png" alt="SABI">
       <div class="burbuja" id="mensaje-bienvenida">¡Hola! Soy SABI.</div>
@@ -460,22 +518,23 @@
 
     if (rol === 'estudiante') {
       titulo.textContent = 'SABI';
-      subtitulo.textContent = `Tu Amigo del Saber · ${perfil.profile.grade}`;
+      subtitulo.textContent = `Grado ${perfil.profile.grade}`;
       bienvenida.textContent = `Misión ${perfil.profile.mision}, ${perfil.profile.name}. Preparando tu reto…`;
     }
     if (rol === 'padre') {
       titulo.textContent = 'SABI';
-      subtitulo.textContent = `Seguimiento familiar · ${perfil.profile.childName}`;
+      subtitulo.textContent = `Seguimiento familiar de ${perfil.profile.childName}`;
       bienvenida.textContent = `¡Hola! Estoy aquí para contarte cómo va ${perfil.profile.childName} y cómo puedes acompañarlo en casa. ¿En qué te puedo ayudar hoy?`;
     }
     if (rol === 'docente') {
       titulo.textContent = 'SABI';
-      subtitulo.textContent = `Panel docente · ${perfil.profile.teacherArea}`;
+      subtitulo.textContent = `Docente de ${perfil.profile.teacherArea}`;
       bienvenida.textContent = `Hola, docente. Puedo generar el informe pedagógico de un estudiante puntual (dime nombre y grado), un plan de mejora de curso, o ayudarte a diseñar una evaluación. ¿Qué necesitas hoy?`;
     }
 
     btnCambiarRol.style.display = 'inline-block';
     const esEst = rol === 'estudiante';
+    if (!esEst) document.getElementById('plan').hidden = true;
     document.getElementById('btn-bitacora').style.display = esEst ? 'inline-block' : 'none';
     document.getElementById('btn-cambiar-mision').style.display = esEst ? 'inline-block' : 'none';
     mostrarPantalla('chat');
@@ -543,7 +602,29 @@
     document.querySelectorAll('#materias .chip-m').forEach(x => x.setAttribute('aria-pressed', x === b));
   });
 
-  function arrancarMision(mision, pendiente) {
+  // ---------- Plan de sesión (agente Planificador) y avance (agente Auditor) ----------
+  function pintarPlan() {
+    const plan = perfil?.profile?.plan, caja = document.getElementById('plan');
+    if (!plan || perfil.role !== 'estudiante') { caja.hidden = true; return; }
+    caja.hidden = false;
+    document.getElementById('plan-proposito').textContent = limpiar(plan.proposito || '');
+    const partes = [];
+    if (plan.dba) partes.push('Lo que vas a aprender: ' + limpiar(plan.dba));
+    if (plan.escalera?.length) partes.push('Tu camino de pensamiento: ' + plan.escalera.map(limpiar).join(', luego ') );
+    if (plan.valor) partes.push('El valor de hoy: ' + limpiar(plan.valor));
+    document.getElementById('plan-detalle').textContent = partes.join('. ') + (partes.length ? '.' : '');
+    pintarAvance();
+  }
+  function pintarAvance() {
+    const e = perfil?.profile?.estado, plan = perfil?.profile?.plan, el = document.getElementById('plan-avance');
+    if (!e || !plan) { el.textContent = ''; return; }
+    const meta = plan.escalera?.[plan.escalera.length - 1];
+    el.textContent = e.logro === 'alcanzado'
+      ? `Alcanzaste la meta de hoy${meta ? ' (' + limpiar(meta) + ')' : ''}.`
+      : `Vas en el nivel ${limpiar(e.nivel_actual || 'inicial')}${meta ? '. La meta de hoy es ' + limpiar(meta) : ''}.`;
+  }
+
+  async function arrancarMision(mision, pendiente) {
     perfil.profile.mision = mision;
     perfil.profile.materia = pendiente ? pendiente.materia : materia;
     perfil.profile.emocion = animo || 'no lo dijo';
@@ -553,7 +634,19 @@
     historial.length = 0;
     hilo.querySelectorAll('.msg, .opciones').forEach(n => n.remove());
     document.querySelector('.bienvenida').style.display = '';
+    perfil.profile.plan = null;
+    perfil.profile.estado = null;
     iniciarChat();
+    pintarPlan();
+    const preparando = document.getElementById('mensaje-bienvenida');
+    preparando.textContent = 'Preparando el plan de tu sesión…';
+    try {
+      const r = await fetch('/api/chat', { method: 'POST', headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ accion: 'planificar', role: perfil.role, profile: perfil.profile }) });
+      const d = await r.json();
+      if (d && d.plan) { perfil.profile.plan = d.plan; pintarPlan(); }
+    } catch (err) { console.error('Planificador no disponible', err); }
+    preparando.textContent = 'Comenzamos.';
     const arranque = `[INICIO DE MISIÓN — mensaje automático de la app, no lo escribió el estudiante] Misión: ${perfil.profile.mision}. Asignatura: ${perfil.profile.materia}. Grado: ${perfil.profile.grade}. Cómo llegó hoy: ${perfil.profile.emocion}.`
       + (pendiente ? ` El estudiante eligió continuar su misterio pendiente: "${pendiente.texto}".` : '')
       + ' Arranca ya con el gancho, en tu primer turno, siguiendo el Motor de Experiencia y la receta de la asignatura.';
@@ -579,12 +672,12 @@
   }
   function pintarBitacora() {
     const lista = leerBitacora();
-    document.getElementById('btn-bitacora').textContent = `📓 Mi bitácora${lista.length ? ' (' + lista.length + ')' : ''}`;
+    document.getElementById('btn-bitacora').textContent = `Mi bitácora${lista.length ? ' (' + lista.length + ')' : ''}`;
     const cuenta = {};
     lista.forEach(d => { if (d.materia && d.materia !== 'Sorpréndeme') cuenta[d.materia] = (cuenta[d.materia] || 0) + 1; });
-    document.getElementById('mapa-materias').innerHTML = Object.entries(cuenta).map(([m, n]) => `<span>${esc(m)} · ${n}</span>`).join('');
+    document.getElementById('mapa-materias').innerHTML = Object.entries(cuenta).map(([m, n]) => `<span>${esc(m)}: ${n}</span>`).join('');
     document.getElementById('lista-bitacora').innerHTML = lista.length
-      ? lista.map(d => `<li>${esc(d.texto)}<small>${esc(d.materia || '')} · ${esc(d.mision)} · ${esc(d.fecha)}</small></li>`).join('')
+      ? lista.map(d => `<li>${esc(d.texto)}<small>${esc([d.materia, d.mision, d.fecha].filter(Boolean).join(', '))}</small></li>`).join('')
       : '<li>Todavía vacía. Tu primer descubrimiento aparecerá aquí.</li>';
   }
   const panel = document.getElementById('bitacora');
@@ -603,7 +696,9 @@
   });
 
   function esc(t) { return String(t).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-  function enLinea(t) { return esc(t).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'); }
+  // Estilo libro: sin negritas, sin emojis ni símbolos decorativos
+  function limpiar(t) { return String(t).replace(/\*\*(.+?)\*\*/g, '$1').replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu, '').replace(/^#+\s*/, '').trim(); }
+  function enLinea(t) { return esc(limpiar(t)); }
 
   function agregarMensaje(texto, quien) {
     const div = document.createElement('div');
@@ -626,17 +721,17 @@
       if (/^»\s*/.test(l)) { opciones.push(l.replace(/^»\s*/, '')); continue; }
       if (/^✦\s*/.test(l)) { descubrimientos.push(l.replace(/^✦\s*/, '')); continue; }
       if (/^⟶\s*/.test(l)) { proxima = l.replace(/^⟶\s*(Pr[oó]xima vez:\s*)?/i, ''); continue; }
-      if (/^[-•*]\s+/.test(l)) {
+      if (/^([-•*]|\d+[.)])\s+/.test(l)) {
         if (!lista) { lista = []; bloques.push({ ul: lista }); }
-        lista.push(l.replace(/^[-•*]\s+/, '')); continue;
+        lista.push(l.replace(/^([-•*]|\d+[.)])\s+/, '')); continue;
       }
       lista = null; bloques.push({ p: l });
     }
     const div = document.createElement('div');
     div.className = 'msg sabi';
-    div.innerHTML = bloques.map(b => b.p ? `<p>${enLinea(b.p)}</p>` : `<ul>${b.ul.map(x => `<li>${enLinea(x)}</li>`).join('')}</ul>`).join('')
-      + descubrimientos.map(d => `<div class="descubri">✦ ${enLinea(d)}</div>`).join('')
-      + (proxima ? `<div class="proxima">⟶ <strong>Próxima vez:</strong> ${enLinea(proxima)}</div>` : '');
+    div.innerHTML = bloques.map(b => b.p ? `<p>${enLinea(b.p)}</p>` : `<ol>${b.ul.map(x => `<li>${enLinea(x)}</li>`).join('')}</ol>`).join('')
+      + descubrimientos.map(d => `<div class="descubri">${enLinea(d.replace(/^Descubr[ií]:\s*/i, 'Descubriste '))}</div>`).join('')
+      + (proxima ? `<div class="proxima">Para la próxima vez: ${enLinea(proxima)}</div>` : '');
     hilo.appendChild(div);
     if (perfil.role === 'estudiante') descubrimientos.forEach(d => guardarDescubrimiento(d.replace(/^Descubr[ií]:\s*/i, 'Descubrí ')));
     if (perfil.role === 'estudiante') document.querySelector('.bienvenida').style.display = 'none';
@@ -680,6 +775,7 @@
         console.error(data);
       } else {
         historial.push({ role: 'assistant', content: data.reply });
+        if (data.estado && perfil.role === 'estudiante') { perfil.profile.estado = data.estado; pintarAvance(); }
         agregarRespuesta(data.reply);
       }
     } catch (err) {

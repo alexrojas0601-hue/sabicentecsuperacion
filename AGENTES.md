@@ -27,3 +27,16 @@ Raspberry-Ciencias, juegos-Matemáticas, ABP-Sociales, robótica-Emprendimiento,
 Modelo por defecto: Claude Haiku 4.5 (el más económico), máximo 6 búsquedas y 4 recursos por
 semana. Se puede subir la calidad con la variable `MODELO` en el workflow. El límite de gasto
 mensual en console.anthropic.com protege contra cualquier sorpresa.
+
+## Agentes que trabajan en vivo con cada estudiante
+
+Además del equipo curador semanal, cada sesión de un estudiante pasa por tres agentes:
+
+| Agente | Cuándo actúa | Qué hace |
+|---|---|---|
+| Planificador pedagógico | Al iniciar cada misión | Diseña el plan de la sesión: DBA o estándar del grado, competencia MEN e ICFES, escalera de niveles de pensamiento, lectura crítica (literal, inferencial, crítica), estrategia de pensamiento, valor a comentar y técnicas de neuroaprendizaje. El estudiante ve el propósito en lenguaje sencillo. |
+| Maestro de la asignatura | En cada turno | Enseña con el Motor de Experiencia más el módulo especializado de la materia construido por CENTEC (Matemáticas, Lenguaje, Inglés, Ciencias, Sociales, Ética y Religión, Artes). |
+| Auditor neuropedagógico | En cada turno, antes de que la respuesta llegue al estudiante | Resuelve por su cuenta el contenido y lo compara, revisa ocho criterios (veracidad, que el estudiante piense, escalón correcto, neuroaprendizaje, lectura crítica y competencia, valor comentado, estilo de libro, seguridad), corrige si hace falta y registra el avance. |
+
+El avance que registra el Auditor queda en el historial del estudiante, y el docente lo recibe en el informe pedagógico.
+Para apagar el Auditor (por ejemplo, para ahorrar), crear en Cloudflare la variable `AUDITOR` con valor `no`.
