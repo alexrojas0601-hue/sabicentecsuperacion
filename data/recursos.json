@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "actualizado": "2026-09-30",
+  "actualizado": "2026-10-01",
   "recursos": [
     {
       "id": "wokwi",
@@ -35,7 +35,7 @@
       "bloom": "crear",
       "seguridad": "No requiere datos personales para simular; usar cuenta del docente para guardar proyectos.",
       "estado": "activo",
-      "verificado": "2026-09-30",
+      "verificado": "2026-10-01",
       "origen": "semilla"
     },
     {
@@ -69,7 +69,7 @@
       "bloom": "aplicar",
       "seguridad": "Usar el modo Clases para que los estudiantes no registren correos personales.",
       "estado": "activo",
-      "verificado": "2026-09-30",
+      "verificado": "2026-10-01",
       "origen": "semilla"
     },
     {
@@ -102,9 +102,10 @@
       "proyecto_institucional": "Guardianes Digitales",
       "bloom": "analizar",
       "seguridad": "Contenido de comunidad abierta: el docente selecciona el proyecto antes de compartirlo.",
-      "estado": "activo",
+      "estado": "revisar",
       "verificado": "2026-09-30",
-      "origen": "semilla"
+      "origen": "semilla",
+      "nota_auditoria": "Enlace caído (timeout) el 2026-10-01"
     },
     {
       "id": "raspberry-projects",
@@ -137,7 +138,7 @@
       "bloom": "evaluar",
       "seguridad": "Proyectos de una fundación educativa; aptos para menores.",
       "estado": "activo",
-      "verificado": "2026-09-30",
+      "verificado": "2026-10-01",
       "origen": "semilla"
     },
     {
@@ -172,7 +173,7 @@
       "bloom": "aplicar",
       "seguridad": "No requiere cuenta para usar el simulador.",
       "estado": "activo",
-      "verificado": "2026-09-30",
+      "verificado": "2026-10-01",
       "origen": "semilla"
     },
     {
@@ -206,7 +207,7 @@
       "bloom": "crear",
       "seguridad": "Sin chat entre usuarios; compartir solo por enlace.",
       "estado": "activo",
-      "verificado": "2026-09-30",
+      "verificado": "2026-10-01",
       "origen": "semilla"
     },
     {
@@ -240,7 +241,7 @@
       "bloom": "crear",
       "seguridad": "Tiene comunidad pública con comentarios: usar cuentas de clase del docente y revisar la publicación.",
       "estado": "activo",
-      "verificado": "2026-09-30",
+      "verificado": "2026-10-01",
       "origen": "semilla"
     },
     {
@@ -274,7 +275,7 @@
       "bloom": "comprender",
       "seguridad": "No requiere cuenta.",
       "estado": "activo",
-      "verificado": "2026-09-30",
+      "verificado": "2026-10-01",
       "origen": "semilla"
     },
     {
@@ -307,7 +308,7 @@
       "bloom": "aplicar",
       "seguridad": "El modo clase permite unirse con código sin correo.",
       "estado": "activo",
-      "verificado": "2026-09-30",
+      "verificado": "2026-10-01",
       "origen": "semilla"
     },
     {
@@ -339,7 +340,7 @@
       "bloom": "aplicar",
       "seguridad": "Sin cuentas ni datos personales.",
       "estado": "activo",
-      "verificado": "2026-09-30",
+      "verificado": "2026-10-01",
       "origen": "semilla"
     },
     {
@@ -370,7 +371,7 @@
       "bloom": "aplicar",
       "seguridad": "El docente crea secciones con contraseñas de imagen para los más pequeños.",
       "estado": "activo",
-      "verificado": "2026-09-30",
+      "verificado": "2026-10-01",
       "origen": "semilla"
     },
     {
@@ -403,9 +404,10 @@
       "proyecto_institucional": "Ciudadano 2040",
       "bloom": "crear",
       "seguridad": "Requiere licencia institucional; entorno cerrado por el colegio.",
-      "estado": "activo",
+      "estado": "revisar",
       "verificado": "2026-09-30",
-      "origen": "semilla"
+      "origen": "semilla",
+      "nota_auditoria": "Enlace caído (timeout) el 2026-10-01"
     },
     {
       "id": "pblworks",
@@ -435,7 +437,7 @@
       "bloom": "crear",
       "seguridad": "Recurso para docentes.",
       "estado": "activo",
-      "verificado": "2026-09-30",
+      "verificado": "2026-10-01",
       "origen": "semilla"
     },
     {
@@ -466,7 +468,7 @@
       "bloom": "analizar",
       "seguridad": "Portal oficial del MEN.",
       "estado": "activo",
-      "verificado": "2026-09-30",
+      "verificado": "2026-10-01",
       "origen": "semilla"
     },
     {
@@ -498,7 +500,7 @@
       "bloom": "aplicar",
       "seguridad": "El docente puede crear la clase y asignar contenido.",
       "estado": "activo",
-      "verificado": "2026-09-30",
+      "verificado": "2026-10-01",
       "origen": "semilla"
     }
   ]
