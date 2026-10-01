@@ -116,23 +116,36 @@ async function claude({ system, user, herramientas, max_tokens = 4000 }) {
   throw new Error("La búsqueda no terminó en 4 vueltas");
 }
 
-async function enlaceVivo(url) {
+async function intentoEnlace(url, ms) {
   const ctrl = new AbortController();
-  const t = setTimeout(() => ctrl.abort(), 15000);
+  const t = setTimeout(() => ctrl.abort(), ms);
   try {
     const res = await fetch(url, {
       method: "GET", redirect: "follow", signal: ctrl.signal,
-      headers: { "user-agent": "Mozilla/5.0 (SABI CENTEC curador; +https://superacion.sabicentec.com)" },
+      headers: {
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml",
+        "accept-language": "es-CO,es;q=0.9,en;q=0.8",
+      },
     });
-    // 401/403/429: el sitio existe pero bloquea robots -> revisión manual, no rechazo.
-    if (res.status < 400) return { ok: true, estado: res.status };
-    if ([401, 403, 429].includes(res.status)) return { ok: true, manual: true, estado: res.status };
-    return { ok: false, estado: res.status };
+    return { estado: res.status };
   } catch (e) {
-    return { ok: false, estado: e.name === "AbortError" ? "timeout" : "sin respuesta" };
+    return { estado: e.name === "AbortError" ? "timeout" : "sin respuesta" };
   } finally {
     clearTimeout(t);
   }
+}
+
+// Solo se considera CAÍDO lo que de verdad desapareció (404 o 410, dos veces seguidas).
+// Un sitio lento, que bloquea robots o que falla un momento queda para revisión manual y SIGUE visible.
+async function enlaceVivo(url) {
+  let r = await intentoEnlace(url, 20000);
+  if (typeof r.estado === "number" && r.estado < 400) return { ok: true, estado: r.estado };
+  await new Promise((ok) => setTimeout(ok, 3000));
+  r = await intentoEnlace(url, 30000);
+  if (typeof r.estado === "number" && r.estado < 400) return { ok: true, estado: r.estado };
+  if (r.estado === 404 || r.estado === 410) return { ok: false, estado: r.estado };
+  return { ok: true, manual: true, estado: r.estado };
 }
 
 // ---------------------------------------------------------------------------
@@ -216,9 +229,11 @@ async function auditorTecnico(candidatos, catalogo) {
     if (!PROYECTOS.includes(c.proyecto_institucional ?? null)) c.proyecto_institucional = null;
 
     if (!motivo.length) {
-      const v = await enlaceVivo(c.url);
-      if (!v.ok) motivo.push(`el enlace no responde (${v.estado})`);
-      else if (v.manual) c._revisarManual = `el sitio bloquea revisiones automáticas (${v.estado}); abrirlo a mano antes de aprobar`;
+      // Para recursos NUEVOS se es estricto: si no responde, no entra (evita enlaces inventados).
+      const v = await intentoEnlace(c.url, 25000);
+      if (typeof v.estado === "number" && v.estado < 400) { /* vivo */ }
+      else if ([401, 403, 429].includes(v.estado)) c._revisarManual = `el sitio bloquea revisiones automáticas (${v.estado}); abrirlo a mano antes de aprobar`;
+      else motivo.push(`el enlace no responde (${v.estado})`);
     }
     (motivo.length ? rechazados : aprobados).push(motivo.length ? { ...c, motivo: motivo.join("; ") } : c);
     existentes.add(clave(c.url));
@@ -347,16 +362,19 @@ async function curar() {
 
 async function auditarEnlaces() {
   const catalogo = JSON.parse(await readFile(CATALOGO, "utf8"));
-  const caidos = [], recuperados = [];
+  const caidos = [], recuperados = [], manuales = [];
   for (const r of catalogo.recursos) {
     const v = await enlaceVivo(r.url);
     if (!v.ok && r.estado === "activo") { r.estado = "revisar"; r.nota_auditoria = `Enlace caído (${v.estado}) el ${HOY}`; caidos.push({ ...r, motivo: r.nota_auditoria }); }
     else if (v.ok && r.estado === "revisar") { r.estado = "activo"; delete r.nota_auditoria; recuperados.push(r); }
-    if (v.ok) r.verificado = HOY;
+    if (v.ok && v.manual) manuales.push({ ...r, motivo: `no respondió a tiempo (${v.estado}); sigue visible, conviene abrirlo a mano` });
+    else if (v.ok) r.verificado = HOY;
   }
   await guardar(catalogo, "enlaces", informe({
     titulo: "Auditoría mensual de enlaces", rechazados: caidos,
-    notas: [`Recuperados: ${recuperados.length}. Revisados: ${catalogo.recursos.length}.`,
+    notas: [
+      ...(manuales.length ? ["## Para revisar a mano (siguen visibles)", "", ...manuales.map((m) => `- **${m.titulo}** (${m.url}): ${m.motivo}`), ""] : []),
+      `Recuperados: ${recuperados.length}. Revisados: ${catalogo.recursos.length}.`,
       caidos.length ? "Los recursos caídos quedan ocultos en la página hasta que vuelvan a responder." : "Todos los enlaces activos responden."],
   }));
 }
