@@ -226,6 +226,21 @@
   .mapa span{background:#FBF8F1; border-color:#D9D2C3;}
   header .mono{font-family:'Public Sans',sans-serif; text-transform:none; letter-spacing:0; font-size:.85rem; color:#E9D9B4;}
   .misiones{grid-template-columns:repeat(auto-fit,minmax(190px,1fr));}
+
+  /* ---------- Herramientas didácticas ---------- */
+  .herramienta{margin:1em 0 .4em; padding:1em 1.2em; background:#FFFFFF; border:1px solid #D9D2C3; border-radius:6px;}
+  .herramienta svg{width:100%; height:auto; max-height:300px; display:block;}
+  .msg .opciones.seguridad{margin:.8em 0 0; max-width:none;}
+  .herramienta figcaption{font-size:.85em; color:#5B574F; margin-top:.4em; font-style:italic;}
+  .argumento label{display:block; font-family:'Public Sans',sans-serif; font-size:.78em; font-weight:600; color:#0B1F3F; margin:.8em 0 .25em;}
+  .argumento label:first-child{margin-top:0;}
+  .argumento textarea{width:100%; min-height:3.2em; resize:vertical; font:inherit; font-size:.95em; padding:.5em .7em; border:1px solid #D9D2C3; border-radius:6px; background:#FBF8F1; color:#1F1D1A;}
+  .argumento button{margin-top:.9em; background:#0B1F3F; color:#FBF8F1; border:none; border-radius:999px; padding:.6em 1.3em; font-family:'Public Sans',sans-serif; font-size:.85em; font-weight:600; cursor:pointer;}
+  .argumento button:disabled{opacity:.4; cursor:default;}
+  .plan-camino{font-family:'Public Sans',sans-serif; font-size:.72em; color:#8A857B; margin-top:.9em; display:flex; flex-wrap:wrap; gap:.35em 1.1em;}
+  .plan-camino span.hecho{color:#0B1F3F;}
+  .msg.tu{white-space:pre-wrap;}
+  .plan-camino span.actual{color:#FBF8F1; background:#0B1F3F; padding:.1em .6em; border-radius:999px;}
 </style>
 </head>
 <body>
@@ -415,6 +430,7 @@
       <p class="plan-titulo">Propósito de esta sesión</p>
       <p id="plan-proposito"></p>
       <p class="plan-detalle" id="plan-detalle"></p>
+      <p class="plan-camino" id="plan-camino" aria-label="Camino de la misión"></p>
       <p class="plan-avance" id="plan-avance"></p>
     </section>
     <div class="bienvenida">
@@ -602,6 +618,72 @@
     document.querySelectorAll('#materias .chip-m').forEach(x => x.setAttribute('aria-pressed', x === b));
   });
 
+
+  // ---------- Herramientas didácticas que SABI puede pedir ----------
+  const TINTA = '#1F1D1A', AZUL = '#0B1F3F', ORO = '#B8862B';
+  function dibujarHerramienta(tipo, args) {
+    try {
+      if (tipo === 'fraccion') return dibujarFraccion(args);
+      if (tipo === 'recta') return dibujarRecta(args);
+      if (tipo === 'barras') return dibujarBarras(args);
+      if (tipo === 'argumento') return `<form class="herramienta argumento" data-tipo="argumento">
+          <label>Mi idea</label><textarea name="idea" placeholder="Lo que yo pienso es…"></textarea>
+          <label>Mi razón</label><textarea name="razon" placeholder="Lo pienso porque…"></textarea>
+          <label>Mi evidencia</label><textarea name="evidencia" placeholder="Lo demuestra este dato, ejemplo o parte del texto…"></textarea>
+          <button type="submit">Enviar mi argumento</button></form>`;
+      if (tipo === 'seguridad') return `<div class="opciones seguridad">${['Estoy muy seguro', 'Estoy más o menos seguro', 'Estoy adivinando']
+          .map(t => `<button type="button" class="opcion" data-enviar="Sobre mi respuesta: ${t.toLowerCase()}.">${t}</button>`).join('')}</div>`;
+    } catch (e) { console.error('Herramienta no válida', tipo, args, e); }
+    return '';
+  }
+  function dibujarFraccion(args) {
+    const m = args.match(/(\d+)\s*\/\s*(\d+)/); if (!m) return '';
+    const a = +m[1], b = +m[2]; if (b < 1 || b > 12 || a > b * 3) return '';
+    const barras = Math.max(1, Math.ceil(a / b)), W = 600, H = 56, gap = 14;
+    let svg = `<svg viewBox="0 0 ${W} ${barras * (H + gap)}" role="img" aria-label="Fracción ${a} sobre ${b}">`;
+    for (let k = 0; k < barras; k++) for (let i = 0; i < b; i++) {
+      const lleno = k * b + i < a;
+      svg += `<rect x="${2 + i * (W - 4) / b}" y="${k * (H + gap) + 2}" width="${(W - 4) / b}" height="${H}" fill="${lleno ? AZUL : '#FFFFFF'}" stroke="${TINTA}" stroke-width="2"/>`;
+    }
+    return `<figure class="herramienta">${svg}</svg><figcaption>${a} de ${b} partes iguales: ${a}/${b}</figcaption></figure>`;
+  }
+  function dibujarRecta(args) {
+    const [mn, mx, pts = ''] = args.split(/\s+/);
+    const min = parseFloat(mn), max = parseFloat(mx); if (!(max > min) || max - min > 1000) return '';
+    const puntos = pts.split(',').map(x => parseFloat(x.replace(/[^\d.-]/g, ''))).filter(x => !isNaN(x) && x >= min && x <= max).slice(0, 6);
+    const W = 640, X = v => 30 + (v - min) / (max - min) * (W - 60), paso = Math.max(1, Math.ceil((max - min) / 20));
+    let svg = `<svg viewBox="0 0 ${W} 90" role="img" aria-label="Recta numérica de ${min} a ${max}"><line x1="20" y1="55" x2="${W - 20}" y2="55" stroke="${TINTA}" stroke-width="2"/>`;
+    for (let v = Math.ceil(min); v <= max; v += paso) svg += `<line x1="${X(v)}" y1="48" x2="${X(v)}" y2="62" stroke="${TINTA}" stroke-width="1.5"/><text x="${X(v)}" y="80" font-size="13" text-anchor="middle" fill="${TINTA}" font-family="Public Sans,sans-serif">${v}</text>`;
+    puntos.forEach(v => { svg += `<circle cx="${X(v)}" cy="55" r="8" fill="${ORO}" stroke="${TINTA}" stroke-width="1.5"/><text x="${X(v)}" y="32" font-size="15" font-weight="700" text-anchor="middle" fill="${AZUL}" font-family="Public Sans,sans-serif">${v}</text>`; });
+    return `<figure class="herramienta">${svg}</svg></figure>`;
+  }
+  function dibujarBarras(args) {
+    const datos = args.split(/[,;]\s*(?=[^,;:]+:)/).map(par => { const i = par.lastIndexOf(':'); return [par.slice(0, i).trim(), parseFloat(par.slice(i + 1).replace(',', '.'))]; })
+      .filter(([e, v]) => e && !isNaN(v) && v >= 0).slice(0, 8);
+    if (!datos.length) return '';
+    const W = 640, H = 260, base = 220, maxV = Math.max(...datos.map(d => d[1])) || 1, ancho = (W - 40) / datos.length;
+    let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Gráfica de barras"><line x1="20" y1="${base}" x2="${W - 20}" y2="${base}" stroke="${TINTA}" stroke-width="2"/>`;
+    datos.forEach(([e, v], i) => {
+      const h = v / maxV * 170, x = 20 + i * ancho + ancho * .18, w = ancho * .64;
+      svg += `<rect x="${x}" y="${base - h}" width="${w}" height="${h}" fill="${i % 2 ? ORO : AZUL}"/><text x="${x + w / 2}" y="${base - h - 8}" font-size="14" font-weight="700" text-anchor="middle" fill="${TINTA}" font-family="Public Sans,sans-serif">${v}</text><text x="${x + w / 2}" y="${base + 22}" font-size="13" text-anchor="middle" fill="${TINTA}" font-family="Public Sans,sans-serif">${esc(e).slice(0, 14)}</text>`;
+    });
+    return `<figure class="herramienta">${svg}</svg></figure>`;
+  }
+  // Envíos desde las herramientas (argumento y seguridad)
+  document.getElementById('hilo').addEventListener('submit', e => {
+    const f = e.target.closest('form.argumento'); if (!f) return;
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(f));
+    if (!d.idea.trim()) { f.idea.focus(); return; }
+    f.querySelectorAll('textarea, button').forEach(x => x.disabled = true);
+    enviarTexto(`Mi idea: ${d.idea.trim()}\nMi razón: ${d.razon.trim() || '(no la escribí)'}\nMi evidencia: ${d.evidencia.trim() || '(no la escribí)'}`);
+  });
+  document.getElementById('hilo').addEventListener('click', e => {
+    const b = e.target.closest('.seguridad .opcion'); if (!b || b.disabled) return;
+    b.closest('.seguridad').querySelectorAll('.opcion').forEach(x => x.disabled = true);
+    enviarTexto(b.dataset.enviar);
+  });
+
   // ---------- Plan de sesión (agente Planificador) y avance (agente Auditor) ----------
   function pintarPlan() {
     const plan = perfil?.profile?.plan, caja = document.getElementById('plan');
@@ -615,13 +697,22 @@
     document.getElementById('plan-detalle').textContent = partes.join('. ') + (partes.length ? '.' : '');
     pintarAvance();
   }
+  const ETAPAS = [['gancho', 'Gancho'], ['prediccion', 'Predicción'], ['exploracion', 'Exploración'], ['concepto', 'Concepto'], ['reto', 'Reto'], ['cierre', 'Cierre']];
+  const ETAPA_DE = { gancho: 0, prediccion: 1, exploracion: 2, ejemplo: 3, practica: 3, concepto: 3, reto: 4, cierre: 5 };
+  function pintarCamino() {
+    const e = perfil?.profile?.estado, actual = e ? (ETAPA_DE[String(e.paso || '').toLowerCase()] ?? 0) : 0;
+    document.getElementById('plan-camino').innerHTML = ETAPAS.map(([, n], i) => `<span class="${i < actual ? 'hecho' : i === actual ? 'actual' : ''}">${n}</span>`).join('');
+  }
   function pintarAvance() {
+    pintarCamino();
     const e = perfil?.profile?.estado, plan = perfil?.profile?.plan, el = document.getElementById('plan-avance');
     if (!e || !plan) { el.textContent = ''; return; }
+    const desempeno = /^(bajo|b[aá]sico|alto|superior)$/i.test(String(e.desempeno || '').trim()) ? limpiar(e.desempeno) : '';
     const meta = plan.escalera?.[plan.escalera.length - 1];
     el.textContent = e.logro === 'alcanzado'
       ? `Alcanzaste la meta de hoy${meta ? ' (' + limpiar(meta) + ')' : ''}.`
       : `Vas en el nivel ${limpiar(e.nivel_actual || 'inicial')}${meta ? '. La meta de hoy es ' + limpiar(meta) : ''}.`;
+    if (desempeno) el.textContent += ` Desempeño de hoy en este aprendizaje: ${desempeno}.${e.para_subir && !/superior/i.test(desempeno) ? ' Para subir: ' + limpiar(e.para_subir) : ''}`;
   }
 
   async function arrancarMision(mision, pendiente) {
@@ -720,6 +811,8 @@
       if (!l) { lista = null; continue; }
       if (/^»\s*/.test(l)) { opciones.push(l.replace(/^»\s*/, '')); continue; }
       if (/^✦\s*/.test(l)) { descubrimientos.push(l.replace(/^✦\s*/, '')); continue; }
+      const herr = l.match(/^\[\[\s*(\w+)\s*(.*?)\s*\]\]$/);
+      if (herr) { lista = null; bloques.push({ herramienta: herr[1].toLowerCase(), args: herr[2] }); continue; }
       if (/^⟶\s*/.test(l)) { proxima = l.replace(/^⟶\s*(Pr[oó]xima vez:\s*)?/i, ''); continue; }
       if (/^([-•*]|\d+[.)])\s+/.test(l)) {
         if (!lista) { lista = []; bloques.push({ ul: lista }); }
@@ -729,7 +822,7 @@
     }
     const div = document.createElement('div');
     div.className = 'msg sabi';
-    div.innerHTML = bloques.map(b => b.p ? `<p>${enLinea(b.p)}</p>` : `<ol>${b.ul.map(x => `<li>${enLinea(x)}</li>`).join('')}</ol>`).join('')
+    div.innerHTML = bloques.map(b => b.p ? `<p>${enLinea(b.p)}</p>` : b.herramienta ? dibujarHerramienta(b.herramienta, b.args) : `<ol>${b.ul.map(x => `<li>${enLinea(x)}</li>`).join('')}</ol>`).join('')
       + descubrimientos.map(d => `<div class="descubri">${enLinea(d.replace(/^Descubr[ií]:\s*/i, 'Descubriste '))}</div>`).join('')
       + (proxima ? `<div class="proxima">Para la próxima vez: ${enLinea(proxima)}</div>` : '');
     hilo.appendChild(div);
