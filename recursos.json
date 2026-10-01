@@ -1,0 +1,505 @@
+{
+  "version": 1,
+  "actualizado": "2026-09-30",
+  "recursos": [
+    {
+      "id": "wokwi",
+      "titulo": "Wokwi",
+      "url": "https://wokwi.com",
+      "tipo": [
+        "arduino",
+        "raspberry",
+        "robotica",
+        "simulacion",
+        "steam"
+      ],
+      "areas": [
+        "Tecnología",
+        "Física",
+        "Matemáticas"
+      ],
+      "grados": {
+        "desde": 7,
+        "hasta": 11
+      },
+      "costo": "gratis",
+      "hardware": "ninguno",
+      "idioma": "inglés",
+      "descripcion": "Simulador en el navegador de Arduino, ESP32 y Raspberry Pi Pico. Permite programar sensores, LEDs y motores sin comprar hardware.",
+      "reto": {
+        "titulo": "Semáforo inteligente para la salida del colegio",
+        "problema": "A la hora de salida se congestiona la calle frente al colegio y los estudiantes cruzan con riesgo.",
+        "producto": "Prototipo simulado de semáforo peatonal con botón y temporizador, más una propuesta escrita a la comunidad."
+      },
+      "proyecto_institucional": "Ciudadano 2040",
+      "bloom": "crear",
+      "seguridad": "No requiere datos personales para simular; usar cuenta del docente para guardar proyectos.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    },
+    {
+      "id": "tinkercad",
+      "titulo": "Tinkercad Circuits",
+      "url": "https://www.tinkercad.com",
+      "tipo": [
+        "arduino",
+        "simulacion",
+        "steam",
+        "robotica"
+      ],
+      "areas": [
+        "Tecnología",
+        "Física"
+      ],
+      "grados": {
+        "desde": 6,
+        "hasta": 11
+      },
+      "costo": "gratis",
+      "hardware": "ninguno",
+      "idioma": "español",
+      "descripcion": "Entorno de Autodesk para diseño 3D y circuitos electrónicos con Arduino simulado. Tiene modo de clases para que el docente cree cuentas sin correo de estudiantes.",
+      "reto": {
+        "titulo": "Alarma de nivel de agua para el tanque de la casa",
+        "problema": "En el barrio hay cortes de agua y muchas familias no saben cuándo el tanque se está vaciando.",
+        "producto": "Circuito simulado con sensor y buzzer, y un afiche que explique cómo funciona."
+      },
+      "proyecto_institucional": "Centec Verde",
+      "bloom": "aplicar",
+      "seguridad": "Usar el modo Clases para que los estudiantes no registren correos personales.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    },
+    {
+      "id": "arduino-hub",
+      "titulo": "Arduino Project Hub",
+      "url": "https://projecthub.arduino.cc",
+      "tipo": [
+        "arduino",
+        "robotica",
+        "steam",
+        "abp"
+      ],
+      "areas": [
+        "Tecnología",
+        "Física"
+      ],
+      "grados": {
+        "desde": 8,
+        "hasta": 11
+      },
+      "costo": "gratis",
+      "hardware": "requerido",
+      "idioma": "inglés",
+      "descripcion": "Biblioteca de proyectos reales con Arduino documentados por la comunidad: código, lista de materiales y pasos.",
+      "reto": {
+        "titulo": "Detector de ruido para el salón",
+        "problema": "El ruido en el aula dificulta la concentración y nadie lo mide.",
+        "producto": "Medidor de decibeles con LED de colores instalado en el salón y registro de datos de una semana."
+      },
+      "proyecto_institucional": "Guardianes Digitales",
+      "bloom": "analizar",
+      "seguridad": "Contenido de comunidad abierta: el docente selecciona el proyecto antes de compartirlo.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    },
+    {
+      "id": "raspberry-projects",
+      "titulo": "Proyectos Raspberry Pi Foundation",
+      "url": "https://projects.raspberrypi.org/es-LA",
+      "tipo": [
+        "raspberry",
+        "programacion",
+        "robotica",
+        "steam"
+      ],
+      "areas": [
+        "Tecnología",
+        "Ciencias Naturales"
+      ],
+      "grados": {
+        "desde": 5,
+        "hasta": 11
+      },
+      "costo": "gratis",
+      "hardware": "opcional",
+      "idioma": "español",
+      "descripcion": "Cientos de proyectos guiados paso a paso de programación, electrónica y computación física, muchos sin hardware.",
+      "reto": {
+        "titulo": "Estación meteorológica Centec Verde",
+        "problema": "No sabemos cuánto calor hace realmente en el patio a mediodía ni cómo afecta a los estudiantes.",
+        "producto": "Registro de temperatura durante dos semanas, gráfica y recomendación de horarios de recreo."
+      },
+      "proyecto_institucional": "Centec Verde",
+      "bloom": "evaluar",
+      "seguridad": "Proyectos de una fundación educativa; aptos para menores.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    },
+    {
+      "id": "microbit",
+      "titulo": "micro:bit MakeCode",
+      "url": "https://makecode.microbit.org",
+      "tipo": [
+        "programacion",
+        "robotica",
+        "simulacion",
+        "steam"
+      ],
+      "areas": [
+        "Tecnología",
+        "Matemáticas",
+        "Educación Física"
+      ],
+      "grados": {
+        "desde": 3,
+        "hasta": 9
+      },
+      "costo": "gratis",
+      "hardware": "opcional",
+      "idioma": "español",
+      "descripcion": "Programación por bloques o Python para la placa micro:bit, con simulador incluido que funciona sin la placa.",
+      "reto": {
+        "titulo": "Podómetro del recreo",
+        "problema": "Queremos saber si nos movemos lo suficiente durante el día escolar.",
+        "producto": "Contador de pasos simulado, tabla de datos del curso y meta grupal de actividad física."
+      },
+      "proyecto_institucional": null,
+      "bloom": "aplicar",
+      "seguridad": "No requiere cuenta para usar el simulador.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    },
+    {
+      "id": "makecode-arcade",
+      "titulo": "MakeCode Arcade",
+      "url": "https://arcade.makecode.com",
+      "tipo": [
+        "juego",
+        "programacion",
+        "steam"
+      ],
+      "areas": [
+        "Tecnología",
+        "Artes",
+        "Ciencias Naturales"
+      ],
+      "grados": {
+        "desde": 4,
+        "hasta": 11
+      },
+      "costo": "gratis",
+      "hardware": "ninguno",
+      "idioma": "español",
+      "descripcion": "Crea videojuegos retro con bloques o JavaScript y juégalos en el navegador. Enseña lógica, variables y diseño de reglas.",
+      "reto": {
+        "titulo": "Videojuego del reciclaje en la Comuna 15",
+        "problema": "La basura mal separada termina en los caños del barrio.",
+        "producto": "Videojuego donde se clasifican residuos, probado por estudiantes de grados menores."
+      },
+      "proyecto_institucional": "Centec Verde",
+      "bloom": "crear",
+      "seguridad": "Sin chat entre usuarios; compartir solo por enlace.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    },
+    {
+      "id": "scratch",
+      "titulo": "Scratch",
+      "url": "https://scratch.mit.edu",
+      "tipo": [
+        "programacion",
+        "juego",
+        "steam"
+      ],
+      "areas": [
+        "Tecnología",
+        "Lenguaje",
+        "Artes"
+      ],
+      "grados": {
+        "desde": 2,
+        "hasta": 8
+      },
+      "costo": "gratis",
+      "hardware": "ninguno",
+      "idioma": "español",
+      "descripcion": "Lenguaje visual del MIT para crear historias, animaciones y juegos interactivos.",
+      "reto": {
+        "titulo": "Historia interactiva sobre un conflicto de convivencia",
+        "problema": "Los conflictos en el descanso se repiten y pocos saben cómo mediarlos.",
+        "producto": "Animación con finales alternativos según la decisión del personaje."
+      },
+      "proyecto_institucional": null,
+      "bloom": "crear",
+      "seguridad": "Tiene comunidad pública con comentarios: usar cuentas de clase del docente y revisar la publicación.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    },
+    {
+      "id": "phet",
+      "titulo": "Simulaciones PhET",
+      "url": "https://phet.colorado.edu/es/",
+      "tipo": [
+        "simulacion",
+        "steam"
+      ],
+      "areas": [
+        "Física",
+        "Química",
+        "Matemáticas",
+        "Biología"
+      ],
+      "grados": {
+        "desde": 4,
+        "hasta": 11
+      },
+      "costo": "gratis",
+      "hardware": "ninguno",
+      "idioma": "español",
+      "descripcion": "Simulaciones interactivas de la Universidad de Colorado para física, química, biología y matemáticas.",
+      "reto": {
+        "titulo": "¿Por qué se dispara el breaker de la casa?",
+        "problema": "Cuando se conectan varios aparatos a la vez se va la luz en algunas casas.",
+        "producto": "Explicación con la simulación de circuitos y una guía para la familia sobre consumo seguro."
+      },
+      "proyecto_institucional": null,
+      "bloom": "comprender",
+      "seguridad": "No requiere cuenta.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    },
+    {
+      "id": "geogebra",
+      "titulo": "GeoGebra",
+      "url": "https://www.geogebra.org",
+      "tipo": [
+        "simulacion",
+        "steam"
+      ],
+      "areas": [
+        "Matemáticas",
+        "Trigonometría",
+        "Cálculo"
+      ],
+      "grados": {
+        "desde": 5,
+        "hasta": 11
+      },
+      "costo": "gratis",
+      "hardware": "ninguno",
+      "idioma": "español",
+      "descripcion": "Geometría, álgebra, gráficas y cálculo dinámicos en una sola herramienta, con actividades listas para clase.",
+      "reto": {
+        "titulo": "Diseño de la huerta escolar",
+        "problema": "Tenemos un espacio irregular en el colegio y queremos aprovecharlo al máximo para sembrar.",
+        "producto": "Plano a escala con áreas calculadas y propuesta de distribución de cultivos."
+      },
+      "proyecto_institucional": "Centec Verde",
+      "bloom": "aplicar",
+      "seguridad": "El modo clase permite unirse con código sin correo.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    },
+    {
+      "id": "blockly-games",
+      "titulo": "Blockly Games",
+      "url": "https://blockly.games/?lang=es",
+      "tipo": [
+        "juego",
+        "programacion"
+      ],
+      "areas": [
+        "Tecnología",
+        "Matemáticas"
+      ],
+      "grados": {
+        "desde": 3,
+        "hasta": 7
+      },
+      "costo": "gratis",
+      "hardware": "ninguno",
+      "idioma": "español",
+      "descripcion": "Serie de juegos que enseñan programación paso a paso: laberintos, tortuga, música y más.",
+      "reto": {
+        "titulo": "Ruta segura de la casa al colegio",
+        "problema": "Algunos estudiantes caminan por rutas con riesgo sin pensar en alternativas.",
+        "producto": "Laberinto programado que represente la ruta y una explicación de por qué es la más segura."
+      },
+      "proyecto_institucional": "Ciudadano 2040",
+      "bloom": "aplicar",
+      "seguridad": "Sin cuentas ni datos personales.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    },
+    {
+      "id": "code-org",
+      "titulo": "Code.org",
+      "url": "https://code.org",
+      "tipo": [
+        "programacion",
+        "juego"
+      ],
+      "areas": [
+        "Tecnología"
+      ],
+      "grados": {
+        "desde": 1,
+        "hasta": 11
+      },
+      "costo": "gratis",
+      "hardware": "ninguno",
+      "idioma": "español",
+      "descripcion": "Cursos de ciencias de la computación por grados, incluida la Hora del Código.",
+      "reto": {
+        "titulo": "Hora del Código en familia",
+        "problema": "Las familias no entienden qué aprenden sus hijos con la tecnología.",
+        "producto": "Jornada donde los estudiantes enseñan una actividad a sus acudientes."
+      },
+      "proyecto_institucional": null,
+      "bloom": "aplicar",
+      "seguridad": "El docente crea secciones con contraseñas de imagen para los más pequeños.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    },
+    {
+      "id": "minecraft-education",
+      "titulo": "Minecraft Education",
+      "url": "https://education.minecraft.net",
+      "tipo": [
+        "juego",
+        "steam",
+        "abp"
+      ],
+      "areas": [
+        "Ciencias Sociales",
+        "Matemáticas",
+        "Tecnología"
+      ],
+      "grados": {
+        "desde": 3,
+        "hasta": 11
+      },
+      "costo": "pago",
+      "hardware": "ninguno",
+      "idioma": "español",
+      "descripcion": "Versión educativa de Minecraft con lecciones de ciencias, matemáticas, ciudadanía y programación.",
+      "reto": {
+        "titulo": "Rediseñar un parque del barrio",
+        "problema": "Los parques cercanos están descuidados y los niños no tienen dónde jugar seguros.",
+        "producto": "Maqueta del parque en el mundo de Minecraft y carta a la Junta de Acción Comunal."
+      },
+      "proyecto_institucional": "Ciudadano 2040",
+      "bloom": "crear",
+      "seguridad": "Requiere licencia institucional; entorno cerrado por el colegio.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    },
+    {
+      "id": "pblworks",
+      "titulo": "PBLWorks (Gold Standard PBL)",
+      "url": "https://www.pblworks.org",
+      "tipo": [
+        "abp",
+        "docente"
+      ],
+      "areas": [
+        "Todas"
+      ],
+      "grados": {
+        "desde": 0,
+        "hasta": 11
+      },
+      "costo": "freemium",
+      "hardware": "ninguno",
+      "idioma": "inglés",
+      "descripcion": "Marco y recursos para diseñar proyectos de Aprendizaje Basado en Proyectos con estándares de calidad.",
+      "reto": {
+        "titulo": "Diseñar un proyecto de bloque con pregunta motriz",
+        "problema": "Los proyectos de aula terminan siendo tareas largas sin problema real ni público.",
+        "producto": "Plantilla de proyecto con pregunta motriz, producto público y rúbrica."
+      },
+      "proyecto_institucional": null,
+      "bloom": "crear",
+      "seguridad": "Recurso para docentes.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    },
+    {
+      "id": "colombia-aprende",
+      "titulo": "Colombia Aprende",
+      "url": "https://colombiaaprende.edu.co",
+      "tipo": [
+        "docente",
+        "abp"
+      ],
+      "areas": [
+        "Todas"
+      ],
+      "grados": {
+        "desde": 0,
+        "hasta": 11
+      },
+      "costo": "gratis",
+      "hardware": "ninguno",
+      "idioma": "español",
+      "descripcion": "Portal del Ministerio de Educación Nacional con contenidos, guías y recursos alineados al currículo colombiano.",
+      "reto": {
+        "titulo": "Conectar el proyecto con los DBA",
+        "problema": "Los proyectos STEAM a veces se desconectan de lo que el MEN evalúa.",
+        "producto": "Matriz que cruza el proyecto con los DBA del grado."
+      },
+      "proyecto_institucional": null,
+      "bloom": "analizar",
+      "seguridad": "Portal oficial del MEN.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    },
+    {
+      "id": "khan",
+      "titulo": "Khan Academy en español",
+      "url": "https://es.khanacademy.org",
+      "tipo": [
+        "simulacion"
+      ],
+      "areas": [
+        "Matemáticas",
+        "Ciencias Naturales",
+        "Economía"
+      ],
+      "grados": {
+        "desde": 1,
+        "hasta": 11
+      },
+      "costo": "gratis",
+      "hardware": "ninguno",
+      "idioma": "español",
+      "descripcion": "Práctica por dominio con retroalimentación inmediata, coherente con el aprendizaje para el dominio de Bloom.",
+      "reto": {
+        "titulo": "Presupuesto familiar del mes",
+        "problema": "Muchas familias no planean sus gastos y se endeudan.",
+        "producto": "Hoja de presupuesto con porcentajes y una recomendación de ahorro."
+      },
+      "proyecto_institucional": null,
+      "bloom": "aplicar",
+      "seguridad": "El docente puede crear la clase y asignar contenido.",
+      "estado": "activo",
+      "verificado": "2026-09-30",
+      "origen": "semilla"
+    }
+  ]
+}
