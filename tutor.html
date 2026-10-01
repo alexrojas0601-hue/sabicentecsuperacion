@@ -273,6 +273,10 @@
   .pendiente .txt{font-size:clamp(1.1rem, .95rem + .5vw, 1.35rem);}
   .pendiente button{font-size:1.1rem; padding:.7em 1.3em;}
   #btn-editar-intereses{font-size:1.05rem;}
+  .leyendo{background:#FFF1BF; box-shadow:0 0 0 .35em #FFF1BF; border-radius:3px; transition:background .3s;}
+  .herramienta.leyendo{box-shadow:0 0 0 3px #E8A33A;}
+  .leer{font-size:.8em !important;}
+  #btn-voz-auto[aria-pressed="true"]{background:#F5A623; color:#0B1F3F; border-color:#F5A623;}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
@@ -287,6 +291,7 @@
     <span class="mono" id="subtitulo-header">Colegio CENTEC</span>
   </div>
   <button class="btn-bitacora" id="btn-bitacora" style="display:none;">Mi bitácora</button>
+  <button class="cambiar-rol" id="btn-voz-auto" style="display:none;" title="SABI lee en voz alta cada respuesta">Voz: apagada</button>
   <button class="cambiar-rol" id="btn-cambiar-mision" style="display:none;">Otra misión</button>
   <button class="cambiar-rol" id="btn-cambiar-rol" style="display:none;">Cambiar de perfil</button>
   <a class="volver" href="index.html">Volver al sitio</a>
@@ -612,6 +617,7 @@
     if (!esEst) document.getElementById('plan').hidden = true;
     document.getElementById('btn-bitacora').style.display = esEst ? 'inline-block' : 'none';
     document.getElementById('btn-cambiar-mision').style.display = esEst ? 'inline-block' : 'none';
+    pintarBotonVoz();
     mostrarPantalla('chat');
   }
 
@@ -886,7 +892,7 @@
   function dibujarVoz(tipo, args) {
     const [lg, ...r] = args.split('|'); const frase = limpiar(r.join('|')); if (!frase) return '';
     const codigo = lang(lg);
-    return `<div class="herramienta voz" data-tipo="${tipo}" data-lang="${codigo}" data-frase="${esc(frase)}">
+    return `<div class="herramienta voz" data-seg data-tipo="${tipo}" data-lang="${codigo}" data-frase="${esc(frase)}">
       <p class="frase">${esc(frase)}</p>
       <div class="botones">
         <button type="button" data-accion="oir">Escuchar</button>
@@ -898,7 +904,7 @@
   }
   document.getElementById('hilo').addEventListener('click', e => {
     const leer = e.target.closest('.leer');
-    if (leer) { hablar(leer.dataset.texto, 'es-CO', false, leer); return; }
+    if (leer) { asegurarAudio(); leerRespuesta(leer.closest('.msg')); return; }
     const b = e.target.closest('.voz button'); if (!b) return;
     const caja = b.closest('.voz'), codigo = caja.dataset.lang, frase = caja.dataset.frase;
     if (b.dataset.accion === 'oir') return hablar(frase, codigo, false, b);
@@ -933,6 +939,112 @@
       btnHablar.classList.remove('grabando'); btnHablar.textContent = 'Hablar';
       if (dicho) { input.value = (input.value ? input.value + ' ' : '') + dicho; input.dispatchEvent(new Event('input')); input.focus(); }
     }, () => { btnHablar.classList.add('grabando'); btnHablar.textContent = 'Escuchando…'; });
+  });
+
+
+  // ---------- Respuesta escrita y oral: lectura guiada ----------
+  // SABI lee en voz alta su respuesta y resalta el párrafo que va leyendo, para que el estudiante
+  // siga la lectura con los ojos. Español con voz en español; frases en inglés u otro idioma con su voz.
+  const EN = new Set('the and is are you your to of in it i my what how can please do does this that with for have has was were will would could should we they he she his her our their from at on be not no yes there here when where why who which an'.split(' '));
+  const ES = new Set('el la los las de del que y en es un una por para con tu mi como qué cómo cuál no se lo al su sus pero más muy este esta eso hoy también'.split(' '));
+  function idiomaDe(t) {
+    if ((t.match(/[\u4e00-\u9fff]/g) || []).length > t.length * 0.3) return 'zh-CN';
+    const w = t.toLowerCase().normalize('NFC').match(/[a-záéíóúñü']+/g) || [];
+    let en = 0, es = 0; w.forEach(x => { if (EN.has(x)) en++; if (ES.has(x)) es++; });
+    return en >= 2 && en > es ? 'en-US' : 'es-CO';
+  }
+  function paraVoz(t) {
+    return String(t).replace(/\\[()\[\]]/g, '').replace(/\\frac\{([^}]*)\}\{([^}]*)\}/g, '$1 sobre $2')
+      .replace(/\\([a-zA-Z]+)/g, '$1 ').replace(/[{}^_]/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+  function segmentosDe(div) {
+    const segs = [];
+    div.querySelectorAll('[data-seg]').forEach(el => {
+      if (el.classList.contains('voz')) { segs.push({ el, texto: el.dataset.frase, lang: el.dataset.lang }); return; }
+      const texto = paraVoz(el.textContent);
+      if (!texto) return;
+      // Las frases entre comillas pueden estar en otro idioma: cada parte con su voz.
+      texto.split(/("[^"]{3,}"|“[^”]{3,}”)/).filter(x => x.trim()).forEach(parte => {
+        const limpio = parte.replace(/["“”]/g, '').trim();
+        if (limpio) segs.push({ el, texto: limpio, lang: idiomaDe(limpio) });
+      });
+    });
+    return segs;
+  }
+  let lecturaId = 0;
+  function quitarResaltado() { document.querySelectorAll('.leyendo').forEach(x => x.classList.remove('leyendo')); }
+  async function leerRespuesta(div) {
+    if (!div) return;
+    const id = ++lecturaId;
+    detenerVoz(); quitarResaltado();
+    const segs = segmentosDe(div); if (!segs.length) return;
+    const btn = div.querySelector('.leer');
+    if (btn) btn.textContent = 'Detener la lectura';
+    const ctx = asegurarAudio();
+    // 1. Voz del servidor (clara y fuerte) con resaltado por párrafo
+    if (ctx && vozServidor) {
+      try {
+        let t0 = ctx.currentTime + .1;
+        const comp = ctx.createDynamicsCompressor(); comp.threshold.value = -24; comp.ratio.value = 6;
+        const gan = ctx.createGain(); gan.gain.value = GANANCIA; comp.connect(gan); gan.connect(ctx.destination);
+        for (const sg of segs) {
+          const lg = MELO[sg.lang.slice(0, 2)]; if (!lg) throw new Error('idioma sin voz de servidor');
+          for (const tr of trozos(sg.texto)) {
+            const buf = await audioServidor(tr, lg);
+            if (id !== lecturaId) return;
+            const src = ctx.createBufferSource(); src.buffer = buf; src.playbackRate.value = sg.lang.startsWith('es') ? 1 : .92;
+            src.connect(comp);
+            const inicio = Math.max(t0, ctx.currentTime + .05);
+            src.start(inicio); fuentes.push(src);
+            setTimeout(() => { if (id === lecturaId) { quitarResaltado(); sg.el.classList.add('leyendo'); } }, (inicio - ctx.currentTime) * 1000);
+            t0 = inicio + buf.duration / src.playbackRate.value + .2;
+          }
+        }
+        setTimeout(() => { if (id === lecturaId) { quitarResaltado(); if (btn) btn.textContent = 'Escuchar en voz alta'; } }, (t0 - ctx.currentTime) * 1000);
+        return;
+      } catch (e) { if (id !== lecturaId) return; detenerVoz(); console.warn('Lectura con voz del navegador', e); }
+    }
+    // 2. Respaldo: voz del navegador, con resaltado por párrafo
+    if (!puedeHablar) return;
+    speechSynthesis.cancel();
+    segs.forEach((sg, k) => {
+      const u = new SpeechSynthesisUtterance(sg.texto);
+      u.lang = sg.lang; u.rate = sg.lang.startsWith('es') ? .95 : .85; u.volume = 1;
+      const voces = speechSynthesis.getVoices().filter(v => v.lang.replace('_', '-').startsWith(sg.lang.slice(0, 2)));
+      const v = voces.sort((a, b) => (/natural|neural|enhanced|premium|google|siri/i.test(b.name) ? 1 : 0) - (/natural|neural|enhanced|premium|google|siri/i.test(a.name) ? 1 : 0))[0];
+      if (v) u.voice = v;
+      u.onstart = () => { if (id === lecturaId) { quitarResaltado(); sg.el.classList.add('leyendo'); } };
+      if (k === segs.length - 1) u.onend = () => { if (id === lecturaId) { quitarResaltado(); if (btn) btn.textContent = 'Escuchar en voz alta'; } };
+      speechSynthesis.speak(u);
+    });
+  }
+  // El botón alterna leer / detener
+  document.getElementById('hilo').addEventListener('click', e => {
+    const b = e.target.closest('.leer'); if (!b || b.textContent !== 'Detener la lectura') return;
+    e.stopImmediatePropagation(); lecturaId++; detenerVoz(); quitarResaltado(); b.textContent = 'Escuchar en voz alta';
+  }, true);
+
+  // Respuesta con voz automática: encendida por defecto en idiomas y de Transición a 3°; el estudiante decide.
+  function claveVoz() { return 'sabi_voz_auto:' + (perfil?.profile?.grade || '') + ':' + (perfil?.profile?.name || '').toLowerCase(); }
+  function vozAutomatica() {
+    if (perfil?.role !== 'estudiante') return false;
+    const guardado = localStorage.getItem(claveVoz());
+    if (guardado) return guardado === 'si';
+    const idioma = /ingl|mandar|chino|franc|portug/i.test(perfil.profile.materia || '');
+    return idioma || NIVEL(perfil.profile.grade || '') <= 3;
+  }
+  function pintarBotonVoz() {
+    const b = document.getElementById('btn-voz-auto'); if (!b) return;
+    b.style.display = perfil?.role === 'estudiante' ? 'inline-block' : 'none';
+    b.textContent = vozAutomatica() ? 'Voz: encendida' : 'Voz: apagada';
+    b.setAttribute('aria-pressed', String(vozAutomatica()));
+  }
+  document.getElementById('btn-voz-auto').addEventListener('click', () => {
+    asegurarAudio();
+    const nuevo = !vozAutomatica();
+    try { localStorage.setItem(claveVoz(), nuevo ? 'si' : 'no'); } catch {}
+    if (!nuevo) { lecturaId++; detenerVoz(); quitarResaltado(); }
+    pintarBotonVoz();
   });
 
   // ---------- Plan de sesión (agente Planificador) y avance (agente Auditor) ----------
@@ -1093,18 +1205,15 @@
     }
     const div = document.createElement('div');
     div.className = 'msg sabi';
-    div.innerHTML = bloques.map(b => b.p ? `<p>${enLinea(b.p)}</p>` : b.herramienta ? dibujarHerramienta(b.herramienta, b.args) : `<ol>${b.ul.map(x => `<li>${enLinea(x)}</li>`).join('')}</ol>`).join('')
+    div.innerHTML = bloques.map(b => b.p ? `<p data-seg>${enLinea(b.p)}</p>` : b.herramienta ? dibujarHerramienta(b.herramienta, b.args) : `<ol>${b.ul.map(x => `<li data-seg>${enLinea(x)}</li>`).join('')}</ol>`).join('')
       + descubrimientos.map(d => `<div class="descubri">${enLinea(d.replace(/^Descubr[ií]:\s*/i, 'Descubriste '))}</div>`).join('')
       + (proxima ? `<div class="proxima">Para la próxima vez: ${enLinea(proxima)}</div>` : '');
-    if (puedeHablar) {
-      const textoLeer = bloques.filter(b => b.p || b.ul).map(b => b.p ? limpiar(b.p) : b.ul.map(limpiar).join('. ')).join(' ');
-      const paraVoz = textoLeer.replace(/\\[()\[\]]/g, '').replace(/\\frac\{([^}]*)\}\{([^}]*)\}/g, '$1 sobre $2').replace(/\\([a-zA-Z]+)/g, '$1 ').replace(/[{}^_]/g, ' ');
-      if (textoLeer) div.insertAdjacentHTML('beforeend', `<button type="button" class="leer" data-texto="${esc(paraVoz)}">Escuchar en voz alta</button>`);
-    }
+    div.insertAdjacentHTML('beforeend', '<button type="button" class="leer">Escuchar en voz alta</button>');
     hilo.appendChild(div);
     if (window.renderMathInElement) {
       try { renderMathInElement(div, { delimiters: [{ left: '\\[', right: '\\]', display: true }, { left: '\\(', right: '\\)', display: false }], throwOnError: false }); } catch {}
     }
+    if (vozAutomatica()) leerRespuesta(div);
     if (perfil.role === 'estudiante') descubrimientos.forEach(d => guardarDescubrimiento(d.replace(/^Descubr[ií]:\s*/i, 'Descubrí ')));
     if (perfil.role === 'estudiante') document.querySelector('.bienvenida').style.display = 'none';
     if (perfil.role === 'estudiante' && proxima) guardarLS('sabi_pendiente:' + claveAlumno(), { texto: proxima, materia: perfil.profile.materia, mision: perfil.profile.mision });
@@ -1125,6 +1234,7 @@
   let ocupado = false;
   async function enviarTexto(texto, { oculto = false } = {}) {
     if (!texto || !perfil || ocupado) return;
+    if (vozAutomatica()) asegurarAudio();
     ocupado = true;
     if (!oculto) agregarMensaje(texto, 'tu');
     historial.push({ role: 'user', content: texto });
