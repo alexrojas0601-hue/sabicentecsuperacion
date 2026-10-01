@@ -1,0 +1,37 @@
+# Auditor permanente de la IA institucional (sabicentec.com).
+# Cada miércoles le hace preguntas de prueba, califica con el sello SABI y deja el informe en un Pull Request.
+name: SABI · auditor institucional
+
+on:
+  schedule:
+    - cron: "0 11 * * 3"   # cada miércoles 6:00 a. m. hora Colombia
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Auditar la IA institucional
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/auditor-institucional.mjs
+      - name: Abrir Pull Request con el informe
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: sabi-auditor/institucional
+          delete-branch: true
+          commit-message: "SABI auditor institucional: informe semanal"
+          title: "SABI auditor institucional · informe semanal de calidad"
+          body: |
+            Informe semanal del Auditor permanente del sello SABI sobre la IA institucional de sabicentec.com.
+            Revisa las alertas en `data/informes/`. Merge = guardar en el historial.
+          labels: auditoria
