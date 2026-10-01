@@ -116,6 +116,61 @@
   }
   form#form-chat button:disabled{opacity:.5; cursor:default;}
   .aviso{text-align:center; font-size:.75rem; color:rgba(247,243,233,.45); padding:0 16px 10px; max-width:760px; margin:0 auto;}
+
+  /* ---------- PANTALLA DE MISIÓN ---------- */
+  #pantalla-mision{flex:1; display:none; flex-direction:column; align-items:center; overflow-y:auto; padding:28px 18px 40px; gap:22px;}
+  #pantalla-mision h2{font-size:1.6rem; font-weight:560; text-align:center; max-width:22ch;}
+  #pantalla-mision .paso{font-size:.95rem; color:rgba(247,243,233,.7); text-align:center;}
+  .animos{display:flex; gap:10px; flex-wrap:wrap; justify-content:center;}
+  .animo{background:var(--noche-2); border:1px solid var(--linea-noche); color:var(--papel); border-radius:999px; padding:9px 16px; font:inherit; font-size:.92rem; cursor:pointer;}
+  .animo[aria-pressed="true"]{background:var(--alba); color:var(--noche); border-color:var(--alba); font-weight:600;}
+  .misiones{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; width:100%; max-width:760px;}
+  .mision{text-align:left; background:var(--noche-2); border:1px solid var(--linea-noche); color:var(--papel); border-radius:16px; padding:20px; font:inherit; cursor:pointer; display:flex; flex-direction:column; gap:6px; transition:border-color .2s, transform .15s;}
+  .mision:hover, .mision:focus-visible{border-color:var(--alba); transform:translateY(-2px);}
+  .mision .icono{font-size:2rem; line-height:1;}
+  .mision .nombre{font-family:'Fraunces',serif; font-size:1.25rem; font-weight:560;}
+  .mision .que{font-size:.88rem; color:rgba(247,243,233,.7); line-height:1.45;}
+  .mision:disabled{opacity:.45; cursor:default; transform:none;}
+
+  /* ---------- MENSAJES ENRIQUECIDOS ---------- */
+  .msg.sabi{white-space:normal;}
+  .msg.sabi p + p{margin-top:8px;}
+  .msg.sabi ul{margin:6px 0 0 18px;}
+  .msg.sabi strong{color:var(--alba-suave);}
+  .descubri{margin-top:10px; padding:8px 12px; border-left:3px solid var(--alba); background:rgba(245,166,35,.1); border-radius:6px; font-size:.92rem;}
+  .opciones{display:flex; flex-wrap:wrap; gap:8px; align-self:flex-start; max-width:88%;}
+  .opcion{background:transparent; color:var(--papel); border:1.5px solid var(--alba); border-radius:999px; padding:8px 14px; font:inherit; font-size:.9rem; cursor:pointer;}
+  .opcion:hover{background:var(--alba); color:var(--noche);}
+  .opcion:disabled{opacity:.35; cursor:default; background:transparent; color:var(--papel);}
+
+  /* ---------- BITÁCORA ---------- */
+  .btn-bitacora{margin-left:12px; background:none; border:1px solid var(--alba); color:var(--alba-suave); border-radius:8px; padding:6px 12px; font-size:.78rem; cursor:pointer; font-family:inherit;}
+  #bitacora{position:fixed; inset:0 0 0 auto; width:min(380px,100%); background:var(--noche-2); border-left:1px solid var(--linea-noche); padding:24px; overflow-y:auto; transform:translateX(100%); transition:transform .25s; z-index:20;}
+  #bitacora.abierta{transform:none;}
+  #bitacora h2{font-size:1.3rem; margin-bottom:6px;}
+  #bitacora p.sub{font-size:.85rem; color:rgba(247,243,233,.6); margin-bottom:16px;}
+  #bitacora li{list-style:none; border-left:3px solid var(--alba); padding:6px 0 6px 12px; margin-bottom:12px; font-size:.92rem;}
+  #bitacora li small{display:block; color:rgba(247,243,233,.5); font-size:.75rem; margin-top:2px;}
+  #bitacora .cerrar{float:right; background:none; border:none; color:var(--papel); font-size:1.4rem; cursor:pointer;}
+  @media (prefers-reduced-motion: reduce){ *{transition:none !important;} }
+  :focus-visible{outline:3px solid var(--alba); outline-offset:2px;}
+  @media (max-width:600px){
+    header{gap:8px; padding:12px 14px;}
+    header .mono, header a.volver{display:none;}
+    header .btn-bitacora, header .cambiar-rol{margin-left:4px; padding:6px 9px; font-size:.75rem;}
+    header .btn-bitacora{margin-left:auto;}
+  }
+
+  .pendiente{width:100%; max-width:760px; background:rgba(245,166,35,.12); border:1.5px solid var(--alba); border-radius:16px; padding:16px 18px; display:none; gap:12px; align-items:center; flex-wrap:wrap;}
+  .pendiente .txt{flex:1; min-width:200px;}
+  .pendiente small{display:block; color:var(--alba-suave); font-size:.8rem; margin-bottom:2px;}
+  .pendiente button{background:var(--alba); color:var(--noche); border:none; border-radius:10px; padding:10px 16px; font:inherit; font-weight:700; cursor:pointer;}
+  .chips{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; max-width:760px;}
+  .chip-m{background:var(--noche-2); border:1px solid var(--linea-noche); color:var(--papel); border-radius:999px; padding:8px 14px; font:inherit; font-size:.88rem; cursor:pointer;}
+  .chip-m[aria-pressed="true"]{background:var(--papel); color:var(--noche); border-color:var(--papel); font-weight:600;}
+  .proxima{margin-top:10px; padding:10px 12px; border:1px dashed var(--alba); border-radius:8px; font-size:.92rem;}
+  .mapa{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;}
+  .mapa span{background:var(--noche); border:1px solid var(--linea-noche); border-radius:999px; padding:4px 10px; font-size:.78rem;}
 </style>
 </head>
 <body>
@@ -126,6 +181,8 @@
     <h1 id="titulo-header">SABI</h1>
     <span class="mono" id="subtitulo-header">Tu Amigo del Saber · CENTEC</span>
   </div>
+  <button class="btn-bitacora" id="btn-bitacora" style="display:none;">📓 Mi bitácora</button>
+  <button class="cambiar-rol" id="btn-cambiar-mision" style="display:none;">Otra misión</button>
   <button class="cambiar-rol" id="btn-cambiar-rol" style="display:none;">Cambiar de perfil</button>
   <a class="volver" href="index.html">← Volver al sitio</a>
 </header>
@@ -215,6 +272,90 @@
   </form>
 </div>
 
+<!-- PANTALLA 2B: misión del día (solo estudiantes) -->
+<div id="pantalla-mision">
+  <h2 id="saludo-mision">¿Lista la aventura de hoy?</h2>
+  <div class="pendiente" id="pendiente">
+    <div class="txt"><small>Te quedó un misterio pendiente</small><span id="pendiente-texto"></span></div>
+    <button type="button" id="btn-continuar-pendiente">Resolverlo ahora</button>
+  </div>
+  <p class="paso">Primero, ¿cómo llegas hoy?</p>
+  <div class="animos" id="animos">
+    <button type="button" class="animo" data-animo="con mucha energía">⚡ Con energía</button>
+    <button type="button" class="animo" data-animo="normal, tranquilo">🙂 Normal</button>
+    <button type="button" class="animo" data-animo="cansado">😴 Cansado</button>
+    <button type="button" class="animo" data-animo="preocupado o triste">🌧️ Preocupado</button>
+  </div>
+  <button type="button" class="chip-m" id="btn-editar-intereses" style="display:none;">✏️ Cambiar lo que me gusta</button>
+  <p class="paso" id="titulo-intereses">¿Qué te gusta? Elige las que quieras y SABI las usa en tus retos</p>
+  <div class="chips" id="intereses">
+    <button type="button" class="chip-m" data-v="fútbol">⚽ Fútbol</button>
+    <button type="button" class="chip-m" data-v="salsa y baile">💃 Salsa y baile</button>
+    <button type="button" class="chip-m" data-v="música">🎧 Música</button>
+    <button type="button" class="chip-m" data-v="videojuegos">🎮 Videojuegos</button>
+    <button type="button" class="chip-m" data-v="dibujo y arte">🎨 Dibujo</button>
+    <button type="button" class="chip-m" data-v="cocina">🍳 Cocina</button>
+    <button type="button" class="chip-m" data-v="animales">🐾 Animales</button>
+    <button type="button" class="chip-m" data-v="naturaleza">🌿 Naturaleza</button>
+    <button type="button" class="chip-m" data-v="celulares y tecnología">📱 Tecnología</button>
+    <button type="button" class="chip-m" data-v="crear videos y redes">🎬 Videos</button>
+    <button type="button" class="chip-m" data-v="negocios y vender">💰 Negocios</button>
+    <button type="button" class="chip-m" data-v="carros y motos">🏍️ Motores</button>
+  </div>
+  <p class="paso">¿De qué materia?</p>
+  <div class="chips" id="materias">
+    <button type="button" class="chip-m" data-v="Sorpréndeme" aria-pressed="true">✨ Sorpréndeme</button>
+    <button type="button" class="chip-m" data-v="Matemáticas">Matemáticas</button>
+    <button type="button" class="chip-m" data-v="Lenguaje">Lenguaje</button>
+    <button type="button" class="chip-m" data-v="Inglés">Inglés</button>
+    <button type="button" class="chip-m" data-v="Ciencias Naturales">Ciencias</button>
+    <button type="button" class="chip-m" data-v="Química" data-min="8">Química</button>
+    <button type="button" class="chip-m" data-v="Física" data-min="8">Física</button>
+    <button type="button" class="chip-m" data-v="Ciencias Sociales">Sociales</button>
+    <button type="button" class="chip-m" data-v="Ética y Religión">Ética y Religión</button>
+    <button type="button" class="chip-m" data-v="Filosofía" data-min="10">Filosofía</button>
+    <button type="button" class="chip-m" data-v="Artes">Artes</button>
+    <button type="button" class="chip-m" data-v="Educación Física">Ed. Física</button>
+    <button type="button" class="chip-m" data-v="Tecnología e Informática">Tecnología</button>
+    <button type="button" class="chip-m" data-v="Estadística" data-min="6">Estadística</button>
+    <button type="button" class="chip-m" data-v="Economía y Finanzas" data-min="4">Economía y Finanzas</button>
+    <button type="button" class="chip-m" data-v="Emprendimiento" data-min="6">Emprendimiento</button>
+    <button type="button" class="chip-m" data-v="Educación Sexual y Comportamiento">Comportamiento y Sexualidad</button>
+    <button type="button" class="chip-m" data-v="Mandarín">Mandarín</button>
+  </div>
+  <p class="paso">Ahora elige tu misión</p>
+  <div class="misiones">
+    <button type="button" class="mision" data-mision="DETECTIVE">
+      <span class="icono">🔎</span><span class="nombre">Detective</span>
+      <span class="que">Un misterio del mundo real que nadie te ha explicado. Tú lo resuelves.</span>
+    </button>
+    <button type="button" class="mision" data-mision="INVENTOR">
+      <span class="icono">🛠️</span><span class="nombre">Inventor</span>
+      <span class="que">Un problema del barrio y tú diseñas la solución, como un ingeniero.</span>
+    </button>
+    <button type="button" class="mision" data-mision="CALI 2040">
+      <span class="icono">🚀</span><span class="nombre">Cali 2040</span>
+      <span class="que">Viajas al futuro de la ciudad y tomas decisiones que cambian todo.</span>
+    </button>
+    <button type="button" class="mision" data-mision="ENSÉÑALE A SABI">
+      <span class="icono">🎓</span><span class="nombre">Enséñale a SABI</span>
+      <span class="que">Hoy tú eres el profe. SABI no sabe y tú le explicas. ¿Lo pillas en un error?</span>
+    </button>
+    <button type="button" class="mision" data-mision="MI TAREA">
+      <span class="icono">📚</span><span class="nombre">Mi tarea</span>
+      <span class="que">Trae el tema del colegio y lo convertimos en un reto que sí se entiende.</span>
+    </button>
+  </div>
+</div>
+
+<aside id="bitacora" aria-label="Mi bitácora de descubrimientos">
+  <button class="cerrar" id="cerrar-bitacora" aria-label="Cerrar bitácora">×</button>
+  <h2>Mi bitácora</h2>
+  <p class="sub">Lo que has descubierto tú mismo. Cada línea es un paso de tu camino.</p>
+  <div class="mapa" id="mapa-materias"></div>
+  <ul id="lista-bitacora"></ul>
+</aside>
+
 <!-- PANTALLA 3: chat -->
 <div id="vista-chat">
   <main id="hilo">
@@ -243,11 +384,14 @@
   const msgError = document.getElementById('msg-error');
   const btnCambiarRol = document.getElementById('btn-cambiar-rol');
 
+  const pantallaMision = document.getElementById('pantalla-mision');
   function mostrarPantalla(id) {
     [pantallaRol, pantallaId, vistaChat].forEach(p => p.classList.remove('activa'));
     pantallaId.style.display = 'none';
     vistaChat.style.display = 'none';
     pantallaRol.style.display = 'none';
+    pantallaMision.style.display = 'none';
+    if (id === 'mision') pantallaMision.style.display = 'flex';
     if (id === 'rol') pantallaRol.style.display = 'flex';
     if (id === 'id') { pantallaId.style.display = 'flex'; pantallaId.classList.add('activa'); }
     if (id === 'chat') { vistaChat.style.display = 'flex'; vistaChat.classList.add('activa'); }
@@ -304,7 +448,7 @@
     }
 
     localStorage.setItem(LS_KEY, JSON.stringify(perfil));
-    iniciarChat();
+    perfil.role === 'estudiante' ? mostrarMision() : iniciarChat();
   });
 
   // ---------- Iniciar vista de chat según el perfil ----------
@@ -317,7 +461,7 @@
     if (rol === 'estudiante') {
       titulo.textContent = 'SABI';
       subtitulo.textContent = `Tu Amigo del Saber · ${perfil.profile.grade}`;
-      bienvenida.textContent = `¡Hola, ${perfil.profile.name}! Soy SABI. Puedo ayudarte con cualquier materia, explicarte un tema paso a paso, o ayudarte a pensar mejor un problema o una decisión. ¿Con qué quieres que empecemos hoy?`;
+      bienvenida.textContent = `Misión ${perfil.profile.mision}, ${perfil.profile.name}. Preparando tu reto…`;
     }
     if (rol === 'padre') {
       titulo.textContent = 'SABI';
@@ -331,21 +475,121 @@
     }
 
     btnCambiarRol.style.display = 'inline-block';
+    const esEst = rol === 'estudiante';
+    document.getElementById('btn-bitacora').style.display = esEst ? 'inline-block' : 'none';
+    document.getElementById('btn-cambiar-mision').style.display = esEst ? 'inline-block' : 'none';
     mostrarPantalla('chat');
   }
 
   // Restaurar perfil guardado (evita repetir el formulario cada vez)
-  (function restaurar() {
+  function restaurar() {
     const guardado = localStorage.getItem(LS_KEY);
     if (guardado) {
       try {
         perfil = JSON.parse(guardado);
-        iniciarChat();
+        perfil.role === 'estudiante' ? mostrarMision() : iniciarChat();
         return;
       } catch { /* ignora y sigue al flujo normal */ }
     }
     mostrarPantalla('rol');
-  })();
+  }
+
+  // ---------- Misión del día ----------
+  let animo = '';
+  let materia = 'Sorpréndeme';
+  const NIVEL = g => g === 'Transición' ? 0 : parseInt(g, 10) || 0;
+  const claveAlumno = () => `${(perfil?.profile?.grade || '').toLowerCase()}:${(perfil?.profile?.name || '').toLowerCase()}`;
+  const leerLS = (k, def) => { try { const v = JSON.parse(localStorage.getItem(k)); return v ?? def; } catch { return def; } };
+  const guardarLS = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
+
+  function mostrarMision() {
+    document.getElementById('saludo-mision').textContent = `¡Hola, ${perfil.profile.name}! ¿Qué aventura hacemos hoy?`;
+    // materias según el grado
+    const nivel = NIVEL(perfil.profile.grade);
+    document.querySelectorAll('#materias .chip-m').forEach(b => { b.style.display = nivel >= (+b.dataset.min || 0) ? '' : 'none'; });
+    // intereses guardados
+    const intereses = leerLS('sabi_intereses:' + claveAlumno(), []);
+    document.querySelectorAll('#intereses .chip-m').forEach(b => b.setAttribute('aria-pressed', intereses.includes(b.dataset.v)));
+    const yaTiene = intereses.length > 0;
+    document.getElementById('intereses').style.display = yaTiene ? 'none' : '';
+    document.getElementById('titulo-intereses').style.display = yaTiene ? 'none' : '';
+    document.getElementById('btn-editar-intereses').style.display = yaTiene ? '' : 'none';
+    // misterio pendiente
+    const pend = leerLS('sabi_pendiente:' + claveAlumno(), null);
+    document.getElementById('pendiente').style.display = pend ? 'flex' : 'none';
+    if (pend) document.getElementById('pendiente-texto').textContent = pend.texto;
+    btnCambiarRol.style.display = 'inline-block';
+    mostrarPantalla('mision');
+  }
+  document.getElementById('animos').addEventListener('click', e => {
+    const b = e.target.closest('.animo'); if (!b) return;
+    animo = b.dataset.animo;
+    document.querySelectorAll('.animo').forEach(x => x.setAttribute('aria-pressed', x === b));
+  });
+  document.getElementById('btn-editar-intereses').addEventListener('click', () => {
+    document.getElementById('intereses').style.display = '';
+    document.getElementById('titulo-intereses').style.display = '';
+    document.getElementById('btn-editar-intereses').style.display = 'none';
+  });
+  document.getElementById('intereses').addEventListener('click', e => {
+    const b = e.target.closest('.chip-m'); if (!b) return;
+    b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') !== 'true');
+    const sel = [...document.querySelectorAll('#intereses .chip-m[aria-pressed="true"]')].map(x => x.dataset.v);
+    guardarLS('sabi_intereses:' + claveAlumno(), sel);
+  });
+  document.getElementById('materias').addEventListener('click', e => {
+    const b = e.target.closest('.chip-m'); if (!b) return;
+    materia = b.dataset.v;
+    document.querySelectorAll('#materias .chip-m').forEach(x => x.setAttribute('aria-pressed', x === b));
+  });
+
+  function arrancarMision(mision, pendiente) {
+    perfil.profile.mision = mision;
+    perfil.profile.materia = pendiente ? pendiente.materia : materia;
+    perfil.profile.emocion = animo || 'no lo dijo';
+    perfil.profile.intereses = leerLS('sabi_intereses:' + claveAlumno(), []);
+    perfil.profile.recuerdos = leerBitacora().slice(0, 3).map(d => d.texto);
+    perfil.profile.pendiente = pendiente ? pendiente.texto : '';
+    historial.length = 0;
+    hilo.querySelectorAll('.msg, .opciones').forEach(n => n.remove());
+    document.querySelector('.bienvenida').style.display = '';
+    iniciarChat();
+    const arranque = `[INICIO DE MISIÓN — mensaje automático de la app, no lo escribió el estudiante] Misión: ${perfil.profile.mision}. Asignatura: ${perfil.profile.materia}. Grado: ${perfil.profile.grade}. Cómo llegó hoy: ${perfil.profile.emocion}.`
+      + (pendiente ? ` El estudiante eligió continuar su misterio pendiente: "${pendiente.texto}".` : '')
+      + ' Arranca ya con el gancho, en tu primer turno, siguiendo el Motor de Experiencia y la receta de la asignatura.';
+    enviarTexto(arranque, { oculto: true });
+  }
+  document.querySelectorAll('.mision').forEach(b => b.addEventListener('click', () => arrancarMision(b.dataset.mision)));
+  document.getElementById('btn-continuar-pendiente').addEventListener('click', () => {
+    const pend = leerLS('sabi_pendiente:' + claveAlumno(), null);
+    if (!pend) return;
+    localStorage.removeItem('sabi_pendiente:' + claveAlumno());
+    arrancarMision(pend.mision || 'DETECTIVE', pend);
+  });
+  document.getElementById('btn-cambiar-mision').addEventListener('click', mostrarMision);
+
+  // ---------- Bitácora (se guarda solo en este dispositivo) ----------
+  const claveBitacora = () => 'sabi_bitacora:' + claveAlumno();
+  function leerBitacora() { try { return JSON.parse(localStorage.getItem(claveBitacora())) || []; } catch { return []; } }
+  function guardarDescubrimiento(texto) {
+    const lista = leerBitacora();
+    lista.unshift({ texto, mision: perfil.profile.mision || '', materia: perfil.profile.materia || '', fecha: new Date().toLocaleDateString('es-CO') });
+    try { localStorage.setItem(claveBitacora(), JSON.stringify(lista.slice(0, 200))); } catch {}
+    pintarBitacora();
+  }
+  function pintarBitacora() {
+    const lista = leerBitacora();
+    document.getElementById('btn-bitacora').textContent = `📓 Mi bitácora${lista.length ? ' (' + lista.length + ')' : ''}`;
+    const cuenta = {};
+    lista.forEach(d => { if (d.materia && d.materia !== 'Sorpréndeme') cuenta[d.materia] = (cuenta[d.materia] || 0) + 1; });
+    document.getElementById('mapa-materias').innerHTML = Object.entries(cuenta).map(([m, n]) => `<span>${esc(m)} · ${n}</span>`).join('');
+    document.getElementById('lista-bitacora').innerHTML = lista.length
+      ? lista.map(d => `<li>${esc(d.texto)}<small>${esc(d.materia || '')} · ${esc(d.mision)} · ${esc(d.fecha)}</small></li>`).join('')
+      : '<li>Todavía vacía. Tu primer descubrimiento aparecerá aquí.</li>';
+  }
+  const panel = document.getElementById('bitacora');
+  document.getElementById('btn-bitacora').addEventListener('click', () => { pintarBitacora(); panel.classList.add('abierta'); });
+  document.getElementById('cerrar-bitacora').addEventListener('click', () => panel.classList.remove('abierta'));
 
   // ---------- Lógica del chat ----------
   const hilo = document.getElementById('hilo');
@@ -358,6 +602,9 @@
     input.style.height = Math.min(input.scrollHeight, 120) + 'px';
   });
 
+  function esc(t) { return String(t).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  function enLinea(t) { return esc(t).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'); }
+
   function agregarMensaje(texto, quien) {
     const div = document.createElement('div');
     div.className = 'msg ' + quien;
@@ -367,52 +614,98 @@
     return div;
   }
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const texto = input.value.trim();
-    if (!texto || !perfil) return;
+  // Convierte la respuesta de SABI: párrafos, viñetas, **negrita**, opciones "» " y "✦ Descubrí:"
+  function agregarRespuesta(texto) {
+    hilo.querySelectorAll('.opcion').forEach(b => b.disabled = true);
+    const opciones = [], descubrimientos = [], bloques = [];
+    let proxima = '';
+    let lista = null;
+    for (const linea of texto.split('\n')) {
+      const l = linea.trim();
+      if (!l) { lista = null; continue; }
+      if (/^»\s*/.test(l)) { opciones.push(l.replace(/^»\s*/, '')); continue; }
+      if (/^✦\s*/.test(l)) { descubrimientos.push(l.replace(/^✦\s*/, '')); continue; }
+      if (/^⟶\s*/.test(l)) { proxima = l.replace(/^⟶\s*(Pr[oó]xima vez:\s*)?/i, ''); continue; }
+      if (/^[-•*]\s+/.test(l)) {
+        if (!lista) { lista = []; bloques.push({ ul: lista }); }
+        lista.push(l.replace(/^[-•*]\s+/, '')); continue;
+      }
+      lista = null; bloques.push({ p: l });
+    }
+    const div = document.createElement('div');
+    div.className = 'msg sabi';
+    div.innerHTML = bloques.map(b => b.p ? `<p>${enLinea(b.p)}</p>` : `<ul>${b.ul.map(x => `<li>${enLinea(x)}</li>`).join('')}</ul>`).join('')
+      + descubrimientos.map(d => `<div class="descubri">✦ ${enLinea(d)}</div>`).join('')
+      + (proxima ? `<div class="proxima">⟶ <strong>Próxima vez:</strong> ${enLinea(proxima)}</div>` : '');
+    hilo.appendChild(div);
+    if (perfil.role === 'estudiante') descubrimientos.forEach(d => guardarDescubrimiento(d.replace(/^Descubr[ií]:\s*/i, 'Descubrí ')));
+    if (perfil.role === 'estudiante') document.querySelector('.bienvenida').style.display = 'none';
+    if (perfil.role === 'estudiante' && proxima) guardarLS('sabi_pendiente:' + claveAlumno(), { texto: proxima, materia: perfil.profile.materia, mision: perfil.profile.mision });
+    if (opciones.length) {
+      const caja = document.createElement('div');
+      caja.className = 'opciones';
+      opciones.slice(0, 4).forEach(o => {
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'opcion'; b.textContent = o;
+        b.addEventListener('click', () => enviarTexto(o));
+        caja.appendChild(b);
+      });
+      hilo.appendChild(caja);
+    }
+    hilo.scrollTop = hilo.scrollHeight;
+  }
 
-    agregarMensaje(texto, 'tu');
+  let ocupado = false;
+  async function enviarTexto(texto, { oculto = false } = {}) {
+    if (!texto || !perfil || ocupado) return;
+    ocupado = true;
+    if (!oculto) agregarMensaje(texto, 'tu');
     historial.push({ role: 'user', content: texto });
-    input.value = '';
-    input.style.height = 'auto';
     enviar.disabled = true;
-
     const cargando = agregarMensaje('SABI está pensando…', 'sabi typing');
 
     try {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({
-          messages: historial,
-          role: perfil.role,
-          profile: perfil.profile,
-        }),
+        body: JSON.stringify({ messages: historial, role: perfil.role, profile: perfil.profile }),
       });
       const data = await res.json();
       cargando.remove();
-
       if (!res.ok || data.error) {
-        if (res.status === 401) {
-          agregarMensaje('Tu acceso no pudo verificarse (código o contraseña incorrectos). Usa "Cambiar de perfil" arriba para intentarlo de nuevo.', 'sabi');
-        } else {
-          agregarMensaje('No pude responder ahora mismo. Intenta de nuevo en un momento.', 'sabi');
-        }
+        historial.pop();
+        agregarMensaje(res.status === 401
+          ? 'Tu acceso no pudo verificarse (código o contraseña incorrectos). Usa "Cambiar de perfil" arriba para intentarlo de nuevo.'
+          : 'No pude responder ahora mismo. Intenta de nuevo en un momento.', 'sabi');
         console.error(data);
       } else {
-        agregarMensaje(data.reply, 'sabi');
         historial.push({ role: 'assistant', content: data.reply });
+        agregarRespuesta(data.reply);
       }
     } catch (err) {
       cargando.remove();
+      historial.pop();
       agregarMensaje('Hubo un problema de conexión. Revisa tu internet e intenta de nuevo.', 'sabi');
       console.error(err);
     } finally {
+      ocupado = false;
       enviar.disabled = false;
       input.focus();
     }
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const texto = input.value.trim();
+    if (!texto) return;
+    input.value = '';
+    input.style.height = 'auto';
+    enviarTexto(texto);
   });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); }
+  });
+  restaurar();
 </script>
 
 </body>
