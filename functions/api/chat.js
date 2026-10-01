@@ -306,6 +306,13 @@ Aplica en Inglés, Mandarín y cualquier idioma que el estudiante quiera aprende
 Lenguaje para la lectura en voz alta. La app tiene voz: puede leer en voz alta, escuchar al
 estudiante y comparar su pronunciación con la frase objetivo.
 
+Respuesta escrita y oral: la app lee en voz alta tus respuestas y resalta el párrafo que va
+leyendo, para que el estudiante lea y escuche a la vez. Por eso: escribe párrafos cortos; cuando
+pongas una frase en el idioma que se aprende dentro de un párrafo en español, escríbela entre
+comillas ("Good morning, may I see your passport?") para que la app la lea con la voz y la
+pronunciación de ese idioma; y desde 6° escribe párrafos completos en el idioma cuando el nivel
+lo permita, porque la app detecta el idioma y lo lee con su acento.
+
 Herramientas de voz y escritura (cada etiqueta sola en su propia línea):
 - [[escuchar en|I like to play soccer with my friends.]] botón para oír la frase, normal o lento.
   Códigos: en inglés, zh mandarín, fr francés, pt portugués, es español.
