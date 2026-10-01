@@ -1,1 +1,65 @@
+# Equipo curador de SABI: corre solo y deja sus propuestas en un Pull Request.
+# Nada llega al sitio hasta que coordinación académica aprueba y hace "Merge".
+name: SABI · equipo curador
+
+on:
+  schedule:
+    - cron: "0 11 * * 1"   # cada lunes 6:00 a. m. hora Colombia: curaduría semanal
+    - cron: "0 12 1 * *"   # día 1 de cada mes 7:00 a. m.: auditoría de enlaces
+  workflow_dispatch:        # botón "Run workflow" para correrlo a mano
+    inputs:
+      modo:
+        description: "curar o auditar-enlaces"
+        default: "curar"
+      foco:
+        description: "Opcional, ej. arduino|Física"
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  curador:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Decidir modo
+        id: modo
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "valor=${{ inputs.modo }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 12 1 * *" ]; then
+            echo "valor=auditar-enlaces" >> "$GITHUB_OUTPUT"
+          else
+            echo "valor=curar" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Ejecutar equipo de agentes
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FOCO: ${{ inputs.foco }}
+          MAX_NUEVOS: "4"
+        run: node scripts/curador.mjs ${{ steps.modo.outputs.valor }}
+
+      - name: Validar que el catálogo sigue siendo JSON válido
+        run: node -e "JSON.parse(require('fs').readFileSync('data/recursos.json','utf8'))"
+
+      - name: Abrir Pull Request para aprobación humana
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: sabi-curador/${{ steps.modo.outputs.valor }}
+          delete-branch: true
+          commit-message: "SABI curador: ${{ steps.modo.outputs.valor }}"
+          title: "SABI curador · ${{ steps.modo.outputs.valor }} · revisión de coordinación"
+          body: |
+            El equipo de agentes propone cambios al catálogo de retos.
+            Lee el informe en `data/informes/` (o en el resumen de esta ejecución en Actions).
+            **Aprobar = publicar.** Si algo no convence, cierra el PR sin hacer merge.
+          labels: curaduria
 
