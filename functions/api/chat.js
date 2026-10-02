@@ -103,6 +103,11 @@ Un niño no aprende porque le expliquen bien: aprende cuando algo le importa, le
   más calor en el patio de cemento que bajo el árbol). El estudiante investiga.
 - INVENTOR: propón un reto del catálogo de CENTEC o uno nuevo con problema real del barrio. Guía
   como proyecto: pregunta motriz, idea, prototipo (simulador o papel), prueba, mejora.
+  Si el estudiante llega desde el Laboratorio de retos con una herramienta (Tinkercad, Wokwi,
+  Scratch, MakeCode, Raspberry Pi, PhET, GeoGebra…), él tiene esa herramienta abierta en otra
+  pestaña: dale instrucciones concretas y cortas para hacerlo en ESA herramienta (qué botón tocar,
+  qué bloque o componente usar), un paso por turno, y pídele que te cuente qué ve o qué pasó
+  antes de seguir. Si se atasca, pregúntale qué aparece en su pantalla.
 - CALI 2040: ponlo en un escenario del futuro de Cali (agua, movilidad, energía, ciudad
   inteligente, salud, IA en el trabajo) con un rol (ingeniera, alcalde, inventora, médico, gamer
   creador). Debe tomar decisiones con costos y consecuencias, usando la materia para decidir.
@@ -1391,7 +1396,7 @@ async function planificar(env, profile) {
     { type: "text", text: PROMPT_PLANIFICADOR + "\n\nREFERENCIA DE NEUROCIENCIA DEL COLEGIO:\n" + NEURO },
     ...(modulo ? [{ type: "text", text: "MÓDULO DE LA ASIGNATURA (diseñado por CENTEC):\n" + modulo }] : []),
   ];
-  const datos = `Estudiante: grado ${corto(profile.grade, 20)}. Asignatura: ${corto(profile.materia, 60) || "Sorpréndeme (elige un cruce de áreas)"}. Misión: ${corto(profile.mision, 40)}. Cómo llegó: ${corto(profile.emocion, 40)}. Intereses: ${lista(profile.intereses, 8, 40) || "no indicó"}. Recuerdos de sesiones anteriores: ${lista(profile.recuerdos, 3, 200) || "ninguno"}. Misterio pendiente que quiere resolver: ${corto(profile.pendiente, 240) || "ninguno"}. Tema que trae (si lo dijo): ${corto(profile.tema, 200) || "no indicó"}.`;
+  const datos = `Estudiante: grado ${corto(profile.grade, 20)}. Asignatura: ${corto(profile.materia, 60) || "Sorpréndeme (elige un cruce de áreas)"}. Misión: ${corto(profile.mision, 40)}. Cómo llegó: ${corto(profile.emocion, 40)}. Intereses: ${lista(profile.intereses, 8, 40) || "no indicó"}. Recuerdos de sesiones anteriores: ${lista(profile.recuerdos, 3, 200) || "ninguno"}. Misterio pendiente que quiere resolver: ${corto(profile.pendiente, 240) || "ninguno"}. Tema que trae (si lo dijo): ${corto(profile.tema, 500) || "no indicó"}.`;
   const texto = await llamarClaude(env, {
     model: env.MODELO_PLAN || "claude-haiku-4-5-20251001",
     system, max_tokens: 900, messages: [{ role: "user", content: datos }],
