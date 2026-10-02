@@ -78,6 +78,15 @@
   .acceso-codigo{background:#FFF1D6;color:#7A4A00}
   .acceso-descarga{background:#E6EEF9;color:#173F73}
   .acceso-licencia{background:#F3E6E6;color:#7A2323}
+  .intro{padding:44px 0 36px}
+  .resumen{padding:28px 0 4px;border-bottom:1px solid var(--linea)}
+  .resumen h2{font-size:clamp(1.6rem,1.2rem + 1.4vw,2.3rem);margin-bottom:12px}
+  .indice{margin:0 0 20px 1.3em;columns:2 320px;column-gap:40px;font-size:1.08rem;line-height:1.5}
+  .indice li{break-inside:avoid;margin-bottom:8px}
+  .indice a{font-weight:700;color:var(--noche);text-decoration-color:var(--alba);text-underline-offset:3px}
+  .indice span{color:var(--tinta-suave)}
+  .chip[aria-pressed="true"]::after{content:" (quitar)";font-weight:400;font-size:.85em}
+  .reto{scroll-margin-top:190px}
 </style>
 </head>
 <body>
@@ -137,6 +146,10 @@
 </section>
 
 <main class="wrap">
+  <section class="resumen" id="resumen" aria-live="polite">
+    <h2 id="resumen-titulo"></h2>
+    <ol class="indice" id="indice"></ol>
+  </section>
   <div class="lista" id="lista"></div>
 </main>
 
@@ -168,9 +181,9 @@
       const t = b.dataset.tipo;
       activos.has(t) ? activos.delete(t) : activos.add(t);
       b.setAttribute('aria-pressed', activos.has(t));
-      pintar();
+      pintar(); irAResultados();
     });
-    ['f-grado','f-area','f-sinhw','f-ya'].forEach(id => $(id).addEventListener('change', pintar));
+    ['f-grado','f-area','f-sinhw','f-ya'].forEach(id => $(id).addEventListener('change', () => { pintar(); irAResultados(); }));
   }
 
   const soloDocente = r => r.tipo.every(t => t === 'docente' || t === 'abp') && r.tipo.includes('docente');
@@ -194,6 +207,21 @@
       });
   }
 
+  const NOMBRE_TIPO = {steam:'STEAM', robotica:'robótica', arduino:'Arduino', raspberry:'Raspberry Pi', programacion:'programación', juego:'juegos', simulacion:'simulación', abp:'proyectos ABP', docente:'docentes'};
+  function pintarResumen(lista){
+    const g = $('f-grado').value, tipos = [...activos].map(t => NOMBRE_TIPO[t] || t);
+    let titulo = lista.length === 1 ? '1 reto' : `${lista.length} retos`;
+    if (tipos.length) titulo += ' de ' + tipos.join(', ').replace(/, ([^,]*)$/, ' y $1');
+    if (g !== '') titulo += ' para ' + (g === '0' ? 'Transición' : g + '°');
+    $('resumen-titulo').textContent = titulo;
+    $('indice').innerHTML = lista.map(r => `<li><a href="#reto-${esc(r.id)}">${esc(r.reto.titulo)}</a> <span>con ${esc(r.titulo)}</span></li>`).join('');
+    $('resumen').hidden = !lista.length;
+  }
+  // Cuando el estudiante elige un filtro, la página baja sola hasta el índice de resultados
+  function irAResultados(){
+    const y = $('resumen').getBoundingClientRect().top + window.scrollY - (document.querySelector('.filtros').offsetHeight + 12);
+    window.scrollTo({ top: Math.max(0, y), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  }
   function pintar(){
     const lista = filtrar();
     $('conteo').textContent = lista.length === 1 ? '1 reto' : `${lista.length} retos`;
@@ -202,8 +230,9 @@
       $('limpiar').onclick = () => { $('f-grado').value=''; $('f-area').value=''; $('f-sinhw').checked=false; $('f-ya').checked=false; activos.clear(); document.querySelectorAll('.chip[data-tipo]').forEach(c=>c.setAttribute('aria-pressed','false')); pintar(); };
       return;
     }
+    pintarResumen(lista);
     $('lista').innerHTML = lista.map(r => `
-      <article class="reto">
+      <article class="reto" id="reto-${esc(r.id)}">
         <div>
           <h2>${esc(r.reto.titulo)}</h2>
           <p class="problema">${esc(r.reto.problema)}</p>
