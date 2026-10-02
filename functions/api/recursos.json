@@ -3,6 +3,40 @@
   "actualizado": "2026-10-02",
   "recursos": [
     {
+      "id": "taller-armar-sabi",
+      "titulo": "Taller de armar SABI",
+      "url": "https://superacion.sabicentec.com/juegos.html",
+      "tipo": [
+        "juego",
+        "steam"
+      ],
+      "areas": [
+        "Matemáticas",
+        "Artes",
+        "Lenguaje"
+      ],
+      "grados": {
+        "desde": 0,
+        "hasta": 2
+      },
+      "costo": "gratis",
+      "hardware": "ninguno",
+      "idioma": "español",
+      "acceso": "ya",
+      "descripcion": "Rompecabezas con dibujos de Cali, figuras para armar con cuadrados, triángulos y círculos, y un espacio para crear lo que imaginen. SABI da las instrucciones con su voz, así que no hace falta saber leer.",
+      "reto": {
+        "titulo": "Arma tu barrio con figuras",
+        "problema": "Los niños pequeños reconocen su barrio pero todavía no saben nombrar las formas que lo componen.",
+        "producto": "Una creación propia del barrio hecha con figuras, contada en voz alta a la familia o al curso."
+      },
+      "proyecto_institucional": null,
+      "bloom": "crear",
+      "seguridad": "Hecho por CENTEC: sin cuentas, sin publicidad y sin datos personales.",
+      "estado": "activo",
+      "verificado": "2026-10-02",
+      "origen": "sabi"
+    },
+    {
       "id": "wokwi",
       "titulo": "Wokwi",
       "url": "https://wokwi.com",
