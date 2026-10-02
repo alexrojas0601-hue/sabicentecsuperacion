@@ -470,6 +470,10 @@
       <span class="nombre">Cali 2040</span>
       <span class="que">Viajas al futuro de la ciudad y tomas decisiones que cambian todo.</span>
     </button>
+    <a class="mision" id="mision-taller" href="juegos.html" style="text-decoration:none;display:none">
+      <span class="nombre">Taller de armar</span>
+      <span class="que">Rompecabezas, figuras para armar y crear lo que imagines. SABI te habla y te guía.</span>
+    </a>
     <button type="button" class="mision" data-mision="ENSÉÑALE A SABI">
       <span class="nombre">Enséñale a SABI</span>
       <span class="que">Hoy tú eres el profe. SABI no sabe y tú le explicas. ¿Lo pillas en un error?</span>
@@ -713,6 +717,7 @@
     if (pend) document.getElementById('pendiente-texto').textContent = pend.texto;
     btnCambiarRol.style.display = 'inline-block';
     mostrarPantalla('mision');
+    document.getElementById('mision-taller').style.display = NIVEL(perfil.profile.grade || '') <= 2 ? 'flex' : 'none';
     aplicarDestino();
     mostrarSituaciones();
   }

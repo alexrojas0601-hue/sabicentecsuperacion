@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Taller de armar — SABI para Transición a 2°</title>
+<meta name="description" content="Rompecabezas, figuras para armar y creación libre para niños de Transición a 2°, guiados por la voz de SABI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --mesa:#E4F3EC; --mesa-2:#CFE9DD; --tinta:#18324D; --suave:#4D6478;
+    --rojo:#E5484D; --amarillo:#F5B82E; --azul:#3E7BFA; --verde:#2FA36B; --morado:#8B5CF6; --naranja:#F07A2A;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{background:var(--mesa);color:var(--tinta);font-family:'Baloo 2','Trebuchet MS',system-ui,sans-serif;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+  button{font:inherit;color:inherit;cursor:pointer}
+  :focus-visible{outline:4px solid var(--azul);outline-offset:3px}
+
+  /* Barra superior: dos botones grandes que el niño reconoce por el dibujo */
+  .barra{display:flex;align-items:center;gap:14px;padding:max(12px,env(safe-area-inset-top)) 18px 12px;background:var(--tinta);color:#fff}
+  .barra h1{font-size:clamp(1.4rem,1rem + 1.6vw,2.2rem);font-weight:800;flex:1}
+  .grande{display:inline-flex;align-items:center;gap:10px;border:none;border-radius:20px;padding:10px 18px;font-size:clamp(1.1rem,.9rem + .8vw,1.5rem);font-weight:700;background:#fff;color:var(--tinta)}
+  .grande svg{width:34px;height:34px;flex:none}
+  .grande[hidden]{display:none}
+
+  /* Inicio: tres juegos */
+  #inicio{padding:clamp(18px,4vw,48px);display:flex;flex-direction:column;align-items:center;gap:22px}
+  #inicio p.guia{font-size:clamp(1.3rem,1rem + 1.4vw,2rem);font-weight:700;text-align:center;max-width:30ch}
+  .juegos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;width:100%;max-width:1100px}
+  .juego{background:#fff;border:none;border-radius:32px;padding:20px 20px 18px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 8px 0 var(--mesa-2);transition:transform .12s}
+  .juego:active{transform:translateY(5px);box-shadow:0 3px 0 var(--mesa-2)}
+  .juego svg{width:100%;max-width:220px;height:auto}
+  .juego span{font-size:clamp(1.6rem,1.2rem + 1vw,2.2rem);font-weight:800}
+
+  /* Área de juego */
+  #juego{display:none;flex-direction:column;align-items:center;padding:16px;gap:14px}
+  .consigna{font-size:clamp(1.3rem,1rem + 1.2vw,1.9rem);font-weight:700;text-align:center;max-width:32ch}
+  .mesa{position:relative;width:100%;max-width:1100px;touch-action:none;user-select:none}
+  .tablero{position:absolute;border-radius:22px;background:#fff;box-shadow:inset 0 0 0 4px var(--mesa-2)}
+  .guia-img{position:absolute;inset:0;border-radius:22px;opacity:.22;background-size:100% 100%}
+  .casilla{position:absolute;border:2px dashed rgba(24,50,77,.25)}
+  .pieza{position:absolute;touch-action:none;cursor:grab;border-radius:6px;box-shadow:0 6px 12px rgba(24,50,77,.25);transition:box-shadow .15s}
+  .pieza.arrastrando{cursor:grabbing;box-shadow:0 14px 24px rgba(24,50,77,.35);z-index:50}
+  .pieza.lista{box-shadow:none;cursor:default;border-radius:0}
+  .forma{position:absolute;touch-action:none;cursor:grab;filter:drop-shadow(0 6px 6px rgba(24,50,77,.25))}
+  .forma.arrastrando{cursor:grabbing;z-index:50;filter:drop-shadow(0 12px 12px rgba(24,50,77,.35))}
+  .forma.lista{filter:none;cursor:default}
+  .forma.elegida{outline:4px dashed var(--azul);outline-offset:4px;border-radius:8px}
+  .acciones{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+  .acciones .grande{background:var(--tinta);color:#fff}
+  .acciones .grande.claro{background:#fff;color:var(--tinta);box-shadow:inset 0 0 0 3px var(--tinta)}
+  .paleta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:1100px}
+  .paleta button{background:#fff;border:none;border-radius:18px;padding:8px;box-shadow:0 5px 0 var(--mesa-2)}
+  .paleta svg{width:56px;height:56px;display:block}
+  .papelera{position:absolute;right:10px;bottom:10px;width:78px;height:78px;border-radius:22px;background:#fff;display:grid;place-items:center;box-shadow:inset 0 0 0 3px #C9D6CF}
+  .papelera.activa{box-shadow:inset 0 0 0 4px var(--rojo);background:#FFF0F0}
+  .papelera svg{width:44px;height:44px}
+
+  .fiesta{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:100}
+  .fiesta i{position:absolute;top:-20px;width:14px;height:22px;border-radius:4px;animation:caer 1.8s ease-in forwards}
+  @keyframes caer{to{transform:translateY(110vh) rotate(540deg)}}
+  @media (max-width:520px){ .barra{gap:8px;padding-left:10px;padding-right:10px} .barra h1{font-size:1.15rem} .grande{padding:8px 12px;font-size:1rem} .grande svg{width:26px;height:26px} }
+  @media (max-width:700px){
+    .paleta{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;width:100%;padding:4px 2px 10px;-webkit-overflow-scrolling:touch}
+    .paleta button{flex:none} .paleta svg{width:46px;height:46px}
+  }
+  @media (prefers-reduced-motion: reduce){.fiesta{display:none}.juego{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="barra">
+  <button class="grande" id="btn-volver" hidden aria-label="Volver a los juegos">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M24 8 12 20l12 12" fill="none" stroke="#18324D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>Volver
+  </button>
+  <h1 id="titulo">Taller de armar</h1>
+  <a class="grande" id="btn-sabi" href="tutor.html" style="text-decoration:none">SABI</a>
+  <button class="grande" id="btn-oir" aria-label="Escuchar otra vez">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 15h6l8-6v22l-8-6H8z" fill="#18324D"/><path d="M27 13a9 9 0 0 1 0 14M31 9a14 14 0 0 1 0 22" fill="none" stroke="#18324D" stroke-width="3.5" stroke-linecap="round"/></svg>Escuchar
+  </button>
+</header>
+
+<section id="inicio">
+  <p class="guia">Toca el juego que quieras</p>
+  <div class="juegos">
+    <button class="juego" data-juego="rompecabezas" aria-label="Rompecabezas">
+      <svg viewBox="0 0 220 160" aria-hidden="true">
+        <rect x="20" y="20" width="85" height="60" rx="8" fill="#3E7BFA"/><rect x="115" y="20" width="85" height="60" rx="8" fill="#F5B82E"/>
+        <rect x="20" y="88" width="85" height="60" rx="8" fill="#2FA36B"/><rect x="128" y="96" width="85" height="60" rx="8" fill="#E5484D" transform="rotate(8 170 126)"/>
+        <circle cx="105" cy="50" r="10" fill="#3E7BFA"/><circle cx="62" cy="84" r="10" fill="#2FA36B"/>
+      </svg><span>Rompecabezas</span>
+    </button>
+    <button class="juego" data-juego="armar" aria-label="Arma la figura">
+      <svg viewBox="0 0 220 160" aria-hidden="true">
+        <polygon points="110,18 170,70 50,70" fill="#E5484D"/><rect x="62" y="70" width="96" height="74" fill="#F5B82E"/>
+        <rect x="98" y="102" width="26" height="42" fill="#3E7BFA"/><rect x="72" y="84" width="20" height="20" fill="#fff"/>
+      </svg><span>Arma la figura</span>
+    </button>
+    <button class="juego" data-juego="crear" aria-label="Crea lo que imagines">
+      <svg viewBox="0 0 220 160" aria-hidden="true">
+        <circle cx="62" cy="58" r="32" fill="#8B5CF6"/><rect x="110" y="30" width="70" height="56" rx="6" fill="#2FA36B"/>
+        <polygon points="70,140 110,90 150,140" fill="#F07A2A"/><circle cx="170" cy="120" r="18" fill="#3E7BFA"/>
+      </svg><span>Crea lo que imagines</span>
+    </button>
+  </div>
+</section>
+
+<section id="juego">
+  <p class="consigna" id="consigna"></p>
+  <div class="paleta" id="paleta" hidden></div>
+  <div class="mesa" id="mesa"></div>
+  <div class="acciones" id="acciones"></div>
+</section>
+<div class="fiesta" id="fiesta" aria-hidden="true"></div>
+
+<script>
+/* ======================================================================
+   Taller de armar SABI · Transición a 2°
+   Los niños de estas edades aún no leen: todo se entiende por dibujos y por la voz de SABI.
+   Rompecabezas y figuras para armar desarrollan el razonamiento espacial; el juego con
+   rompecabezas en la primera infancia predice la habilidad de transformación espacial
+   (Levine y colegas, 2012), base de la geometría y las matemáticas.
+   ====================================================================== */
+const COLORES = { rojo:'#E5484D', amarillo:'#F5B82E', azul:'#3E7BFA', verde:'#2FA36B', morado:'#8B5CF6', naranja:'#F07A2A' };
+const $ = id => document.getElementById(id);
+let ultimaFrase = 'Toca el juego que quieras';
+
+/* ---------- Voz de SABI (voz clara del servidor amplificada; respaldo: voz del navegador) ---------- */
+let ctx = null, fuentes = [], vozServidor = true;
+const guardados = new Map();
+function audio() { const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return null; if (!ctx) ctx = new AC(); if (ctx.state === 'suspended') ctx.resume(); return ctx; }
+function callar() { fuentes.forEach(f => { try { f.stop(); } catch (e) {} }); fuentes = []; if ('speechSynthesis' in window) speechSynthesis.cancel(); }
+async function decir(texto) {
+  ultimaFrase = texto; callar();
+  const c = audio();
+  if (c && vozServidor) {
+    try {
+      let buf = guardados.get(texto);
+      if (!buf) {
+        const r = await fetch('/api/voz', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ texto, lang: 'es' }) });
+        if (r.status === 501) { vozServidor = false; throw new Error('sin voz de servidor'); }
+        if (!r.ok) throw new Error('voz ' + r.status);
+        const { audio: b64 } = await r.json();
+        buf = await c.decodeAudioData(Uint8Array.from(atob(b64), x => x.charCodeAt(0)).buffer);
+        guardados.set(texto, buf);
+      }
+      if (texto !== ultimaFrase) return;
+      const comp = c.createDynamicsCompressor(); comp.threshold.value = -24; comp.ratio.value = 6;
+      const g = c.createGain(); g.gain.value = 2.4; comp.connect(g); g.connect(c.destination);
+      const s = c.createBufferSource(); s.buffer = buf; s.connect(comp); s.start(); fuentes.push(s);
+      return;
+    } catch (e) { /* sigue con la voz del navegador */ }
+  }
+  if ('speechSynthesis' in window) {
+    const u = new SpeechSynthesisUtterance(texto); u.lang = 'es-CO'; u.rate = .9; u.volume = 1;
+    const v = speechSynthesis.getVoices().filter(x => x.lang.startsWith('es')).sort((a, b) => (/natural|neural|google|enhanced|premium/i.test(b.name) ? 1 : 0) - (/natural|neural|google|enhanced|premium/i.test(a.name) ? 1 : 0))[0];
+    if (v) u.voice = v; speechSynthesis.speak(u);
+  }
+}
+if ('speechSynthesis' in window) speechSynthesis.getVoices();
+function sonido(tipo) {
+  const c = audio(); if (!c) return;
+  const notas = tipo === 'fiesta' ? [523, 659, 784, 1047] : [660];
+  notas.forEach((f, i) => {
+    const o = c.createOscillator(), g = c.createGain(); o.type = 'sine'; o.frequency.value = f;
+    const t = c.currentTime + i * .12; g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(.25, t + .02); g.gain.exponentialRampToValueAtTime(.001, t + .35);
+    o.connect(g); g.connect(c.destination); o.start(t); o.stop(t + .4);
+  });
+}
+function fiesta() {
+  sonido('fiesta');
+  const f = $('fiesta'); f.innerHTML = '';
+  const cs = Object.values(COLORES);
+  for (let i = 0; i < 40; i++) {
+    const p = document.createElement('i');
+    p.style.left = Math.random() * 100 + 'vw'; p.style.background = cs[i % cs.length]; p.style.animationDelay = Math.random() * .6 + 's';
+    f.appendChild(p);
+  }
+  setTimeout(() => f.innerHTML = '', 2600);
+}
+$('btn-oir').addEventListener('click', () => decir(ultimaFrase));
+
+/* ---------- Dibujos originales de Cali para los rompecabezas ---------- */
+const ESCENAS = [
+  { nombre: 'el colegio', svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><rect width="600" height="600" fill="#BFE3F5"/><circle cx="500" cy="110" r="62" fill="#F5B82E"/><rect y="430" width="600" height="170" fill="#7CC67E"/><rect x="120" y="230" width="360" height="230" fill="#F3E3B5"/><polygon points="100,240 300,110 500,240" fill="#E5484D"/><rect x="265" y="340" width="70" height="120" fill="#3E7BFA"/><rect x="155" y="280" width="70" height="60" fill="#fff" stroke="#18324D" stroke-width="6"/><rect x="375" y="280" width="70" height="60" fill="#fff" stroke="#18324D" stroke-width="6"/><rect x="293" y="60" width="8" height="80" fill="#18324D"/><rect x="301" y="62" width="60" height="38" fill="#F5B82E"/><rect x="301" y="81" width="60" height="10" fill="#3E7BFA"/><rect x="301" y="91" width="60" height="9" fill="#E5484D"/></svg>` },
+  { nombre: 'el bus MIO', svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><rect width="600" height="600" fill="#D7EEF8"/><rect y="420" width="600" height="180" fill="#9AA5B1"/><rect y="500" width="600" height="14" fill="#F5F5F5"/><rect x="40" y="240" width="520" height="190" rx="36" fill="#2FA36B"/><rect x="70" y="270" width="90" height="70" rx="10" fill="#E8F6FF"/><rect x="180" y="270" width="90" height="70" rx="10" fill="#E8F6FF"/><rect x="290" y="270" width="90" height="70" rx="10" fill="#E8F6FF"/><rect x="400" y="270" width="130" height="70" rx="10" fill="#E8F6FF"/><rect x="40" y="360" width="520" height="22" fill="#F5B82E"/><circle cx="150" cy="440" r="44" fill="#18324D"/><circle cx="150" cy="440" r="18" fill="#C9D6E2"/><circle cx="450" cy="440" r="44" fill="#18324D"/><circle cx="450" cy="440" r="18" fill="#C9D6E2"/><circle cx="110" cy="120" r="40" fill="#fff"/><circle cx="160" cy="110" r="52" fill="#fff"/><circle cx="215" cy="125" r="38" fill="#fff"/></svg>` },
+  { nombre: 'el río y los árboles', svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><rect width="600" height="600" fill="#CDEBFA"/><polygon points="0,330 140,170 280,330" fill="#5B8F6B"/><polygon points="200,330 360,140 520,330" fill="#4C7D5D"/><rect y="320" width="600" height="280" fill="#86C98A"/><path d="M0 470 C150 420 250 520 400 470 C480 445 540 455 600 440 L600 540 C520 560 450 545 380 570 C250 610 140 520 0 560 Z" fill="#3E7BFA"/><rect x="90" y="300" width="26" height="90" fill="#8A5A34"/><circle cx="103" cy="280" r="55" fill="#2FA36B"/><rect x="470" y="290" width="26" height="100" fill="#8A5A34"/><circle cx="483" cy="270" r="60" fill="#2FA36B"/><path d="M250 120 q20 -22 40 0 q20 -22 40 0" fill="none" stroke="#18324D" stroke-width="7" stroke-linecap="round"/><circle cx="520" cy="90" r="45" fill="#F5B82E"/></svg>` },
+  { nombre: 'la canasta de frutas', svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><rect width="600" height="600" fill="#FFF2D6"/><ellipse cx="300" cy="300" rx="120" ry="70" fill="#F5B82E"/><path d="M190 270 q-30 -80 40 -100" fill="none" stroke="#2FA36B" stroke-width="16" stroke-linecap="round"/><circle cx="210" cy="250" r="70" fill="#F07A2A"/><circle cx="390" cy="250" r="70" fill="#E5484D"/><rect x="383" y="150" width="14" height="40" fill="#2FA36B"/><ellipse cx="300" cy="200" rx="46" ry="80" fill="#F5B82E" stroke="#C98C12" stroke-width="6"/><path d="M280 120 l20 -40 l20 40" fill="#2FA36B"/><path d="M120 330 h360 l-40 190 h-280 z" fill="#C98C4A"/><path d="M140 380 h320 M150 430 h300 M165 480 h270" stroke="#8A5A34" stroke-width="10"/></svg>` },
+];
+const urlSvg = svg => 'url("data:image/svg+xml;utf8,' + encodeURIComponent(svg) + '")';
+
+/* ---------- Arrastrar con el dedo o el ratón ---------- */
+function arrastrable(el, { alTomar, alSoltar }) {
+  let dx = 0, dy = 0, inicio = null;
+  el.addEventListener('pointerdown', e => {
+    if (el.classList.contains('lista')) return;
+    audio(); el.setPointerCapture(e.pointerId); el.classList.add('arrastrando');
+    const r = el.getBoundingClientRect(); dx = e.clientX - r.left; dy = e.clientY - r.top;
+    inicio = { x: e.clientX, y: e.clientY, t: Date.now() };
+    alTomar && alTomar(el);
+  });
+  el.addEventListener('pointermove', e => {
+    if (!el.classList.contains('arrastrando')) return;
+    const m = $('mesa').getBoundingClientRect();
+    el.style.left = (e.clientX - m.left - dx) + 'px'; el.style.top = (e.clientY - m.top - dy) + 'px';
+    alSoltar && alSoltar.mientras && alSoltar.mientras(el, e);
+  });
+  const fin = e => {
+    if (!el.classList.contains('arrastrando')) return;
+    el.classList.remove('arrastrando');
+    const toque = inicio && Math.hypot(e.clientX - inicio.x, e.clientY - inicio.y) < 8 && Date.now() - inicio.t < 350;
+    alSoltar && (alSoltar.fn || alSoltar)(el, e, toque);
+  };
+  el.addEventListener('pointerup', fin); el.addEventListener('pointercancel', fin);
+}
+function boton(txt, fn, claro) { const b = document.createElement('button'); b.className = 'grande' + (claro ? ' claro' : ''); b.textContent = txt; b.onclick = fn; return b; }
+
+/* ---------- Navegación ---------- */
+function abrir(nombre) {
+  $('inicio').style.display = 'none'; $('juego').style.display = 'flex'; $('btn-volver').hidden = false; $('btn-sabi').style.display = 'none';
+  $('mesa').innerHTML = ''; $('acciones').innerHTML = ''; $('paleta').hidden = true; $('paleta').innerHTML = '';
+  ({ rompecabezas, armar, crear })[nombre]();
+}
+function alInicio() { callar(); $('juego').style.display = 'none'; $('inicio').style.display = 'flex'; $('btn-volver').hidden = true; $('btn-sabi').style.display = ''; $('titulo').textContent = 'Taller de armar'; decir('Toca el juego que quieras'); }
+document.querySelectorAll('.juego').forEach(b => b.addEventListener('click', () => abrir(b.dataset.juego)));
+$('btn-volver').addEventListener('click', alInicio);
+
+/* ======================= 1. ROMPECABEZAS ======================= */
+let escena = 0, nivel = 2;
+function rompecabezas() {
+  $('titulo').textContent = 'Rompecabezas';
+  const E = ESCENAS[escena % ESCENAS.length];
+  $('consigna').textContent = 'Arma ' + E.nombre;
+  decir(`Vamos a armar ${E.nombre}. Arrastra cada pieza a su lugar. Mira el dibujo clarito del tablero, te ayuda.`);
+  const mesa = $('mesa'), ancho = mesa.clientWidth || 360;
+  const lado = Math.min(ancho * .92, window.innerHeight * .5, 520), pz = lado / nivel;
+  const bandejaAlto = Math.ceil((nivel * nivel) / Math.max(1, Math.floor(ancho / (pz + 12)))) * (pz + 12) + 20;
+  mesa.style.height = (lado + 30 + bandejaAlto) + 'px';
+  const tx = (ancho - lado) / 2;
+  const tab = document.createElement('div'); tab.className = 'tablero';
+  Object.assign(tab.style, { left: tx + 'px', top: '0px', width: lado + 'px', height: lado + 'px' });
+  const guia = document.createElement('div'); guia.className = 'guia-img'; guia.style.backgroundImage = urlSvg(E.svg); tab.appendChild(guia);
+  for (let i = 0; i < nivel * nivel; i++) {
+    const c = document.createElement('div'); c.className = 'casilla';
+    Object.assign(c.style, { left: (i % nivel) * pz + 'px', top: Math.floor(i / nivel) * pz + 'px', width: pz + 'px', height: pz + 'px' });
+    tab.appendChild(c);
+  }
+  mesa.appendChild(tab);
+  const orden = [...Array(nivel * nivel).keys()].sort(() => Math.random() - .5);
+  const porFila = Math.max(1, Math.floor(ancho / (pz + 12)));
+  let listas = 0;
+  orden.forEach((idx, k) => {
+    const p = document.createElement('div'); p.className = 'pieza';
+    Object.assign(p.style, { width: pz + 'px', height: pz + 'px', backgroundImage: urlSvg(E.svg), backgroundSize: lado + 'px ' + lado + 'px',
+      backgroundPosition: `-${(idx % nivel) * pz}px -${Math.floor(idx / nivel) * pz}px`,
+      left: ((k % porFila) * (pz + 12) + (ancho - porFila * (pz + 12)) / 2 + 6) + 'px', top: (lado + 30 + Math.floor(k / porFila) * (pz + 12)) + 'px' });
+    p.setAttribute('aria-label', 'Pieza del rompecabezas');
+    arrastrable(p, { alSoltar: (el) => {
+      const x = parseFloat(el.style.left) - tx, y = parseFloat(el.style.top);
+      const cx = (idx % nivel) * pz, cy = Math.floor(idx / nivel) * pz;
+      if (Math.hypot(x - cx, y - cy) < pz * .35) {
+        el.style.left = (tx + cx) + 'px'; el.style.top = cy + 'px'; el.classList.add('lista'); sonido('pieza'); listas++;
+        if (listas === nivel * nivel) terminarRompecabezas(E);
+      }
+    } });
+    mesa.appendChild(p);
+  });
+}
+function terminarRompecabezas(E) {
+  fiesta();
+  decir(`¡Lo lograste! Armaste ${E.nombre} con tus manos y tu cabeza. ¿Quieres otro dibujo o uno con más piezas?`);
+  $('consigna').textContent = '¡Lo lograste!';
+  const a = $('acciones'); a.innerHTML = '';
+  a.appendChild(boton('Otro dibujo', () => { escena++; abrir('rompecabezas'); }));
+  if (nivel < 4) a.appendChild(boton('Más piezas', () => { nivel++; abrir('rompecabezas'); }, true));
+  else a.appendChild(boton('Volver a 4 piezas', () => { nivel = 2; abrir('rompecabezas'); }, true));
+}
+
+/* ======================= 2. ARMA LA FIGURA ======================= */
+const NOMBRES = { cuadrado: 'cuadrado', rectangulo: 'rectángulo', triangulo: 'triángulo', circulo: 'círculo' };
+const FIGURAS = [
+  { nombre: 'la casa', formas: [['cuadrado', 175, 255, 250, 250, 'amarillo'], ['triangulo', 140, 110, 320, 150, 'rojo'], ['rectangulo', 265, 385, 70, 120, 'azul'], ['cuadrado', 200, 300, 60, 60, 'verde']] },
+  { nombre: 'el robot', formas: [['cuadrado', 235, 55, 130, 130, 'azul'], ['rectangulo', 200, 195, 200, 190, 'verde'], ['rectangulo', 130, 210, 55, 150, 'naranja'], ['rectangulo', 415, 210, 55, 150, 'naranja'], ['rectangulo', 225, 395, 60, 140, 'morado'], ['rectangulo', 315, 395, 60, 140, 'morado'], ['circulo', 255, 95, 34, 34, 'amarillo'], ['circulo', 311, 95, 34, 34, 'amarillo']] },
+  { nombre: 'el árbol', formas: [['rectangulo', 262, 330, 76, 200, 'naranja'], ['circulo', 170, 140, 160, 160, 'verde'], ['circulo', 270, 90, 160, 160, 'verde'], ['circulo', 300, 190, 140, 140, 'verde']] },
+  { nombre: 'el barco', formas: [['rectangulo', 110, 380, 380, 90, 'rojo'], ['triangulo', 200, 130, 200, 240, 'amarillo'], ['rectangulo', 293, 110, 14, 270, 'naranja'], ['triangulo', 307, 110, 70, 50, 'azul']] },
+  { nombre: 'el cohete', formas: [['rectangulo', 240, 170, 120, 280, 'azul'], ['triangulo', 240, 60, 120, 110, 'rojo'], ['triangulo', 170, 360, 70, 120, 'naranja'], ['triangulo', 360, 360, 70, 120, 'naranja'], ['circulo', 270, 220, 60, 60, 'amarillo']] },
+  { nombre: 'el bus MIO', formas: [['rectangulo', 70, 220, 460, 160, 'verde'], ['cuadrado', 100, 250, 64, 64, 'azul'], ['cuadrado', 200, 250, 64, 64, 'azul'], ['cuadrado', 300, 250, 64, 64, 'azul'], ['circulo', 130, 350, 80, 80, 'morado'], ['circulo', 390, 350, 80, 80, 'morado']] },
+];
+function svgForma(tipo, w, h, color, contorno) {
+  const fill = contorno ? 'rgba(24,50,77,.06)' : COLORES[color], st = contorno ? 'stroke="rgba(24,50,77,.45)" stroke-width="3" stroke-dasharray="8 6"' : '';
+  const cuerpo = tipo === 'triangulo' ? `<polygon points="${w / 2},2 ${w - 2},${h - 2} 2,${h - 2}" fill="${fill}" ${st}/>`
+    : tipo === 'circulo' ? `<ellipse cx="${w / 2}" cy="${h / 2}" rx="${w / 2 - 2}" ry="${h / 2 - 2}" fill="${fill}" ${st}/>`
+    : `<rect x="2" y="2" width="${w - 4}" height="${h - 4}" rx="4" fill="${fill}" ${st}/>`;
+  return `<svg viewBox="0 0 ${w} ${h}" width="100%" height="100%" aria-hidden="true">${cuerpo}</svg>`;
+}
+let figura = 0;
+function armar() {
+  $('titulo').textContent = 'Arma la figura';
+  const F = FIGURAS[figura % FIGURAS.length];
+  $('consigna').textContent = 'Arma ' + F.nombre;
+  decir(`Vamos a armar ${F.nombre}. Toma una figura y llévala a su sombra. Cuando la tomes, te digo cómo se llama.`);
+  const mesa = $('mesa'), ancho = mesa.clientWidth || 360;
+  const lado = Math.min(ancho * .92, window.innerHeight * .5, 520), k = lado / 600, tx = (ancho - lado) / 2;
+  const tab = document.createElement('div'); tab.className = 'tablero';
+  Object.assign(tab.style, { left: tx + 'px', top: '0px', width: lado + 'px', height: lado + 'px' });
+  mesa.appendChild(tab);
+  F.formas.forEach(([tipo, x, y, w, h]) => {
+    const s = document.createElement('div'); s.style.cssText = `position:absolute;left:${x * k}px;top:${y * k}px;width:${w * k}px;height:${h * k}px`;
+    s.innerHTML = svgForma(tipo, w, h, null, true); tab.appendChild(s);
+  });
+  const piezas = F.formas.map((f, i) => ({ f, i })).sort(() => Math.random() - .5);
+  let x0 = 10, y0 = lado + 30, filaAlto = 0, listas = 0;
+  const ocupadas = new Set();
+  piezas.forEach(({ f: [tipo, x, y, w, h, color], i }) => {
+    const ew = w * k * .85, eh = h * k * .85;
+    if (x0 + ew > ancho - 10) { x0 = 10; y0 += filaAlto + 14; filaAlto = 0; }
+    const el = document.createElement('div'); el.className = 'forma';
+    Object.assign(el.style, { left: x0 + 'px', top: y0 + 'px', width: w * k + 'px', height: h * k + 'px' });
+    el.innerHTML = svgForma(tipo, w, h, color); el.setAttribute('aria-label', NOMBRES[tipo] + ' ' + color);
+    x0 += w * k + 14; filaAlto = Math.max(filaAlto, h * k);
+    arrastrable(el, {
+      alTomar: () => decir(`${NOMBRES[tipo]} ${color}`),
+      alSoltar: (e2) => {
+        const px = parseFloat(e2.style.left) - tx, py = parseFloat(e2.style.top);
+        // Encaja en la sombra de la misma forma y tamaño que esté cerca y libre
+        const destino = F.formas.findIndex(([t2, xx, yy, ww, hh], j) => !ocupadas.has(j) && t2 === tipo && Math.abs(ww - w) < 2 && Math.abs(hh - h) < 2 && Math.hypot(px - xx * k, py - yy * k) < Math.max(w, h) * k * .45);
+        if (destino >= 0) {
+          const [, xx, yy] = F.formas[destino];
+          e2.style.left = (tx + xx * k) + 'px'; e2.style.top = (yy * k) + 'px'; e2.classList.add('lista'); e2.style.zIndex = String(10 + Math.round(100000 / (w * h))); /* las piezas pequeñas quedan encima */ ocupadas.add(destino); sonido('pieza'); listas++;
+          if (listas === F.formas.length) terminarFigura(F);
+        }
+      }
+    });
+    mesa.appendChild(el);
+  });
+  mesa.style.height = (y0 + filaAlto + 20) + 'px';
+}
+function terminarFigura(F) {
+  fiesta();
+  const usadas = [...new Set(F.formas.map(f => NOMBRES[f[0]]))];
+  decir(`¡Muy bien! Armaste ${F.nombre} usando ${usadas.join(', ').replace(/, ([^,]*)$/, ' y $1')}. ¿Armamos otra figura?`);
+  $('consigna').textContent = '¡Muy bien!';
+  const a = $('acciones'); a.innerHTML = '';
+  a.appendChild(boton('Otra figura', () => { figura++; abrir('armar'); }));
+  a.appendChild(boton('Crear la mía', () => abrir('crear'), true));
+}
+
+/* ======================= 3. CREA LO QUE IMAGINES ======================= */
+const IDEAS = ['Construye un animal que viva en el río Cali', 'Construye el carro de tu familia', 'Construye tu casa con un jardín', 'Construye un robot que ayude en el colegio', 'Construye un parque para jugar con tus amigos'];
+function crear() {
+  $('titulo').textContent = 'Crea lo que imagines';
+  const idea = IDEAS[Math.floor(Math.random() * IDEAS.length)];
+  $('consigna').textContent = idea;
+  decir(`${idea}. Toca una figura de arriba para ponerla. Arrástrala para moverla. Tócala una vez para girarla. Para quitarla, llévala a la caneca.`);
+  const mesa = $('mesa'), ancho = mesa.clientWidth || 360, alto = Math.max(380, Math.min(window.innerHeight * .58, 620));
+  mesa.style.height = alto + 'px';
+  const tab = document.createElement('div'); tab.className = 'tablero'; Object.assign(tab.style, { left: '0px', top: '0px', width: ancho + 'px', height: alto + 'px' }); mesa.appendChild(tab);
+  const tacho = document.createElement('div'); tacho.className = 'papelera'; tacho.setAttribute('aria-label', 'Caneca para quitar figuras');
+  tacho.innerHTML = '<svg viewBox="0 0 40 40" aria-hidden="true"><rect x="10" y="12" width="20" height="24" rx="3" fill="#9FB1A8"/><rect x="7" y="8" width="26" height="5" rx="2" fill="#6F857A"/><rect x="16" y="4" width="8" height="5" rx="2" fill="#6F857A"/></svg>';
+  mesa.appendChild(tacho);
+  const pal = $('paleta'); pal.hidden = false; pal.innerHTML = '';
+  const tipos = [['cuadrado', 90, 90], ['rectangulo', 140, 70], ['triangulo', 100, 90], ['circulo', 90, 90]];
+  tipos.forEach(([tipo, w, h]) => Object.keys(COLORES).forEach(color => {
+    if ((tipo === 'rectangulo' || tipo === 'triangulo') && (color === 'morado')) return;
+    const b = document.createElement('button'); b.setAttribute('aria-label', `Poner ${NOMBRES[tipo]} ${color}`);
+    b.innerHTML = svgForma(tipo, w, h, color).replace('width="100%" height="100%"', 'width="56" height="56"');
+    b.onclick = () => { audio(); poner(tipo, w, h, color); };
+    pal.appendChild(b);
+  }));
+  function poner(tipo, w, h, color) {
+    decir(`${NOMBRES[tipo]} ${color}`);
+    const el = document.createElement('div'); el.className = 'forma'; let giro = 0;
+    Object.assign(el.style, { left: (ancho / 2 - w / 2 + (Math.random() * 60 - 30)) + 'px', top: (alto / 2 - h / 2 + (Math.random() * 60 - 30)) + 'px', width: w + 'px', height: h + 'px' });
+    el.innerHTML = svgForma(tipo, w, h, color);
+    arrastrable(el, { alSoltar: { fn: (e2, ev, toque) => {
+      tacho.classList.remove('activa');
+      if (toque) { giro = (giro + 45) % 360; e2.style.transform = `rotate(${giro}deg)`; return; }
+      const t = tacho.getBoundingClientRect();
+      if (ev.clientX > t.left && ev.clientX < t.right && ev.clientY > t.top && ev.clientY < t.bottom) e2.remove();
+    }, mientras: (e2, ev) => {
+      const t = tacho.getBoundingClientRect();
+      tacho.classList.toggle('activa', ev.clientX > t.left && ev.clientX < t.right && ev.clientY > t.top && ev.clientY < t.bottom);
+    } } });
+    mesa.appendChild(el);
+  }
+  const a = $('acciones'); a.innerHTML = '';
+  a.appendChild(boton('Ya terminé', () => { fiesta(); decir('¡Qué creación tan bonita! Ahora cuéntale a tu familia o a tu profe qué construiste, qué figuras usaste y para qué sirve.'); }));
+  a.appendChild(boton('Otra idea', () => abrir('crear'), true));
+  a.appendChild(boton('Empezar de nuevo', () => { mesa.querySelectorAll('.forma').forEach(f => f.remove()); }, true));
+}
+
+</script>
+</body>
+</html>
