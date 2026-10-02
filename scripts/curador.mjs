@@ -27,6 +27,7 @@ const HOY = new Date().toISOString().slice(0, 10);
 const TIPOS = ["steam", "robotica", "arduino", "raspberry", "programacion", "juego", "simulacion", "abp", "docente"];
 const COSTOS = ["gratis", "freemium", "pago"];
 const HARDWARE = ["ninguno", "opcional", "requerido"];
+const ACCESOS = ["ya", "codigo", "descarga", "licencia"];
 const BLOOM = ["recordar", "comprender", "aplicar", "analizar", "evaluar", "crear"];
 const PROYECTOS = ["Ciudadano 2040", "Guardianes Digitales", "Centec Verde", null];
 
@@ -43,6 +44,8 @@ const FOCOS = [
   ["abp", "Ética"], ["simulacion", "Biología"], ["juego", "Economía"],
   ["arduino", "Educación Física"], ["steam", "Matemáticas Financieras"], ["robotica", "Emprendimiento"],
   ["juego", "Transición y primaria"], ["raspberry", "Estadística"], ["abp", "Educación Sexual y Comportamiento"],
+  ["steam", "Transición a 3°: arte, música y creatividad"], ["programacion", "Transición a 3°: programación sin pantallas"],
+  ["abp", "Transición a 3°: proyectos con las familias"], ["docente", "Primera infancia y primaria"],
 ];
 
 const CONTEXTO = `Colegio CENTEC, colegio privado de Transición a grado 11 en el barrio Ciudad Córdoba,
@@ -188,6 +191,7 @@ Responde SOLO un arreglo JSON (sin texto adicional) con objetos de esta forma ex
   "costo": uno de ${JSON.stringify(COSTOS)},
   "hardware": uno de ${JSON.stringify(HARDWARE)},
   "idioma": "español" | "inglés" | "multilingüe",
+  "acceso": uno de ${JSON.stringify(ACCESOS)}   // ya = sin cuenta; codigo = clase del docente; descarga = se instala; licencia = de pago,
   "descripcion": "qué es y qué permite hacer, en 1-2 frases claras",
   "reto": {"titulo": "…", "problema": "problema real y local en 1-2 frases", "producto": "qué se entrega y para quién"},
   "proyecto_institucional": uno de ${JSON.stringify(PROYECTOS)},
@@ -226,6 +230,7 @@ async function auditorTecnico(candidatos, catalogo) {
     if (!COSTOS.includes(c.costo)) motivo.push("costo inválido");
     if (!HARDWARE.includes(c.hardware)) motivo.push("hardware inválido");
     if (!BLOOM.includes(c.bloom)) c.bloom = "aplicar";
+    if (!ACCESOS.includes(c.acceso)) c.acceso = "codigo";
     if (!PROYECTOS.includes(c.proyecto_institucional ?? null)) c.proyecto_institucional = null;
 
     if (!motivo.length) {
