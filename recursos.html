@@ -73,6 +73,11 @@
   .btn-sabi:hover{background:var(--noche-2)} .btn-abrir:hover{background:var(--papel)}
   body{font-size:18px} .chip{font-size:1rem;padding:8px 16px} select{font-size:1rem}
   .reto h2{font-size:1.85rem} .problema,.producto{font-size:1.1rem}
+  .acceso{display:inline-block;margin-top:8px;font-size:.88rem;font-weight:700;padding:4px 12px;border-radius:999px}
+  .acceso-ya{background:#E3F2E8;color:#1E5A35}
+  .acceso-codigo{background:#FFF1D6;color:#7A4A00}
+  .acceso-descarga{background:#E6EEF9;color:#173F73}
+  .acceso-licencia{background:#F3E6E6;color:#7A2323}
 </style>
 </head>
 <body>
@@ -126,6 +131,7 @@
       <div class="chips" id="f-tipos" role="group" aria-label="Tipo de herramienta"></div>
     </div>
     <label class="check"><input type="checkbox" id="f-sinhw"> Sin comprar materiales</label>
+    <label class="check"><input type="checkbox" id="f-ya"> Solo las que puedo usar ya, sin cuenta</label>
     <span class="conteo" id="conteo" aria-live="polite"></span>
   </div>
 </section>
@@ -143,6 +149,7 @@
   const GRADO = g => g === 0 ? 'Transición' : g + '°';
   const COSTO = {gratis:'Gratis', freemium:'Gratis con opciones de pago', pago:'Requiere licencia'};
   const HW = {ninguno:'No necesita', opcional:'Opcional', requerido:'Necesario'};
+  const ACCESO = {ya:['ya','Úsala ya, sin cuenta'], codigo:['codigo','Pide el código de clase a tu docente'], descarga:['descarga','Se instala en el computador o la tableta'], licencia:['licencia','Requiere licencia del colegio']};
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const seguro = u => /^https:\/\//.test(u) ? u : '#';
 
@@ -163,9 +170,10 @@
       b.setAttribute('aria-pressed', activos.has(t));
       pintar();
     });
-    ['f-grado','f-area','f-sinhw'].forEach(id => $(id).addEventListener('change', pintar));
+    ['f-grado','f-area','f-sinhw','f-ya'].forEach(id => $(id).addEventListener('change', pintar));
   }
 
+  const soloDocente = r => r.tipo.every(t => t === 'docente' || t === 'abp') && r.tipo.includes('docente');
   function filtrar(){
     const g = $('f-grado').value, a = $('f-area').value, sinhw = $('f-sinhw').checked;
     return recursos.filter(r =>
@@ -173,7 +181,17 @@
       (g === '' || (r.grados.desde <= +g && +g <= r.grados.hasta)) &&
       (a === '' || r.areas.includes(a) || r.areas.includes('Todas')) &&
       (!activos.size || r.tipo.some(t => activos.has(t))) &&
-      (!sinhw || r.hardware !== 'requerido'));
+      (!sinhw || r.hardware !== 'requerido') &&
+      (!$('f-ya').checked || (r.acceso || 'ya') === 'ya') &&
+      // Los materiales solo para docentes aparecen cuando se elige "Para docentes"
+      (activos.has('docente') || !soloDocente(r)))
+      // Primero lo que usa el estudiante; al final lo del docente
+      .sort((a, b) => {
+        const ORDEN = { ya: 0, descarga: 1, codigo: 2, licencia: 3 };
+        return ((a.tipo.includes('docente') ? 1 : 0) - (b.tipo.includes('docente') ? 1 : 0))
+          || ((ORDEN[a.acceso] ?? 0) - (ORDEN[b.acceso] ?? 0))
+          || ((a.grados.hasta - a.grados.desde) - (b.grados.hasta - b.grados.desde));  // lo más específico para el grado, primero
+      });
   }
 
   function pintar(){
@@ -181,7 +199,7 @@
     $('conteo').textContent = lista.length === 1 ? '1 reto' : `${lista.length} retos`;
     if(!lista.length){
       $('lista').innerHTML = `<div class="vacio"><h2>Ningún reto coincide con estos filtros.</h2><p>Prueba con otro grado o quita algún tipo de herramienta.</p><button class="chip" type="button" id="limpiar">Quitar filtros</button></div>`;
-      $('limpiar').onclick = () => { $('f-grado').value=''; $('f-area').value=''; $('f-sinhw').checked=false; activos.clear(); document.querySelectorAll('.chip[data-tipo]').forEach(c=>c.setAttribute('aria-pressed','false')); pintar(); };
+      $('limpiar').onclick = () => { $('f-grado').value=''; $('f-area').value=''; $('f-sinhw').checked=false; $('f-ya').checked=false; activos.clear(); document.querySelectorAll('.chip[data-tipo]').forEach(c=>c.setAttribute('aria-pressed','false')); pintar(); };
       return;
     }
     $('lista').innerHTML = lista.map(r => `
@@ -193,6 +211,7 @@
         </div>
         <aside class="herramienta">
           <h3><a href="${esc(seguro(r.url))}" target="_blank" rel="noopener noreferrer">${esc(r.titulo)}</a></h3>
+          <p class="acceso acceso-${(ACCESO[r.acceso] || ACCESO.ya)[0]}">${(ACCESO[r.acceso] || ACCESO.ya)[1]}</p>
           <p>${esc(r.descripcion)}</p>
           <dl class="datos">
             <dt>Grados</dt><dd>${GRADO(r.grados.desde)} a ${GRADO(r.grados.hasta)}</dd>
