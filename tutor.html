@@ -277,6 +277,8 @@
   .herramienta.leyendo{box-shadow:0 0 0 3px #E8A33A;}
   .leer{font-size:.8em !important;}
   #btn-voz-auto[aria-pressed="true"]{background:#F5A623; color:#0B1F3F; border-color:#F5A623;}
+  .barra-reto{position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap; gap:10px 18px; align-items:center; justify-content:center; background:#FFF6E3; border-bottom:2px solid #E8A33A; padding:10px clamp(14px,4vw,40px); font-family:'Public Sans',sans-serif; font-size:clamp(.95rem,.85rem + .3vw,1.1rem); color:#1F1D1A;}
+  .barra-reto a{background:#0B1F3F; color:#FBF8F1; text-decoration:none; font-weight:700; border-radius:999px; padding:8px 18px;}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
@@ -291,6 +293,7 @@
     <span class="mono" id="subtitulo-header">Colegio CENTEC</span>
   </div>
   <button class="btn-bitacora" id="btn-bitacora" style="display:none;">Mi bitácora</button>
+  <a class="cambiar-rol" id="btn-laboratorio" href="recursos.html" target="_blank" rel="noopener" style="display:none;text-decoration:none;">Laboratorio de retos</a>
   <button class="cambiar-rol" id="btn-voz-auto" style="display:none;" title="SABI lee en voz alta cada respuesta">Voz: apagada</button>
   <button class="cambiar-rol" id="btn-cambiar-mision" style="display:none;">Otra misión</button>
   <button class="cambiar-rol" id="btn-cambiar-rol" style="display:none;">Cambiar de perfil</button>
@@ -488,6 +491,10 @@
 
 <!-- PANTALLA 3: chat -->
 <div id="vista-chat">
+  <div class="barra-reto" id="barra-reto" hidden>
+    <span id="barra-reto-texto"></span>
+    <a id="barra-reto-abrir" target="_blank" rel="noopener noreferrer">Abrir la herramienta</a>
+  </div>
   <main id="hilo">
     <section class="plan" id="plan" hidden>
       <p class="plan-titulo">Propósito de esta sesión</p>
@@ -586,7 +593,7 @@
     }
 
     localStorage.setItem(LS_KEY, JSON.stringify(perfil));
-    perfil.role === 'estudiante' ? mostrarMision() : iniciarChat();
+    perfil.role === 'estudiante' ? mostrarMision() : (iniciarChat(), temaDocente());
   });
 
   // ---------- Iniciar vista de chat según el perfil ----------
@@ -618,6 +625,8 @@
     document.getElementById('btn-bitacora').style.display = esEst ? 'inline-block' : 'none';
     document.getElementById('btn-cambiar-mision').style.display = esEst ? 'inline-block' : 'none';
     pintarBotonVoz();
+    document.getElementById('btn-laboratorio').style.display = (rol === 'estudiante' || rol === 'docente') ? 'inline-block' : 'none';
+    pintarBarraReto();
     mostrarPantalla('chat');
   }
 
@@ -628,7 +637,10 @@
     rol: (PARAMS.get('rol') || '').toLowerCase(),
     materia: (PARAMS.get('materia') || '').slice(0, 60),
     mision: (PARAMS.get('mision') || '').toUpperCase().slice(0, 30),
-    tema: (PARAMS.get('tema') || '').slice(0, 300),
+    tema: (PARAMS.get('tema') || '').slice(0, 500),
+    reto: (PARAMS.get('reto') || '').slice(0, 120),
+    herramienta: (PARAMS.get('herramienta') || '').slice(0, 60),
+    urlHerramienta: /^https:\/\//.test(PARAMS.get('url') || '') ? PARAMS.get('url').slice(0, 300) : '',
   };
   const sinAcentos = t => String(t).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   function aplicarDestino() {
@@ -644,12 +656,31 @@
     if (misionBtn) { destino.mision = ''; setTimeout(() => misionBtn.click(), 50); }
   }
 
+  // ---------- Reto del Laboratorio: la herramienta queda siempre a la mano durante la conversación ----------
+  let retoActivo = null;
+  if (destino.herramienta && destino.urlHerramienta) retoActivo = { reto: destino.reto, herramienta: destino.herramienta, url: destino.urlHerramienta };
+  function pintarBarraReto() {
+    const barra = document.getElementById('barra-reto');
+    if (!retoActivo) { barra.hidden = true; return; }
+    barra.hidden = false;
+    document.getElementById('barra-reto-texto').textContent = (retoActivo.reto ? 'Reto: ' + retoActivo.reto + '. ' : '') + 'Herramienta: ' + retoActivo.herramienta + '.';
+    const a = document.getElementById('barra-reto-abrir');
+    a.href = retoActivo.url; a.textContent = 'Abrir ' + retoActivo.herramienta;
+  }
+
+  function temaDocente() {
+    if (perfil.role === 'docente' && destino.tema) { const t = destino.tema; destino.tema = ''; setTimeout(() => enviarTexto(t), 100); }
+  }
+
   function restaurar() {
     const guardado = localStorage.getItem(LS_KEY);
     if (guardado) {
       try {
-        perfil = JSON.parse(guardado);
-        perfil.role === 'estudiante' ? mostrarMision() : iniciarChat();
+        const previo = JSON.parse(guardado);
+        // Si un enlace pide otro rol (por ejemplo, un docente desde el Laboratorio), no se reutiliza el perfil guardado.
+        if (destino.rol && previo.role !== destino.rol && ['estudiante', 'padre', 'docente'].includes(destino.rol)) return;
+        perfil = previo;
+        perfil.role === 'estudiante' ? mostrarMision() : (iniciarChat(), temaDocente());
         return;
       } catch { /* ignora y sigue al flujo normal */ }
     }

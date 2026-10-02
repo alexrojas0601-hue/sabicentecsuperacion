@@ -63,6 +63,16 @@
   .vacio{padding:60px 0;max-width:52ch}
   .vacio button{margin-top:12px}
   footer{border-top:1px solid var(--linea);padding:28px 0;font-size:.88rem;color:var(--tinta-suave)}
+  .como{padding:28px 0 8px}
+  .como h2{font-size:1.6rem;margin-bottom:10px}
+  .como ol{margin-left:1.3em;display:grid;gap:8px;max-width:75ch;font-size:1.05rem}
+  .botones{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+  .btn-sabi,.btn-abrir{display:block;text-align:center;text-decoration:none;font-weight:700;border-radius:999px;padding:12px 16px;font-size:1rem}
+  .btn-sabi{background:var(--noche);color:var(--papel)}
+  .btn-abrir{border:2px solid var(--noche);color:var(--noche);background:#fff}
+  .btn-sabi:hover{background:var(--noche-2)} .btn-abrir:hover{background:var(--papel)}
+  body{font-size:18px} .chip{font-size:1rem;padding:8px 16px} select{font-size:1rem}
+  .reto h2{font-size:1.85rem} .problema,.producto{font-size:1.1rem}
 </style>
 </head>
 <body>
@@ -86,6 +96,17 @@
   </div>
 </section>
 
+<section class="como" aria-label="Cómo usar el laboratorio">
+  <div class="wrap">
+    <h2>Cómo se usa</h2>
+    <ol>
+      <li><strong>Filtra</strong> por tu grado y por el tipo de herramienta que quieres usar (Robótica, Arduino, Juegos…). Los botones solo muestran u ocultan retos.</li>
+      <li><strong>Elige un reto</strong> y toca <em>Trabajar este reto con SABI</em>. Se abre SABI en otra pestaña y te guía paso a paso.</li>
+      <li><strong>Abre la herramienta</strong> con su botón y trabaja con las dos pestañas a la vez: en una construyes, en la otra SABI te acompaña. Este laboratorio queda abierto para volver cuando quieras.</li>
+    </ol>
+  </div>
+</section>
+
 <section class="filtros" aria-label="Filtrar retos">
   <div class="wrap filtros-inner">
     <label class="campo">Grado
@@ -101,7 +122,7 @@
     <label class="campo">Área
       <select id="f-area"><option value="">Todas</option></select>
     </label>
-    <div class="campo">Tipo de herramienta
+    <div class="campo">Filtrar por tipo de herramienta
       <div class="chips" id="f-tipos" role="group" aria-label="Tipo de herramienta"></div>
     </div>
     <label class="check"><input type="checkbox" id="f-sinhw"> Sin comprar materiales</label>
@@ -180,10 +201,27 @@
             <dt>Materiales</dt><dd>${HW[r.hardware] || esc(r.hardware)}</dd>
             <dt>Idioma</dt><dd>${esc(r.idioma)}</dd>
           </dl>
+          <div class="botones">
+            <a class="btn-sabi" href="${enlaceSabi(r)}" target="_blank" rel="noopener">${r.tipo.includes('docente') ? 'Planear esta clase con SABI' : 'Trabajar este reto con SABI'}</a>
+            <a class="btn-abrir" href="${esc(seguro(r.url))}" target="_blank" rel="noopener noreferrer">Abrir ${esc(r.titulo)}</a>
+          </div>
           ${r.proyecto_institucional ? `<span class="proyecto">${esc(r.proyecto_institucional)}</span>` : ''}
           ${r.seguridad ? `<p class="seguridad">${esc(r.seguridad)}</p>` : ''}
         </aside>
       </article>`).join('');
+  }
+
+  // Enlace al tutor SABI con el reto ya cargado (misión Inventor para estudiantes, modo docente para docentes)
+  function enlaceSabi(r) {
+    const grado = $('f-grado').value;
+    const esDocente = r.tipo.includes('docente');
+    const p = new URLSearchParams({ rol: esDocente ? 'docente' : 'estudiante' });
+    if (!esDocente) { p.set('mision', 'INVENTOR'); p.set('materia', (r.areas.find(a => a !== 'Todas') || 'STEAM y Robótica')); }
+    p.set('reto', r.reto.titulo); p.set('herramienta', r.titulo); p.set('url', seguro(r.url));
+    p.set('tema', esDocente
+      ? `Quiero diseñar una clase o proyecto usando ${r.titulo}${grado ? ' para grado ' + (grado === '0' ? 'Transición' : grado + '°') : ''}. Reto sugerido: ${r.reto.titulo}. ${r.reto.problema}`
+      : `Reto del Laboratorio: ${r.reto.titulo}. Problema: ${r.reto.problema} Producto: ${r.reto.producto} Herramienta: ${r.titulo} (${r.url}).`);
+    return 'tutor.html?' + p.toString();
   }
 
   fetch('data/recursos.json', {cache:'no-cache'})
