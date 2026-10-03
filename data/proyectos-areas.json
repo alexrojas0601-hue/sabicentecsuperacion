@@ -1,0 +1,2904 @@
+{
+ "version": "2026-10-02",
+ "actualizado": "2026-10-02",
+ "nota": "Banco de proyectos por área de SABI Superación. Lo amplían cada semana los agentes investigadores (scripts/investigador-areas.mjs) mediante Pull Requests que aprueba coordinación académica.",
+ "areas": [
+  {
+   "area": "Matemáticas",
+   "proyectos": [
+    {
+     "id": "p-mat-tienda",
+     "titulo": "La tienda del barrio",
+     "tipo": [
+      "juego",
+      "abp"
+     ],
+     "grados": {
+      "desde": 0,
+      "hasta": 2
+     },
+     "pregunta_motriz": "¿Cómo hacemos para que todos paguen lo justo en nuestra tienda?",
+     "problema": "Los niños ven comprar en la tienda de la esquina pero aún no relacionan número, cantidad y precio.",
+     "producto": "Una tienda de juego en el salón con precios hechos por los niños y una compra contada en voz alta a la familia.",
+     "aprendizaje": "Contar, comparar cantidades y componer números pequeños en situaciones de compra (pensamiento numérico).",
+     "pensamiento": "Comparar, clasificar y seguir secuencias.",
+     "logica": "Inductiva: descubrir el patrón de precios.",
+     "gamificacion": "Roles de tendero y cliente; cada compra correcta abre un nuevo producto de la tienda.",
+     "herramienta": {
+      "nombre": "Taller de armar SABI",
+      "url": "https://superacion.sabicentec.com/juegos.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-mat-arepas",
+     "titulo": "Fracciones de la arepa",
+     "tipo": [
+      "programacion",
+      "juego"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Cómo repartimos arepas para que nadie reciba menos?",
+     "problema": "Repartir comida en casa genera discusiones; las fracciones explican qué es una parte justa.",
+     "producto": "Un juego en Scratch donde el jugador reparte arepas en partes iguales y el programa comprueba si es justo.",
+     "aprendizaje": "Interpretar fracciones como parte de un todo y como reparto; comparar fracciones con modelos (pensamiento numérico).",
+     "pensamiento": "Representar de varias formas (concreto, dibujo, símbolo).",
+     "logica": "Deductiva: si las partes son iguales y son 4, cada una es un cuarto.",
+     "gamificacion": "Niveles de dificultad creciente; insignia de maestro repartidor al explicar por qué es justo.",
+     "herramienta": {
+      "nombre": "Scratch",
+      "url": "https://scratch.mit.edu/projects/editor/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-mat-plandatos",
+     "titulo": "¿Qué plan de celular le conviene a la familia?",
+     "tipo": [
+      "simulacion",
+      "abp"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Cómo decide una familia el plan de celular más conveniente sin dejarse engañar por la publicidad?",
+     "problema": "Las familias de la Comuna 15 pagan planes sin comparar el costo por uso real.",
+     "producto": "Un informe con gráficas en Desmos que compara dos o tres planes y recomienda uno con argumentos.",
+     "aprendizaje": "Modelar situaciones con funciones lineales, interpretar pendiente e intercepto y comparar tasas (pensamiento variacional).",
+     "pensamiento": "Modelación y toma de decisiones con evidencia.",
+     "logica": "Deductiva y condicional: si se usan más de X datos, conviene el plan B.",
+     "gamificacion": "Reto de detective de la letra pequeña: cada costo escondido descubierto suma puntos de estrategia.",
+     "herramienta": {
+      "nombre": "Calculadora gráfica Desmos",
+      "url": "https://www.desmos.com/calculator?lang=es",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-mat-parque",
+     "titulo": "Rediseñemos el parque de Ciudad Córdoba",
+     "tipo": [
+      "abp",
+      "steam"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo rediseñar el parque del barrio para que lo usen niños, jóvenes y adultos mayores con un presupuesto real?",
+     "problema": "El parque tiene zonas sin uso y otras saturadas; falta un plan con medidas reales.",
+     "producto": "Plano a escala en GeoGebra con áreas, perímetros, costos y una propuesta presentada a la Junta de Acción Comunal.",
+     "aprendizaje": "Usar escalas, áreas, volúmenes y semejanza; justificar decisiones con cálculo (pensamiento espacial y métrico).",
+     "pensamiento": "Pensamiento de diseño y sistémico.",
+     "logica": "Abductiva: proponer la mejor explicación de por qué una zona no se usa.",
+     "gamificacion": "Presupuesto limitado como reto: cada decisión debe justificarse ante un jurado de vecinos.",
+     "herramienta": {
+      "nombre": "GeoGebra",
+      "url": "https://www.geogebra.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": "Ciudadano 2040",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Trigonometría",
+   "proyectos": [
+    {
+     "id": "p-tri-alturas",
+     "titulo": "Medidor de alturas con sensor de inclinación",
+     "tipo": [
+      "arduino",
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo medir la altura de un árbol o del colegio sin subir a él?",
+     "problema": "No hay forma segura de medir alturas del colegio para un proyecto de sombras y techos.",
+     "producto": "Un circuito simulado en Wokwi con sensor de inclinación que calcula alturas con la tangente, comparado con una medición real con cinta y sombra.",
+     "aprendizaje": "Usar razones trigonométricas en triángulos rectángulos para resolver problemas reales.",
+     "pensamiento": "Modelación matemática y verificación.",
+     "logica": "Deductiva: de la razón tangente y la distancia se deduce la altura.",
+     "gamificacion": "Misión de topógrafos: el equipo con menor error justificado gana el sello de precisión.",
+     "herramienta": {
+      "nombre": "Wokwi (simulador de Arduino)",
+      "url": "https://wokwi.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Solo simulación o bajo voltaje con baterías; nunca subir a techos ni árboles.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-tri-salsa",
+     "titulo": "Las ondas de la salsa",
+     "tipo": [
+      "simulacion",
+      "steam"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Qué tienen en común una canción de salsa y una función seno?",
+     "problema": "Los estudiantes escuchan salsa todos los días pero ven el seno como algo sin vida.",
+     "producto": "Un mural de Desmos que modela notas musicales con funciones seno de distinta amplitud y frecuencia.",
+     "aprendizaje": "Interpretar amplitud, periodo y frecuencia de funciones trigonométricas.",
+     "pensamiento": "Pensamiento analógico y representación múltiple.",
+     "logica": "Analógica: el sonido se comporta como una onda periódica.",
+     "gamificacion": "Reto de imitar una nota: ganar el nivel cuando la gráfica coincide con la nota dada.",
+     "herramienta": {
+      "nombre": "Calculadora gráfica Desmos",
+      "url": "https://www.desmos.com/calculator?lang=es",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-tri-rampa",
+     "titulo": "Rampa accesible para el colegio",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo debe ser una rampa para que una persona en silla de ruedas entre sin riesgo?",
+     "problema": "Algunos accesos del colegio tienen escalones que excluyen a personas con movilidad reducida.",
+     "producto": "Propuesta técnica a rectoría con ángulos, longitudes y planos, basada en normas de accesibilidad consultadas.",
+     "aprendizaje": "Resolver triángulos y relacionar pendiente, ángulo y longitud en un diseño real.",
+     "pensamiento": "Pensamiento crítico con estándares de precisión y relevancia.",
+     "logica": "Deductiva con restricciones.",
+     "gamificacion": "Sin juego: proyecto de servicio real con presentación pública.",
+     "herramienta": {
+      "nombre": "GeoGebra",
+      "url": "https://www.geogebra.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": "Ciudadano 2040",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Cálculo",
+   "proyectos": [
+    {
+     "id": "p-cal-tanque",
+     "titulo": "¿Qué tan rápido se llena el tanque?",
+     "tipo": [
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo saber cuándo se rebosará el tanque de agua del colegio?",
+     "problema": "El tanque se rebosa o se vacía sin aviso; nadie modela su razón de cambio.",
+     "producto": "Modelo en Desmos con la razón de cambio del volumen y una alerta calculada de llenado.",
+     "aprendizaje": "Interpretar la derivada como razón de cambio instantánea a partir de gráficas y tablas.",
+     "pensamiento": "Pensamiento variacional y modelación.",
+     "logica": "Inductiva a partir de datos y deductiva al generalizar.",
+     "gamificacion": "Predicción contra realidad: cada predicción cercana sube de nivel.",
+     "herramienta": {
+      "nombre": "Calculadora gráfica Desmos",
+      "url": "https://www.desmos.com/calculator?lang=es",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-cal-mio",
+     "titulo": "La velocidad del MIO con el celular",
+     "tipo": [
+      "programacion",
+      "raspberry"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cuándo acelera y cuándo frena el bus en el recorrido de casa al colegio?",
+     "problema": "Los estudiantes viajan en el MIO pero no interpretan sus propios datos de movimiento.",
+     "producto": "Un programa en Python que calcula velocidades y aceleraciones aproximadas a partir de datos de posición registrados con el celular.",
+     "aprendizaje": "Aproximar derivadas con cocientes de diferencias y relacionar posición, velocidad y aceleración.",
+     "pensamiento": "Pensamiento computacional y numérico.",
+     "logica": "Inductiva y numérica: aproximaciones cada vez más finas.",
+     "gamificacion": "Desafío del dato limpio: puntos por detectar y corregir datos con errores.",
+     "herramienta": {
+      "nombre": "Editor de código Raspberry Pi",
+      "url": "https://editor.raspberrypi.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Los datos de ubicación se toman con permiso de la familia y no se publican.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-cal-caja",
+     "titulo": "La caja con menos cartón",
+     "tipo": [
+      "abp",
+      "steam"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Qué medidas debe tener una caja para guardar lo mismo gastando menos material?",
+     "problema": "Los negocios del barrio gastan de más en empaques.",
+     "producto": "Prototipo de caja optimizada con el cálculo de máximos y mínimos y una comparación de material ahorrado.",
+     "aprendizaje": "Resolver problemas de optimización con derivadas.",
+     "pensamiento": "Pensamiento de diseño y optimización.",
+     "logica": "Deductiva: el mínimo ocurre donde la derivada es cero y cambia de signo.",
+     "gamificacion": "Competencia cooperativa de ahorro de material con verificación del curso.",
+     "herramienta": {
+      "nombre": "GeoGebra",
+      "url": "https://www.geogebra.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": "Centec Verde",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Estadística",
+   "proyectos": [
+    {
+     "id": "p-est-frutas",
+     "titulo": "La encuesta de frutas del recreo",
+     "tipo": [
+      "juego",
+      "abp"
+     ],
+     "grados": {
+      "desde": 1,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Qué fruta deberíamos pedir para el recreo para que le guste a la mayoría?",
+     "problema": "La merienda del recreo se elige sin preguntar a los niños.",
+     "producto": "Un pictograma y un gráfico de barras con la recomendación del curso.",
+     "aprendizaje": "Recolectar, organizar y representar datos en tablas y gráficas (pensamiento aleatorio).",
+     "pensamiento": "Clasificar, comparar y concluir.",
+     "logica": "Inductiva: de los datos a una conclusión.",
+     "gamificacion": "Votación como juego con fichas; quien explique el gráfico gana la estrella del analista.",
+     "herramienta": {
+      "nombre": "CODAP (análisis de datos)",
+      "url": "https://codap.concord.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-est-calor",
+     "titulo": "¿En qué salón hace más calor?",
+     "tipo": [
+      "raspberry",
+      "steam"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Qué salón del colegio necesita más ventilación y por qué?",
+     "problema": "Algunos salones se calientan en la tarde y afectan la concentración.",
+     "producto": "Registro de temperatura con Raspberry Pi y un análisis con medidas de tendencia central.",
+     "aprendizaje": "Calcular e interpretar media, mediana y rango a partir de datos medidos.",
+     "pensamiento": "Pensamiento científico y estadístico.",
+     "logica": "Causal: distinguir correlación de causa.",
+     "gamificacion": "Liga de salones: cada equipo defiende su conclusión con datos.",
+     "herramienta": {
+      "nombre": "Proyectos Raspberry Pi",
+      "url": "https://projects.raspberrypi.org/es-LA",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Solo componentes de bajo voltaje y con docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-est-cali",
+     "titulo": "Datos abiertos de Cali",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Qué nos dicen los datos públicos sobre la seguridad vial cerca del colegio?",
+     "problema": "Hay accidentes en las vías cercanas y las opiniones no se basan en datos.",
+     "producto": "Informe ciudadano con gráficas a partir de datos abiertos oficiales y una propuesta a la comunidad.",
+     "aprendizaje": "Formular preguntas estadísticas, analizar datos reales e interpretar en contexto (ciclo de investigación estadística).",
+     "pensamiento": "Lectura crítica de datos y pensamiento sistémico.",
+     "logica": "Inductiva y causal, con cuidado ante variables de confusión.",
+     "gamificacion": "Sin juego: proyecto de impacto con presentación pública.",
+     "herramienta": {
+      "nombre": "Datos Abiertos Colombia",
+      "url": "https://www.datos.gov.co",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": "Ciudadano 2040",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-est-dado",
+     "titulo": "¿Es justo este dado?",
+     "tipo": [
+      "simulacion",
+      "programacion"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo demostrar si un dado está cargado?",
+     "problema": "Los juegos de azar del barrio prometen premios que casi nunca llegan.",
+     "producto": "Simulación en Scratch o Python de miles de lanzamientos y un argumento probabilístico.",
+     "aprendizaje": "Interpretar probabilidad frecuencial y teórica; ley de los grandes números.",
+     "pensamiento": "Pensamiento probabilístico.",
+     "logica": "Probabilística: distinguir lo improbable de lo imposible.",
+     "gamificacion": "Apuesta con fichas sin dinero: gana quien mejor explica por qué la banca siempre gana.",
+     "herramienta": {
+      "nombre": "Scratch",
+      "url": "https://scratch.mit.edu/projects/editor/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin dinero real; reflexión sobre riesgos del juego de azar.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Matemáticas Financieras",
+   "proyectos": [
+    {
+     "id": "p-fin-ahorro",
+     "titulo": "El reto del ahorro de diez semanas",
+     "tipo": [
+      "juego"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Cómo lograr comprar algo que quiero sin endeudarme?",
+     "problema": "Muchos jóvenes gastan la mesada el mismo día.",
+     "producto": "Plan de ahorro con gráfica y diario de decisiones de diez semanas.",
+     "aprendizaje": "Usar porcentajes, proporciones y presupuesto en decisiones personales.",
+     "pensamiento": "Pensamiento estratégico y planificación.",
+     "logica": "Condicional: si gasto hoy, entonces...",
+     "gamificacion": "Misión semanal con niveles de ahorro; se premia la estrategia, no el monto.",
+     "herramienta": {
+      "nombre": "Calculadora gráfica Desmos",
+      "url": "https://www.desmos.com/calculator?lang=es",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-fin-cuota",
+     "titulo": "La trampa de la cuota mínima",
+     "tipo": [
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Por qué una deuda pequeña se puede volver enorme?",
+     "problema": "Familias pagan solo el mínimo de tarjetas o créditos informales (gota a gota).",
+     "producto": "Simulación de interés compuesto que compara pagar el mínimo con pagar más, y una guía para la familia.",
+     "aprendizaje": "Modelar interés simple y compuesto con funciones exponenciales.",
+     "pensamiento": "Pensamiento crítico ante ofertas financieras.",
+     "logica": "Deductiva y cuantitativa.",
+     "gamificacion": "Juego de rol del prestamista y el cliente informado.",
+     "herramienta": {
+      "nombre": "Calculadora gráfica Desmos",
+      "url": "https://www.desmos.com/calculator?lang=es",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Tratar con respeto la realidad económica de cada familia.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-fin-app",
+     "titulo": "Calculadora de préstamos en una app",
+     "tipo": [
+      "programacion"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo ayudar a un vecino a saber cuánto pagará realmente por un préstamo?",
+     "problema": "Los vecinos firman préstamos sin conocer el costo total.",
+     "producto": "Una aplicación en App Inventor que calcula cuotas e intereses totales.",
+     "aprendizaje": "Aplicar fórmulas de anualidades y comunicar resultados.",
+     "pensamiento": "Pensamiento computacional aplicado a finanzas.",
+     "logica": "Lógica de programación: condicionales y ciclos.",
+     "gamificacion": "Pruebas de usuario reales como niveles del juego.",
+     "herramienta": {
+      "nombre": "MIT App Inventor",
+      "url": "https://appinventor.mit.edu",
+      "acceso": "codigo",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Economía y Finanzas",
+   "proyectos": [
+    {
+     "id": "p-eco-mercado",
+     "titulo": "El mercado del recreo",
+     "tipo": [
+      "juego",
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Por qué sube el precio de las cosas cuando todos las quieren?",
+     "problema": "Los precios en la tienda escolar cambian y nadie entiende por qué.",
+     "producto": "Simulación de mercado con fichas y una gráfica de oferta y demanda en Desmos.",
+     "aprendizaje": "Comprender escasez, oferta, demanda y precio con datos de una simulación.",
+     "pensamiento": "Pensamiento sistémico.",
+     "logica": "Causal e inductiva.",
+     "gamificacion": "Ronda de compradores y vendedores con roles secretos.",
+     "herramienta": {
+      "nombre": "Calculadora gráfica Desmos",
+      "url": "https://www.desmos.com/calculator?lang=es",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-eco-inflacion",
+     "titulo": "La canasta de la familia",
+     "tipo": [
+      "simulacion",
+      "abp"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cuánto más cuesta hoy el mercado de la familia que hace un año?",
+     "problema": "La inflación golpea a las familias pero se habla de ella sin cifras.",
+     "producto": "Informe que compara la canasta familiar con el índice de precios del DANE.",
+     "aprendizaje": "Interpretar índices, variación porcentual e inflación con datos oficiales.",
+     "pensamiento": "Lectura crítica de cifras.",
+     "logica": "Inductiva y estadística.",
+     "gamificacion": "Sin juego: investigación con datos reales.",
+     "herramienta": {
+      "nombre": "DANE",
+      "url": "https://www.dane.gov.co",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-eco-circular",
+     "titulo": "Economía circular en la Comuna 15",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo convertir los residuos del barrio en valor y empleo?",
+     "problema": "Los recicladores del barrio trabajan sin reconocimiento ni cadena de valor.",
+     "producto": "Mapa de la cadena del reciclaje con propuesta de negocio circular presentada a la comunidad.",
+     "aprendizaje": "Analizar cadenas de valor, costos y beneficios sociales.",
+     "pensamiento": "Pensamiento sistémico y de diseño.",
+     "logica": "Abductiva y causal.",
+     "gamificacion": "Reto de impacto: metas medibles por fases.",
+     "herramienta": {
+      "nombre": "Banco de la República",
+      "url": "https://www.banrep.gov.co",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": "Centec Verde",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Lenguaje",
+   "proyectos": [
+    {
+     "id": "p-len-rimas",
+     "titulo": "Rimas y sonidos con SABI",
+     "tipo": [
+      "juego"
+     ],
+     "grados": {
+      "desde": 0,
+      "hasta": 2
+     },
+     "pregunta_motriz": "¿Qué palabras suenan parecido a mi nombre?",
+     "problema": "Antes de leer, los niños necesitan jugar con los sonidos.",
+     "producto": "Un libro de rimas del curso leído en voz alta a las familias.",
+     "aprendizaje": "Conciencia fonológica: rimas, sílabas y sonidos iniciales.",
+     "pensamiento": "Comparar y clasificar sonidos.",
+     "logica": "Inductiva: descubrir el patrón del sonido.",
+     "gamificacion": "Cacería de rimas por niveles guiada por la voz de SABI.",
+     "herramienta": {
+      "nombre": "Tutor SABI",
+      "url": "https://superacion.sabicentec.com/tutor.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-len-leyenda",
+     "titulo": "Leyendas del Valle en Scratch",
+     "tipo": [
+      "programacion",
+      "steam"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Cómo contaría la Madremonte su propia historia?",
+     "problema": "Las leyendas de la región se están olvidando.",
+     "producto": "Un cuento animado en Scratch con narración propia de una leyenda del Valle del Cauca.",
+     "aprendizaje": "Comprender y producir textos narrativos con inicio, nudo y desenlace.",
+     "pensamiento": "Secuenciar y narrar desde otro punto de vista.",
+     "logica": "Causal: qué hecho provoca qué.",
+     "gamificacion": "Escenas como niveles; el público vota la mejor escena.",
+     "herramienta": {
+      "nombre": "Scratch",
+      "url": "https://scratch.mit.edu/projects/editor/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-len-twine",
+     "titulo": "Historias con decisiones",
+     "tipo": [
+      "programacion",
+      "juego"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Cómo cambian las consecuencias según las decisiones de un personaje?",
+     "problema": "Los estudiantes leen sin notar cómo se construye una trama.",
+     "producto": "Una historia interactiva en Twine con al menos tres finales posibles.",
+     "aprendizaje": "Producir textos narrativos coherentes y analizar la estructura de la trama.",
+     "pensamiento": "Pensamiento condicional y empatía.",
+     "logica": "Condicional: si el personaje elige A, entonces...",
+     "gamificacion": "Final secreto que se desbloquea leyendo con atención.",
+     "herramienta": {
+      "nombre": "Twine",
+      "url": "https://twinery.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-len-podcast",
+     "titulo": "Podcast de opinión argumentada",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Qué debería cambiar en Cali y cómo lo convencemos con buenas razones?",
+     "problema": "Las opiniones en redes suelen carecer de argumentos y evidencia.",
+     "producto": "Un podcast de opinión con tesis, argumentos, evidencia y contraargumento, para la emisora escolar.",
+     "aprendizaje": "Producir textos argumentativos y evaluar argumentos ajenos (lectura crítica).",
+     "pensamiento": "Argumentación de Toulmin y detección de falacias.",
+     "logica": "Informal: falacias y persuasión ética.",
+     "gamificacion": "Debate por rondas con puntos por evidencia de calidad.",
+     "herramienta": {
+      "nombre": "Audacity",
+      "url": "https://www.audacityteam.org",
+      "acceso": "descarga",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Inglés",
+   "proyectos": [
+    {
+     "id": "p-ing-simon",
+     "titulo": "Simon says con movimiento",
+     "tipo": [
+      "juego"
+     ],
+     "grados": {
+      "desde": 0,
+      "hasta": 2
+     },
+     "pregunta_motriz": "Can you move like an animal?",
+     "problema": "Los más pequeños aprenden inglés cuando el cuerpo participa.",
+     "producto": "Una presentación de movimientos y canciones para las familias.",
+     "aprendizaje": "Comprender instrucciones orales sencillas y vocabulario de cuerpo y animales.",
+     "pensamiento": "Atención y control inhibitorio.",
+     "logica": "Condicional sencilla: si Simon lo dice, me muevo.",
+     "gamificacion": "Juego de Simon con niveles de velocidad.",
+     "herramienta": {
+      "nombre": "LearnEnglish Kids (British Council)",
+      "url": "https://learnenglishkids.britishcouncil.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-ing-pet",
+     "titulo": "My pet in Scratch",
+     "tipo": [
+      "programacion"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "How can my pet introduce itself to a visitor?",
+     "problema": "Los estudiantes conocen palabras sueltas pero no las usan para comunicarse.",
+     "producto": "Un personaje de Scratch que se presenta en inglés con voz.",
+     "aprendizaje": "Producir descripciones sencillas sobre sí mismo y su entorno.",
+     "pensamiento": "Secuenciar ideas.",
+     "logica": "Lógica de programación: eventos y secuencias.",
+     "gamificacion": "Insignia de narrador al grabar la voz propia.",
+     "herramienta": {
+      "nombre": "Scratch",
+      "url": "https://scratch.mit.edu/projects/editor/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-ing-mio",
+     "titulo": "El turista perdido en el MIO",
+     "tipo": [
+      "simulacion",
+      "juego"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "How can you help a tourist get to the Cristo Rey?",
+     "problema": "Cali recibe turistas y pocos jóvenes se atreven a hablar con ellos.",
+     "producto": "Un juego de rol con SABI y una guía de rutas bilingüe.",
+     "aprendizaje": "Dar y pedir indicaciones; interacción oral en situaciones reales.",
+     "pensamiento": "Toma de perspectiva.",
+     "logica": "Secuencial y espacial.",
+     "gamificacion": "Misión con turistas de dificultad creciente y evaluación de pronunciación.",
+     "herramienta": {
+      "nombre": "Tutor SABI",
+      "url": "https://superacion.sabicentec.com/tutor.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-ing-guia",
+     "titulo": "Guía turística bilingüe de Cali",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "What should the world know about our city?",
+     "problema": "El barrio y la ciudad tienen historias que no se cuentan en inglés.",
+     "producto": "Una guía bilingüe en audio y texto publicada para la comunidad.",
+     "aprendizaje": "Producir textos expositivos y orales en inglés con propósito comunicativo real.",
+     "pensamiento": "Pensamiento de audiencia y persuasión ética.",
+     "logica": "Argumentativa.",
+     "gamificacion": "Desafío de audiencia real: retroalimentación de visitantes.",
+     "herramienta": {
+      "nombre": "LearnEnglish Teens (British Council)",
+      "url": "https://learnenglishteens.britishcouncil.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": "Ciudadano 2040",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Mandarín",
+   "proyectos": [
+    {
+     "id": "p-chi-tonos",
+     "titulo": "Los cuatro tonos con el cuerpo",
+     "tipo": [
+      "juego"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Cómo cambia una palabra si cambia su tono?",
+     "problema": "El tono es lo más difícil del mandarín para hispanohablantes.",
+     "producto": "Una coreografía de tonos y un saludo grabado.",
+     "aprendizaje": "Discriminar y producir los cuatro tonos en palabras básicas.",
+     "pensamiento": "Discriminación auditiva y atención.",
+     "logica": "Clasificación por patrones.",
+     "gamificacion": "Juego de adivinar el tono por niveles.",
+     "herramienta": {
+      "nombre": "Tutor SABI",
+      "url": "https://superacion.sabicentec.com/tutor.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-chi-memoria",
+     "titulo": "Memoria de caracteres en Scratch",
+     "tipo": [
+      "programacion",
+      "juego"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Qué dibujo antiguo se esconde detrás de cada carácter?",
+     "problema": "Los caracteres parecen imposibles de recordar sin una historia.",
+     "producto": "Un juego de memoria con caracteres, pinyin y significado.",
+     "aprendizaje": "Reconocer caracteres básicos y sus radicales.",
+     "pensamiento": "Codificación dual: imagen y palabra.",
+     "logica": "Analógica: el carácter como dibujo que evolucionó.",
+     "gamificacion": "Parejas por niveles con repetición espaciada.",
+     "herramienta": {
+      "nombre": "Scratch",
+      "url": "https://scratch.mit.edu/projects/editor/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-chi-feria",
+     "titulo": "Feria del Año Nuevo Chino",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Qué podemos aprender de una cultura tan lejana y tan presente en Cali?",
+     "problema": "Hay comercio con China en la ciudad pero poco conocimiento cultural.",
+     "producto": "Una feria cultural bilingüe con presentaciones y diálogos en mandarín.",
+     "aprendizaje": "Interactuar en situaciones básicas y comprender rasgos culturales.",
+     "pensamiento": "Toma de perspectiva intercultural.",
+     "logica": "Comparativa y analógica.",
+     "gamificacion": "Pasaporte cultural con sellos por estación superada.",
+     "herramienta": {
+      "nombre": "Diccionario MDBG de chino",
+      "url": "https://www.mdbg.net/chinese/dictionary",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Ciencias Naturales",
+   "proyectos": [
+    {
+     "id": "p-cn-flota",
+     "titulo": "¿Qué flota y qué se hunde?",
+     "tipo": [
+      "steam",
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 0,
+      "hasta": 2
+     },
+     "pregunta_motriz": "¿Por qué algunas cosas flotan en el agua y otras se hunden?",
+     "problema": "Los niños tienen ideas propias sobre por qué las cosas flotan que conviene escuchar.",
+     "producto": "Una tabla de predicciones y resultados contada a la familia.",
+     "aprendizaje": "Observar, predecir y comparar propiedades de los objetos.",
+     "pensamiento": "Predecir, observar y explicar.",
+     "logica": "Inductiva.",
+     "gamificacion": "Apuestas de predicción con fichas: se gana aprendiendo del error.",
+     "herramienta": {
+      "nombre": "Simulaciones PhET",
+      "url": "https://phet.colorado.edu/es/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Agua en recipiente bajo, siempre con un adulto.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-cn-huerta",
+     "titulo": "Semáforo del agua de la huerta",
+     "tipo": [
+      "arduino",
+      "steam"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Cómo sabe la planta que tiene sed?",
+     "problema": "La huerta escolar se seca los fines de semana.",
+     "producto": "Un circuito simulado con sensor de humedad que enciende un semáforo de luces.",
+     "aprendizaje": "Reconocer necesidades de los seres vivos y relacionarlas con su entorno.",
+     "pensamiento": "Pensamiento científico y computacional.",
+     "logica": "Condicional: si la tierra está seca, entonces luz roja.",
+     "gamificacion": "Misión guardianes de la huerta por niveles.",
+     "herramienta": {
+      "nombre": "Tinkercad Circuits",
+      "url": "https://www.tinkercad.com",
+      "acceso": "codigo",
+      "costo": "gratis"
+     },
+     "seguridad": "Solo simulación o baterías de bajo voltaje.",
+     "proyecto_institucional": "Centec Verde",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-cn-estados",
+     "titulo": "Los estados del agua",
+     "tipo": [
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿A dónde se va el agua de un charco?",
+     "problema": "Ideas comunes como que el agua desaparece necesitan confrontarse.",
+     "producto": "Un cómic científico que explica el ciclo del agua.",
+     "aprendizaje": "Describir cambios de estado y relacionarlos con la temperatura.",
+     "pensamiento": "Pensamiento científico (predecir y explicar).",
+     "logica": "Causal.",
+     "gamificacion": "Retos de predicción con la simulación.",
+     "herramienta": {
+      "nombre": "Simulaciones PhET",
+      "url": "https://phet.colorado.edu/es/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-cn-aves",
+     "titulo": "Guardianes de las aves del barrio",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 0,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Qué aves visitan nuestro colegio y qué necesitan?",
+     "problema": "Pocos niños saben qué fauna convive con ellos en Ciudad Córdoba.",
+     "producto": "Un álbum de aves del colegio y un comedero ecológico.",
+     "aprendizaje": "Observar, registrar y clasificar seres vivos de su entorno.",
+     "pensamiento": "Observación sistemática y clasificación.",
+     "logica": "Inductiva.",
+     "gamificacion": "Álbum de figuritas que se completa con observaciones reales.",
+     "herramienta": {
+      "nombre": "Merlin Bird ID",
+      "url": "https://merlin.allaboutbirds.org",
+      "acceso": "descarga",
+      "costo": "gratis"
+     },
+     "seguridad": "Observar a distancia; nunca tocar aves ni nidos.",
+     "proyecto_institucional": "Centec Verde",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Biología",
+   "proyectos": [
+    {
+     "id": "p-bio-timelapse",
+     "titulo": "La cámara de la huerta",
+     "tipo": [
+      "raspberry",
+      "steam"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Cómo crece realmente una planta día a día?",
+     "problema": "El crecimiento es demasiado lento para observarlo a simple vista.",
+     "producto": "Un video de crecimiento con Raspberry Pi y un informe de variables.",
+     "aprendizaje": "Explicar procesos de crecimiento y nutrición vegetal con evidencia.",
+     "pensamiento": "Diseño experimental con variables y control.",
+     "logica": "Causal y experimental.",
+     "gamificacion": "Apuesta científica sobre qué planta crecerá más.",
+     "herramienta": {
+      "nombre": "Proyectos Raspberry Pi",
+      "url": "https://projects.raspberrypi.org/es-LA",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Bajo voltaje y con docente.",
+     "proyecto_institucional": "Centec Verde",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-bio-seleccion",
+     "titulo": "Selección natural con conejos",
+     "tipo": [
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 8,
+      "hasta": 10
+     },
+     "pregunta_motriz": "¿Por qué cambian las especies con el tiempo?",
+     "problema": "La evolución suele malinterpretarse como intención del organismo.",
+     "producto": "Un informe con datos simulados que explica la selección natural.",
+     "aprendizaje": "Explicar la evolución por selección natural con datos.",
+     "pensamiento": "Pensamiento poblacional y probabilístico.",
+     "logica": "Inductiva y causal.",
+     "gamificacion": "Retos de supervivencia por generaciones.",
+     "herramienta": {
+      "nombre": "Simulaciones PhET",
+      "url": "https://phet.colorado.edu/es/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-bio-rio",
+     "titulo": "Bioindicadores del río",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Está sano el agua que pasa cerca de nuestro barrio?",
+     "problema": "Los ríos de Cali reciben vertimientos y la comunidad no conoce su estado.",
+     "producto": "Informe de calidad del agua con bioindicadores y propuesta a la comunidad.",
+     "aprendizaje": "Relacionar biodiversidad, contaminación y salud de ecosistemas.",
+     "pensamiento": "Pensamiento sistémico.",
+     "logica": "Abductiva.",
+     "gamificacion": "Expedición por fases con bitácora científica.",
+     "herramienta": {
+      "nombre": "Simulaciones PhET",
+      "url": "https://phet.colorado.edu/es/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Salidas solo con adultos, guantes y sin entrar al agua.",
+     "proyecto_institucional": "Centec Verde",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-bio-ia",
+     "titulo": "Clasificador de hojas con inteligencia artificial",
+     "tipo": [
+      "programacion"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Puede una máquina reconocer especies como un biólogo?",
+     "problema": "Clasificar plantas requiere conocimiento que pocos tienen.",
+     "producto": "Un modelo en Teachable Machine que clasifica hojas del colegio y un análisis de sus errores.",
+     "aprendizaje": "Usar criterios taxonómicos y evaluar modelos de clasificación.",
+     "pensamiento": "Pensamiento crítico sobre la IA.",
+     "logica": "Inductiva y estadística.",
+     "gamificacion": "Duelo humano contra máquina para ver quién clasifica mejor.",
+     "herramienta": {
+      "nombre": "Teachable Machine",
+      "url": "https://teachablemachine.withgoogle.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin rostros ni datos personales en las imágenes.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Química",
+   "proyectos": [
+    {
+     "id": "p-qui-moleculas",
+     "titulo": "Construye moléculas",
+     "tipo": [
+      "simulacion",
+      "juego"
+     ],
+     "grados": {
+      "desde": 8,
+      "hasta": 9
+     },
+     "pregunta_motriz": "¿Por qué el agua es agua y no otra cosa?",
+     "problema": "La química parece un idioma de símbolos sin sentido.",
+     "producto": "Un álbum de moléculas explicado en los tres niveles: lo que se ve, los átomos y la fórmula.",
+     "aprendizaje": "Explicar la composición de sustancias y relacionar fórmula y estructura.",
+     "pensamiento": "Representación en tres niveles.",
+     "logica": "Deductiva.",
+     "gamificacion": "Retos de la simulación por niveles.",
+     "herramienta": {
+      "nombre": "Simulaciones PhET",
+      "url": "https://phet.colorado.edu/es/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-qui-repollo",
+     "titulo": "Indicador de pH con repollo morado",
+     "tipo": [
+      "steam"
+     ],
+     "grados": {
+      "desde": 8,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Qué tan ácidos son los productos de nuestra cocina?",
+     "problema": "Usamos productos sin saber su acidez.",
+     "producto": "Una escala de pH casera con fotografías y datos analizados.",
+     "aprendizaje": "Clasificar sustancias en ácidas y básicas con evidencia.",
+     "pensamiento": "Pensamiento científico experimental.",
+     "logica": "Inductiva.",
+     "gamificacion": "Colección de colores por niveles.",
+     "herramienta": {
+      "nombre": "CODAP (análisis de datos)",
+      "url": "https://codap.concord.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Solo sustancias de cocina seguras, con un adulto; nunca mezclar productos de limpieza.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-qui-aire",
+     "titulo": "¿Qué respiramos en Cali?",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Qué contaminantes hay en el aire de la ciudad y de dónde vienen?",
+     "problema": "La calidad del aire de Cali empeora en ciertas épocas.",
+     "producto": "Campaña informada con datos de calidad del aire y explicación química.",
+     "aprendizaje": "Explicar reacciones de combustión y contaminantes atmosféricos.",
+     "pensamiento": "Pensamiento sistémico y crítico.",
+     "logica": "Causal.",
+     "gamificacion": "Sin juego: proyecto ciudadano.",
+     "herramienta": {
+      "nombre": "Datos Abiertos Colombia",
+      "url": "https://www.datos.gov.co",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": "Centec Verde",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-qui-balance",
+     "titulo": "Balancear ecuaciones jugando",
+     "tipo": [
+      "simulacion",
+      "juego"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Por qué no desaparece la materia en una reacción?",
+     "problema": "Balancear se memoriza sin entender la conservación.",
+     "producto": "Un manual creado por estudiantes para balancear ecuaciones.",
+     "aprendizaje": "Aplicar la ley de conservación de la masa.",
+     "pensamiento": "Razonamiento proporcional.",
+     "logica": "Deductiva.",
+     "gamificacion": "Modo juego de la simulación con puntos por nivel.",
+     "herramienta": {
+      "nombre": "Simulaciones PhET",
+      "url": "https://phet.colorado.edu/es/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Física",
+   "proyectos": [
+    {
+     "id": "p-fis-luz",
+     "titulo": "Alarma de luz para la puerta",
+     "tipo": [
+      "arduino"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Cómo avisar cuando alguien abre la puerta del salón?",
+     "problema": "Los objetos del salón se pierden y nadie sabe cuándo entró alguien.",
+     "producto": "Un circuito simulado con sensor de luz y zumbador.",
+     "aprendizaje": "Relacionar circuitos, energía y señales.",
+     "pensamiento": "Pensamiento computacional.",
+     "logica": "Condicional.",
+     "gamificacion": "Retos por versiones del prototipo.",
+     "herramienta": {
+      "nombre": "Wokwi (simulador de Arduino)",
+      "url": "https://wokwi.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Solo simulación o baterías de bajo voltaje.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-fis-pendulo",
+     "titulo": "El péndulo y el celular",
+     "tipo": [
+      "simulacion",
+      "steam"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Qué determina cuánto tarda un columpio en ir y volver?",
+     "problema": "La intuición dice que el peso importa; hay que comprobarlo.",
+     "producto": "Informe experimental con datos de los sensores del celular.",
+     "aprendizaje": "Analizar el movimiento oscilatorio y controlar variables.",
+     "pensamiento": "Pensamiento científico.",
+     "logica": "Causal con control de variables.",
+     "gamificacion": "Apuesta de predicción entre equipos.",
+     "herramienta": {
+      "nombre": "phyphox (sensores del celular)",
+      "url": "https://phyphox.org",
+      "acceso": "descarga",
+      "costo": "gratis"
+     },
+     "seguridad": "El celular debe ir bien sujeto y protegido.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-fis-rover",
+     "titulo": "Rover seguidor de línea",
+     "tipo": [
+      "robotica",
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo hace un robot para no salirse del camino?",
+     "problema": "Los robots de reparto del futuro deberán moverse solos.",
+     "producto": "Un programa en VEXcode VR que recorre una pista con sensores.",
+     "aprendizaje": "Relacionar velocidad, aceleración y control.",
+     "pensamiento": "Pensamiento computacional y sistémico.",
+     "logica": "Condicional y ciclos.",
+     "gamificacion": "Pista con tiempos y niveles.",
+     "herramienta": {
+      "nombre": "VEXcode VR",
+      "url": "https://vr.vex.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-fis-solar",
+     "titulo": "Energía solar para la caseta del colegio",
+     "tipo": [
+      "abp",
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cuántos paneles necesita la caseta para funcionar sin red?",
+     "problema": "La caseta escolar consume energía que podría ser solar.",
+     "producto": "Diseño de circuito y cálculo de potencia con propuesta a rectoría.",
+     "aprendizaje": "Calcular potencia, energía y resistencia en circuitos.",
+     "pensamiento": "Pensamiento de diseño.",
+     "logica": "Deductiva.",
+     "gamificacion": "Presupuesto como reto.",
+     "herramienta": {
+      "nombre": "Simulaciones PhET",
+      "url": "https://phet.colorado.edu/es/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Nunca manipular la red eléctrica; solo simulación.",
+     "proyecto_institucional": "Centec Verde",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Comportamiento y Salud",
+   "proyectos": [
+    {
+     "id": "p-sal-ruido",
+     "titulo": "Sonómetro del salón",
+     "tipo": [
+      "steam"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Cuánto ruido hay en el salón y cómo nos afecta?",
+     "problema": "El ruido afecta la atención y la salud auditiva.",
+     "producto": "Mapa de ruido del colegio con recomendaciones.",
+     "aprendizaje": "Relacionar hábitos, ambiente y salud.",
+     "pensamiento": "Pensamiento científico.",
+     "logica": "Causal.",
+     "gamificacion": "Reto de salón silencioso medido.",
+     "herramienta": {
+      "nombre": "phyphox (sensores del celular)",
+      "url": "https://phyphox.org",
+      "acceso": "descarga",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-sal-sueno",
+     "titulo": "Campaña del sueño adolescente",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Por qué los adolescentes duermen poco y qué pasa en su cerebro?",
+     "problema": "El sueño insuficiente afecta memoria y ánimo.",
+     "producto": "Campaña basada en datos del curso y en la neurociencia del sueño.",
+     "aprendizaje": "Explicar el papel del sueño en la memoria y la salud.",
+     "pensamiento": "Pensamiento crítico con evidencia.",
+     "logica": "Inductiva y causal.",
+     "gamificacion": "Reto de hábitos por semanas, sin comparación pública.",
+     "herramienta": {
+      "nombre": "CODAP (análisis de datos)",
+      "url": "https://codap.concord.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Datos anónimos; sin diagnóstico médico.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-sal-hidratacion",
+     "titulo": "Agua y concentración",
+     "tipo": [
+      "juego",
+      "programacion"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Cómo influye tomar agua en mi atención?",
+     "problema": "Muchos estudiantes no beben agua durante la jornada.",
+     "producto": "Un juego en Scratch sobre hidratación y atención.",
+     "aprendizaje": "Relacionar hábitos de cuidado con el funcionamiento del cuerpo.",
+     "pensamiento": "Pensamiento causal.",
+     "logica": "Causal.",
+     "gamificacion": "Niveles del juego.",
+     "herramienta": {
+      "nombre": "Scratch",
+      "url": "https://scratch.mit.edu/projects/editor/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin consejos médicos; enfoque de hábitos saludables.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Educación Sexual y Comportamiento",
+   "proyectos": [
+    {
+     "id": "p-sex-semaforo",
+     "titulo": "El semáforo del cuerpo",
+     "tipo": [
+      "juego"
+     ],
+     "grados": {
+      "desde": 0,
+      "hasta": 2
+     },
+     "pregunta_motriz": "¿Qué hago si algo me hace sentir incómodo?",
+     "problema": "Los niños necesitan palabras para reconocer y contar situaciones incómodas.",
+     "producto": "Un cartel del semáforo del curso con los adultos de confianza.",
+     "aprendizaje": "Reconocer el propio cuerpo, sus límites y a quién pedir ayuda.",
+     "pensamiento": "Reconocer emociones.",
+     "logica": "Clasificación de situaciones.",
+     "gamificacion": "Juego del semáforo con tarjetas de situaciones seguras.",
+     "herramienta": {
+      "nombre": "Tutor SABI",
+      "url": "https://superacion.sabicentec.com/tutor.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Contenido adecuado a la edad y revisado por orientación escolar.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-sex-red",
+     "titulo": "Mi red de adultos de confianza",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿A quién puedo acudir cuando necesito ayuda?",
+     "problema": "Muchos niños no saben a quién contar un problema.",
+     "producto": "Un mapa personal de apoyo y un cartel del curso.",
+     "aprendizaje": "Identificar redes de apoyo y practicar el autocuidado.",
+     "pensamiento": "Pensamiento de perspectiva.",
+     "logica": "Causal.",
+     "gamificacion": "Sin juego competitivo.",
+     "herramienta": {
+      "nombre": "Tutor SABI",
+      "url": "https://superacion.sabicentec.com/tutor.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Revisado por orientación escolar.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-sex-redes",
+     "titulo": "Respeto y consentimiento en redes",
+     "tipo": [
+      "programacion"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Qué hacer si alguien me pide una foto o me presiona en redes?",
+     "problema": "Los riesgos digitales llegan cada vez más temprano.",
+     "producto": "Historia interactiva en Twine con decisiones seguras.",
+     "aprendizaje": "Reconocer el consentimiento y el autocuidado en entornos digitales.",
+     "pensamiento": "Pensamiento crítico y toma de decisiones.",
+     "logica": "Condicional.",
+     "gamificacion": "Caminos de decisión con finales seguros.",
+     "herramienta": {
+      "nombre": "Twine",
+      "url": "https://twinery.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin contenido explícito; revisado por orientación.",
+     "proyecto_institucional": "Guardianes Digitales",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-sex-campana",
+     "titulo": "Campaña de relaciones sanas",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo se ve una relación sana entre jóvenes?",
+     "problema": "Hay relaciones con control y violencia normalizadas.",
+     "producto": "Campaña revisada por orientación para el colegio.",
+     "aprendizaje": "Analizar relaciones, consentimiento y proyecto de vida.",
+     "pensamiento": "Pensamiento crítico.",
+     "logica": "Informal: detectar manipulación.",
+     "gamificacion": "Sin juego competitivo.",
+     "herramienta": {
+      "nombre": "Photopea",
+      "url": "https://www.photopea.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin contenido explícito; revisado por orientación.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Ciencias Sociales",
+   "proyectos": [
+    {
+     "id": "p-soc-maqueta",
+     "titulo": "La maqueta de mi barrio",
+     "tipo": [
+      "steam"
+     ],
+     "grados": {
+      "desde": 0,
+      "hasta": 2
+     },
+     "pregunta_motriz": "¿Qué lugares de mi barrio son importantes y por qué?",
+     "problema": "Los niños reconocen su barrio sin ubicarlo en un mapa.",
+     "producto": "Una maqueta con puntos de referencia contada a la familia.",
+     "aprendizaje": "Ubicarse en el espacio y reconocer su comunidad.",
+     "pensamiento": "Pensamiento espacial.",
+     "logica": "Relaciones espaciales.",
+     "gamificacion": "Búsqueda del tesoro en la maqueta.",
+     "herramienta": {
+      "nombre": "Taller de armar SABI",
+      "url": "https://superacion.sabicentec.com/juegos.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-soc-tiempo",
+     "titulo": "Viaje en el tiempo por Cali",
+     "tipo": [
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Cómo era Cali cuando nuestros abuelos eran niños?",
+     "problema": "Los estudiantes ven la ciudad como siempre igual.",
+     "producto": "Recorrido narrado con mapas de antes y de ahora.",
+     "aprendizaje": "Reconocer cambios y permanencias en el tiempo.",
+     "pensamiento": "Pensamiento histórico.",
+     "logica": "Comparativa.",
+     "gamificacion": "Pasaporte del viajero.",
+     "herramienta": {
+      "nombre": "Google Earth",
+      "url": "https://earth.google.com/web/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-soc-memoria",
+     "titulo": "Memoria oral de Ciudad Córdoba",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Quiénes construyeron nuestro barrio y qué historias no se han contado?",
+     "problema": "La historia del barrio vive solo en la memoria de los mayores.",
+     "producto": "Museo o podcast de memoria con testimonios analizados.",
+     "aprendizaje": "Usar fuentes primarias, contrastar testimonios y contextualizar.",
+     "pensamiento": "Pensamiento histórico (fuente, contexto, corroboración).",
+     "logica": "Inductiva y crítica.",
+     "gamificacion": "Sin juego competitivo.",
+     "herramienta": {
+      "nombre": "Audacity",
+      "url": "https://www.audacityteam.org",
+      "acceso": "descarga",
+      "costo": "gratis"
+     },
+     "seguridad": "Consentimiento informado para grabar testimonios.",
+     "proyecto_institucional": "Ciudadano 2040",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-soc-concejo",
+     "titulo": "Concejo modelo de Cali",
+     "tipo": [
+      "simulacion",
+      "abp"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo resolvería el Concejo un problema de movilidad?",
+     "problema": "Los jóvenes no conocen cómo se toman decisiones públicas.",
+     "producto": "Simulación del concejo con proyecto de acuerdo.",
+     "aprendizaje": "Comprender la Constitución, participación y deliberación democrática.",
+     "pensamiento": "Pensamiento sistémico y argumentación.",
+     "logica": "Dialéctica.",
+     "gamificacion": "Roles y votaciones.",
+     "herramienta": {
+      "nombre": "Datos Abiertos Colombia",
+      "url": "https://www.datos.gov.co",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Neutralidad política; no apoyar partidos.",
+     "proyecto_institucional": "Ciudadano 2040",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Filosofía",
+   "proyectos": [
+    {
+     "id": "p-fil-kialo",
+     "titulo": "¿Debe la IA calificar exámenes?",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Debe la IA calificar exámenes en el colegio?",
+     "problema": "La IA ya llega a la escuela sin una reflexión ética.",
+     "producto": "Mapa argumentativo y ensayo filosófico.",
+     "aprendizaje": "Argumentar y evaluar razones en problemas filosóficos actuales.",
+     "pensamiento": "Pensamiento crítico.",
+     "logica": "Dialéctica e informal (falacias).",
+     "gamificacion": "Debate por rondas.",
+     "herramienta": {
+      "nombre": "Kialo Edu",
+      "url": "https://www.kialo-edu.com",
+      "acceso": "codigo",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-fil-teseo",
+     "titulo": "Café filosófico de experimentos mentales",
+     "tipo": [
+      "juego"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Sigues siendo tú si cambian todas tus partes?",
+     "problema": "La filosofía parece lejana de la vida diaria.",
+     "producto": "Bitácora de preguntas y ensayo corto.",
+     "aprendizaje": "Plantear problemas sobre identidad y conocimiento.",
+     "pensamiento": "Pensamiento conceptual.",
+     "logica": "Analógica.",
+     "gamificacion": "Juego de cartas de experimentos mentales.",
+     "herramienta": {
+      "nombre": "Tutor SABI",
+      "url": "https://superacion.sabicentec.com/tutor.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-fil-logica",
+     "titulo": "Lógica con circuitos",
+     "tipo": [
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Puede una máquina pensar con verdadero y falso?",
+     "problema": "La lógica formal parece abstracta.",
+     "producto": "Circuitos de compuertas lógicas que comprueban argumentos.",
+     "aprendizaje": "Usar la lógica proposicional y las tablas de verdad.",
+     "pensamiento": "Pensamiento formal.",
+     "logica": "Deductiva y proposicional.",
+     "gamificacion": "Retos de compuertas por niveles.",
+     "herramienta": {
+      "nombre": "Tinkercad Circuits",
+      "url": "https://www.tinkercad.com",
+      "acceso": "codigo",
+      "costo": "gratis"
+     },
+     "seguridad": "Solo simulación.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Ética y Religión",
+   "proyectos": [
+    {
+     "id": "p-eti-turnos",
+     "titulo": "El juego de los turnos",
+     "tipo": [
+      "juego"
+     ],
+     "grados": {
+      "desde": 0,
+      "hasta": 2
+     },
+     "pregunta_motriz": "¿Cómo jugamos para que todos se diviertan?",
+     "problema": "Los conflictos del recreo se repiten.",
+     "producto": "Acuerdos de juego dibujados y explicados.",
+     "aprendizaje": "Reconocer normas, turnos y el cuidado del otro.",
+     "pensamiento": "Toma de perspectiva.",
+     "logica": "Causal sencilla.",
+     "gamificacion": "Juego de turnos con títeres.",
+     "herramienta": {
+      "nombre": "Tutor SABI",
+      "url": "https://superacion.sabicentec.com/tutor.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-eti-gratitud",
+     "titulo": "Brigada de la gratitud y el servicio",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Cómo podemos servir a quienes nos cuidan?",
+     "problema": "Los adultos mayores del barrio viven solos.",
+     "producto": "Una jornada de servicio con reflexión escrita.",
+     "aprendizaje": "Practicar el servicio y la gratitud como valores.",
+     "pensamiento": "Reflexión ética.",
+     "logica": "Dialéctica.",
+     "gamificacion": "Sin juego competitivo.",
+     "herramienta": {
+      "nombre": "Tutor SABI",
+      "url": "https://superacion.sabicentec.com/tutor.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-eti-dilemas",
+     "titulo": "Dilemas interactivos de honestidad",
+     "tipo": [
+      "programacion"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Qué harías si nadie se entera?",
+     "problema": "La honestidad se pone a prueba en redes y en el aula.",
+     "producto": "Historias en Twine con dilemas.",
+     "aprendizaje": "Analizar dilemas morales con razones.",
+     "pensamiento": "Razonamiento moral.",
+     "logica": "Condicional.",
+     "gamificacion": "Caminos de decisión.",
+     "herramienta": {
+      "nombre": "Twine",
+      "url": "https://twinery.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": "Guardianes Digitales",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-eti-ia",
+     "titulo": "Código de uso responsable de la IA",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cuándo usar la IA es aprender y cuándo es hacer trampa?",
+     "problema": "El uso de IA en tareas no tiene acuerdos claros.",
+     "producto": "Propuesta de manual de uso responsable al consejo directivo.",
+     "aprendizaje": "Argumentar sobre responsabilidad y justicia.",
+     "pensamiento": "Pensamiento crítico y ético.",
+     "logica": "Dialéctica.",
+     "gamificacion": "Sin juego competitivo.",
+     "herramienta": {
+      "nombre": "Kialo Edu",
+      "url": "https://www.kialo-edu.com",
+      "acceso": "codigo",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": "Guardianes Digitales",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Artes",
+   "proyectos": [
+    {
+     "id": "p-art-orquesta",
+     "titulo": "La orquesta del barrio",
+     "tipo": [
+      "steam"
+     ],
+     "grados": {
+      "desde": 0,
+      "hasta": 2
+     },
+     "pregunta_motriz": "¿Qué música suena en mi barrio?",
+     "problema": "Los niños tienen ritmo pero pocas formas de crear música.",
+     "producto": "Una canción del curso creada en Song Maker.",
+     "aprendizaje": "Explorar ritmo y melodía.",
+     "pensamiento": "Creatividad y patrones.",
+     "logica": "Patrones.",
+     "gamificacion": "Juego de imitar ritmos.",
+     "herramienta": {
+      "nombre": "Chrome Music Lab",
+      "url": "https://musiclab.chromeexperiments.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-art-pixel",
+     "titulo": "Animación pixel de mi personaje",
+     "tipo": [
+      "programacion",
+      "steam"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Cómo se mueve un personaje inventado por mí?",
+     "problema": "Los estudiantes consumen animación sin crearla.",
+     "producto": "Animación cuadro a cuadro de un personaje original.",
+     "aprendizaje": "Crear con intención y explicar decisiones estéticas.",
+     "pensamiento": "Visualización.",
+     "logica": "Secuencial.",
+     "gamificacion": "Galería con críticas amables.",
+     "herramienta": {
+      "nombre": "Piskel",
+      "url": "https://www.piskelapp.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-art-theremin",
+     "titulo": "Instrumento de luz y sonido",
+     "tipo": [
+      "arduino",
+      "steam"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Puede la luz hacer música?",
+     "problema": "Arte y tecnología parecen mundos separados.",
+     "producto": "Instrumento simulado que cambia de tono con la luz.",
+     "aprendizaje": "Relacionar sonido, luz y creación artística.",
+     "pensamiento": "Pensamiento de diseño.",
+     "logica": "Condicional y proporcional.",
+     "gamificacion": "Concierto de prototipos.",
+     "herramienta": {
+      "nombre": "Wokwi (simulador de Arduino)",
+      "url": "https://wokwi.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Solo simulación o baterías de bajo voltaje.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-art-mural",
+     "titulo": "Mural digital de la memoria salsera",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Qué historia de Cali merece un mural?",
+     "problema": "La identidad salsera de la ciudad merece ser contada con arte.",
+     "producto": "Exposición digital y propuesta de mural.",
+     "aprendizaje": "Crear obras con intención y analizarlas.",
+     "pensamiento": "Interpretación crítica.",
+     "logica": "Interpretativa.",
+     "gamificacion": "Exposición con público real.",
+     "herramienta": {
+      "nombre": "Photopea",
+      "url": "https://www.photopea.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": "Ciudadano 2040",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Educación Física",
+   "proyectos": [
+    {
+     "id": "p-ef-animales",
+     "titulo": "Circuito de los animales",
+     "tipo": [
+      "juego"
+     ],
+     "grados": {
+      "desde": 0,
+      "hasta": 2
+     },
+     "pregunta_motriz": "¿Cómo se mueve un jaguar, una rana y una garza?",
+     "problema": "La motricidad se desarrolla jugando.",
+     "producto": "Circuito motor diseñado por los niños.",
+     "aprendizaje": "Desarrollar patrones básicos de movimiento.",
+     "pensamiento": "Planificación motriz.",
+     "logica": "Secuencial.",
+     "gamificacion": "Niveles del circuito.",
+     "herramienta": {
+      "nombre": "Tutor SABI",
+      "url": "https://superacion.sabicentec.com/tutor.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Superficie segura, calentamiento e hidratación.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-ef-salto",
+     "titulo": "¿Cuánto salto?",
+     "tipo": [
+      "steam"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Cómo puedo saltar más lejos?",
+     "problema": "Medir el propio progreso motiva.",
+     "producto": "Registro de progreso personal.",
+     "aprendizaje": "Mejorar capacidades físicas midiendo el propio avance.",
+     "pensamiento": "Pensamiento científico.",
+     "logica": "Inductiva.",
+     "gamificacion": "Reto contra uno mismo.",
+     "herramienta": {
+      "nombre": "phyphox (sensores del celular)",
+      "url": "https://phyphox.org",
+      "acceso": "descarga",
+      "costo": "gratis"
+     },
+     "seguridad": "Calentamiento y supervisión.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-ef-podometro",
+     "titulo": "Podómetro con micro:bit",
+     "tipo": [
+      "programacion",
+      "steam"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Cuántos pasos damos en una jornada?",
+     "problema": "El sedentarismo crece.",
+     "producto": "Podómetro programado en el simulador.",
+     "aprendizaje": "Relacionar actividad física y salud.",
+     "pensamiento": "Pensamiento computacional.",
+     "logica": "Condicional.",
+     "gamificacion": "Reto de pasos cooperativo.",
+     "herramienta": {
+      "nombre": "MakeCode micro:bit (con simulador)",
+      "url": "https://makecode.microbit.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-ef-inclusivo",
+     "titulo": "Torneo inclusivo del recreo",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo diseñar un juego donde todos puedan participar?",
+     "problema": "Algunos estudiantes quedan fuera del deporte.",
+     "producto": "Reglamento de un juego adaptado y torneo.",
+     "aprendizaje": "Diseñar juegos y valorar la inclusión.",
+     "pensamiento": "Pensamiento de diseño.",
+     "logica": "Sistémica.",
+     "gamificacion": "Torneo con reglas inclusivas.",
+     "herramienta": {
+      "nombre": "Tutor SABI",
+      "url": "https://superacion.sabicentec.com/tutor.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Tecnología e Informática",
+   "proyectos": [
+    {
+     "id": "p-tec-robothumano",
+     "titulo": "El robot humano",
+     "tipo": [
+      "programacion"
+     ],
+     "grados": {
+      "desde": 0,
+      "hasta": 2
+     },
+     "pregunta_motriz": "¿Puedes guiar a un amigo con instrucciones exactas?",
+     "problema": "La programación empieza sin pantallas.",
+     "producto": "Secuencia de instrucciones probada en el salón.",
+     "aprendizaje": "Seguir y crear secuencias de instrucciones.",
+     "pensamiento": "Pensamiento computacional.",
+     "logica": "Secuencial.",
+     "gamificacion": "Juego del robot por niveles.",
+     "herramienta": {
+      "nombre": "CS Unplugged",
+      "url": "https://www.csunplugged.org/es/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-tec-basura",
+     "titulo": "Atrapa la basura",
+     "tipo": [
+      "programacion",
+      "juego"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Cómo un videojuego puede enseñar a reciclar?",
+     "problema": "Los residuos se separan mal.",
+     "producto": "Videojuego en Scratch.",
+     "aprendizaje": "Diseñar programas con eventos y condicionales.",
+     "pensamiento": "Descomposición y algoritmos.",
+     "logica": "Condicional.",
+     "gamificacion": "Puntaje del videojuego.",
+     "herramienta": {
+      "nombre": "Scratch",
+      "url": "https://scratch.mit.edu/projects/editor/",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": "Centec Verde",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-tec-rover",
+     "titulo": "Rover de rescate",
+     "tipo": [
+      "robotica",
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Cómo programar un robot para rescatar en un derrumbe?",
+     "problema": "Las emergencias requieren robots.",
+     "producto": "Programa en VEXcode VR.",
+     "aprendizaje": "Programar con sensores y ciclos.",
+     "pensamiento": "Pensamiento computacional.",
+     "logica": "Condicional y ciclos.",
+     "gamificacion": "Misiones de rescate.",
+     "herramienta": {
+      "nombre": "VEXcode VR",
+      "url": "https://vr.vex.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-tec-meteo",
+     "titulo": "Estación meteorológica escolar",
+     "tipo": [
+      "raspberry"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo tener datos del clima del colegio?",
+     "problema": "No hay datos locales de clima.",
+     "producto": "Estación con Raspberry Pi y tablero de datos.",
+     "aprendizaje": "Integrar sensores, programación y datos.",
+     "pensamiento": "Pensamiento sistémico.",
+     "logica": "Inductiva.",
+     "gamificacion": "Reto de precisión.",
+     "herramienta": {
+      "nombre": "Proyectos Raspberry Pi",
+      "url": "https://projects.raspberrypi.org/es-LA",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Bajo voltaje y con docente.",
+     "proyecto_institucional": "Centec Verde",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "STEAM y Robótica",
+   "proyectos": [
+    {
+     "id": "p-ste-abejita",
+     "titulo": "La abejita robot en la cuadrícula",
+     "tipo": [
+      "robotica",
+      "juego"
+     ],
+     "grados": {
+      "desde": 0,
+      "hasta": 2
+     },
+     "pregunta_motriz": "¿Cómo llega la abejita a la flor?",
+     "problema": "Los niños pueden programar con el cuerpo y tarjetas.",
+     "producto": "Recorridos programados en ScratchJr o en tapete.",
+     "aprendizaje": "Seguir secuencias y orientarse en el espacio.",
+     "pensamiento": "Pensamiento computacional temprano.",
+     "logica": "Secuencial.",
+     "gamificacion": "Niveles de recorrido.",
+     "herramienta": {
+      "nombre": "ScratchJr",
+      "url": "https://www.scratchjr.org",
+      "acceso": "descarga",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-ste-huerta",
+     "titulo": "Robot que cuida la huerta",
+     "tipo": [
+      "robotica",
+      "programacion"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Cómo ayudar a las plantas cuando nadie está?",
+     "problema": "La huerta se descuida.",
+     "producto": "Programa de micro:bit simulado que mide temperatura y avisa.",
+     "aprendizaje": "Integrar ciencias y programación.",
+     "pensamiento": "Pensamiento de diseño.",
+     "logica": "Condicional.",
+     "gamificacion": "Misiones de la huerta.",
+     "herramienta": {
+      "nombre": "MakeCode micro:bit (con simulador)",
+      "url": "https://makecode.microbit.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": "Centec Verde",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-ste-brazo",
+     "titulo": "Brazo robótico con servos",
+     "tipo": [
+      "arduino",
+      "robotica"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Cómo mover objetos sin tocarlos?",
+     "problema": "La automatización llega a la industria del Valle.",
+     "producto": "Brazo simulado con servos en Wokwi.",
+     "aprendizaje": "Relacionar ángulos, movimiento y programación.",
+     "pensamiento": "Pensamiento computacional.",
+     "logica": "Proporcional.",
+     "gamificacion": "Retos de precisión.",
+     "herramienta": {
+      "nombre": "Wokwi (simulador de Arduino)",
+      "url": "https://wokwi.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Solo simulación o bajo voltaje.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-ste-caneca",
+     "titulo": "Caneca inteligente con IA",
+     "tipo": [
+      "steam",
+      "robotica"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Puede una IA separar residuos?",
+     "problema": "Los residuos se mezclan en el colegio.",
+     "producto": "Prototipo con Teachable Machine que clasifica residuos.",
+     "aprendizaje": "Integrar IA, ética y ambiente.",
+     "pensamiento": "Pensamiento de diseño y crítico.",
+     "logica": "Inductiva.",
+     "gamificacion": "Competencia de precisión.",
+     "herramienta": {
+      "nombre": "Teachable Machine",
+      "url": "https://teachablemachine.withgoogle.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": "Centec Verde",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "Emprendimiento",
+   "proyectos": [
+    {
+     "id": "p-emp-feria",
+     "titulo": "Mini mercado de inventos",
+     "tipo": [
+      "juego",
+      "abp"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Qué invento resolvería un problema de mi casa?",
+     "problema": "Los niños tienen ideas que nunca se prueban.",
+     "producto": "Feria de inventos con prototipos.",
+     "aprendizaje": "Identificar problemas y proponer soluciones.",
+     "pensamiento": "Pensamiento de diseño.",
+     "logica": "Abductiva.",
+     "gamificacion": "Feria con votos del público.",
+     "herramienta": {
+      "nombre": "Tutor SABI",
+      "url": "https://superacion.sabicentec.com/tutor.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-emp-mvp",
+     "titulo": "Producto mínimo viable del recreo",
+     "tipo": [
+      "steam"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Qué necesitan los estudiantes en el recreo?",
+     "problema": "Los productos del recreo no responden a necesidades reales.",
+     "producto": "Prototipo probado con usuarios reales.",
+     "aprendizaje": "Investigar necesidades y validar soluciones.",
+     "pensamiento": "Pensamiento de diseño.",
+     "logica": "Inductiva.",
+     "gamificacion": "Ciclos de prueba como niveles.",
+     "herramienta": {
+      "nombre": "Tutor SABI",
+      "url": "https://superacion.sabicentec.com/tutor.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-emp-app",
+     "titulo": "App del emprendimiento del barrio",
+     "tipo": [
+      "programacion"
+     ],
+     "grados": {
+      "desde": 9,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo hacer visibles los negocios de la Comuna 15?",
+     "problema": "Los negocios del barrio no tienen presencia digital.",
+     "producto": "App con catálogo de negocios.",
+     "aprendizaje": "Diseñar soluciones digitales para emprendimientos.",
+     "pensamiento": "Pensamiento computacional.",
+     "logica": "Condicional.",
+     "gamificacion": "Pruebas con usuarios.",
+     "herramienta": {
+      "nombre": "MIT App Inventor",
+      "url": "https://appinventor.mit.edu",
+      "acceso": "codigo",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-emp-pitch",
+     "titulo": "Pitch ante padres inversionistas",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Convencerías a alguien de invertir en tu idea?",
+     "problema": "Las ideas necesitan comunicarse con números.",
+     "producto": "Modelo de negocio y presentación.",
+     "aprendizaje": "Construir modelos de negocio y finanzas básicas.",
+     "pensamiento": "Persuasión ética.",
+     "logica": "Argumentativa.",
+     "gamificacion": "Ronda de inversión simulada.",
+     "herramienta": {
+      "nombre": "Tutor SABI",
+      "url": "https://superacion.sabicentec.com/tutor.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "SENA Recursos y Talento Humano",
+   "proyectos": [
+    {
+     "id": "p-rh-entrevista",
+     "titulo": "Centro de entrevistas simuladas",
+     "tipo": [
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo elegir a la persona adecuada para un cargo?",
+     "problema": "Las selecciones son a veces injustas.",
+     "producto": "Proceso de selección simulado con SABI.",
+     "aprendizaje": "Aplicar procesos de selección con criterios.",
+     "pensamiento": "Pensamiento crítico.",
+     "logica": "Deductiva con criterios.",
+     "gamificacion": "Roles de entrevistador y candidato.",
+     "herramienta": {
+      "nombre": "Tutor SABI",
+      "url": "https://superacion.sabicentec.com/tutor.html",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-rh-manual",
+     "titulo": "Manual de funciones para un negocio del barrio",
+     "tipo": [
+      "abp"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo organizar el talento de un negocio pequeño?",
+     "problema": "Los negocios no tienen funciones claras.",
+     "producto": "Manual y plan de inducción.",
+     "aprendizaje": "Diseñar cargos e inducción conforme a la norma laboral.",
+     "pensamiento": "Pensamiento sistémico.",
+     "logica": "Deductiva.",
+     "gamificacion": "Sin juego.",
+     "herramienta": {
+      "nombre": "LibreOffice Calc",
+      "url": "https://es.libreoffice.org",
+      "acceso": "descarga",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-rh-nomina",
+     "titulo": "Nómina sin errores",
+     "tipo": [
+      "simulacion",
+      "juego"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo se liquida una nómina justa?",
+     "problema": "Errores de nómina afectan a trabajadores.",
+     "producto": "Hoja de cálculo de nómina simulada.",
+     "aprendizaje": "Liquidar nómina y aportes.",
+     "pensamiento": "Pensamiento numérico.",
+     "logica": "Deductiva.",
+     "gamificacion": "Retos de detección de errores.",
+     "herramienta": {
+      "nombre": "LibreOffice Calc",
+      "url": "https://es.libreoffice.org",
+      "acceso": "descarga",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "SENA Aplicaciones Móviles",
+   "proyectos": [
+    {
+     "id": "p-mov-turnos",
+     "titulo": "App de turnos de la tienda escolar",
+     "tipo": [
+      "programacion"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo evitar las filas en la tienda?",
+     "problema": "Las filas del recreo quitan tiempo.",
+     "producto": "App de turnos funcional.",
+     "aprendizaje": "Desarrollar apps con lógica y datos.",
+     "pensamiento": "Pensamiento computacional.",
+     "logica": "Condicional.",
+     "gamificacion": "Sprints.",
+     "herramienta": {
+      "nombre": "MIT App Inventor",
+      "url": "https://appinventor.mit.edu",
+      "acceso": "codigo",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-mov-interfaz",
+     "titulo": "Prototipo de interfaz centrado en el usuario",
+     "tipo": [
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Qué hace que una app sea fácil de usar?",
+     "problema": "Muchas apps son difíciles para adultos mayores.",
+     "producto": "Prototipo navegable probado con usuarios.",
+     "aprendizaje": "Diseñar interfaces centradas en el usuario.",
+     "pensamiento": "Empatía y diseño.",
+     "logica": "Inductiva.",
+     "gamificacion": "Pruebas como niveles.",
+     "herramienta": {
+      "nombre": "Penpot (diseño de interfaces)",
+      "url": "https://penpot.app",
+      "acceso": "codigo",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-mov-reporte",
+     "titulo": "App para reportar huecos y luminarias",
+     "tipo": [
+      "abp",
+      "programacion"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo ayudar a que el barrio reporte problemas?",
+     "problema": "Los daños del barrio no se reportan.",
+     "producto": "App con reportes y mapa.",
+     "aprendizaje": "Integrar datos y ubicación en una app.",
+     "pensamiento": "Pensamiento sistémico.",
+     "logica": "Condicional.",
+     "gamificacion": "Retos de usuarios.",
+     "herramienta": {
+      "nombre": "MIT App Inventor",
+      "url": "https://appinventor.mit.edu",
+      "acceso": "codigo",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin datos personales públicos.",
+     "proyecto_institucional": "Ciudadano 2040",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "area": "SENA Integración de Contenidos Digitales",
+   "proyectos": [
+    {
+     "id": "p-con-campana",
+     "titulo": "Campaña gráfica Centec Verde",
+     "tipo": [
+      "steam"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo comunicar el cuidado del ambiente?",
+     "problema": "Las campañas no logran cambiar hábitos.",
+     "producto": "Piezas gráficas.",
+     "aprendizaje": "Diseñar con composición y color.",
+     "pensamiento": "Pensamiento visual.",
+     "logica": "Persuasiva.",
+     "gamificacion": "Galería de crítica.",
+     "herramienta": {
+      "nombre": "Photopea",
+      "url": "https://www.photopea.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": "Centec Verde",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-con-animacion",
+     "titulo": "Animación de una leyenda",
+     "tipo": [
+      "programacion",
+      "steam"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo animar una historia propia?",
+     "problema": "Las historias locales no tienen formatos digitales.",
+     "producto": "Animación con storyboard.",
+     "aprendizaje": "Aplicar principios de animación.",
+     "pensamiento": "Secuenciación.",
+     "logica": "Secuencial.",
+     "gamificacion": "Festival de cortos.",
+     "herramienta": {
+      "nombre": "Piskel",
+      "url": "https://www.piskelapp.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Sin cuentas personales de menores; trabajo guiado por el docente.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-con-micrositio",
+     "titulo": "Micrositio de memoria del barrio",
+     "tipo": [
+      "abp",
+      "programacion"
+     ],
+     "grados": {
+      "desde": 10,
+      "hasta": 11
+     },
+     "pregunta_motriz": "¿Cómo publicar la memoria del barrio en la web?",
+     "problema": "Los testimonios no están organizados.",
+     "producto": "Sitio web con contenidos integrados.",
+     "aprendizaje": "Integrar multimedia para web.",
+     "pensamiento": "Pensamiento de audiencia.",
+     "logica": "Estructural.",
+     "gamificacion": "Lanzamiento público.",
+     "herramienta": {
+      "nombre": "Editor de código Raspberry Pi",
+      "url": "https://editor.raspberrypi.org",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Consentimiento de las personas que aparecen.",
+     "proyecto_institucional": "Ciudadano 2040",
+     "estado": "activo",
+     "origen": "sabi",
+     "verificado": "2026-10-02"
+    }
+   ]
+  }
+ ]
+}
