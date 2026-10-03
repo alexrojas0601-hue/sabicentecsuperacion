@@ -1,1 +1,67 @@
+# Equipo investigador de SABI: amplía el banco de proyectos por área y actualiza la pedagogía vigente.
+# Corre solo y deja sus propuestas en un Pull Request. Nada llega al sitio sin "Merge" de coordinación.
+name: SABI · investigadores por área
 
+on:
+  schedule:
+    - cron: "0 11 * * 2"   # martes 6:00 a. m. hora Colombia: investigador neuropedagógico
+    - cron: "0 11 * * 4"   # jueves 6:00 a. m.: investigador de proyectos (llena los vacíos del banco)
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "proyectos | pedagogia | cobertura"
+        default: "proyectos"
+      foco:
+        description: "Opcional. Proyectos: Física|arduino. Pedagogía: un tema, ej. evaluación formativa"
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  investigar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Decidir modo
+        id: modo
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "valor=${{ inputs.modo }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 11 * * 2" ]; then
+            echo "valor=pedagogia" >> "$GITHUB_OUTPUT"
+          else
+            echo "valor=proyectos" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Ejecutar investigadores y auditores
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FOCO: ${{ inputs.foco }}
+          MAX_NUEVOS: "3"
+        run: node scripts/investigador-areas.mjs ${{ steps.modo.outputs.valor }}
+
+      - name: Validar que los datos siguen siendo JSON válido
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('data/proyectos-areas.json','utf8'))"
+          node -e "JSON.parse(require('fs').readFileSync('data/pedagogia-vigente.json','utf8'))"
+
+      - name: Abrir Pull Request para aprobación humana
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: sabi-investigadores/${{ steps.modo.outputs.valor }}
+          delete-branch: true
+          commit-message: "SABI investigadores: ${{ steps.modo.outputs.valor }}"
+          title: "SABI investigadores · ${{ steps.modo.outputs.valor }} · revisión de coordinación"
+          body: |
+            Los agentes investigadores proponen cambios. Lee el informe en `data/informes/`.
+            Proyectos: aparecen en proyectos.html y en el tutor apenas se aprueben.
+            Pedagogía: el Planificador, el Maestro y el Auditor la aplican desde el siguiente turno.
+            **Aprobar = publicar.** Si algo no convence, cierra el PR sin hacer merge.
+          labels: investigacion
