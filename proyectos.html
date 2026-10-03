@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyectos por área — SABICENTEC SUPERACIÓN</title>
+<meta name="description" content="Proyectos de robótica, Arduino, STEAM, Raspberry Pi, programación, juegos, simulación y ABP para cada área, de Transición a 11°, con SABI como tutor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,680&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --noche:#0B1F3F; --noche-2:#14315C; --alba:#F5A623; --barro:#E8792B;
+    --brote:#4C7A5E; --papel:#F7F3E9; --tinta:#1B1B18; --tinta-suave:#5B584E;
+    --linea:rgba(27,27,24,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--papel);color:var(--tinta);font-family:'Public Sans',sans-serif;font-size:18px;line-height:1.6}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:560;letter-spacing:-.01em}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--alba);outline-offset:2px}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 32px}
+  @media(max-width:640px){.wrap{padding:0 20px}}
+
+  header.top{border-bottom:1px solid var(--linea)}
+  .top-inner{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:16px;flex-wrap:wrap}
+  .brand{font-weight:600;text-decoration:none}
+  .nav{display:flex;gap:10px;flex-wrap:wrap}
+  .cta,.cta-2{text-decoration:none;padding:9px 16px;border-radius:2px;font-weight:600;font-size:.95rem}
+  .cta{background:var(--noche);color:var(--papel)}
+  .cta-2{border:1px solid var(--noche);color:var(--noche)}
+
+  .intro{background:var(--noche);color:var(--papel);padding:52px 0 44px}
+  .intro h1{font-size:clamp(2.3rem,5vw,3.8rem);line-height:1.06;max-width:17ch;font-weight:450}
+  .intro h1 em{font-style:normal;color:var(--alba)}
+  .intro p{max-width:62ch;margin-top:18px;color:rgba(247,243,233,.86);font-size:1.1rem}
+  .claves{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;margin-top:34px;border-top:1px solid rgba(247,243,233,.25)}
+  .clave{padding:16px 18px 4px 0}
+  .clave b{display:block;font-family:'Fraunces',serif;font-weight:560;font-size:1.15rem;color:var(--alba)}
+  .clave span{font-size:.95rem;color:rgba(247,243,233,.8)}
+
+  .filtros{position:sticky;top:0;z-index:5;background:rgba(247,243,233,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+  .filtros-inner{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:end;padding:14px 0}
+  .campo{display:flex;flex-direction:column;gap:4px;font-size:.88rem;color:var(--tinta-suave)}
+  select{font:inherit;font-size:1rem;color:var(--tinta);background:#fff;border:1px solid var(--linea);padding:8px 10px;border-radius:2px;min-width:12em}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{font:inherit;font-size:.95rem;border:1px solid var(--linea);background:#fff;padding:7px 14px;border-radius:999px;cursor:pointer;color:var(--tinta)}
+  .chip[aria-pressed="true"]{background:var(--noche);color:var(--papel);border-color:var(--noche)}
+  .chip .n{font-size:.85em;opacity:.7}
+  .check{display:flex;align-items:center;gap:8px;font-size:.98rem;color:var(--tinta)}
+  .conteo{margin-left:auto;font-size:.95rem;color:var(--tinta-suave)}
+
+  .lista{padding:24px 0 80px}
+  .proy{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:36px;padding:38px 0;border-top:1px solid var(--linea);scroll-margin-top:170px}
+  .proy:first-child{border-top:0}
+  @media(max-width:860px){.proy{grid-template-columns:1fr;gap:18px}}
+  .etiquetas{display:flex;flex-wrap:wrap;gap:6px;font-size:.85rem;margin-bottom:10px}
+  .etq{border:1px solid var(--linea);padding:2px 10px;border-radius:2px;background:#fff;color:var(--tinta-suave)}
+  .etq.area{background:var(--noche);color:var(--papel);border-color:var(--noche)}
+  .proy h2{font-size:clamp(1.6rem,1.2rem + 1vw,2.05rem);line-height:1.18;max-width:30ch}
+  .motriz{margin-top:12px;font-family:'Fraunces',serif;font-size:1.3rem;line-height:1.35;color:var(--noche);max-width:44ch}
+  .problema{margin-top:12px;max-width:64ch}
+  .producto{margin-top:14px;max-width:64ch;padding-left:14px;border-left:3px solid var(--alba)}
+
+  .lentes{margin-top:20px;display:grid;gap:0;border:1px solid var(--linea);background:#fff;max-width:68ch}
+  .lente{display:grid;grid-template-columns:9.5em 1fr;gap:12px;padding:10px 14px;border-top:1px solid var(--linea);font-size:1rem}
+  .lente:first-child{border-top:0}
+  .lente dt{font-weight:700;color:var(--noche)}
+  @media(max-width:520px){.lente{grid-template-columns:1fr;gap:2px}}
+
+  .ruta{margin-top:20px;max-width:68ch}
+  .ruta summary{cursor:pointer;font-weight:700;color:var(--noche)}
+  .ruta ol{margin:10px 0 0 1.3em;display:grid;gap:6px;font-size:1rem}
+
+  .lado{background:#fff;border:1px solid var(--linea);padding:22px;border-radius:2px;align-self:start}
+  .lado h3{font-size:1.2rem}
+  .lado h3 a{text-decoration-color:var(--alba);text-underline-offset:3px}
+  .acceso{display:inline-block;margin-top:8px;font-size:.88rem;font-weight:700;padding:4px 12px;border-radius:999px}
+  .acceso-ya{background:#E3F2E8;color:#1E5A35}
+  .acceso-codigo{background:#FFF1D6;color:#7A4A00}
+  .acceso-descarga{background:#E6EEF9;color:#173F73}
+  .acceso-licencia{background:#F3E6E6;color:#7A2323}
+  .inst{display:inline-block;margin-top:10px;font-size:.88rem;background:var(--brote);color:#fff;padding:3px 10px;border-radius:2px}
+  .seguridad{margin-top:12px;font-size:.92rem;color:var(--tinta-suave)}
+  .botones{display:flex;flex-direction:column;gap:8px;margin-top:18px}
+  .btn{display:block;text-align:center;text-decoration:none;font-weight:700;border-radius:999px;padding:12px 16px;font-size:1rem;cursor:pointer;font-family:inherit}
+  .btn-sabi{background:var(--noche);color:var(--papel);border:2px solid var(--noche)}
+  .btn-sabi:hover{background:var(--noche-2)}
+  .btn-doc{background:#fff;color:var(--noche);border:2px solid var(--noche)}
+  .btn-guia{background:var(--alba);color:var(--noche);border:2px solid var(--alba)}
+  .btn-abrir{background:transparent;color:var(--tinta-suave);border:1px solid var(--linea);font-weight:600}
+
+  .guia{margin-top:18px;background:#fff;border:1px solid var(--linea);border-left:6px solid var(--alba);padding:20px 22px;max-width:70ch}
+  .guia h3{font-size:1.35rem;margin-bottom:8px}
+  .guia p{margin-top:8px}
+  .g-pasos{margin:12px 0 6px 1.3em;display:grid;gap:8px}
+  .g-meta,.g-cargando{color:var(--tinta-suave)}
+  .g-valor{font-style:italic;color:var(--brote)}
+
+  .vacio{padding:60px 0;max-width:56ch}
+  footer{border-top:1px solid var(--linea);padding:28px 0;font-size:.92rem;color:var(--tinta-suave)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="index.html">SABICENTEC SUPERACIÓN</a>
+    <nav class="nav">
+      <a class="cta-2" href="recursos.html">Laboratorio de retos</a>
+      <a class="cta" href="tutor.html">Hablar con SABI</a>
+    </nav>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <h1>Cada área, un <em>proyecto</em> que vale la pena terminar.</h1>
+    <p>Robótica, Arduino, STEAM, Raspberry Pi, programación, juegos, simulación y aprendizaje basado en proyectos para todas las áreas, de Transición a 11°. Cada proyecto parte de un problema real de Cali, termina en un producto que alguien usa y entrena una forma de pensar. SABI te acompaña en cada paso.</p>
+    <div class="claves">
+      <div class="clave"><b>Comprender</b><span>Explicar, aplicar y justificar, no repetir.</span></div>
+      <div class="clave"><b>Pensar</b><span>Modelos de pensamiento y lógicas con nombre propio.</span></div>
+      <div class="clave"><b>Preguntar</b><span>Tu pregunta vale tanto como tu respuesta.</span></div>
+      <div class="clave"><b>Superar</b><span>El error se diagnostica y se convierte en paso.</span></div>
+      <div class="clave"><b>Llegar a Superior</b><span>DBA, estándares y Saber como meta visible.</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="filtros">
+  <div class="wrap filtros-inner">
+    <label class="campo">Área
+      <select id="f-area"><option value="">Todas las áreas</option></select>
+    </label>
+    <label class="campo">Grado
+      <select id="f-grado">
+        <option value="">Todos los grados</option>
+        <option value="0">Transición</option>
+        <option value="1">1°</option><option value="2">2°</option><option value="3">3°</option>
+        <option value="4">4°</option><option value="5">5°</option><option value="6">6°</option>
+        <option value="7">7°</option><option value="8">8°</option><option value="9">9°</option>
+        <option value="10">10°</option><option value="11">11°</option>
+      </select>
+    </label>
+    <div class="campo">Tipo de proyecto
+      <div class="chips" id="f-tipos" role="group" aria-label="Tipo de proyecto"></div>
+    </div>
+    <label class="check"><input type="checkbox" id="f-ya"> Solo lo que puedo usar ya</label>
+    <span class="conteo" id="conteo" aria-live="polite"></span>
+  </div>
+</div>
+
+<main class="wrap lista" id="lista"><p class="g-cargando">Cargando proyectos…</p></main>
+
+<footer>
+  <div class="wrap">
+    Los proyectos los amplían cada semana los agentes investigadores de SABI y los aprueba la coordinación académica de CENTEC. Seguridad: herramientas gratuitas o de navegador, simuladores antes que hardware, solo bajo voltaje y sin cuentas con datos de menores.
+  </div>
+</footer>
+
+<script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const esc = (t) => String(t ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const seguro = (u) => /^https:\/\//.test(u || '') ? u : '#';
+  const TIPOS = { robotica: 'Robótica', arduino: 'Arduino', steam: 'STEAM', raspberry: 'Raspberry Pi', programacion: 'Programación', juego: 'Juegos', simulacion: 'Simulación', abp: 'ABP' };
+  const ACCESO = { ya: 'Se usa ya, sin cuenta', codigo: 'El docente crea la clase', descarga: 'Requiere descargar', licencia: 'Requiere licencia' };
+  const gradoTexto = (n) => (n === 0 || n === '0') ? 'Transición' : n + '°';
+  let proyectos = [];
+  let tipoSel = '';
+
+  // Si llega desde el tutor u otra app: proyectos.html?area=Física&grado=9
+  const QS = new URLSearchParams(location.search);
+
+  fetch('data/proyectos-areas.json', { cache: 'no-cache' })
+    .then((r) => r.json())
+    .then((d) => {
+      proyectos = d.areas.flatMap((a) => (a.proyectos || []).filter((p) => p.estado === 'activo').map((p) => ({ ...p, area: a.area })));
+      $('f-area').insertAdjacentHTML('beforeend', d.areas.map((a) => `<option>${esc(a.area)}</option>`).join(''));
+      if (QS.get('area')) $('f-area').value = QS.get('area');
+      if (QS.get('grado')) $('f-grado').value = QS.get('grado');
+      pintar();
+    })
+    .catch(() => { $('lista').innerHTML = '<p class="vacio">No se pudo cargar el banco de proyectos. Revisa la conexión e inténtalo de nuevo.</p>'; });
+
+  function filtrados(ignorarTipo) {
+    const area = $('f-area').value, g = $('f-grado').value, ya = $('f-ya').checked;
+    return proyectos.filter((p) =>
+      (!area || p.area === area) &&
+      (g === '' || (Number(g) >= p.grados.desde && Number(g) <= p.grados.hasta)) &&
+      (!ya || p.herramienta.acceso === 'ya') &&
+      (ignorarTipo || !tipoSel || p.tipo.includes(tipoSel)));
+  }
+
+  function pintarChips() {
+    const base = filtrados(true);
+    const n = (t) => base.filter((p) => !t || p.tipo.includes(t)).length;
+    $('f-tipos').innerHTML = [['', 'Todos'], ...Object.entries(TIPOS)].map(([k, v]) =>
+      `<button type="button" class="chip" data-t="${k}" aria-pressed="${tipoSel === k}">${v} <span class="n">${n(k)}</span></button>`).join('');
+  }
+  $('f-tipos').addEventListener('click', (e) => {
+    const b = e.target.closest('.chip'); if (!b) return;
+    tipoSel = b.dataset.t; pintar();
+  });
+  ['f-area', 'f-grado', 'f-ya'].forEach((id) => $(id).addEventListener('change', pintar));
+
+  function enlaceSabi(p, rol) {
+    const g = $('f-grado').value;
+    const q = new URLSearchParams({ rol });
+    if (rol === 'estudiante') {
+      q.set('mision', p.proyecto_institucional === 'Ciudadano 2040' ? 'CALI 2040' : 'INVENTOR');
+      q.set('materia', p.area);
+      q.set('tema', `Proyecto: ${p.titulo}. Pregunta motriz: ${p.pregunta_motriz} Producto: ${p.producto} Quiero empezar el proyecto contigo.`);
+    } else {
+      q.set('tema', `Quiero planear el proyecto "${p.titulo}" de ${p.area}${g !== '' ? ' para grado ' + gradoTexto(g) : ''}. Pregunta motriz: ${p.pregunta_motriz} Producto: ${p.producto} Aprendizaje: ${p.aprendizaje} Necesito: fases ABP por sesiones, preguntas para que los estudiantes formulen las suyas, rúbrica por desempeños (Bajo, Básico, Alto, Superior) y apoyos DUA.`);
+    }
+    q.set('reto', p.titulo); q.set('herramienta', p.herramienta.nombre); q.set('url', seguro(p.herramienta.url));
+    return 'tutor.html?' + q.toString();
+  }
+
+  function ruta(p) {
+    return [
+      ['Entrar', `Lee la pregunta motriz y conversa: ¿a quién le afecta y por qué importa? Escribe tus propias preguntas sobre el problema.`],
+      ['Predecir', 'Antes de investigar, escribe o dibuja qué crees que va a pasar y por qué.'],
+      ['Investigar', `Busca datos y pruebas. Pensamiento que entrenas: ${p.pensamiento}`],
+      ['Construir', `Haz una primera versión con ${p.herramienta.nombre}. Lógica en juego: ${p.logica}`],
+      ['Criticar y mejorar', 'Muestra tu versión, recibe comentarios con razones y haz al menos una mejora.'],
+      ['Presentar', p.producto],
+      ['Reflexionar', '¿Qué sabes ahora que antes no sabías? ¿Qué pregunta nueva te dejó el proyecto?'],
+    ].map(([t, d]) => `<li><strong>${t}.</strong> ${esc(d)}</li>`).join('');
+  }
+
+  function pintar() {
+    pintarChips();
+    const lista = filtrados(false);
+    $('conteo').textContent = lista.length === 1 ? '1 proyecto' : `${lista.length} proyectos`;
+    if (!lista.length) {
+      $('lista').innerHTML = `<div class="vacio"><p>Todavía no hay un proyecto con esa combinación. Los agentes investigadores llenan cada semana los vacíos del banco. Mientras tanto, SABI puede diseñar uno contigo.</p><p style="margin-top:14px"><a class="btn btn-sabi" style="display:inline-block" href="tutor.html?rol=estudiante&mision=INVENTOR${$('f-area').value ? '&materia=' + encodeURIComponent($('f-area').value) : ''}">Diseñar un proyecto con SABI</a></p></div>`;
+      return;
+    }
+    $('lista').innerHTML = lista.map((p) => `
+      <article class="proy" id="${esc(p.id)}">
+        <div>
+          <div class="etiquetas">
+            <span class="etq area">${esc(p.area)}</span>
+            ${p.tipo.map((t) => `<span class="etq">${esc(TIPOS[t] || t)}</span>`).join('')}
+            <span class="etq">Grados ${gradoTexto(p.grados.desde)} a ${gradoTexto(p.grados.hasta)}</span>
+          </div>
+          <h2>${esc(p.titulo)}</h2>
+          <p class="motriz">${esc(p.pregunta_motriz)}</p>
+          <p class="problema">${esc(p.problema)}</p>
+          <p class="producto"><strong>Producto público:</strong> ${esc(p.producto)}</p>
+          <dl class="lentes">
+            <div class="lente"><dt>Aprendes</dt><dd>${esc(p.aprendizaje)}</dd></div>
+            <div class="lente"><dt>Piensas</dt><dd>${esc(p.pensamiento)}</dd></div>
+            <div class="lente"><dt>Razonas</dt><dd>${esc(p.logica)}</dd></div>
+            <div class="lente"><dt>Juegas</dt><dd>${esc(p.gamificacion)}</dd></div>
+          </dl>
+          <details class="ruta"><summary>Ruta del proyecto en siete pasos</summary><ol>${ruta(p)}</ol></details>
+          <div class="guia" id="guia-${esc(p.id)}" hidden></div>
+        </div>
+        <aside class="lado">
+          <h3><a href="${esc(seguro(p.herramienta.url))}" target="_blank" rel="noopener noreferrer">${esc(p.herramienta.nombre)}</a></h3>
+          <span class="acceso acceso-${esc(p.herramienta.acceso)}">${esc(ACCESO[p.herramienta.acceso] || p.herramienta.acceso)}</span>
+          ${p.proyecto_institucional ? `<br><span class="inst">${esc(p.proyecto_institucional)}</span>` : ''}
+          <p class="seguridad">${esc(p.seguridad)}</p>
+          <div class="botones">
+            <a class="btn btn-sabi" href="${enlaceSabi(p, 'estudiante')}" target="_blank" rel="noopener">Trabajar este proyecto con SABI</a>
+            <button type="button" class="btn btn-guia" data-guia="${esc(p.id)}">Cómo se construye</button>
+            <a class="btn btn-doc" href="${enlaceSabi(p, 'docente')}" target="_blank" rel="noopener">Planear esta clase (docentes)</a>
+            <a class="btn btn-abrir" href="${esc(seguro(p.herramienta.url))}" target="_blank" rel="noopener noreferrer">Abrir ${esc(p.herramienta.nombre)}</a>
+          </div>
+        </aside>
+      </article>`).join('');
+    if (location.hash) { const el = document.querySelector(location.hash); if (el) el.scrollIntoView(); }
+  }
+
+  // ---------- "Cómo se construye": misma función /api/guia del Laboratorio (queda en caché por proyecto y grado) ----------
+  $('lista').addEventListener('click', async (e) => {
+    const b = e.target.closest('[data-guia]'); if (!b) return;
+    const p = proyectos.find((x) => x.id === b.dataset.guia); if (!p) return;
+    const caja = document.getElementById('guia-' + p.id);
+    if (!caja.hidden && caja.dataset.listo) { caja.hidden = true; return; }
+    caja.hidden = false;
+    caja.innerHTML = '<p class="g-cargando">SABI está preparando la guía paso a paso…</p>';
+    const g = $('f-grado').value;
+    try {
+      const r = await fetch('/api/guia', { method: 'POST', headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ id: p.id, reto: p.titulo, problema: p.pregunta_motriz + ' ' + p.problema, producto: p.producto,
+          herramienta: p.herramienta.nombre, url: p.herramienta.url, areas: p.area, grado: g === '' ? `${gradoTexto(p.grados.desde)} a ${gradoTexto(p.grados.hasta)}` : gradoTexto(g) }) });
+      const d = await r.json();
+      if (!d.guia) throw new Error('sin guía');
+      const x = d.guia;
+      caja.innerHTML = `<h3>Cómo se construye</h3>
+        <p class="g-meta"><strong>Tiempo:</strong> ${esc(x.tiempo || '')}</p>
+        ${x.materiales?.length ? `<p class="g-meta"><strong>Necesitas:</strong> ${x.materiales.map(esc).join(', ')}</p>` : ''}
+        <ol class="g-pasos">${(x.pasos || []).map((s) => `<li><strong>${esc(s.titulo)}.</strong> ${esc(s.detalle)}</li>`).join('')}</ol>
+        ${x.comprobar ? `<p><strong>¿Funciona?</strong> ${esc(x.comprobar)}</p>` : ''}
+        ${x.mejorar ? `<p><strong>Para ir más lejos:</strong> ${esc(x.mejorar)}</p>` : ''}
+        ${x.presentar ? `<p><strong>Para presentar:</strong> ${esc(x.presentar)}</p>` : ''}
+        ${x.valor ? `<p class="g-valor">${esc(x.valor)}</p>` : ''}`;
+    } catch {
+      caja.innerHTML = `<h3>Cómo se construye</h3><ol class="g-pasos">${ruta(p)}</ol><p class="g-meta">Guía básica sin conexión. Toca "Trabajar este proyecto con SABI" para que te acompañe paso a paso.</p>`;
+    }
+    caja.dataset.listo = '1';
+  });
+})();
+</script>
+</body>
+</html>

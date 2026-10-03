@@ -74,3 +74,8 @@ Cada `git push` a la rama principal vuelve a desplegar automáticamente.
 ## Rector
 
 Alexander Rojas Zamorano — Colegio CENTEC.
+
+## Proyectos por área y capa de aprendizaje profundo (octubre 2026)
+- `proyectos.html`: banco de proyectos por área y grado, con "Trabajar este proyecto con SABI", "Cómo se construye" (usa `/api/guia`) y "Planear esta clase (docentes)".
+- `data/proyectos-areas.json` y `data/pedagogia-vigente.json`: datos vivos que leen los tres agentes en cada sesión.
+- `scripts/investigador-areas.mjs` y `.github/workflows/sabi-investigadores.yml`: agentes que los actualizan cada semana mediante Pull Requests. Detalle en `AGENTES.md`.
