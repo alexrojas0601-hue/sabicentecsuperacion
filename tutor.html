@@ -294,6 +294,7 @@
   </div>
   <button class="btn-bitacora" id="btn-bitacora" style="display:none;">Mi bitácora</button>
   <a class="cambiar-rol" id="btn-laboratorio" href="recursos.html" target="_blank" rel="noopener" style="display:none;text-decoration:none;">Laboratorio de retos</a>
+  <a class="cambiar-rol" id="btn-proyectos" href="proyectos.html" target="_blank" rel="noopener" style="display:none;text-decoration:none;">Proyectos por área</a>
   <button class="cambiar-rol" id="btn-voz-auto" style="display:none;" title="SABI lee en voz alta cada respuesta">Voz: apagada</button>
   <button class="cambiar-rol" id="btn-cambiar-mision" style="display:none;">Otra misión</button>
   <button class="cambiar-rol" id="btn-cambiar-rol" style="display:none;">Cambiar de perfil</button>
@@ -474,6 +475,10 @@
       <span class="nombre">Taller de armar</span>
       <span class="que">Rompecabezas, figuras para armar y crear lo que imagines. SABI te habla y te guía.</span>
     </a>
+    <a class="mision" id="mision-proyectos" href="proyectos.html" target="_blank" rel="noopener" style="text-decoration:none">
+      <span class="nombre">Proyectos del área</span>
+      <span class="que">Robótica, Arduino, STEAM, Raspberry Pi, programación, juegos, simulación y ABP. Eliges uno y SABI te acompaña.</span>
+    </a>
     <button type="button" class="mision" data-mision="ENSÉÑALE A SABI">
       <span class="nombre">Enséñale a SABI</span>
       <span class="que">Hoy tú eres el profe. SABI no sabe y tú le explicas. ¿Lo pillas en un error?</span>
@@ -630,6 +635,7 @@
     document.getElementById('btn-cambiar-mision').style.display = esEst ? 'inline-block' : 'none';
     pintarBotonVoz();
     document.getElementById('btn-laboratorio').style.display = (rol === 'estudiante' || rol === 'docente') ? 'inline-block' : 'none';
+    document.getElementById('btn-proyectos').style.display = (rol === 'estudiante' || rol === 'docente') ? 'inline-block' : 'none';
     pintarBarraReto();
     mostrarPantalla('chat');
   }
@@ -718,6 +724,7 @@
     btnCambiarRol.style.display = 'inline-block';
     mostrarPantalla('mision');
     document.getElementById('mision-taller').style.display = NIVEL(perfil.profile.grade || '') <= 2 ? 'flex' : 'none';
+    enlaceProyectos();
     aplicarDestino();
     mostrarSituaciones();
   }
@@ -742,7 +749,17 @@
     materia = b.dataset.v;
     document.querySelectorAll('#materias .chip-m').forEach(x => x.setAttribute('aria-pressed', x === b));
     mostrarSituaciones();
+    enlaceProyectos();
   });
+  // Tarjeta "Proyectos del área": abre el banco filtrado por la materia elegida y el grado del estudiante
+  function enlaceProyectos() {
+    const a = document.getElementById('mision-proyectos'); if (!a) return;
+    const q = new URLSearchParams();
+    const pr = (perfil && perfil.profile) || {};
+    if (materia && materia !== 'Sorpréndeme') q.set('area', materia === 'Ciencias Naturales' && NIVEL(pr.grade || '') >= 6 ? 'Biología' : materia);
+    if (pr.grade) q.set('grado', String(NIVEL(pr.grade)));
+    a.href = 'proyectos.html' + (q.toString() ? '?' + q.toString() : '');
+  }
 
 
   // ---------- Herramientas didácticas que SABI puede pedir ----------
