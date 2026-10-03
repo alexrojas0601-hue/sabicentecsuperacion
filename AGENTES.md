@@ -40,3 +40,38 @@ Además del equipo curador semanal, cada sesión de un estudiante pasa por tres 
 
 El avance que registra el Auditor queda en el historial del estudiante, y el docente lo recibe en el informe pedagógico.
 Para apagar el Auditor (por ejemplo, para ahorrar), crear en Cloudflare la variable `AUDITOR` con valor `no`.
+
+## Capa SUPERACIÓN de aprendizaje profundo (todas las áreas)
+
+Desde octubre de 2026, el Planificador, el Maestro y el Auditor trabajan con una capa común
+(`MOTOR_PROFUNDO` en `functions/api/chat.js`) más dos archivos vivos que leen en cada sesión:
+
+| Pieza | Qué hace |
+|---|---|
+| Cómo se explica | Saberes previos, una idea por turno, el porqué, palabra más representación, ejemplo y contraejemplo, comprobación con un desempeño. |
+| Modelos de pensamiento | Por banda de grado: Veo-pienso-me pregunto, Pólya, Paul y Elder, pensamiento científico, histórico, sistémico, de diseño, Toulmin. |
+| Lógicas | Deductiva, inductiva, abductiva, analógica, causal, probabilística, formal, dialéctica, falacias y computacional. |
+| Preguntar | Técnica de formulación de preguntas y preguntas socráticas; el estudiante formula al menos una pregunta propia por misión. |
+| Obstáculos | Diagnóstico del tipo de error antes de reenseñar (enunciado, concepción alternativa, obstáculo epistemológico, prerrequisito, procedimiento, emoción). |
+| Gamificación con criterio | Solo cuando sirve al aprendizaje; sin rankings que humillen; siempre cierra con reflexión. |
+| `data/pedagogia-vigente.json` | Hallazgos de neurociencia, neuropedagogía y didáctica con fuente; tienen prioridad sobre la memoria del modelo. |
+| `data/proyectos-areas.json` | Banco de proyectos por área y grado (robótica, Arduino, STEAM, Raspberry Pi, programación, juegos, simulación, ABP). Se ve en `proyectos.html`. |
+
+El Planificador ahora entrega además: modelo de pensamiento, lógica, pregunta propia, obstáculo
+probable, gamificación, proyecto y meta de desempeño Superior. El Auditor revisa cuatro criterios
+nuevos (12 a 15) y registra en el estado el pensamiento usado, la pregunta del estudiante y el
+obstáculo detectado.
+
+## Equipo investigador por áreas (`scripts/investigador-areas.mjs`)
+
+| Rol | Cuándo | Qué hace |
+|---|---|---|
+| Investigador neuropedagógico | Martes | Rota 16 temas (neurociencia, funciones ejecutivas, evaluación formativa, pensamiento crítico, didácticas por área, inclusión, IA en la escuela...). Busca evidencia con fuente y URL y propone hasta 2 hallazgos. |
+| Auditor de rigor | Martes | Código: URL segura, no vetada, viva, sin neuromitos, sin repetidos. Claude: fidelidad a la fuente (mínimo 4), evidencia y aplicabilidad. Puede reemplazar un hallazgo viejo si la evidencia cambió. |
+| Investigador de proyectos | Jueves | Mide la cobertura del banco (área x grados x tipo) y diseña hasta 3 proyectos donde hay vacíos, verificando la herramienta en la web. |
+| Auditor técnico de proyectos | Jueves | Código: campos completos, tipos y grados válidos, URL segura y viva, sin repetidos. |
+| Comité de proyectos | Jueves | Pedagógico, pensamiento, seguridad de menores y acceso; aprueba solo con promedio 3,75, ningún eje bajo 3 y seguridad mínimo 4. |
+| Auditor humano final | Coordinación académica | Aprueba (merge) o cierra el Pull Request. |
+
+Calendario: `.github/workflows/sabi-investigadores.yml`. Para ver qué falta sin gastar: Actions,
+"SABI · investigadores por área", Run workflow, modo `cobertura`.
