@@ -1,0 +1,15 @@
+[
+  {
+    "fecha": "2026-10-14",
+    "general": 5,
+    "porCriterio": {
+      "veracidad": 5,
+      "pedagogia": 5,
+      "cientifico": 5,
+      "neutralidad": 5,
+      "seguridad": 5,
+      "estilo": 5
+    },
+    "fallidas": 0
+  }
+]
