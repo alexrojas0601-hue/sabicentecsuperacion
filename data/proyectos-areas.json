@@ -1,6 +1,6 @@
 {
  "version": "2026-10-02",
- "actualizado": "2026-10-02",
+ "actualizado": "2026-10-15",
  "nota": "Banco de proyectos por área de SABI Superación. Lo amplían cada semana los agentes investigadores (scripts/investigador-areas.mjs) mediante Pull Requests que aprueba coordinación académica.",
  "areas": [
   {
@@ -2125,6 +2125,96 @@
      "estado": "activo",
      "origen": "sabi",
      "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-robot-artista-maquina-que-pinta-historia",
+     "titulo": "Robot Artista: Máquina que pinta historias de Cali",
+     "tipo": [
+      "robotica",
+      "arduino"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Cómo podríamos enseñarle a un robot a pintar o dibujar los símbolos y ritmos de la salsa caleña?",
+     "problema": "Los estudiantes de Artes en Centec no tienen acceso a tecnologías que combinen programación, movimiento y expresión artística; además, la salsa como patrimonio cultural de Cali no se conecta con pensamiento lógico ni computacional.",
+     "producto": "Un robot simulado (en Wokwi o Tinkercad) programado para trazar patrones salsa (ocho, vueltas) o líneas que representen ritmos; video documental del proceso creativo del robot; instalación artística con el código impreso y la trayectoria del robot proyectada.",
+     "aprendizaje": "Estándar: Reconocer elementos constitutivos del lenguaje visual (línea, forma, color) y su capacidad expresiva. DBA (Artes 3-5): Interpreta manifestaciones artísticas y culturales a través de la exploración sensorial. Competencia: Pensamiento crítico sobre cómo la tecnología puede expresar arte; comunicación del patrimonio caleño a través de nuevos lenguajes.",
+     "pensamiento": "Pensamiento de diseño (design thinking): empatía con la salsa → definición del problema visual → prototipado con código → iteración artística. Modelo lógico: secuencia de instrucciones que generan un patrón emergente.",
+     "logica": "Lógica algorítmica y secuencial: el robot recibe comandos de movimiento (giro, avance, pausa) que, ordenados, crean un patrón que se percibe como expresión artística. Ejemplo: 'Girar 45°, avanzar 10 unidades, bajar marcador, girar 90°' repetido genera una espiral salsa.",
+     "gamificacion": "Desafío por niveles: Nivel 1 (trazo libre), Nivel 2 (patrón salsa reconocible), Nivel 3 (patrón + color/sonido simulado). Puntos por precisión y creatividad. Galería virtual al finalizar donde compañeros votan qué patrón expresa mejor la salsa.",
+     "herramienta": {
+      "nombre": "Wokwi",
+      "url": "https://wokwi.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Proyecto 100% en navegador; no requiere hardware físico ni energía; apropiado para menores; simulación segura de lógica de robots. Cumple Ley 1581/2012: no se capturan datos personales, solo documentación de proceso creativo.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "investigador",
+     "verificado": "2026-10-15"
+    },
+    {
+     "id": "p-esculturas-cineticas-robots-que-bailan-e",
+     "titulo": "Esculturas Cinéticas: Robots que bailan el ritmo del barrio",
+     "tipo": [
+      "robotica",
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Qué pasaría si pudiéramos programar un robot para que baile o se mueva al ritmo de la música de nuestro barrio?",
+     "problema": "En Artes no se usan herramientas de simulación robótica; la expresión del movimiento corporal (danza) no se vincula con la lógica computacional; los estudiantes no exploran la ciencia detrás del movimiento artístico.",
+     "producto": "Simulación de robot (VEXcode VR) que ejecuta una secuencia de movimientos coordinados (giros, desplazamientos) sincronizados con un audio corto de salsa/cumbia local; descarga de video MP4 de la coreografía robot; galería interna en servidor escolar (sin subida a redes públicas) donde estudiantes votan coreografía favorita.",
+     "aprendizaje": "Estándar: Expresar ideas mediante distintos lenguajes (visual, corporal, sonoro). DBA (Artes 3-5): Desarrolla procesos de creación artística que impliquen exploración multisensorial. Competencia: Pensamiento lógico-artístico; coordinación entre secuencias programadas y ritmo musical; análisis de movimiento como forma de comunicación.",
+     "pensamiento": "Pensamiento sistémico y temporal: comprensión de que el movimiento robot es una secuencia de pasos en tiempo; equivalencia entre patrón musical (compás) y patrón de código (bucles, delays). Modelo cinético del arte.",
+     "logica": "Lógica temporal y secuencial con bifurcaciones: 'Si el ritmo es rápido, aumentar velocidad y reducir pausa entre movimientos; si es lento, invertir'. Uso de bucles (repetición de pasos de baile). Ejemplo: un bucle que hace girar al robot 90° cuatro veces (vuelta completa) cada 2 segundos crea efecto de ritmo.",
+     "gamificacion": "Reto colectivo: estudiantes proponen música local (cumbia, salsa, reggaeton) y crean coreografía robot. Voting clasista: ¿Cuál secuencia robot interpreta mejor la música? Premios: 'Mejor interpretación', 'Más creativa', 'Más desafiante'.",
+     "herramienta": {
+      "nombre": "VEXcode VR",
+      "url": "https://vr.vex.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "VEXcode VR es gratuito, web-based, sin descarga; apropiado para menores (Grades 3+); no requiere hardware; compatible con navegadores modernos. Cumple COPPA/FERPA indirectamente: no almacena datos personales.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "investigador",
+     "verificado": "2026-10-15"
+    },
+    {
+     "id": "p-luz-programada-instalacion-de-arte-digit",
+     "titulo": "Luz Programada: Instalación de arte digital que responde a movimiento",
+     "tipo": [
+      "arduino",
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 3,
+      "hasta": 5
+     },
+     "pregunta_motriz": "¿Podemos crear una obra de arte que cambie de color o brillo cuando detecte que alguien se acerca o se mueve?",
+     "problema": "El arte en grados 3-5 no integra sensores ni retroalimentación interactiva; no hay proyectos que vinculen Artes con electrónica de bajo voltaje simulada; la relación entre entrada (sensor) → procesamiento → salida (luz) no es explícita para estudiantes.",
+     "producto": "Circuito simulado en Tinkercad con LED RGB y sensor de distancia (ultrasónico simulado) que cambia de color según proximidad; código comentado en español (educativo); video timelapse de interacción (MP4 descargado); código impreso en papel A4 exhibido en aula junto a descripción de lógica condicional; acceso a simulación vía QR estático (código no requiere login si docente comparte como 'view-only').",
+     "aprendizaje": "Estándar: Combinar elementos artísticos con tecnología para crear nuevas formas de expresión. DBA (Artes 3-5): Reconoce y aprecia diferentes formas de expresión artística (plástica, visual, audiovisual). Competencia: Pensamiento crítico sobre retroalimentación en sistemas; comprensión de causa-efecto en arte interactivo; valoración del arte contemporáneo mediado por tecnología.",
+     "pensamiento": "Pensamiento de sistemas y feedback loops: entrada (sensor) → procesamiento (decisión lógica) → salida (luz). Pensamiento computacional sobre condicionales: 'Si distancia < 30cm, rojo; si 30-60cm, amarillo; si > 60cm, azul'.",
+     "logica": "Lógica condicional (if-else) anidada con variables numéricas. Ejemplo: `if (distancia < 30) { LED rojo } else if (distancia < 60) { LED amarillo } else { LED azul }`. Bucle de lectura constante del sensor crea efecto de respuesta en tiempo real.",
+     "gamificacion": "Sin juego: El aprendizaje es lúdico por la sorpresa de ver la luz responder en tiempo real a movimiento. Se gamifica con desafío 'Diseña tu propia lógica de colores' y exposición interactiva donde peers interactúan con la instalación simulada.",
+     "herramienta": {
+      "nombre": "Tinkercad Circuits",
+      "url": "https://www.tinkercad.com/circuits",
+      "acceso": "codigo",
+      "costo": "gratis"
+     },
+     "seguridad": "Tinkercad Circuits es gratuito, web-based (cuenta docente, no de menores); simulación 100% segura sin hardware ni voltaje. Cumple Ley 1581/2012: docente usa correo institucional para cuenta Autodesk; comparte enlace de proyecto como 'ver solo' (no editable por menores); no se capturan datos personales de estudiantes, solo portfolios de código anónimos en aula.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "investigador",
+     "verificado": "2026-10-15"
     }
    ]
   },
