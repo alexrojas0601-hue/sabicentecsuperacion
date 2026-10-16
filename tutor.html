@@ -232,6 +232,20 @@
   .herramienta svg{width:100%; height:auto; max-height:300px; display:block;}
   .msg .opciones.seguridad{margin:.8em 0 0; max-width:none;}
   .herramienta figcaption{font-size:.85em; color:#5B574F; margin-top:.4em; font-style:italic;}
+  .herramienta.pasos ol{list-style:none; counter-reset:paso; margin:0; padding:0;}
+  .herramienta.pasos li{counter-increment:paso; position:relative; padding:.55em .8em .55em 3em; margin:0 0 .9em; background:#FBF8F1; border:1px solid #D9D2C3; border-radius:6px; font-family:'Public Sans',sans-serif; font-size:.92em; color:#1F1D1A;}
+  .herramienta.pasos li::before{content:counter(paso); position:absolute; left:.6em; top:50%; transform:translateY(-50%); width:1.7em; height:1.7em; border-radius:50%; background:#0B1F3F; color:#FFFFFF; font-weight:700; display:flex; align-items:center; justify-content:center; font-size:.9em;}
+  .herramienta.pasos li:not(:last-child)::after{content:''; position:absolute; left:1.45em; bottom:-.95em; height:.95em; border-left:2px solid #B8862B;}
+  .herramienta.pasos li:last-child{margin-bottom:0;}
+  .tabla-marco{overflow-x:auto;}
+  .herramienta.tabla table{border-collapse:collapse; width:100%; font-family:'Public Sans',sans-serif; font-size:.88em; color:#1F1D1A;}
+  .herramienta.tabla th, .herramienta.tabla td{border:1px solid #D9D2C3; padding:.45em .6em; text-align:left; vertical-align:top;}
+  .herramienta.tabla thead th{background:#0B1F3F; color:#FFFFFF; font-weight:700;}
+  .herramienta.tabla tbody th{font-weight:600; background:#FBF8F1;}
+  .herramienta.tabla tbody tr:nth-child(even) td{background:#FBF8F1;}
+  .herramienta figcaption span{font-style:normal; font-family:'Public Sans',sans-serif; font-weight:600; margin-right:1.2em; white-space:nowrap;}
+  .herramienta figcaption .leyenda-f0{color:#0B1F3F;} .leyenda-f0::before{content:'━ ';}
+  .herramienta figcaption .leyenda-f1{color:#8A6418;} .leyenda-f1::before{content:'╍ ';}
   .argumento label{display:block; font-family:'Public Sans',sans-serif; font-size:.78em; font-weight:600; color:#0B1F3F; margin:.8em 0 .25em;}
   .argumento label:first-child{margin-top:0;}
   .argumento textarea{width:100%; min-height:3.2em; resize:vertical; font:inherit; font-size:.95em; padding:.5em .7em; border:1px solid #D9D2C3; border-radius:6px; background:#FBF8F1; color:#1F1D1A;}
@@ -769,6 +783,11 @@
       if (tipo === 'fraccion') return dibujarFraccion(args);
       if (tipo === 'recta') return dibujarRecta(args);
       if (tipo === 'barras') return dibujarBarras(args);
+      if (tipo === 'pasos') return dibujarPasos(args);
+      if (tipo === 'ciclo') return dibujarRadial(args, true);
+      if (tipo === 'mapa') return dibujarRadial(args, false);
+      if (tipo === 'tabla') return dibujarTabla(args);
+      if (tipo === 'funcion' || tipo === 'función') return dibujarFuncion(args);
       if (tipo === 'escuchar' || tipo === 'pronunciar') return dibujarVoz(tipo, args);
       if (tipo === 'escribir') { const [lg, ...r] = args.split('|'); const consigna = r.join('|').trim() || 'Escribe tu respuesta.';
         return `<form class="herramienta escribir" data-lang="${esc(lg.trim())}"><p class="consigna">${esc(limpiar(consigna))}</p>
@@ -817,6 +836,152 @@
     });
     return `<figure class="herramienta">${svg}</svg></figure>`;
   }
+  // ---------- Herramientas visuales de la capa de enseñanza visual ----------
+  const FUENTE = 'font-family="Public Sans,sans-serif"';
+  let svgId = 0;
+  const partes = (t, sep = '|') => String(t).split(sep).map(s => limpiar(s)).filter(Boolean);
+  // Parte un texto en líneas de hasta n caracteres (los SVG no hacen salto de línea solos)
+  function lineasDe(t, n = 16, max = 3) {
+    const palabras = String(t).split(/\s+/), lineas = [];
+    let actual = '';
+    for (const p of palabras) {
+      if ((actual + ' ' + p).trim().length > n && actual) { lineas.push(actual); actual = p; }
+      else actual = (actual + ' ' + p).trim();
+    }
+    if (actual) lineas.push(actual);
+    if (lineas.length > max) { lineas.length = max; lineas[max - 1] = lineas[max - 1].slice(0, n - 1) + '…'; }
+    return lineas;
+  }
+  function textoSVG(x, y, t, { n = 16, tam = 14, peso = 600, color = TINTA } = {}) {
+    const ls = lineasDe(t, n), alto = tam * 1.2, y0 = y - (ls.length - 1) * alto / 2;
+    return `<text x="${x}" y="${y0}" font-size="${tam}" font-weight="${peso}" text-anchor="middle" dominant-baseline="middle" fill="${color}" ${FUENTE}>`
+      + ls.map((l, i) => `<tspan x="${x}" dy="${i ? alto : 0}">${esc(l)}</tspan>`).join('') + '</text>';
+  }
+
+  // [[pasos Leer el problema | Hacer un dibujo | Resolver | Comprobar]]
+  function dibujarPasos(args) {
+    const pasos = partes(args).slice(0, 7);
+    if (pasos.length < 2) return '';
+    return `<figure class="herramienta pasos"><ol>${pasos.map(p => `<li data-seg>${esc(p)}</li>`).join('')}</ol></figure>`;
+  }
+
+  // [[ciclo Evaporación | Condensación | Precipitación | Recolección]]  (flechas en círculo)
+  // [[mapa Fotosíntesis: luz solar | agua | dióxido de carbono | glucosa | oxígeno]]  (idea central y ramas)
+  function dibujarRadial(args, esCiclo) {
+    let centro = '', ramas;
+    if (!esCiclo) { const i = args.indexOf(':'); if (i < 0) return ''; centro = limpiar(args.slice(0, i)); ramas = partes(args.slice(i + 1)); }
+    else ramas = partes(args);
+    ramas = ramas.slice(0, 6);
+    if (ramas.length < (esCiclo ? 3 : 2)) return '';
+    const W = 504, H = 350, cx = W / 2, cy = H / 2, rx = 165, ry = 128, bw = 138, bh = 64, id = 'f' + (++svgId);
+    const pos = ramas.map((_, k) => { const a = -Math.PI / 2 + k * 2 * Math.PI / ramas.length; return [cx + rx * Math.cos(a), cy + ry * Math.sin(a)]; });
+    let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(esCiclo ? 'Ciclo: ' + ramas.join(', luego ') + ', y vuelve a empezar' : 'Mapa de ideas: ' + centro + ' se relaciona con ' + ramas.join(', '))}">`
+      + `<defs><marker id="${id}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="${TINTA}"/></marker></defs>`;
+    if (esCiclo) {
+      pos.forEach(([x1, y1], k) => {
+        const [x2, y2] = pos[(k + 1) % pos.length], dx = x2 - x1, dy = y2 - y1, d = Math.hypot(dx, dy) || 1;
+        const recorte = t => Math.min(Math.abs(bw / 2 / (dx / d || 1e-9)), Math.abs(bh / 2 / (dy / d || 1e-9))) + t;
+        const a = recorte(4), b = recorte(8);
+        svg += `<line x1="${x1 + dx / d * a}" y1="${y1 + dy / d * a}" x2="${x2 - dx / d * b}" y2="${y2 - dy / d * b}" stroke="${TINTA}" stroke-width="2" marker-end="url(#${id})"/>`;
+      });
+    } else {
+      svg += pos.map(([x, y]) => `<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="#8A857B" stroke-width="2"/>`).join('');
+      svg += `<rect x="${cx - 80}" y="${cy - 34}" width="160" height="68" rx="34" fill="${AZUL}"/>` + textoSVG(cx, cy, centro, { n: 14, tam: 18, peso: 700, color: '#FFFFFF' });
+    }
+    pos.forEach(([x, y], k) => {
+      svg += `<rect x="${x - bw / 2}" y="${y - bh / 2}" width="${bw}" height="${bh}" rx="8" fill="#FFFFFF" stroke="${k % 2 ? ORO : AZUL}" stroke-width="2.5"/>`
+        + (esCiclo ? `<circle cx="${x - bw / 2 + 2}" cy="${y - bh / 2 + 2}" r="14" fill="${ORO}"/><text x="${x - bw / 2 + 2}" y="${y - bh / 2 + 2}" font-size="16" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="${TINTA}" ${FUENTE}>${k + 1}</text>` : '')
+        + textoSVG(x, y, ramas[k], { n: 13, tam: 17 });
+    });
+    return `<figure class="herramienta">${svg}</svg></figure>`;
+  }
+
+  // [[tabla Material | ¿Conduce? | Ejemplo ; Metal | Sí | Cobre ; Madera | No | Mesa]]  (la primera fila es el encabezado)
+  function dibujarTabla(args) {
+    const filas = args.split(';').map(f => partes(f).slice(0, 5)).filter(f => f.length).slice(0, 9);
+    if (filas.length < 2) return '';
+    const n = Math.max(...filas.map(f => f.length)), celdas = f => Array.from({ length: n }, (_, i) => esc(f[i] || ''));
+    return `<figure class="herramienta tabla"><div class="tabla-marco"><table><thead><tr>${celdas(filas[0]).map(c => `<th scope="col">${c}</th>`).join('')}</tr></thead>`
+      + `<tbody>${filas.slice(1).map(f => `<tr>${celdas(f).map((c, i) => i ? `<td>${c}</td>` : `<th scope="row">${c}</th>`).join('')}</tr>`).join('')}</tbody></table></div></figure>`;
+  }
+
+  // Lector seguro de fórmulas: solo números, x, + - * / ^, paréntesis y funciones conocidas (nunca eval)
+  function compilarFormula(texto) {
+    const s = String(texto).toLowerCase().replace(/\s+/g, '').replace(/·|×/g, '*').replace(/÷/g, '/').replace(/,/g, '.').replace(/√/g, 'sqrt').replace(/π/g, 'pi').replace(/²/g, '^2').replace(/³/g, '^3');
+    const FN = { sen: Math.sin, sin: Math.sin, cos: Math.cos, tan: Math.tan, sqrt: Math.sqrt, raiz: Math.sqrt, abs: Math.abs, ln: Math.log, log: Math.log10, exp: Math.exp };
+    let i = 0;
+    const ver = () => s[i], tomar = c => { if (s[i] !== c) throw new Error('se esperaba ' + c); i++; };
+    function suma() { let f = producto(); while (ver() === '+' || ver() === '-') { const op = s[i++], g = producto(), a = f; f = op === '+' ? x => a(x) + g(x) : x => a(x) - g(x); } return f; }
+    function producto() {
+      let f = unario();
+      while (true) {
+        if (ver() === '*' || ver() === '/') { const op = s[i++], g = unario(), a = f; f = op === '*' ? x => a(x) * g(x) : x => a(x) / g(x); }
+        else if (ver() && /[0-9.a-z(]/.test(ver())) { const g = potencia(), a = f; f = x => a(x) * g(x); }   // 2x, 3(x+1)
+        else return f;
+      }
+    }
+    // El signo menos va después de la potencia: -x^2 = -(x^2), como en matemáticas
+    function unario() { if (ver() === '-') { i++; const f = unario(); return x => -f(x); } if (ver() === '+') { i++; return unario(); } return potencia(); }
+    function potencia() { const b = primario(); if (ver() === '^') { i++; const e = unario(); return x => Math.pow(b(x), e(x)); } return b; }
+    function primario() {
+      if (ver() === '(') { i++; const f = suma(); tomar(')'); return f; }
+      const num = s.slice(i).match(/^\d+(\.\d+)?|^\.\d+/);
+      if (num) { i += num[0].length; const v = parseFloat(num[0]); return () => v; }
+      const id = s.slice(i).match(/^[a-z]+/);
+      if (!id) throw new Error('símbolo no válido');
+      const nombre = id[0];
+      const fn = Object.keys(FN).sort((a, b) => b.length - a.length).find(k => nombre.startsWith(k));
+      if (fn) { i += fn.length; const arg = ver() === '(' ? primario() : potencia(); return x => FN[fn](arg(x)); }
+      if (nombre.startsWith('x')) { i++; return x => x; }
+      if (nombre.startsWith('pi')) { i += 2; return () => Math.PI; }
+      if (nombre.startsWith('e')) { i++; return () => Math.E; }
+      throw new Error('función desconocida');
+    }
+    const f = suma();
+    if (i !== s.length) throw new Error('sobra texto');
+    return f;
+  }
+  const numBonito = v => Math.abs(v) >= 1000 || (Math.abs(v) < 0.01 && v !== 0) ? v.toExponential(1) : String(+v.toFixed(2));
+  function pasoEje(rango) { const bruto = rango / 6, m = Math.pow(10, Math.floor(Math.log10(bruto))); return [1, 2, 5, 10].map(k => k * m).find(p => p >= bruto); }
+
+  // [[funcion 2x+1 | -5 5]]   o   [[funcion x^2 ; 2x+3 | -4 4]]  (hasta 2 curvas; el rango de x es opcional)
+  function dibujarFuncion(args) {
+    const [expr, rango = ''] = String(args).split('|');
+    const formulas = expr.split(';').map(t => t.trim().replace(/^(y|f\(x\))\s*=\s*/i, '')).filter(Boolean).slice(0, 2);
+    if (!formulas.length) return '';
+    const r = rango.match(/-?\d+(?:[.,]\d+)?/g)?.map(v => parseFloat(v.replace(',', '.')));
+    let [xmin, xmax] = r && r.length >= 2 && r[0] < r[1] ? r : [-10, 10];
+    const fs = formulas.map(compilarFormula), N = 240;
+    const curvas = fs.map(f => Array.from({ length: N + 1 }, (_, k) => { const x = xmin + (xmax - xmin) * k / N, y = f(x); return [x, Number.isFinite(y) ? y : NaN]; }));
+    const ys = curvas.flat().map(p => p[1]).filter(Number.isFinite).sort((a, b) => a - b);
+    if (!ys.length) return '';
+    let ymin = Math.min(0, ys[Math.floor(ys.length * .03)]), ymax = Math.max(0, ys[Math.ceil(ys.length * .97) - 1]);
+    if (ymax - ymin < 1e-9) { ymin -= 1; ymax += 1; }
+    const marg = (ymax - ymin) * .08; ymin -= marg; ymax += marg;
+    const W = 480, H = 330, L = 46, R = 16, T = 18, B = 34;
+    const X = x => L + (x - xmin) / (xmax - xmin) * (W - L - R), Y = y => T + (ymax - y) / (ymax - ymin) * (H - T - B);
+    const id = 'g' + (++svgId);
+    let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc('Gráfica de ' + formulas.map(f => 'y = ' + f).join(' y ') + ', con x de ' + xmin + ' a ' + xmax)}">`
+      + `<defs><clipPath id="${id}"><rect x="${L}" y="${T}" width="${W - L - R}" height="${H - T - B}"/></clipPath></defs>`;
+    const px = pasoEje(xmax - xmin), py = pasoEje(ymax - ymin);
+    for (let v = Math.ceil(xmin / px) * px; v <= xmax + 1e-9; v += px) svg += `<line x1="${X(v)}" y1="${T}" x2="${X(v)}" y2="${H - B}" stroke="#ECE6D9"/><text x="${X(v)}" y="${H - B + 18}" font-size="15" text-anchor="middle" fill="#5B574F" ${FUENTE}>${numBonito(v)}</text>`;
+    for (let v = Math.ceil(ymin / py) * py; v <= ymax + 1e-9; v += py) svg += `<line x1="${L}" y1="${Y(v)}" x2="${W - R}" y2="${Y(v)}" stroke="#ECE6D9"/><text x="${L - 6}" y="${Y(v) + 4}" font-size="15" text-anchor="end" fill="#5B574F" ${FUENTE}>${numBonito(v)}</text>`;
+    const ejeX = Y(0), ejeY = xmin <= 0 && xmax >= 0 ? X(0) : L;
+    svg += `<line x1="${L}" y1="${ejeX}" x2="${W - R}" y2="${ejeX}" stroke="${TINTA}" stroke-width="1.5"/><line x1="${ejeY}" y1="${T}" x2="${ejeY}" y2="${H - B}" stroke="${TINTA}" stroke-width="1.5"/>`
+      + `<text x="${W - R}" y="${ejeX - 6}" font-size="17" font-weight="700" text-anchor="end" fill="${TINTA}" ${FUENTE}>x</text><text x="${ejeY + 6}" y="${T + 12}" font-size="17" font-weight="700" fill="${TINTA}" ${FUENTE}>y</text>`;
+    const estilos = [[AZUL, ''], [ORO, ' stroke-dasharray="9 6"']], salto = (ymax - ymin) * 1.5;
+    curvas.forEach((pts, c) => {
+      let d = '', abierto = false, prev = null;
+      for (const [x, y] of pts) {
+        if (!Number.isFinite(y) || y < ymin - salto || y > ymax + salto || (prev !== null && Math.abs(y - prev) > salto)) { abierto = false; prev = Number.isFinite(y) ? y : null; continue; }
+        d += (abierto ? 'L' : 'M') + X(x).toFixed(1) + ',' + Y(Math.max(ymin - marg, Math.min(ymax + marg, y))).toFixed(1); abierto = true; prev = y;
+      }
+      svg += `<path d="${d}" fill="none" stroke="${estilos[c][0]}" stroke-width="3"${estilos[c][1]} clip-path="url(#${id})"/>`;
+    });
+    const leyenda = formulas.map((f, c) => `<span class="leyenda-f${c}">y = ${esc(f)}</span>`).join(' ');
+    return `<figure class="herramienta">${svg}</svg><figcaption>${leyenda}</figcaption></figure>`;
+  }
+
   // Envíos desde las herramientas (argumento y seguridad)
   document.getElementById('hilo').addEventListener('submit', e => {
     const f = e.target.closest('form.argumento'); if (!f) return;
