@@ -75,3 +75,20 @@ obstáculo detectado.
 
 Calendario: `.github/workflows/sabi-investigadores.yml`. Para ver qué falta sin gastar: Actions,
 "SABI · investigadores por área", Run workflow, modo `cobertura`.
+
+## IA institucional v3 (sabicentec.com) · Prompt Maestro de Gobernanza y Tutoría
+
+Desde el 15 de octubre de 2026, `functions/api/institucional.js` aplica el Prompt Maestro del ecosistema
+SABICENTEC y la Instrucción Maestra de educación visual. Detalle completo en el repositorio de la app:
+`sabi-centec-AI--cali/AGENTES-IA.md`.
+
+| Pieza | Qué hace |
+|---|---|
+| Enrutador de Dots | Elige uno de 8 Dots tutores (Matemáticas Estratégica con finanzas, Lectura Crítica, Ciencias STEAM, Sociales y Ciudadanas, Bilingüismo, Inteligencia Emocional, Técnico SENA, Educación Digital e IA). |
+| Comandos | 19 herramientas (`/investigar`, `/proyecto`, `/paso_a_paso`, `/mathvisual`, `/flashcards`, `/quiz`, `/crucigrama`…) que obligan a PRODUCIR el recurso como bloque ```sabi``` o ```mermaid```, que la app dibuja. |
+| Secuencia de aprendizaje | Objetivos, idea intuitiva, fundamentos, cómo funciona, ejemplo resuelto, usos y límites, errores frecuentes, práctica con recuperación activa y síntesis (memorizar, comprender, hacer, decidir). |
+| Dot_Auditor_Riguroso | 8 criterios: los 6 del sello más validez de los recursos y de la microclase. |
+| Pedagogía vigente | Lee `data/pedagogia-vigente.json` (la amplían los investigadores con aprobación de coordinación). |
+| Dot_Investigador_SextoSentido | `scripts/investigador-sextosentido.mjs` cada viernes: tendencias de educación, tecnología y trabajo a 30-50 años → `data/tendencias.json` («Radar del futuro» de sabicentec.com), vía Pull Request. |
+
+`GET /api/institucional` devuelve la versión, los Dots y los comandos (lo usa el Dot Vigía).

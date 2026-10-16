@@ -27,7 +27,24 @@ const BANCO = [
   { tipo: "docente", audiencia: "docente", grado: "", pregunta: "Necesito una clase de 45 minutos sobre ecosistemas para grado 5°." },
   { tipo: "familia", audiencia: "familia", grado: "", pregunta: "Mi hijo de 8 años no quiere leer, ¿cómo lo ayudo en casa?" },
   { tipo: "idiomas", audiencia: "estudiante", grado: "6°", pregunta: "¿Cómo digo 'tengo hambre y quiero una empanada' en inglés?" },
+  // Prompt Maestro v3: áreas Sabic, Dots y comandos que deben PRODUCIR recursos
+  { tipo: "matemática financiera", audiencia: "estudiante", grado: "9°", pregunta: "Si ahorro $200.000 al 1% mensual compuesto, ¿cuánto tengo en 12 meses?", comando: "paso_a_paso", bloque: "pasos" },
+  { tipo: "recurso visual", audiencia: "estudiante", grado: "10°", pregunta: "Grafica la función f(x) = x² − 4 y explica dónde corta los ejes", comando: "mathvisual", bloque: "grafica" },
+  { tipo: "lúdico", audiencia: "estudiante", grado: "6°", pregunta: "Sistema solar", comando: "crucigrama", bloque: "crucigrama" },
+  { tipo: "repaso", audiencia: "estudiante", grado: "8°", pregunta: "La célula y sus organelos", comando: "flashcards", bloque: "flashcards" },
+  { tipo: "investigación", audiencia: "estudiante", grado: "11°", pregunta: "¿Cómo afecta la contaminación del río Cauca a la salud en Cali?", comando: "investigar", bloque: "fuentes" },
+  { tipo: "inteligencia emocional", audiencia: "estudiante", grado: "7°", pregunta: "Me da mucha rabia cuando pierdo en un partido, ¿qué hago?" },
+  { tipo: "SENA", audiencia: "estudiante", grado: "11°", pregunta: "Quiero montar un emprendimiento de empanadas, formúlalo como proyecto", comando: "proyecto", bloque: "proyecto" },
 ];
+
+// Verificación técnica (sin IA): los bloques ```sabi``` deben ser JSON válido y el pedido debe existir.
+function revisarBloques(texto, esperado) {
+  const bloques = [...String(texto).matchAll(/```sabi\s*([\s\S]*?)```/g)].map((m) => m[1]);
+  const tipos = [], invalidos = [];
+  for (const b of bloques) { try { tipos.push(JSON.parse(b).tipo); } catch { invalidos.push(b.slice(0, 60)); } }
+  const mermaid = (String(texto).match(/```mermaid/g) || []).length;
+  return { tipos, invalidos: invalidos.length, mermaid, falta: esperado ? !tipos.includes(esperado) : false };
+}
 
 const CRITERIOS = ["veracidad", "pedagogia", "cientifico", "neutralidad", "seguridad", "estilo"];
 
@@ -57,7 +74,7 @@ async function preguntar(caso) {
   const r = await fetch(URL, {
     method: "POST",
     headers: { "content-type": "application/json", origin: "https://sabicentec.com" },
-    body: JSON.stringify({ pregunta: caso.pregunta, audiencia: caso.audiencia, grado: caso.grado }),
+    body: JSON.stringify({ pregunta: caso.pregunta, audiencia: caso.audiencia, grado: caso.grado, comando: caso.comando || "" }),
   });
   const d = await r.json();
   if (!r.ok || d.ok === false) throw new Error(d.error || `HTTP ${r.status}`);
@@ -72,8 +89,10 @@ async function main() {
       const d = await preguntar(caso);
       const texto = `${d.answer}\n\nMICROCLASE: ${JSON.stringify(d.leccion || {})}`;
       const nota = await claude(JUEZ, `Quién pregunta: ${caso.audiencia} ${caso.grado}\nPregunta: ${caso.pregunta}\n\nRESPUESTA PUBLICADA:\n${texto}`);
+      const recursos = revisarBloques(d.answer, caso.bloque);
+      if (recursos.falta || recursos.invalidos) { nota.alerta = true; nota.observacion = `${nota.observacion} RECURSOS: ${recursos.falta ? "no produjo el bloque " + caso.bloque + ". " : ""}${recursos.invalidos ? recursos.invalidos + " bloque(s) con JSON inválido." : ""}`; }
       const promedio = CRITERIOS.reduce((s, c) => s + Number(nota[c] || 0), 0) / CRITERIOS.length;
-      resultados.push({ ...caso, nota, promedio: Number(promedio.toFixed(2)), auditada: !!d.auditoria?.revisada, extracto: d.answer.slice(0, 280) });
+      resultados.push({ ...caso, nota, recursos, dot: d.dot || "", promedio: Number(promedio.toFixed(2)), auditada: !!d.auditoria?.revisada, extracto: d.answer.slice(0, 280) });
     } catch (e) {
       resultados.push({ ...caso, error: String(e.message).slice(0, 200), promedio: 0 });
     }
@@ -100,7 +119,7 @@ async function main() {
   for (const r of resultados) {
     l.push(`### ${r.tipo}: ${r.pregunta}`);
     if (r.error) { l.push(`No respondió: ${r.error}`, ""); continue; }
-    l.push(`Promedio ${r.promedio} · ${CRITERIOS.map((c) => `${c} ${r.nota[c]}`).join(" · ")} · revisada por el Auditor en vivo: ${r.auditada ? "sí" : "no"}`);
+    l.push(`Promedio ${r.promedio} · ${CRITERIOS.map((c) => `${c} ${r.nota[c]}`).join(" · ")} · revisada por el Auditor en vivo: ${r.auditada ? "sí" : "no"}${r.dot ? " · " + r.dot : ""}${r.recursos?.tipos.length || r.recursos?.mermaid ? " · recursos: " + [...r.recursos.tipos, ...(r.recursos.mermaid ? ["mermaid×" + r.recursos.mermaid] : [])].join(", ") : ""}`);
     l.push(`> ${r.extracto.replace(/\n+/g, " ")}…`, "", r.nota.observacion, "");
   }
   const informe = l.join("\n");

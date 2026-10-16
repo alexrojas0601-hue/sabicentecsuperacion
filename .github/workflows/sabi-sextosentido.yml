@@ -1,0 +1,45 @@
+# Dot_Investigador_SextoSentido + Dot_Auditor_Riguroso (Prompt Maestro §3.A)
+# Cada viernes investiga tendencias educativas, tecnológicas y del trabajo a 30, 40 y 50 años,
+# las audita y propone el «Radar del futuro» de sabicentec.com en un Pull Request.
+name: SABI · Dot Investigador SextoSentido
+
+on:
+  schedule:
+    - cron: "0 11 * * 5"   # viernes 6:00 a. m. hora Colombia
+  workflow_dispatch:
+    inputs:
+      foco:
+        description: "Opcional. Tema a investigar (si se deja vacío, rota el foco de la semana)"
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  investigar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Investigar y auditar tendencias
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FOCO: ${{ inputs.foco }}
+        run: node scripts/investigador-sextosentido.mjs
+      - name: Validar JSON
+        run: node -e "JSON.parse(require('fs').readFileSync('data/tendencias.json','utf8'))"
+      - name: Abrir Pull Request para aprobación humana
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: sabi-sextosentido/radar
+          delete-branch: true
+          commit-message: "SABI Dot Investigador SextoSentido: radar del futuro"
+          title: "SABI · Radar del futuro (Dot SextoSentido) · revisión de coordinación"
+          body: |
+            El Dot_Investigador_SextoSentido propone tendencias verificadas por el Dot_Auditor_Riguroso.
+            Lee el informe en `data/informes/`. **Aprobar (Merge) = publicar en sabicentec.com.**
+          labels: investigacion
