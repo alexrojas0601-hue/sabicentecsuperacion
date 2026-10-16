@@ -1,0 +1,62 @@
+# Dots didácticos de SABI: un investigador por área busca herramientas pedagógicas con evidencia
+# (miércoles) y el Dot de ciencias completa y audita el banco de 50 experimentos por grado
+# (sábados). Todo llega como Pull Request: nada se publica sin "Merge" de coordinación académica.
+name: SABI · Dots didácticos
+
+on:
+  schedule:
+    - cron: "0 12 * * 3"   # miércoles 7:00 a. m. hora Colombia: herramientas pedagógicas del área de la semana
+    - cron: "0 12 * * 6"   # sábado 7:00 a. m.: experimentos (completar y auditar)
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "herramientas | experimentos | cobertura"
+        default: "herramientas"
+      area:
+        description: "Opcional (herramientas): Matematicas, Lectura, Ciencias, Sociales, Ingles, Emocional, SENA, Digital"
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  dots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Decidir modo
+        id: modo
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "valor=${{ inputs.modo }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 12 * * 6" ]; then
+            echo "valor=experimentos" >> "$GITHUB_OUTPUT"
+          else
+            echo "valor=herramientas" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Ejecutar Dots investigadores y auditores
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          AREA: ${{ inputs.area }}
+        run: node scripts/dots-didacticos.mjs ${{ steps.modo.outputs.valor }}
+      - name: Validar JSON
+        run: |
+          for f in data/herramientas-pedagogicas.json data/experimentos/grado-*.json; do node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" || exit 1; done
+      - name: Abrir Pull Request para aprobación humana
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: sabi-dots/${{ steps.modo.outputs.valor }}
+          delete-branch: true
+          commit-message: "SABI Dots didácticos: ${{ steps.modo.outputs.valor }}"
+          title: "SABI Dots didácticos · ${{ steps.modo.outputs.valor }} · revisión de coordinación"
+          body: |
+            Los Dots investigadores y el Dot Auditor Riguroso proponen cambios. Lee el informe en `data/informes/`.
+            Herramientas: el tutor las usa por área desde el siguiente turno.
+            Experimentos: aparecen en experimentos.html y en el tutor apenas se aprueben.
+            **Aprobar = publicar.** Si algo no convence, cierra el PR sin hacer merge.
+          labels: investigacion

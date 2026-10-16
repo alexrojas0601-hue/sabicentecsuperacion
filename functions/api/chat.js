@@ -1923,6 +1923,21 @@ const COMANDOS_PROFUNDOS = new Set(["ultrathink", "stepback", "firstprinciples",
   "godmode", "premortem", "swot", "riskcheck", "critique", "iterate", "selfcheck", "prd", "okrs", "codereview", "debug", "proyecto"]);
 const COMANDOS_WEB = new Set(["factcheck", "citesources", "summarizeresearch", "trendcheck"]);
 
+// ---------- Herramientas pedagógicas que encuentran los Dots por área (data/herramientas-pedagogicas.json) ----------
+async function herramientasDelArea(env, request, materia) {
+  const d = await leerDatoJSON(env, request, "/data/herramientas-pedagogicas.json");
+  const lista = Array.isArray(d?.herramientas) ? d.herramientas : [];
+  if (!lista.length) return "";
+  const m = String(materia || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const CLAVES = [[/matem|estad|financ|trigon|calculo|econom/, "Matem"], [/lengua|lectura|espanol|literat/, "Lectura"],
+    [/natural|biolog|quim|fisica|steam|robot/, "Ciencias Naturales"], [/social|histor|geograf|ciudadan|filosof/, "Sociales"],
+    [/ingl|idioma/, "Inglés"], [/etic|valor|religi|emocion|comportamiento|sexual/, "emocional"], [/sena|movil|contenidos|emprend/, "SENA"],
+    [/tecnolog|inform|digital/, "digital"]];
+  const clave = (CLAVES.find(([re]) => re.test(m) && !/educacion fisica/.test(m)) || [])[1];
+  const elegidas = lista.filter((h) => h.area === "Todas" || (clave && String(h.area).toLowerCase().includes(clave.toLowerCase()))).slice(-8);
+  return elegidas.map((h) => `- ${corto(h.nombre, 60)} (${corto(h.tipo, 30)}, ${corto(h.grados, 20)}): ${corto(h.para_que, 120)}. Cómo: ${corto(h.como_usarla, 200)} Aplícala con ${corto(h.comando_sabi, 40)}. Evidencia: ${corto(h.evidencia, 120)}`).join("\n");
+}
+
 // ---------- Banco de experimentos (data/experimentos/grado-NN.json, 50 por grado) ----------
 async function experimentosDelGrado(env, request, grade) {
   const g = gradoNumero(grade);
@@ -2023,6 +2038,7 @@ export async function onRequestPost(context) {
   }
 
   const catalogo = await catalogoCompacto(env, request);
+  const herramientasArea = role === "padre" ? "" : await herramientasDelArea(env, request, role === "docente" ? profile.teacherArea : profile.materia);
   const experimentos = conExperimentos ? await experimentosDelGrado(env, request, role === "docente" ? (profile.homeroomGrade || profile.grade) : profile.grade) : "";
   const capa = role === "estudiante" || role === "docente"
     ? await capaSuperacion(env, request, role === "docente" ? profile.teacherArea : profile.materia, role === "docente" ? profile.homeroomGrade : profile.grade)
@@ -2053,6 +2069,7 @@ export async function onRequestPost(context) {
           ...(capa
             ? [{ type: "text", text: `[${role === "docente" ? "Para el docente: usa esta capa para planear clases, proyectos ABP y rúbricas por desempeño" : "Aplica esta capa en cada respuesta, dentro del Motor de Experiencia"}:]\n${capa}`, cache_control: { type: "ephemeral" } }]
             : []),
+          ...(herramientasArea ? [{ type: "text", text: `[Herramientas pedagógicas con evidencia que los Dots investigadores encontraron para esta área; úsalas cuando ayuden a que aprenda de verdad:]\n${herramientasArea}` }] : []),
           ...(experimentos ? [{ type: "text", text: `[Banco oficial de experimentos de CENTEC para este grado — usa [[experimento id]] solo con estos id:]\n${experimentos}` }] : []),
           { type: "text", text: contextoRol + (comando ? `\n[COMANDO ACTIVO: /${comando}. Respóndelo según la sección "Comandos del estudiante y del docente" del Prompt Maestro: produce la herramienta visual que corresponde, completa y en una sola línea, e interprétala.]` : "") },
         ],

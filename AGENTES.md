@@ -92,3 +92,16 @@ SABICENTEC y la Instrucción Maestra de educación visual. Detalle completo en e
 | Dot_Investigador_SextoSentido | `scripts/investigador-sextosentido.mjs` cada viernes: tendencias de educación, tecnología y trabajo a 30-50 años → `data/tendencias.json` («Radar del futuro» de sabicentec.com), vía Pull Request. |
 
 `GET /api/institucional` devuelve la versión, los Dots y los comandos (lo usa el Dot Vigía).
+
+## Dots didácticos (octubre 2026) — Prompt Maestro SABI CENTEC v4
+
+| Rol | Quién lo hace | Qué hace |
+|---|---|---|
+| 8 Dots investigadores por área | Claude con búsqueda web (miércoles, rota el área) | Encuentran estrategias, juegos y recursos con evidencia que mejoran el aprendizaje; cada uno dice con qué comando de SABI se aplica. |
+| Dot Auditor Riguroso (herramientas) | Claude | Pedagógico, seguridad de menores (Ley 1581) y evidencia: exige 4 de 5 en los tres. |
+| Dot Ciencias (experimentos) | Claude (sábados) | Completa hasta 50 experimentos por grado (Transición a 11°) y audita una muestra: ciencia correcta y seguridad. |
+| Auditor humano final | Coordinación académica | Aprueba (merge) o cierra el PR. |
+
+Archivos: `scripts/dots-didacticos.mjs`, `.github/workflows/sabi-dots-didacticos.yml`,
+`data/herramientas-pedagogicas.json`, `data/experimentos/`, `PROMPT_MAESTRO_SABI.md`.
+Correr a mano: GitHub → Actions → «SABI · Dots didácticos» → Run workflow (modo y área).

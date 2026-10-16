@@ -1,0 +1,2108 @@
+[
+  {
+    "id": "g07-e001",
+    "grado": 7,
+    "eje": "materia-cambios",
+    "titulo": "Construye un densímetro como el del trapiche",
+    "gancho": "En los trapiches del Valle miden qué tan concentrado está el jugo de caña con un instrumento que flota. ¿Cómo un flotador puede medir el azúcar?",
+    "dba": "Explica el comportamiento de líquidos y gases (presión, volumen, temperatura, viscosidad, tensión superficial) usando el modelo cinético de partículas.",
+    "prediccion": "¿El pitillo se hundirá más en agua dulce, en agua con sal o en agua con mucho azúcar?",
+    "materiales": [
+      "pitillo transparente",
+      "plastilina",
+      "marcador de punta fina",
+      "regla",
+      "3 vasos altos",
+      "agua",
+      "sal",
+      "azúcar"
+    ],
+    "pasos": [
+      "Tapa un extremo del pitillo con una bolita de plastilina para que flote vertical.",
+      "Ponlo en agua dulce y marca la línea del nivel del agua.",
+      "Prepara un vaso con 3 cucharadas de sal y otro con 3 de azúcar en 200 mL de agua.",
+      "Pon el densímetro en cada vaso y mide cuántos milímetros sobresalen.",
+      "Prepara soluciones con 1, 2, 4 y 6 cucharadas de azúcar y repite.",
+      "Grafica cucharadas de azúcar vs. milímetros que sobresale."
+    ],
+    "seguridad": "Trabaja en una mesa limpia, no pruebes ninguna sustancia y lava tus manos al terminar.",
+    "adulto": false,
+    "que_pasa": "Un objeto flota hundiéndose hasta desplazar un peso de líquido igual a su propio peso. En un líquido más denso necesita desplazar menos volumen, así que sobresale más. Al calibrarlo con soluciones conocidas, el densímetro permite medir la concentración de azúcar en jugos.",
+    "concepto": "Densímetro y principio de Arquímedes",
+    "vocabulario": [
+      "densímetro",
+      "empuje",
+      "densidad",
+      "concentración",
+      "calibrar"
+    ],
+    "preguntas": [
+      "¿Cuántos milímetros sobresalió en cada líquido?",
+      "¿Qué forma tuvo tu gráfica?",
+      "¿Cómo usarías tu densímetro para saber si a una leche le agregaron agua?"
+    ],
+    "reto": "Usa el mismo densímetro y cambia solo la temperatura del agua dulce (fría vs. del ambiente).",
+    "minutos": 40
+  },
+  {
+    "id": "g07-e002",
+    "grado": 7,
+    "eje": "materia-cambios",
+    "titulo": "El vaso de agua que no se derrama al voltearlo",
+    "gancho": "Al subir al Pico de Loro o a los Farallones, los paquetes de papas se inflan. Hay algo invisible que nos aprieta todo el tiempo. ¿Qué es?",
+    "dba": "Explica el comportamiento de líquidos y gases (presión, volumen, temperatura, viscosidad, tensión superficial) usando el modelo cinético de partículas.",
+    "prediccion": "Si volteas un vaso lleno de agua tapado con un cartón y sueltas el cartón, ¿se caerá el agua?",
+    "materiales": [
+      "vaso plástico liso",
+      "cartulina plastificada o tapa plana",
+      "agua",
+      "platón grande"
+    ],
+    "pasos": [
+      "Trabaja sobre el platón.",
+      "Llena el vaso hasta el borde.",
+      "Pon el cartón encima y presiónalo con la mano.",
+      "Voltea el vaso rápidamente sosteniendo el cartón.",
+      "Suelta el cartón con cuidado y observa.",
+      "Repite con el vaso lleno solo hasta la mitad y compara."
+    ],
+    "seguridad": "Hazlo sobre el platón; seca el piso para evitar resbalones.",
+    "adulto": false,
+    "que_pasa": "El aire que nos rodea tiene peso y ejerce presión en todas las direcciones: es la presión atmosférica. Esa presión empuja el cartón hacia arriba con más fuerza que el peso del agua, por eso no cae. Con aire dentro del vaso, el resultado puede cambiar porque el aire de adentro también empuja.",
+    "concepto": "Presión atmosférica",
+    "vocabulario": [
+      "presión atmosférica",
+      "fuerza",
+      "aire",
+      "pascal"
+    ],
+    "preguntas": [
+      "¿Se cayó el agua con el vaso lleno? ¿Y con el vaso a la mitad?",
+      "¿Por qué el aire de adentro cambia el resultado?",
+      "¿Por qué los paquetes sellados se inflan al subir a la montaña?"
+    ],
+    "reto": "Cambia solo el tamaño del vaso (pequeño, mediano, grande) y observa si el cartón sigue sosteniendo el agua.",
+    "minutos": 15
+  },
+  {
+    "id": "g07-e003",
+    "grado": 7,
+    "eje": "materia-cambios",
+    "titulo": "¿Por qué se arruga la botella del agua al bajar del Kilómetro 18?",
+    "gancho": "Una botella cerrada en el Kilómetro 18, donde hace frío, llega arrugada a Cali. ¿Quién la apretó?",
+    "dba": "Explica el comportamiento de líquidos y gases (presión, volumen, temperatura, viscosidad, tensión superficial) usando el modelo cinético de partículas.",
+    "prediccion": "Si un adulto pone agua tibia en una botella, la vacía, la tapa y la enfría, ¿qué pasará con la botella?",
+    "materiales": [
+      "botella plástica delgada con tapa",
+      "agua tibia (la prepara un adulto)",
+      "agua con hielo en un platón",
+      "guante o trapo"
+    ],
+    "pasos": [
+      "El adulto pone un poco de agua tibia en la botella, la agita 20 segundos y la vacía.",
+      "Tapa la botella enseguida.",
+      "Pon la botella en el platón con agua con hielo.",
+      "Observa durante 2 minutos.",
+      "Destápala y observa qué pasa.",
+      "Explica con un dibujo de partículas antes y después."
+    ],
+    "seguridad": "Solo el adulto maneja el agua tibia; usa guante o trapo. El agua no debe estar hirviendo.",
+    "adulto": true,
+    "que_pasa": "El aire tibio dentro de la botella tiene partículas que se mueven rápido y empujan las paredes. Al enfriarse, las partículas se mueven más lento y la presión adentro baja. La presión del aire de afuera, mayor, aplasta la botella. Al destaparla entra aire y recupera la forma.",
+    "concepto": "Presión y temperatura de un gas",
+    "vocabulario": [
+      "presión",
+      "temperatura",
+      "gas",
+      "modelo cinético"
+    ],
+    "preguntas": [
+      "¿Qué le pasó a la botella en el agua fría?",
+      "¿Por qué recuperó su forma al destaparla?",
+      "¿Por qué se recomienda medir la presión de las llantas con el carro frío?"
+    ],
+    "reto": "Cambia solo la temperatura del baño (agua de la llave vs. agua con hielo) y compara cuánto se arruga.",
+    "minutos": 20
+  },
+  {
+    "id": "g07-e004",
+    "grado": 7,
+    "eje": "materia-cambios",
+    "titulo": "¿Cuánto se puede apretar el aire de una jeringa?",
+    "gancho": "Los buzos de Bahía Solano llevan tanques de aire comprimido. ¿Cuánto aire cabe si lo apretamos?",
+    "dba": "Explica el comportamiento de líquidos y gases (presión, volumen, temperatura, viscosidad, tensión superficial) usando el modelo cinético de partículas.",
+    "prediccion": "Si duplicas el peso sobre el émbolo de una jeringa tapada, ¿el volumen de aire bajará a la mitad?",
+    "materiales": [
+      "jeringa de 60 mL sin aguja",
+      "tapa de goma o plastilina",
+      "libros iguales",
+      "soporte o vaso para mantener la jeringa vertical",
+      "cinta"
+    ],
+    "pasos": [
+      "Llena la jeringa con 50 mL de aire y tapa la punta con plastilina.",
+      "Fíjala vertical con el émbolo hacia arriba.",
+      "Pon 1 libro sobre el émbolo y lee el volumen.",
+      "Agrega libros de uno en uno y anota el volumen.",
+      "Haz una tabla de número de libros vs. volumen.",
+      "Grafica y describe la tendencia."
+    ],
+    "seguridad": "Usa jeringa sin aguja y sostén los libros para que no caigan.",
+    "adulto": false,
+    "que_pasa": "Al aumentar la presión sobre un gas, sus partículas se acercan y el volumen disminuye. A temperatura constante, la presión y el volumen son inversamente proporcionales: si una aumenta, la otra disminuye (ley de Boyle). En la jeringa la relación no será perfecta por la fricción y porque el aire ya está a presión atmosférica.",
+    "concepto": "Ley de Boyle",
+    "vocabulario": [
+      "presión",
+      "volumen",
+      "inversamente proporcional",
+      "compresión"
+    ],
+    "preguntas": [
+      "¿Cuál fue el volumen con 1 y con 4 libros?",
+      "¿Por qué con cada libro el volumen baja menos?",
+      "¿Por qué un buzo debe subir despacio a la superficie?"
+    ],
+    "reto": "Cambia solo el volumen inicial de aire (30 mL vs. 50 mL) con los mismos libros.",
+    "minutos": 30
+  },
+  {
+    "id": "g07-e005",
+    "grado": 7,
+    "eje": "materia-cambios",
+    "titulo": "¿Por qué el melao baja más lento que el agua?",
+    "gancho": "El melao de panela que se le echa a la natilla baja lentísimo, pero cuando está caliente corre fácil. ¿Por qué?",
+    "dba": "Explica el comportamiento de líquidos y gases (presión, volumen, temperatura, viscosidad, tensión superficial) usando el modelo cinético de partículas.",
+    "prediccion": "Si dejas caer una canica en vasos con agua, aceite y miel, ¿cuánto tardará en llegar al fondo en cada uno?",
+    "materiales": [
+      "3 vasos altos iguales",
+      "agua",
+      "aceite de cocina",
+      "miel o melao",
+      "3 canicas iguales",
+      "cronómetro",
+      "cuchara"
+    ],
+    "pasos": [
+      "Llena los vasos hasta la misma altura con cada líquido.",
+      "Suelta una canica en la superficie del agua y mide el tiempo hasta el fondo.",
+      "Repite en el aceite y en la miel.",
+      "Haz 3 intentos por vaso (saca la canica con la cuchara).",
+      "Calcula los promedios.",
+      "Ordena los líquidos por viscosidad."
+    ],
+    "seguridad": "Limpia los derrames de aceite y miel enseguida. No pruebes los líquidos.",
+    "adulto": false,
+    "que_pasa": "La viscosidad es la resistencia de un líquido a fluir. En la miel las partículas se atraen mucho y frenan el movimiento, por eso la canica baja despacio. Al calentar un líquido, sus partículas se mueven más y se separan, y la viscosidad disminuye.",
+    "concepto": "Viscosidad",
+    "vocabulario": [
+      "viscosidad",
+      "fluir",
+      "resistencia",
+      "partícula"
+    ],
+    "preguntas": [
+      "¿Cuánto tardó la canica en cada líquido?",
+      "¿Qué pasaría con la miel si la enfrías en la nevera?",
+      "¿Por qué el aceite del carro se cambia según el clima?"
+    ],
+    "reto": "Usa solo miel y cambia la temperatura: miel de la nevera vs. miel a temperatura ambiente.",
+    "minutos": 30
+  },
+  {
+    "id": "g07-e006",
+    "grado": 7,
+    "eje": "materia-cambios",
+    "titulo": "¿Cuántas gotas caben encima de una moneda?",
+    "gancho": "Algunos insectos caminan sobre el agua de los humedales del Valle sin hundirse. ¿Qué los sostiene?",
+    "dba": "Explica el comportamiento de líquidos y gases (presión, volumen, temperatura, viscosidad, tensión superficial) usando el modelo cinético de partículas.",
+    "prediccion": "¿Cuántas gotas de agua caben sobre una moneda de 200 pesos antes de derramarse? ¿Y si el agua tiene jabón?",
+    "materiales": [
+      "moneda",
+      "gotero",
+      "agua",
+      "jabón líquido",
+      "vaso",
+      "papel absorbente",
+      "clip"
+    ],
+    "pasos": [
+      "Pon la moneda seca sobre el papel absorbente.",
+      "Deja caer gotas de agua contando hasta que se derrame.",
+      "Repite 3 veces y saca el promedio.",
+      "Mezcla una gota de jabón en el agua y repite.",
+      "Pon un clip con cuidado sobre agua limpia en un vaso, para que flote.",
+      "Toca el agua con un dedo enjabonado y observa el clip."
+    ],
+    "seguridad": "Trabaja en una mesa limpia, no pruebes ninguna sustancia y lava tus manos al terminar.",
+    "adulto": false,
+    "que_pasa": "Las partículas de agua se atraen entre sí; en la superficie esa atracción forma una especie de 'piel' llamada tensión superficial. Por eso el agua forma una cúpula sobre la moneda y el clip flota. El jabón debilita esa atracción, la cúpula se rompe antes y el clip se hunde.",
+    "concepto": "Tensión superficial",
+    "vocabulario": [
+      "tensión superficial",
+      "cohesión",
+      "gota",
+      "jabón"
+    ],
+    "preguntas": [
+      "¿Cuántas gotas cupieron con agua y con jabón?",
+      "¿Por qué se hundió el clip?",
+      "¿Por qué la contaminación con detergentes afecta a los insectos de los ríos?"
+    ],
+    "reto": "Cambia solo el líquido: agua con sal o aceite, y compara cuántas gotas caben.",
+    "minutos": 25
+  },
+  {
+    "id": "g07-e007",
+    "grado": 7,
+    "eje": "materia-cambios",
+    "titulo": "¿Sólido o líquido? La mezcla de maicena que te confunde",
+    "gancho": "Algunos ingenieros estudian materiales que se endurecen con un golpe para chalecos y cascos. ¿Existe algo así en la cocina?",
+    "dba": "Explica el comportamiento de líquidos y gases (presión, volumen, temperatura, viscosidad, tensión superficial) usando el modelo cinético de partículas.",
+    "prediccion": "Si golpeas rápido la mezcla de maicena con agua, ¿salpicará como agua o se pondrá dura?",
+    "materiales": [
+      "maicena",
+      "agua",
+      "platón",
+      "cuchara",
+      "canica"
+    ],
+    "pasos": [
+      "Mezcla 1 taza de maicena con ½ taza de agua poco a poco.",
+      "Toma un poco en la mano y apriétala rápido; luego abre la mano.",
+      "Golpea la superficie con la cuchara rápido y luego húndela despacio.",
+      "Deja caer la canica desde 20 cm y luego déjala hundirse sola.",
+      "Anota cómo se comporta en cada caso."
+    ],
+    "seguridad": "No botes la mezcla al lavaplatos porque tapa la tubería; desechala en la basura. No la pruebes.",
+    "adulto": false,
+    "que_pasa": "Es un fluido no newtoniano: su viscosidad cambia según la fuerza aplicada. Las partículas de maicena flotan en el agua; con un golpe rápido no alcanzan a moverse y se traban, y la mezcla actúa como sólido. Con fuerza lenta se deslizan y fluye como líquido.",
+    "concepto": "Fluido no newtoniano",
+    "vocabulario": [
+      "fluido no newtoniano",
+      "viscosidad",
+      "suspensión",
+      "fuerza"
+    ],
+    "preguntas": [
+      "¿Qué pasó al golpear rápido y al hundir despacio?",
+      "¿Por qué la canica se hundió sola al final?",
+      "¿Para qué podría servir este material en protección deportiva?"
+    ],
+    "reto": "Cambia solo la proporción de agua (¼, ½ o ¾ de taza por taza de maicena) y compara cómo responde al golpe.",
+    "minutos": 25
+  },
+  {
+    "id": "g07-e008",
+    "grado": 7,
+    "eje": "materia-cambios",
+    "titulo": "¿Por qué la mantequilla se derrite primero sobre la cuchara de metal?",
+    "gancho": "En una olla de sancocho, la cuchara de metal se calienta mucho y la de palo no. ¿Qué materiales conducen el calor?",
+    "dba": "Explica el comportamiento de líquidos y gases (presión, volumen, temperatura, viscosidad, tensión superficial) usando el modelo cinético de partículas.",
+    "prediccion": "Si pones hielo sobre una tapa de metal y sobre una tabla de plástico, ¿cuál se derretirá primero?",
+    "materiales": [
+      "2 cubos de hielo iguales",
+      "tapa de olla o bandeja metálica",
+      "tabla de picar plástica o de madera",
+      "cronómetro"
+    ],
+    "pasos": [
+      "Toca ambas superficies: ¿cuál se siente más fría?",
+      "Pon un cubo de hielo en cada superficie al mismo tiempo.",
+      "Observa sin tocar.",
+      "Anota el tiempo que tarda cada uno en derretirse por completo.",
+      "Explica con tus palabras por qué una se sentía más fría."
+    ],
+    "seguridad": "Trabaja en una mesa limpia, no pruebes ninguna sustancia y lava tus manos al terminar.",
+    "adulto": false,
+    "que_pasa": "El calor pasa de lo más caliente a lo más frío. Los metales son buenos conductores del calor: llevan rápido la energía del ambiente hasta el hielo, que se derrite antes. Por la misma razón el metal se siente más frío al tacto: se lleva rápido el calor de tu mano, aunque esté a la misma temperatura que el plástico.",
+    "concepto": "Conducción térmica",
+    "vocabulario": [
+      "conducción",
+      "conductor térmico",
+      "aislante",
+      "transferencia de calor"
+    ],
+    "preguntas": [
+      "¿Qué hielo se derritió primero y en cuánto tiempo?",
+      "¿Por qué el metal se siente más frío si está a la misma temperatura?",
+      "¿Por qué los mangos de las ollas son de plástico o madera?"
+    ],
+    "reto": "Usa la superficie metálica y cambia solo el tamaño del cubo de hielo.",
+    "minutos": 25
+  },
+  {
+    "id": "g07-e009",
+    "grado": 7,
+    "eje": "fuerza-movimiento",
+    "titulo": "Diseña una montaña rusa para canicas",
+    "gancho": "En los parques de diversiones las montañas rusas no tienen motor en las bajadas. ¿Qué altura necesita el carro para dar una vuelta completa?",
+    "dba": "Comprende las formas y transformaciones de la energía en un sistema mecánico y cómo, en los casos reales, parte de la energía se disipa en el medio como calor y sonido; relaciona fuerzas, máquinas simples y movimiento.",
+    "prediccion": "¿Desde qué altura mínima debes soltar la canica para que complete un rizo (loop)?",
+    "materiales": [
+      "manguera transparente de 2 m cortada a lo largo o tubo de espuma para piscina",
+      "canica",
+      "cinta adhesiva",
+      "cinta métrica",
+      "sillas o pared"
+    ],
+    "pasos": [
+      "Pega la canaleta a la pared formando una bajada y luego un rizo de unos 30 cm de diámetro.",
+      "Suelta la canica desde 40 cm de altura y observa si completa el rizo.",
+      "Sube la altura de 10 en 10 cm hasta que lo complete.",
+      "Anota la altura mínima.",
+      "Compárala con la altura del rizo.",
+      "Explica dónde tiene más energía potencial y más cinética."
+    ],
+    "seguridad": "Pega bien la canaleta; recoge las canicas del suelo para evitar caídas.",
+    "adulto": false,
+    "que_pasa": "En lo alto la canica tiene energía potencial gravitacional; al bajar se transforma en energía cinética. Para completar el rizo necesita llegar arriba con suficiente velocidad, por eso debe soltarse bastante más alto que el rizo. La diferencia se explica porque parte de la energía se disipa por fricción y sonido.",
+    "concepto": "Conservación y transformación de energía mecánica",
+    "vocabulario": [
+      "energía potencial",
+      "energía cinética",
+      "energía mecánica",
+      "disipación"
+    ],
+    "preguntas": [
+      "¿Cuál fue la altura mínima para completar el rizo?",
+      "¿Por qué no basta con soltarla a la misma altura del rizo?",
+      "¿Por qué la primera bajada de una montaña rusa es la más alta?"
+    ],
+    "reto": "Mantén la altura y cambia solo el tamaño del rizo (20, 30 o 40 cm de diámetro).",
+    "minutos": 45
+  },
+  {
+    "id": "g07-e010",
+    "grado": 7,
+    "eje": "fuerza-movimiento",
+    "titulo": "¿Por qué un columpio se detiene si nadie lo empuja?",
+    "gancho": "En el parque, si dejas de impulsarte, el columpio se va frenando hasta quedar quieto. ¿A dónde se va la energía?",
+    "dba": "Comprende las formas y transformaciones de la energía en un sistema mecánico y cómo, en los casos reales, parte de la energía se disipa en el medio como calor y sonido; relaciona fuerzas, máquinas simples y movimiento.",
+    "prediccion": "Si sueltas un péndulo, ¿cuántas oscilaciones hará antes de que su amplitud baje a la mitad?",
+    "materiales": [
+      "hilo de 60 cm",
+      "tuerca o arandela",
+      "cartulina",
+      "transportador",
+      "cinta",
+      "borde de mesa"
+    ],
+    "pasos": [
+      "Cuelga la tuerca del borde de la mesa.",
+      "Pega el transportador detrás del punto de amarre.",
+      "Suelta el péndulo desde 40°.",
+      "Cuenta las oscilaciones hasta que llegue a 20°.",
+      "Pega una cartulina a la tuerca como 'vela' y repite.",
+      "Compara el número de oscilaciones."
+    ],
+    "seguridad": "Cuida que la tuerca no golpee a nadie.",
+    "adulto": false,
+    "que_pasa": "Un péndulo ideal oscilaría para siempre, intercambiando energía potencial y cinética. En la realidad, el roce con el aire y en el punto de amarre transforma parte de la energía en calor y sonido, por eso la amplitud disminuye. La cartulina aumenta la resistencia del aire y la energía se disipa más rápido.",
+    "concepto": "Disipación de energía",
+    "vocabulario": [
+      "amplitud",
+      "disipación",
+      "fricción",
+      "resistencia del aire"
+    ],
+    "preguntas": [
+      "¿Cuántas oscilaciones hizo sin y con cartulina?",
+      "¿Qué tipo de energía apareció cuando la mecánica disminuyó?",
+      "¿Por qué hay que darle cuerda o pila a un reloj de péndulo?"
+    ],
+    "reto": "Mantén todo igual y cambia solo la masa colgada (1, 2 o 3 tuercas) para ver cuánto tarda en perder la mitad de la amplitud.",
+    "minutos": 30
+  },
+  {
+    "id": "g07-e011",
+    "grado": 7,
+    "eje": "fuerza-movimiento",
+    "titulo": "Un carrito que anda con energía de una liga",
+    "gancho": "Los juguetes de cuerda guardan energía cuando los enrollas. ¿Cuánta energía guarda una liga?",
+    "dba": "Comprende las formas y transformaciones de la energía en un sistema mecánico y cómo, en los casos reales, parte de la energía se disipa en el medio como calor y sonido; relaciona fuerzas, máquinas simples y movimiento.",
+    "prediccion": "Si enrollas más vueltas la liga, ¿el carrito recorrerá más distancia?",
+    "materiales": [
+      "carrito hecho con caja de jugo, 4 tapas y 2 pinchos de madera sin punta",
+      "liga",
+      "clip",
+      "cinta métrica",
+      "cinta"
+    ],
+    "pasos": [
+      "Arma el carrito con los ejes y las tapas como ruedas.",
+      "Engancha la liga a un eje y al frente del carrito.",
+      "Enrolla la liga dando 5 vueltas al eje.",
+      "Suelta el carrito en el piso y mide la distancia.",
+      "Repite con 10, 15 y 20 vueltas.",
+      "Grafica vueltas vs. distancia."
+    ],
+    "seguridad": "Los pinchos deben tener la punta cortada por un adulto. Suelta la liga lejos de la cara.",
+    "adulto": true,
+    "que_pasa": "Al estirar o enrollar la liga se almacena energía potencial elástica. Al soltarla, esa energía se transforma en energía cinética de las ruedas. Más vueltas guardan más energía, aunque la fricción y el roce en los ejes transforman parte en calor.",
+    "concepto": "Energía potencial elástica",
+    "vocabulario": [
+      "energía elástica",
+      "energía cinética",
+      "transformación",
+      "fricción"
+    ],
+    "preguntas": [
+      "¿Qué distancia logró con 20 vueltas?",
+      "¿La relación entre vueltas y distancia fue constante?",
+      "¿Dónde se usa energía elástica en el deporte?"
+    ],
+    "reto": "Mantén 10 vueltas y cambia solo el tipo de superficie (baldosa, cemento, tapete).",
+    "minutos": 50
+  },
+  {
+    "id": "g07-e012",
+    "grado": 7,
+    "eje": "fuerza-movimiento",
+    "titulo": "¿Cuántas personas se necesitan para subir un bulto con poleas?",
+    "gancho": "En las construcciones de Cali suben baldes de cemento con poleas. ¿Una polea hace el trabajo más fácil?",
+    "dba": "Comprende las formas y transformaciones de la energía en un sistema mecánico y cómo, en los casos reales, parte de la energía se disipa en el medio como calor y sonido; relaciona fuerzas, máquinas simples y movimiento.",
+    "prediccion": "¿Necesitarás menos fuerza para levantar una bolsa con una polea fija, con una móvil o sin polea?",
+    "materiales": [
+      "2 carretes de hilo vacíos y ganchos de ropa de alambre (como poleas)",
+      "pita",
+      "bolsa con 500 g de arena o arroz",
+      "liga y regla como dinamómetro",
+      "palo de escoba sobre 2 sillas"
+    ],
+    "pasos": [
+      "Mide cuánto se estira la liga al levantar la bolsa directamente.",
+      "Cuelga una polea fija del palo, pasa la pita y hala con la liga; mide el estiramiento.",
+      "Arma una polea móvil: la bolsa cuelga de la polea, un extremo de la pita amarrado al palo.",
+      "Hala el otro extremo con la liga y mide.",
+      "Mide también cuánta pita halaste para subir la bolsa 10 cm en cada caso.",
+      "Compara fuerzas y distancias."
+    ],
+    "seguridad": "Asegura bien el palo; no te pares debajo de la bolsa.",
+    "adulto": false,
+    "que_pasa": "La polea fija cambia la dirección de la fuerza, pero no la reduce. La polea móvil reparte el peso entre dos tramos de cuerda y reduce la fuerza casi a la mitad, pero hay que halar el doble de cuerda. La energía (trabajo) que pones no disminuye: se cambia fuerza por distancia.",
+    "concepto": "Máquinas simples: poleas",
+    "vocabulario": [
+      "polea fija",
+      "polea móvil",
+      "trabajo",
+      "ventaja mecánica"
+    ],
+    "preguntas": [
+      "¿Cuánto se estiró la liga en cada caso?",
+      "¿Por qué con la polea móvil hay que halar más cuerda?",
+      "¿Por qué una grúa usa muchas poleas juntas?"
+    ],
+    "reto": "Usa la polea móvil y cambia solo la masa de la bolsa (250, 500, 750 g).",
+    "minutos": 45
+  },
+  {
+    "id": "g07-e013",
+    "grado": 7,
+    "eje": "fuerza-movimiento",
+    "titulo": "¿Dónde está el centro de gravedad de una chiva cargada?",
+    "gancho": "Las chivas que suben a la montaña llevan la carga en el techo. ¿Por qué eso las vuelve más fáciles de voltear?",
+    "dba": "Comprende las formas y transformaciones de la energía en un sistema mecánico y cómo, en los casos reales, parte de la energía se disipa en el medio como calor y sonido; relaciona fuerzas, máquinas simples y movimiento.",
+    "prediccion": "Si pones peso arriba o abajo de una caja, ¿cuál se voltea con menor inclinación?",
+    "materiales": [
+      "caja de zapatos",
+      "plastilina o arena en bolsitas",
+      "tabla",
+      "libros",
+      "transportador"
+    ],
+    "pasos": [
+      "Pon la caja de pie sobre la tabla.",
+      "Inclina la tabla poco a poco (subiendo libros) hasta que la caja se voltee; mide el ángulo.",
+      "Pega el peso en el fondo de la caja y repite.",
+      "Pega el peso en la parte de arriba y repite.",
+      "Anota los tres ángulos.",
+      "Dibuja el centro de gravedad en cada caso."
+    ],
+    "seguridad": "Inclina la tabla despacio y en una mesa baja.",
+    "adulto": false,
+    "que_pasa": "El centro de gravedad es el punto donde se puede considerar concentrado el peso de un objeto. Un objeto se voltea cuando la vertical desde su centro de gravedad cae fuera de su base. Con el peso arriba, el centro de gravedad sube y basta una inclinación menor para voltearlo.",
+    "concepto": "Centro de gravedad y estabilidad",
+    "vocabulario": [
+      "centro de gravedad",
+      "estabilidad",
+      "base de apoyo",
+      "equilibrio"
+    ],
+    "preguntas": [
+      "¿Con qué ángulo se volteó en cada caso?",
+      "¿Cómo harías más estable la caja sin cambiar su peso?",
+      "¿Por qué los luchadores separan los pies y se agachan?"
+    ],
+    "reto": "Mantén el peso abajo y cambia solo el ancho de la base (caja de pie vs. acostada).",
+    "minutos": 30
+  },
+  {
+    "id": "g07-e014",
+    "grado": 7,
+    "eje": "fuerza-movimiento",
+    "titulo": "¿En qué ángulo se resbala un objeto por la ladera?",
+    "gancho": "En temporada de lluvias hay deslizamientos en las laderas de Cali. ¿A qué inclinación empieza a deslizarse algo?",
+    "dba": "Comprende las formas y transformaciones de la energía en un sistema mecánico y cómo, en los casos reales, parte de la energía se disipa en el medio como calor y sonido; relaciona fuerzas, máquinas simples y movimiento.",
+    "prediccion": "Un borrador, una moneda y una caja de fósforos vacía sobre una tabla: ¿cuál se resbalará primero al inclinarla?",
+    "materiales": [
+      "tabla lisa",
+      "transportador",
+      "borrador",
+      "moneda",
+      "caja pequeña",
+      "lija o tela"
+    ],
+    "pasos": [
+      "Pon los objetos en la tabla horizontal.",
+      "Levanta un extremo lentamente.",
+      "Anota el ángulo en que empieza a moverse cada objeto.",
+      "Repite 3 veces y saca el promedio.",
+      "Cubre la tabla con lija o tela y repite.",
+      "Ordena los objetos y superficies según el ángulo."
+    ],
+    "seguridad": "Levanta la tabla despacio y sobre una mesa.",
+    "adulto": false,
+    "que_pasa": "Sobre una rampa, una parte del peso empuja el objeto hacia abajo y la fricción estática se opone. Al aumentar el ángulo, la parte que empuja crece hasta superar la fricción máxima y el objeto se desliza. El ángulo depende de los materiales en contacto, no tanto de la masa.",
+    "concepto": "Fricción estática",
+    "vocabulario": [
+      "fricción estática",
+      "ángulo de reposo",
+      "componente del peso",
+      "deslizamiento"
+    ],
+    "preguntas": [
+      "¿Qué objeto se deslizó con menor ángulo?",
+      "¿Qué cambió al poner lija?",
+      "¿Por qué el agua de lluvia favorece los deslizamientos de tierra?"
+    ],
+    "reto": "Usa el mismo borrador y cambia solo la superficie (madera, lija, plástico, tela).",
+    "minutos": 30
+  },
+  {
+    "id": "g07-e015",
+    "grado": 7,
+    "eje": "fuerza-movimiento",
+    "titulo": "¿Cuánto se estira un resorte con cada moneda?",
+    "gancho": "Las balanzas de las tiendas de barrio usan resortes. ¿Cómo un resorte puede medir el peso?",
+    "dba": "Comprende las formas y transformaciones de la energía en un sistema mecánico y cómo, en los casos reales, parte de la energía se disipa en el medio como calor y sonido; relaciona fuerzas, máquinas simples y movimiento.",
+    "prediccion": "Si cuelgas el doble de monedas, ¿el resorte se estirará el doble?",
+    "materiales": [
+      "resorte de esfero o liga",
+      "vaso plástico pequeño con asa de hilo",
+      "monedas iguales",
+      "regla",
+      "soporte o borde de mesa"
+    ],
+    "pasos": [
+      "Cuelga el resorte con el vasito y mide su largo inicial.",
+      "Agrega 2 monedas y mide el alargamiento.",
+      "Sigue agregando de 2 en 2 hasta 12 monedas.",
+      "Anota los datos en una tabla.",
+      "Grafica número de monedas vs. alargamiento.",
+      "Usa la gráfica para pesar un objeto desconocido."
+    ],
+    "seguridad": "No estires el resorte hasta deformarlo. Si usas liga, que no apunte a la cara.",
+    "adulto": false,
+    "que_pasa": "Un resorte se estira de manera proporcional a la fuerza aplicada mientras no se deforme: es la ley de Hooke. Por eso la gráfica es casi una recta. Si se carga demasiado, el resorte se deforma y la relación deja de cumplirse.",
+    "concepto": "Ley de Hooke",
+    "vocabulario": [
+      "ley de Hooke",
+      "alargamiento",
+      "proporcional",
+      "elasticidad",
+      "dinamómetro"
+    ],
+    "preguntas": [
+      "¿Cuánto se estiró por cada 2 monedas?",
+      "¿Cuántas monedas pesa tu objeto desconocido?",
+      "¿Por qué una balanza de resorte vieja puede marcar mal?"
+    ],
+    "reto": "Cambia solo el resorte (liga gruesa vs. delgada) y compara las pendientes de las gráficas.",
+    "minutos": 35
+  },
+  {
+    "id": "g07-e016",
+    "grado": 7,
+    "eje": "fuerza-movimiento",
+    "titulo": "Un brazo hidráulico como el de las retroexcavadoras",
+    "gancho": "Las retroexcavadoras que trabajan en las obras de la ciudad levantan toneladas con brazos hidráulicos. ¿Cómo multiplican la fuerza?",
+    "dba": "Comprende las formas y transformaciones de la energía en un sistema mecánico y cómo, en los casos reales, parte de la energía se disipa en el medio como calor y sonido; relaciona fuerzas, máquinas simples y movimiento.",
+    "prediccion": "Si conectas una jeringa pequeña a una grande, ¿con cuál debes empujar para levantar más peso?",
+    "materiales": [
+      "2 jeringas de 10 mL y 2 de 60 mL sin aguja",
+      "manguera delgada",
+      "agua",
+      "cartón",
+      "tachuelas o pegante"
+    ],
+    "pasos": [
+      "Llena una jeringa de 10 mL con agua, conéctala a la manguera y a otra de 10 mL vacía.",
+      "Empuja y observa cuánto se mueve la otra.",
+      "Repite conectando la de 10 mL con la de 60 mL.",
+      "Pon un libro pequeño sobre el émbolo de la grande y empuja desde la pequeña.",
+      "Compara la fuerza que haces y cuánto se mueven los émbolos.",
+      "Con cartón, arma un brazo que suba y baje con el sistema."
+    ],
+    "seguridad": "Usa jeringas sin aguja y trabaja sobre una toalla.",
+    "adulto": false,
+    "que_pasa": "Los líquidos no se comprimen y transmiten la presión por igual en todas direcciones (principio de Pascal). Si la presión es igual, la jeringa de mayor área recibe más fuerza total. A cambio, su émbolo se mueve menos distancia.",
+    "concepto": "Principio de Pascal",
+    "vocabulario": [
+      "presión",
+      "principio de Pascal",
+      "área",
+      "hidráulica"
+    ],
+    "preguntas": [
+      "¿Qué combinación levantó el libro con menos esfuerzo?",
+      "¿Por qué el émbolo grande se movió menos?",
+      "¿Por qué los frenos del carro son hidráulicos?"
+    ],
+    "reto": "Cambia solo el fluido de la manguera (agua vs. aire) y compara la respuesta del brazo.",
+    "minutos": 45
+  },
+  {
+    "id": "g07-e017",
+    "grado": 7,
+    "eje": "fuerza-movimiento",
+    "titulo": "¿Por qué un buen balón rebota y uno desinflado no?",
+    "gancho": "En los partidos del barrio, el balón desinflado casi no rebota. ¿Dónde se pierde la energía?",
+    "dba": "Comprende las formas y transformaciones de la energía en un sistema mecánico y cómo, en los casos reales, parte de la energía se disipa en el medio como calor y sonido; relaciona fuerzas, máquinas simples y movimiento.",
+    "prediccion": "¿Qué porcentaje de la altura recuperará un balón bien inflado comparado con uno poco inflado?",
+    "materiales": [
+      "balón de microfútbol o de caucho",
+      "inflador con manómetro",
+      "cinta métrica",
+      "celular para grabar en cámara lenta (opcional)"
+    ],
+    "pasos": [
+      "Infla el balón a la presión recomendada.",
+      "Suéltalo desde 1,5 m y mide la altura del rebote; repite 3 veces.",
+      "Saca un poco de aire y repite.",
+      "Saca más aire y repite.",
+      "Calcula el porcentaje de altura recuperada en cada caso.",
+      "Toca el balón después de 20 rebotes y siente si está tibio."
+    ],
+    "seguridad": "Infla con inflador; no sobrepases la presión indicada.",
+    "adulto": false,
+    "que_pasa": "En el choque, el balón se deforma y almacena energía elástica que luego lo impulsa. Un balón desinflado se deforma más y gran parte de la energía se transforma en calor dentro del material y en sonido. Por eso recupera menos altura: la energía mecánica se disipa.",
+    "concepto": "Disipación de energía en choques",
+    "vocabulario": [
+      "choque",
+      "elasticidad",
+      "disipación",
+      "presión de inflado"
+    ],
+    "preguntas": [
+      "¿Qué porcentaje recuperó con cada presión?",
+      "¿Por qué el balón se calienta un poco tras muchos rebotes?",
+      "¿Por qué los ciclistas revisan la presión de las llantas?"
+    ],
+    "reto": "Usa la misma presión y cambia solo la altura de caída (0,5; 1; 1,5 m).",
+    "minutos": 30
+  },
+  {
+    "id": "g07-e018",
+    "grado": 7,
+    "eje": "luz-sonido-energia",
+    "titulo": "Proyecta la ventana del salón con una lupa",
+    "gancho": "Los lentes de las gafas, las cámaras de los celulares y los telescopios forman imágenes. ¿Cómo una lupa 'dibuja' una imagen en la pared?",
+    "dba": "Explica fenómenos de la luz y del sonido como ondas (reflexión, refracción, color, propagación) y relaciona la electricidad, el magnetismo y el calor como formas de energía que se transforman y se transfieren.",
+    "prediccion": "¿A qué distancia de la hoja debes poner la lupa para ver la ventana nítida? ¿La imagen saldrá derecha o invertida?",
+    "materiales": [
+      "lupa",
+      "hoja blanca",
+      "regla",
+      "ventana iluminada o lámpara"
+    ],
+    "pasos": [
+      "Ubícate al lado opuesto del salón, frente a una ventana luminosa.",
+      "Sostén la hoja blanca y pon la lupa entre la ventana y la hoja.",
+      "Mueve la lupa hasta ver la imagen nítida.",
+      "Mide la distancia entre la lupa y la hoja (distancia focal aproximada).",
+      "Observa si la imagen está invertida.",
+      "Repite con otra lupa y compara."
+    ],
+    "seguridad": "NUNCA uses la lupa para concentrar la luz del Sol: puede quemar y dañar los ojos.",
+    "adulto": false,
+    "que_pasa": "La lupa es una lente convergente: desvía los rayos de luz por refracción y los junta. Con objetos lejanos, la imagen nítida se forma cerca del foco, a una distancia llamada distancia focal. La imagen sale invertida porque los rayos se cruzan al pasar por la lente.",
+    "concepto": "Lentes convergentes",
+    "vocabulario": [
+      "lente convergente",
+      "foco",
+      "distancia focal",
+      "imagen invertida"
+    ],
+    "preguntas": [
+      "¿Cuál fue la distancia focal de tu lupa?",
+      "¿Por qué la imagen sale al revés?",
+      "¿Qué tipo de lente tiene la cámara de un celular?"
+    ],
+    "reto": "Cambia solo la distancia de la ventana (objeto cercano vs. lejano) y mide dónde se forma la imagen nítida.",
+    "minutos": 20
+  },
+  {
+    "id": "g07-e019",
+    "grado": 7,
+    "eje": "luz-sonido-energia",
+    "titulo": "Fabrica una cámara oscura como las primeras cámaras",
+    "gancho": "Mucho antes del celular, los pintores usaban cajas oscuras con un agujero para ver paisajes. ¿Cómo entra una imagen por un hueco?",
+    "dba": "Explica fenómenos de la luz y del sonido como ondas (reflexión, refracción, color, propagación) y relaciona la electricidad, el magnetismo y el calor como formas de energía que se transforman y se transfieren.",
+    "prediccion": "Si haces un agujero más grande, ¿la imagen será más nítida o más borrosa?",
+    "materiales": [
+      "caja de zapatos",
+      "papel mantequilla",
+      "papel aluminio",
+      "aguja o punzón (lo usa el adulto)",
+      "cinta",
+      "tela oscura"
+    ],
+    "pasos": [
+      "Corta un lado de la caja y cúbrelo con papel mantequilla (pantalla).",
+      "En el lado opuesto, abre un hueco de 2 cm y cúbrelo con aluminio.",
+      "El adulto hace un agujero pequeño en el aluminio.",
+      "Cúbrete la cabeza con la tela y apunta la caja a un objeto muy iluminado.",
+      "Observa la imagen en el papel.",
+      "Haz el agujero un poco más grande y compara."
+    ],
+    "seguridad": "El adulto usa el punzón. No apuntes la caja al Sol.",
+    "adulto": true,
+    "que_pasa": "La luz viaja en línea recta. Por el agujero pasan rayos de cada punto del objeto; los de arriba llegan abajo en la pantalla y viceversa, por eso la imagen sale invertida. Un agujero grande deja pasar más rayos de cada punto, que se superponen y hacen la imagen más brillante pero borrosa.",
+    "concepto": "Propagación rectilínea y cámara oscura",
+    "vocabulario": [
+      "cámara oscura",
+      "rayo",
+      "imagen invertida",
+      "nitidez"
+    ],
+    "preguntas": [
+      "¿Cómo se veía la imagen?",
+      "¿Qué ganaste y qué perdiste con el agujero más grande?",
+      "¿Qué parte del ojo humano funciona como el agujero?"
+    ],
+    "reto": "Cambia solo la distancia entre el agujero y la pantalla (caja corta vs. larga) y compara el tamaño de la imagen.",
+    "minutos": 45
+  },
+  {
+    "id": "g07-e020",
+    "grado": 7,
+    "eje": "luz-sonido-energia",
+    "titulo": "Mezcla luces de colores como en un concierto",
+    "gancho": "En los conciertos de la Feria de Cali las luces rojas, verdes y azules forman muchos colores. ¿Cómo sale el blanco?",
+    "dba": "Explica fenómenos de la luz y del sonido como ondas (reflexión, refracción, color, propagación) y relaciona la electricidad, el magnetismo y el calor como formas de energía que se transforman y se transfieren.",
+    "prediccion": "Si cruzas luz roja y luz verde en una pared blanca, ¿qué color verás?",
+    "materiales": [
+      "3 linternas",
+      "papel celofán rojo, verde y azul",
+      "ligas",
+      "pared blanca",
+      "cuarto oscuro"
+    ],
+    "pasos": [
+      "Cubre cada linterna con un celofán (2 capas) sujeto con liga.",
+      "En el cuarto oscuro, apunta la roja y la verde al mismo punto.",
+      "Anota el color resultante.",
+      "Prueba rojo + azul y verde + azul.",
+      "Junta las tres luces.",
+      "Pon tu mano delante y observa las sombras de colores."
+    ],
+    "seguridad": "No apuntes las linternas a los ojos.",
+    "adulto": false,
+    "que_pasa": "La luz blanca puede formarse sumando luz roja, verde y azul: es la mezcla aditiva. Rojo y verde dan amarillo, rojo y azul dan magenta, verde y azul dan cian. Las pantallas de celular usan pequeños puntos de estos tres colores para crear todos los demás.",
+    "concepto": "Mezcla aditiva de la luz",
+    "vocabulario": [
+      "mezcla aditiva",
+      "colores primarios de la luz",
+      "píxel",
+      "espectro"
+    ],
+    "preguntas": [
+      "¿Qué color formaron rojo y verde?",
+      "¿Por qué las sombras salieron de colores?",
+      "¿Por qué mezclar pinturas no da lo mismo que mezclar luces?"
+    ],
+    "reto": "Cambia solo la distancia de una linterna a la pared y observa cómo cambia el color de la mezcla.",
+    "minutos": 25
+  },
+  {
+    "id": "g07-e021",
+    "grado": 7,
+    "eje": "luz-sonido-energia",
+    "titulo": "¿De qué color se ve una fresa con luz azul?",
+    "gancho": "En las discotecas los colores de la ropa cambian con las luces. ¿El color está en el objeto o en la luz?",
+    "dba": "Explica fenómenos de la luz y del sonido como ondas (reflexión, refracción, color, propagación) y relaciona la electricidad, el magnetismo y el calor como formas de energía que se transforman y se transfieren.",
+    "prediccion": "Si iluminas una hoja roja con luz verde, ¿de qué color la verás?",
+    "materiales": [
+      "linterna",
+      "celofán rojo, verde y azul",
+      "objetos de colores (hoja roja, verde, blanca, amarilla)",
+      "cuarto oscuro"
+    ],
+    "pasos": [
+      "Coloca los objetos en una mesa en el cuarto oscuro.",
+      "Ilumínalos con luz blanca y anota sus colores.",
+      "Ilumínalos con luz roja y anota cómo se ven.",
+      "Repite con verde y con azul.",
+      "Organiza los datos en una tabla.",
+      "Busca un patrón."
+    ],
+    "seguridad": "No apuntes la linterna a los ojos.",
+    "adulto": false,
+    "que_pasa": "Un objeto se ve de un color porque refleja esa luz y absorbe las demás. Una hoja roja refleja el rojo; si la iluminas con verde, no hay rojo para reflejar y se ve oscura. El blanco refleja todos los colores, por eso toma el color de la luz que le llega.",
+    "concepto": "Absorción y reflexión selectiva",
+    "vocabulario": [
+      "reflexión",
+      "absorción",
+      "color",
+      "filtro"
+    ],
+    "preguntas": [
+      "¿Cómo se vio la hoja roja con cada luz?",
+      "¿Por qué el objeto blanco cambió de color y el negro no?",
+      "¿Por qué la ropa se ve distinta en la tienda que bajo el sol?"
+    ],
+    "reto": "Usa solo la hoja blanca y cambia el número de capas de celofán para ver cómo cambia la intensidad del color.",
+    "minutos": 25
+  },
+  {
+    "id": "g07-e022",
+    "grado": 7,
+    "eje": "luz-sonido-energia",
+    "titulo": "Ondas en un resorte: haz una 'ola' como en el estadio",
+    "gancho": "En el estadio Pascual Guerrero el público hace la 'ola': la gente sube y baja, pero nadie se mueve de su silla. ¿Qué viaja entonces?",
+    "dba": "Explica fenómenos de la luz y del sonido como ondas (reflexión, refracción, color, propagación) y relaciona la electricidad, el magnetismo y el calor como formas de energía que se transforman y se transfieren.",
+    "prediccion": "Si sacudes más rápido el extremo de una cuerda, ¿las ondas serán más largas o más cortas?",
+    "materiales": [
+      "cuerda de 3 m o resorte plástico (slinky)",
+      "cinta de color",
+      "cronómetro",
+      "cinta métrica"
+    ],
+    "pasos": [
+      "Amarra un extremo de la cuerda a una pata de mesa y ponla en el piso.",
+      "Pega una cinta de color en la mitad.",
+      "Sacude el extremo libre de lado a lado lento y observa la cinta.",
+      "Sacude más rápido y observa la longitud de las ondas.",
+      "Mide la distancia entre dos crestas en cada caso.",
+      "Con el resorte, empuja y hala para ver una onda longitudinal."
+    ],
+    "seguridad": "Haz el experimento en espacio despejado; no golpees a nadie con la cuerda.",
+    "adulto": false,
+    "que_pasa": "Una onda transporta energía sin transportar materia: la cinta sube y baja pero no avanza. Al aumentar la frecuencia (sacudidas por segundo), la longitud de onda disminuye, porque la rapidez en la cuerda se mantiene. El sonido viaja como onda longitudinal, igual que en el resorte.",
+    "concepto": "Ondas: frecuencia y longitud de onda",
+    "vocabulario": [
+      "onda",
+      "frecuencia",
+      "longitud de onda",
+      "amplitud",
+      "cresta"
+    ],
+    "preguntas": [
+      "¿La cinta avanzó con la onda?",
+      "¿Qué pasó con la longitud de onda al sacudir más rápido?",
+      "¿Por qué el sonido de un trueno llega aunque el aire no viaje desde la nube?"
+    ],
+    "reto": "Mantén la misma frecuencia y cambia solo la tensión de la cuerda (floja vs. tensa).",
+    "minutos": 25
+  },
+  {
+    "id": "g07-e023",
+    "grado": 7,
+    "eje": "luz-sonido-energia",
+    "titulo": "La cuchara que suena como campana de iglesia",
+    "gancho": "Las campanas de la iglesia de La Ermita se escuchan lejos. ¿Por qué una cuchara colgada de un hilo puede sonar parecido si pones el hilo en tus oídos?",
+    "dba": "Explica fenómenos de la luz y del sonido como ondas (reflexión, refracción, color, propagación) y relaciona la electricidad, el magnetismo y el calor como formas de energía que se transforman y se transfieren.",
+    "prediccion": "¿Escucharás el golpe de la cuchara más fuerte por el aire o por el hilo pegado a tus oídos?",
+    "materiales": [
+      "cuchara de metal",
+      "hilo de 1 m",
+      "lápiz para golpear"
+    ],
+    "pasos": [
+      "Amarra la cuchara en la mitad del hilo.",
+      "Golpea la cuchara con el lápiz y escucha por el aire.",
+      "Enrolla los extremos del hilo en tus dedos índices y ponlos suavemente en la entrada de los oídos.",
+      "Inclínate para que la cuchara cuelgue libre y pide que la golpeen.",
+      "Compara los dos sonidos.",
+      "Prueba con un tenedor o cucharón."
+    ],
+    "seguridad": "No metas los dedos dentro del oído: solo apóyalos en la entrada. Golpea suave.",
+    "adulto": false,
+    "que_pasa": "El sonido viaja mejor por sólidos que por el aire porque sus partículas están más juntas y transmiten la vibración con menos pérdidas. Por el hilo llega más energía de la vibración de la cuchara, y oyes un sonido más fuerte y más grave, como una campana.",
+    "concepto": "Propagación del sonido en distintos medios",
+    "vocabulario": [
+      "sonido",
+      "medio",
+      "vibración",
+      "sólido"
+    ],
+    "preguntas": [
+      "¿Cómo cambió el sonido al escuchar por el hilo?",
+      "¿Por qué el objeto más grande sonó más grave?",
+      "¿Por qué en las películas ponen la oreja en el riel para saber si viene el tren?"
+    ],
+    "reto": "Cambia solo el material del hilo (lana, nailon, pita) y compara la intensidad del sonido.",
+    "minutos": 15
+  },
+  {
+    "id": "g07-e024",
+    "grado": 7,
+    "eje": "luz-sonido-energia",
+    "titulo": "Construye un electroimán con una pila",
+    "gancho": "En los chatarrerías de Yumbo usan grúas con electroimanes para levantar hierro. ¿Cómo se 'enciende' un imán?",
+    "dba": "Explica fenómenos de la luz y del sonido como ondas (reflexión, refracción, color, propagación) y relaciona la electricidad, el magnetismo y el calor como formas de energía que se transforman y se transfieren.",
+    "prediccion": "Si das más vueltas de alambre al clavo, ¿levantará más clips?",
+    "materiales": [
+      "clavo grande de hierro",
+      "alambre de cobre esmaltado delgado de 2 m",
+      "pila de 1,5 V tipo D",
+      "cinta",
+      "clips",
+      "lija"
+    ],
+    "pasos": [
+      "Lija 2 cm en cada punta del alambre.",
+      "Enrolla 20 vueltas apretadas de alambre en el clavo.",
+      "Conecta las puntas a la pila con cinta por solo 10 segundos y acerca a los clips.",
+      "Cuenta cuántos clips levanta y desconecta.",
+      "Repite con 40 y 60 vueltas.",
+      "Grafica vueltas vs. clips."
+    ],
+    "seguridad": "Conecta la pila solo unos segundos: el alambre y la pila se calientan. Nunca uses enchufes de la casa.",
+    "adulto": false,
+    "que_pasa": "Una corriente eléctrica que pasa por un alambre crea un campo magnético a su alrededor. Al enrollar el alambre en un clavo de hierro, el campo se concentra y el clavo se comporta como imán mientras haya corriente. Más vueltas producen un campo más fuerte.",
+    "concepto": "Electromagnetismo",
+    "vocabulario": [
+      "electroimán",
+      "campo magnético",
+      "corriente eléctrica",
+      "bobina"
+    ],
+    "preguntas": [
+      "¿Cuántos clips levantó con 60 vueltas?",
+      "¿Qué pasa con los clips al desconectar la pila?",
+      "¿Qué ventaja tiene un electroimán sobre un imán común en una chatarrería?"
+    ],
+    "reto": "Mantén 40 vueltas y cambia solo el número de pilas en serie (1 o 2 de 1,5 V).",
+    "minutos": 35
+  },
+  {
+    "id": "g07-e025",
+    "grado": 7,
+    "eje": "luz-sonido-energia",
+    "titulo": "¿Puede un limón prender un LED?",
+    "gancho": "Los limones de las fincas del Valle tienen jugo ácido. ¿Se puede sacar electricidad de una fruta?",
+    "dba": "Explica fenómenos de la luz y del sonido como ondas (reflexión, refracción, color, propagación) y relaciona la electricidad, el magnetismo y el calor como formas de energía que se transforman y se transfieren.",
+    "prediccion": "¿Cuántos limones conectados necesitarás para encender un LED?",
+    "materiales": [
+      "4 limones",
+      "4 clavos galvanizados (de cinc)",
+      "4 trozos de alambre o monedas de cobre",
+      "cables con caimanes",
+      "LED rojo",
+      "multímetro (opcional)"
+    ],
+    "pasos": [
+      "Aprieta los limones para soltar el jugo sin romperlos.",
+      "Clava en cada limón un clavo y un trozo de cobre separados 2 cm.",
+      "Mide el voltaje de un limón con el multímetro.",
+      "Conecta los limones en serie: cobre de uno con clavo del siguiente.",
+      "Conecta el LED a los extremos (pata larga al cobre).",
+      "Anota con cuántos limones encendió."
+    ],
+    "seguridad": "Lava tus manos al terminar. No comas los limones usados: los metales los contaminan.",
+    "adulto": false,
+    "que_pasa": "Dos metales distintos en un líquido ácido forman una pila: el cinc cede electrones que viajan por el cable hasta el cobre. Un limón produce menos de 1 voltio; al conectar varios en serie los voltajes se suman y pueden encender un LED. La energía química se transforma en eléctrica y luego en luz.",
+    "concepto": "Pila electroquímica",
+    "vocabulario": [
+      "pila",
+      "electrodo",
+      "voltaje",
+      "serie",
+      "energía química"
+    ],
+    "preguntas": [
+      "¿Cuántos voltios dio un limón?",
+      "¿Por qué hubo que conectar varios?",
+      "¿Qué tiene en común una pila del control remoto con tu pila de limones?"
+    ],
+    "reto": "Mantén el circuito y cambia solo la fruta (limón, naranja, papa).",
+    "minutos": 40
+  },
+  {
+    "id": "g07-e026",
+    "grado": 7,
+    "eje": "luz-sonido-energia",
+    "titulo": "¿Qué tan rápido se enfría el tinto en distintos pocillos?",
+    "gancho": "En las cafeterías el tinto se sirve en pocillo de loza, en vaso de plástico o de icopor. ¿En cuál se mantiene caliente más tiempo?",
+    "dba": "Explica fenómenos de la luz y del sonido como ondas (reflexión, refracción, color, propagación) y relaciona la electricidad, el magnetismo y el calor como formas de energía que se transforman y se transfieren.",
+    "prediccion": "¿En qué recipiente se enfriará más lento el agua caliente: icopor, vidrio o metal?",
+    "materiales": [
+      "3 recipientes de igual tamaño: icopor, vidrio y metal",
+      "agua caliente (la sirve un adulto)",
+      "termómetro",
+      "cronómetro"
+    ],
+    "pasos": [
+      "El adulto sirve 150 mL de agua caliente en cada recipiente.",
+      "Mide la temperatura inicial.",
+      "Mide cada 5 minutos durante 30 minutos.",
+      "Anota en una tabla.",
+      "Grafica temperatura vs. tiempo para los 3.",
+      "Ordena los materiales de mejor a peor aislante."
+    ],
+    "seguridad": "El adulto sirve el agua caliente. No toques el recipiente de metal. Mantén los recipientes lejos del borde de la mesa.",
+    "adulto": true,
+    "que_pasa": "El calor pasa del agua caliente al ambiente a través de las paredes. El metal es buen conductor y deja escapar el calor rápido; el icopor tiene aire atrapado, que es mal conductor, por eso es buen aislante. El agua siempre se enfría hasta la temperatura del ambiente; solo cambia la rapidez.",
+    "concepto": "Aislantes térmicos",
+    "vocabulario": [
+      "aislante térmico",
+      "conducción",
+      "equilibrio térmico",
+      "temperatura"
+    ],
+    "preguntas": [
+      "¿Cuántos grados perdió cada recipiente en 30 minutos?",
+      "¿Por qué el icopor aísla tan bien?",
+      "¿Por qué las neveras de playa son de icopor?"
+    ],
+    "reto": "Usa el mismo recipiente y cambia solo si está tapado o destapado.",
+    "minutos": 40
+  },
+  {
+    "id": "g07-e027",
+    "grado": 7,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "¿Por qué hay que masticar bien el chontaduro?",
+    "gancho": "Las abuelas dicen 'mastique bien, mijo'. ¿Masticar realmente ayuda a la digestión?",
+    "dba": "Explica cómo funcionan los sistemas digestivo, respiratorio y nervioso del ser humano y su relación con la nutrición y la salud.",
+    "prediccion": "Un cubo de azúcar entero y uno triturado en agua: ¿cuál se disolverá primero?",
+    "materiales": [
+      "2 cubos de azúcar (o 2 cucharaditas de panela en bloque y rallada)",
+      "2 vasos",
+      "agua a temperatura ambiente",
+      "cuchara",
+      "cronómetro",
+      "bolsa plástica"
+    ],
+    "pasos": [
+      "Tritura un cubo dentro de la bolsa con la cuchara.",
+      "Pon 150 mL de agua en cada vaso.",
+      "Echa el cubo entero en uno y el triturado en el otro al mismo tiempo.",
+      "No revuelvas; observa.",
+      "Mide el tiempo hasta que no queden granos visibles.",
+      "Relaciona con la masticación."
+    ],
+    "seguridad": "Trabaja en una mesa limpia, no pruebes ninguna sustancia y lava tus manos al terminar.",
+    "adulto": false,
+    "que_pasa": "Al triturar, el azúcar se divide en muchos pedazos y aumenta la superficie en contacto con el agua, por eso se disuelve más rápido. En la boca, la masticación (digestión mecánica) hace lo mismo con los alimentos: las enzimas digestivas pueden actuar en más superficie y la digestión química es más rápida.",
+    "concepto": "Digestión mecánica y superficie de contacto",
+    "vocabulario": [
+      "digestión mecánica",
+      "digestión química",
+      "enzima",
+      "superficie de contacto"
+    ],
+    "preguntas": [
+      "¿Cuánto tardó cada uno en disolverse?",
+      "¿Qué parte del cuerpo hace el papel de la cuchara?",
+      "¿Por qué comer muy rápido puede causar indigestión?"
+    ],
+    "reto": "Usa dos cubos triturados y cambia solo si revuelves o no (como el estómago que se mueve).",
+    "minutos": 20
+  },
+  {
+    "id": "g07-e028",
+    "grado": 7,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "Un pulmón en una botella",
+    "gancho": "Los médicos del Hospital Universitario del Valle explican el asma con modelos. ¿Qué músculo hace que entre el aire?",
+    "dba": "Explica cómo funcionan los sistemas digestivo, respiratorio y nervioso del ser humano y su relación con la nutrición y la salud.",
+    "prediccion": "Si halas el globo de abajo de la botella, ¿qué pasará con el globo de adentro?",
+    "materiales": [
+      "botella plástica cortada por la mitad (la corta un adulto)",
+      "2 globos",
+      "pitillo",
+      "plastilina",
+      "liga"
+    ],
+    "pasos": [
+      "Pon un globo en el pitillo y sujétalo con liga; mételo en la botella por el cuello.",
+      "Sella el cuello con plastilina alrededor del pitillo.",
+      "Corta la punta del otro globo y estíralo sobre la base abierta de la botella.",
+      "Hala hacia abajo el globo de la base y observa el globo interior.",
+      "Empújalo hacia arriba y observa.",
+      "Rotula: tráquea, pulmón, caja torácica, diafragma."
+    ],
+    "seguridad": "Un adulto corta la botella; cubre el borde cortado con cinta.",
+    "adulto": true,
+    "que_pasa": "El diafragma es un músculo bajo los pulmones. Al contraerse baja, aumenta el espacio del tórax y la presión dentro disminuye; el aire entra a los pulmones (inhalación). Al relajarse sube, la presión aumenta y el aire sale (exhalación). El modelo representa la tráquea, un pulmón y el diafragma.",
+    "concepto": "Mecánica de la respiración",
+    "vocabulario": [
+      "diafragma",
+      "inhalación",
+      "exhalación",
+      "presión",
+      "pulmón"
+    ],
+    "preguntas": [
+      "¿Qué pasó con el globo interior al halar el de abajo?",
+      "¿Qué parte del modelo representa el diafragma?",
+      "¿Por qué una herida que perfora el tórax dificulta respirar?"
+    ],
+    "reto": "Cambia solo cuánto halas el globo de abajo (1, 2 o 3 cm) y observa el tamaño del globo interior.",
+    "minutos": 35
+  },
+  {
+    "id": "g07-e029",
+    "grado": 7,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "¿Cuánto aire cabe en tus pulmones?",
+    "gancho": "Los nadadores de la Liga Vallecaucana de Natación entrenan su capacidad pulmonar. ¿Cuánto aire puedes soplar de una vez?",
+    "dba": "Explica cómo funcionan los sistemas digestivo, respiratorio y nervioso del ser humano y su relación con la nutrición y la salud.",
+    "prediccion": "¿Cuántos litros de aire crees que puedes exhalar en un solo soplo?",
+    "materiales": [
+      "botella de 5 L graduada cada 250 mL",
+      "platón grande con agua",
+      "manguera delgada de 60 cm",
+      "pitillos individuales",
+      "marcador"
+    ],
+    "pasos": [
+      "Gradúa la botella llenándola de 250 en 250 mL y marcando.",
+      "Llénala totalmente de agua, tápala con la mano y voltéala dentro del platón.",
+      "Mete la manguera dentro de la botella y pon en la punta tu pitillo individual.",
+      "Toma aire profundo y sopla todo por el pitillo de una vez.",
+      "Lee cuánta agua desplazó el aire.",
+      "Compara resultados en el grupo y relaciónalos con estatura y actividad física."
+    ],
+    "seguridad": "Cada estudiante usa su propio pitillo. Detente si te mareas. Seca el piso.",
+    "adulto": false,
+    "que_pasa": "El aire que exhalas desplaza el agua de la botella; ese volumen es aproximadamente tu capacidad vital, la máxima cantidad de aire que puedes sacar después de una inhalación profunda. Varía con el tamaño del cuerpo, la edad y el entrenamiento. Siempre queda algo de aire en los pulmones que no puedes sacar.",
+    "concepto": "Capacidad vital",
+    "vocabulario": [
+      "capacidad vital",
+      "volumen",
+      "exhalación",
+      "desplazamiento"
+    ],
+    "preguntas": [
+      "¿Cuántos mL exhalaste?",
+      "¿Hubo relación con la estatura en tu grupo?",
+      "¿Por qué fumar disminuye la capacidad pulmonar?"
+    ],
+    "reto": "Mide tu propia capacidad cambiando solo la condición: en reposo vs. después de 1 minuto de saltos.",
+    "minutos": 35
+  },
+  {
+    "id": "g07-e030",
+    "grado": 7,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "La papa que hace burbujas con agua oxigenada",
+    "gancho": "Cuando una herida se limpia con agua oxigenada salen burbujas. Una papa cruda hace lo mismo. ¿Qué hay en las células?",
+    "dba": "Explica cómo funcionan los sistemas digestivo, respiratorio y nervioso del ser humano y su relación con la nutrición y la salud.",
+    "prediccion": "¿Saldrán burbujas con papa cruda y con papa cocida? ¿Cuál hará más?",
+    "materiales": [
+      "papa cruda",
+      "papa cocida (la cocina un adulto)",
+      "agua oxigenada al 3 % de botiquín",
+      "3 vasos pequeños",
+      "regla",
+      "gafas de seguridad"
+    ],
+    "pasos": [
+      "Pon gafas de seguridad.",
+      "Pon un trozo igual de papa cruda en un vaso y de papa cocida en otro; el tercero queda vacío como control.",
+      "Agrega 20 mL de agua oxigenada a cada vaso.",
+      "Espera 1 minuto.",
+      "Mide la altura de la espuma en cada vaso.",
+      "Compara."
+    ],
+    "seguridad": "Usa agua oxigenada al 3 % con gafas; si cae en los ojos, lava con abundante agua y avisa al docente. El adulto cocina la papa.",
+    "adulto": true,
+    "que_pasa": "Las células producen una enzima llamada catalasa que descompone el agua oxigenada en agua y oxígeno, el gas de las burbujas. Las enzimas son proteínas que aceleran reacciones. Al cocinar la papa, el calor daña la forma de la enzima y deja de funcionar.",
+    "concepto": "Enzimas",
+    "vocabulario": [
+      "enzima",
+      "catalasa",
+      "proteína",
+      "oxígeno",
+      "desnaturalizar"
+    ],
+    "preguntas": [
+      "¿Qué vaso produjo más espuma?",
+      "¿Para qué sirvió el vaso sin papa?",
+      "¿Por qué una fiebre muy alta es peligrosa para las enzimas del cuerpo?"
+    ],
+    "reto": "Usa papa cruda y cambia solo el tamaño de los trozos (entero vs. rallado) para ver cómo cambia la espuma.",
+    "minutos": 25
+  },
+  {
+    "id": "g07-e031",
+    "grado": 7,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "Hojas que flotan cuando hacen fotosíntesis",
+    "gancho": "Los bosques de los Farallones producen oxígeno. ¿Podemos ver a una hoja fabricando oxígeno en el salón?",
+    "dba": "Comprende la relación entre la fotosíntesis, la respiración y los ciclos del carbono, el agua y el nitrógeno, y su importancia para el mantenimiento de los ecosistemas.",
+    "prediccion": "Si pones discos de hoja en agua con bicarbonato bajo una lámpara, ¿empezarán a flotar? ¿Cuántos en 15 minutos?",
+    "materiales": [
+      "hojas de espinaca",
+      "pitillo grueso para cortar discos",
+      "jeringa de 60 mL sin aguja",
+      "agua",
+      "bicarbonato",
+      "jabón líquido",
+      "2 vasos",
+      "lámpara",
+      "cronómetro"
+    ],
+    "pasos": [
+      "Prepara agua con ⅛ de cucharadita de bicarbonato y una gota de jabón.",
+      "Corta 10 discos de hoja con el pitillo.",
+      "Mételos en la jeringa con la solución, saca el aire y tapa con el dedo; hala el émbolo para extraer el aire de las hojas hasta que se hundan.",
+      "Pon los discos en un vaso con la solución bajo la lámpara.",
+      "Pon otros 10 en un vaso igual tapado con una caja (oscuridad).",
+      "Cuenta cada minuto cuántos discos flotan."
+    ],
+    "seguridad": "Usa jeringa sin aguja. La lámpara se calienta: no la toques.",
+    "adulto": false,
+    "que_pasa": "El bicarbonato aporta dióxido de carbono al agua. Con luz, las células de la hoja hacen fotosíntesis: usan el dióxido de carbono y producen oxígeno, que llena los espacios de la hoja y la hace flotar. En la oscuridad no hay fotosíntesis y los discos siguen hundidos.",
+    "concepto": "Fotosíntesis",
+    "vocabulario": [
+      "fotosíntesis",
+      "oxígeno",
+      "dióxido de carbono",
+      "cloroplasto",
+      "luz"
+    ],
+    "preguntas": [
+      "¿Cuántos discos flotaron con luz y en oscuridad?",
+      "¿Para qué sirve el bicarbonato?",
+      "¿Por qué es importante proteger los bosques de la cuenca del río Cali?"
+    ],
+    "reto": "Mantén todo igual y cambia solo la distancia de la lámpara (10, 20 o 40 cm).",
+    "minutos": 40
+  },
+  {
+    "id": "g07-e032",
+    "grado": 7,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "Tu aliento cambia el color del repollo",
+    "gancho": "Cada vez que respiras devuelves al aire algo que las plantas necesitan. ¿Cómo comprobar que el aliento tiene dióxido de carbono?",
+    "dba": "Comprende la relación entre la fotosíntesis, la respiración y los ciclos del carbono, el agua y el nitrógeno, y su importancia para el mantenimiento de los ecosistemas.",
+    "prediccion": "Si soplas con un pitillo en jugo de repollo morado, ¿cambiará el color? ¿Hacia cuál?",
+    "materiales": [
+      "jugo de repollo morado (preparado por un adulto con agua caliente)",
+      "2 vasos",
+      "pitillo individual",
+      "cronómetro",
+      "bomba de pecera o inflador (opcional)"
+    ],
+    "pasos": [
+      "Pon la misma cantidad de jugo de repollo en dos vasos.",
+      "Deja un vaso como control.",
+      "Sopla suavemente por el pitillo en el otro vaso durante 1 minuto, sin aspirar.",
+      "Compara los colores sobre una hoja blanca.",
+      "Sigue soplando cada minuto y anota cuándo cambia.",
+      "Si tienes inflador, burbujea aire del ambiente en un tercer vaso y compara."
+    ],
+    "seguridad": "Cada estudiante usa su pitillo y solo sopla; nunca aspires el líquido. El adulto prepara el jugo con agua caliente.",
+    "adulto": true,
+    "que_pasa": "Al respirar, las células usan oxígeno y liberan dióxido de carbono que sale con el aliento. El dióxido de carbono se disuelve en el agua y forma un ácido débil, por eso el indicador de repollo se vuelve más rosado. El aire del ambiente tiene mucho menos dióxido de carbono y casi no lo cambia.",
+    "concepto": "Respiración celular y ciclo del carbono",
+    "vocabulario": [
+      "respiración celular",
+      "dióxido de carbono",
+      "indicador",
+      "ciclo del carbono"
+    ],
+    "preguntas": [
+      "¿Cuánto tardó en cambiar de color?",
+      "¿Por qué el aire del inflador no lo cambió igual?",
+      "¿Cómo se relaciona tu respiración con la fotosíntesis de las plantas?"
+    ],
+    "reto": "Cambia solo la condición antes de soplar: en reposo vs. después de 1 minuto de saltos.",
+    "minutos": 25
+  },
+  {
+    "id": "g07-e033",
+    "grado": 7,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "Un ecosistema cerrado en una botella",
+    "gancho": "El Jardín Botánico de Cali conserva bosque seco tropical. ¿Puede un pedacito de ecosistema vivir encerrado en una botella?",
+    "dba": "Comprende la relación entre la fotosíntesis, la respiración y los ciclos del carbono, el agua y el nitrógeno, y su importancia para el mantenimiento de los ecosistemas.",
+    "prediccion": "Si cierras una botella con tierra, plantas y agua, ¿las plantas seguirán vivas en 4 semanas?",
+    "materiales": [
+      "botella o frasco grande transparente con tapa",
+      "gravilla",
+      "carbón vegetal",
+      "tierra abonada",
+      "plantas pequeñas (musgo, helecho, cinta)",
+      "atomizador con agua"
+    ],
+    "pasos": [
+      "Pon 2 cm de gravilla, una capa delgada de carbón y 5 cm de tierra.",
+      "Siembra las plantas pequeñas y presiona la tierra.",
+      "Rocía agua hasta humedecer sin encharcar.",
+      "Tapa y ponlo cerca de una ventana sin sol directo.",
+      "Observa cada semana: gotas en las paredes, color, crecimiento.",
+      "Registra en un diario durante 4 semanas."
+    ],
+    "seguridad": "Usa guantes o lávate las manos después de manipular la tierra.",
+    "adulto": false,
+    "que_pasa": "En la botella el agua se evapora, se condensa en las paredes y vuelve a caer: un ciclo del agua en miniatura. Las plantas hacen fotosíntesis con la luz y producen oxígeno; los microorganismos del suelo respiran y descomponen materia. Así la materia se recicla dentro del sistema, que solo necesita energía de la luz.",
+    "concepto": "Ecosistema y ciclos de la materia",
+    "vocabulario": [
+      "ecosistema",
+      "ciclo del agua",
+      "descomponedor",
+      "fotosíntesis",
+      "sistema cerrado"
+    ],
+    "preguntas": [
+      "¿Aparecieron gotas en las paredes? ¿Cuándo?",
+      "¿Qué entra y qué no entra a la botella?",
+      "¿Por qué la Tierra se parece a tu botella?"
+    ],
+    "reto": "Construye dos iguales y cambia solo la luz: una cerca de la ventana y otra en un lugar oscuro.",
+    "minutos": 40
+  },
+  {
+    "id": "g07-e034",
+    "grado": 7,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "¿Qué desaparece en el compost y qué se queda para siempre?",
+    "gancho": "Cali produce cada día miles de toneladas de basura que van al relleno sanitario de Yotoco. ¿Qué residuos se pueden convertir en tierra?",
+    "dba": "Comprende la relación entre la fotosíntesis, la respiración y los ciclos del carbono, el agua y el nitrógeno, y su importancia para el mantenimiento de los ecosistemas.",
+    "prediccion": "¿Qué se descompondrá en 4 semanas: cáscara de banano, hoja seca, papel, bolsa plástica?",
+    "materiales": [
+      "2 botellas plásticas grandes cortadas (las corta un adulto)",
+      "tierra de jardín",
+      "cáscara de banano",
+      "hojas secas",
+      "papel",
+      "trozo de bolsa plástica",
+      "agua",
+      "guantes"
+    ],
+    "pasos": [
+      "Pon una capa de tierra en la botella.",
+      "Coloca cada residuo pegado a la pared para poder verlo y cúbrelo con tierra.",
+      "Humedece la tierra sin encharcar y tapa con tela.",
+      "En la otra botella haz lo mismo, pero con tierra seca y sin agua.",
+      "Observa y fotografía cada semana durante 4 semanas.",
+      "Haz una tabla de qué tanto se descompuso cada material."
+    ],
+    "seguridad": "Usa guantes. No agregues carne ni lácteos. Lávate las manos al terminar.",
+    "adulto": true,
+    "que_pasa": "Los descomponedores, como hongos, bacterias y lombrices del suelo, transforman la materia orgánica en nutrientes y dióxido de carbono, devolviendo el carbono y el nitrógeno al ecosistema. Necesitan humedad y aire. El plástico no lo pueden descomponer, por eso permanece cientos de años.",
+    "concepto": "Descomposición y ciclos de nutrientes",
+    "vocabulario": [
+      "descomposición",
+      "compost",
+      "materia orgánica",
+      "nutriente",
+      "ciclo del nitrógeno"
+    ],
+    "preguntas": [
+      "¿Qué residuo se descompuso más rápido?",
+      "¿Qué diferencia hubo con la tierra seca?",
+      "¿Cómo reduciría el compostaje la basura que llega al relleno sanitario?"
+    ],
+    "reto": "Usa dos botellas húmedas y cambia solo el tamaño de los residuos (enteros vs. picados).",
+    "minutos": 20
+  },
+  {
+    "id": "g07-e035",
+    "grado": 7,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "¿Qué tan rápido son tus reflejos de arquero?",
+    "gancho": "Los arqueros del América y del Deportivo Cali reaccionan en fracciones de segundo. ¿Cuánto tarda tu sistema nervioso en responder?",
+    "dba": "Explica cómo funcionan los sistemas digestivo, respiratorio y nervioso del ser humano y su relación con la nutrición y la salud.",
+    "prediccion": "¿A cuántos centímetros de la marca crees que atraparás una regla que cae?",
+    "materiales": [
+      "regla de 30 cm",
+      "compañero",
+      "tabla de conversión distancia-tiempo",
+      "cuaderno"
+    ],
+    "pasos": [
+      "Tu compañero sostiene la regla vertical con el 0 entre tus dedos abiertos.",
+      "Sin aviso, la suelta y tú la atrapas lo más rápido posible.",
+      "Anota en qué centímetro la atrapaste.",
+      "Repite 5 veces y saca el promedio.",
+      "Convierte la distancia a tiempo con la tabla (por ejemplo, 5 cm ≈ 0,10 s; 10 cm ≈ 0,14 s; 20 cm ≈ 0,20 s).",
+      "Repite con la mano no dominante y compara."
+    ],
+    "seguridad": "Atrapa la regla con los dedos, no con fuerza, para no golpearte.",
+    "adulto": false,
+    "que_pasa": "Tus ojos detectan la caída, el nervio óptico envía el mensaje al cerebro, este decide y envía una orden por los nervios a los músculos de la mano. Ese camino tarda alrededor de dos décimas de segundo. Como la regla cae con aceleración conocida, la distancia permite calcular el tiempo de reacción.",
+    "concepto": "Sistema nervioso y tiempo de reacción",
+    "vocabulario": [
+      "tiempo de reacción",
+      "neurona",
+      "estímulo",
+      "respuesta",
+      "sistema nervioso"
+    ],
+    "preguntas": [
+      "¿Cuál fue tu tiempo de reacción promedio?",
+      "¿Mejoraste con la práctica?",
+      "¿Por qué es peligroso usar el celular mientras se conduce?"
+    ],
+    "reto": "Cambia solo el tipo de estímulo: con los ojos abiertos vs. con los ojos cerrados y una señal de voz.",
+    "minutos": 20
+  },
+  {
+    "id": "g07-e036",
+    "grado": 7,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "¿Cómo digiere el cuerpo la grasa del chicharrón?",
+    "gancho": "Después de una bandeja con chicharrón la digestión es lenta. La grasa no se mezcla con agua. ¿Cómo la digiere el intestino?",
+    "dba": "Explica cómo funcionan los sistemas digestivo, respiratorio y nervioso del ser humano y su relación con la nutrición y la salud.",
+    "prediccion": "Si agitas agua con aceite y otra con aceite y jabón, ¿cuál se mantendrá mezclada más tiempo?",
+    "materiales": [
+      "2 frascos con tapa",
+      "agua",
+      "aceite de cocina",
+      "jabón lavaplatos",
+      "cronómetro",
+      "colorante"
+    ],
+    "pasos": [
+      "Pon 100 mL de agua con colorante y 20 mL de aceite en cada frasco.",
+      "Agrega 1 cucharadita de jabón solo a un frasco.",
+      "Tapa y agita ambos 20 segundos.",
+      "Mide cuánto tarda en separarse el aceite en cada frasco.",
+      "Observa el tamaño de las gotas de aceite.",
+      "Relaciona el jabón con la bilis."
+    ],
+    "seguridad": "No pruebes las mezclas. Tapa bien antes de agitar.",
+    "adulto": false,
+    "que_pasa": "El hígado produce bilis, que funciona parecido al jabón: rompe la grasa en gotas muy pequeñas (emulsión). Así aumenta la superficie donde actúan las enzimas que digieren las grasas en el intestino delgado. Sin ese paso, la grasa formaría grandes gotas difíciles de digerir.",
+    "concepto": "Emulsión de grasas y bilis",
+    "vocabulario": [
+      "bilis",
+      "emulsión",
+      "grasa",
+      "intestino delgado",
+      "hígado"
+    ],
+    "preguntas": [
+      "¿En qué frasco tardó más en separarse el aceite?",
+      "¿Cómo cambió el tamaño de las gotas?",
+      "¿Por qué el jabón quita la grasa de los platos?"
+    ],
+    "reto": "Cambia solo la cantidad de jabón (½, 1 o 2 cucharaditas) y mide el tiempo de separación.",
+    "minutos": 20
+  },
+  {
+    "id": "g07-e037",
+    "grado": 7,
+    "eje": "quimica",
+    "titulo": "Separa el agua en sus elementos con una pila",
+    "gancho": "El agua es H₂O: dos elementos unidos. ¿Se puede comprobar en el colegio que está hecha de hidrógeno y oxígeno?",
+    "dba": "Explica cómo las sustancias se forman a partir de la interacción de los elementos, organizados en la tabla periódica, y diferencia elementos, compuestos y mezclas.",
+    "prediccion": "Si conectas una pila de 9 V a dos minas de lápiz en agua con bicarbonato, ¿en cuál saldrán más burbujas?",
+    "materiales": [
+      "pila de 9 V",
+      "2 lápices con punta en ambos extremos",
+      "vaso de vidrio",
+      "agua",
+      "bicarbonato",
+      "cables con caimanes",
+      "cartón",
+      "gafas de seguridad"
+    ],
+    "pasos": [
+      "Disuelve 1 cucharadita de bicarbonato en el vaso con agua.",
+      "Atraviesa el cartón con los dos lápices separados 2 cm y ponlo sobre el vaso, con las puntas en el agua.",
+      "Conecta cada punta de arriba a un polo de la pila con los caimanes.",
+      "Observa las burbujas en cada mina durante 5 minutos.",
+      "Compara la cantidad de burbujas en el polo negativo y el positivo.",
+      "Desconecta la pila al terminar."
+    ],
+    "seguridad": "Usa solo pila de 9 V, nunca la corriente de la casa. Usa gafas. No acerques llamas: se produce gas hidrógeno. No uses sal en lugar de bicarbonato.",
+    "adulto": true,
+    "que_pasa": "El agua es un compuesto. La corriente eléctrica rompe sus moléculas: en el polo negativo se forma hidrógeno y en el positivo oxígeno, en proporción aproximada de 2 a 1, como indica la fórmula H₂O. El bicarbonato solo ayuda a que la corriente pase por el agua.",
+    "concepto": "Electrólisis: compuestos y elementos",
+    "vocabulario": [
+      "electrólisis",
+      "compuesto",
+      "elemento",
+      "molécula",
+      "electrodo"
+    ],
+    "preguntas": [
+      "¿En qué mina salieron más burbujas?",
+      "¿Qué relación tiene eso con la fórmula H₂O?",
+      "¿Por qué se investiga el hidrógeno como combustible limpio para buses?"
+    ],
+    "reto": "Cambia solo la cantidad de bicarbonato (½, 1, 2 cucharaditas) y compara cuántas burbujas aparecen en 1 minuto.",
+    "minutos": 30
+  },
+  {
+    "id": "g07-e038",
+    "grado": 7,
+    "eje": "quimica",
+    "titulo": "¿Por qué se oxidan tan rápido las rejas en Buenaventura?",
+    "gancho": "En Buenaventura, junto al mar, las rejas y los carros se oxidan mucho más rápido que en Cali. ¿Qué necesita el hierro para oxidarse?",
+    "dba": "Reconoce evidencias de las reacciones químicas, la conservación de la masa, los factores que modifican su rapidez y las propiedades ácidas y básicas de sustancias cotidianas.",
+    "prediccion": "¿Qué clavo se oxidará más: en aire seco, en agua, en agua salada o cubierto de aceite?",
+    "materiales": [
+      "4 clavos de hierro sin galvanizar o esponjillas de acero",
+      "4 frascos",
+      "agua",
+      "sal",
+      "aceite",
+      "arroz crudo como secante",
+      "marcador"
+    ],
+    "pasos": [
+      "Rotula los frascos.",
+      "Frasco 1: clavo con arroz seco y tapado.",
+      "Frasco 2: clavo medio cubierto con agua.",
+      "Frasco 3: clavo medio cubierto con agua salada.",
+      "Frasco 4: clavo cubierto de aceite.",
+      "Observa y fotografía cada 2 días durante 10 días; clasifica el óxido de 0 a 3."
+    ],
+    "seguridad": "Las esponjillas pueden pinchar: usa guantes. No pruebes los líquidos.",
+    "adulto": false,
+    "que_pasa": "El hierro reacciona con el oxígeno del aire en presencia de agua y forma óxido de hierro, una sustancia nueva rojiza y quebradiza: es un cambio químico llamado oxidación. La sal acelera la reacción, por eso cerca del mar hay más corrosión. El aceite y la pintura protegen porque impiden el contacto con agua y oxígeno.",
+    "concepto": "Oxidación y corrosión",
+    "vocabulario": [
+      "oxidación",
+      "corrosión",
+      "óxido de hierro",
+      "reacción química"
+    ],
+    "preguntas": [
+      "¿Qué clavo se oxidó más?",
+      "¿Qué dos sustancias necesita el hierro para oxidarse?",
+      "¿Cómo protegerías una bicicleta que vive cerca del mar?"
+    ],
+    "reto": "Usa agua salada en todos y cambia solo la cantidad de sal (1, 2, 4 cucharaditas).",
+    "minutos": 20
+  },
+  {
+    "id": "g07-e039",
+    "grado": 7,
+    "eje": "quimica",
+    "titulo": "¿Por qué el guacamole se pone negro y cómo evitarlo?",
+    "gancho": "El aguacate partido se pone café en minutos. En las cocinas de Cali le echan limón. ¿Funciona de verdad?",
+    "dba": "Reconoce evidencias de las reacciones químicas, la conservación de la masa, los factores que modifican su rapidez y las propiedades ácidas y básicas de sustancias cotidianas.",
+    "prediccion": "¿Qué tajada de manzana o aguacate se oscurecerá menos: sin nada, con limón, con agua o envuelta en plástico?",
+    "materiales": [
+      "manzana o aguacate",
+      "cuchillo (lo usa el adulto)",
+      "limón",
+      "agua",
+      "vinagre",
+      "plástico para envolver",
+      "4 platos",
+      "reloj"
+    ],
+    "pasos": [
+      "El adulto corta 4 tajadas iguales.",
+      "Deja una sin nada.",
+      "Pinta otra con jugo de limón.",
+      "Sumerge otra en agua 1 minuto.",
+      "Envuelve otra en plástico sin aire.",
+      "Observa cada 15 minutos durante 1 hora y clasifica el color de 0 a 3."
+    ],
+    "seguridad": "Solo el adulto usa el cuchillo. No comas las muestras.",
+    "adulto": true,
+    "que_pasa": "Al cortar la fruta, sustancias de sus células entran en contacto con el oxígeno del aire y, con ayuda de una enzima, forman pigmentos cafés: es una reacción química. El limón es ácido y tiene vitamina C, que frenan esa reacción. El plástico y el agua limitan el contacto con el oxígeno.",
+    "concepto": "Oxidación enzimática",
+    "vocabulario": [
+      "oxidación",
+      "enzima",
+      "antioxidante",
+      "ácido"
+    ],
+    "preguntas": [
+      "¿Qué tajada se oscureció menos?",
+      "¿Qué tienen en común el agua y el plástico como protección?",
+      "¿Por qué algunas frutas empacadas traen vitamina C añadida?"
+    ],
+    "reto": "Usa solo limón y cambia la cantidad: unas gotas vs. tajada bañada.",
+    "minutos": 70
+  },
+  {
+    "id": "g07-e040",
+    "grado": 7,
+    "eje": "quimica",
+    "titulo": "¿Se pierde masa cuando se produce un gas?",
+    "gancho": "Cuando una pastilla efervescente burbujea, parece que algo desaparece. ¿La materia se destruye en una reacción?",
+    "dba": "Reconoce evidencias de las reacciones químicas, la conservación de la masa, los factores que modifican su rapidez y las propiedades ácidas y básicas de sustancias cotidianas.",
+    "prediccion": "Si pesas una botella con vinagre y un globo con bicarbonato antes y después de mezclarlos, ¿cambiará la masa?",
+    "materiales": [
+      "botella pequeña",
+      "vinagre",
+      "bicarbonato",
+      "globo",
+      "embudo",
+      "balanza digital",
+      "gafas"
+    ],
+    "pasos": [
+      "Pon 50 mL de vinagre en la botella.",
+      "Pon 1 cucharadita de bicarbonato dentro del globo con el embudo.",
+      "Coloca el globo en la boca sin dejar caer el polvo.",
+      "Pesa todo el conjunto.",
+      "Levanta el globo para que caiga el bicarbonato y espera que termine la reacción.",
+      "Pesa de nuevo. Luego repite con la botella abierta (sin globo) y compara."
+    ],
+    "seguridad": "Usa gafas. No apuntes la boca de la botella a nadie.",
+    "adulto": false,
+    "que_pasa": "En una reacción química los átomos se reorganizan pero no se crean ni se destruyen: la masa total se conserva (ley de Lavoisier). Con el globo, el gas queda atrapado y la masa no cambia. Con la botella abierta, el dióxido de carbono escapa al aire y la balanza marca menos, aunque la masa no desapareció.",
+    "concepto": "Conservación de la masa",
+    "vocabulario": [
+      "conservación de la masa",
+      "sistema cerrado",
+      "reactivo",
+      "producto",
+      "Lavoisier"
+    ],
+    "preguntas": [
+      "¿Cambió la masa con el globo puesto? ¿Y sin el globo?",
+      "¿A dónde se fue la masa que faltó en la botella abierta?",
+      "¿Por qué la leña parece 'perder peso' al quemarse?"
+    ],
+    "reto": "Mantén el sistema cerrado y cambia solo la cantidad de bicarbonato; verifica si la masa sigue conservándose.",
+    "minutos": 25
+  },
+  {
+    "id": "g07-e041",
+    "grado": 7,
+    "eje": "quimica",
+    "titulo": "¿Reacciona más rápido el vinagre tibio que el frío?",
+    "gancho": "Los alimentos se dañan más rápido fuera de la nevera en el calor de Cali. ¿La temperatura acelera las reacciones químicas?",
+    "dba": "Reconoce evidencias de las reacciones químicas, la conservación de la masa, los factores que modifican su rapidez y las propiedades ácidas y básicas de sustancias cotidianas.",
+    "prediccion": "¿Cuál globo se inflará más rápido: el de vinagre frío, a temperatura ambiente o tibio?",
+    "materiales": [
+      "3 botellas iguales",
+      "vinagre frío (nevera), a temperatura ambiente y tibio (lo calienta un adulto)",
+      "bicarbonato",
+      "3 globos",
+      "embudo",
+      "termómetro",
+      "cronómetro",
+      "cinta métrica"
+    ],
+    "pasos": [
+      "Pon 50 mL de vinagre a distinta temperatura en cada botella y mide la temperatura.",
+      "Pon 1 cucharadita de bicarbonato en cada globo.",
+      "Coloca los globos y suelta el bicarbonato al mismo tiempo.",
+      "Mide la circunferencia del globo a los 10, 20 y 40 segundos.",
+      "Anota los datos en una tabla.",
+      "Grafica circunferencia vs. tiempo para cada temperatura."
+    ],
+    "seguridad": "El adulto calienta el vinagre (tibio, no hirviendo). Usa gafas. No inhales vapores directamente.",
+    "adulto": true,
+    "que_pasa": "Para reaccionar, las partículas deben chocar con suficiente energía. A mayor temperatura se mueven más rápido, chocan más veces y con más fuerza, por eso la reacción es más rápida. La cantidad final de gas es parecida si se usan las mismas cantidades; lo que cambia es la rapidez.",
+    "concepto": "Velocidad de reacción y temperatura",
+    "vocabulario": [
+      "velocidad de reacción",
+      "temperatura",
+      "colisión",
+      "reactivo"
+    ],
+    "preguntas": [
+      "¿Qué globo se infló más rápido?",
+      "¿El tamaño final fue muy distinto?",
+      "¿Por qué la nevera conserva los alimentos más tiempo?"
+    ],
+    "reto": "Mantén la temperatura ambiente y cambia solo la concentración del vinagre (vinagre puro vs. mitad vinagre y mitad agua).",
+    "minutos": 30
+  },
+  {
+    "id": "g07-e042",
+    "grado": 7,
+    "eje": "quimica",
+    "titulo": "¿Cuántas gotas de vinagre neutralizan el bicarbonato?",
+    "gancho": "Cuando alguien tiene acidez estomacal toma un antiácido. ¿Cómo se 'cancelan' un ácido y una base?",
+    "dba": "Reconoce evidencias de las reacciones químicas, la conservación de la masa, los factores que modifican su rapidez y las propiedades ácidas y básicas de sustancias cotidianas.",
+    "prediccion": "Si agregas vinagre gota a gota a agua con bicarbonato e indicador de repollo, ¿en qué momento cambiará el color?",
+    "materiales": [
+      "jugo de repollo morado (preparado por un adulto)",
+      "bicarbonato",
+      "vinagre",
+      "agua",
+      "vaso transparente",
+      "gotero",
+      "hoja blanca"
+    ],
+    "pasos": [
+      "Disuelve ¼ de cucharadita de bicarbonato en 50 mL de agua.",
+      "Agrega 2 cucharadas de jugo de repollo: se pondrá verde azulado.",
+      "Agrega vinagre gota a gota, agitando, y cuenta las gotas.",
+      "Anota cuando pase a morado (neutro).",
+      "Sigue agregando y anota cuándo se pone rosado.",
+      "Repite dos veces y saca el promedio."
+    ],
+    "seguridad": "El adulto prepara el jugo de repollo con agua caliente. Usa gafas. No pruebes.",
+    "adulto": true,
+    "que_pasa": "Los ácidos y las bases reaccionan entre sí y se neutralizan, formando agua, una sal y en este caso dióxido de carbono. El indicador muestra el cambio: verde (básico), morado (cerca de neutro) y rosado (ácido). Contar las gotas permite comparar cuánto ácido se necesita: es una titulación sencilla.",
+    "concepto": "Neutralización",
+    "vocabulario": [
+      "neutralización",
+      "ácido",
+      "base",
+      "indicador",
+      "titulación"
+    ],
+    "preguntas": [
+      "¿Cuántas gotas necesitaste para llegar a morado?",
+      "¿Por qué salieron burbujas al agregar vinagre?",
+      "¿Cómo funciona un antiácido en el estómago?"
+    ],
+    "reto": "Cambia solo la cantidad de bicarbonato (¼ vs. ½ cucharadita) y compara las gotas de vinagre necesarias.",
+    "minutos": 30
+  },
+  {
+    "id": "g07-e043",
+    "grado": 7,
+    "eje": "quimica",
+    "titulo": "Cultiva cristales de azúcar como diamantes de colores",
+    "gancho": "En las tiendas de dulces venden 'piedras' de azúcar. ¿Cómo se forman los cristales y se puede controlar su tamaño?",
+    "dba": "Clasifica los materiales en sustancias puras y mezclas y aplica métodos de separación (cristalización, destilación) según las propiedades de sus componentes.",
+    "prediccion": "Si cuelgas un hilo en agua muy azucarada, ¿se formarán cristales? ¿Cuánto crecerán en una semana?",
+    "materiales": [
+      "azúcar",
+      "agua",
+      "olla (la usa el adulto)",
+      "frasco de vidrio",
+      "hilo de algodón",
+      "lápiz",
+      "clip",
+      "colorante"
+    ],
+    "pasos": [
+      "El adulto calienta 1 taza de agua y disuelve azúcar poco a poco hasta que no se disuelva más (unas 2-3 tazas).",
+      "El adulto vierte la solución en el frasco y la deja enfriar un poco.",
+      "Moja el hilo, pásalo por azúcar y déjalo secar; amárralo al lápiz con un clip de peso.",
+      "Cuelga el hilo dentro del frasco sin tocar el fondo.",
+      "Cubre con papel y no lo muevas.",
+      "Observa y mide los cristales cada 2 días durante una semana."
+    ],
+    "seguridad": "Solo el adulto maneja el calor y la solución caliente: el almíbar caliente quema mucho. No comas los cristales del experimento.",
+    "adulto": true,
+    "que_pasa": "El agua caliente disuelve más azúcar que la fría. Al enfriarse, la solución queda sobresaturada: tiene más azúcar disuelto del que puede mantener, y las partículas se van ordenando sobre el hilo formando cristales. Este método de separación se llama cristalización.",
+    "concepto": "Cristalización",
+    "vocabulario": [
+      "cristalización",
+      "sobresaturada",
+      "cristal",
+      "solubilidad"
+    ],
+    "preguntas": [
+      "¿Cuánto crecieron los cristales en una semana?",
+      "¿Por qué hay que calentar el agua al principio?",
+      "¿Cómo se obtiene el azúcar a partir del jugo de caña en los ingenios del Valle?"
+    ],
+    "reto": "Haz dos frascos y cambia solo el lugar: uno en la nevera y otro a temperatura ambiente. Compara el tamaño de los cristales.",
+    "minutos": 30
+  },
+  {
+    "id": "g07-e044",
+    "grado": 7,
+    "eje": "quimica",
+    "titulo": "Agua dulce de agua salada con energía solar",
+    "gancho": "En comunidades de La Guajira y del Pacífico falta agua dulce, pero sobra agua salada. ¿Puede el sol 'desalar' el agua?",
+    "dba": "Clasifica los materiales en sustancias puras y mezclas y aplica métodos de separación (cristalización, destilación) según las propiedades de sus componentes.",
+    "prediccion": "Si pones agua salada al sol bajo un plástico, ¿el agua que se recoge en el vaso tendrá sal?",
+    "materiales": [
+      "platón grande",
+      "vaso pequeño",
+      "agua",
+      "sal",
+      "plástico para envolver",
+      "piedra pequeña",
+      "cinta",
+      "espejo pequeño"
+    ],
+    "pasos": [
+      "Disuelve 2 cucharadas de sal en 1 L de agua y viértela en el platón.",
+      "Pon el vaso vacío en el centro (que no le entre agua salada).",
+      "Cubre el platón con plástico tenso y pon la piedra encima del vaso.",
+      "Déjalo al sol 3 horas.",
+      "Mide cuánta agua se recogió en el vaso.",
+      "Pon una gota del agua recogida y una del agua salada en un espejo; deja secar y compara los residuos."
+    ],
+    "seguridad": "No pruebes el agua, ni siquiera la recogida: el experimento no garantiza agua potable.",
+    "adulto": false,
+    "que_pasa": "El sol evapora el agua pero la sal se queda en el platón. El vapor se condensa en el plástico, más frío, y las gotas escurren hacia la piedra y caen al vaso. Es una destilación solar: separa sustancias aprovechando sus distintos puntos de ebullición.",
+    "concepto": "Destilación",
+    "vocabulario": [
+      "destilación",
+      "evaporación",
+      "condensación",
+      "desalinización"
+    ],
+    "preguntas": [
+      "¿Cuántos mL se recogieron en 3 horas?",
+      "¿Qué gota dejó residuo blanco en el espejo?",
+      "¿Qué ventajas y desventajas tendría este método para una comunidad?"
+    ],
+    "reto": "Cambia solo el color del platón (oscuro vs. claro) y compara cuánta agua se recoge.",
+    "minutos": 200
+  },
+  {
+    "id": "g07-e045",
+    "grado": 7,
+    "eje": "quimica",
+    "titulo": "Devuélvele el brillo a un cable de cobre",
+    "gancho": "Los cables y las ollas de cobre se ponen oscuros con el tiempo. En algunas casas los limpian con limón y sal. ¿Es química o es frotar?",
+    "dba": "Explica cómo las sustancias se forman a partir de la interacción de los elementos, organizados en la tabla periódica, y diferencia elementos, compuestos y mezclas.",
+    "prediccion": "¿Qué limpiará mejor un alambre de cobre oscurecido: agua, vinagre, sal o vinagre con sal?",
+    "materiales": [
+      "4 trozos de alambre de cobre oscurecido o pelado de un cable viejo",
+      "4 vasos",
+      "agua",
+      "vinagre",
+      "sal",
+      "toalla de papel",
+      "marcador"
+    ],
+    "pasos": [
+      "Rotula los vasos: agua, vinagre, agua con sal, vinagre con sal.",
+      "Prepara cada solución con 50 mL de líquido y 1 cucharadita de sal donde aplique.",
+      "Pon un alambre en cada vaso.",
+      "Espera 10 minutos sin frotar.",
+      "Saca los alambres, enjuágalos y sécalos.",
+      "Compara el brillo con una escala de 0 a 3."
+    ],
+    "seguridad": "El docente pela los cables, que deben estar totalmente desconectados. No pruebes las soluciones.",
+    "adulto": true,
+    "que_pasa": "El cobre es un elemento metálico que con el tiempo reacciona con el oxígeno del aire y forma una capa oscura de óxido de cobre, un compuesto. El vinagre con sal reacciona con ese óxido y lo disuelve, dejando ver otra vez el cobre brillante. Solo vinagre o solo sal funcionan mucho menos.",
+    "concepto": "Elementos, compuestos y reacciones de óxidos",
+    "vocabulario": [
+      "elemento",
+      "compuesto",
+      "óxido",
+      "cobre",
+      "reacción química"
+    ],
+    "preguntas": [
+      "¿Qué solución dejó el cobre más brillante?",
+      "¿Por qué el cobre se oscurece con el tiempo?",
+      "¿Por qué el cobre es el metal preferido para los cables eléctricos?"
+    ],
+    "reto": "Usa vinagre con sal y cambia solo el tiempo de inmersión (2, 5, 10 minutos).",
+    "minutos": 25
+  },
+  {
+    "id": "g07-e046",
+    "grado": 7,
+    "eje": "tierra-universo",
+    "titulo": "¿Por qué se lava la tierra de las laderas sin árboles?",
+    "gancho": "Cuando llueve fuerte en las laderas deforestadas de Cali, el agua baja color café. En el bosque baja más clara. ¿Qué hacen las raíces?",
+    "dba": "Explica fenómenos de la dinámica terrestre (erosión, sismos, vulcanismo, ciclo del agua, efecto invernadero) y su relación con los riesgos naturales y el cuidado del ambiente.",
+    "prediccion": "Si riegas igual una bandeja con tierra desnuda y otra con pasto o hojarasca, ¿cuál soltará más tierra?",
+    "materiales": [
+      "3 bandejas o botellas cortadas a lo largo",
+      "tierra",
+      "pasto o germinado (sembrado 2 semanas antes)",
+      "hojas secas",
+      "regadera",
+      "3 vasos",
+      "libros para inclinar"
+    ],
+    "pasos": [
+      "Prepara 3 bandejas: tierra desnuda, tierra con hojarasca encima y tierra con pasto.",
+      "Inclínalas igual con libros.",
+      "Pon un vaso en la salida de cada bandeja.",
+      "Riega cada bandeja con 500 mL de agua de la misma forma.",
+      "Compara el color y la cantidad de agua de cada vaso.",
+      "Deja reposar los vasos y mide el sedimento."
+    ],
+    "seguridad": "Lávate las manos después de manipular la tierra. Seca el agua derramada.",
+    "adulto": false,
+    "que_pasa": "La erosión es el desgaste y arrastre del suelo por agua o viento. Las raíces sujetan las partículas y la hojarasca frena las gotas de lluvia, por eso hay menos arrastre. Sin cobertura, la lluvia golpea el suelo desnudo y se lleva la capa fértil, lo que aumenta el riesgo de deslizamientos.",
+    "concepto": "Erosión hídrica",
+    "vocabulario": [
+      "erosión",
+      "escorrentía",
+      "sedimento",
+      "cobertura vegetal",
+      "deslizamiento"
+    ],
+    "preguntas": [
+      "¿Qué vaso tuvo más sedimento?",
+      "¿Por qué el agua bajó más rápido en la bandeja desnuda?",
+      "¿Por qué reforestar los cerros de Cali ayuda a prevenir desastres?"
+    ],
+    "reto": "Usa la bandeja desnuda y cambia solo la inclinación (1, 2 o 3 libros).",
+    "minutos": 40
+  },
+  {
+    "id": "g07-e047",
+    "grado": 7,
+    "eje": "tierra-universo",
+    "titulo": "Un invernadero en un frasco",
+    "gancho": "Dicen que Cali es cada año más caliente. ¿Cómo atrapan calor algunos gases de la atmósfera?",
+    "dba": "Explica fenómenos de la dinámica terrestre (erosión, sismos, vulcanismo, ciclo del agua, efecto invernadero) y su relación con los riesgos naturales y el cuidado del ambiente.",
+    "prediccion": "Dos frascos al sol, uno tapado con plástico y otro abierto: ¿cuál se calentará más?",
+    "materiales": [
+      "2 frascos de vidrio iguales",
+      "2 termómetros",
+      "plástico para envolver",
+      "liga",
+      "tierra oscura",
+      "cronómetro"
+    ],
+    "pasos": [
+      "Pon 3 cm de tierra en cada frasco y un termómetro dentro sin que toque el fondo.",
+      "Tapa uno con plástico y liga; deja el otro abierto.",
+      "Mide la temperatura inicial a la sombra.",
+      "Pon ambos al sol.",
+      "Mide cada 5 minutos durante 30 minutos.",
+      "Grafica temperatura vs. tiempo."
+    ],
+    "seguridad": "Los frascos se calientan: tócalos con trapo. Usa gorra y bloqueador.",
+    "adulto": false,
+    "que_pasa": "La luz del sol atraviesa el plástico y calienta la tierra, que emite calor. El plástico impide que el aire caliente escape, así el frasco tapado se calienta más. En la atmósfera, gases como el dióxido de carbono retienen parte del calor que emite la Tierra; si aumentan, el planeta se calienta más.",
+    "concepto": "Efecto invernadero",
+    "vocabulario": [
+      "efecto invernadero",
+      "dióxido de carbono",
+      "radiación",
+      "calentamiento global"
+    ],
+    "preguntas": [
+      "¿Cuántos grados de diferencia hubo al final?",
+      "¿Qué representa el plástico en la atmósfera real?",
+      "¿Qué acciones de tu familia aumentan o disminuyen los gases de efecto invernadero?"
+    ],
+    "reto": "Mantén los frascos tapados y cambia solo el color del fondo (tierra oscura vs. arena clara).",
+    "minutos": 40
+  },
+  {
+    "id": "g07-e048",
+    "grado": 7,
+    "eje": "tierra-universo",
+    "titulo": "¿Qué edificio resiste mejor un temblor?",
+    "gancho": "Cali está en una zona de amenaza sísmica alta y el Código NSR-10 exige construir sismo resistente. ¿Qué hace que un edificio no se caiga?",
+    "dba": "Explica fenómenos de la dinámica terrestre (erosión, sismos, vulcanismo, ciclo del agua, efecto invernadero) y su relación con los riesgos naturales y el cuidado del ambiente.",
+    "prediccion": "¿Qué torre de palitos resistirá más sacudidas: una angosta y alta, una ancha y baja o una con diagonales?",
+    "materiales": [
+      "palitos de pincho sin punta o palos de paleta",
+      "plastilina o gomitas",
+      "bandeja",
+      "gelatina firme en la bandeja (como suelo) o una tabla sobre 2 lápices",
+      "cronómetro",
+      "cinta métrica"
+    ],
+    "pasos": [
+      "Construye tres torres de 30 cm con el mismo número de palitos: angosta, ancha y con refuerzos en diagonal (triángulos).",
+      "Ponlas sobre la bandeja.",
+      "Sacude la bandeja de lado a lado, siempre con la misma amplitud y ritmo.",
+      "Cuenta las sacudidas hasta que cada torre colapse.",
+      "Repite dos veces.",
+      "Compara y dibuja el diseño ganador."
+    ],
+    "seguridad": "Los pinchos deben tener la punta cortada por un adulto. No comas la gelatina ni las gomitas.",
+    "adulto": true,
+    "que_pasa": "Los sismos se producen por el movimiento de las placas tectónicas, que libera energía en ondas que sacuden el suelo. Las estructuras con base ancha y centro de gravedad bajo son más estables, y los triángulos (diagonales) son figuras rígidas que no se deforman fácilmente. Por eso las normas exigen refuerzos.",
+    "concepto": "Sismos y estructuras sismorresistentes",
+    "vocabulario": [
+      "sismo",
+      "placa tectónica",
+      "onda sísmica",
+      "rigidez",
+      "sismorresistente"
+    ],
+    "preguntas": [
+      "¿Qué torre resistió más sacudidas?",
+      "¿Por qué los triángulos dan rigidez?",
+      "¿Qué debe hacer tu familia en caso de temblor en casa?"
+    ],
+    "reto": "Usa la torre con diagonales y cambia solo su altura (20, 30 o 40 cm).",
+    "minutos": 50
+  },
+  {
+    "id": "g07-e049",
+    "grado": 7,
+    "eje": "tierra-universo",
+    "titulo": "¿Por qué algunos volcanes explotan y otros solo derraman lava?",
+    "gancho": "El volcán Galeras en Nariño ha tenido erupciones explosivas, mientras que los volcanes de Hawái derraman ríos de lava. ¿Qué los hace distintos?",
+    "dba": "Explica fenómenos de la dinámica terrestre (erosión, sismos, vulcanismo, ciclo del agua, efecto invernadero) y su relación con los riesgos naturales y el cuidado del ambiente.",
+    "prediccion": "Si soplas con un pitillo en agua y en una mezcla espesa de maicena o miel, ¿en cuál saldrán burbujas más violentas?",
+    "materiales": [
+      "2 vasos",
+      "agua",
+      "mezcla espesa de maicena con agua o miel",
+      "pitillos individuales",
+      "bandeja",
+      "regla"
+    ],
+    "pasos": [
+      "Pon igual cantidad de agua en un vaso y de mezcla espesa en otro.",
+      "Pon los vasos en la bandeja.",
+      "Sopla suave y constante por el pitillo en el agua y observa las burbujas.",
+      "Sopla igual en la mezcla espesa.",
+      "Mide la altura de las salpicaduras y describe cómo salen las burbujas.",
+      "Relaciona con el magma."
+    ],
+    "seguridad": "Cada estudiante usa su pitillo; solo sopla, nunca aspires. Usa gafas por si hay salpicaduras.",
+    "adulto": false,
+    "que_pasa": "El magma contiene gases disueltos. Si el magma es poco viscoso, los gases escapan con facilidad y la lava fluye: erupción efusiva. Si es muy viscoso, como el de muchos volcanes colombianos, los gases quedan atrapados, se acumula presión y salen de golpe: erupción explosiva.",
+    "concepto": "Viscosidad del magma y tipos de erupción",
+    "vocabulario": [
+      "magma",
+      "viscosidad",
+      "erupción explosiva",
+      "erupción efusiva",
+      "gas volcánico"
+    ],
+    "preguntas": [
+      "¿En qué vaso salieron las burbujas de forma más violenta?",
+      "¿Qué representa tu soplo en el volcán real?",
+      "¿Por qué el Servicio Geológico Colombiano vigila los volcanes del país?"
+    ],
+    "reto": "Usa solo la mezcla de maicena y cambia su espesor (más o menos agua).",
+    "minutos": 20
+  },
+  {
+    "id": "g07-e050",
+    "grado": 7,
+    "eje": "tierra-universo",
+    "titulo": "El ciclo del agua en una bolsa en la ventana",
+    "gancho": "Las nubes que se forman sobre los Farallones traen la lluvia de la tarde a Cali. ¿De dónde salen y a dónde va el agua?",
+    "dba": "Explica fenómenos de la dinámica terrestre (erosión, sismos, vulcanismo, ciclo del agua, efecto invernadero) y su relación con los riesgos naturales y el cuidado del ambiente.",
+    "prediccion": "Si pegas a la ventana una bolsa cerrada con un poco de agua, ¿se formarán 'nubes' y 'lluvia' adentro?",
+    "materiales": [
+      "bolsa plástica transparente con cierre",
+      "agua con una gota de colorante azul",
+      "cinta",
+      "marcador",
+      "ventana soleada"
+    ],
+    "pasos": [
+      "Dibuja en la bolsa el sol, una nube y el mar.",
+      "Pon 50 mL de agua coloreada y cierra bien.",
+      "Pega la bolsa en una ventana soleada.",
+      "Observa cada hora durante la jornada.",
+      "Anota dónde aparecen gotas y si tienen color.",
+      "Dibuja con flechas el recorrido del agua."
+    ],
+    "seguridad": "Trabaja en una mesa limpia, no pruebes ninguna sustancia y lava tus manos al terminar.",
+    "adulto": false,
+    "que_pasa": "El sol calienta el agua, que se evapora; al subir y tocar la parte más fría de la bolsa, el vapor se condensa en gotas que luego se escurren y 'llueven'. Las gotas condensadas casi no tienen colorante porque solo se evapora el agua. Así funciona el ciclo del agua en la Tierra, impulsado por la energía del sol.",
+    "concepto": "Ciclo del agua",
+    "vocabulario": [
+      "ciclo del agua",
+      "evaporación",
+      "condensación",
+      "precipitación"
+    ],
+    "preguntas": [
+      "¿Dónde aparecieron las primeras gotas?",
+      "¿Por qué las gotas de arriba casi no tenían color?",
+      "¿Por qué cuidar los páramos y bosques ayuda a que haya agua en Cali?"
+    ],
+    "reto": "Haz dos bolsas iguales y cambia solo la ubicación: ventana soleada vs. ventana con sombra.",
+    "minutos": 20
+  }
+]
