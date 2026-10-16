@@ -859,7 +859,7 @@
     "grado": 4,
     "eje": "luz-sonido-energia",
     "titulo": "Teatro de sombras gigantes",
-    "gancho": "En las noches de apagón, con una vela o linterna podemos hacer sombras de animales en la pared. ¿Por qué a veces son enormes y a veces pequeñas?",
+    "gancho": "En las noches de apagón, con una linterna o la luz del celular podemos hacer sombras de animales en la pared. ¿Por qué a veces son enormes y a veces pequeñas?",
     "dba": "Estándar básico de competencias de 4° a 5°: identifica y describe fenómenos de la luz, como la formación de sombras y la reflexión en los espejos.",
     "prediccion": "Si acercas el muñeco a la linterna, ¿la sombra se hará más grande o más pequeña?",
     "materiales": [
@@ -1691,7 +1691,8 @@
       "marcadores de agua (no permanentes): negro, café, verde",
       "vaso con poca agua",
       "lápiz",
-      "cinta pegante"
+      "cinta pegante",
+      "tijeras de punta roma"
     ],
     "pasos": [
       "Corta tiras de filtro de unos 2 cm de ancho.",
@@ -1701,7 +1702,7 @@
       "Espera 10 minutos y observa cómo sube el agua.",
       "Saca las tiras, déjalas secar y compara los colores."
     ],
-    "seguridad": "Usa marcadores de agua, no permanentes. No mojes los marcadores ni los dejes destapados.",
+    "seguridad": "Usa marcadores de agua, no permanentes, y tijeras de punta roma. No mojes los marcadores ni los dejes destapados.",
     "adulto": false,
     "que_pasa": "La tinta del marcador es una mezcla de varios colorantes. El agua sube por el papel y arrastra los colorantes, pero cada uno avanza a distinta velocidad, así que se separan en bandas de colores. Esta técnica se llama cromatografía.",
     "concepto": "Cromatografía",
@@ -1898,18 +1899,18 @@
     "materiales": [
       "bola de icopor",
       "lápiz o palito para sostenerla",
-      "lámpara sin pantalla o linterna potente fija",
+      "linterna potente apoyada fija sobre una pila de libros",
       "cuarto oscuro"
     ],
     "pasos": [
       "Pincha la bola con el lápiz para sostenerla.",
-      "Pon la lámpara (el Sol) a la altura de tu cabeza en un lado del cuarto oscuro.",
+      "Pon la linterna (el Sol) a la altura de tu cabeza en un lado del cuarto oscuro.",
       "Ponte frente a la lámpara y sostén la bola (la Luna) con el brazo estirado, un poco por encima de tu cabeza.",
       "Gira despacio sobre ti mismo, siempre mirando la bola.",
       "Detente en 8 posiciones y dibuja la parte iluminada que ves.",
       "Compara tus dibujos con un calendario de fases lunares."
     ],
-    "seguridad": "No mires directamente la lámpara. Despeja el espacio para no tropezar al girar.",
+    "seguridad": "No mires directamente la linterna. No uses lámparas conectadas a la pared: su bombillo se calienta. Despeja el espacio para no tropezar al girar.",
     "adulto": false,
     "que_pasa": "La Luna no produce luz propia: refleja la luz del Sol. Siempre tiene una mitad iluminada, pero desde la Tierra vemos más o menos de esa mitad según dónde está la Luna en su recorrido alrededor de nosotros. Así vemos luna nueva, cuarto creciente, luna llena y cuarto menguante. El ciclo dura cerca de un mes.",
     "concepto": "Fases de la Luna",
@@ -1924,7 +1925,7 @@
       "¿Por qué no vemos la Luna en luna nueva?",
       "¿Por qué los pescadores del Pacífico se fijan en la Luna para planear sus salidas?"
     ],
-    "reto": "Cambia solo la posición de la lámpara (más alta) y observa si cambian las fases que ves.",
+    "reto": "Cambia solo la posición de la linterna (más alta) y observa si cambian las fases que ves.",
     "minutos": 25
   },
   {

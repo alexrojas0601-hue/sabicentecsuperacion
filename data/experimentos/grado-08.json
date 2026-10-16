@@ -1197,8 +1197,8 @@
       "Grafica temperatura contra tiempo para los dos termómetros.",
       "Calcula la diferencia final entre ambos."
     ],
-    "seguridad": "Mantén el ventilador lejos del agua y conéctalo con el docente. Maneja los termómetros con cuidado.",
-    "adulto": false,
+    "seguridad": "El docente conecta el ventilador y lo mantiene lejos del agua. Maneja los termómetros con cuidado. Si haces el reto con alcohol antiséptico, lo maneja solo el docente, en lugar ventilado y sin ninguna llama ni fuente de calor cerca; nunca lo pruebes ni lo inhales.",
+    "adulto": true,
     "que_pasa": "Para evaporarse, el agua necesita energía, y la toma de la superficie donde está; por eso la enfría. El sudor funciona así: el hipotálamo detecta el aumento de temperatura y ordena a las glándulas sudoríparas producir sudor, cuya evaporación enfría la piel. Con viento la evaporación es más rápida; con mucha humedad, sudamos pero nos refrescamos menos.",
     "concepto": "Termorregulación",
     "vocabulario": [
@@ -1538,7 +1538,7 @@
       "Ordena los vasos de rojo a verde-amarillo y asigna un pH aproximado con la escala de referencia del docente.",
       "Dibuja tu escala de pH con colores."
     ],
-    "seguridad": "El agua caliente la maneja el docente. Prueba cada sustancia por separado: nunca mezcles productos de limpieza. No pruebes ninguna sustancia; usa gafas.",
+    "seguridad": "El agua caliente la maneja el docente. Ensaya cada sustancia en su propio vaso, nunca mezcles sustancias entre sí ni uses productos de limpieza como cloro o destapadores. No pruebes ninguna sustancia; usa gafas.",
     "adulto": true,
     "que_pasa": "El repollo morado contiene antocianinas, pigmentos que cambian de color según la acidez: rojos-rosados en ácidos, morados cerca de neutro, y azules-verdes-amarillos en bases. El pH es una escala de 0 a 14: menor que 7 es ácido, 7 neutro y mayor que 7 básico. Los indicadores permiten conocer el pH sin probar las sustancias.",
     "concepto": "pH e indicadores ácido-base",
@@ -1829,7 +1829,8 @@
       "agua",
       "1 cucharadita de bicarbonato de sodio",
       "cartón para sostener los lápices",
-      "lupa"
+      "lupa",
+      "gafas de seguridad"
     ],
     "pasos": [
       "Disuelve el bicarbonato en el agua del vaso.",
@@ -1839,8 +1840,8 @@
       "Cuenta las burbujas que se forman en 30 segundos en cada lápiz y regístralo.",
       "Repite el conteo tres veces y saca el promedio."
     ],
-    "seguridad": "Usa solo pilas de 9 V o menos; nunca la red eléctrica. Usa bicarbonato, no sal (la sal produce cloro). Trabaja en lugar ventilado y desconecta al terminar.",
-    "adulto": false,
+    "seguridad": "Un adulto supervisa. Usa solo pilas de 9 V o menos; nunca la red eléctrica (110 V). Usa bicarbonato, nunca sal de cocina (la sal produce cloro, un gas tóxico). Se forma hidrógeno, que es inflamable: no acerques llamas. Usa gafas, trabaja en lugar ventilado y desconecta al terminar.",
+    "adulto": true,
     "que_pasa": "La electricidad descompone el agua: en el electrodo conectado al polo negativo se forma hidrógeno y en el positivo oxígeno, en proporción de 2 volúmenes de hidrógeno por 1 de oxígeno, como indica la fórmula H2O. El bicarbonato no se gasta como combustible: solo permite que la corriente pase por el agua. El hidrógeno verde se produce así, usando electricidad de fuentes renovables.",
     "concepto": "Electrólisis del agua",
     "vocabulario": [
@@ -2095,7 +2096,7 @@
     ],
     "seguridad": "No mires directamente al sol. Usa gorra y bloqueador durante las mediciones al aire libre.",
     "adulto": false,
-    "que_pasa": "Al girar la Tierra, el Sol parece moverse por el cielo; la sombra es más corta al mediodía solar, cuando el Sol está más alto. Como Cali está a unos 3° de latitud norte, el Sol pasa casi por encima de nuestra cabeza dos veces al año (alrededor de comienzos de abril y de septiembre), y ese día la sombra a mediodía casi desaparece. El resto del año la sombra al mediodía apunta al norte o al sur según la época.",
+    "que_pasa": "Al girar la Tierra, el Sol parece moverse por el cielo; la sombra es más corta al mediodía solar, cuando el Sol está más alto. Como Cali está a unos 3,4° de latitud norte, el Sol pasa casi por encima de nuestra cabeza dos veces al año (hacia el 30 de marzo y el 14 de septiembre), y esos días la sombra a mediodía casi desaparece. El resto del año la sombra al mediodía apunta al norte o al sur según la época.",
     "concepto": "Movimiento aparente del Sol y latitud",
     "vocabulario": [
       "gnomon",

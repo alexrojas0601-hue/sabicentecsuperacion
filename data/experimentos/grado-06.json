@@ -948,8 +948,8 @@
     "dba": "Identifica formas de energía (luminosa, sonora, eléctrica, térmica, mecánica) y sus transformaciones, y explica fenómenos de la luz y el sonido como la reflexión, la refracción y la propagación de ondas.",
     "prediccion": "¿Encenderá el LED si cierras el circuito con un clip, un borrador o una moneda?",
     "materiales": [
-      "pila de 9 V o 2 pilas AA en portapilas",
-      "LED o bombillo pequeño",
+      "2 pilas AA de 1,5 V en portapilas (3 V)",
+      "LED con resistencia de 220 a 330 ohmios en serie, o bombillito de linterna de 2,5 V",
       "3 cables con caimanes",
       "objetos: clip, moneda, borrador, lápiz, papel aluminio, palo de madera"
     ],
@@ -960,7 +960,7 @@
       "Anota si el LED enciende o no.",
       "Clasifica los objetos en conductores y aislantes."
     ],
-    "seguridad": "Solo usa pilas. Nunca uses enchufes de la casa (110 V). No unas los polos de la pila directamente porque se calienta.",
+    "seguridad": "Solo usa pilas de 1,5 a 9 V; nunca uses enchufes de la casa (110 V). No unas los polos de la pila directamente porque se calienta. Si usas LED, ponle siempre su resistencia: sin ella se quema.",
     "adulto": false,
     "que_pasa": "La corriente eléctrica es un flujo de cargas que necesita un camino cerrado. Los metales tienen cargas libres que se mueven con facilidad: son conductores. El plástico, el caucho y la madera seca no las tienen: son aislantes y cortan el circuito.",
     "concepto": "Conductores y aislantes",
@@ -1117,21 +1117,20 @@
       "regla",
       "balanza",
       "3 vasos",
-      "agua",
-      "sal",
-      "azúcar"
+      "agua de la llave",
+      "sal"
     ],
     "pasos": [
       "El adulto corta 3 tiras de papa iguales (1 cm × 1 cm × 6 cm).",
       "Mide y pesa cada tira.",
-      "Pon una en agua dulce, otra en agua con 2 cucharadas de sal y otra sin agua.",
+      "Pon una tira en agua de la llave, otra en agua con 2 cucharadas de sal y deja la tercera en un vaso sin agua (control).",
       "Espera 30 minutos.",
       "Sécalas, vuelve a medirlas y pesarlas, y dóblalas suavemente.",
       "Calcula el cambio de masa de cada una."
     ],
     "seguridad": "Solo el adulto usa el cuchillo. Trabaja en una mesa limpia, no pruebes ninguna sustancia y lava tus manos al terminar.",
     "adulto": true,
-    "que_pasa": "La membrana de las células deja pasar el agua de forma selectiva. El agua se mueve del lugar con menos sustancias disueltas al lugar con más: eso es la ósmosis. En agua con sal, la papa pierde agua y se ablanda; en agua dulce, gana agua y se pone firme.",
+    "que_pasa": "La membrana de las células deja pasar el agua de forma selectiva. El agua se mueve del lugar con menos sustancias disueltas al lugar con más: eso es la ósmosis. En agua con sal, la papa pierde agua y se ablanda; en agua de la llave, gana agua y se pone firme.",
     "concepto": "Ósmosis",
     "vocabulario": [
       "ósmosis",
@@ -1592,7 +1591,7 @@
     ],
     "seguridad": "No pruebes la sal del experimento.",
     "adulto": false,
-    "que_pasa": "La sal disuelta no se evapora; el agua sí. Al evaporarse el agua, las partículas de sal se juntan y forman cristales. Este método de separación se llama evaporación y funciona porque el agua y la sal tienen puntos de ebullición muy distintos.",
+    "que_pasa": "La sal disuelta no se evapora; el agua sí. Al evaporarse el agua, las partículas de sal se juntan y forman cristales. Este método de separación se llama evaporación y funciona porque el agua pasa fácilmente a vapor a temperatura ambiente, mientras que la sal necesitaría temperaturas altísimas para hacerlo.",
     "concepto": "Evaporación como método de separación",
     "vocabulario": [
       "evaporación",

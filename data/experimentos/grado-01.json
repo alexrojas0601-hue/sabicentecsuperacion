@@ -859,9 +859,9 @@
       "Si es un LED y no prende, el adulto lo da la vuelta.",
       "Suelta un caimán y mira qué pasa."
     ],
-    "seguridad": "Solo pilas AA de 1,5 V. Nunca usar enchufes ni cables de la pared. Si la pila se calienta, el adulto la desconecta. Nunca pilas de botón.",
+    "seguridad": "Solo pilas AA de 1,5 V. Nunca usar enchufes ni cables de la pared. Si la pila se calienta, el adulto la desconecta. Nunca pilas de botón. No unir los dos cables del portapilas sin el bombillo en medio.",
     "adulto": true,
-    "que_pasa": "La energía de la pila viaja por un camino cerrado: sale de la pila, pasa por un cable, atraviesa el bombillo y regresa por el otro cable. Ese camino se llama circuito. Si el camino se abre, la energía no llega y el bombillo se apaga.",
+    "que_pasa": "La corriente eléctrica necesita un camino cerrado: sale de la pila, pasa por un cable, atraviesa el bombillo y regresa a la pila por el otro cable. Ese camino se llama circuito y lleva la energía de la pila al bombillo. Si el camino se abre, la corriente se detiene y el bombillo se apaga.",
     "concepto": "Circuito eléctrico cerrado",
     "vocabulario": [
       "pila",
@@ -904,7 +904,7 @@
     ],
     "seguridad": "Solo pilas AA de 1,5 V. Nunca usar enchufes de la pared. Los objetos pequeños los maneja el adulto.",
     "adulto": true,
-    "que_pasa": "Los metales, como el clip, la cuchara y el aluminio, dejan pasar la energía eléctrica: son conductores. La madera, el plástico y el caucho no la dejan pasar: son aislantes. Por eso los cables tienen metal adentro y plástico afuera para protegernos.",
+    "que_pasa": "Los metales, como el clip, la cuchara y el aluminio, dejan pasar la corriente eléctrica: son conductores. La madera, el plástico y el caucho no la dejan pasar: son aislantes. Por eso los cables tienen metal adentro y plástico afuera para protegernos.",
     "concepto": "Conductores y aislantes",
     "vocabulario": [
       "conductor",
@@ -1061,7 +1061,7 @@
     ],
     "seguridad": "No alumbrar a los ojos de nadie.",
     "adulto": false,
-    "que_pasa": "El celofán de color es un filtro: deja pasar solo la luz de su color y frena las demás. La luz blanca tiene muchos colores mezclados, por eso el filtro rojo deja salir luz roja. Un objeto azul con luz roja se ve oscuro porque casi no hay luz azul que rebote.",
+    "que_pasa": "El celofán de color es un filtro: deja pasar solo la luz de su color y frena las demás. La luz blanca tiene muchos colores mezclados, por eso el filtro rojo deja salir luz roja. Si juntas dos filtros, solo pasa la luz que los dos dejan pasar: rojo y amarillo juntos dejan pasar casi solo luz roja. Un objeto azul con luz roja se ve oscuro porque casi no hay luz azul que rebote.",
     "concepto": "Filtros de luz",
     "vocabulario": [
       "filtro",
@@ -1255,7 +1255,7 @@
     "pasos": [
       "El adulto corta la botella y cubre el borde con cinta.",
       "Mete un globo por la boca de la botella y estira su boquilla sobre la rosca.",
-      "Corta el otro globo por la mitad y estíralo en la parte de abajo de la botella.",
+      "El adulto corta el otro globo por la mitad y tú lo estiras en la parte de abajo de la botella.",
       "Hala suavemente el globo de abajo.",
       "Suéltalo y mira el globo de adentro.",
       "Pon tu mano en tu pecho y respira profundo."
@@ -1588,7 +1588,7 @@
     ],
     "seguridad": "El agua tibia la sirve el adulto; nunca agua hirviendo. No se prueba el agua.",
     "adulto": true,
-    "que_pasa": "En el agua tibia, las partículas del agua se mueven más rápido y chocan más con el azúcar. Así la deshacen más rápido. En el agua fría se mueven más despacio y el azúcar tarda más en disolverse.",
+    "que_pasa": "En el agua tibia, las partículas del agua se mueven más rápido y chocan más con el azúcar. Así separan más rápido las partículas de azúcar, que se reparten por toda el agua: el azúcar se disuelve, no desaparece, aunque ya no la veas. En el agua fría se mueven más despacio y el azúcar tarda más en disolverse.",
     "concepto": "La temperatura y la disolución",
     "vocabulario": [
       "disolver",

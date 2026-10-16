@@ -295,7 +295,7 @@
     "id": "g07-e008",
     "grado": 7,
     "eje": "materia-cambios",
-    "titulo": "¿Por qué la mantequilla se derrite primero sobre la cuchara de metal?",
+    "titulo": "¿Por qué el hielo se derrite primero sobre la tapa de metal?",
     "gancho": "En una olla de sancocho, la cuchara de metal se calienta mucho y la de palo no. ¿Qué materiales conducen el calor?",
     "dba": "Explica el comportamiento de líquidos y gases (presión, volumen, temperatura, viscosidad, tensión superficial) usando el modelo cinético de partículas.",
     "prediccion": "Si pones hielo sobre una tapa de metal y sobre una tabla de plástico, ¿cuál se derretirá primero?",
@@ -888,7 +888,7 @@
     ],
     "seguridad": "Haz el experimento en espacio despejado; no golpees a nadie con la cuerda.",
     "adulto": false,
-    "que_pasa": "Una onda transporta energía sin transportar materia: la cinta sube y baja pero no avanza. Al aumentar la frecuencia (sacudidas por segundo), la longitud de onda disminuye, porque la rapidez en la cuerda se mantiene. El sonido viaja como onda longitudinal, igual que en el resorte.",
+    "que_pasa": "Una onda transporta energía sin transportar materia: la cinta se mueve de lado a lado pero no avanza. Al aumentar la frecuencia (sacudidas por segundo), la longitud de onda disminuye, porque la rapidez de la onda en la cuerda se mantiene. En la cuerda la onda es transversal; al empujar y halar el resorte se forma una onda longitudinal, que es como viaja el sonido en el aire.",
     "concepto": "Ondas: frecuencia y longitud de onda",
     "vocabulario": [
       "onda",
@@ -1962,7 +1962,7 @@
     ],
     "seguridad": "Los frascos se calientan: tócalos con trapo. Usa gorra y bloqueador.",
     "adulto": false,
-    "que_pasa": "La luz del sol atraviesa el plástico y calienta la tierra, que emite calor. El plástico impide que el aire caliente escape, así el frasco tapado se calienta más. En la atmósfera, gases como el dióxido de carbono retienen parte del calor que emite la Tierra; si aumentan, el planeta se calienta más.",
+    "que_pasa": "La luz del sol atraviesa el plástico y calienta la tierra, que calienta el aire del frasco. El frasco tapado se calienta más sobre todo porque el plástico impide que ese aire caliente se escape y se mezcle con el de afuera. En la atmósfera el mecanismo es distinto: gases como el dióxido de carbono absorben parte de la radiación infrarroja (calor) que emite la Tierra; si aumentan, el planeta se calienta más. El frasco es un modelo útil, pero con esa limitación.",
     "concepto": "Efecto invernadero",
     "vocabulario": [
       "efecto invernadero",

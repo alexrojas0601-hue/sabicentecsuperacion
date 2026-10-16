@@ -20,12 +20,12 @@
    "El adulto sirve la misma cantidad de agua tibia en el otro.",
    "Echa un cubo de hielo en cada vaso al mismo tiempo.",
    "Inicia el cronómetro.",
-   "Anota el tiempo en que desaparece cada cubo.",
+   "Anota el tiempo en que se derrite por completo cada cubo.",
    "Compara los tiempos en una tabla."
   ],
   "seguridad": "El agua debe estar tibia, nunca hirviendo; solo el adulto la sirve. No metas los dedos en el agua tibia.",
   "adulto": true,
-  "que_pasa": "El hielo se derrite cuando recibe calor. El agua tibia tiene más calor para darle al hielo que el agua fría, por eso lo derrite más rápido. Entre mayor es la temperatura del agua, más rápido ocurre el cambio de sólido a líquido.",
+  "que_pasa": "El hielo se derrite cuando recibe calor. El agua tibia está a mayor temperatura que el agua fría, así que le pasa calor al hielo más rápido y lo derrite antes. Entre mayor es la temperatura del agua, más rápido ocurre el cambio de sólido a líquido.",
   "concepto": "Temperatura y fusión",
   "vocabulario": [
    "temperatura",

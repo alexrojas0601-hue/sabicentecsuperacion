@@ -432,11 +432,11 @@
       "Un adulto corta tres cuadrados de bolsa: de 20, 30 y 40 cm de lado.",
       "Pega un hilo de 30 cm en cada esquina del primer cuadrado.",
       "Amarra los cuatro hilos al muñeco.",
-      "Suelta el paracaídas desde la misma altura (por ejemplo desde un segundo piso con supervisión).",
+      "Suelta el paracaídas siempre desde la misma altura: desde tus brazos estirados o, si es desde un segundo piso, lo suelta el adulto.",
       "Mide el tiempo de caída 3 veces.",
       "Cambia al cuadrado de otro tamaño y repite con el mismo muñeco."
     ],
-    "seguridad": "Un adulto supervisa si se lanza desde un segundo piso; nunca te asomes por la baranda. Las bolsas plásticas no se ponen en la cabeza.",
+    "seguridad": "Desde un segundo piso solo suelta el adulto; los niños miran desde abajo, lejos del punto de caída, y nunca se asoman por la baranda. Las bolsas plásticas no se ponen en la cabeza.",
     "adulto": true,
     "que_pasa": "Al caer, el paracaídas abierto atrapa aire debajo de él. Ese aire empuja hacia arriba (resistencia del aire) y frena la caída. Cuanto más grande es el paracaídas, más aire empuja y más despacio baja el muñeco.",
     "concepto": "Resistencia del aire",
@@ -710,7 +710,7 @@
     "prediccion": "¿Podrá una mariposa de cartulina sostenerse solo con la punta de la cabeza sobre tu dedo? ¿Qué pasa si le pegas monedas en las alas?",
     "materiales": [
       "cartulina",
-      "tijeras (las usa un adulto si es necesario)",
+      "tijeras de punta roma",
       "2 monedas iguales",
       "cinta pegante",
       "lápiz"
@@ -723,7 +723,7 @@
       "Empújala suavemente y observa cómo se balancea.",
       "Prueba moviendo las monedas a otra posición."
     ],
-    "seguridad": "Usa las tijeras con cuidado o pide ayuda a un adulto.",
+    "seguridad": "Usa tijeras de punta roma y recorta lejos de la cara; pide ayuda a un adulto si cuesta.",
     "adulto": false,
     "que_pasa": "Todo objeto tiene un centro de gravedad, el punto donde parece concentrarse su peso. Las monedas en las puntas de las alas bajan el centro de gravedad hasta quedar justo debajo del punto de apoyo, y así la mariposa se mantiene en equilibrio. La vara del equilibrista funciona de forma parecida: le ayuda a controlar su centro de gravedad.",
     "concepto": "Centro de gravedad y equilibrio",
@@ -1123,7 +1123,7 @@
       "pitillo",
       "plastilina",
       "banda de caucho",
-      "tijeras"
+      "tijeras de punta roma (para el globo)"
     ],
     "pasos": [
       "Un adulto corta la botella y conserva la parte de arriba.",
@@ -1254,7 +1254,7 @@
       "Repite después de que tu compañero salte 30 segundos."
     ],
     "seguridad": "No metas la manguera dentro del oído. Cada vez que cambie el que escucha, se limpia con alcohol (lo hace un adulto). Pide permiso a tu compañero.",
-    "adulto": false,
+    "adulto": true,
     "que_pasa": "El corazón produce sonidos al cerrarse sus válvulas cuando bombea la sangre. El embudo recoge esas vibraciones y la manguera las conduce hasta el oído sin que se dispersen en el aire, por eso se escuchan mejor. Así funciona, de forma sencilla, el estetoscopio.",
     "concepto": "Latidos del corazón",
     "vocabulario": [
@@ -1627,7 +1627,7 @@
       "Observa y dibuja (o toma foto) cada 20 minutos durante 1 hora.",
       "Ordena los pedazos de más claro a más oscuro."
     ],
-    "seguridad": "Un adulto usa el cuchillo. No te comas el aguacate del experimento si estuvo en la mesa mucho tiempo.",
+    "seguridad": "Un adulto usa el cuchillo. El aguacate del experimento no se come: estuvo destapado y fue manipulado. Al final se bota.",
     "adulto": true,
     "que_pasa": "Al cortar el aguacate, su pulpa queda expuesta al oxígeno del aire, que reacciona con unas sustancias de la fruta y la oscurece: es una oxidación, un cambio químico. El limón tiene ácidos y vitamina C que hacen esa reacción más lenta, y el plástico bloquea el contacto con el aire.",
     "concepto": "Oxidación",
@@ -1669,7 +1669,7 @@
       "Tapa los frascos y obsérvalos cada 2 días durante 1 semana.",
       "Dibuja el color de cada clavo y compara."
     ],
-    "seguridad": "Usa guantes y manipula los clavos con cuidado por la punta. Un adulto desecha los clavos oxidados.",
+    "seguridad": "Usa guantes y toma los clavos por la cabeza, nunca por la punta. Un adulto desecha los clavos oxidados.",
     "adulto": true,
     "que_pasa": "El hierro reacciona con el oxígeno del aire y con el agua y forma óxido de hierro, una sustancia nueva de color rojizo: es la oxidación o corrosión. La sal hace que la reacción ocurra más rápido. En el frasco seco casi no hay oxidación porque falta el agua.",
     "concepto": "Oxidación del hierro (corrosión)",

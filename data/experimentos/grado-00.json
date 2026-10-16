@@ -1656,7 +1656,7 @@
     ],
     "seguridad": "No probar la leche del experimento. Lavarse las manos después. El jabón solo lo maneja el niño en la punta del copito.",
     "adulto": false,
-    "que_pasa": "La leche tiene grasa. El jabón atrapa la grasa y la hace moverse muy rápido, y los colores viajan con ese movimiento. Cuando el jabón termina de moverse, los colores se quedan quietos.",
+    "que_pasa": "La leche tiene grasa. El jabón rompe la \"piel\" de la superficie de la leche y se pega a la grasa; eso hace que la leche se mueva y los colores viajan con ese movimiento. Cuando el jabón termina de repartirse, los colores se quedan quietos.",
     "concepto": "El jabón mueve la grasa",
     "vocabulario": [
       "leche",
