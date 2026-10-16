@@ -16,7 +16,7 @@
 //   AUDITOR = "no" para apagar el auditor.
 // ============================================================================
 
-const VERSION = "3.0.0 (2026-10-15)";
+const VERSION = "3.1.0 (2026-10-16)";
 const ORIGENES = [
   "https://sabicentec.com", "https://www.sabicentec.com", "https://ai.sabicentec.com",
   "https://superacion.sabicentec.com", "https://sabi-centec-ai--cali.pages.dev",
@@ -186,12 +186,13 @@ Revisa estos criterios:
    del tipo correcto y cada \`\`\`mermaid tiene sintaxis válida; los datos de gráficas y líneas de tiempo son correctos.
 8. La microclase entre <<<LECCION y LECCION>>> existe, es JSON válido y es específica de la pregunta.
 
-Responde SOLO un objeto JSON:
-{"aprobado": true o false,
- "fallas": ["número de criterio y explicación breve"],
- "respuesta_corregida": "si aprobado es true, vacío; si es false, la respuesta completa corregida, conservando TODOS los bloques sabi y mermaid (corregidos) y la microclase entre <<<LECCION y LECCION>>>"}`;
+Formato de tu respuesta:
+1. Primero, en una sola línea, un objeto JSON: {"aprobado": true o false, "fallas": ["número de criterio y explicación breve"]}
+2. Solo si aprobado es false, a continuación una línea que diga exactamente <<<CORREGIDA, luego la respuesta
+   completa corregida (con TODOS los bloques sabi y mermaid, corregidos, y la microclase entre <<<LECCION y
+   LECCION>>>) y al final una línea que diga exactamente CORREGIDA>>>. No pongas la corrección dentro del JSON.`;
 
-async function claude(env, { model, system, content, max_tokens }) {
+async function claude(env, { model, system, content, max_tokens }, conCorte = false) {
   const r = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: { "content-type": "application/json", "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
@@ -199,7 +200,8 @@ async function claude(env, { model, system, content, max_tokens }) {
   });
   if (!r.ok) throw new Error(`API ${r.status}: ${await r.text()}`);
   const d = await r.json();
-  return (d.content || []).filter((b) => b.type === "text").map((b) => b.text).join("\n").trim();
+  const texto = (d.content || []).filter((b) => b.type === "text").map((b) => b.text).join("\n").trim();
+  return conCorte ? { texto, cortado: d.stop_reason === "max_tokens" } : texto;
 }
 
 function separar(texto) {
@@ -235,7 +237,7 @@ function elegirDot(area, pregunta) {
   const n = " " + sinTildes(`${area} ${pregunta}`).replace(/[^a-z0-9ñ ]/g, " ").replace(/\s+/g, " ") + " ";
   let mejor = null, puntos = 0;
   for (const [dot, claves] of Object.entries(CLAVES)) {
-    const p = claves.reduce((s, k) => s + (n.includes(" " + k) ? k.split(" ").length : 0), 0);
+    const p = claves.reduce((s, k) => s + (n.includes(" " + k + (k.length <= 4 ? " " : "")) ? k.split(" ").length : 0), 0);
     if (p > puntos) { mejor = dot; puntos = p; }
   }
   return mejor;
@@ -265,12 +267,14 @@ export async function onRequestGet({ request }) {
 
 export async function onRequestPost({ request, env }) {
   const origen = request.headers.get("origin") || "";
-  if (origen && !ORIGENES.includes(origen)) return json(request, { ok: false, error: "Origen no autorizado" }, 403);
+  if (!ORIGENES.includes(origen)) return json(request, { ok: false, error: "Origen no autorizado" }, 403);
   if (!env.ANTHROPIC_API_KEY) return json(request, { ok: false, error: "Falta la clave del servidor" }, 500);
 
   let body;
   try { body = await request.json(); } catch { return json(request, { ok: false, error: "Solicitud inválida" }, 400); }
-  const pregunta = String(body.pregunta || "").trim().slice(0, 3500);
+  // La pregunta nunca se recorta por culpa del contexto en vivo: van en campos separados.
+  const pregunta = String(body.pregunta || "").trim().slice(0, 2500);
+  const extra = String(body.contexto || "").trim().slice(0, 4500);
   if (pregunta.length < 2) return json(request, { ok: false, error: "Falta la pregunta" }, 400);
   const audiencia = ["estudiante", "docente", "familia"].includes(body.audiencia) ? body.audiencia : "estudiante";
   const comando = elegirComando(body.comando, pregunta);
@@ -279,31 +283,39 @@ export async function onRequestPost({ request, env }) {
   let contexto = `Quién pregunta: ${audiencia}. Grado (si es estudiante): ${limpiar(body.grado, 20) || "no indicado"}. Área probable: ${limpiar(body.area, 40) || "general"}.`;
   if (dot) contexto += `\nDOT TUTOR ACTIVO: ${dot}. Enfoque: ${DOTS[dot]}`;
   if (comando) contexto += `\nCOMANDO /${comando} (obligatorio producir el recurso): ${COMANDOS[comando]}`;
+  if (extra) contexto += `\n\nCONTEXTO VERIFICADO PARA RESPONDER:\n${extra}`;
   contexto += `\n\nPREGUNTA:\n${pregunta}`;
 
   const vigente = await pedagogiaVigente(env, request);
-  const system = [{ type: "text", text: PROMPT_MAESTRO, cache_control: { type: "ephemeral" } }];
+  const system = [{ type: "text", text: PROMPT_MAESTRO }];
   if (vigente) system.push({ type: "text", text: `PEDAGOGÍA VIGENTE APROBADA POR COORDINACIÓN (aplícala cuando corresponda):\n${vigente}` });
   const modelo = env.MODELO_INSTITUCIONAL || "claude-haiku-4-5-20251001";
 
   try {
     let borrador = await claude(env, { model: modelo, system, content: contexto, max_tokens: 4000 });
-    let aprobado = null, fallas = [];
+    let aprobado = null, fallas = [], corregida = false;
     if (env.AUDITOR !== "no") {
       try {
         const v = await claude(env, {
           model: env.MODELO_AUDITOR || "claude-haiku-4-5-20251001",
-          system: [{ type: "text", text: PROMPT_AUDITOR, cache_control: { type: "ephemeral" } }], max_tokens: 6000,
+          system: [{ type: "text", text: PROMPT_AUDITOR }], max_tokens: 6000,
           content: `${contexto}\n\nBORRADOR (revísalo después de resolver tú mismo el contenido):\n${borrador}`,
-        });
-        const veredicto = JSON.parse(v.slice(v.indexOf("{"), v.lastIndexOf("}") + 1));
+        }, true);
+        const t = v.texto, fin = t.indexOf("<<<CORREGIDA");
+        const cabeza = fin >= 0 ? t.slice(0, fin) : t;
+        const veredicto = JSON.parse(cabeza.slice(cabeza.indexOf("{"), cabeza.lastIndexOf("}") + 1));
         aprobado = veredicto.aprobado !== false;
         fallas = Array.isArray(veredicto.fallas) ? veredicto.fallas.slice(0, 6) : [];
-        if (!aprobado && String(veredicto.respuesta_corregida || "").trim().length > 40) borrador = veredicto.respuesta_corregida;
-      } catch (e) { console.error("Auditor no disponible; se entrega el borrador", e); }
+        if (!aprobado) {
+          const cierre = t.indexOf("CORREGIDA>>>");
+          const nueva = fin >= 0 && cierre > fin && !v.cortado ? t.slice(fin + 12, cierre).trim() : "";
+          if (nueva.length > 40) { borrador = nueva; corregida = true; }
+          else if (v.cortado) aprobado = null; // la corrección quedó incompleta: no se presenta como revisada
+        }
+      } catch (e) { aprobado = null; console.error("Auditor no disponible; se entrega el borrador", e); }
     }
     const { answer, leccion } = separar(borrador);
-    return json(request, { ok: true, version: VERSION, dot, comando, answer, leccion, auditoria: { revisada: aprobado !== null, aprobado, fallas } });
+    return json(request, { ok: true, version: VERSION, dot, comando, answer, leccion, auditoria: { revisada: aprobado !== null, aprobado, corregida, fallas } });
   } catch (err) {
     return json(request, { ok: false, error: "No pude responder en este momento", detail: String(err).slice(0, 300) }, 502);
   }

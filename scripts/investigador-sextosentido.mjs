@@ -111,7 +111,7 @@ async function main() {
 
   const revisadas = [];
   for (const t of candidatas) {
-    const fallas = reglasDeCodigo(t, datos.tendencias);
+    const fallas = reglasDeCodigo(t, [...datos.tendencias, ...revisadas.filter((r) => !r.fallas.length).map((r) => r.t)]);
     if (!fallas.length && !(await enlaceVivo(t.url))) fallas.push("enlace caído");
     revisadas.push({ t, fallas });
   }
