@@ -92,3 +92,29 @@ SABICENTEC y la Instrucción Maestra de educación visual. Detalle completo en e
 | Dot_Investigador_SextoSentido | `scripts/investigador-sextosentido.mjs` cada viernes: tendencias de educación, tecnología y trabajo a 30-50 años → `data/tendencias.json` («Radar del futuro» de sabicentec.com), vía Pull Request. |
 
 `GET /api/institucional` devuelve la versión, los Dots y los comandos (lo usa el Dot Vigía).
+
+## Dots investigadores de herramientas pedagógicas y de experimentos (octubre de 2026)
+
+| Agente | Cuándo | Qué hace |
+|---|---|---|
+| Dot del área de la semana | Sábados 6:00 a. m. (rotan 8 Dots: Matemáticas, Lectura, Ciencias, Sociales, Inglés, Emocional, Digital e IA, Didácticas transversales) | Busca en la web herramientas reales, gratuitas y seguras (generadores, simuladores, juegos, manipulativos virtuales, código abierto) y propone cómo usarlas en clase. |
+| Auditor técnico | Código | Rechaza URL inseguras, enlaces caídos, duplicados, grados inválidos y herramientas que exigen cuenta del estudiante (Ley 1581). |
+| Comité de herramientas | Claude | Pedagógico, seguridad de menores (mínimo 4), acceso y pertinencia; promedio mínimo 3,75. La regla la aplica el código. |
+| Investigador de experimentos | Día 15 de cada mes | Diseña experimentos para el grado y eje más débil del banco, con los DBA oficiales del grado. |
+| Auditor de seguridad de experimentos | Código (`scripts/seguridad-experimentos.mjs`) | Prohíbe cloro, ácidos fuertes, solventes, tomacorriente, pilas de botón, imanes pequeños; exige supervisión o docente para fuego, calor, cortantes, vidrio y globos según la edad. No se le puede convencer. |
+| Auditor científico | Claude | Exactitud de la explicación, que funcione de verdad, edad y DBA (ciencia y seguridad mínimo 4). |
+| Auditor humano final | Coordinación académica | Aprueba el Pull Request. |
+
+Archivos: `data/herramientas-didacticas.json` (las recomienda el tutor a los docentes del área),
+`data/experimentos/grado-N.json` → `data/experimentos.json` (lo arma `node scripts/banco-experimentos.mjs armar`),
+`data/dba-ciencias.json` (DBA oficiales con fuente), `experimentos.html`, `fichas.html`.
+
+## Comandos SABI (tutor y AI CENTEC)
+
+Fuente única: `functions/_shared/comandos.js`; menú en `GET /api/comandos` y en el botón "/" del tutor.
+Ayudas didácticas (/worksheet, /escape, /detective, /boardgame, /stations, /manipulative, /comic,
+/lapbook, /puzzle, /minibook), por área (/experimento, /lectura) y de pensamiento (/ultrathink,
+/socratic, /premortem, /factcheck, /godmode y 34 más). `/ultrathink` y `/godmode` activan el
+pensamiento extendido real del modelo; `/godmode` no cambia ninguna regla de seguridad.
+En `/lectura`, el código verifica que cada evidencia literal esté copiada del texto; si no, pide una
+corrección automática y, si persiste, avisa al docente.

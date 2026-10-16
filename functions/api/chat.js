@@ -26,6 +26,8 @@
 //     }
 //   }
 
+import { detectarComandos, bloqueComandos, usaPensamientoExtendido, verificarEvidencias, quitarMarcasTexto } from "../_shared/comandos.js";
+
 const SYSTEM_PROMPT = `
 # MOTOR DE EXPERIENCIA SABI — PRIORIDAD MÁXIMA EN MODO ESTUDIANTE Y DOCENTE
 
@@ -309,6 +311,44 @@ Reglas de los dibujos (capa de enseñanza visual):
 - Lo visual ayuda a todos; nunca digas "como tú eres visual".
 - En modo docente puedes usar varios dibujos en una misma respuesta para armar el material de una
   clase, y sugerir cuáles convertir en material concreto para el aula.
+Juegos y materiales que arma la app por código (tú solo das el contenido):
+- [[sopa Animales del Valle | colibri, iguana, mono, rana, tortuga, guacamaya]] sopa de letras de 6 a
+  12 palabras sin espacios. La app hace la cuadrícula; nunca la dibujes tú.
+- [[crucigrama Estados de la materia | SOLIDO: tiene forma propia ; LIQUIDO: toma la forma del
+  recipiente ; GAS: ocupa todo el espacio]] crucigrama de 5 a 10 palabras; el estudiante lo llena en
+  pantalla y lo comprueba. Escríbelo en una sola línea.
+- [[subrayar texto completo]] muestra un texto dividido en oraciones; el estudiante toca la oración
+  que responde la pregunta. Úsalo en comprensión literal y en "¿dónde lo pone?".
+- [[ficha tipo grado]] abre el generador infinito de fichas de matemáticas verificadas, por ejemplo
+  [[ficha dinero 3]]. Tipos: calculo, problemas, series, geometria, dinero, error. Grado 0 a 11.
+- [[experimento ID]] muestra la tarjeta oficial de un experimento del banco de CENTEC (materiales,
+  pasos, seguridad). Solo IDs de la lista del banco que recibes en el contexto.
+
+## Comandos (la persona los escribe al inicio del mensaje; tú puedes ofrecerlos)
+Ayudas didácticas: /worksheet, /escape, /detective, /boardgame, /stations, /manipulative, /comic,
+/lapbook, /puzzle, /minibook. Por área: /experimento (Ciencias), /lectura (taller de comprensión),
+/worksheet en Matemáticas (fichas). Pensamiento: /ultrathink, /stepback, /firstprinciples,
+/chainofthought, /eli5, /technicaldeepdive, /analogy, /socratic, /rewrite, /shorten, /expand,
+/outline, /codereview, /debug, /refactor, /testcases, /proscons, /swot, /riskcheck, /premortem,
+/brainstorm, /remix, /whatif, /metaphor, /formalize, /casualize, /persuade, /deescalate, /prd,
+/okrs, /timeline, /delegate, /factcheck, /citesources, /summarizeresearch, /trendcheck, /godmode,
+/critique, /iterate, /selfcheck.
+Cuando un comando llega, recibes su protocolo completo y debes cumplirlo. Cuando veas que un
+formato haría el aprendizaje más divertido o significativo (el estudiante se aburre, repite el
+mismo error, o el tema se presta), ofrécelo como opción tocable, por ejemplo:
+» /escape fracciones equivalentes
+» /detective el caso de la planta que no creció
+Sin comando, sigue tu ritmo normal de misión.
+
+## Ciencias: aprender haciendo
+En Ciencias Naturales, Biología, Química y Física, cada misión incluye al menos un experimento del
+banco oficial ([[experimento ID]]): primero la predicción del estudiante, luego hacerlo u observarlo,
+luego explicar con evidencia. Si requiere supervisión adulta, dilo siempre.
+
+## Lectura: leer es comprender, relacionar y pensar
+En Lenguaje y en toda lectura, recorre las seis partes del taller en distintos turnos: lo que dice
+el texto (literal, con la frase exacta), leer entre líneas, palabras en contexto, ¿dónde lo pone?,
+orden y causas, piensa y argumenta.
 - [[argumento]] abre un cuadro donde el estudiante escribe su idea, su razón y su evidencia.
   Úsalo cuando le pidas defender una postura o justificar una respuesta.
 - [[seguridad]] muestra botones para que el estudiante diga qué tan seguro está de su respuesta.
@@ -1390,6 +1430,65 @@ function gradoNumero(g) {
   return Number.isFinite(n) ? Math.min(Math.max(n, 0), 11) : null;
 }
 
+// Banco oficial de experimentos (data/experimentos.json): los más pertinentes para el grado y el tema.
+const sinTilde = (t) => String(t || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+function gradoEnTexto(texto) {
+  const t = sinTilde(texto);
+  if (/transicion|preescolar/.test(t)) return 0;
+  const m = t.match(/(?:grado\s*)?\b(1[01]|[1-9])\s*(?:°|º|o\b|grado|\b(?=\s*de\s*primaria|\s*de\s*bachillerato))/);
+  return m ? Number(m[1]) : null;
+}
+async function experimentosParaTurno(env, request, grade, texto, max = 24) {
+  const d = await leerDatoJSON(env, request, "/data/experimentos.json");
+  if (!d || !Array.isArray(d.experimentos)) return "";
+  const gTexto = gradoEnTexto(texto), g = gTexto !== null ? gTexto : gradoNumero(grade);
+  const palabras = [...new Set(sinTilde(texto).split(/[^a-z0-9ñ]+/).filter((w) => w.length > 3))];
+  const puntaje = (e) => { const h = sinTilde(`${e.titulo} ${e.eje} ${e.pregunta} ${(e.tags || []).join(" ")}`); return palabras.reduce((n, w) => n + (h.includes(w) ? 1 : 0), 0); };
+  const lista = d.experimentos.filter((e) => g === null || e.grado === g).map((e) => [puntaje(e), e]).sort((a, b) => b[0] - a[0]);
+  if (!lista.length) return "";
+  // Primero los que coinciden con el tema; después se completa rotando los ejes (variedad).
+  const elegidos = lista.filter(([p]) => p > 0).slice(0, max).map(([, e]) => e);
+  const vistos = new Set(elegidos.map((e) => e.id));
+  const porEje = {};
+  for (const [, e] of lista) if (!vistos.has(e.id)) (porEje[e.eje] ||= []).push(e);
+  const colas = Object.values(porEje);
+  for (let k = 0; elegidos.length < max && colas.some((c) => c.length); k++) {
+    const c = colas[k % colas.length];
+    if (c.length) elegidos.push(c.shift());
+  }
+  return elegidos.map((e) => `- ${e.id} | grado ${e.grado} | ${e.eje} | ${corto(e.titulo, 70)} — ${corto(e.pregunta, 110)}${e.seguridad?.nivel && e.seguridad.nivel !== "libre" ? " [requiere supervisión adulta]" : ""}`).join("\n");
+}
+
+// Herramientas pedagógicas aprobadas por coordinación (las encuentran los Dots investigadores cada semana).
+async function herramientasParaDocente(env, request, area, grade, max = 6) {
+  const d = await leerDatoJSON(env, request, "/data/herramientas-didacticas.json");
+  const lista = (d?.herramientas || []).filter((h) => h.estado === "activo");
+  if (!lista.length) return "";
+  const a = areaDe(area), g = gradoNumero(grade);
+  const pesa = (h) => (a && areaDe(h.area) === a ? 2 : /transversal/i.test(h.area) ? 1 : 0) + (g === null || (g >= h.grados.desde && g <= h.grados.hasta) ? 1 : 0);
+  return lista.map((h) => [pesa(h), h]).filter(([p]) => p > 0).sort((x, y) => y[0] - x[0]).slice(0, max)
+    .map(([, h]) => `- ${h.nombre} (${h.url}) · ${h.tipo} · grados ${h.grados.desde}-${h.grados.hasta}: ${corto(h.para_que, 140)} Cómo usarla: ${corto(h.como_usar, 180)}`).join("\n");
+}
+
+// Verifica que cada Evidencia: «...» esté textual en el texto; si no, pide una corrección (una vez).
+async function asegurarEvidencias(env, borrador) {
+  let r = borrador, v = verificarEvidencias(r);
+  if (v && v.faltan.length) {
+    try {
+      const corregida = await llamarClaude(env, {
+        model: env.MODELO_TUTOR || "claude-haiku-4-5-20251001",
+        system: "Eres el corrector de talleres de lectura de SABI (Colegio CENTEC). Corriges sin cambiar el formato.",
+        max_tokens: 4000,
+        messages: [{ role: "user", content: `TALLER:\n${r}\n\nEstas evidencias NO aparecen textualmente en el texto que está entre <<<TEXTO y TEXTO>>>:\n${v.faltan.map((f) => "- «" + f + "»").join("\n")}\n\nCorrige el taller para que cada Evidencia: «...» sea una copia exacta, palabra por palabra, de una oración o frase del texto (cambia la evidencia o la pregunta, nunca el texto). Devuelve el taller completo con el mismo formato, incluidas las líneas <<<TEXTO y TEXTO>>>.` }],
+      });
+      const v2 = verificarEvidencias(corregida);
+      if (v2 && v2.faltan.length < v.faltan.length) { r = corregida; v = v2; }
+    } catch (err) { console.error("No se pudo corregir el taller de lectura:", err); }
+    if (v.faltan.length) r += `\n\nNota de revisión: estas evidencias no aparecen textuales en el texto y deben revisarse: ${v.faltan.map((f) => "«" + f + "»").join("; ")}.`;
+  }
+  return quitarMarcasTexto(r);
+}
+
 async function leerDatoJSON(env, request, ruta) {
   try {
     if (!request) return null;
@@ -1538,10 +1637,14 @@ Rúbrica (todas deben cumplirse):
    viñetas decorativas; respeta el límite de palabras para la edad. Conserva las líneas técnicas
    "» ", "✦ Descubrí: ", "⟶ Próxima vez: " y las herramientas [[fraccion ...]], [[recta ...]],
    [[barras ...]], [[pasos ...]], [[ciclo ...]], [[mapa ...]], [[tabla ...]], [[funcion ...]],
+   [[sopa ...]], [[crucigrama ...]], [[subrayar ...]], [[ficha ...]], [[experimento ...]],
    [[argumento]], [[seguridad]], [[escuchar ...]], [[pronunciar ...]] y [[escribir ...]] si
    existen y son pertinentes, cada una sola en su línea; revisa que los números, fórmulas, datos
    y frases en otro idioma de esas herramientas sean correctos y adecuados al nivel. Si el
    borrador trae código SVG, HTML, Mermaid o ASCII art, cámbialo por la herramienta equivalente.
+   Si el estudiante escribió un comando (/escape, /detective, /puzzle, /lectura...), el borrador
+   debe cumplir su protocolo; no reveles códigos de candados ni soluciones antes de que intente.
+   [[experimento ID]] solo con IDs del banco; si el experimento requiere supervisión adulta, que se diga.
 8. Seguridad: lenguaje apropiado para menores; nada riesgoso; protocolo de bienestar si hace falta.
 9. Dinamismo: si los últimos turnos repiten el mismo tipo de actividad, el borrador cambia de
    formato; usa una herramienta visual cuando la materia lo pide (fracciones, recta, datos, pasos de un
@@ -1766,6 +1869,18 @@ export async function onRequestPost(context) {
     contextoRol = `[Contexto de sesión — ROL: docente/directivo. Área: ${profile.teacherArea || "(sin dar)"}. ${profile.homeroomGrade ? `Director(a) de grupo: ${profile.homeroomGrade}.` : ""} Sigue el protocolo del Anexo 3, sección D: los entregables son D.1 (informe pedagógico por estudiante), D.2 (plan de mejora por curso/área) y D.3 (evaluación objetiva) — nunca el lenguaje del Plan del estudiante ni el Informe familiar.\n\n${listaGrado}\n\nHistorial del estudiante consultado (si se pidió uno puntual):\n${historialObjetivo}]`;
   }
 
+  // ---------- Comandos del turno (/escape, /lectura, /ultrathink...) ----------
+  const ultimoUsuario = [...messages].reverse().find((m) => m.role === "user")?.content || "";
+  const { comandos } = detectarComandos(ultimoUsuario);
+  const pensar = usaPensamientoExtendido(comandos);
+  const materiaTurno = role === "docente" ? profile.teacherArea : profile.materia;
+  const esCiencias = ["biologia", "quimica", "fisica"].includes(areaDe(materiaTurno)) || /ciencia/i.test(String(materiaTurno || ""));
+  const experimentos = comandos.includes("experimento") || esCiencias
+    ? await experimentosParaTurno(env, request, role === "docente" ? profile.homeroomGrade : profile.grade, ultimoUsuario)
+    : "";
+  const salida = comandos.length ? (role === "docente" ? 4000 : 1600) : 1100;
+  const herramientas = role === "docente" ? await herramientasParaDocente(env, request, profile.teacherArea, profile.homeroomGrade) : "";
+
   const catalogo = await catalogoCompacto(env, request);
   const capa = role === "estudiante" || role === "docente"
     ? await capaSuperacion(env, request, role === "docente" ? profile.teacherArea : profile.materia, role === "docente" ? profile.homeroomGrade : profile.grade)
@@ -1782,7 +1897,8 @@ export async function onRequestPost(context) {
       },
       body: JSON.stringify({
         model: env.MODELO_TUTOR || "claude-haiku-4-5-20251001",
-        max_tokens: 1100,
+        max_tokens: pensar ? salida + 3000 : salida,
+        ...(pensar ? { thinking: { type: "enabled", budget_tokens: 3000 } } : {}),
         system: [
           { type: "text", text: SYSTEM_PROMPT, cache_control: { type: "ephemeral" } },
           ...(catalogo
@@ -1793,6 +1909,15 @@ export async function onRequestPost(context) {
             : []),
           ...(capa
             ? [{ type: "text", text: `[${role === "docente" ? "Para el docente: usa esta capa para planear clases, proyectos ABP y rúbricas por desempeño" : "Aplica esta capa en cada respuesta, dentro del Motor de Experiencia"}:]\n${capa}`, cache_control: { type: "ephemeral" } }]
+            : []),
+          ...(experimentos
+            ? [{ type: "text", text: `[Banco oficial de experimentos de CENTEC (auditado en seguridad, alineado a DBA). Usa estos IDs con [[experimento ID]]; no inventes otros:]\n${experimentos}` }]
+            : []),
+          ...(herramientas
+            ? [{ type: "text", text: `[Herramientas pedagógicas aprobadas por coordinación para esta área; recomiéndalas cuando sirvan, con su enlace:]\n${herramientas}` }]
+            : []),
+          ...(comandos.length
+            ? [{ type: "text", text: `[Comandos activos en este turno — la persona los pidió:]\n${bloqueComandos(comandos, "tutor")}` }]
             : []),
           { type: "text", text: contextoRol },
         ],
@@ -1814,6 +1939,11 @@ export async function onRequestPost(context) {
 
     let replyFinal = reply || "No logré generar una respuesta. ¿Puedes intentarlo de nuevo?";
     let estado = null;
+
+    // ---------- Lectura: cada evidencia literal debe estar copiada del texto (lo revisa el código) ----------
+    if (comandos.includes("lectura") && reply) {
+      replyFinal = await asegurarEvidencias(env, reply);
+    }
 
     // ---------- Agente Auditor: ninguna respuesta llega al estudiante sin revisión ----------
     if (role === "estudiante" && reply && env.AUDITOR !== "no") {

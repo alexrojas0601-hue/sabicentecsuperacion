@@ -6,13 +6,15 @@ on:
   schedule:
     - cron: "0 11 * * 2"   # martes 6:00 a. m. hora Colombia: investigador neuropedagógico
     - cron: "0 11 * * 4"   # jueves 6:00 a. m.: investigador de proyectos (llena los vacíos del banco)
+    - cron: "0 11 * * 6"   # sábado 6:00 a. m.: Dot del área de la semana busca herramientas pedagógicas
+    - cron: "0 11 15 * *"  # día 15 de cada mes: investigador de experimentos (grado y eje más débil)
   workflow_dispatch:
     inputs:
       modo:
-        description: "proyectos | pedagogia | cobertura"
+        description: "proyectos | pedagogia | cobertura | herramientas | experimentos"
         default: "proyectos"
       foco:
-        description: "Opcional. Proyectos: Física|arduino. Pedagogía: un tema, ej. evaluación formativa"
+        description: "Opcional. Proyectos: Física|arduino. Pedagogía: un tema. Herramientas: Matemáticas. Experimentos: 3|quimica"
         default: ""
 
 permissions:
@@ -36,6 +38,10 @@ jobs:
             echo "valor=${{ inputs.modo }}" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.event.schedule }}" = "0 11 * * 2" ]; then
             echo "valor=pedagogia" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 11 * * 6" ]; then
+            echo "valor=herramientas" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 11 15 * *" ]; then
+            echo "valor=experimentos" >> "$GITHUB_OUTPUT"
           else
             echo "valor=proyectos" >> "$GITHUB_OUTPUT"
           fi
@@ -51,6 +57,8 @@ jobs:
         run: |
           node -e "JSON.parse(require('fs').readFileSync('data/proyectos-areas.json','utf8'))"
           node -e "JSON.parse(require('fs').readFileSync('data/pedagogia-vigente.json','utf8'))"
+          node -e "JSON.parse(require('fs').readFileSync('data/herramientas-didacticas.json','utf8'))"
+          node -e "JSON.parse(require('fs').readFileSync('data/experimentos.json','utf8'))"
 
       - name: Abrir Pull Request para aprobación humana
         uses: peter-evans/create-pull-request@v6

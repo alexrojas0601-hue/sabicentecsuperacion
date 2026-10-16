@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experimentos de Ciencias — SABICENTEC SUPERACIÓN</title>
+<meta name="description" content="Banco de experimentos de Ciencias Naturales de Colegio CENTEC: mínimo 50 por grado, de Transición a 11°, alineados a los DBA del MEN y auditados en seguridad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,680&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --noche:#0B1F3F; --noche-2:#14315C; --alba:#F5A623; --oro:#B8862B; --barro:#E8792B;
+    --brote:#4C7A5E; --papel:#F7F3E9; --blanco:#FFFFFF; --tinta:#1B1B18; --tinta-suave:#5B584E;
+    --linea:rgba(27,27,24,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--papel);color:var(--tinta);font-family:'Public Sans',sans-serif;font-size:18px;line-height:1.6}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:560;letter-spacing:-.01em}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--alba);outline-offset:2px}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 32px}
+  @media(max-width:640px){.wrap{padding:0 16px} body{font-size:17px}}
+  header.top{border-bottom:1px solid var(--linea)}
+  .top-inner{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:16px;flex-wrap:wrap}
+  .brand{font-weight:600;text-decoration:none}
+  .nav{display:flex;gap:10px;flex-wrap:wrap}
+  .cta,.cta-2{text-decoration:none;padding:9px 16px;border-radius:2px;font-weight:600;font-size:.95rem}
+  .cta{background:var(--noche);color:var(--papel)} .cta-2{border:1px solid var(--noche);color:var(--noche)}
+  .intro{padding:48px 0 24px}
+  .intro h1{font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.1;max-width:20ch}
+  .intro h1 em{font-style:italic;color:var(--noche-2)}
+  .intro p{max-width:62ch;margin-top:14px;color:var(--tinta-suave)}
+  .cifras{display:flex;gap:28px;flex-wrap:wrap;margin-top:22px;font-size:.92rem;color:var(--tinta-suave)}
+  .cifras b{display:block;font-family:'Fraunces',serif;font-size:1.9rem;color:var(--noche);font-weight:560}
+  .filtros{position:sticky;top:0;z-index:5;background:var(--papel);border-block:1px solid var(--linea);padding:12px 0}
+  .filtros .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+  label.campo{display:flex;flex-direction:column;font-size:.75rem;font-weight:600;color:var(--tinta-suave);gap:4px}
+  select,input[type=search]{font:inherit;font-size:.95rem;padding:8px 10px;border:1px solid var(--linea);border-radius:4px;background:var(--blanco);color:var(--tinta);width:100%}
+  #resumen{padding:18px 0 6px;color:var(--tinta-suave);font-size:.9rem}
+  .lista{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;padding:8px 0 64px}
+  @media(max-width:640px){.lista{grid-template-columns:1fr}}
+  .tarjeta{background:var(--blanco);border:1px solid var(--linea);border-radius:6px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+  .etq{font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--oro)}
+  .tarjeta h3{font-size:1.2rem;line-height:1.25;color:var(--noche)}
+  .tarjeta .preg{font-size:.95rem}
+  .sello{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 9px;border-radius:999px;border:1.5px solid currentColor}
+  .sello.libre{color:var(--brote)} .sello.supervision{color:#8A5A00} .sello.docente{color:#9B2C2C}
+  .tarjeta button{align-self:flex-start;margin-top:auto;font:600 .88rem 'Public Sans',sans-serif;background:var(--noche);color:var(--papel);border:0;border-radius:999px;padding:8px 16px;cursor:pointer}
+  .vacio{padding:40px 0;color:var(--tinta-suave)}
+  /* Ficha completa */
+  dialog{border:0;border-radius:8px;max-width:min(780px,96vw);width:100%;padding:0;background:var(--blanco);color:var(--tinta)}
+  dialog::backdrop{background:rgba(11,31,63,.55)}
+  .ficha{padding:28px 32px 32px}
+  @media(max-width:640px){.ficha{padding:20px 18px 24px}}
+  .ficha h2{font-size:1.7rem;color:var(--noche);line-height:1.2;margin:4px 0 8px}
+  .ficha h4{font:700 .78rem 'Public Sans',sans-serif;letter-spacing:.05em;text-transform:uppercase;color:var(--oro);margin:18px 0 6px}
+  .ficha ul,.ficha ol{padding-left:1.3em} .ficha li{margin:3px 0}
+  .ficha .aviso{background:#FBF1DE;border-left:4px solid var(--oro);padding:10px 14px;margin:12px 0;font-size:.95rem}
+  .ficha .prediccion{border:2px dashed var(--linea);border-radius:6px;padding:12px 14px;margin-top:6px}
+  .ficha .linea-resp{border-bottom:1px solid var(--linea);height:1.8em}
+  .ficha .dba{font-size:.85rem;color:var(--tinta-suave)}
+  .acciones{display:flex;gap:10px;flex-wrap:wrap;padding:14px 32px;border-top:1px solid var(--linea);background:var(--papel);position:sticky;bottom:0}
+  @media(max-width:640px){.acciones{padding:12px 18px}}
+  .acciones button,.acciones a{font:600 .9rem 'Public Sans',sans-serif;padding:9px 16px;border-radius:999px;border:1.5px solid var(--noche);background:var(--blanco);color:var(--noche);text-decoration:none;cursor:pointer}
+  .acciones .prim{background:var(--noche);color:var(--papel)}
+  .solo-impresion{display:none}
+  @media print{
+    body > *:not(dialog){display:none!important}
+    dialog{position:static;max-width:none;box-shadow:none}
+    .acciones{display:none}
+    .ficha{padding:0;font-size:12pt}
+    .solo-impresion{display:block}
+    details{display:block} details > summary{list-style:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="index.html">SABICENTEC SUPERACIÓN</a>
+    <nav class="nav">
+      <a class="cta-2" href="fichas.html">Fichas de matemáticas</a>
+      <a class="cta-2" href="proyectos.html">Proyectos</a>
+      <a class="cta" href="tutor.html">Hablar con SABI</a>
+    </nav>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <h1>La ciencia se aprende <em>haciéndola.</em></h1>
+    <p>Experimentos de Ciencias Naturales para cada grado, de Transición a 11°, alineados a los Derechos Básicos de Aprendizaje del MEN. Cada uno empieza con una pregunta y una predicción, usa materiales de la casa y pasó por un auditor de seguridad que no se deja convencer.</p>
+    <div class="cifras" id="cifras"></div>
+  </div>
+</section>
+
+<div class="filtros">
+  <div class="wrap">
+    <label class="campo">Grado<select id="f-grado"><option value="">Todos</option></select></label>
+    <label class="campo">Eje<select id="f-eje"><option value="">Todos</option></select></label>
+    <label class="campo">Seguridad<select id="f-seg"><option value="">Todas</option><option value="libre">Lo hace el estudiante</option><option value="supervision">Con un adulto</option><option value="docente">Lo hace el docente</option></select></label>
+    <label class="campo">Buscar<input type="search" id="f-texto" placeholder="imanes, semillas, luz…"></label>
+  </div>
+</div>
+
+<main class="wrap">
+  <p id="resumen" aria-live="polite">Cargando el banco…</p>
+  <div class="lista" id="lista"></div>
+</main>
+
+<dialog id="dialogo" aria-labelledby="ficha-titulo">
+  <div class="ficha" id="ficha"></div>
+  <div class="acciones">
+    <button type="button" class="prim" id="btn-imprimir">Imprimir ficha</button>
+    <a id="btn-sabi" href="tutor.html">Hacerlo con SABI</a>
+    <button type="button" id="btn-cerrar">Cerrar</button>
+  </div>
+</dialog>
+
+<script>
+const $ = id => document.getElementById(id);
+const esc = t => String(t ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const sinTilde = t => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+const GRADO = g => g ? g + '°' : 'Transición';
+const NIVEL = { libre: 'Lo hace el estudiante', supervision: 'Con un adulto', docente: 'Lo hace el docente' };
+let banco = { experimentos: [], ejes: {} }, dba = null;
+
+function filtrar() {
+  const g = $('f-grado').value, e = $('f-eje').value, s = $('f-seg').value, q = sinTilde($('f-texto').value).trim();
+  const lista = banco.experimentos.filter(x => (g === '' || x.grado === +g) && (!e || x.eje === e) && (!s || x.seguridad?.nivel === s)
+    && (!q || sinTilde([x.titulo, x.pregunta, ...(x.materiales || []), ...(x.tags || [])].join(' ')).includes(q)));
+  $('resumen').textContent = `${lista.length} experimento${lista.length === 1 ? '' : 's'}${g !== '' ? ' para ' + GRADO(+g) : ''}.`;
+  $('lista').innerHTML = lista.length ? lista.map(x => `<article class="tarjeta">
+      <span class="etq">${esc(banco.ejes[x.eje] || x.eje)} · ${GRADO(x.grado)}${x.duracion_min ? ' · ' + x.duracion_min + ' min' : ''}</span>
+      <h3>${esc(x.titulo)}</h3><p class="preg">${esc(x.pregunta)}</p>
+      <span class="sello ${esc(x.seguridad?.nivel)}">${NIVEL[x.seguridad?.nivel] || ''}</span>
+      <button type="button" data-id="${esc(x.id)}">Ver ficha completa</button></article>`).join('')
+    : '<div class="vacio">No hay experimentos con esa combinación. Prueba con otro eje o grado, o pídele uno a SABI con /experimento.</div>';
+  const u = new URL(location); ['grado', 'eje', 'seg', 'q'].forEach((k, i) => { const v = [g, e, s, q][i]; v ? u.searchParams.set(k, v) : u.searchParams.delete(k); });
+  history.replaceState(null, '', u);
+}
+
+function ficha(id) {
+  const x = banco.experimentos.find(e => e.id === id); if (!x) return;
+  const textosDba = (x.dba || []).map(n => { const d = dba?.grados?.[String(x.grado)]?.dba?.find(y => y.n === n); return d ? `DBA ${n}: ${d.enunciado}` : `DBA ${n}`; });
+  const nivel = x.seguridad?.nivel || 'libre';
+  $('ficha').innerHTML = `
+    <p class="solo-impresion etq">Colegio CENTEC · SABI · Nombre: ______________________ Curso: ______ Fecha: ________</p>
+    <span class="etq">${esc(banco.ejes[x.eje] || x.eje)} · ${GRADO(x.grado)}${x.duracion_min ? ' · ' + x.duracion_min + ' minutos' : ''}</span>
+    <h2 id="ficha-titulo">${esc(x.titulo)}</h2>
+    <p><b>Pregunta:</b> ${esc(x.pregunta)}</p>
+    ${nivel !== 'libre' ? `<p class="aviso"><b>${NIVEL[nivel]}.</b> ${esc(x.seguridad?.nota)}</p>` : ''}
+    <h4>1. Antes de empezar, predice</h4><p>${esc(x.prediccion)}</p><div class="prediccion"><div class="linea-resp"></div><div class="linea-resp"></div></div>
+    <h4>2. Materiales</h4><ul>${(x.materiales || []).map(m => `<li>${esc(m)}</li>`).join('')}</ul>
+    <h4>3. Procedimiento</h4><ol>${(x.pasos || []).map(p => `<li>${esc(p)}</li>`).join('')}</ol>
+    <h4>4. Observa y registra</h4><p>${esc(x.observa)}</p><div class="prediccion"><div class="linea-resp"></div><div class="linea-resp"></div><div class="linea-resp"></div></div>
+    <h4>5. ¿Por qué pasó?</h4><details><summary>Ábrelo después de observar</summary><p>${esc(x.explicacion)}</p>${x.error_comun ? `<p><b>Idea equivocada frecuente:</b> ${esc(x.error_comun)}</p>` : ''}</details>
+    ${x.variable ? `<h4>6. Reto de científico</h4><p>${esc(x.variable)}</p>` : ''}
+    ${x.conexion ? `<h4>En la vida real</h4><p>${esc(x.conexion)}</p>` : ''}
+    ${textosDba.length ? `<h4>Derechos Básicos de Aprendizaje</h4><p class="dba">${textosDba.map(esc).join('<br>')}</p>` : ''}`;
+  $('btn-sabi').href = `tutor.html?rol=estudiante&materia=${encodeURIComponent('Ciencias Naturales')}`;
+  const u = new URL(location); u.searchParams.set('id', id); history.replaceState(null, '', u);
+  if (!$('dialogo').open) $('dialogo').showModal();
+}
+function cerrar() { $('dialogo').close(); }
+$('dialogo').addEventListener('close', () => { const u = new URL(location); u.searchParams.delete('id'); history.replaceState(null, '', u); });
+$('btn-cerrar').onclick = cerrar;
+$('btn-imprimir').onclick = () => { $('dialogo').querySelectorAll('details').forEach(d => d.open = true); window.print(); };
+$('lista').addEventListener('click', e => { const b = e.target.closest('[data-id]'); if (b) ficha(b.dataset.id); });
+['f-grado', 'f-eje', 'f-seg'].forEach(id => $(id).addEventListener('change', filtrar));
+$('f-texto').addEventListener('input', filtrar);
+
+(async () => {
+  try {
+    const [b, d] = await Promise.all([fetch('data/experimentos.json').then(r => r.json()), fetch('data/dba-ciencias.json').then(r => r.ok ? r.json() : null).catch(() => null)]);
+    banco = b; dba = d;
+  } catch (e) { $('resumen').textContent = 'No se pudo cargar el banco de experimentos.'; return; }
+  for (let g = 0; g <= 11; g++) $('f-grado').insertAdjacentHTML('beforeend', `<option value="${g}">${GRADO(g)}</option>`);
+  for (const [k, v] of Object.entries(banco.ejes || {})) $('f-eje').insertAdjacentHTML('beforeend', `<option value="${k}">${esc(v)}</option>`);
+  const total = banco.experimentos.length, grados = new Set(banco.experimentos.map(e => e.grado)).size, libres = banco.experimentos.filter(e => e.seguridad?.nivel === 'libre').length;
+  $('cifras').innerHTML = `<span><b>${total}</b>experimentos</span><span><b>${grados}</b>grados</span><span><b>${Object.keys(banco.ejes || {}).length}</b>ejes de las ciencias</span><span><b>${libres}</b>los hace el estudiante solo</span>`;
+  const p = new URLSearchParams(location.search);
+  if (p.has('grado')) $('f-grado').value = p.get('grado');
+  if (p.has('eje')) $('f-eje').value = p.get('eje');
+  if (p.has('seg')) $('f-seg').value = p.get('seg');
+  if (p.has('q')) $('f-texto').value = p.get('q');
+  filtrar();
+  if (p.has('id')) ficha(p.get('id'));
+})();
+</script>
+</body>
+</html>

@@ -9,12 +9,16 @@
 //   node scripts/investigador-areas.mjs proyectos   -> diseña proyectos nuevos donde el banco tiene vacíos
 //   node scripts/investigador-areas.mjs pedagogia   -> busca hallazgos recientes con evidencia y los propone
 //   node scripts/investigador-areas.mjs cobertura   -> solo informa qué áreas, grados y tipos faltan
+//   node scripts/investigador-areas.mjs herramientas -> el Dot del área de la semana busca herramientas pedagógicas reales
+//   node scripts/investigador-areas.mjs experimentos -> llena el grado y eje más débil del banco de experimentos
 //
 // Variables: ANTHROPIC_API_KEY (obligatoria), MODELO (opcional), MAX_NUEVOS (por defecto 3),
 //            FOCO (opcional, ej. "Física|arduino" o "evaluación formativa")
 // ============================================================================
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { revisarSeguridad, nivelSuficiente } from "./seguridad-experimentos.mjs";
+import { EJES, CORTO, MINIMO_EJE, validarExperimento, coberturaDe, armar } from "./banco-experimentos.mjs";
 
 const BANCO = "data/proyectos-areas.json";
 const VIGENTE = "data/pedagogia-vigente.json";
@@ -408,8 +412,185 @@ async function modoCobertura() {
   await guardarInforme("cobertura", l.join("\n"));
 }
 
+// ---------------------------------------------------------------------------
+// Agente 5 — Dots investigadores de herramientas pedagógicas (uno por área, rotan cada semana)
+// ---------------------------------------------------------------------------
+const HERRAMIENTAS = "data/herramientas-didacticas.json";
+const DOTS_HERRAMIENTAS = [
+  ["Dot_Matematicas_Estrategica", "Matemáticas", "manipulativos virtuales, generadores de ejercicios y fichas, juegos de cálculo mental y razonamiento, geometría dinámica, dinero y finanzas"],
+  ["Dot_LecturaCritica_Lenguaje", "Lectura y Lenguaje", "comprensión lectora literal, inferencial y crítica, textos graduados por nivel, vocabulario en contexto, escritura con propósito"],
+  ["Dot_CienciasNaturales_STEAM", "Ciencias Naturales", "simuladores de laboratorio, experimentos caseros seguros, observación de la naturaleza, datos científicos abiertos"],
+  ["Dot_CienciasSociales_Ciudadanas", "Ciencias Sociales y Ciudadanas", "mapas interactivos, líneas de tiempo, fuentes primarias, simulaciones de ciudadanía y economía"],
+  ["Dot_Bilinguismo_Ingles", "Inglés", "escucha y habla, lectura graduada, vocabulario, pronunciación"],
+  ["Dot_InteligenciaEmocional_Valores", "Inteligencia emocional y valores", "juegos cooperativos, dilemas, regulación emocional, convivencia"],
+  ["Dot_EducacionDigital_IA", "Educación digital e IA", "pensamiento computacional, programación por bloques, ciudadanía digital, IA explicada a niños"],
+  ["Dot_Didacticas_Transversales", "Didácticas transversales", "escape rooms, gamificación con criterio, generadores de juegos, plantillas imprimibles, código abierto para crear juegos educativos infinitos"],
+];
+
+async function investigadorHerramientas(dot, existentes) {
+  const [nombre, area, foco] = dot;
+  const system = `Eres ${nombre}, Dot investigador de herramientas pedagógicas de SABI para ${area}. ${CONTEXTO}
+Buscas herramientas REALES que hagan que los niños y jóvenes aprendan de verdad (no solo que se
+entretengan): ${foco}. Prioriza gratuitas, de navegador o celular, en español, sin cuentas de
+estudiantes, sin publicidad ni compras, y de código abierto o de instituciones serias (universidades,
+museos de ciencia, ministerios, fundaciones educativas). Cada herramienta debe aparecer en tus
+resultados de búsqueda con su URL oficial. Nunca inventes una URL ni una herramienta.`;
+  const user = `Herramientas que SABI ya tiene (no repetir):\n${existentes.map((h) => `- ${h.nombre}: ${h.url}`).join("\n") || "(ninguna todavía)"}
+
+Propón hasta ${MAX_NUEVOS} herramientas. Responde SOLO un arreglo JSON:
+{"nombre": "...", "url": "https://...", "dot": "${nombre}", "area": "${area}", "grados": {"desde": 0-11, "hasta": 0-11},
+ "tipo": "generador|simulador|juego|manipulativo|banco|plantilla|app|codigo-abierto",
+ "para_que": "qué aprendizaje concreto logra", "como_usar": "una actividad de clase en 3 pasos",
+ "comando": "comando de SABI que la potencia (/worksheet, /escape, /experimento, /lectura...) o vacío",
+ "costo": "gratis|freemium", "cuenta": "ninguna|docente|estudiante", "idioma": "...", "sin_internet": true|false,
+ "licencia": "si es código abierto, cuál; si no, vacío", "evidencia_busqueda": "dónde la encontraste"}`;
+  const texto = await claude({ system, user, max_tokens: 4500, herramientas: [{ type: "web_search_20250305", name: "web_search", max_uses: 8 }] });
+  const lista = extraerJSON(texto);
+  return Array.isArray(lista) ? lista.slice(0, MAX_NUEVOS) : [];
+}
+
+async function auditoresHerramientas(candidatos, existentes, recursos) {
+  const urls = new Set([...existentes.map((h) => h.url), ...recursos].map((u) => String(u).replace(/\/+$/, "").toLowerCase()));
+  const tecnicos = [], rechazados = [];
+  for (const c of candidatos) {
+    if (!["nombre", "url", "para_que", "como_usar"].every((k) => String(c[k] || "").trim())) { rechazados.push({ ...c, motivo: "campos vacíos" }); continue; }
+    if (!urlSegura(c.url)) { rechazados.push({ ...c, motivo: "URL no segura o vetada" }); continue; }
+    if (urls.has(String(c.url).replace(/\/+$/, "").toLowerCase())) { rechazados.push({ ...c, motivo: "ya está en SABI" }); continue; }
+    const g = c.grados || {};
+    if (!(Number.isInteger(g.desde) && Number.isInteger(g.hasta) && g.desde >= 0 && g.hasta <= 11 && g.desde <= g.hasta)) { rechazados.push({ ...c, motivo: "grados inválidos" }); continue; }
+    if (c.cuenta === "estudiante") { rechazados.push({ ...c, motivo: "exige cuenta del estudiante (Ley 1581)" }); continue; }
+    const vivo = await enlaceVivo(c.url);
+    if (!vivo.ok) { rechazados.push({ ...c, motivo: `enlace caído (${vivo.estado})` }); continue; }
+    if (vivo.manual) c._revisarManual = vivo.manual;
+    tecnicos.push(c);
+  }
+  if (!tecnicos.length) return { aprobados: [], rechazados };
+  const conId = tecnicos.map((c, i) => ({ ...c, _id: i }));
+  const system = `Eres el Comité Auditor de herramientas pedagógicas de SABI. ${CONTEXTO}
+Cuatro voces independientes, sin complacencia:
+1. Pedagógica: produce aprendizaje real y transferible (no solo diversión ni conductismo de clic).
+2. Seguridad de menores: sin chat con desconocidos, sin publicidad ni compras, sin datos de menores.
+3. Acceso: gratis, celular o navegador, conectividad limitada, español.
+4. Pertinencia: sirve a los Estándares y DBA del MEN y al contexto de Cali.
+Puntúa de 1 a 5 y mejora "como_usar" si puedes.`;
+  const user = `Herramientas:\n${JSON.stringify(conId, null, 2)}\n\nResponde SOLO un arreglo JSON:
+{"_id": n, "puntajes": {"pedagogico": 1-5, "seguridad": 1-5, "acceso": 1-5, "pertinencia": 1-5}, "observaciones": "...", "como_usar": "versión mejorada o null"}`;
+  const veredictos = extraerJSON(await claude({ system, user, max_tokens: 4000 }));
+  const aprobados = [];
+  for (const c of conId) {
+    const v = veredictos.find((x) => x._id === c._id);
+    const { _id, ...h } = c;
+    if (!v?.puntajes) { rechazados.push({ ...h, motivo: "sin veredicto" }); continue; }
+    const n = ["pedagogico", "seguridad", "acceso", "pertinencia"].map((k) => Number(v.puntajes[k]));
+    const prom = n.reduce((a, b) => a + b, 0) / n.length;
+    const ok = n.every((x) => x >= 3) && n[1] >= 4 && prom >= 3.75;   // la regla la decide el código
+    if (typeof v.como_usar === "string" && v.como_usar.trim()) h.como_usar = v.como_usar.trim();
+    h._auditoria = { puntajes: v.puntajes, promedio: Number(prom.toFixed(2)), observaciones: v.observaciones };
+    (ok ? aprobados : rechazados).push(ok ? h : { ...h, motivo: `no alcanzó el estándar (promedio ${prom.toFixed(2)}, seguridad ${n[1]})` });
+  }
+  return { aprobados, rechazados };
+}
+
+async function modoHerramientas() {
+  let datos;
+  try { datos = JSON.parse(await readFile(HERRAMIENTAS, "utf8")); } catch { datos = { actualizado: HOY, herramientas: [] }; }
+  let recursos = [];
+  try { recursos = (JSON.parse(await readFile("data/recursos.json", "utf8")).recursos || []).map((r) => r.url).filter(Boolean); } catch {}
+  const foco = process.env.FOCO;
+  const dot = DOTS_HERRAMIENTAS.find((d) => foco && (d[0] === foco || d[1].toLowerCase().includes(foco.toLowerCase()))) || DOTS_HERRAMIENTAS[semanaDelAnio() % DOTS_HERRAMIENTAS.length];
+  const propuestas = await investigadorHerramientas(dot, datos.herramientas);
+  const r = await auditoresHerramientas(propuestas, datos.herramientas, recursos);
+  for (const h of r.aprobados) {
+    const { _auditoria, _revisarManual, evidencia_busqueda, ...limpio } = h;
+    datos.herramientas.push({ id: `h-${slug(h.nombre)}`, ...limpio, estado: "activo", verificado: HOY });
+  }
+  datos.actualizado = HOY;
+  await writeFile(HERRAMIENTAS, JSON.stringify(datos, null, 1) + "\n");
+  const l = [`# ${dot[0]} — herramientas pedagógicas — ${HOY}`, "", `Área: ${dot[1]}.`, "", "> Aprobar el Pull Request = el tutor las recomienda a los docentes del área.", ""];
+  for (const h of r.aprobados) l.push(`## ${h.nombre}`, `- [${h.url}](${h.url}) · ${h.tipo} · grados ${h.grados.desde}-${h.grados.hasta} · ${h.costo} · cuenta: ${h.cuenta}`, `- Para qué: ${h.para_que}`, `- Cómo usarla: ${h.como_usar}`, `- Comité: promedio ${h._auditoria.promedio} — ${h._auditoria.observaciones}`, ...(h._revisarManual ? [`- Revisar a mano: ${h._revisarManual}`] : []), "");
+  if (r.rechazados.length) { l.push(`## Rechazadas (${r.rechazados.length})`, ""); r.rechazados.forEach((x) => l.push(`- ${x.nombre || "(sin nombre)"}: ${x.motivo}`)); }
+  await guardarInforme("herramientas", l.join("\n"));
+}
+
+// ---------------------------------------------------------------------------
+// Agente 6 — Investigador de experimentos (llena el grado y eje más débil del banco)
+// ---------------------------------------------------------------------------
+async function modoExperimentos() {
+  const dba = JSON.parse(await readFile("data/dba-ciencias.json", "utf8"));
+  let banco;
+  try { banco = JSON.parse(await readFile("data/experimentos.json", "utf8")).experimentos || []; } catch { banco = []; }
+  const t = coberturaDe(banco);
+  let grado, eje;
+  if (process.env.FOCO && process.env.FOCO.includes("|")) [grado, eje] = [Number(process.env.FOCO.split("|")[0]), process.env.FOCO.split("|")[1]];
+  else {
+    const celdas = [];
+    for (let g = 0; g <= 11; g++) for (const e of Object.keys(EJES)) celdas.push([(t[g]?.[e] || 0) / MINIMO_EJE[e], t[g]?.total || 0, g, e]);
+    celdas.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+    [, , grado, eje] = celdas[0];
+  }
+  const archivo = `data/experimentos/grado-${grado}.json`;
+  let base;
+  try { base = JSON.parse(await readFile(archivo, "utf8")); } catch { base = { grado, experimentos: [] }; }
+  const dbaGrado = (dba.grados?.[String(grado)]?.dba || []).map((d) => `DBA ${d.n}: ${d.enunciado}`).join("\n");
+  const titulos = base.experimentos.map((e) => `- ${e.titulo}`).join("\n");
+  const ultimo = Math.max(0, ...base.experimentos.filter((e) => e.eje === eje).map((e) => Number(String(e.id).split("-").pop()) || 0));
+  const system = `Eres el Investigador de experimentos de Ciencias de SABI. ${CONTEXTO}
+Diseñas experimentos que enseñan por indagación (pregunta, predicción, prueba, evidencia, explicación)
+con materiales caseros y baratos de Cali, seguros para la edad. Puedes buscar en la web ideas de fuentes
+serias (universidades, museos de ciencia, programas como Pequeños Científicos o Ondas de Minciencias),
+pero la redacción es tuya y adaptada al grado. Nunca uses cloro, ácidos fuertes, solventes, electricidad
+del tomacorriente, pilas de botón ni imanes pequeños; el fuego y el calor solo con supervisión adulta.`;
+  const user = `Grado ${grado} (0 = Transición). Eje: ${EJES[eje]} (${eje}).
+DBA de Ciencias Naturales de este grado (usa SOLO estos números):
+${dbaGrado}
+Ya existen estos experimentos en el grado (no repetir la idea):
+${titulos || "(ninguno)"}
+
+Diseña ${MAX_NUEVOS} experimentos. Responde SOLO un arreglo JSON con objetos:
+{"id": "g${grado}-${CORTO[eje]}-NN (continúa desde ${String(ultimo + 1).padStart(2, "0")})", "grado": ${grado}, "eje": "${eje}", "titulo": "...", "pregunta": "¿...?",
+ "dba": [números], "duracion_min": 5-120, "materiales": ["..."], "pasos": ["3 a 10 pasos"], "prediccion": "pregunta de predicción",
+ "observa": "qué observar o medir", "explicacion": "por qué pasa, al nivel del grado", "error_comun": "concepción alternativa frecuente",
+ "seguridad": {"nivel": "libre|supervision|docente", "nota": "..."}, "variable": "reto: qué variable cambiar", "conexion": "vida cotidiana en Cali", "tags": ["..."]}`;
+  const propuestas = extraerJSON(await claude({ system, user, max_tokens: 6000, herramientas: [{ type: "web_search_20250305", name: "web_search", max_uses: 4 }] }));
+  const tecnicos = [], rechazados = [];
+  for (const e of Array.isArray(propuestas) ? propuestas : []) {
+    const s = revisarSeguridad(e);
+    if (s.rechazo.length) { rechazados.push({ ...e, motivo: `seguridad: ${s.rechazo.join(", ")}` }); continue; }
+    if (e.seguridad && !nivelSuficiente(e.seguridad.nivel, s.exige)) e.seguridad = { nivel: s.exige, nota: e.seguridad.nota || `Requiere supervisión por: ${s.motivos.join(", ")}.` };
+    const p = validarExperimento(e, dba, grado);
+    if (base.experimentos.some((x) => x.id === e.id)) p.push("id repetido");
+    if (p.length) { rechazados.push({ ...e, motivo: p.join(" | ") }); continue; }
+    tecnicos.push(e);
+  }
+  let aprobados = [];
+  if (tecnicos.length) {
+    const sys2 = `Eres el Auditor científico y pedagógico de experimentos de SABI. ${CONTEXTO}
+Revisas sin complacencia: exactitud científica de la explicación (sin errores conceptuales), seguridad
+real para la edad, que el procedimiento funcione de verdad con esos materiales, adecuación al grado y
+alineación con el DBA citado. Puntúa de 1 a 5 y corrige la explicación si tiene un error.`;
+    const user2 = `Experimentos:\n${JSON.stringify(tecnicos.map((e, i) => ({ ...e, _id: i })), null, 2)}\n\nResponde SOLO un arreglo JSON:
+{"_id": n, "puntajes": {"ciencia": 1-5, "seguridad": 1-5, "funciona": 1-5, "edad": 1-5, "dba": 1-5}, "observaciones": "...", "explicacion_corregida": "..." o null}`;
+    const ver = extraerJSON(await claude({ system: sys2, user: user2, max_tokens: 4000 }));
+    tecnicos.forEach((e, i) => {
+      const v = ver.find((x) => x._id === i);
+      const n = v?.puntajes ? ["ciencia", "seguridad", "funciona", "edad", "dba"].map((k) => Number(v.puntajes[k])) : [];
+      if (n.length && n.every((x) => x >= 3) && n[0] >= 4 && n[1] >= 4) {
+        if (v.explicacion_corregida) e.explicacion = v.explicacion_corregida;
+        aprobados.push({ ...e, origen: "investigador", verificado: HOY, _obs: v.observaciones });
+      } else rechazados.push({ ...e, motivo: v?.puntajes ? `auditor: ${n.join("/")}` : "sin veredicto" });
+    });
+  }
+  base.experimentos.push(...aprobados.map(({ _obs, ...e }) => e));
+  await writeFile(archivo, JSON.stringify(base, null, 1) + "\n");
+  await armar();
+  const l = [`# Investigador de experimentos — ${HOY}`, "", `Foco: grado ${grado}, ${EJES[eje]}.`, "", "> Aprobar el Pull Request = aparecen en experimentos.html y en el tutor.", ""];
+  for (const e of aprobados) l.push(`## ${e.id} · ${e.titulo}`, `- ${e.pregunta}`, `- Seguridad: ${e.seguridad.nivel}${e.seguridad.nota ? " — " + e.seguridad.nota : ""}`, `- Auditor: ${e._obs || ""}`, "");
+  if (rechazados.length) { l.push(`## Rechazados (${rechazados.length})`, ""); rechazados.forEach((x) => l.push(`- ${x.titulo || x.id || "(sin título)"}: ${x.motivo}`)); }
+  await guardarInforme("experimentos-investigador", l.join("\n"));
+}
+
 const modo = process.argv[2] || "proyectos";
-({ proyectos: modoProyectos, pedagogia: modoPedagogia, cobertura: modoCobertura }[modo] || modoProyectos)().catch((e) => {
+({ proyectos: modoProyectos, pedagogia: modoPedagogia, cobertura: modoCobertura, herramientas: modoHerramientas, experimentos: modoExperimentos }[modo] || modoProyectos)().catch((e) => {
   console.error("El equipo investigador se detuvo sin modificar los datos:", e.message);
   process.exit(1);
 });

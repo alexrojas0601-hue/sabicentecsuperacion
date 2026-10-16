@@ -16,7 +16,9 @@
 //   AUDITOR = "no" para apagar el auditor.
 // ============================================================================
 
-const VERSION = "3.1.0 (2026-10-16)";
+import { COMANDOS as COMANDOS_SABI, resolverComando, bloqueComandos, usaPensamientoExtendido, verificarEvidencias, quitarMarcasTexto } from "../_shared/comandos.js";
+
+const VERSION = "3.2.0 (2026-10-16)";
 const ORIGENES = [
   "https://sabicentec.com", "https://www.sabicentec.com", "https://ai.sabicentec.com",
   "https://superacion.sabicentec.com", "https://sabi-centec-ai--cali.pages.dev",
@@ -192,11 +194,15 @@ Formato de tu respuesta:
    completa corregida (con TODOS los bloques sabi y mermaid, corregidos, y la microclase entre <<<LECCION y
    LECCION>>>) y al final una línea que diga exactamente CORREGIDA>>>. No pongas la corrección dentro del JSON.`;
 
-async function claude(env, { model, system, content, max_tokens }, conCorte = false) {
+async function claude(env, { model, system, content, max_tokens, pensar = false }, conCorte = false) {
   const r = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: { "content-type": "application/json", "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
-    body: JSON.stringify({ model, max_tokens, system, messages: [{ role: "user", content }] }),
+    body: JSON.stringify({
+      model, system, messages: [{ role: "user", content }],
+      max_tokens: pensar ? max_tokens + 3000 : max_tokens,
+      ...(pensar ? { thinking: { type: "enabled", budget_tokens: 3000 } } : {}),
+    }),
   });
   if (!r.ok) throw new Error(`API ${r.status}: ${await r.text()}`);
   const d = await r.json();
@@ -242,11 +248,25 @@ function elegirDot(area, pregunta) {
   }
   return mejor;
 }
-function elegirComando(comando, pregunta) {
-  let c = sinTildes(comando).replace(/^\//, "").trim();
-  if (!c) { const m = String(pregunta || "").trim().match(/^\/([a-z0-9_\-]+)/i); c = m ? sinTildes(m[1]) : ""; }
-  c = ALIAS[c] || c;
-  return COMANDOS[c] ? c : null;
+// Hasta dos comandos: los propios de esta app (bloques sabi) tienen prioridad; si no, los comandos
+// compartidos del ecosistema (functions/_shared/comandos.js): didácticas, áreas y pensamiento.
+function elegirComandos(comando, pregunta) {
+  const candidatos = [];
+  if (comando) candidatos.push(sinTildes(comando).replace(/^\//, "").trim());
+  let resto = String(pregunta || "").trim();
+  for (let k = 0; k < 2; k++) {
+    const m = resto.match(/^\/([\p{L}0-9_\-]+)\s*/u);
+    if (!m) break;
+    candidatos.push(sinTildes(m[1])); resto = resto.slice(m[0].length);
+  }
+  const propios = [], compartidos = [];
+  for (const c0 of candidatos.filter(Boolean)) {
+    const c = ALIAS[c0] || c0;
+    if (COMANDOS[c]) { if (!propios.includes(c)) propios.push(c); continue; }
+    const s = resolverComando(c0);
+    if (s && !compartidos.includes(s)) compartidos.push(s);
+  }
+  return { propios: propios.slice(0, 2), compartidos: compartidos.slice(0, 2) };
 }
 
 async function pedagogiaVigente(env, request) {
@@ -262,7 +282,7 @@ async function pedagogiaVigente(env, request) {
 
 // GET /api/institucional → estado y versión (lo consulta el Dot Vigía)
 export async function onRequestGet({ request }) {
-  return json(request, { ok: true, servicio: "IA institucional SABI CENTEC", version: VERSION, dots: Object.keys(DOTS), comandos: Object.keys(COMANDOS) });
+  return json(request, { ok: true, servicio: "IA institucional SABI CENTEC", version: VERSION, dots: Object.keys(DOTS), comandos: [...new Set([...Object.keys(COMANDOS), ...Object.keys(COMANDOS_SABI)])] });
 }
 
 export async function onRequestPost({ request, env }) {
@@ -277,12 +297,15 @@ export async function onRequestPost({ request, env }) {
   const extra = String(body.contexto || "").trim().slice(0, 4500);
   if (pregunta.length < 2) return json(request, { ok: false, error: "Falta la pregunta" }, 400);
   const audiencia = ["estudiante", "docente", "familia"].includes(body.audiencia) ? body.audiencia : "estudiante";
-  const comando = elegirComando(body.comando, pregunta);
+  const { propios, compartidos } = elegirComandos(body.comando, pregunta);
+  const comando = propios[0] || compartidos[0] || null;
+  const pensar = usaPensamientoExtendido(compartidos);
   const dot = elegirDot(limpiar(body.dot || body.area, 40), pregunta);
 
   let contexto = `Quién pregunta: ${audiencia}. Grado (si es estudiante): ${limpiar(body.grado, 20) || "no indicado"}. Área probable: ${limpiar(body.area, 40) || "general"}.`;
   if (dot) contexto += `\nDOT TUTOR ACTIVO: ${dot}. Enfoque: ${DOTS[dot]}`;
-  if (comando) contexto += `\nCOMANDO /${comando} (obligatorio producir el recurso): ${COMANDOS[comando]}`;
+  for (const c of propios) contexto += `\nCOMANDO /${c} (obligatorio producir el recurso): ${COMANDOS[c]}`;
+  if (compartidos.length) contexto += `\n${bloqueComandos(compartidos, "institucional")}`;
   if (extra) contexto += `\n\nCONTEXTO VERIFICADO PARA RESPONDER:\n${extra}`;
   contexto += `\n\nPREGUNTA:\n${pregunta}`;
 
@@ -292,7 +315,7 @@ export async function onRequestPost({ request, env }) {
   const modelo = env.MODELO_INSTITUCIONAL || "claude-haiku-4-5-20251001";
 
   try {
-    let borrador = await claude(env, { model: modelo, system, content: contexto, max_tokens: 4000 });
+    let borrador = await claude(env, { model: modelo, system, content: contexto, max_tokens: 4000, pensar });
     let aprobado = null, fallas = [], corregida = false;
     if (env.AUDITOR !== "no") {
       try {
@@ -314,7 +337,14 @@ export async function onRequestPost({ request, env }) {
         }
       } catch (e) { aprobado = null; console.error("Auditor no disponible; se entrega el borrador", e); }
     }
-    const { answer, leccion } = separar(borrador);
+    let notaLectura = "";
+    if (compartidos.includes("lectura")) {
+      const v = verificarEvidencias(borrador);
+      if (v && v.faltan.length) notaLectura = `\n\nNota de revisión: estas evidencias no aparecen textuales en el texto y deben revisarse: ${v.faltan.map((f) => "«" + f + "»").join("; ")}.`;
+      borrador = quitarMarcasTexto(borrador);
+    }
+    const { answer: respuesta, leccion } = separar(borrador);
+    const answer = respuesta + notaLectura;
     return json(request, { ok: true, version: VERSION, dot, comando, answer, leccion, auditoria: { revisada: aprobado !== null, aprobado, corregida, fallas } });
   } catch (err) {
     return json(request, { ok: false, error: "No pude responder en este momento", detail: String(err).slice(0, 300) }, 502);

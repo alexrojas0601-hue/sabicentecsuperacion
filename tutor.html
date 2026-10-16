@@ -238,6 +238,48 @@
   .herramienta.pasos li:not(:last-child)::after{content:''; position:absolute; left:1.45em; bottom:-.95em; height:.95em; border-left:2px solid #B8862B;}
   .herramienta.pasos li:last-child{margin-bottom:0;}
   .tabla-marco{overflow-x:auto;}
+  form#form-chat .btn-comandos{flex:0 0 auto; width:2.6em; padding:0; font:700 1.2em 'Public Sans',sans-serif; background:#FFFFFF; color:#0B1F3F; border:1.5px solid #0B1F3F;}
+  .panel-comandos{max-width:min(46rem,94vw); margin:0 auto 10px; max-height:55vh; overflow:auto; background:#FFFFFF; border:1px solid #D9D2C3; border-radius:8px; padding:.8em 1em; box-shadow:0 6px 24px rgba(11,31,63,.12); font-family:'Public Sans',sans-serif;}
+  .panel-comandos .panel-titulo{font-weight:700; color:#0B1F3F; margin:0 0 .5em;} .panel-comandos .panel-titulo span{display:block; font-weight:400; font-size:.8em; color:#5B574F;}
+  .panel-comandos summary{cursor:pointer; font-weight:700; font-size:.85em; color:#8A6418; margin:.5em 0;}
+  .chips-comandos{display:flex; flex-wrap:wrap; gap:.4em;}
+  .chips-comandos button{border:1px solid #D9D2C3; background:#FBF8F1; color:#1F1D1A; border-radius:999px; padding:.35em .8em; font:400 .82em 'Public Sans',sans-serif; cursor:pointer; text-align:left;}
+  .chips-comandos button b{color:#0B1F3F;}
+  /* Juegos generados por código */
+  .herramienta .consigna{font-family:'Public Sans',sans-serif; font-weight:700; color:#0B1F3F; margin:0 0 .3em;}
+  .herramienta .nota{font-family:'Public Sans',sans-serif; font-size:.8em; color:#5B574F; margin:.2em 0 .6em;}
+  .herramienta .etq{font-family:'Public Sans',sans-serif; font-size:.72em; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:#8A6418; margin:.9em 0 .3em;}
+  .sopa .rejilla{display:grid; gap:2px; max-width:30em; margin:0 auto;}
+  .sopa .letra{aspect-ratio:1; min-width:0; padding:0; border:1px solid #D9D2C3; background:#FFFFFF; color:#1F1D1A; font:700 clamp(.72rem,2.6vw,1.05rem) 'Public Sans',sans-serif; border-radius:3px; cursor:pointer;}
+  .sopa .letra.elegida{outline:3px solid #B8862B; outline-offset:-2px;}
+  .sopa .letra.hallada{background:#0B1F3F; color:#FFFFFF;}
+  .sopa .letra.fallo{background:#F3E1C7;}
+  .sopa .palabras{display:flex; flex-wrap:wrap; gap:.3em .9em; list-style:none; padding:0; margin:.8em 0; font-family:'Public Sans',sans-serif; font-size:.85em; font-weight:600;}
+  .sopa .palabras li.hallada{text-decoration:line-through; color:#8A857B;}
+  .sopa .palabras li.hallada::before{content:'✓ ';}
+  .herramienta .ver-solucion, .herramienta .comprobar-cruci{margin-top:.6em; background:#FFFFFF; color:#0B1F3F; border:1.5px solid #0B1F3F; border-radius:999px; padding:.45em 1.1em; font:600 .82em 'Public Sans',sans-serif; cursor:pointer;}
+  .marco-cruci{padding:.2em 0 .4em;}
+  .rejilla-cruci{display:grid; gap:0; margin:0 auto; font-size:clamp(.62rem, 3.4vw, 1rem);}
+  .rejilla-cruci .casilla{position:relative; aspect-ratio:1; border:1.5px solid #1F1D1A; margin:-.75px; background:#FFFFFF;}
+  .rejilla-cruci .vacia{aspect-ratio:1;}
+  .rejilla-cruci small{position:absolute; top:1px; left:2px; font:700 .55em 'Public Sans',sans-serif; color:#0B1F3F; pointer-events:none;}
+  .rejilla-cruci input{width:100%; height:100%; min-width:0; border:0; padding:.3em 0 0; text-align:center; font:700 1.15em 'Public Sans',sans-serif; text-transform:uppercase; background:transparent; color:#1F1D1A;}
+  .rejilla-cruci input.bien{background:#E4ECF7;} .rejilla-cruci input.mal{background:#F6DADA; text-decoration:line-through;}
+  .crucigrama .pistas{display:grid; grid-template-columns:repeat(auto-fit,minmax(14em,1fr)); gap:.4em 1.4em; font-family:'Public Sans',sans-serif; font-size:.85em;}
+  .crucigrama .pistas ol{list-style:none; padding:0; margin:0;} .crucigrama .pistas li{margin:.25em 0;} .crucigrama .largo{color:#8A857B;}
+  .subrayar p{line-height:2.1; margin:.2em 0 .8em;}
+  .subrayar .oracion{display:inline; border:0; background:none; padding:.1em .15em; margin:0; font:inherit; color:inherit; text-align:left; cursor:pointer; border-bottom:2px dotted #B8862B; border-radius:0;}
+  .subrayar .oracion:hover:not(:disabled){background:#F7EBD3;}
+  .subrayar .oracion.elegida{background:#F5D99A; border-bottom:2px solid #0B1F3F;}
+  .subrayar .oracion:disabled{cursor:default; opacity:1;}
+  .herramienta.ficha a{display:inline-block; background:#0B1F3F; color:#FFFFFF; text-decoration:none; padding:.6em 1.2em; border-radius:999px; font:600 .9em 'Public Sans',sans-serif;}
+  .herramienta.ficha .nota{display:block; margin-top:.5em;}
+  .experimento .exp-titulo{font-family:'Public Sans',sans-serif; font-size:1.1em; font-weight:700; color:#0B1F3F; margin:.1em 0 .4em;}
+  .experimento ul, .experimento ol{margin:.2em 0 .6em; padding-left:1.3em;}
+  .experimento .seguridad-exp{background:#FBF1DE; border-left:4px solid #B8862B; padding:.5em .8em; font-size:.92em;}
+  .experimento details{margin:.6em 0; padding:.5em .8em; background:#FBF8F1; border:1px solid #D9D2C3; border-radius:6px;}
+  .experimento summary{cursor:pointer; font-family:'Public Sans',sans-serif; font-weight:600; color:#0B1F3F;}
+  .experimento > a{font-family:'Public Sans',sans-serif; font-size:.85em; color:#0B1F3F;}
   .herramienta.tabla table{border-collapse:collapse; width:100%; font-family:'Public Sans',sans-serif; font-size:.88em; color:#1F1D1A;}
   .herramienta.tabla th, .herramienta.tabla td{border:1px solid #D9D2C3; padding:.45em .6em; text-align:left; vertical-align:top;}
   .herramienta.tabla thead th{background:#0B1F3F; color:#FFFFFF; font-weight:700;}
@@ -534,8 +576,13 @@
 
   <p class="aviso">SABI puede cometer errores. Si algo no te suena bien, coméntaselo a tu profesor.</p>
 
+  <div id="panel-comandos" class="panel-comandos" hidden>
+    <p class="panel-titulo">Comandos de SABI <span>Toca uno y escribe el tema. Ejemplo: /escape fracciones</span></p>
+    <div id="lista-comandos"></div>
+  </div>
   <form id="form-chat">
     <button type="button" id="btn-hablar" class="btn-hablar" title="Hablarle a SABI con tu voz" hidden>Hablar</button>
+    <button type="button" id="btn-comandos" class="btn-comandos" title="Comandos de SABI: juegos, fichas, experimentos y modos de pensar" aria-expanded="false" aria-controls="panel-comandos">/</button>
     <textarea id="input" placeholder="Escríbele a SABI…" rows="1" required></textarea>
     <button type="submit" id="enviar">Enviar</button>
   </form>
@@ -788,6 +835,11 @@
       if (tipo === 'mapa') return dibujarRadial(args, false);
       if (tipo === 'tabla') return dibujarTabla(args);
       if (tipo === 'funcion' || tipo === 'función') return dibujarFuncion(args);
+      if (tipo === 'sopa') return dibujarSopa(args);
+      if (tipo === 'crucigrama') return dibujarCrucigrama(args);
+      if (tipo === 'subrayar') return dibujarSubrayar(args);
+      if (tipo === 'ficha') return dibujarFicha(args);
+      if (tipo === 'experimento') return `<div class="herramienta experimento" data-exp="${esc(args.trim().split(/\s+/)[0])}"><p class="nota">Cargando el experimento…</p></div>`;
       if (tipo === 'escuchar' || tipo === 'pronunciar') return dibujarVoz(tipo, args);
       if (tipo === 'escribir') { const [lg, ...r] = args.split('|'); const consigna = r.join('|').trim() || 'Escribe tu respuesta.';
         return `<form class="herramienta escribir" data-lang="${esc(lg.trim())}"><p class="consigna">${esc(limpiar(consigna))}</p>
@@ -981,6 +1033,204 @@
     const leyenda = formulas.map((f, c) => `<span class="leyenda-f${c}">y = ${esc(f)}</span>`).join(' ');
     return `<figure class="herramienta">${svg}</svg><figcaption>${leyenda}</figcaption></figure>`;
   }
+
+  // ---------- Juegos generados por código (la IA da el contenido; el código arma la cuadrícula) ----------
+  function azarDesde(texto) {   // generador reproducible: el mismo juego se ve igual al recargar
+    let h = 2166136261; for (const ch of String(texto)) h = Math.imul(h ^ ch.charCodeAt(0), 16777619);
+    return () => { h += 0x6D2B79F5; let t = h; t = Math.imul(t ^ t >>> 15, t | 1); t ^= t + Math.imul(t ^ t >>> 7, t | 61); return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+  }
+  const MAYUS = w => String(w).toUpperCase().replace(/Ñ/g, '\u0001').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\u0001/g, 'Ñ').replace(/[^A-ZÑ]/g, '');
+  function gradoPerfil() {
+    const t = String(perfil?.grade || perfil?.profile?.grade || perfil?.homeroomGrade || '').toLowerCase();
+    if (/transici/.test(t)) return 0;
+    const n = parseInt(t.replace(/\D/g, ''), 10); return Number.isFinite(n) ? n : 5;
+  }
+  function tituloYResto(args) { const i = args.indexOf('|'); return i < 0 ? ['', args] : [limpiar(args.slice(0, i)), args.slice(i + 1)]; }
+
+  // [[sopa Animales del Valle | colibri, iguana, mono, rana]]
+  function dibujarSopa(args) {
+    const [titulo, resto] = tituloYResto(args);
+    let palabras = [...new Set(resto.split(/[,;]/).map(MAYUS).filter(w => w.length >= 3 && w.length <= 14))].slice(0, 12);
+    if (palabras.length < 3) return '';
+    palabras.sort((a, b) => b.length - a.length);
+    const g = gradoPerfil(), azar = azarDesde(args);
+    const dirs = g <= 2 ? [[0, 1], [1, 0]] : g <= 5 ? [[0, 1], [1, 0], [1, 1]] : [[0, 1], [1, 0], [1, 1], [0, -1], [-1, 0], [-1, 1], [1, -1], [-1, -1]];
+    const letras = palabras.join('').length;
+    for (let N = Math.min(14, Math.max(palabras[0].length + 1, Math.ceil(Math.sqrt(letras * 2.3)), 8)); N <= 16; N++) {
+      const M = Array.from({ length: N }, () => Array(N).fill('')), sol = [];
+      let ok = true;
+      for (const w of palabras) {
+        let puesto = false;
+        for (let t = 0; t < 400 && !puesto; t++) {
+          const [dr, dc] = dirs[Math.floor(azar() * dirs.length)], r = Math.floor(azar() * N), c = Math.floor(azar() * N);
+          const rf = r + dr * (w.length - 1), cf = c + dc * (w.length - 1);
+          if (rf < 0 || rf >= N || cf < 0 || cf >= N) continue;
+          if ([...w].every((ch, k) => { const x = M[r + dr * k][c + dc * k]; return !x || x === ch; })) {
+            [...w].forEach((ch, k) => { M[r + dr * k][c + dc * k] = ch; }); sol.push([w, r, c, dr, dc]); puesto = true;
+          }
+        }
+        if (!puesto) { ok = false; break; }
+      }
+      if (!ok) continue;
+      const ABC = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
+      const celdas = M.map((fila, r) => fila.map((x, c) => `<button type="button" class="letra" data-r="${r}" data-c="${c}" aria-label="Fila ${r + 1}, columna ${c + 1}: ${x || '·'}">${x || ABC[Math.floor(azar() * ABC.length)]}</button>`).join('')).join('');
+      return `<figure class="herramienta sopa" data-sol='${esc(JSON.stringify(sol))}'>${titulo ? `<p class="consigna">${esc(titulo)}</p>` : ''}
+        <p class="nota">Toca la primera y la última letra de cada palabra.${g > 5 ? ' Pueden estar al revés o en diagonal.' : g > 2 ? ' Pueden estar en diagonal.' : ''}</p>
+        <div class="rejilla" style="grid-template-columns:repeat(${N},1fr)">${celdas}</div>
+        <ul class="palabras">${palabras.map(w => `<li data-w="${w}">${w}</li>`).join('')}</ul>
+        <button type="button" class="ver-solucion">Ver solución</button></figure>`;
+    }
+    return '';
+  }
+
+  // [[crucigrama Título | SOLIDO: tiene forma propia ; LIQUIDO: toma la forma del recipiente]]
+  function dibujarCrucigrama(args) {
+    const [titulo, resto] = tituloYResto(args);
+    let entradas = resto.split(';').map(e => { const i = e.indexOf(':'); return i < 0 ? null : { w: MAYUS(e.slice(0, i)), pista: limpiar(e.slice(i + 1)) }; })
+      .filter(e => e && e.w.length >= 2 && e.w.length <= 15 && e.pista).slice(0, 12);
+    entradas = entradas.filter((e, i) => entradas.findIndex(x => x.w === e.w) === i).sort((a, b) => b.w.length - a.w.length);
+    if (entradas.length < 2) return '';
+    const G = new Map(), K = (r, c) => r + ',' + c, colocadas = [];
+    const poner = (e, r, c, h) => { [...e.w].forEach((ch, k) => G.set(K(r + (h ? 0 : k), c + (h ? k : 0)), ch)); colocadas.push({ ...e, r, c, h }); };
+    const valida = (w, r, c, h) => {
+      const dr = h ? 0 : 1, dc = h ? 1 : 0;
+      if (G.has(K(r - dr, c - dc)) || G.has(K(r + dr * w.length, c + dc * w.length))) return -1;
+      let cruces = 0;
+      for (let k = 0; k < w.length; k++) {
+        const rr = r + dr * k, cc = c + dc * k, x = G.get(K(rr, cc));
+        if (x) { if (x !== w[k]) return -1; cruces++; continue; }
+        if (G.has(K(rr + dc, cc + dr)) || G.has(K(rr - dc, cc - dr))) return -1;   // vecinos paralelos
+      }
+      return cruces;
+    };
+    poner(entradas[0], 0, 0, true);
+    const sobrantes = [];
+    for (const e of entradas.slice(1)) {
+      let mejor = null;
+      for (const p of colocadas) for (let i = 0; i < p.w.length; i++) for (let j = 0; j < e.w.length; j++) {
+        if (p.w[i] !== e.w[j]) continue;
+        const h = !p.h, r = p.h ? p.r - j : p.r + i, c = p.h ? p.c + i : p.c - j;
+        const s = valida(e.w, r, c, h);
+        if (s > 0 && (!mejor || s > mejor.s)) mejor = { r, c, h, s };
+      }
+      if (mejor) poner(e, mejor.r, mejor.c, mejor.h); else sobrantes.push(e);
+    }
+    const rs = [...G.keys()].map(k => +k.split(',')[0]), cs = [...G.keys()].map(k => +k.split(',')[1]);
+    const r0 = Math.min(...rs), c0 = Math.min(...cs), filas = Math.max(...rs) - r0 + 1, cols = Math.max(...cs) - c0 + 1;
+    const inicios = [...new Set(colocadas.map(p => K(p.r, p.c)))].sort((a, b) => { const [ra, ca] = a.split(',').map(Number), [rb, cb] = b.split(',').map(Number); return ra - rb || ca - cb; });
+    const numero = k => inicios.indexOf(k) + 1;
+    let html = '';
+    for (let r = r0; r < r0 + filas; r++) for (let c = c0; c < c0 + cols; c++) {
+      const ch = G.get(K(r, c));
+      html += ch ? `<span class="casilla">${inicios.includes(K(r, c)) ? `<small>${numero(K(r, c))}</small>` : ''}<input maxlength="1" data-ok="${ch}" aria-label="Casilla fila ${r - r0 + 1} columna ${c - c0 + 1}" autocomplete="off" autocapitalize="characters"></span>` : '<span class="vacia"></span>';
+    }
+    const pistas = h => colocadas.filter(p => p.h === h).sort((a, b) => numero(K(a.r, a.c)) - numero(K(b.r, b.c)))
+      .map(p => `<li><b>${numero(K(p.r, p.c))}.</b> ${esc(p.pista)} <span class="largo">(${p.w.length})</span></li>`).join('');
+    return `<figure class="herramienta crucigrama">${titulo ? `<p class="consigna">${esc(titulo)}</p>` : ''}
+      <div class="marco-cruci"><div class="rejilla-cruci" style="grid-template-columns:repeat(${cols},1fr); width:min(100%, ${(cols * 2.4).toFixed(1)}em)">${html}</div></div>
+      <div class="pistas"><div><p class="etq">Horizontales</p><ol>${pistas(true)}</ol></div><div><p class="etq">Verticales</p><ol>${pistas(false)}</ol></div></div>
+      ${sobrantes.length ? `<p class="nota">Palabras extra para pensar: ${sobrantes.map(e => esc(e.pista) + ' (' + e.w.length + ' letras)').join('; ')}.</p>` : ''}
+      <button type="button" class="comprobar-cruci">Comprobar</button> <button type="button" class="ver-solucion">Ver solución</button></figure>`;
+  }
+
+  // [[subrayar El colibrí bate sus alas muy rápido. Vive en el Valle del Cauca.]]  (¶ separa párrafos)
+  function dibujarSubrayar(args) {
+    const parrafos = String(args).split('¶').map(p => p.trim()).filter(Boolean);
+    const oraciones = p => (p.match(/[^.!?…]+(?:[.!?…]+["»”')]*|$)/g) || []).map(o => o.trim()).filter(o => o.length > 1);
+    const html = parrafos.map(p => `<p>${oraciones(p).map(o => `<button type="button" class="opcion oracion" data-enviar="${esc('La oración que responde es: «' + o + '»')}">${esc(o)}</button>`).join(' ')}</p>`).join('');
+    return html ? `<figure class="herramienta subrayar"><p class="nota">Toca la oración que responde la pregunta.</p>${html}</figure>` : '';
+  }
+
+  // [[ficha dinero 3]] → generador infinito de fichas de matemáticas
+  const TIPOS_FICHA = { calculo: 'Cálculo a medida', problemas: 'Problemas cotidianos', series: 'Series y patrones', geometria: 'Geometría visual', dinero: 'Dinero y cambio', error: 'Encuentra el error' };
+  function dibujarFicha(args) {
+    const [t = '', gr = ''] = String(args).trim().split(/\s+/);
+    const tipo = MAYUS(t).toLowerCase();   // sin tildes: geometría → geometria
+    if (!TIPOS_FICHA[tipo]) return '';
+    const g = /transi/i.test(gr || '') ? 0 : Math.min(11, Math.max(0, parseInt(gr, 10) || gradoPerfil()));
+    return `<p class="herramienta ficha"><a href="fichas.html?tipo=${tipo}&grado=${g}" target="_blank" rel="noopener">Abrir ficha imprimible: ${TIPOS_FICHA[tipo]} · ${g ? g + '°' : 'Transición'}</a><span class="nota">Cada vez que pidas una nueva, sale distinta, con su clave de respuestas.</span></p>`;
+  }
+
+  // [[experimento g3-materia-01]] → tarjeta oficial del banco auditado
+  let bancoExperimentos = null;
+  async function llenarExperimento(div) {
+    try {
+      bancoExperimentos ||= fetch('data/experimentos.json').then(r => r.ok ? r.json() : null);
+      const d = await bancoExperimentos, e = d?.experimentos?.find(x => x.id === div.dataset.exp);
+      if (!e) { div.remove(); return; }
+      const ejes = d.ejes || {}, nivel = e.seguridad?.nivel || 'libre';
+      const aviso = nivel === 'libre' ? '' : `<p class="seguridad-exp"><b>${nivel === 'docente' ? 'Solo lo hace el docente' : 'Con supervisión de un adulto'}.</b> ${esc(e.seguridad?.nota || '')}</p>`;
+      const lista = (arr, tag) => `<${tag}>${(arr || []).map(x => `<li data-seg>${esc(x)}</li>`).join('')}</${tag}>`;
+      div.innerHTML = `<p class="etq">${esc(ejes[e.eje] || e.eje)} · ${e.grado ? e.grado + '°' : 'Transición'}${e.duracion_min ? ' · ' + e.duracion_min + ' min' : ''}</p>
+        <p class="exp-titulo">${esc(e.titulo)}</p><p data-seg><b>Pregunta:</b> ${esc(e.pregunta)}</p>${aviso}
+        <p data-seg><b>Antes de empezar, predice:</b> ${esc(e.prediccion)}</p>
+        <p class="etq">Materiales</p>${lista(e.materiales, 'ul')}<p class="etq">Pasos</p>${lista(e.pasos, 'ol')}
+        <p data-seg><b>Observa:</b> ${esc(e.observa)}</p>
+        <details><summary>¿Por qué pasa? Ábrelo después de observar</summary><p>${esc(e.explicacion)}</p>${e.error_comun ? `<p><b>Idea equivocada frecuente:</b> ${esc(e.error_comun)}</p>` : ''}</details>
+        ${e.variable ? `<p data-seg><b>Reto de científico:</b> ${esc(e.variable)}</p>` : ''}
+        <a href="experimentos.html?id=${encodeURIComponent(e.id)}" target="_blank" rel="noopener">Ficha imprimible</a>`;
+    } catch (err) { console.error('Experimento no disponible', err); div.remove(); }
+  }
+
+  // Interacción de sopa de letras y crucigrama
+  let inicioSopa = null;
+  document.getElementById('hilo').addEventListener('click', e => {
+    const fig = e.target.closest('.herramienta.sopa, .herramienta.crucigrama'); if (!fig) return;
+    if (fig.classList.contains('sopa')) {
+      const sol = JSON.parse(fig.dataset.sol || '[]');
+      const marcar = ([w, r, c, dr, dc]) => { for (let k = 0; k < w.length; k++) fig.querySelector(`.letra[data-r="${r + dr * k}"][data-c="${c + dc * k}"]`)?.classList.add('hallada'); fig.querySelector(`li[data-w="${w}"]`)?.classList.add('hallada'); };
+      if (e.target.closest('.ver-solucion')) { sol.forEach(marcar); return; }
+      const b = e.target.closest('.letra'); if (!b) return;
+      if (!inicioSopa || !fig.contains(inicioSopa)) { fig.querySelectorAll('.letra.elegida').forEach(x => x.classList.remove('elegida')); inicioSopa = b; b.classList.add('elegida'); return; }
+      const [r1, c1, r2, c2] = [+inicioSopa.dataset.r, +inicioSopa.dataset.c, +b.dataset.r, +b.dataset.c];
+      inicioSopa.classList.remove('elegida'); inicioSopa = null;
+      const hit = sol.find(([w, r, c, dr, dc]) => { const rf = r + dr * (w.length - 1), cf = c + dc * (w.length - 1); return (r === r1 && c === c1 && rf === r2 && cf === c2) || (r === r2 && c === c2 && rf === r1 && cf === c1); });
+      if (hit) { marcar(hit); if (fig.querySelectorAll('li.hallada').length === sol.length) fig.querySelector('.ver-solucion').textContent = '¡Encontraste todas!'; }
+      else { b.classList.add('fallo'); setTimeout(() => b.classList.remove('fallo'), 500); }
+      return;
+    }
+    const inputs = [...fig.querySelectorAll('input[data-ok]')];
+    if (e.target.closest('.ver-solucion')) inputs.forEach(i => { i.value = i.dataset.ok; i.classList.remove('mal'); i.classList.add('bien'); });
+    if (e.target.closest('.comprobar-cruci')) {
+      let bien = 0;
+      inputs.forEach(i => { const ok = MAYUS(i.value) === i.dataset.ok; i.classList.toggle('bien', ok); i.classList.toggle('mal', !!i.value && !ok); bien += ok; });
+      e.target.textContent = bien === inputs.length ? '¡Crucigrama completo!' : `Comprobar (${bien} de ${inputs.length} letras bien)`;
+    }
+  });
+  document.getElementById('hilo').addEventListener('click', e => {
+    const b = e.target.closest('.subrayar .oracion'); if (!b || b.disabled) return;
+    b.closest('.subrayar').querySelectorAll('.oracion').forEach(x => x.disabled = true);
+    b.classList.add('elegida');
+    enviarTexto(b.dataset.enviar);
+  });
+  document.getElementById('hilo').addEventListener('input', e => {   // el crucigrama avanza solo a la siguiente casilla
+    const i = e.target.closest('.crucigrama input'); if (!i || !i.value) return;
+    i.value = MAYUS(i.value).slice(-1);
+    const todas = [...i.closest('.crucigrama').querySelectorAll('input')], k = todas.indexOf(i);
+    todas[k + 1]?.focus();
+  });
+
+  // ---------- Menú de comandos (fuente única: /api/comandos) ----------
+  const COMANDOS_BASE = { 'Ayudas didácticas': [['/worksheet', 'Ficha de trabajo imprimible'], ['/escape', 'Escape room educativo'], ['/detective', 'Caso de detectives'], ['/puzzle', 'Sopa de letras o crucigrama'], ['/boardgame', 'Juego de mesa'], ['/stations', 'Estaciones de aprendizaje'], ['/manipulative', 'Material manipulativo'], ['/comic', 'Historieta'], ['/lapbook', 'Lapbook'], ['/minibook', 'Minilibro de 8 páginas']],
+    'Por área': [['/experimento', 'Experimento guiado (Ciencias)'], ['/lectura', 'Taller de lectura comprensiva']] };
+  let menuCargado = false;
+  async function cargarMenu() {
+    if (menuCargado) return; menuCargado = true;
+    let grupos = Object.fromEntries(Object.entries(COMANDOS_BASE).map(([g, l]) => [g, l.map(([comando, titulo]) => ({ comando, titulo }))]));
+    try { const r = await fetch('/api/comandos'); if (r.ok) { const d = await r.json(); if (d.grupos) grupos = d.grupos; } } catch (e) {}
+    const abiertos = ['Ayudas didácticas', 'Por área'];
+    document.getElementById('lista-comandos').innerHTML = Object.entries(grupos).map(([g, l]) =>
+      `<details${abiertos.includes(g) ? ' open' : ''}><summary>${esc(g)}</summary><div class="chips-comandos">${l.map(c => `<button type="button" data-cmd="${esc(c.comando)}"><b>${esc(c.comando)}</b> ${esc(c.titulo)}</button>`).join('')}</div></details>`).join('');
+  }
+  const btnComandos = document.getElementById('btn-comandos'), panelComandos = document.getElementById('panel-comandos');
+  btnComandos.addEventListener('click', () => { const abrir = panelComandos.hidden; panelComandos.hidden = !abrir; btnComandos.setAttribute('aria-expanded', abrir); if (abrir) cargarMenu(); });
+  panelComandos.addEventListener('click', e => {
+    const b = e.target.closest('[data-cmd]'); if (!b) return;
+    const caja = document.getElementById('input');
+    caja.value = b.dataset.cmd + ' ' + caja.value.replace(/^\/\S+\s*/, '');
+    panelComandos.hidden = true; btnComandos.setAttribute('aria-expanded', 'false');
+    caja.focus(); caja.setSelectionRange(caja.value.length, caja.value.length);
+  });
 
   // Envíos desde las herramientas (argumento y seguridad)
   document.getElementById('hilo').addEventListener('submit', e => {
@@ -1428,6 +1678,7 @@
       + (proxima ? `<div class="proxima">Para la próxima vez: ${enLinea(proxima)}</div>` : '');
     div.insertAdjacentHTML('beforeend', '<button type="button" class="leer">Escuchar en voz alta</button>');
     hilo.appendChild(div);
+    div.querySelectorAll('[data-exp]').forEach(llenarExperimento);
     if (window.renderMathInElement) {
       try { renderMathInElement(div, { delimiters: [{ left: '\\[', right: '\\]', display: true }, { left: '\\(', right: '\\)', display: false }], throwOnError: false }); } catch {}
     }
