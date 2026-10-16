@@ -1,0 +1,1998 @@
+[
+  {
+    "id": "g02-e001",
+    "grado": 2,
+    "eje": "materia-cambios",
+    "titulo": "¿Dónde se derrite primero el hielo: al sol o a la sombra?",
+    "gancho": "En Cali hace tanto calor que el raspao se derrite rapidísimo. ¿Será culpa del sol?",
+    "dba": "Comprende que las sustancias pueden encontrarse en distintos estados (sólido, líquido y gaseoso) y que sus propiedades se pueden observar, comparar y cambiar, por ejemplo con la temperatura.",
+    "prediccion": "¿Cuál cubo de hielo crees que se derrite primero: el del sol o el de la sombra?",
+    "materiales": [
+      "2 cubos de hielo del mismo tamaño",
+      "2 platos iguales",
+      "reloj o cronómetro",
+      "hoja para anotar"
+    ],
+    "pasos": [
+      "Pon un cubo de hielo en cada plato.",
+      "Deja un plato al sol y el otro a la sombra.",
+      "Mira los platos cada 5 minutos.",
+      "Anota cuál cubo se va volviendo agua más rápido.",
+      "Compara tu predicción con lo que pasó."
+    ],
+    "seguridad": "No mires directamente al sol. Usa gorra si sales al patio y lávate las manos al terminar.",
+    "adulto": false,
+    "que_pasa": "El hielo es agua en estado sólido. Cuando recibe calor, se derrite y pasa a estado líquido. Al sol el hielo recibe más calor que a la sombra, por eso se derrite primero.",
+    "concepto": "Fusión (de sólido a líquido)",
+    "vocabulario": [
+      "sólido",
+      "líquido",
+      "derretir",
+      "calor"
+    ],
+    "preguntas": [
+      "¿Qué cubo se derritió primero?",
+      "¿Por qué crees que el cubo de la sombra tardó más?",
+      "¿Dónde guardarías tu bolis o paleta en un paseo al río Pance para que no se derrita?"
+    ],
+    "reto": "Repite con dos cubos al sol, pero uno sobre plato negro y otro sobre plato blanco. Solo cambia el color del plato.",
+    "minutos": 30
+  },
+  {
+    "id": "g02-e002",
+    "grado": 2,
+    "eje": "materia-cambios",
+    "titulo": "¿Dónde se seca más rápido la ropa?",
+    "gancho": "En casa tendemos la ropa en la terraza o en el patio. ¿Por qué unas veces se seca rápido y otras no?",
+    "dba": "Comprende que las sustancias pueden encontrarse en distintos estados (sólido, líquido y gaseoso) y que sus propiedades se pueden observar, comparar y cambiar, por ejemplo con la temperatura.",
+    "prediccion": "¿Qué trapo mojado crees que se seca primero: el del sol o el de la sombra?",
+    "materiales": [
+      "2 trapitos iguales",
+      "agua",
+      "2 ganchos de ropa",
+      "cuerda o espaldar de silla"
+    ],
+    "pasos": [
+      "Moja los dos trapitos y escúrrelos igual.",
+      "Cuelga uno al sol y otro a la sombra.",
+      "Tócalos cada 10 minutos para sentir si siguen húmedos.",
+      "Anota cuál se secó primero."
+    ],
+    "seguridad": "Seca el agua que caiga al piso para que nadie se resbale.",
+    "adulto": false,
+    "que_pasa": "El agua del trapo no desaparece: se convierte en vapor de agua, que es un gas invisible, y se va al aire. A esto se le llama evaporación. Con más calor y viento el agua se evapora más rápido.",
+    "concepto": "Evaporación",
+    "vocabulario": [
+      "evaporación",
+      "vapor",
+      "gas",
+      "húmedo"
+    ],
+    "preguntas": [
+      "¿Qué trapo se secó primero?",
+      "¿A dónde se fue el agua del trapo?",
+      "¿Por qué en temporada de lluvias la ropa tarda más en secarse en Cali?"
+    ],
+    "reto": "Cuelga los dos trapitos al sol, pero uno extendido y otro doblado en cuatro. Solo cambia la forma de colgarlo.",
+    "minutos": 40
+  },
+  {
+    "id": "g02-e003",
+    "grado": 2,
+    "eje": "materia-cambios",
+    "titulo": "El aire sí ocupa espacio",
+    "gancho": "Cuando inflamos una bomba para un cumpleaños, se pone grande. ¿Qué hay adentro si no vemos nada?",
+    "dba": "Comprende que las sustancias pueden encontrarse en distintos estados (sólido, líquido y gaseoso) y que sus propiedades se pueden observar, comparar y cambiar, por ejemplo con la temperatura.",
+    "prediccion": "Si metes una bolsa vacía y abierta, la mueves en el aire y la cierras rápido, ¿quedará plana o inflada?",
+    "materiales": [
+      "bolsa plástica de cierre hermético",
+      "globo",
+      "hoja para anotar"
+    ],
+    "pasos": [
+      "Abre la bolsa y muévela en el aire para atrapar aire.",
+      "Ciérrala rápido.",
+      "Aprieta la bolsa con suavidad: ¿qué sientes?",
+      "Infla un globo y observa cómo crece.",
+      "Dibuja qué crees que hay dentro de la bolsa y del globo."
+    ],
+    "seguridad": "Nunca te pongas bolsas en la cabeza ni en la boca. Si el globo se revienta, guarda los pedacitos en la basura: pueden ahogar a niños pequeños.",
+    "adulto": false,
+    "que_pasa": "El aire es materia en estado gaseoso. Aunque no lo vemos, ocupa espacio y por eso la bolsa y el globo se inflan. Cuando apretamos la bolsa sentimos que el aire empuja hacia afuera.",
+    "concepto": "El aire es materia (gas)",
+    "vocabulario": [
+      "aire",
+      "gas",
+      "materia",
+      "ocupar espacio"
+    ],
+    "preguntas": [
+      "¿Qué había dentro de la bolsa cerrada?",
+      "¿Por qué la bolsa no se aplasta del todo cuando la aprietas?",
+      "¿Qué tiene adentro una llanta de bicicleta?"
+    ],
+    "reto": "Atrapa aire en una bolsa pequeña y en una grande. Solo cambia el tamaño de la bolsa y compara cuál se siente más llena de aire.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e004",
+    "grado": 2,
+    "eje": "materia-cambios",
+    "titulo": "La servilleta que no se moja",
+    "gancho": "Los buzos que bajan en el mar de San Andrés usan aire. ¿Puede el aire proteger algo del agua?",
+    "dba": "Comprende que las sustancias pueden encontrarse en distintos estados (sólido, líquido y gaseoso) y que sus propiedades se pueden observar, comparar y cambiar, por ejemplo con la temperatura.",
+    "prediccion": "Si metes un vaso boca abajo con una servilleta pegada al fondo dentro de agua, ¿la servilleta se mojará?",
+    "materiales": [
+      "vaso transparente",
+      "servilleta de papel",
+      "recipiente hondo con agua",
+      "toalla"
+    ],
+    "pasos": [
+      "Arruga la servilleta y pégala bien al fondo del vaso.",
+      "Voltea el vaso boca abajo.",
+      "Húndelo derecho en el agua sin inclinarlo.",
+      "Cuenta hasta 5 y sácalo derecho.",
+      "Toca la servilleta."
+    ],
+    "seguridad": "Trabaja sobre una mesa con toalla. Seca el piso si se moja.",
+    "adulto": false,
+    "que_pasa": "El vaso no estaba vacío: estaba lleno de aire. El aire ocupa espacio y no deja que el agua entre hasta el fondo, así que la servilleta queda seca. Si inclinas el vaso, el aire sale en burbujas y el agua entra.",
+    "concepto": "El aire ocupa espacio",
+    "vocabulario": [
+      "aire",
+      "burbuja",
+      "espacio",
+      "presión"
+    ],
+    "preguntas": [
+      "¿La servilleta salió seca o mojada?",
+      "¿Qué pasaría si inclinas el vaso dentro del agua? Explica.",
+      "¿Por qué al hundir una botella vacía salen burbujas?"
+    ],
+    "reto": "Haz lo mismo, pero inclinando el vaso dentro del agua. Solo cambia la inclinación del vaso.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e005",
+    "grado": 2,
+    "eje": "materia-cambios",
+    "titulo": "El agua cambia de forma",
+    "gancho": "Cuando sirves jugo de lulo en vaso, en jarra o en bolsa, el jugo toma una forma distinta. ¿Pasa lo mismo con un borrador?",
+    "dba": "Comprende que las sustancias pueden encontrarse en distintos estados (sólido, líquido y gaseoso) y que sus propiedades se pueden observar, comparar y cambiar, por ejemplo con la temperatura.",
+    "prediccion": "¿La misma cantidad de agua se verá igual en un vaso alto que en un plato?",
+    "materiales": [
+      "vaso alto",
+      "plato hondo",
+      "frasco",
+      "taza medidora",
+      "agua con un poco de colorante de comida",
+      "borrador"
+    ],
+    "pasos": [
+      "Mide una taza de agua.",
+      "Pásala al vaso alto y dibuja su forma.",
+      "Pásala al plato hondo y dibuja su forma.",
+      "Pásala al frasco y dibuja su forma.",
+      "Ahora pon el borrador en cada recipiente y mira si cambia su forma."
+    ],
+    "seguridad": "Usa recipientes plásticos si es posible. No tomes el agua con colorante.",
+    "adulto": false,
+    "que_pasa": "Los líquidos, como el agua, toman la forma del recipiente que los contiene, pero la cantidad de agua sigue siendo la misma. Los sólidos, como el borrador, mantienen su propia forma.",
+    "concepto": "Propiedades de sólidos y líquidos",
+    "vocabulario": [
+      "líquido",
+      "sólido",
+      "forma",
+      "recipiente"
+    ],
+    "preguntas": [
+      "¿Cambió la forma del agua en cada recipiente?",
+      "¿Si la forma cambió, cambió también la cantidad de agua? ¿Cómo lo sabes?",
+      "¿Por qué la leche se vende en bolsa o en caja?"
+    ],
+    "reto": "Repite con arena seca en vez de agua. Solo cambia el material y observa si toma la forma del recipiente.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e006",
+    "grado": 2,
+    "eje": "materia-cambios",
+    "titulo": "Paletas de jugo de mango",
+    "gancho": "Las paletas que venden en el parque son jugo que se volvió sólido. ¿Cómo pasa eso?",
+    "dba": "Comprende que las sustancias pueden encontrarse en distintos estados (sólido, líquido y gaseoso) y que sus propiedades se pueden observar, comparar y cambiar, por ejemplo con la temperatura.",
+    "prediccion": "¿Cuánto tiempo crees que tarda el jugo en ponerse duro en el congelador?",
+    "materiales": [
+      "jugo de fruta (mango, lulo o maracuyá)",
+      "vasitos plásticos",
+      "palitos de paleta",
+      "congelador"
+    ],
+    "pasos": [
+      "Toca el jugo y describe cómo es: ¿se mueve, toma forma del vaso?",
+      "Sirve el jugo en vasitos hasta la mitad.",
+      "Pon un palito en cada vaso.",
+      "Con un adulto, mete los vasos en el congelador.",
+      "Revisa cada hora y anota cómo cambia.",
+      "Saca una paleta y déjala al aire: observa qué pasa."
+    ],
+    "seguridad": "Un adulto abre y cierra el congelador. No muerdas hielo muy duro ni toques el hielo con la lengua. Si quieren comer la paleta, debe ser jugo preparado higiénicamente por el adulto como alimento, no material del experimento.",
+    "adulto": true,
+    "que_pasa": "El frío del congelador le quita calor al jugo y el líquido se vuelve sólido: eso se llama solidificación o congelación. Al sacarlo, el calor del ambiente lo vuelve a derretir. Es un cambio que se puede devolver.",
+    "concepto": "Solidificación y fusión",
+    "vocabulario": [
+      "congelar",
+      "solidificación",
+      "frío",
+      "derretir"
+    ],
+    "preguntas": [
+      "¿En qué estado estaba el jugo al principio y al final?",
+      "¿Por qué la paleta se derrite al sacarla?",
+      "¿Por qué los vendedores de paletas usan neveras de icopor?"
+    ],
+    "reto": "Prepara dos vasitos: uno lleno y otro con poquito jugo. Solo cambia la cantidad y compara cuál se congela primero.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e007",
+    "grado": 2,
+    "eje": "materia-cambios",
+    "titulo": "Gotitas que aparecen solas",
+    "gancho": "Cuando te sirven una limonada con hielo, el vaso se 'suda' por fuera. ¿Se sale el agua del vaso?",
+    "dba": "Comprende que las sustancias pueden encontrarse en distintos estados (sólido, líquido y gaseoso) y que sus propiedades se pueden observar, comparar y cambiar, por ejemplo con la temperatura.",
+    "prediccion": "¿Las gotas de afuera del vaso vienen de adentro del vaso o del aire?",
+    "materiales": [
+      "2 vasos de vidrio o plástico duro iguales",
+      "cubos de hielo",
+      "agua con colorante de comida",
+      "servilleta"
+    ],
+    "pasos": [
+      "Seca muy bien los dos vasos por fuera.",
+      "Llena uno con agua y hielo, con unas gotas de colorante.",
+      "Llena el otro con agua de la llave, sin hielo.",
+      "Espera 10 minutos.",
+      "Pasa una servilleta blanca por fuera de cada vaso.",
+      "Mira si las gotas tienen color o no."
+    ],
+    "seguridad": "Si el vaso es de vidrio, manipúlalo con cuidado y sobre la mesa.",
+    "adulto": false,
+    "que_pasa": "El aire tiene vapor de agua que no vemos. Cuando el vapor toca el vaso frío, se enfría y se convierte en gotitas de agua líquida: eso es condensación. Las gotas no tienen colorante, así que no vienen de adentro del vaso.",
+    "concepto": "Condensación",
+    "vocabulario": [
+      "condensación",
+      "vapor de agua",
+      "frío",
+      "gotas"
+    ],
+    "preguntas": [
+      "¿En cuál vaso aparecieron gotas por fuera?",
+      "¿Por qué las gotas no tenían color?",
+      "¿Por qué se empañan las ventanas del bus cuando llueve?"
+    ],
+    "reto": "Repite con un vaso con poco hielo y otro con mucho hielo. Solo cambia la cantidad de hielo y mira en cuál aparecen más gotas.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e008",
+    "grado": 2,
+    "eje": "materia-cambios",
+    "titulo": "¿Flota o se hunde?",
+    "gancho": "En el río Pance algunas hojas viajan flotando y las piedras se quedan en el fondo. ¿Cómo saber qué flotará?",
+    "dba": "Comprende que las sustancias pueden encontrarse en distintos estados (sólido, líquido y gaseoso) y que sus propiedades se pueden observar, comparar y cambiar, por ejemplo con la temperatura.",
+    "prediccion": "Antes de meterlos al agua, separa los objetos en dos grupos: 'flota' y 'se hunde'.",
+    "materiales": [
+      "recipiente grande con agua",
+      "corcho",
+      "tapa plástica",
+      "piedra pequeña",
+      "clip",
+      "borrador",
+      "palito de madera",
+      "canica"
+    ],
+    "pasos": [
+      "Pon los objetos en la mesa y haz tu predicción en una tabla.",
+      "Mete uno por uno en el agua con suavidad.",
+      "Anota si flotó o se hundió.",
+      "Compara con tu predicción.",
+      "Busca qué tienen en común los que flotaron."
+    ],
+    "seguridad": "No te lleves canicas ni piezas pequeñas a la boca. Seca el agua derramada.",
+    "adulto": false,
+    "que_pasa": "Algunos objetos flotan porque son livianos para su tamaño, como el corcho y la madera; el agua los empuja hacia arriba lo suficiente para sostenerlos. Otros, como la piedra y la canica, son pesados para su tamaño y se hunden. No depende solo de si el objeto es grande o pequeño.",
+    "concepto": "Flotación",
+    "vocabulario": [
+      "flotar",
+      "hundir",
+      "liviano",
+      "pesado"
+    ],
+    "preguntas": [
+      "¿Cuáles objetos flotaron?",
+      "¿Por qué un palito largo flota y una canica pequeña se hunde?",
+      "¿De qué material harías una balsa para cruzar un río?"
+    ],
+    "reto": "Toma una bola de plastilina y mira si se hunde. Luego dale forma de barquito con la misma plastilina. Solo cambia la forma.",
+    "minutos": 25
+  },
+  {
+    "id": "g02-e009",
+    "grado": 2,
+    "eje": "materia-cambios",
+    "titulo": "¿Qué material chupa más agua?",
+    "gancho": "Cuando se riega el jugo en la mesa, buscamos un trapo y no una bolsa plástica. ¿Por qué?",
+    "dba": "Comprende que las sustancias pueden encontrarse en distintos estados (sólido, líquido y gaseoso) y que sus propiedades se pueden observar, comparar y cambiar, por ejemplo con la temperatura.",
+    "prediccion": "¿Cuál material crees que recoge más agua: esponja, papel, tela o plástico?",
+    "materiales": [
+      "esponja",
+      "servilleta de papel",
+      "trozo de tela de algodón",
+      "trozo de bolsa plástica",
+      "4 platos",
+      "cuchara",
+      "agua"
+    ],
+    "pasos": [
+      "Pon 5 cucharadas de agua en cada plato.",
+      "Pon un material diferente en cada plato y cuenta hasta 10.",
+      "Levanta cada material y escúrrelo en un vaso.",
+      "Compara cuánta agua quedó en cada plato.",
+      "Ordena los materiales del que más absorbe al que menos."
+    ],
+    "seguridad": "Trabaja sobre una mesa que se pueda mojar y recoge el plástico al final.",
+    "adulto": false,
+    "que_pasa": "La esponja, el papel y la tela tienen huequitos y fibras donde el agua se mete: decimos que absorben. El plástico no tiene esos espacios y el agua no puede entrar, por eso es impermeable.",
+    "concepto": "Absorción e impermeabilidad",
+    "vocabulario": [
+      "absorber",
+      "impermeable",
+      "material",
+      "fibra"
+    ],
+    "preguntas": [
+      "¿Cuál material recogió más agua?",
+      "¿Por qué el plástico no recogió agua?",
+      "¿De qué material debe ser una capa para la lluvia y por qué?"
+    ],
+    "reto": "Repite solo con servilletas: una de una hoja y otra de doble hoja. Solo cambia el grosor.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e010",
+    "grado": 2,
+    "eje": "fuerza-movimiento",
+    "titulo": "Empujo, estiro, aplasto: la plastilina cambia",
+    "gancho": "Las artesanas de Ráquira moldean el barro con las manos. ¿Qué le hacen nuestras manos a un material?",
+    "dba": "Comprende que una acción mecánica (fuerza) puede producir distintas deformaciones en un objeto y cambios en su movimiento, y que estos efectos dependen del material y de la superficie.",
+    "prediccion": "¿Qué forma tendrá la bola de plastilina si la aplastas, si la estiras y si la enrollas?",
+    "materiales": [
+      "plastilina",
+      "tabla o mantel",
+      "regla"
+    ],
+    "pasos": [
+      "Haz tres bolas de plastilina del mismo tamaño.",
+      "Aplasta la primera con la palma.",
+      "Estira la segunda halando de los lados.",
+      "Enrolla la tercera como un gusanito.",
+      "Mide y dibuja cómo quedó cada una.",
+      "Escribe qué fuerza usaste en cada caso: empujar o halar."
+    ],
+    "seguridad": "Lávate las manos al terminar. No te lleves plastilina a la boca.",
+    "adulto": false,
+    "que_pasa": "Una fuerza es un empujón o un halón. Cuando aplicamos una fuerza a la plastilina, cambia de forma: se deforma. La plastilina queda deformada aunque la soltemos, porque no regresa a su forma inicial.",
+    "concepto": "Fuerza y deformación",
+    "vocabulario": [
+      "fuerza",
+      "empujar",
+      "halar",
+      "deformar"
+    ],
+    "preguntas": [
+      "¿Qué le pasó a cada bola?",
+      "¿Por qué la plastilina no volvió a ser bola?",
+      "¿Qué fuerzas usas cuando amasas arepas?"
+    ],
+    "reto": "Aplasta dos bolas iguales: una con un dedo y otra con la palma. Solo cambia la parte de la mano que empuja.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e011",
+    "grado": 2,
+    "eje": "fuerza-movimiento",
+    "titulo": "Carritos en la rampa",
+    "gancho": "Las calles empinadas de San Antonio en Cali son famosas. ¿Por qué los carritos bajan más rápido por una loma?",
+    "dba": "Comprende que una acción mecánica (fuerza) puede producir distintas deformaciones en un objeto y cambios en su movimiento, y que estos efectos dependen del material y de la superficie.",
+    "prediccion": "¿Llegará más lejos el carrito si la rampa es más alta?",
+    "materiales": [
+      "carrito de juguete",
+      "tabla o cartón grueso",
+      "libros",
+      "cinta métrica",
+      "cinta de enmascarar"
+    ],
+    "pasos": [
+      "Apoya la tabla sobre 1 libro para hacer una rampa.",
+      "Suelta el carrito desde arriba, sin empujarlo.",
+      "Marca con cinta dónde se detiene y mide la distancia.",
+      "Ahora pon 2 libros y repite.",
+      "Luego 3 libros y repite.",
+      "Compara las distancias en una tabla."
+    ],
+    "seguridad": "Haz el experimento en el piso, lejos de escaleras y de donde camina la gente.",
+    "adulto": false,
+    "que_pasa": "La Tierra hala todo hacia abajo: esa fuerza se llama gravedad. Cuando la rampa es más alta, el carrito baja con más rapidez y llega más lejos antes de detenerse.",
+    "concepto": "Gravedad y rapidez",
+    "vocabulario": [
+      "rampa",
+      "gravedad",
+      "rapidez",
+      "distancia"
+    ],
+    "preguntas": [
+      "¿Con cuántos libros llegó más lejos el carrito?",
+      "¿Por qué no hace falta empujar el carrito para que baje?",
+      "¿Por qué los ciclistas van más rápido bajando del Alto de Chicoral?"
+    ],
+    "reto": "Deja la rampa en 2 libros y cambia solo el carrito por uno más pesado. Compara la distancia.",
+    "minutos": 25
+  },
+  {
+    "id": "g02-e012",
+    "grado": 2,
+    "eje": "fuerza-movimiento",
+    "titulo": "Superficies que frenan",
+    "gancho": "Patinar en el piso liso del centro comercial es fácil, pero en el pasto del parque no. ¿Qué frena?",
+    "dba": "Comprende que una acción mecánica (fuerza) puede producir distintas deformaciones en un objeto y cambios en su movimiento, y que estos efectos dependen del material y de la superficie.",
+    "prediccion": "¿En cuál superficie llegará más lejos el carrito: baldosa, tapete o toalla?",
+    "materiales": [
+      "carrito de juguete",
+      "rampa de cartón con 2 libros",
+      "toalla",
+      "tapete o alfombra",
+      "cinta métrica"
+    ],
+    "pasos": [
+      "Arma la rampa y pon la baldosa (piso liso) al final.",
+      "Suelta el carrito y mide hasta dónde llega.",
+      "Pon la toalla al final de la rampa y repite.",
+      "Pon el tapete y repite.",
+      "Ordena las superficies de la más lisa a la más áspera."
+    ],
+    "seguridad": "Trabaja en el piso, lejos del paso de otras personas.",
+    "adulto": false,
+    "que_pasa": "Cuando dos superficies se frotan aparece una fuerza que frena el movimiento: el rozamiento o fricción. Las superficies ásperas, como la toalla, frenan más que las lisas, como la baldosa.",
+    "concepto": "Fricción o rozamiento",
+    "vocabulario": [
+      "fricción",
+      "liso",
+      "áspero",
+      "frenar"
+    ],
+    "preguntas": [
+      "¿En cuál superficie llegó más lejos el carrito?",
+      "¿Por qué la toalla frenó más el carrito?",
+      "¿Por qué los zapatos de fútbol tienen tacos?"
+    ],
+    "reto": "Usa siempre la baldosa, pero cambia solo la altura de la rampa a 1 libro y 3 libros.",
+    "minutos": 25
+  },
+  {
+    "id": "g02-e013",
+    "grado": 2,
+    "eje": "fuerza-movimiento",
+    "titulo": "¿Qué atrae el imán?",
+    "gancho": "En la nevera de la casa pegamos imanes de recuerdo de Cartagena. ¿Por qué se pegan a la nevera y no a la pared?",
+    "dba": "Comprende que una acción mecánica (fuerza) puede producir distintas deformaciones en un objeto y cambios en su movimiento, y que estos efectos dependen del material y de la superficie.",
+    "prediccion": "Separa los objetos: ¿cuáles crees que se pegarán al imán?",
+    "materiales": [
+      "imán de nevera o imán escolar",
+      "clips",
+      "tapa metálica de gaseosa",
+      "lata de aluminio limpia",
+      "lápiz",
+      "borrador",
+      "papel",
+      "tornillo"
+    ],
+    "pasos": [
+      "Haz una tabla con dos columnas: 'lo atrae' y 'no lo atrae'.",
+      "Escribe tu predicción para cada objeto.",
+      "Acerca el imán a cada objeto.",
+      "Anota el resultado.",
+      "Compara: ¿todos los metales fueron atraídos?"
+    ],
+    "seguridad": "Mantén los imanes lejos de celulares y tarjetas. Los imanes pequeños nunca van a la boca: tragarlos es muy peligroso.",
+    "adulto": false,
+    "que_pasa": "Los imanes ejercen una fuerza que atrae a algunos metales, como el hierro y el acero de los clips, los tornillos y las tapas. No atraen papel, madera, plástico ni aluminio. Por eso no todo lo metálico se pega a un imán.",
+    "concepto": "Fuerza magnética",
+    "vocabulario": [
+      "imán",
+      "atraer",
+      "hierro",
+      "metal"
+    ],
+    "preguntas": [
+      "¿Qué objetos atrajo el imán?",
+      "¿Por qué la lata de aluminio no se pegó aunque es metal?",
+      "¿Cómo usarías un imán para recoger clips que se regaron?"
+    ],
+    "reto": "Pon una hoja de papel entre el imán y el clip, luego dos hojas, luego cinco. Solo cambia el número de hojas.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e014",
+    "grado": 2,
+    "eje": "fuerza-movimiento",
+    "titulo": "El globo cohete",
+    "gancho": "Los aviones que despegan del aeropuerto Alfonso Bonilla Aragón empujan aire hacia atrás. ¿Puede un globo hacer lo mismo?",
+    "dba": "Comprende que una acción mecánica (fuerza) puede producir distintas deformaciones en un objeto y cambios en su movimiento, y que estos efectos dependen del material y de la superficie.",
+    "prediccion": "Cuando sueltes el globo inflado sujeto al pitillo, ¿hacia dónde se moverá?",
+    "materiales": [
+      "globo",
+      "pitillo",
+      "pita o lana de 3 metros",
+      "cinta adhesiva",
+      "2 sillas"
+    ],
+    "pasos": [
+      "Pasa la pita por el pitillo y amarra cada punta a una silla, bien templada.",
+      "Infla el globo y aprieta la boquilla con los dedos, sin amarrarla.",
+      "Pega el globo al pitillo con cinta.",
+      "Lleva el globo a un extremo y suéltalo.",
+      "Mide hasta dónde llegó."
+    ],
+    "seguridad": "Cada niño usa su propio globo. Si se revienta, recoge los pedazos. Nadie se para en el camino de la pita.",
+    "adulto": false,
+    "que_pasa": "El aire sale del globo empujado hacia atrás y, al mismo tiempo, el aire empuja al globo hacia adelante. Toda acción tiene una reacción en sentido contrario, por eso el globo se mueve como un cohete.",
+    "concepto": "Acción y reacción",
+    "vocabulario": [
+      "empuje",
+      "reacción",
+      "aire",
+      "movimiento"
+    ],
+    "preguntas": [
+      "¿Hacia dónde salió el aire y hacia dónde se movió el globo?",
+      "¿Qué pasaría si el globo tuviera menos aire?",
+      "¿Por qué retrocede un bote cuando alguien salta de él a la orilla?"
+    ],
+    "reto": "Infla el globo con 5 soplos y luego con 10 soplos. Solo cambia la cantidad de aire.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e015",
+    "grado": 2,
+    "eje": "fuerza-movimiento",
+    "titulo": "La liga que se estira",
+    "gancho": "Las caucheras y los resortes de las camas se estiran y vuelven. ¿Qué tanto se estira una liga?",
+    "dba": "Comprende que una acción mecánica (fuerza) puede producir distintas deformaciones en un objeto y cambios en su movimiento, y que estos efectos dependen del material y de la superficie.",
+    "prediccion": "Si cuelgas más canicas de la liga, ¿se estirará más o menos?",
+    "materiales": [
+      "liga de caucho",
+      "vasito plástico con dos agujeros y un clip abierto como gancho",
+      "canicas o piedritas iguales",
+      "regla",
+      "lápiz atravesado entre dos libros"
+    ],
+    "pasos": [
+      "Cuelga la liga del lápiz y el vasito de la liga.",
+      "Mide el largo de la liga sin peso.",
+      "Pon 2 canicas y mide.",
+      "Pon 4 canicas y mide.",
+      "Pon 6 canicas y mide.",
+      "Saca las canicas y mira si la liga vuelve a su tamaño."
+    ],
+    "seguridad": "No estires la liga hacia la cara de nadie ni la uses para disparar. Usa canicas, no piezas que quepan en la boca de niños pequeños.",
+    "adulto": false,
+    "que_pasa": "El peso de las canicas hala la liga hacia abajo y la estira. Entre más peso, más se estira. Al quitar el peso, la liga vuelve casi a su forma: es un material elástico, distinto a la plastilina.",
+    "concepto": "Elasticidad",
+    "vocabulario": [
+      "elástico",
+      "estirar",
+      "peso",
+      "medir"
+    ],
+    "preguntas": [
+      "¿Cuánto se estiró la liga con 6 canicas?",
+      "¿Qué diferencia hay entre la liga y la plastilina?",
+      "¿Dónde ves materiales elásticos en tu ropa?"
+    ],
+    "reto": "Usa una liga gruesa y otra delgada con las mismas 4 canicas. Solo cambia el grosor de la liga.",
+    "minutos": 25
+  },
+  {
+    "id": "g02-e016",
+    "grado": 2,
+    "eje": "fuerza-movimiento",
+    "titulo": "Empujar o halar la caja",
+    "gancho": "Cuando ayudamos a mover el mercado o una caja de trasteo, unas veces empujamos y otras halamos. ¿Cuál es más fácil?",
+    "dba": "Comprende que una acción mecánica (fuerza) puede producir distintas deformaciones en un objeto y cambios en su movimiento, y que estos efectos dependen del material y de la superficie.",
+    "prediccion": "¿Qué será más fácil: mover la caja vacía o la caja con libros?",
+    "materiales": [
+      "caja de cartón",
+      "cuerda",
+      "libros",
+      "cinta de enmascarar"
+    ],
+    "pasos": [
+      "Marca una línea de salida y una de llegada en el piso.",
+      "Mueve la caja vacía empujándola y luego halándola con la cuerda.",
+      "Pon 3 libros dentro y repite.",
+      "Pon 6 libros y repite.",
+      "Describe cuánto esfuerzo sentiste en cada caso."
+    ],
+    "seguridad": "Usa pocos libros para no lastimar la espalda. Dobla las rodillas si levantas algo y no hales la cuerda bruscamente.",
+    "adulto": false,
+    "que_pasa": "Para mover algo necesitamos una fuerza: empujar o halar. Si el objeto es más pesado, necesitamos más fuerza para ponerlo en movimiento, porque roza más contra el piso.",
+    "concepto": "Fuerza para mover objetos",
+    "vocabulario": [
+      "empujar",
+      "halar",
+      "esfuerzo",
+      "pesado"
+    ],
+    "preguntas": [
+      "¿Con cuántos libros fue más difícil?",
+      "¿Por qué la caja llena necesita más fuerza?",
+      "¿Por qué los coteros usan carretillas con ruedas en la galería Alameda?"
+    ],
+    "reto": "Mueve la caja con 3 libros sobre la baldosa y luego sobre un tapete. Solo cambia el piso.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e017",
+    "grado": 2,
+    "eje": "fuerza-movimiento",
+    "titulo": "¿Qué pelota rebota más alto?",
+    "gancho": "En el recreo jugamos con pelotas de caucho, de trapo y de ping-pong. ¿Por qué no rebotan igual?",
+    "dba": "Comprende que una acción mecánica (fuerza) puede producir distintas deformaciones en un objeto y cambios en su movimiento, y que estos efectos dependen del material y de la superficie.",
+    "prediccion": "Si sueltas las tres pelotas desde la misma altura, ¿cuál subirá más?",
+    "materiales": [
+      "pelota de caucho",
+      "pelota de trapo o media enrollada",
+      "pelota de ping-pong",
+      "cinta métrica pegada en la pared"
+    ],
+    "pasos": [
+      "Pega la cinta métrica en la pared.",
+      "Suelta la primera pelota desde 1 metro, sin lanzarla.",
+      "Un compañero mira hasta qué altura sube.",
+      "Repite 3 veces con cada pelota.",
+      "Anota los resultados y compara."
+    ],
+    "seguridad": "Hazlo en un espacio abierto, lejos de ventanas y de niños pequeños.",
+    "adulto": false,
+    "que_pasa": "Cuando la pelota golpea el piso se aplasta un poco. Las pelotas elásticas, como la de caucho, recuperan su forma con fuerza y saltan alto. La de trapo se aplasta y no recupera su forma rápido, por eso casi no rebota.",
+    "concepto": "Rebote y elasticidad",
+    "vocabulario": [
+      "rebote",
+      "elástico",
+      "altura",
+      "caer"
+    ],
+    "preguntas": [
+      "¿Cuál pelota subió más alto?",
+      "¿Por qué la pelota de trapo casi no rebotó?",
+      "¿Por qué un balón de fútbol desinflado no rebota bien?"
+    ],
+    "reto": "Usa solo la pelota de caucho y suéltala desde 50 cm, 1 m y 1,5 m. Solo cambia la altura.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e018",
+    "grado": 2,
+    "eje": "fuerza-movimiento",
+    "titulo": "Paracaídas para un muñeco",
+    "gancho": "En la Feria de Cali a veces se ven paracaidistas bajando despacio. ¿Cómo hace la tela para frenarlos?",
+    "dba": "Comprende que una acción mecánica (fuerza) puede producir distintas deformaciones en un objeto y cambios en su movimiento, y que estos efectos dependen del material y de la superficie.",
+    "prediccion": "¿Bajará más lento el muñeco con paracaídas grande o con paracaídas pequeño?",
+    "materiales": [
+      "2 pañuelos o bolsas de tela de distinto tamaño",
+      "pita",
+      "2 muñequitos o ganchos de ropa iguales",
+      "cronómetro"
+    ],
+    "pasos": [
+      "Amarra 4 pitas iguales a las esquinas de cada pañuelo.",
+      "Une las puntas de las pitas y amarra un muñeco.",
+      "Desde la misma altura (de pie, con brazo levantado), suelta un paracaídas.",
+      "Mide con el cronómetro cuánto tarda en llegar al piso.",
+      "Repite con el otro paracaídas.",
+      "Compara los tiempos."
+    ],
+    "seguridad": "Suelta los paracaídas estando de pie en el piso: nunca te subas a sillas, mesas o barandas.",
+    "adulto": false,
+    "que_pasa": "Mientras el muñeco cae, el aire empuja la tela hacia arriba y lo frena: es la resistencia del aire. Un paracaídas más grande atrapa más aire, por eso baja más despacio.",
+    "concepto": "Resistencia del aire",
+    "vocabulario": [
+      "caer",
+      "aire",
+      "frenar",
+      "paracaídas"
+    ],
+    "preguntas": [
+      "¿Cuál paracaídas tardó más en caer?",
+      "¿Qué pasaría si el muñeco no tuviera paracaídas?",
+      "¿Por qué las semillas del diente de león vuelan lejos?"
+    ],
+    "reto": "Usa el mismo paracaídas con un muñeco liviano y luego con uno más pesado. Solo cambia el peso.",
+    "minutos": 25
+  },
+  {
+    "id": "g02-e019",
+    "grado": 2,
+    "eje": "luz-sonido-energia",
+    "titulo": "Mi sombra crece y se encoge",
+    "gancho": "En las noches de cuentos hacemos figuras de animales con las manos en la pared. ¿Por qué cambian de tamaño?",
+    "dba": "Clasifica luces según su fuente, color e intensidad y sonidos según su fuente, tono y volumen; identifica el Sol como fuente de luz y calor (estándares de 1.° a 3.°).",
+    "prediccion": "¿La sombra será más grande cuando la mano está cerca o lejos de la linterna?",
+    "materiales": [
+      "linterna",
+      "pared clara",
+      "tus manos o una figura de cartón",
+      "cinta métrica"
+    ],
+    "pasos": [
+      "Oscurece un poco el salón.",
+      "Pon la linterna sobre la mesa apuntando a la pared.",
+      "Pon la figura muy cerca de la linterna y mira la sombra.",
+      "Aléjala poco a poco hacia la pared.",
+      "Mide la sombra en tres posiciones."
+    ],
+    "seguridad": "No apuntes la linterna a los ojos de nadie.",
+    "adulto": false,
+    "que_pasa": "La luz viaja en línea recta. Cuando un objeto la bloquea, detrás se forma una sombra. Si el objeto está cerca de la linterna, tapa más luz y la sombra es grande; si está cerca de la pared, la sombra es pequeña.",
+    "concepto": "Formación de sombras",
+    "vocabulario": [
+      "luz",
+      "sombra",
+      "linterna",
+      "bloquear"
+    ],
+    "preguntas": [
+      "¿Dónde estaba la figura cuando la sombra fue más grande?",
+      "¿Por qué se forma la sombra?",
+      "¿Por qué tu sombra es corta al mediodía en el patio del colegio?"
+    ],
+    "reto": "Deja la figura quieta y mueve solo la linterna: cerca y lejos.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e020",
+    "grado": 2,
+    "eje": "luz-sonido-energia",
+    "titulo": "Teléfono de vasos",
+    "gancho": "Antes de los celulares, los niños de los barrios de Cali jugaban a hablar con vasos y pitas. ¿Funciona de verdad?",
+    "dba": "Clasifica luces según su fuente, color e intensidad y sonidos según su fuente, tono y volumen; identifica el Sol como fuente de luz y calor (estándares de 1.° a 3.°).",
+    "prediccion": "¿Se escuchará mejor con la pita templada o floja?",
+    "materiales": [
+      "2 vasos plásticos o de cartón",
+      "pita de 4 metros",
+      "palillo o clip",
+      "punzón (lo usa el adulto)"
+    ],
+    "pasos": [
+      "El adulto hace un hueco pequeño en el fondo de cada vaso.",
+      "Pasa la pita por los huecos y amárrala a un clip por dentro.",
+      "Cada niño toma un vaso y se alejan hasta templar la pita.",
+      "Uno habla en voz baja dentro del vaso; el otro escucha.",
+      "Prueben con la pita floja y comparen."
+    ],
+    "seguridad": "Solo el adulto usa el punzón. No grites dentro del vaso cerca del oído de tu compañero.",
+    "adulto": true,
+    "que_pasa": "El sonido se produce cuando algo vibra. La voz hace vibrar el fondo del vaso, esa vibración viaja por la pita templada y hace vibrar el otro vaso, que la lleva al oído. Si la pita está floja, la vibración no viaja bien.",
+    "concepto": "El sonido viaja por los sólidos",
+    "vocabulario": [
+      "sonido",
+      "vibración",
+      "templado",
+      "viajar"
+    ],
+    "preguntas": [
+      "¿Con la pita templada o floja se escuchó mejor?",
+      "¿Qué viaja por la pita?",
+      "¿Por qué escuchas a los vecinos a través de la pared?"
+    ],
+    "reto": "Cambia solo la pita por hilo de nailon del mismo largo y compara.",
+    "minutos": 25
+  },
+  {
+    "id": "g02-e021",
+    "grado": 2,
+    "eje": "luz-sonido-energia",
+    "titulo": "La regla que canta",
+    "gancho": "En la clase de música el tiple y la guitarra suenan distinto con cuerdas cortas y largas. ¿Pasa lo mismo con una regla?",
+    "dba": "Clasifica luces según su fuente, color e intensidad y sonidos según su fuente, tono y volumen; identifica el Sol como fuente de luz y calor (estándares de 1.° a 3.°).",
+    "prediccion": "¿Sonará más agudo (finito) o más grave (grueso) cuando la parte que sale de la mesa es corta?",
+    "materiales": [
+      "regla plástica o de madera de 30 cm",
+      "mesa"
+    ],
+    "pasos": [
+      "Pon la regla sobre la mesa con una parte por fuera.",
+      "Sujeta fuerte con una mano la parte que está sobre la mesa.",
+      "Con la otra mano, empuja la punta hacia abajo y suéltala.",
+      "Escucha y observa la vibración.",
+      "Repite dejando más regla por fuera y luego menos."
+    ],
+    "seguridad": "Sujeta la regla con firmeza para que no salte hacia tu cara.",
+    "adulto": false,
+    "que_pasa": "La regla suena porque vibra, es decir, se mueve rápido de arriba abajo. Si la parte que vibra es corta, vibra más rápido y el sonido es agudo; si es larga, vibra más lento y el sonido es grave.",
+    "concepto": "Vibración y tono",
+    "vocabulario": [
+      "vibrar",
+      "agudo",
+      "grave",
+      "tono"
+    ],
+    "preguntas": [
+      "¿Qué hace la regla cuando suena?",
+      "¿Cuándo sonó más agudo?",
+      "¿Por qué en la guitarra apretamos la cuerda para cambiar la nota?"
+    ],
+    "reto": "Deja siempre 15 cm por fuera y cambia solo la regla: una de plástico y una de madera.",
+    "minutos": 10
+  },
+  {
+    "id": "g02-e022",
+    "grado": 2,
+    "eje": "luz-sonido-energia",
+    "titulo": "Marimba de botellas",
+    "gancho": "La marimba de chonta del Pacífico colombiano tiene tablitas de distintos tamaños. ¿Podemos hacer música con botellas?",
+    "dba": "Clasifica luces según su fuente, color e intensidad y sonidos según su fuente, tono y volumen; identifica el Sol como fuente de luz y calor (estándares de 1.° a 3.°).",
+    "prediccion": "Al golpear las botellas, ¿cuál sonará más grave: la que tiene más agua o la que tiene menos?",
+    "materiales": [
+      "5 botellas o frascos de vidrio iguales",
+      "agua",
+      "colorante de comida",
+      "cuchara de metal"
+    ],
+    "pasos": [
+      "Pon las botellas en fila sobre una mesa firme.",
+      "Llénalas con distinta cantidad de agua: poquita, un poco más… hasta casi llena.",
+      "Agrega colorante para verlas mejor.",
+      "Golpea suavemente cada botella con la cuchara.",
+      "Ordénalas del sonido más agudo al más grave."
+    ],
+    "seguridad": "Golpea muy suave: el vidrio se puede romper. Un adulto acompaña. Si algo se rompe, no lo toques y avisa.",
+    "adulto": true,
+    "que_pasa": "Al golpear, la botella y el agua vibran. Cuando hay más agua, vibran más lento y el sonido es más grave. Con menos agua, vibran más rápido y el sonido es más agudo.",
+    "concepto": "Tono de un sonido",
+    "vocabulario": [
+      "marimba",
+      "vibración",
+      "agudo",
+      "grave"
+    ],
+    "preguntas": [
+      "¿Qué botella sonó más grave?",
+      "¿Por qué cambia el sonido si cambia el agua?",
+      "¿Cómo afinarías una botella para que suene más agudo?"
+    ],
+    "reto": "Deja una sola botella con la misma agua y cambia solo con qué golpeas: cuchara de metal o de palo.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e023",
+    "grado": 2,
+    "eje": "luz-sonido-energia",
+    "titulo": "Arroz que baila",
+    "gancho": "En el Petronio Álvarez los tambores suenan tan fuerte que se sienten en el pecho. ¿El sonido mueve cosas?",
+    "dba": "Clasifica luces según su fuente, color e intensidad y sonidos según su fuente, tono y volumen; identifica el Sol como fuente de luz y calor (estándares de 1.° a 3.°).",
+    "prediccion": "¿Qué crees que le pasará al arroz sobre el 'tambor' cuando golpees una olla cerca?",
+    "materiales": [
+      "tazón",
+      "plástico de cocina (vinipel)",
+      "liga grande",
+      "granos de arroz",
+      "olla y cuchara de palo"
+    ],
+    "pasos": [
+      "Cubre el tazón con el plástico bien templado.",
+      "Asegúralo con la liga.",
+      "Pon unos granos de arroz encima.",
+      "Acerca la olla y golpéala con la cuchara de palo.",
+      "Observa el arroz. Golpea suave y luego más fuerte."
+    ],
+    "seguridad": "No golpees cerca del oído de nadie. Tápate los oídos si el ruido molesta.",
+    "adulto": false,
+    "que_pasa": "Al golpear la olla, esta vibra y empuja el aire. Esas vibraciones viajan por el aire hasta el plástico y lo hacen vibrar, y el arroz salta. Así el sonido viaja por el aire hasta nuestros oídos.",
+    "concepto": "El sonido es vibración que viaja",
+    "vocabulario": [
+      "vibración",
+      "sonido",
+      "aire",
+      "tambor"
+    ],
+    "preguntas": [
+      "¿Qué hizo el arroz cuando sonó la olla?",
+      "¿Cómo llegó el sonido de la olla hasta el plástico?",
+      "¿Por qué tiemblan las ventanas cuando pasa un camión?"
+    ],
+    "reto": "Golpea la olla siempre igual de fuerte y cambia solo la distancia: 20 cm y 1 metro del tazón.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e024",
+    "grado": 2,
+    "eje": "luz-sonido-energia",
+    "titulo": "¿Pasa la luz?",
+    "gancho": "Las ventanas del salón dejan pasar la luz, pero las cortinas no tanto. ¿Qué materiales dejan pasar la luz?",
+    "dba": "Clasifica luces según su fuente, color e intensidad y sonidos según su fuente, tono y volumen; identifica el Sol como fuente de luz y calor (estándares de 1.° a 3.°).",
+    "prediccion": "Ordena los materiales: ¿cuáles dejarán pasar toda la luz, un poco o nada?",
+    "materiales": [
+      "linterna",
+      "lámina de plástico transparente",
+      "papel mantequilla",
+      "cartón",
+      "tela delgada",
+      "papel aluminio",
+      "pared clara"
+    ],
+    "pasos": [
+      "Oscurece el salón.",
+      "Apunta la linterna a la pared.",
+      "Pon cada material entre la linterna y la pared.",
+      "Observa cuánta luz llega a la pared.",
+      "Clasifícalos en 'pasa toda', 'pasa un poco' y 'no pasa'."
+    ],
+    "seguridad": "No apuntes la linterna a los ojos.",
+    "adulto": false,
+    "que_pasa": "Los materiales transparentes, como el plástico claro, dejan pasar casi toda la luz. Los translúcidos, como el papel mantequilla, dejan pasar un poco. Los opacos, como el cartón y el aluminio, no la dejan pasar y forman sombra.",
+    "concepto": "Transparente, translúcido y opaco",
+    "vocabulario": [
+      "transparente",
+      "translúcido",
+      "opaco",
+      "luz"
+    ],
+    "preguntas": [
+      "¿Qué materiales no dejaron pasar la luz?",
+      "¿Por qué el papel mantequilla deja ver la luz pero no las formas?",
+      "¿Qué material usarías para una cortina que oscurezca tu cuarto?"
+    ],
+    "reto": "Usa solo papel mantequilla: una hoja, dos hojas y cuatro hojas. Solo cambia el número de hojas.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e025",
+    "grado": 2,
+    "eje": "luz-sonido-energia",
+    "titulo": "El espejo que dirige la luz",
+    "gancho": "En las películas de exploradores, mandan señales con espejos. ¿Cómo puede un espejo llevar la luz a donde queramos?",
+    "dba": "Clasifica luces según su fuente, color e intensidad y sonidos según su fuente, tono y volumen; identifica el Sol como fuente de luz y calor (estándares de 1.° a 3.°).",
+    "prediccion": "¿Podrás hacer que la luz de la linterna llegue a un dibujo que la linterna no apunta?",
+    "materiales": [
+      "linterna",
+      "espejo pequeño de plástico",
+      "dibujo pegado en la pared",
+      "plastilina para parar el espejo"
+    ],
+    "pasos": [
+      "Pega el dibujo en la pared.",
+      "Apunta la linterna hacia otro lado, no hacia el dibujo.",
+      "Pon el espejo en el camino de la luz.",
+      "Gira el espejo despacio hasta que la luz llegue al dibujo.",
+      "Dibuja el camino de la luz con flechas."
+    ],
+    "seguridad": "Usa espejo de plástico o con bordes protegidos. No refleje la luz del sol ni de la linterna hacia los ojos de nadie.",
+    "adulto": false,
+    "que_pasa": "La luz rebota en los espejos: eso se llama reflexión. Si giramos el espejo, cambiamos hacia dónde va la luz reflejada.",
+    "concepto": "Reflexión de la luz",
+    "vocabulario": [
+      "reflexión",
+      "espejo",
+      "rebotar",
+      "rayo"
+    ],
+    "preguntas": [
+      "¿Qué hizo el espejo con la luz?",
+      "¿Qué pasa con la luz si giras el espejo?",
+      "¿Por qué los carros tienen espejos retrovisores?"
+    ],
+    "reto": "Usa papel aluminio liso y luego arrugado en vez del espejo. Solo cambia la superficie.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e026",
+    "grado": 2,
+    "eje": "luz-sonido-energia",
+    "titulo": "¿Qué color se calienta más al sol?",
+    "gancho": "En el estadio Pascual Guerrero, la camiseta oscura se siente más caliente al sol. ¿Será verdad?",
+    "dba": "Clasifica luces según su fuente, color e intensidad y sonidos según su fuente, tono y volumen; identifica el Sol como fuente de luz y calor (estándares de 1.° a 3.°).",
+    "prediccion": "¿Cuál vaso de agua se calentará más al sol: el envuelto en papel negro o el envuelto en papel blanco?",
+    "materiales": [
+      "2 vasos plásticos iguales",
+      "agua de la llave",
+      "papel negro",
+      "papel blanco",
+      "cinta",
+      "termómetro de cocina o tu dedo"
+    ],
+    "pasos": [
+      "Envuelve un vaso con papel negro y otro con papel blanco.",
+      "Sirve la misma cantidad de agua en los dos.",
+      "Ponlos al sol, uno al lado del otro.",
+      "Espera 30 minutos.",
+      "Mete el dedo o el termómetro en cada vaso y compara."
+    ],
+    "seguridad": "No mires el sol. Usa gorra y toma agua si estás al sol.",
+    "adulto": false,
+    "que_pasa": "El Sol nos da luz y calor. Los colores oscuros absorben más energía de la luz del sol y se calientan más; los colores claros devuelven más luz y se calientan menos.",
+    "concepto": "El Sol, fuente de calor",
+    "vocabulario": [
+      "energía",
+      "Sol",
+      "absorber",
+      "calor"
+    ],
+    "preguntas": [
+      "¿Qué vaso quedó más caliente?",
+      "¿Por qué el papel negro calentó más el agua?",
+      "¿Qué color de ropa conviene para jugar al sol en Cali?"
+    ],
+    "reto": "Usa dos vasos con papel negro, uno al sol y otro a la sombra. Solo cambia el lugar.",
+    "minutos": 40
+  },
+  {
+    "id": "g02-e027",
+    "grado": 2,
+    "eje": "luz-sonido-energia",
+    "titulo": "La luz viaja derechito",
+    "gancho": "Cuando entra luz por un hueco del techo, se ve como un rayo recto. ¿La luz puede doblar esquinas?",
+    "dba": "Clasifica luces según su fuente, color e intensidad y sonidos según su fuente, tono y volumen; identifica el Sol como fuente de luz y calor (estándares de 1.° a 3.°).",
+    "prediccion": "Si los huecos de las tres tarjetas no están en línea, ¿verás la luz de la linterna?",
+    "materiales": [
+      "3 tarjetas de cartulina",
+      "plastilina",
+      "punzón (lo usa el adulto)",
+      "linterna",
+      "regla"
+    ],
+    "pasos": [
+      "El adulto hace un hueco en el centro de cada tarjeta, a la misma altura.",
+      "Para las tarjetas en fila con plastilina.",
+      "Pon la linterna detrás de la última tarjeta.",
+      "Mira por el hueco de la primera: ¿ves la luz?",
+      "Mueve una tarjeta hacia un lado y vuelve a mirar."
+    ],
+    "seguridad": "Solo el adulto usa el punzón. No mires directo a una linterna muy potente; usa una linterna pequeña.",
+    "adulto": true,
+    "que_pasa": "La luz viaja en línea recta. Si los tres huecos están alineados, la luz pasa y la vemos. Si movemos una tarjeta, la luz choca con el cartón y no llega al ojo.",
+    "concepto": "Propagación rectilínea de la luz",
+    "vocabulario": [
+      "luz",
+      "línea recta",
+      "rayo",
+      "alinear"
+    ],
+    "preguntas": [
+      "¿Cuándo pudiste ver la luz?",
+      "¿Por qué dejaste de verla al mover una tarjeta?",
+      "¿Por qué no puedes ver a alguien que está detrás de una pared?"
+    ],
+    "reto": "Deja las tarjetas alineadas y cambia solo la distancia entre ellas: juntas o separadas.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e028",
+    "grado": 2,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "Mi frijol germina",
+    "gancho": "Los frijoles que comemos en la bandeja también pueden convertirse en plantas. ¿Cómo empieza una planta?",
+    "dba": "Explica los procesos de cambio físico que ocurren en el ciclo de vida de las plantas, desde la semilla hasta la planta adulta.",
+    "prediccion": "¿Qué crees que saldrá primero de la semilla: la raíz o las hojas?",
+    "materiales": [
+      "3 semillas de frijol",
+      "algodón",
+      "frasco o vaso transparente",
+      "agua",
+      "lupa"
+    ],
+    "pasos": [
+      "Pon algodón húmedo dentro del frasco.",
+      "Coloca los frijoles entre el algodón y la pared del frasco para verlos.",
+      "Pon el frasco en un lugar con luz, sin sol directo.",
+      "Humedece el algodón cada día sin encharcarlo.",
+      "Dibuja los cambios cada día durante 10 días."
+    ],
+    "seguridad": "No te lleves las semillas a la boca. Lávate las manos después de tocarlas.",
+    "adulto": false,
+    "que_pasa": "La semilla tiene adentro una plantita en miniatura y alimento guardado. Con agua y temperatura adecuada, se despierta: eso se llama germinación. Primero sale la raíz hacia abajo y luego el tallo con las primeras hojas hacia arriba.",
+    "concepto": "Germinación y ciclo de vida de las plantas",
+    "vocabulario": [
+      "semilla",
+      "germinar",
+      "raíz",
+      "tallo"
+    ],
+    "preguntas": [
+      "¿Qué salió primero de la semilla?",
+      "¿Por qué la raíz crece hacia abajo?",
+      "¿Cómo siembran los campesinos el fríjol en el Valle del Cauca?"
+    ],
+    "reto": "Pon un frasco igual en un lugar oscuro (un armario). Solo cambia la luz y compara los frijoles.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e029",
+    "grado": 2,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "La plantita busca la luz",
+    "gancho": "Las matas de la ventana se inclinan hacia afuera. ¿Será que las plantas 'ven' la luz?",
+    "dba": "Relaciona las características y necesidades de las plantas (luz, agua, aire) con el ambiente donde viven y explica cómo cambian al crecer.",
+    "prediccion": "Si una plantita crece en una caja con un solo hueco, ¿hacia dónde crecerá su tallo?",
+    "materiales": [
+      "plantita de frijol germinada en vaso con tierra",
+      "caja de zapatos con tapa",
+      "tijeras (las usa el adulto)",
+      "agua"
+    ],
+    "pasos": [
+      "El adulto abre un hueco de 3 cm en un lado de la caja.",
+      "Pon la plantita dentro de la caja y tápala.",
+      "Pon la caja con el hueco hacia la ventana.",
+      "Abre la caja cada dos días para regar y dibujar.",
+      "Después de una semana, compara la dirección del tallo."
+    ],
+    "seguridad": "Solo el adulto usa las tijeras. Lávate las manos después de tocar la tierra.",
+    "adulto": true,
+    "que_pasa": "Las plantas necesitan luz para fabricar su alimento. Su tallo crece inclinándose hacia donde llega la luz. Por eso la plantita se dobla hacia el hueco de la caja.",
+    "concepto": "Las plantas responden a la luz",
+    "vocabulario": [
+      "luz",
+      "tallo",
+      "crecer",
+      "necesidad"
+    ],
+    "preguntas": [
+      "¿Hacia dónde creció el tallo?",
+      "¿Por qué la plantita se dobló hacia el hueco?",
+      "¿Por qué hay que girar las matas de la casa de vez en cuando?"
+    ],
+    "reto": "Repite con el hueco en la parte de arriba de la caja. Solo cambia el lugar del hueco.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e030",
+    "grado": 2,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "Las hojas sudan",
+    "gancho": "Debajo de los samanes del parque del Perro se siente fresquito. ¿Las plantas sacan agua al aire?",
+    "dba": "Reconoce las partes de las plantas y explica cómo funcionan para mantenerlas vivas, en relación con el ambiente donde viven.",
+    "prediccion": "Si tapas una rama con una bolsa transparente al sol, ¿aparecerá agua dentro de la bolsa?",
+    "materiales": [
+      "planta con hojas (en maceta o en el jardín)",
+      "bolsa plástica transparente",
+      "lana o liga"
+    ],
+    "pasos": [
+      "Elige una rama con varias hojas sanas.",
+      "Métela en la bolsa con cuidado de no partirla.",
+      "Cierra la bolsa alrededor del tallo con la lana.",
+      "Deja la planta al sol 2 horas.",
+      "Observa la bolsa por dentro y luego quítala."
+    ],
+    "seguridad": "No arranques hojas ni ramas. Quita la bolsa el mismo día para no dañar la planta.",
+    "adulto": false,
+    "que_pasa": "Las plantas toman agua del suelo por las raíces y sueltan parte de ella por las hojas en forma de vapor. Ese vapor se condensa en la bolsa y forma gotas. A esto se le llama transpiración.",
+    "concepto": "Transpiración de las plantas",
+    "vocabulario": [
+      "transpiración",
+      "hoja",
+      "vapor",
+      "raíz"
+    ],
+    "preguntas": [
+      "¿Qué apareció dentro de la bolsa?",
+      "¿De dónde vino esa agua?",
+      "¿Por qué los árboles ayudan a refrescar la ciudad?"
+    ],
+    "reto": "Pon una bolsa en una rama al sol y otra en una rama de la misma planta a la sombra. Solo cambia el lugar.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e031",
+    "grado": 2,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "El apio que cambia de color",
+    "gancho": "Las flores del mercado de la Alameda duran más si las ponemos en agua. ¿Cómo toman el agua?",
+    "dba": "Reconoce cómo las partes de una planta (raíz, tallo, hojas) funcionan juntas para que la planta viva y crezca.",
+    "prediccion": "¿Qué le pasará a las hojas del apio si lo pones en agua con colorante?",
+    "materiales": [
+      "tallo de apio con hojas o clavel blanco",
+      "vaso con agua",
+      "colorante de comida azul o rojo",
+      "lupa"
+    ],
+    "pasos": [
+      "Llena el vaso hasta la mitad con agua.",
+      "Agrega bastante colorante.",
+      "El adulto corta la punta del tallo para que quede fresca.",
+      "Pon el apio en el vaso.",
+      "Observa a las 2 horas y al día siguiente.",
+      "Mira con la lupa el corte del tallo."
+    ],
+    "seguridad": "El adulto hace el corte. No comas el apio con colorante.",
+    "adulto": true,
+    "que_pasa": "El tallo tiene tubitos muy delgados que suben el agua desde abajo hasta las hojas. El colorante viaja con el agua y por eso las hojas y los bordes del tallo se pintan.",
+    "concepto": "Transporte de agua en el tallo",
+    "vocabulario": [
+      "tallo",
+      "tubitos",
+      "agua",
+      "transporte"
+    ],
+    "preguntas": [
+      "¿Qué partes del apio cambiaron de color?",
+      "¿Qué camino siguió el agua con colorante?",
+      "¿Por qué hay que regar las plantas por la raíz y no solo mojar las hojas?"
+    ],
+    "reto": "Pon un apio en agua con colorante fría y otro igual en agua con colorante tibia. Solo cambia la temperatura.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e032",
+    "grado": 2,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "Mi corazón se acelera",
+    "gancho": "Después de jugar fútbol en el recreo sentimos el corazón 'tun tun' muy fuerte. ¿Por qué?",
+    "dba": "Reconoce partes de su cuerpo y su funcionamiento, y explica cómo cambian con la actividad física.",
+    "prediccion": "¿Cuántos latidos crees que tendrás en 15 segundos en reposo y después de saltar?",
+    "materiales": [
+      "cronómetro o reloj",
+      "hoja para anotar",
+      "lápiz"
+    ],
+    "pasos": [
+      "Siéntate tranquilo un minuto.",
+      "Pon dos dedos en tu muñeca o cuello hasta sentir el pulso.",
+      "Cuenta los latidos durante 15 segundos y anótalos.",
+      "Salta en tu puesto 30 veces.",
+      "Vuelve a contar 15 segundos y anota.",
+      "Descansa 2 minutos y cuenta otra vez."
+    ],
+    "seguridad": "Si tienes alguna condición del corazón o del asma, haz solo la parte de reposo. Detente si te sientes mareado.",
+    "adulto": false,
+    "que_pasa": "El corazón es un músculo que bombea sangre a todo el cuerpo. Cuando hacemos ejercicio, los músculos necesitan más oxígeno, entonces el corazón late más rápido. Al descansar vuelve poco a poco a su ritmo normal.",
+    "concepto": "El corazón y el pulso",
+    "vocabulario": [
+      "corazón",
+      "pulso",
+      "latido",
+      "sangre"
+    ],
+    "preguntas": [
+      "¿Cuántos latidos contaste antes y después de saltar?",
+      "¿Por qué late más rápido después del ejercicio?",
+      "¿Por qué es bueno hacer deporte para cuidar el corazón?"
+    ],
+    "reto": "Repite pero saltando 10 veces en vez de 30. Solo cambia la cantidad de saltos.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e033",
+    "grado": 2,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "Huellas que nadie más tiene",
+    "gancho": "En la Registraduría toman la huella del dedo para la tarjeta de identidad. ¿Por qué la huella dice quién eres?",
+    "dba": "Describe características de su cuerpo y las compara con las de otras personas, reconociendo semejanzas y diferencias.",
+    "prediccion": "¿Tu huella será igual a la de tu compañero?",
+    "materiales": [
+      "lápiz de grafito",
+      "cinta adhesiva transparente",
+      "hoja blanca",
+      "lupa"
+    ],
+    "pasos": [
+      "Raya con el lápiz un cuadrito oscuro en un papel.",
+      "Frota la yema de tu dedo índice sobre el grafito.",
+      "Pega cinta sobre tu dedo y despégala con cuidado.",
+      "Pega la cinta en la hoja blanca.",
+      "Mírala con lupa y compárala con la de tu compañero."
+    ],
+    "seguridad": "Lávate las manos al terminar.",
+    "adulto": false,
+    "que_pasa": "La piel de los dedos tiene líneas que forman dibujos: arcos, lazos o remolinos. Esos dibujos se forman antes de nacer y no hay dos personas con huellas iguales, ni siquiera los gemelos.",
+    "concepto": "Las huellas dactilares",
+    "vocabulario": [
+      "huella",
+      "piel",
+      "lupa",
+      "único"
+    ],
+    "preguntas": [
+      "¿Qué dibujo tiene tu huella: arco, lazo o remolino?",
+      "¿Por qué sirve la huella para identificar a una persona?",
+      "¿Qué aparatos de tu entorno usan la huella para abrirse?"
+    ],
+    "reto": "Compara la huella de tu índice con la de tu pulgar. Solo cambia el dedo.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e034",
+    "grado": 2,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "¿Qué fruta es? Adivina con la nariz",
+    "gancho": "En la galería Alameda el olor de la guayaba y del maracuyá se siente desde lejos. ¿Cuánto nos ayuda la nariz?",
+    "dba": "Reconoce los órganos de los sentidos y cómo le permiten percibir su entorno.",
+    "prediccion": "¿Cuántas frutas podrás reconocer solo con el olfato?",
+    "materiales": [
+      "4 vasitos opacos con tapa con huecos",
+      "trocitos de guayaba, mango, maracuyá y limón",
+      "pañoleta para los ojos"
+    ],
+    "pasos": [
+      "El adulto pone una fruta distinta en cada vasito tapado.",
+      "Véndate los ojos con la pañoleta.",
+      "Huele cada vasito sin tocar ni probar.",
+      "Di qué fruta crees que es.",
+      "Quítate la venda y comprueba."
+    ],
+    "seguridad": "Solo se huele, no se prueba. Pregunta antes si alguien tiene alergia a alguna fruta.",
+    "adulto": true,
+    "que_pasa": "La nariz tiene células que detectan sustancias del aire que forman los olores y envían mensajes al cerebro. El cerebro recuerda los olores y por eso podemos reconocer las frutas sin verlas.",
+    "concepto": "El sentido del olfato",
+    "vocabulario": [
+      "olfato",
+      "nariz",
+      "sentido",
+      "cerebro"
+    ],
+    "preguntas": [
+      "¿Cuántas frutas reconociste?",
+      "¿Por qué es más difícil reconocer el olor cuando tienes gripa?",
+      "¿Cómo te ayuda el olfato a saber si un alimento está dañado?"
+    ],
+    "reto": "Repite con las mismas frutas pero tapándote la nariz y mirando. Solo cambia el sentido que usas.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e035",
+    "grado": 2,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "Picos para cada comida",
+    "gancho": "El Valle del Cauca tiene cientos de especies de aves. ¿Por qué el colibrí y el gavilán tienen picos tan distintos?",
+    "dba": "Relaciona las características físicas de los animales con el ambiente donde viven y la forma en que consiguen su alimento.",
+    "prediccion": "¿Qué 'pico' crees que recoge mejor las semillas, el agua o los gusanitos?",
+    "materiales": [
+      "pinzas de ropa",
+      "cuchara",
+      "pitillo",
+      "palillos chinos",
+      "granos de maíz",
+      "vaso con agua",
+      "trocitos de lana (gusanitos)",
+      "platos",
+      "cronómetro"
+    ],
+    "pasos": [
+      "Pon en cada plato un tipo de comida: maíz, agua, lana.",
+      "Cada 'pico' tiene 30 segundos para recoger comida de un plato.",
+      "Cuenta cuánto recogiste con cada herramienta.",
+      "Anota los resultados en una tabla.",
+      "Decide cuál pico sirve mejor para cada comida."
+    ],
+    "seguridad": "No te lleves el pitillo que usaron otros a la boca: cada uno usa el suyo. No comas los granos.",
+    "adulto": false,
+    "que_pasa": "La forma del pico de un ave está relacionada con lo que come. Un pico largo y delgado como un pitillo sirve para tomar néctar de las flores, como el colibrí. Un pico fuerte como una pinza sirve para romper semillas.",
+    "concepto": "Adaptaciones de los animales",
+    "vocabulario": [
+      "pico",
+      "adaptación",
+      "alimento",
+      "ave"
+    ],
+    "preguntas": [
+      "¿Qué herramienta recogió mejor el agua?",
+      "¿Por qué el colibrí tiene un pico largo y delgado?",
+      "¿Qué pico necesita un ave que come peces en el lago del Zoológico de Cali?"
+    ],
+    "reto": "Usa solo las pinzas y cambia solo la comida: maíz grande y arroz pequeño.",
+    "minutos": 25
+  },
+  {
+    "id": "g02-e036",
+    "grado": 2,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "Guante de grasa como las ballenas",
+    "gancho": "Entre julio y octubre las ballenas jorobadas llegan al Pacífico colombiano desde aguas muy frías. ¿Cómo aguantan el frío?",
+    "dba": "Relaciona las características físicas de los animales con el ambiente donde viven y explica cómo les ayudan a sobrevivir.",
+    "prediccion": "¿En cuál mano sentirás menos frío dentro del agua con hielo: con guante de grasa o sin él?",
+    "materiales": [
+      "2 bolsas plásticas de cierre hermético",
+      "manteca vegetal",
+      "cinta",
+      "recipiente con agua y hielo",
+      "cronómetro"
+    ],
+    "pasos": [
+      "Llena una bolsa con manteca.",
+      "Mete la otra bolsa dentro de la de manteca para hacer un guante y pega los bordes con cinta.",
+      "Pon la mano en el guante y métela en el agua con hielo.",
+      "Mete la otra mano sin guante, en una bolsa vacía.",
+      "Cuenta cuánto tiempo aguantas con cada mano."
+    ],
+    "seguridad": "Saca la mano apenas sientas mucho frío; no más de un minuto. Seca las manos al terminar.",
+    "adulto": false,
+    "que_pasa": "La grasa es un aislante: no deja escapar fácil el calor del cuerpo. Las ballenas y otros animales de aguas frías tienen una capa gruesa de grasa debajo de la piel que las protege del frío.",
+    "concepto": "Adaptación al frío",
+    "vocabulario": [
+      "grasa",
+      "aislante",
+      "adaptación",
+      "calor"
+    ],
+    "preguntas": [
+      "¿Con qué mano aguantaste más tiempo?",
+      "¿Por qué la grasa protege del frío?",
+      "¿Qué usamos las personas para no tener frío en el páramo?"
+    ],
+    "reto": "Haz un guante con una capa delgada de manteca y otro con una capa gruesa. Solo cambia el grosor de la grasa.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e037",
+    "grado": 2,
+    "eje": "seres-vivos-cuerpo",
+    "titulo": "Camuflaje en el pasto",
+    "gancho": "Los saltamontes verdes del parque casi no se ven entre el pasto. ¿Para qué les sirve su color?",
+    "dba": "Relaciona las características físicas de los animales con el ambiente donde viven y explica cómo les ayudan a sobrevivir.",
+    "prediccion": "¿Qué color de 'gusanito' encontrarás más fácil en el pasto: verde, rojo o amarillo?",
+    "materiales": [
+      "20 trocitos de lana verde, 20 roja y 20 amarilla",
+      "zona de pasto",
+      "cronómetro",
+      "bolsitas"
+    ],
+    "pasos": [
+      "El adulto esparce los trocitos de lana en un cuadro de pasto.",
+      "Cada niño tiene 1 minuto para recoger los que vea.",
+      "Cuenten cuántos de cada color encontraron.",
+      "Hagan una tabla con los resultados.",
+      "Busquen los que faltaron."
+    ],
+    "seguridad": "Revisa el pasto antes por si hay vidrios o basura. Lávate las manos al terminar y recoge toda la lana.",
+    "adulto": true,
+    "que_pasa": "Los animales cuyo color se parece al de su ambiente son más difíciles de ver. Eso se llama camuflaje y les ayuda a esconderse de quienes quieren comérselos.",
+    "concepto": "Camuflaje",
+    "vocabulario": [
+      "camuflaje",
+      "color",
+      "ambiente",
+      "depredador"
+    ],
+    "preguntas": [
+      "¿Qué color encontraron menos?",
+      "¿Por qué ese color fue difícil de encontrar?",
+      "¿Qué color tendría un animal que vive en la arena de la playa?"
+    ],
+    "reto": "Repite sobre tierra café en vez de pasto. Solo cambia el lugar.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e038",
+    "grado": 2,
+    "eje": "quimica",
+    "titulo": "¿Qué se disuelve en el agua?",
+    "gancho": "Cuando preparamos aguapanela o limonada, el azúcar 'desaparece'. ¿Pasa lo mismo con todo?",
+    "dba": "Observa y describe qué ocurre al mezclar materiales de uso diario, cómo se pueden separar y qué cambios se pueden devolver y cuáles no (acercamiento inicial a mezclas y cambios de la materia).",
+    "prediccion": "¿Cuáles crees que desaparecerán en el agua: sal, azúcar, arena o arroz?",
+    "materiales": [
+      "4 vasos transparentes con agua",
+      "sal",
+      "azúcar",
+      "arena",
+      "arroz",
+      "cuchara"
+    ],
+    "pasos": [
+      "Marca los vasos con el nombre de cada material.",
+      "Agrega una cucharadita de cada material en su vaso.",
+      "Revuelve 20 veces cada vaso.",
+      "Espera 2 minutos y observa.",
+      "Anota cuáles 'desaparecieron' y cuáles no."
+    ],
+    "seguridad": "No pruebes ninguna mezcla aunque tenga azúcar o sal: en el laboratorio nunca se prueba.",
+    "adulto": false,
+    "que_pasa": "La sal y el azúcar se disuelven: se separan en partecitas tan pequeñas que no las vemos, pero siguen en el agua. La arena y el arroz no se disuelven y se quedan en el fondo. Una mezcla donde no vemos las partes se llama disolución.",
+    "concepto": "Disolución",
+    "vocabulario": [
+      "disolver",
+      "mezcla",
+      "disolución",
+      "soluble"
+    ],
+    "preguntas": [
+      "¿Qué materiales se disolvieron?",
+      "¿El azúcar desapareció de verdad? ¿Cómo podrías comprobarlo?",
+      "¿Qué pasa si echas arena en un jugo?"
+    ],
+    "reto": "Usa solo azúcar y cambia la cantidad: 1, 3 y 6 cucharaditas en vasos iguales.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e039",
+    "grado": 2,
+    "eje": "quimica",
+    "titulo": "El colador separa",
+    "gancho": "En la casa colamos el jugo de guayaba para quitarle las semillas. ¿Podemos separar arena y piedritas?",
+    "dba": "Observa y describe qué ocurre al mezclar materiales de uso diario, cómo se pueden separar y qué cambios se pueden devolver y cuáles no (acercamiento inicial a mezclas y cambios de la materia).",
+    "prediccion": "¿Qué quedará arriba en el colador y qué pasará por los huequitos?",
+    "materiales": [
+      "arena",
+      "piedritas",
+      "colador de cocina",
+      "2 platos"
+    ],
+    "pasos": [
+      "Mezcla arena y piedritas en un plato.",
+      "Pon el colador sobre el otro plato.",
+      "Echa la mezcla en el colador y sacúdelo suave.",
+      "Observa qué queda arriba y qué cae.",
+      "Dibuja la separación."
+    ],
+    "seguridad": "No soples la arena para que no entre en los ojos. Usa el colador solo para el experimento, no para comida.",
+    "adulto": false,
+    "que_pasa": "La arena y las piedritas forman una mezcla que se puede separar porque sus partes tienen distinto tamaño. Los granos pequeños pasan por los huecos del colador y las piedras grandes se quedan. Esta separación se llama tamizado.",
+    "concepto": "Separación de mezclas por tamizado",
+    "vocabulario": [
+      "mezcla",
+      "separar",
+      "colador",
+      "tamizar"
+    ],
+    "preguntas": [
+      "¿Qué quedó en el colador?",
+      "¿Por qué la arena pasó y las piedritas no?",
+      "¿Dónde se usa un tamiz en una construcción?"
+    ],
+    "reto": "Usa un colador de huecos grandes y uno de huecos pequeños con la misma mezcla. Solo cambia el colador.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e040",
+    "grado": 2,
+    "eje": "quimica",
+    "titulo": "Rescate de clips con imán",
+    "gancho": "En las ferreterías se riegan tornillos entre el aserrín. ¿Cómo separarlos rápido?",
+    "dba": "Observa y describe qué ocurre al mezclar materiales de uso diario, cómo se pueden separar y qué cambios se pueden devolver y cuáles no (acercamiento inicial a mezclas y cambios de la materia).",
+    "prediccion": "¿Podrá el imán sacar los clips sin sacar la arena?",
+    "materiales": [
+      "arena",
+      "clips",
+      "imán",
+      "bolsa plástica delgada",
+      "plato"
+    ],
+    "pasos": [
+      "Mezcla arena con 10 clips en el plato.",
+      "Mete el imán en la bolsa plástica (así los clips se sueltan fácil).",
+      "Pasa el imán sobre la mezcla.",
+      "Lleva el imán a otro plato y saca la bolsa: los clips caen.",
+      "Cuenta cuántos clips rescataste."
+    ],
+    "seguridad": "Los imanes y clips no van a la boca. Mantén el imán lejos de celulares.",
+    "adulto": false,
+    "que_pasa": "Los clips son de acero y el imán los atrae; la arena no. Por eso podemos separar esta mezcla usando el magnetismo. Es una manera de separar mezclas cuando una de las partes es atraída por el imán.",
+    "concepto": "Separación magnética",
+    "vocabulario": [
+      "imán",
+      "mezcla",
+      "separar",
+      "atraer"
+    ],
+    "preguntas": [
+      "¿Cuántos clips rescataste?",
+      "¿Por qué la arena no subió con el imán?",
+      "¿Cómo separarías clavos que se cayeron en el pasto?"
+    ],
+    "reto": "Mezcla los clips con arroz en vez de arena. Solo cambia el material de la mezcla.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e041",
+    "grado": 2,
+    "eje": "quimica",
+    "titulo": "Agua y aceite: amigos que no se mezclan",
+    "gancho": "En el sancocho a veces vemos gotitas de grasa flotando arriba. ¿Por qué no se mezclan con el caldo?",
+    "dba": "Observa y describe qué ocurre al mezclar materiales de uso diario, cómo se pueden separar y qué cambios se pueden devolver y cuáles no (acercamiento inicial a mezclas y cambios de la materia).",
+    "prediccion": "Si revuelves agua y aceite, ¿quedarán mezclados o se separarán?",
+    "materiales": [
+      "frasco plástico transparente con tapa",
+      "agua con colorante de comida",
+      "aceite de cocina",
+      "cuchara"
+    ],
+    "pasos": [
+      "Llena el frasco hasta la mitad con agua de color.",
+      "Agrega aceite hasta llenar un cuarto más.",
+      "Observa dónde queda el aceite.",
+      "Tapa bien y agita.",
+      "Deja quieto 2 minutos y observa."
+    ],
+    "seguridad": "Tapa muy bien el frasco antes de agitar. Si se riega aceite, límpialo para que nadie se resbale.",
+    "adulto": false,
+    "que_pasa": "El agua y el aceite no se mezclan: aunque los agitemos, después se separan. El aceite queda arriba porque es más liviano que la misma cantidad de agua.",
+    "concepto": "Mezclas que se separan solas",
+    "vocabulario": [
+      "aceite",
+      "mezcla",
+      "separar",
+      "flotar"
+    ],
+    "preguntas": [
+      "¿Dónde quedó el aceite?",
+      "¿Qué pasó después de agitar y esperar?",
+      "¿Por qué el aceite de cocina no se debe botar por el lavaplatos?"
+    ],
+    "reto": "Repite agregando 3 gotas de jabón de loza al agitar. Solo cambia eso y observa si tardan más en separarse.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e042",
+    "grado": 2,
+    "eje": "quimica",
+    "titulo": "El repollo mágico que cambia de color",
+    "gancho": "El repollo morado que venden en Santa Elena tiene un secreto: puede cambiar de color. ¿Con qué cambia?",
+    "dba": "Observa y describe qué ocurre al mezclar materiales de uso diario, cómo se pueden separar y qué cambios se pueden devolver y cuáles no (acercamiento inicial a mezclas y cambios de la materia).",
+    "prediccion": "¿De qué color se pondrá el jugo de repollo con vinagre? ¿Y con bicarbonato?",
+    "materiales": [
+      "jugo de repollo morado (lo prepara el adulto)",
+      "3 vasos transparentes",
+      "vinagre",
+      "jugo de limón",
+      "bicarbonato disuelto en agua",
+      "cuchara"
+    ],
+    "pasos": [
+      "El adulto licúa repollo morado con agua de la llave y lo cuela.",
+      "Sirve un poco de jugo morado en cada vaso.",
+      "Agrega vinagre al primer vaso.",
+      "Agrega limón al segundo vaso.",
+      "Agrega bicarbonato al tercer vaso.",
+      "Compara los colores."
+    ],
+    "seguridad": "Solo el adulto usa la licuadora. No pruebes ninguna mezcla. Si salpica en los ojos, lava con agua abundante.",
+    "adulto": true,
+    "que_pasa": "El jugo de repollo morado es un indicador: cambia de color según la sustancia. Con sustancias ácidas, como el vinagre y el limón, se pone rosado o rojo. Con sustancias como el bicarbonato, que son básicas, se pone verde o azul.",
+    "concepto": "Indicador de ácidos y bases",
+    "vocabulario": [
+      "indicador",
+      "ácido",
+      "base",
+      "color"
+    ],
+    "preguntas": [
+      "¿De qué color se puso con limón?",
+      "¿En qué se parecen el vinagre y el limón según el repollo?",
+      "¿Cómo podrías saber si una fruta es ácida sin probarla?"
+    ],
+    "reto": "Usa solo vinagre y cambia la cantidad: 1, 5 y 10 gotas en vasos iguales.",
+    "minutos": 25
+  },
+  {
+    "id": "g02-e043",
+    "grado": 2,
+    "eje": "quimica",
+    "titulo": "Volcán de bicarbonato",
+    "gancho": "Cerca de Pasto está el volcán Galeras. ¿Podemos hacer una 'erupción' segura en el salón?",
+    "dba": "Observa y describe qué ocurre al mezclar materiales de uso diario, cómo se pueden separar y qué cambios se pueden devolver y cuáles no (acercamiento inicial a mezclas y cambios de la materia).",
+    "prediccion": "¿Qué pasará cuando eches vinagre sobre el bicarbonato?",
+    "materiales": [
+      "botella plástica pequeña",
+      "bandeja",
+      "bicarbonato",
+      "vinagre",
+      "colorante rojo",
+      "gotas de jabón de loza",
+      "cuchara",
+      "gafas de seguridad o gafas de sol"
+    ],
+    "pasos": [
+      "Pon la botella en el centro de la bandeja.",
+      "Echa 2 cucharadas de bicarbonato en la botella.",
+      "Mezcla aparte medio vaso de vinagre con colorante y una gota de jabón.",
+      "Ponte las gafas.",
+      "Echa el vinagre en la botella y aléjate un paso.",
+      "Observa la espuma."
+    ],
+    "seguridad": "Usa gafas. No acerques la cara a la botella. No tapes la botella. No pruebes nada. Hazlo sobre bandeja.",
+    "adulto": true,
+    "que_pasa": "Cuando el vinagre y el bicarbonato se juntan, se transforman en sustancias nuevas, entre ellas un gas llamado dióxido de carbono. El gas forma burbujas que, con el jabón, hacen espuma y salen por la botella.",
+    "concepto": "Reacción que produce un gas",
+    "vocabulario": [
+      "reacción",
+      "gas",
+      "burbujas",
+      "espuma"
+    ],
+    "preguntas": [
+      "¿Qué salió de la botella?",
+      "¿De dónde salieron las burbujas?",
+      "¿Por qué la gaseosa también tiene burbujas?"
+    ],
+    "reto": "Usa siempre 2 cucharadas de bicarbonato y cambia solo el vinagre: medio vaso y un vaso.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e044",
+    "grado": 2,
+    "eje": "quimica",
+    "titulo": "Chocolate que se derrite y vuelve",
+    "gancho": "Cuando llevamos una chocolatina en el bolsillo en Cali, se derrite. ¿Se daña para siempre?",
+    "dba": "Observa y describe qué ocurre al mezclar materiales de uso diario, cómo se pueden separar y qué cambios se pueden devolver y cuáles no (acercamiento inicial a mezclas y cambios de la materia).",
+    "prediccion": "Si derrites un trocito de chocolate con el calor de tu mano y luego lo metes en la nevera, ¿volverá a endurecer?",
+    "materiales": [
+      "2 trocitos de chocolate para comer",
+      "papel aluminio",
+      "nevera",
+      "reloj"
+    ],
+    "pasos": [
+      "Pon un trocito de chocolate sobre papel aluminio en tu mano cerrada.",
+      "Espera 5 minutos y observa cómo cambia.",
+      "Envuélvelo y llévalo a la nevera con un adulto.",
+      "Espera 20 minutos.",
+      "Compara con el otro trocito que no derretiste."
+    ],
+    "seguridad": "No comas el chocolate del experimento. Lávate las manos. Pregunta si alguien es alérgico.",
+    "adulto": true,
+    "que_pasa": "El calor de la mano derrite el chocolate y pasa de sólido a líquido. En la nevera pierde calor y vuelve a ser sólido. Es un cambio reversible: el chocolate sigue siendo chocolate, solo cambió su estado y su forma.",
+    "concepto": "Cambio reversible",
+    "vocabulario": [
+      "reversible",
+      "derretir",
+      "endurecer",
+      "estado"
+    ],
+    "preguntas": [
+      "¿Qué le pasó al chocolate en tu mano?",
+      "¿Por qué decimos que este cambio se puede devolver?",
+      "¿Qué otro cambio de tu casa se puede devolver?"
+    ],
+    "reto": "Pon un trocito al sol y otro a la sombra 10 minutos. Solo cambia el lugar.",
+    "minutos": 30
+  },
+  {
+    "id": "g02-e045",
+    "grado": 2,
+    "eje": "quimica",
+    "titulo": "La manzana que se pone café",
+    "gancho": "Cuando partimos un banano o una manzana para la lonchera, al rato se pone café. ¿Por qué?",
+    "dba": "Observa y describe qué ocurre al mezclar materiales de uso diario, cómo se pueden separar y qué cambios se pueden devolver y cuáles no (acercamiento inicial a mezclas y cambios de la materia).",
+    "prediccion": "¿Qué tajada se pondrá café más rápido: la que tiene limón o la que no?",
+    "materiales": [
+      "manzana (la parte el adulto)",
+      "jugo de limón",
+      "2 platos",
+      "reloj"
+    ],
+    "pasos": [
+      "El adulto corta dos tajadas de manzana.",
+      "A una tajada échale jugo de limón por encima.",
+      "Deja la otra sin nada.",
+      "Observa cada 15 minutos durante una hora.",
+      "Dibuja los cambios de color."
+    ],
+    "seguridad": "Solo el adulto usa el cuchillo. No comas las tajadas del experimento.",
+    "adulto": true,
+    "que_pasa": "Al cortar la manzana, su interior toca el aire y una sustancia del aire, el oxígeno, reacciona con ella y la pone café. Es un cambio que no se puede devolver. El limón hace que este cambio sea más lento.",
+    "concepto": "Cambio irreversible",
+    "vocabulario": [
+      "irreversible",
+      "oxígeno",
+      "reacción",
+      "aire"
+    ],
+    "preguntas": [
+      "¿Cuál tajada se puso café primero?",
+      "¿Podemos hacer que la tajada café vuelva a ser blanca? ¿Por qué?",
+      "¿Cómo guardarías el aguacate partido para que no se ponga negro tan rápido?"
+    ],
+    "reto": "Deja una tajada sin limón al aire y otra sin limón dentro de un vaso de agua. Solo cambia el contacto con el aire.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e046",
+    "grado": 2,
+    "eje": "tierra-universo",
+    "titulo": "¿Qué suelo guarda más agua?",
+    "gancho": "En el Valle del Cauca hay suelos muy buenos para la caña de azúcar. ¿Todos los suelos guardan agua igual?",
+    "dba": "Registra y describe el movimiento aparente del Sol y la Luna en el cielo y reconoce características del agua, el suelo y el aire de su entorno.",
+    "prediccion": "¿Por cuál suelo crees que pasará el agua más rápido: arena, tierra negra o arcilla?",
+    "materiales": [
+      "3 vasos plásticos con huecos en el fondo (los hace el adulto)",
+      "arena",
+      "tierra negra",
+      "arcilla o barro seco",
+      "3 vasos transparentes",
+      "agua",
+      "cronómetro"
+    ],
+    "pasos": [
+      "Llena cada vaso con huecos con un tipo de suelo, hasta la mitad.",
+      "Ponlos encima de los vasos transparentes.",
+      "Echa medio vaso de agua en cada uno al mismo tiempo.",
+      "Mide cuánta agua cae en 3 minutos.",
+      "Compara."
+    ],
+    "seguridad": "El adulto hace los huecos. Lávate las manos después de tocar la tierra.",
+    "adulto": true,
+    "que_pasa": "La arena tiene granos grandes con espacios entre ellos y el agua pasa rápido. La arcilla tiene granos muy pequeños y apretados que retienen el agua. La tierra negra guarda agua y también la deja pasar un poco, por eso es buena para las plantas.",
+    "concepto": "Tipos de suelo",
+    "vocabulario": [
+      "suelo",
+      "arena",
+      "arcilla",
+      "retener"
+    ],
+    "preguntas": [
+      "¿Por cuál suelo pasó más agua?",
+      "¿Por qué la arcilla retiene el agua?",
+      "¿En cuál suelo sembrarías una mata y por qué?"
+    ],
+    "reto": "Usa solo tierra negra, pero apretada en un vaso y suelta en el otro. Solo cambia qué tan apretada está.",
+    "minutos": 25
+  },
+  {
+    "id": "g02-e047",
+    "grado": 2,
+    "eje": "tierra-universo",
+    "titulo": "Reloj de sombra",
+    "gancho": "Cali está muy cerca de la línea del ecuador: al mediodía las sombras casi desaparecen. ¿Cómo se mueve la sombra en el día?",
+    "dba": "Registra y describe el movimiento aparente del Sol y la Luna en el cielo y reconoce características del agua, el suelo y el aire de su entorno.",
+    "prediccion": "¿Hacia dónde se moverá la sombra del palito durante la mañana?",
+    "materiales": [
+      "palito o lápiz",
+      "plastilina",
+      "cartulina",
+      "tiza o marcador",
+      "reloj"
+    ],
+    "pasos": [
+      "Pon la cartulina en el patio, en un lugar con sol todo el día.",
+      "Para el palito en el centro con plastilina.",
+      "A las 8:00 marca la punta de la sombra y escribe la hora.",
+      "Marca la sombra cada hora.",
+      "Al final del día compara el largo y la dirección de las sombras."
+    ],
+    "seguridad": "Nunca mires directamente al Sol. Usa gorra y bloqueador.",
+    "adulto": false,
+    "que_pasa": "El Sol parece moverse por el cielo de oriente a occidente porque la Tierra gira. Por eso la sombra cambia de dirección y de tamaño durante el día. Al mediodía el Sol está casi encima de nosotros y la sombra es muy corta.",
+    "concepto": "Movimiento aparente del Sol",
+    "vocabulario": [
+      "Sol",
+      "sombra",
+      "oriente",
+      "occidente"
+    ],
+    "preguntas": [
+      "¿A qué hora fue más corta la sombra?",
+      "¿Por qué la sombra cambia de dirección?",
+      "¿Cómo podías saber la hora con una sombra si no tienes reloj?"
+    ],
+    "reto": "Usa un palito más largo en otra cartulina a las mismas horas. Solo cambia el largo del palito.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e048",
+    "grado": 2,
+    "eje": "tierra-universo",
+    "titulo": "Día y noche con una linterna",
+    "gancho": "Cuando en Cali es de día, en Japón es de noche. ¿Cómo puede pasar eso al mismo tiempo?",
+    "dba": "Registra y describe el movimiento aparente del Sol y la Luna en el cielo y reconoce características del agua, el suelo y el aire de su entorno.",
+    "prediccion": "Si la linterna es el Sol y la pelota es la Tierra, ¿cuánta parte de la pelota estará iluminada?",
+    "materiales": [
+      "linterna",
+      "pelota o naranja",
+      "palito de pincho sin punta o lápiz",
+      "sticker o plastilina para marcar Colombia"
+    ],
+    "pasos": [
+      "Atraviesa la pelota con el palito (lo hace el adulto) o sostenla con las manos.",
+      "Marca Colombia con un sticker.",
+      "Oscurece el salón y apunta la linterna a la pelota.",
+      "Gira la pelota despacio de izquierda a derecha.",
+      "Observa cuándo el sticker está en la luz y cuándo en la sombra."
+    ],
+    "seguridad": "El adulto atraviesa la pelota si se usa palito. No apuntes la linterna a los ojos.",
+    "adulto": true,
+    "que_pasa": "La Tierra gira sobre sí misma. La mitad que mira al Sol tiene día y la otra mitad tiene noche. Como la Tierra no deja de girar, el día y la noche se van turnando.",
+    "concepto": "Rotación de la Tierra",
+    "vocabulario": [
+      "rotación",
+      "día",
+      "noche",
+      "girar"
+    ],
+    "preguntas": [
+      "¿Cuánta parte de la pelota estaba iluminada?",
+      "¿Qué tiene que pasar para que Colombia pase del día a la noche?",
+      "¿Por qué tu familia en otro país te llama de noche cuando aquí es de día?"
+    ],
+    "reto": "Gira la pelota rápido y luego despacio. Solo cambia la rapidez y observa cuánto dura el 'día' en Colombia.",
+    "minutos": 15
+  },
+  {
+    "id": "g02-e049",
+    "grado": 2,
+    "eje": "tierra-universo",
+    "titulo": "Las caras de la Luna",
+    "gancho": "Hay noches en que la Luna sobre los Farallones de Cali es redonda y otras en que parece una uña. ¿Cambia de forma?",
+    "dba": "Registra y describe el movimiento aparente del Sol y la Luna en el cielo y reconoce características del agua, el suelo y el aire de su entorno.",
+    "prediccion": "Si das una vuelta con una pelota alrededor de tu cabeza frente a una lámpara, ¿la verás siempre igual de iluminada?",
+    "materiales": [
+      "lámpara sin pantalla o linterna fija",
+      "pelota blanca de icopor en un palito",
+      "salón oscuro"
+    ],
+    "pasos": [
+      "Pon la lámpara en un extremo del salón.",
+      "Párate en el centro con la pelota frente a ti, por encima de tu cabeza.",
+      "Gira despacio en tu puesto llevando la pelota contigo.",
+      "Observa la parte iluminada en cada posición.",
+      "Dibuja 4 formas que viste."
+    ],
+    "seguridad": "Mueve el cuerpo despacio para no marearte. Deja espacio libre alrededor.",
+    "adulto": false,
+    "que_pasa": "La Luna no tiene luz propia: la ilumina el Sol. Mientras la Luna gira alrededor de la Tierra, vemos distinta parte de su cara iluminada. Por eso parece cambiar de forma: son las fases de la Luna.",
+    "concepto": "Fases de la Luna",
+    "vocabulario": [
+      "Luna",
+      "fase",
+      "iluminar",
+      "órbita"
+    ],
+    "preguntas": [
+      "¿Qué formas de la pelota viste?",
+      "¿Por qué no vemos siempre la Luna completa?",
+      "¿Cómo podrías llevar un diario de la Luna desde tu casa?"
+    ],
+    "reto": "Observa la Luna real desde tu casa a la misma hora durante 7 noches y compárala. Solo cambia el día.",
+    "minutos": 20
+  },
+  {
+    "id": "g02-e050",
+    "grado": 2,
+    "eje": "tierra-universo",
+    "titulo": "Lluvia en una bolsa",
+    "gancho": "En Cali llueve mucho en abril y octubre. ¿De dónde sale el agua de la lluvia?",
+    "dba": "Registra y describe el movimiento aparente del Sol y la Luna en el cielo y reconoce características del agua, el suelo y el aire de su entorno.",
+    "prediccion": "Si dejas una bolsa con un poquito de agua pegada a una ventana soleada, ¿aparecerán gotas arriba?",
+    "materiales": [
+      "bolsa plástica de cierre hermético",
+      "agua con colorante azul",
+      "cinta",
+      "marcador",
+      "ventana con sol"
+    ],
+    "pasos": [
+      "Dibuja en la bolsa un sol, nubes y el mar abajo.",
+      "Echa un cuarto de vaso de agua con colorante.",
+      "Cierra muy bien la bolsa.",
+      "Pégala en una ventana que reciba sol.",
+      "Obsérvala a las 2 horas y al día siguiente."
+    ],
+    "seguridad": "Cierra bien la bolsa y pégala con cinta firme para que no caiga.",
+    "adulto": false,
+    "que_pasa": "El sol calienta el agua y parte se evapora. El vapor sube, se enfría en la parte alta de la bolsa y se condensa en gotitas, como las nubes. Cuando las gotas se juntan y pesan, se escurren hacia abajo como lluvia. Es el ciclo del agua.",
+    "concepto": "Ciclo del agua",
+    "vocabulario": [
+      "evaporación",
+      "condensación",
+      "lluvia",
+      "ciclo"
+    ],
+    "preguntas": [
+      "¿Dónde aparecieron gotitas?",
+      "¿Por qué las gotas bajan otra vez?",
+      "¿Por qué el agua de los ríos de Cali no se acaba aunque se evapore?"
+    ],
+    "reto": "Pega otra bolsa igual en una ventana a la sombra. Solo cambia la luz del sol que recibe.",
+    "minutos": 15
+  }
+]

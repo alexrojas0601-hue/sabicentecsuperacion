@@ -79,3 +79,34 @@ Alexander Rojas Zamorano — Colegio CENTEC.
 - `proyectos.html`: banco de proyectos por área y grado, con "Trabajar este proyecto con SABI", "Cómo se construye" (usa `/api/guia`) y "Planear esta clase (docentes)".
 - `data/proyectos-areas.json` y `data/pedagogia-vigente.json`: datos vivos que leen los tres agentes en cada sesión.
 - `scripts/investigador-areas.mjs` y `.github/workflows/sabi-investigadores.yml`: agentes que los actualizan cada semana mediante Pull Requests. Detalle en `AGENTES.md`.
+
+## Prompt Maestro SABICENTEC: Dots, comandos y educación visual (octubre 2026)
+
+El cerebro del tutor (`functions/api/chat.js`) incluye el Prompt Maestro: red de agentes Dots
+(un Dot especialista por área + Dot Auditor Riguroso + Dot Investigador), marco MEN (EBC, DBA,
+Lineamientos, Saber 11) más las áreas SABIC (Matemática y Estadística Financiera, Inteligencia
+Emocional, Inglés B2/C1, STEAM, SENA) y la instrucción de educación visual.
+
+Los comandos se escriben en el chat o se tocan en la barra de herramientas encima del cuadro de
+texto. SABI responde con una etiqueta y `sabi-dots.js` la dibuja e interactúa:
+
+| Comando | Herramienta en pantalla |
+|---|---|
+| `/sopa_de_letras` | Sopa de letras interactiva |
+| `/crucigrama`, `/crossword` | Crucigrama que se arma y se corrige solo |
+| `/flashcards` | Tarjetas con repetición espaciada (mazo guardado en el navegador) |
+| `/timeline` | Línea de tiempo |
+| `/fluxograma`, `/matflow` | Diagrama de flujo con decisiones |
+| `/5w1h` | Análisis Quién, Qué, Cuándo, Dónde, Por qué, Cómo (campos para completar) |
+| `/mathmaps`, `/mapmaps`, `/sketchnotes` | Mapa mental |
+| `/paso_a_paso`, `/step-by-step` | Procedimiento que se revela paso a paso |
+| `/mathvisual` | Gráfica de funciones con calculadora de valores |
+| `/matematicas_formulas` | Modelado de fórmulas, tablas financieras |
+| `/comics` | Historieta con personajes y SABI |
+| `/detectaerror` | Solución con un error para encontrar y corregir |
+| `/human_atlas` | Esquema del cuerpo humano con órganos resaltados |
+| `/leccion TEMA` | Lección completa en 6 capítulos (objetivos → síntesis) |
+| `/proyecto` | Formulación de proyecto (ODS, SMART, STEAM, presupuesto, SENA, indicadores) |
+
+En los turnos con comando el tutor tiene más espacio de respuesta y el Auditor no puede borrar la
+herramienta visual. Archivos: `sabi-dots.js` (motor) y `sabi-dots.css` (estilos).

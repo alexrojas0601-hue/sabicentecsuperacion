@@ -292,11 +292,16 @@
   .leer{font-size:.8em !important;}
   #btn-voz-auto[aria-pressed="true"]{background:#F5A623; color:#0B1F3F; border-color:#F5A623;}
   .barra-reto{position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap; gap:10px 18px; align-items:center; justify-content:center; background:#FFF6E3; border-bottom:2px solid #E8A33A; padding:10px clamp(14px,4vw,40px); font-family:'Public Sans',sans-serif; font-size:clamp(.95rem,.85rem + .3vw,1.1rem); color:#1F1D1A;}
+  .barra-reto[hidden]{display:none !important;}
   .barra-reto a{background:#0B1F3F; color:#FBF8F1; text-decoration:none; font-weight:700; border-radius:999px; padding:8px 18px;}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="sabi-dots.css">
+<script src="sabi-dots.js"></script>
+<script src="sabi-ayudas.js"></script>
+<script src="sabi-comandos.js"></script>
 </head>
 <body>
 
@@ -534,6 +539,31 @@
 
   <p class="aviso">SABI puede cometer errores. Si algo no te suena bien, coméntaselo a tu profesor.</p>
 
+  <nav class="dots-barra" id="dots-barra" aria-label="Herramientas para aprender con SABI">
+    <button type="button" class="destacado" data-cmd="/leccion">Lección completa</button>
+    <button type="button" data-cmd="/experimento">Experimento</button>
+    <button type="button" data-cmd="/lectura">Lectura</button>
+    <button type="button" data-cmd="/worksheet">Ficha</button>
+    <button type="button" data-cmd="/escape">Escape room</button>
+    <button type="button" data-cmd="/detective">Detective</button>
+    <button type="button" data-cmd="/boardgame">Juego de tablero</button>
+    <button type="button" data-cmd="/paso_a_paso">Paso a paso</button>
+    <button type="button" data-cmd="/mathvisual">Ver la gráfica</button>
+    <button type="button" data-cmd="/flashcards">Tarjetas</button>
+    <button type="button" data-dots-repasar>Repasar mis tarjetas</button>
+    <button type="button" data-cmd="/mapmaps">Mapa mental</button>
+    <button type="button" data-cmd="/puzzle">Parejas</button>
+    <button type="button" data-cmd="/manipulative">Manipulativo</button>
+    <button type="button" data-cmd="/stations">Estaciones</button>
+    <button type="button" data-cmd="/lapbook">Lapbook</button>
+    <button type="button" data-cmd="/minibook">Minilibro</button>
+    <button type="button" data-cmd="/comics">Cómic</button>
+    <button type="button" data-cmd="/sopa_de_letras">Sopa de letras</button>
+    <button type="button" data-cmd="/crucigrama">Crucigrama</button>
+    <button type="button" data-cmd="/proyecto">Formular proyecto</button>
+    <button type="button" data-cmd="/ultrathink">Pensar a fondo</button>
+    <button type="button" class="destacado" data-todos>Todos los comandos /</button>
+  </nav>
   <form id="form-chat">
     <button type="button" id="btn-hablar" class="btn-hablar" title="Hablarle a SABI con tu voz" hidden>Hablar</button>
     <textarea id="input" placeholder="Escríbele a SABI…" rows="1" required></textarea>
@@ -651,6 +681,8 @@
     document.getElementById('btn-laboratorio').style.display = (rol === 'estudiante' || rol === 'docente') ? 'inline-block' : 'none';
     document.getElementById('btn-proyectos').style.display = (rol === 'estudiante' || rol === 'docente') ? 'inline-block' : 'none';
     pintarBarraReto();
+    document.getElementById('dots-barra').style.display = rol === 'padre' ? 'none' : 'flex';
+    if (window.SabiDots) SabiDots.pintarRepaso();
     mostrarPantalla('chat');
   }
 
@@ -800,6 +832,7 @@
           <button type="submit">Enviar mi argumento</button></form>`;
       if (tipo === 'seguridad') return `<div class="opciones seguridad">${['Estoy muy seguro', 'Estoy más o menos seguro', 'Estoy adivinando']
           .map(t => `<button type="button" class="opcion" data-enviar="Sobre mi respuesta: ${t.toLowerCase()}.">${t}</button>`).join('')}</div>`;
+      if (window.SabiDots) return SabiDots.dibujar(tipo, args);
     } catch (e) { console.error('Herramienta no válida', tipo, args, e); }
     return '';
   }
@@ -1276,7 +1309,23 @@
     if (plan.escalera?.length) partes.push('Tu camino de pensamiento: ' + plan.escalera.map(limpiar).join(', luego ') );
     if (plan.valor) partes.push('El valor de hoy: ' + limpiar(plan.valor));
     document.getElementById('plan-detalle').textContent = partes.join('. ') + (partes.length ? '.' : '');
+    let dot = document.getElementById('dot-activo');
+    if (!dot) { dot = document.createElement('p'); dot.id = 'dot-activo'; dot.className = 'dot-activo'; document.getElementById('plan-detalle').after(dot); }
+    dot.textContent = 'Te acompaña ' + dotDe(perfil.profile.materia) + ', con revisión del Dot Auditor Riguroso.';
     pintarAvance();
+  }
+  // Red de tutores especialistas (Prompt Maestro SABICENTEC, sección 3B)
+  function dotDe(materia) {
+    const m = sinAcentos(materia || '');
+    if (/matem|estad|financ|trigon|calculo|econom/.test(m)) return 'Dot Matemáticas Estratégica';
+    if (/lengua|lectura|espanol|literat/.test(m)) return 'Dot Lectura Crítica y Lenguaje';
+    if (/natural|biolog|quim|fisica|steam|robot/.test(m) && !/educacion fisica/.test(m)) return 'Dot Ciencias Naturales STEAM';
+    if (/social|histor|geograf|ciudadan|filosof/.test(m)) return 'Dot Ciencias Sociales y Ciudadanas';
+    if (/ingl|mandar|chino|idioma/.test(m)) return 'Dot Bilingüismo';
+    if (/etic|valor|religi|emocion|comportamiento|sexual/.test(m)) return 'Dot Inteligencia Emocional y Valores';
+    if (/sena|movil|contenidos|recursos humanos|emprend/.test(m)) return 'Dot Técnico SENA';
+    if (/tecnolog|inform|digital|ia\b/.test(m)) return 'Dot Educación Digital e IA';
+    return 'el Dot tutor de tu área';
   }
   const ETAPAS = [['gancho', 'Gancho'], ['prediccion', 'Predicción'], ['exploracion', 'Exploración'], ['concepto', 'Concepto'], ['reto', 'Reto'], ['cierre', 'Cierre']];
   const ETAPA_DE = { gancho: 0, prediccion: 1, exploracion: 2, ejemplo: 3, practica: 3, concepto: 3, reto: 4, cierre: 5 };
@@ -1407,6 +1456,7 @@
     const opciones = [], descubrimientos = [], bloques = [];
     let proxima = '';
     let lista = null;
+    if (window.SabiDots) texto = SabiDots.preprocesar(texto);
     for (const linea of texto.split('\n')) {
       const l = linea.trim();
       if (!l) { lista = null; continue; }
@@ -1501,6 +1551,19 @@
   input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); }
   });
+  // ---------- Dots: comandos del Prompt Maestro SABICENTEC ----------
+  if (window.SabiDots) SabiDots.enviar = (t) => enviarTexto(t);
+  if (window.SabiComandos) SabiComandos.conectar(input);
+  document.getElementById('dots-barra').addEventListener('click', (e) => {
+    if (e.target.closest('[data-todos]')) { input.value = '/'; input.focus(); input.dispatchEvent(new Event('input')); return; }
+    const b = e.target.closest('[data-cmd]'); if (!b) return;
+    const tema = input.value.replace(/^\/\S+\s*/, '').trim();
+    input.value = b.dataset.cmd + ' ' + tema;
+    if (tema) { input.value = ''; enviarTexto(b.dataset.cmd + ' ' + tema); return; }
+    input.placeholder = 'Escribe el tema y pulsa Enviar (por ejemplo: fracciones equivalentes)';
+    input.focus(); input.setSelectionRange(input.value.length, input.value.length);
+  });
+
   restaurar();
   if (!perfil && ['estudiante', 'padre', 'docente'].includes(destino.rol)) {
     const b = document.querySelector(`[data-rol="${destino.rol}"]`); if (b) b.click();
