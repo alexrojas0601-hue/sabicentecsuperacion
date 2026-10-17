@@ -1,0 +1,265 @@
+[
+ {
+  "id": "g11-e001",
+  "grado": 11,
+  "eje": "quimica",
+  "titulo": "¿Cómo neutralizar un ácido con una base casera?",
+  "gancho": "En Cali, cuando se derraman productos químicos en el río Cauca, ¿cómo los técnicos evitan que dañen el ecosistema? Aprende a neutralizar reacciones químicas.",
+  "dba": "Reconoce que en las reacciones químicas se reorganizan los átomos de las sustancias, generando nuevas sustancias con propiedades diferentes, y comprende la importancia de estas reacciones en procesos naturales e industriales.",
+  "prediccion": "¿Qué sucede cuando viertes vinagre (ácido) sobre bicarbonato (base)? ¿Cuál será el pH final?",
+  "materiales": [
+   "vinagre blanco",
+   "bicarbonato de sodio",
+   "papel pH casero (repollo morado)",
+   "agua",
+   "vasos de vidrio o plástico",
+   "cuchara",
+   "papel y lápiz"
+  ],
+  "pasos": [
+   "Prepara papel pH hirviendo repollo morado en agua (solo adulto); deja enfriar y usa el líquido morado como indicador.",
+   "Vierte 50 mL de vinagre en un vaso y mide su pH sumergiendo papel pH: rojo (ácido).",
+   "En otro vaso, disuelve 1 cucharada de bicarbonato en 50 mL de agua; mide su pH: azul (base).",
+   "Mezcla lentamente el vinagre con la solución de bicarbonato y observa la reacción efervescente.",
+   "Mide el pH de la mezcla final con papel pH; anota el color resultante.",
+   "Repite variando cantidades (2 cucharadas de bicarbonato) y predice si el resultado será más ácido o más básico."
+  ],
+  "seguridad": "Adulto presente para preparar el indicador con calor. Evita salpicaduras; usa gafas de seguridad. No probar las sustancias.",
+  "adulto": true,
+  "que_pasa": "El vinagre (CH₃COOH) es un ácido débil y el bicarbonato (NaHCO₃) es una base. Al reaccionar, neutralizan sus cargas y producen agua, dióxido de carbono (burbujas) y una sal. El pH cambia de ácido a neutro o básico según las proporciones. Esta es una reacción de neutralización ácido-base fundamental en química.",
+  "concepto": "Reacción de neutralización ácido-base",
+  "vocabulario": [
+   "pH",
+   "ácido",
+   "base",
+   "neutralización",
+   "efervescencia"
+  ],
+  "preguntas": [
+   "¿Qué indica el color del papel pH cuando la solución es neutra?",
+   "¿Por qué se producen burbujas cuando mezclas vinagre y bicarbonato? ¿Qué gas es?",
+   "¿Cómo aplicarías este conocimiento si se derrama un ácido en casa?"
+  ],
+  "reto": "Investiga si otros ácidos caseros (jugo de limón, leche) neutralizan el bicarbonato de manera diferente. ¿Cuál produce más efervescencia?",
+  "minutos": 25
+ },
+ {
+  "id": "g11-e002",
+  "grado": 11,
+  "eje": "luz-sonido-energia",
+  "titulo": "¿Cómo se comporta la luz al pasar por diferentes medios?",
+  "gancho": "¿Por qué ves distinto a través de un vaso de agua que a través del aire? Descubre la refracción de la luz.",
+  "dba": "Comprende que la luz se propaga en línea recta en medios homogéneos y se refracta al cambiar de medio, fenómeno que explica muchos eventos cotidianos como el efecto de las lentes y la visión.",
+  "prediccion": "Predice si una moneda bajo agua se verá en el mismo lugar donde está realmente.",
+  "materiales": [
+   "vaso transparente",
+   "agua",
+   "moneda",
+   "lápiz o varilla de vidrio",
+   "aceite de cocina",
+   "papel blanco",
+   "linternas o luz natural"
+  ],
+  "pasos": [
+   "Coloca una moneda en el fondo de un vaso vacío; observa su posición exacta.",
+   "Llena el vaso lentamente con agua mientras observas la moneda; nota cómo parece cambiar de posición.",
+   "Introduce un lápiz en el agua en ángulo; observa cómo se ve 'doblado' en la superficie.",
+   "Vacía el vaso y repite con aceite de cocina en lugar de agua; compara el efecto.",
+   "Dibuja un diagrama mostrando dónde está realmente la moneda y dónde parece estar.",
+   "Explica por qué sucede este cambio de aparición usando el concepto de refracción."
+  ],
+  "seguridad": "Manipular con cuidado el vaso para evitar derrames. No usar lentes directamente sobre luz solar intensa.",
+  "adulto": false,
+  "que_pasa": "La luz se refracta (cambia de dirección) al pasar de un medio a otro con diferente densidad. El agua tiene mayor densidad óptica que el aire, por lo que la luz se ralentiza y cambia de ángulo. Esto hace que la moneda parezca estar en otro lugar (más cercana a la superficie). El aceite tiene menor efecto de refracción que el agua porque su índice de refracción es más similar al del aire.",
+  "concepto": "Refracción de la luz",
+  "vocabulario": [
+   "refracción",
+   "índice de refracción",
+   "medio óptico",
+   "densidad óptica",
+   "ángulo de incidencia"
+  ],
+  "preguntas": [
+   "¿En cuál medio (agua u aceite) se desvía más la luz? ¿Por qué?",
+   "¿Cómo explicas que el lápiz se vea 'doblado' en el agua sin estar realmente doblado?",
+   "¿Dónde aplicamos este principio en tecnología? (lentes, cámaras, ojos)"
+  ],
+  "reto": "Calcula el ángulo aproximado de desviación de la moneda usando un transportador. Investiga cómo cambia la refracción con diferentes profundidades de agua.",
+  "minutos": 20
+ },
+ {
+  "id": "g11-e003",
+  "grado": 11,
+  "eje": "fuerza-movimiento",
+  "titulo": "¿Cómo el momentum y la inercia determinan colisiones?",
+  "gancho": "En Cali, ¿por qué un automóvil que viaja rápido causa más daño al chocar que uno lento? Experimenta con momentum.",
+  "dba": "Comprende que el momentum (cantidad de movimiento) es una magnitud que depende de la masa y la velocidad, y que se conserva en sistemas aislados, lo cual explica fenómenos de colisión y explosión.",
+  "prediccion": "¿Qué ocurre cuando una bola pesada golpea una ligera? ¿Y si ambas tienen igual masa pero diferente velocidad?",
+  "materiales": [
+   "3 bolas de diferentes masas (canicas, pelota de tenis, balín)",
+   "rampa o tabla inclinada",
+   "regla métrica",
+   "cinta adhesiva",
+   "bloques pequeños (para marcar posición)"
+  ],
+  "pasos": [
+   "Construye una rampa inclina usando la tabla; marca una línea de salida.",
+   "Libera una bola ligera desde 20 cm de altura; mide qué distancia viaja después de la rampa.",
+   "Repite con la bola pesada desde la misma altura; compara distancias.",
+   "Libera la bola ligera desde 40 cm de altura; compara su desplazamiento con el de la bola pesada desde 20 cm.",
+   "Coloca una bola pequeña como 'objetivo' y observa cómo diferentes bolas la golpean y desplazan.",
+   "Registra datos de masa, altura inicial y distancia recorrida; analiza la relación."
+  ],
+  "seguridad": "Usa en piso plano y seguro. Asegura que las bolas no rueden hacia personas. Usa gafas si es necesario.",
+  "adulto": false,
+  "que_pasa": "El momentum (p = m × v) es el producto de masa y velocidad. Una bola más pesada o más rápida tiene mayor momentum, lo que le permite recorrer más distancia tras dejar la rampa. En colisiones, el momentum total se conserva (se redistribuye entre los objetos). Una bola pesada lenta puede tener el mismo momentum que una ligera rápida, produciendo efectos similares al chocar.",
+  "concepto": "Momentum (cantidad de movimiento) y conservación del momentum",
+  "vocabulario": [
+   "momentum",
+   "inercia",
+   "velocidad",
+   "masa",
+   "colisión elástica"
+  ],
+  "preguntas": [
+   "¿Cuál tiene mayor momentum: una bola pesada lenta o una ligera rápida? ¿Cómo lo sabes?",
+   "¿Por qué el cinturón de seguridad en un auto es importante según el concepto de momentum?",
+   "¿Cómo aplicarías esto en deportes como el billar o el fútbol?"
+  ],
+  "reto": "Investiga si en colisiones elásticas el momentum se conserva pero la energía cinética también. Diseña un experimento con dos bolas de igual masa.",
+  "minutos": 25
+ },
+ {
+  "id": "g11-e004",
+  "grado": 11,
+  "eje": "tierra-universo",
+  "titulo": "¿Cómo las capas de la Tierra crean terremotos?",
+  "gancho": "Colombia está en el Anillo de Fuego del Pacífico. ¿Por qué tiembla la tierra en Cali? Modela el movimiento de placas tectónicas.",
+  "dba": "Comprende que la Tierra está formada por capas (corteza, manto, núcleo) y que el movimiento de las placas tectónicas es responsable de volcanes, terremotos y la formación de montañas.",
+  "prediccion": "¿Qué sucede cuando dos capas de material rígido se deslizan una sobre otra? ¿Cómo se libera la energía?",
+  "materiales": [
+   "dos tablas de madera o aglomerado",
+   "arena o aserrín",
+   "agua",
+   "bandeja o recipiente grande",
+   "regla",
+   "cámara o celular para registrar"
+  ],
+  "pasos": [
+   "Llena la bandeja con una capa de 5 cm de arena mojada (representa la corteza terrestre).",
+   "Coloca dos tablas de madera debajo de la arena, parcialmente empujadas (simulan dos placas tectónicas).",
+   "Empuja lentamente una tabla sobre la otra en movimiento divergente; observa cómo se fractura la arena.",
+   "Repite el experimento con movimiento convergente (placas chocando); compara los patrones de ruptura.",
+   "Documenta con fotos los patrones de fracturas en cada escenario.",
+   "Analiza: ¿dónde se acumula la energía? ¿Cuándo se libera bruscamente?"
+  ],
+  "seguridad": "Arena limpia y mojada (sin contaminantes). No empujar con violencia. Área de experimentación limpia y controlada.",
+  "adulto": false,
+  "que_pasa": "Las placas tectónicas se mueven sobre el manto terrestre. Cuando se deslizan lentamente, la energía se acumula en los límites de placa. Cuando se deslizan bruscamente, liberan esa energía de golpe, generando ondas sísmicas (terremotos). Los patrones de fracturas en la arena simulan cómo la corteza se quiebra y deforma. El tipo de movimiento (divergente, convergente, transformante) produce diferentes tipos de fronteras y sismicidad.",
+  "concepto": "Tectónica de placas y energía sísmica",
+  "vocabulario": [
+   "placas tectónicas",
+   "corteza terrestre",
+   "sismo",
+   "falla geológica",
+   "energía elástica"
+  ],
+  "preguntas": [
+   "¿Qué diferencia observaste entre el movimiento divergente y convergente?",
+   "¿Por qué algunos terremotos son más fuertes que otros? Relaciona con tu modelo.",
+   "¿Cómo protege Cali a sus edificios considerando que está cerca de la falla de Cauca?"
+  ],
+  "reto": "Investiga qué ocurre en un límite de placa transformante (movimiento lateral). Diseña un modelo que lo simule con dos tablas deslizándose lado a lado.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e005",
+  "grado": 11,
+  "eje": "fuerza-movimiento",
+  "titulo": "¿Cómo el centro de gravedad determina el equilibrio?",
+  "gancho": "¿Por qué un acróbata no cae de una cuerda? ¿Cómo los ingenieros diseñan edificios estables en Cali? Experimenta con equilibrio y centro de gravedad.",
+  "dba": "Comprende que el centro de gravedad es el punto donde se concentra toda la masa de un objeto, y que el equilibrio depende de la posición del centro de gravedad respecto al punto de apoyo.",
+  "prediccion": "¿Dónde crees que está el centro de gravedad de un objeto? ¿Siempre en su centro geométrico?",
+  "materiales": [
+   "cuchara de madera",
+   "dos tenedores",
+   "vaso o taza",
+   "hilo",
+   "regla",
+   "objetos varios (lápiz, cinta, bloque de madera)",
+   "monedas",
+   "cartón grueso"
+  ],
+  "pasos": [
+   "Coloca dos tenedores en lados opuestos de una cuchara, formando un punto de apoyo en el borde del vaso; la cuchara se equilibra mágicamente.",
+   "Explica: el centro de gravedad de la cuchara + tenedores está directamente sobre el punto de apoyo.",
+   "Cuelga diferentes objetos de un hilo; observa el punto donde queda vertical (centro de gravedad alineado).",
+   "Marca el centro de gravedad en objetos irregulares (cartón irregular) haciéndolos girar sobre un pivot.",
+   "Construye una figura humana con cartón; desplaza monedas adheridas para cambiar el centro de gravedad; observa cómo se equilibra o cae.",
+   "Mide y calcula teóricamente dónde debería estar el centro de gravedad en objetos simétricos vs. irregulares."
+  ],
+  "seguridad": "Manipular con cuidado objetos suspendidos. No colocar cerca de superficies frágiles.",
+  "adulto": false,
+  "que_pasa": "El centro de gravedad es el punto donde toda la masa se concentra. Para equilibrio estático, la vertical que pasa por el centro de gravedad debe caer dentro de la base de sustentación. En el experimento del tenedor-cuchara, aunque parezca imposible, el centro de gravedad de la cuchara está directamente sobre el punto de apoyo (vaso). En objetos irregulares, el centro de gravedad no coincide con el geométrico. Este concepto es fundamental en arquitectura, aviación y biomecánica.",
+  "concepto": "Centro de gravedad y equilibrio estático",
+  "vocabulario": [
+   "centro de gravedad",
+   "equilibrio",
+   "base de sustentación",
+   "vertical",
+   "estabilidad"
+  ],
+  "preguntas": [
+   "¿Cómo supiste dónde colgaban los objetos para que su centro de gravedad estuviera alineado?",
+   "¿Por qué un objeto con base ancha es más estable que uno con base estrecha?",
+   "¿Cómo aplica esto en construcción de rascacielos o en tu postura al estar de pie?"
+  ],
+  "reto": "Investiga cómo cambian el equilibrio si aumentas peso en un lado del objeto. ¿Dónde debe moverse el fulcro para mantener equilibrio?",
+  "minutos": 22
+ },
+ {
+  "id": "g11-e006",
+  "grado": 11,
+  "eje": "tierra-universo",
+  "titulo": "¿Cómo las rocas revelan la historia de la Tierra?",
+  "gancho": "En Cali, bajo el suelo hay capas de roca de millones de años. ¿Cómo saben los geólogos qué edad tienen? Aprende a interpretar estratificación.",
+  "dba": "Comprende que la estratificación de rocas sedimentarias es evidencia del tiempo geológico, permite datar eventos pasados (ley de superposición) y revela la historia del planeta, incluyendo cambios de clima y vida.",
+  "prediccion": "Si ves capas de roca, ¿cuál es más antigua: la de arriba o la de abajo? ¿Cómo lo determinarías?",
+  "materiales": [
+   "arena fina (blanca y arena oscura)",
+   "grava pequeña",
+   "arcilla o lodo",
+   "agua",
+   "botella transparente clara",
+   "cuchara",
+   "papel y lápiz",
+   "regla"
+  ],
+  "pasos": [
+   "En una botella clara, vierte capas de sedimentos simulando estratificación: arena fina, grava, arcilla, arena oscura (en ese orden).",
+   "Agrega agua hasta llenar; tapa y sacude vigorosamente durante 30 segundos (simula erosión y transporte).",
+   "Déjala reposar 10 minutos; observa cómo los sedimentos se estratifican nuevamente por densidad.",
+   "Mide con regla el grosor de cada capa; registra el orden de sedimentación.",
+   "Dibuja un diagrama estratigráfico etiquetando cada capa con edad relativa (más profunda = más antigua).",
+   "Analiza: si encontrases un fósil en la capa 3, ¿cuándo vivió el organismo?"
+  ],
+  "seguridad": "Arena limpia. Botella de plástico resistente. No ingerir sedimentos.",
+  "adulto": false,
+  "que_pasa": "La estratificación es el depósito de sedimentos en capas. La ley de superposición establece que en una secuencia de capas sin perturbaciones, la inferior es más antigua. Diferentes sedimentos (arena, grava, arcilla) se depositan según su tamaño y densidad; los más pesados (grava) se asientan primero. Cuando la botella se agita y reposa, reproduces el proceso geológico: erosión, transporte, deposición y consolidación. Fósiles en capas específicas permiten datar eventos (datación relativa).",
+  "concepto": "Estratificación, ley de superposición y datación relativa",
+  "vocabulario": [
+   "estratificación",
+   "sedimentación",
+   "superposición",
+   "fósil",
+   "datación relativa"
+  ],
+  "preguntas": [
+   "¿En qué orden se sedimentaron tus capas? ¿Coincidió con tu predicción inicial?",
+   "¿Cuál capa es la más antigua? ¿Por qué?",
+   "Si encuentran un fósil en una capa, ¿qué información nos da sobre cuándo vivió ese ser?"
+  ],
+  "reto": "Añade un 'fósil' casero (semilla, concha pequeña) en una capa intermedia antes de rellenar. Tras asentar, desentiérralo e interpreta. ¿Cuántos años geológicos tiene aproximadamente?",
+  "minutos": 25
+ }
+]
