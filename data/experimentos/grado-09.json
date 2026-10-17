@@ -1,0 +1,270 @@
+[
+ {
+  "id": "g09-e001",
+  "grado": 9,
+  "eje": "quimica",
+  "titulo": "¿Cómo identificar ácidos y bases con repollo morado?",
+  "gancho": "En Cali, muchas aguas industriales contaminan ríos. ¿Podemos saber si son ácidas o básicas sin laboratorio?",
+  "dba": "Identifica ácidos y bases en sustancias cotidianas usando indicadores naturales, comprende la escala de pH y sus aplicaciones en contextos reales.",
+  "prediccion": "Predice qué color mostrará el indicador de repollo morado con vinagre, bicarbonato disuelto y agua pura.",
+  "materiales": [
+   "repollo morado",
+   "agua destilada o filtrada",
+   "vinagre blanco",
+   "bicarbonato de sodio",
+   "limón",
+   "jabón neutro",
+   "vasos transparentes",
+   "cuchara",
+   "coladera"
+  ],
+  "pasos": [
+   "Pica finamente el repollo morado y hierve en agua durante 10 minutos con adulto. Cuela el líquido (será tu indicador).",
+   "Vierte 50 mL del indicador en cada vaso.",
+   "Añade 10 mL de vinagre al primer vaso y observa el cambio de color (rojo/rosa = ácido).",
+   "Añade 10 mL de bicarbonato disuelto al segundo vaso (azul/verde = base).",
+   "Añade 10 mL de agua pura al tercero (púrpura = neutro).",
+   "Prueba con limón, jabón y otras sustancias caseras seguras.",
+   "Registra los colores en una tabla y ordena de más ácido a más básico."
+  ],
+  "seguridad": "Adulto presente en la cocción. No probar ninguna sustancia. No mezclar productos de limpieza.",
+  "adulto": true,
+  "que_pasa": "El repollo morado contiene antocianinas, pigmentos que cambian de color según el pH. Los ácidos (vinagre, limón) producen tonos rojos; las bases (bicarbonato) producen tonos azules. Este cambio reversible permite clasificar sustancias sin equipos costosos, demostrando que la química está en la cocina.",
+  "concepto": "Indicadores naturales y escala de pH",
+  "vocabulario": [
+   "ácido",
+   "base",
+   "pH",
+   "indicador",
+   "antocianinas"
+  ],
+  "preguntas": [
+   "¿Qué color produce el vinagre y por qué?",
+   "¿Cómo podrías usar este indicador para saber si el agua del río de tu barrio es contaminada?",
+   "¿Qué otras plantas podrían servir como indicadores naturales?"
+  ],
+  "reto": "Usa diferentes verduras (betarraga, espinaca) como indicadores y compara qué sustancia produce indicadores más sensibles al cambio de color.",
+  "minutos": 40
+ },
+ {
+  "id": "g09-e002",
+  "grado": 9,
+  "eje": "luz-sonido-energia",
+  "titulo": "¿Cómo viaja la luz a través de diferentes materiales?",
+  "gancho": "¿Por qué en las ventanas polarizadas de los autos de Cali no ves adentro, pero la luz entra?",
+  "dba": "Comprende que la luz se propaga en línea recta, se refracta y absorbe según el material; predice cómo se comporta la luz en medios distintos.",
+  "prediccion": "Predice si verás claramente un objeto a través de agua clara, agua turbia, aceite de cocina y papel translúcido.",
+  "materiales": [
+   "linterna o luz de celular",
+   "vasos transparentes",
+   "agua",
+   "aceite de cocina",
+   "papel translúcido",
+   "papel opaco",
+   "leche (opcional)",
+   "objeto pequeño (moneda, botón)"
+  ],
+  "pasos": [
+   "En una habitación oscura, coloca un vaso con agua clara frente a la linterna.",
+   "Pon una moneda dentro del vaso y observa si ves claramente a través del agua.",
+   "Repite con un vaso de agua + unas gotas de leche (agua turbia).",
+   "Repite con aceite de cocina.",
+   "Coloca papel translúcido e intenta ver la moneda.",
+   "Coloca papel opaco y compara.",
+   "Mide en cada caso cuánta luz pasó (brillo, claridad)."
+  ],
+  "seguridad": "Cuidado con la linterna en los ojos. No probar el aceite. Limpiar derrames.",
+  "adulto": false,
+  "que_pasa": "La luz viaja en línea recta a través de medios transparentes. En medios translúcidos (papel), se dispersa pero pasa. En medios opacos, se absorbe o refleja totalmente. En fluidos como agua turbia, las partículas dispersan la luz (dispersión de Rayleigh). El aceite tiene diferente índice de refracción que el agua, cambiando cómo se bend la luz, afectando la claridad.",
+  "concepto": "Propagación de luz, transparencia, refracción y absorción",
+  "vocabulario": [
+   "transparente",
+   "translúcido",
+   "opaco",
+   "refracción",
+   "absorción"
+  ],
+  "preguntas": [
+   "¿Qué material dejó pasar más luz sin obstaculizar la visión?",
+   "¿Por qué el papel translúcido es útil en las ventanas de oficinas en Cali?",
+   "¿Cómo se relaciona esto con las gafas de sol polarizadas?"
+  ],
+  "reto": "Experimenta con diferentes líquidos (vinagre, almíbar, alcohol). ¿Cuál distorsiona más la imagen?",
+  "minutos": 30
+ },
+ {
+  "id": "g09-e003",
+  "grado": 9,
+  "eje": "seres-vivos-cuerpo",
+  "titulo": "¿Cuál es la velocidad de reacción de los reflejos corporales?",
+  "gancho": "¿Por qué si te quemas con agua caliente tu mano se retira automáticamente, sin que lo pienses?",
+  "dba": "Comprende el arco reflejo y su importancia en la protección del cuerpo; mide la velocidad de respuesta del sistema nervioso.",
+  "prediccion": "Predice qué persona tiene reflejos más rápidos en tu grupo y cómo puedes medirlo.",
+  "materiales": [
+   "regla de 30 cm",
+   "cronómetro",
+   "papel",
+   "lápiz"
+  ],
+  "pasos": [
+   "Una persona sostiene la regla verticalmente desde el extremo superior.",
+   "Otra persona coloca su mano en forma de pinza (dedos abiertos) justo debajo de la regla sin tocarla.",
+   "La primera suelta la regla sin avisar.",
+   "La segunda cierra la pinza intentando atrapar la regla lo más rápido posible.",
+   "Mide en qué centímetro fue capturada (menos centímetros = reflejo más rápido).",
+   "Repite 5 veces con cada persona.",
+   "Calcula el promedio de cada participante y compara."
+  ],
+  "seguridad": "Actividad sin riesgos. Puede hacerse con varias personas.",
+  "adulto": false,
+  "que_pasa": "El reflejo es una respuesta automática del sistema nervioso que ocurre sin intervención del cerebro consciente. La señal viaja desde los receptores sensoriales por la médula espinal y regresa como respuesta motora en milisegundos. El tiempo de caída de la regla (d = ½gt²) permite calcular indirectamente el tiempo de reacción: cuanto menos cae la regla antes de ser atrapada, más rápido fue el reflejo.",
+  "concepto": "Arco reflejo y velocidad de reacción del sistema nervioso",
+  "vocabulario": [
+   "reflejo",
+   "arco reflejo",
+   "estímulo",
+   "respuesta",
+   "velocidad de reacción"
+  ],
+  "preguntas": [
+   "¿Cuál fue el tiempo de reacción promedio de tu grupo?",
+   "¿Por qué es importante que los reflejos sean rápidos en la vida cotidiana?",
+   "¿Cómo crees que el cansancio o la concentración afectan la velocidad de reacción?"
+  ],
+  "reto": "Mide reflejos después de diferentes actividades (correr, pensar en un problema complejo, descansar). ¿Cambia la velocidad de reacción?",
+  "minutos": 30
+ },
+ {
+  "id": "g09-e004",
+  "grado": 9,
+  "eje": "tierra-universo",
+  "titulo": "¿Cómo se forma un arcoíris usando luz solar?",
+  "gancho": "En Cali llueve seguido y hay días nublados. ¿Por qué después de la lluvia, a veces ves arcoíris?",
+  "dba": "Comprende que la luz blanca se descompone en espectro visible al refractarse; explica fenómenos naturales como el arcoíris.",
+  "prediccion": "Predice qué colors verás cuando hagas pasar luz blanca a través de agua en un día soleado.",
+  "materiales": [
+   "vaso transparente lleno de agua",
+   "luz solar",
+   "papel blanco",
+   "espejo (opcional)",
+   "lupa"
+  ],
+  "pasos": [
+   "En un día soleado, coloca un vaso de agua cerca de una ventana.",
+   "Coloca un papel blanco detrás del vaso.",
+   "Inclina el vaso y observa cómo la luz refractada proyecta colores en el papel.",
+   "Anota el orden de los colores (rojo, naranja, amarillo, verde, azul, índigo, violeta).",
+   "Usa un espejo dentro del agua para aumentar la refracción (si es necesario).",
+   "Mide el ángulo aproximado de cada color (con transportador).",
+   "Investiga: ¿por qué el rojo se desvía menos que el violeta?"
+  ],
+  "seguridad": "No mirar directamente al sol. Cuidado con el agua y vidrio.",
+  "adulto": false,
+  "que_pasa": "La luz blanca está compuesta por diferentes colores (longitudes de onda). Cuando pasa a través del agua, cada color se refracta en un ángulo ligeramente diferente. El rojo (longitud de onda mayor) se refracta menos; el violeta (longitud de onda menor) se refracta más. La dispersión de la luz en gotas de agua tras la lluvia produce el arcoíris natural, que siempre forma un arco a 42° desde el observador.",
+  "concepto": "Refracción, dispersión de luz y espectro visible",
+  "vocabulario": [
+   "refracción",
+   "dispersión",
+   "espectro",
+   "longitud de onda",
+   "ángulo de refracción"
+  ],
+  "preguntas": [
+   "¿En qué orden aparecen los colores y por qué?",
+   "¿Por qué el arcoíris siempre aparece en dirección opuesta al sol?",
+   "¿Cómo podrías explicar a un niño de 5 años por qué se forma el arcoíris?"
+  ],
+  "reto": "Intenta hacer arcoíris usando diferentes ángulos de incidencia del agua o usando aceite en lugar de agua. ¿Se ven diferencias?",
+  "minutos": 25
+ },
+ {
+  "id": "g09-e005",
+  "grado": 9,
+  "eje": "materia-cambios",
+  "titulo": "¿Cómo se forman cristales de sal usando evaporación?",
+  "gancho": "En las salinas cerca de Cali (Buenaventura), ¿cómo se extrae sal del agua de mar evaporándola?",
+  "dba": "Comprende cambios de fase (evaporación, cristalización) y cómo se obtienen sustancias puras a partir de disoluciones.",
+  "prediccion": "Predice qué forma y tamaño tendrán los cristales de sal según la velocidad de evaporación.",
+  "materiales": [
+   "sal de mesa",
+   "agua",
+   "vasos o platos",
+   "cuchara",
+   "papel oscuro",
+   "lupa",
+   "reloj"
+  ],
+  "pasos": [
+   "Disuelve sal en agua caliente (con adulto) hasta saturación (no se disuelve más).",
+   "Vierte la disolución en un vaso.",
+   "Coloca el vaso en un lugar ventilado pero NO a luz directa.",
+   "Deja evaporar lentamente durante 3-5 días.",
+   "Cuando el agua haya evaporado casi completamente, observa los cristales con lupa.",
+   "Mide y dibuja la forma de los cristales.",
+   "Repite el experimento con evaporación rápida (luz solar directa) y compara."
+  ],
+  "seguridad": "Adulto prepara agua caliente. No tocar agua hirviendo.",
+  "adulto": true,
+  "que_pasa": "Cuando el agua se evapora lentamente, las moléculas de sal se organizan en estructuras cristalinas ordenadas y simétricas (cúbica en el caso del cloruro de sodio). La evaporación rápida produce cristales más pequeños y desordenados porque las moléculas no tienen tiempo de organizarse. Los cristales reflejan la estructura molecular interna de la sal. Este proceso es similar al que usan las salinas comerciales en Colombia para extraer sal.",
+  "concepto": "Evaporación, cristalización y estructura molecular",
+  "vocabulario": [
+   "evaporación",
+   "cristalización",
+   "cristal",
+   "saturación",
+   "estructura cristalina"
+  ],
+  "preguntas": [
+   "¿Cómo fueron diferentes los cristales de la evaporación lenta vs. rápida?",
+   "¿Por qué en las salinas evaporan el agua lentamente en estanques grandes?",
+   "¿Cómo podrías obtener cristales más grandes y perfectos?"
+  ],
+  "reto": "Repite usando azúcar. ¿Los cristales de azúcar tienen la misma forma que los de sal? Investiga por qué la estructura difiere.",
+  "minutos": 480
+ },
+ {
+  "id": "g09-e006",
+  "grado": 9,
+  "eje": "seres-vivos-cuerpo",
+  "titulo": "¿Cómo funciona la digestión enzimática de proteínas?",
+  "gancho": "¿Por qué si sumerges un trozo de pollo en jugo de piña se vuelve más suave y tierno sin cocinar?",
+  "dba": "Comprende que las enzimas digestivas descomponen moléculas complejas; explica el rol de la bromelina en la digestión de proteínas.",
+  "prediccion": "Predice cuánto tiempo tarda la bromelina de la piña en descomponer la clara de huevo cocida.",
+  "materiales": [
+   "piña fresca o jugo de piña natural",
+   "clara de huevo cocida",
+   "vasos",
+   "cuchara",
+   "papel blanco",
+   "reloj",
+   "agua"
+  ],
+  "pasos": [
+   "Hierve huevos y extrae la clara cocida (con adulto).",
+   "Corta la clara en trozos de tamaño similar.",
+   "Prepara dos vasos: uno con jugo de piña fresca y otro con agua destilada.",
+   "Coloca trozos de clara en ambos vasos.",
+   "Observa y registra cambios cada 5 minutos durante 30 minutos.",
+   "Mide el tamaño de los trozos y su textura.",
+   "Grafica: Tiempo vs. Reducción de tamaño de la clara."
+  ],
+  "seguridad": "Adulto hierve huevos. No probar. Limpiar derrames.",
+  "adulto": true,
+  "que_pasa": "La piña contiene bromelina, una enzima proteolítica que descompone las proteínas en aminoácidos más pequeños. La clara de huevo cocida es proteína: la bromelina la digiere, haciendo que se disuelva y pierda estructura. El agua no tiene este efecto. La piña fresca es más efectiva que la piña enlatada porque el calor en el enlatado desnaturaliza la enzima. En el cuerpo, proteasas similares (pepsina en el estómago) realizan este proceso.",
+  "concepto": "Enzimas proteolíticas y digestión de proteínas",
+  "vocabulario": [
+   "bromelina",
+   "proteasa",
+   "proteína",
+   "digestión enzimática",
+   "aminoácidos"
+  ],
+  "preguntas": [
+   "¿Cómo cambió la clara de huevo en presencia de bromelina vs. agua?",
+   "¿Por qué la piña enlatada no ablanda la carne como la fresca?",
+   "¿Cómo se relaciona esto con la digestión en tu estómago?"
+  ],
+  "reto": "Repite con papaya (contiene papaína) y kiwi. ¿Cuál digiere más rápido las proteínas?",
+  "minutos": 40
+ }
+]
