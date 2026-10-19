@@ -700,7 +700,9 @@
     reto: (PARAMS.get('reto') || '').slice(0, 120),
     herramienta: (PARAMS.get('herramienta') || '').slice(0, 60),
     urlHerramienta: /^https:\/\//.test(PARAMS.get('url') || '') ? PARAMS.get('url').slice(0, 300) : '',
+    cmd: /^\/[a-z0-9_áéíóúñ-]{2,30}$/i.test(PARAMS.get('cmd') || '') ? PARAMS.get('cmd') : '',
   };
+  let cmdInicial = destino.cmd;
   const sinAcentos = t => String(t).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   function aplicarDestino() {
     if (destino.materia) {
@@ -728,7 +730,7 @@
   }
 
   function temaDocente() {
-    if (perfil.role === 'docente' && destino.tema) { const t = destino.tema; destino.tema = ''; setTimeout(() => enviarTexto(t), 100); }
+    if (perfil.role === 'docente' && (destino.tema || cmdInicial)) { const t = ((cmdInicial || '') + ' ' + destino.tema).trim(); destino.tema = ''; cmdInicial = ''; setTimeout(() => enviarTexto(t), 100); }
   }
 
   function restaurar() {
@@ -1393,6 +1395,7 @@
       + (pendiente ? ` El estudiante eligió continuar su misterio pendiente: "${pendiente.texto}".` : '')
       + (perfil.profile.tema ? ` Tema o pregunta que trae desde otra aplicación SABI: "${perfil.profile.tema}". Úsalo como punto de partida.` : '')
       + ' Arranca ya con el gancho, en tu primer turno, siguiendo el Motor de Experiencia y la receta de la asignatura.';
+    if (cmdInicial) { const c = (cmdInicial + ' ' + (perfil.profile.tema || '')).trim(); cmdInicial = ''; perfil.profile.tema = ''; enviarTexto(c); return; }
     perfil.profile.tema = '';
     enviarTexto(arranque, { oculto: true });
   }
