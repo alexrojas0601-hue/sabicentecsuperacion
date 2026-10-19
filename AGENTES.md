@@ -92,3 +92,31 @@ SABICENTEC y la Instrucción Maestra de educación visual. Detalle completo en e
 | Dot_Investigador_SextoSentido | `scripts/investigador-sextosentido.mjs` cada viernes: tendencias de educación, tecnología y trabajo a 30-50 años → `data/tendencias.json` («Radar del futuro» de sabicentec.com), vía Pull Request. |
 
 `GET /api/institucional` devuelve la versión, los Dots y los comandos (lo usa el Dot Vigía).
+
+## Taller de Aprendizaje (`taller.html`) · desde el 19 de octubre de 2026
+
+Una sola página con cinco talleres. Grado elegido arriba; casilla "Ver respuestas (docente)"; todo se imprime en hoja limpia.
+
+| Taller | Qué trae | De dónde sale |
+|---|---|---|
+| Ciencia | 50 experimentos por grado (Transición a 11°), 10 por eje: materia y cambios; fuerza y movimiento; luz, sonido y energía; seres vivos y cuerpo humano; química. Ciclo predecir, hacer, observar y registrar, explicar, pensar más allá, diseñar mi experimento. | `data/experimentos/grado-NN.json` (especificación en `data/experimentos/ESPECIFICACION.md`) |
+| Matemáticas | Fichas infinitas sin IA: cálculo a medida, problemas cotidianos, series y patrones, geometría visual (SVG con medidas), dinero y cambio (pesos colombianos), encuentra el error. Cada ficha abre con una buena idea y trae clave con el porqué y un reto final. El número de ficha la reproduce igual. | `taller-mate.js` · prueba `scripts/test-taller-mate.mjs` |
+| Lectura | "Leer es comprender, relacionar y pensar": 4 preguntas literales con evidencia (el niño toca la oración y la app le dice si es la correcta), leer entre líneas, palabras en contexto, ¿dónde lo pone?, orden y causas (ordenar hechos), piensa y argumenta, valor. Banco más lecturas nuevas con IA desde un tema o un texto propio. | `data/lecturas/*.json` y `/api/taller` modo `lectura` |
+| Didácticas | `/worksheet`, `/escape`, `/detective`, `/boardgame` (tablero SVG + tarjetas), `/stations`, `/manipulative` (concreto, pictórico, abstracto), `/comic`, `/lapbook`, `/puzzle` (sopa de letras, parejas, criptograma, anagramas, acertijo), `/minibook` (8 páginas de una hoja con plantilla de doblado). | `/api/taller` modo `didactica` |
+| Pensar | 40 modos para docentes y directivos: razonar (`/ultrathink`, `/stepback`, `/firstprinciples`, `/chainofthought`), aprender (`/eli5`, `/technicaldeepdive`, `/analogy`, `/socratic`), escribir (`/rewrite`, `/shorten`, `/expand`, `/outline`), código (`/codereview`, `/debug`, `/refactor`, `/testcases`), decidir (`/procons`, `/swot`, `/riskcheck`, `/premortem`), ideas (`/brainstorm`, `/remix`, `/whatif`, `/metaphor`), comunicar (`/formalize`, `/casualize`, `/persuade`, `/deescalate`), planear (`/prd`, `/okrs`, `/timeline`, `/delegate`), verificar (`/factcheck`, `/citesources`, `/summarizeresearch`, `/trendcheck`), autoevaluarse (`/godmode`, `/critique`, `/iterate`, `/selfcheck`). | `/api/taller` modo `pensar` |
+
+Cada recurso con IA pasa por tres filtros (`functions/api/taller.js`): el Dot tutor lo produce como JSON; un auditor de código
+valida estructura y cantidades (y que cada evidencia literal esté copiada del texto; si falla, el Dot reintenta); el
+Dot_Auditor_Riguroso lo resuelve por su cuenta y, si encuentra errores, entrega la versión corregida. La página dice si fue
+aprobado, corregido o si el auditor no estuvo disponible. El tutor (`chat.js`) conoce el Taller y enlaza la parte útil.
+
+### Dots del Taller (`scripts/dots-didactica.mjs`, `.github/workflows/sabi-didactica.yml`)
+
+| Día | Dot | Qué hace |
+|---|---|---|
+| Lunes | Investigador didáctico del área (rota los 8 Dots del Prompt Maestro) | Busca en la web herramientas y estrategias reales con evidencia; auditor de código (URL segura y viva, sin repetidos) y comité (pedagogía, evidencia, seguridad de menores ≥ 4, acceso). → `data/herramientas-didacticas.json` |
+| Miércoles | Dot de lectura | Escribe lecturas para los grados con menos; solo pasan si cada evidencia literal está copiada del texto. |
+| Viernes | Auditor de experimentos | Revisa 24 experimentos por semana (funciona, seguro, ciencia correcta, nivel MEN); marca los dudosos (la página muestra el aviso) y completa ejes con menos de 10. |
+| A mano | Cobertura | Actions → "SABI · Dots del Taller de Aprendizaje" → Run workflow → `cobertura`: tabla de qué hay por grado, sin gastar. |
+
+Todo llega como Pull Request: **aprobar = publicar**.

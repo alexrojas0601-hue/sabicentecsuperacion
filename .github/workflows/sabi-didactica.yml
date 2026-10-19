@@ -1,0 +1,60 @@
+# Dots del Taller de Aprendizaje: buscan herramientas didácticas, escriben lecturas nuevas y auditan
+# los experimentos. Nada llega al sitio sin "Merge" de coordinación académica.
+name: SABI · Dots del Taller de Aprendizaje
+
+on:
+  schedule:
+    - cron: "0 11 * * 1"   # lunes 6:00 a. m. Colombia: Dot investigador del área de la semana (rota 8 Dots)
+    - cron: "0 11 * * 3"   # miércoles: Dot de lectura escribe lecturas para los grados con menos
+    - cron: "0 11 * * 5"   # viernes: Dot auditor de experimentos (muestra rotativa de 24 + completa ejes)
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "herramientas | lecturas | experimentos | cobertura"
+        default: "cobertura"
+      foco:
+        description: "Opcional (herramientas): área, ej. Matemáticas, Inglés, Ciencias"
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  dots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Decidir modo
+        id: modo
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "valor=${{ inputs.modo }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 11 * * 1" ]; then echo "valor=herramientas" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 11 * * 3" ]; then echo "valor=lecturas" >> "$GITHUB_OUTPUT"
+          else echo "valor=experimentos" >> "$GITHUB_OUTPUT"; fi
+      - name: Ejecutar Dots y auditores
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FOCO: ${{ inputs.foco }}
+          MAX_NUEVOS: "3"
+        run: node scripts/dots-didactica.mjs ${{ steps.modo.outputs.valor }}
+      - name: Validar JSON y pruebas del generador de matemáticas
+        run: |
+          for f in data/experimentos/*.json data/lecturas/*.json data/herramientas-didacticas.json; do node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" || exit 1; done
+          if [ -f scripts/test-taller-mate.mjs ]; then node scripts/test-taller-mate.mjs; fi
+      - name: Abrir Pull Request para aprobación humana
+        if: steps.modo.outputs.valor != 'cobertura'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: sabi-didactica/${{ steps.modo.outputs.valor }}
+          delete-branch: true
+          commit-message: "SABI Dots del Taller: ${{ steps.modo.outputs.valor }}"
+          title: "Taller SABI · ${{ steps.modo.outputs.valor }} · revisión de coordinación"
+          body: |
+            Los Dots del Taller de Aprendizaje proponen cambios. El informe está en `data/informes/`.
+            **Aprobar = publicar en taller.html.** Si algo no convence, cierra el PR sin hacer merge.
+          labels: taller

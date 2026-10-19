@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taller de Aprendizaje — SABICENTEC SUPERACIÓN</title>
+<meta name="description" content="Experimentos por grado, fichas de matemáticas infinitas, lecturas en siete niveles y didácticas listas para imprimir. Colegio CENTEC, Cali.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,680&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --noche:#0B1F3F; --noche-2:#14315C; --alba:#F5A623; --barro:#E8792B;
+    --brote:#4C7A5E; --papel:#F7F3E9; --tinta:#1B1B18; --tinta-suave:#5B584E;
+    --linea:rgba(27,27,24,.14); --navy:#1A2D7A; --naranja:#F47C20; --oro:#F5C518;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  [hidden]{display:none!important}
+  body{background:var(--papel);color:var(--tinta);font-family:'Public Sans',sans-serif;font-size:18px;line-height:1.6}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:560;letter-spacing:-.01em;line-height:1.2}
+  a{color:inherit}
+  button{font:inherit;cursor:pointer}
+  :focus-visible{outline:3px solid var(--alba);outline-offset:2px}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+  @media(max-width:640px){.wrap{padding:0 16px}}
+  header.top{border-bottom:1px solid var(--linea)}
+  .top-inner{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:16px;flex-wrap:wrap}
+  .brand{font-weight:600;text-decoration:none}
+  .enlaces{display:flex;gap:8px;flex-wrap:wrap}
+  .cta{background:var(--noche);color:var(--papel);text-decoration:none;padding:9px 16px;border-radius:2px;font-weight:600;font-size:.92rem;border:1px solid var(--noche)}
+  .cta.claro{background:#fff;color:var(--noche)}
+  .intro{background:var(--noche);color:var(--papel);padding:56px 0 40px}
+  .intro h1{font-size:clamp(2rem,5vw,3.3rem);font-weight:450;max-width:20ch}
+  .intro p{max-width:62ch;margin-top:14px;color:rgba(247,243,233,.84)}
+  .barra{position:sticky;top:0;z-index:10;background:rgba(247,243,233,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+  .barra-inner{display:flex;gap:14px;align-items:center;flex-wrap:wrap;padding:10px 0}
+  .tabs{display:flex;gap:4px;flex-wrap:wrap}
+  .tab{border:1px solid var(--linea);background:#fff;padding:8px 14px;border-radius:2px;font-weight:600;font-size:.95rem;color:var(--tinta)}
+  .tab[aria-selected="true"]{background:var(--noche);color:var(--papel);border-color:var(--noche)}
+  .campo{display:flex;flex-direction:column;gap:4px;font-size:.85rem;color:var(--tinta-suave)}
+  .campo.linea{flex-direction:row;align-items:center;gap:8px}
+  select,input[type=text],input[type=number],textarea{font:inherit;font-size:.98rem;color:var(--tinta);background:#fff;border:1px solid var(--linea);padding:8px 10px;border-radius:2px}
+  textarea{width:100%;min-height:110px;resize:vertical}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{border:1px solid var(--linea);background:#fff;padding:6px 12px;border-radius:999px;font-size:.9rem;color:var(--tinta)}
+  .chip[aria-pressed="true"]{background:var(--noche);color:var(--papel);border-color:var(--noche)}
+  .btn{background:var(--naranja);color:#fff;border:0;padding:10px 18px;border-radius:2px;font-weight:700}
+  .btn.sec{background:#fff;color:var(--noche);border:1px solid var(--noche)}
+  .btn:disabled{opacity:.6;cursor:wait}
+  .acciones{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+  main{padding:28px 0 90px}
+  .panel[hidden]{display:none}
+  .panel h2{font-size:1.9rem;margin-bottom:6px}
+  .lead{color:var(--tinta-suave);max-width:70ch;margin-bottom:18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+  .tarjeta{background:#fff;border:1px solid var(--linea);border-radius:2px;padding:16px;text-align:left;color:var(--tinta);display:flex;flex-direction:column;gap:6px}
+  button.tarjeta:hover{border-color:var(--noche)}
+  .tarjeta h3{font-size:1.12rem}
+  .tarjeta .meta{font-size:.82rem;color:var(--tinta-suave)}
+  .etq{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:2px;background:var(--papel);color:var(--noche)}
+  .eje-materia{background:#E3ECF7}.eje-fuerza{background:#FCE5D3}.eje-energia{background:#FFF3C4}.eje-vida{background:#DCEBDF}.eje-quimica{background:#EFE0F5}
+  .hoja{background:#fff;border:1px solid var(--linea);padding:36px 40px;border-radius:2px;margin-top:10px}
+  @media(max-width:640px){.hoja{padding:20px 16px}}
+  .hoja h2{font-size:1.75rem}
+  .hoja h3{font-size:1.2rem;margin:22px 0 8px;color:var(--navy)}
+  .hoja p,.hoja li{max-width:75ch}
+  .hoja ol,.hoja ul{margin-left:1.4em}
+  .hoja li{margin:4px 0}
+  .cabecera-ficha{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--navy);padding-bottom:10px;margin-bottom:14px;font-size:.9rem;color:var(--tinta-suave)}
+  .nombre-linea{display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem;margin:6px 0 14px}
+  .nombre-linea span{flex:1;min-width:180px;border-bottom:1px solid var(--tinta);padding-bottom:2px}
+  .caja{border-left:4px solid var(--naranja);background:#FFF8EF;padding:12px 16px;margin:12px 0;border-radius:2px}
+  .caja.azul{border-color:var(--navy);background:#EEF2FB}
+  .caja.verde{border-color:var(--brote);background:#EEF5F0}
+  .caja b{font-weight:700}
+  .resp{display:none;color:var(--brote);font-weight:600}
+  body.ver-resp .resp{display:block}
+  body.ver-resp span.resp{display:inline}
+  .tabla-reg{border-collapse:collapse;width:100%;margin-top:8px}
+  .tabla-reg td,.tabla-reg th{border:1px solid #999;padding:10px;height:38px;font-size:.9rem;text-align:left}
+  .items{display:grid;gap:14px;counter-reset:it}
+  .item{border:1px solid var(--linea);border-radius:2px;padding:14px 16px;break-inside:avoid}
+  .item .num{font-weight:700;color:var(--navy);margin-right:6px}
+  .item svg{max-width:100%;height:auto;display:block;margin:8px 0}
+  .espacio{border-bottom:1px dashed #aaa;height:30px;margin-top:6px}
+  .cols2{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px}
+  @media(max-width:640px){.cols2{grid-template-columns:1fr}}
+  .oracion{cursor:pointer;border-radius:2px;padding:1px 2px;transition:background .15s}
+  .oracion:hover{background:#FFF1D6}
+  .oracion.sel{background:var(--oro)}
+  .oracion.bien{background:#BFE3C8}
+  .oracion.mal{background:#F6C9C3}
+  .parrafo{display:flex;gap:10px;margin:10px 0}
+  .parrafo .pn{flex:0 0 auto;font-weight:700;color:var(--navy);font-size:.85rem;padding-top:4px;min-width:22px}
+  .pregunta-l{border:1px solid var(--linea);padding:10px 14px;border-radius:2px;margin:8px 0;background:#fff}
+  .pregunta-l.activa{border-color:var(--naranja);box-shadow:0 0 0 2px #FCE5D3}
+  .fb{font-size:.92rem;margin-top:6px}
+  .fb.ok{color:var(--brote)} .fb.no{color:#B3261E}
+  .opciones{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .opciones button{border:1px solid var(--linea);background:#fff;padding:6px 12px;border-radius:2px}
+  .opciones button.bien{background:#BFE3C8;border-color:var(--brote)}
+  .opciones button.mal{background:#F6C9C3}
+  .orden-lista{list-style:none;margin:0!important}
+  .orden-lista li{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--linea);padding:8px 10px;margin:6px 0;border-radius:2px}
+  .orden-lista li button{border:1px solid var(--linea);background:var(--papel);padding:2px 8px}
+  .vineta-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+  .vineta{border:3px solid var(--tinta);border-radius:4px;padding:10px;min-height:220px;background:#fff;break-inside:avoid;display:flex;flex-direction:column;gap:8px}
+  .vineta .escena{font-size:.82rem;color:var(--tinta-suave);font-style:italic;border-bottom:1px dashed #bbb;padding-bottom:6px;min-height:60px}
+  .globo{background:#fff;border:2px solid var(--tinta);border-radius:16px;padding:6px 10px;font-size:.9rem;position:relative}
+  .globo b{display:block;font-size:.75rem;color:var(--navy)}
+  .sopa{border-collapse:collapse;margin:10px 0;font-family:'IBM Plex Mono',monospace}
+  .sopa td{width:32px;height:32px;text-align:center;border:1px solid #ccc;font-weight:600;font-size:1rem}
+  .sopa td.es{background:var(--oro)}
+  .cripto{display:flex;flex-wrap:wrap;gap:6px 4px;margin:10px 0}
+  .cripto .c{display:flex;flex-direction:column;align-items:center;min-width:26px}
+  .cripto .c .l{border-bottom:2px solid var(--tinta);width:24px;height:28px;text-align:center;font-weight:700}
+  .cripto .c .n{font-size:.75rem;color:var(--tinta-suave)}
+  .cripto .esp{width:16px}
+  .cortar{border:2px dashed #888;padding:10px;border-radius:2px;break-inside:avoid;font-size:.92rem}
+  .tarjetas-corte{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  @media(max-width:640px){.tarjetas-corte{grid-template-columns:1fr 1fr}}
+  .lap{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+  .pieza{border:2px solid var(--navy);border-radius:2px;background:#fff;break-inside:avoid}
+  .pieza .frente{padding:10px;border-bottom:2px dashed var(--navy);font-weight:600;min-height:70px}
+  .pieza .dentro{padding:10px;font-size:.9rem;min-height:90px}
+  .pieza .tipo{font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--naranja);font-weight:700}
+  .zine{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;border:1px solid #999;aspect-ratio:1.414/1;width:100%}
+  .zine .pag{border:1px dashed #999;padding:8px;font-size:.72rem;display:flex;flex-direction:column;gap:4px;overflow:hidden}
+  .zine .pag.inv{transform:rotate(180deg)}
+  .zine .pag h4{font-size:.85rem}
+  .zine .pag .dib{flex:1;border:1px solid #ddd;border-radius:2px;color:#999;font-size:.65rem;padding:4px;min-height:40px}
+  .zine .pn{font-size:.6rem;color:#888;margin-top:auto}
+  .cargando{padding:24px;color:var(--tinta-suave)}
+  .aviso{font-size:.88rem;color:var(--tinta-suave);margin-top:8px}
+  .md table{border-collapse:collapse;margin:10px 0}
+  .md td,.md th{border:1px solid #bbb;padding:6px 10px;font-size:.92rem;vertical-align:top}
+  .md h3,.md h4{margin:18px 0 6px;color:var(--navy)}
+  .md p{margin:8px 0}
+  .grupo-pensar{margin:12px 0}
+  .grupo-pensar h4{font-size:1rem;margin-bottom:6px;color:var(--navy)}
+  .volver{background:none;border:0;color:var(--navy);font-weight:600;text-decoration:underline;padding:0}
+  @media print{
+    header.top,.intro,.barra,.no-imprimir,.acciones,.volver,.lead,.panel>h2{display:none!important}
+    body{background:#fff;font-size:12pt}
+    main{padding:0}
+    .wrap{max-width:none;padding:0}
+    .hoja{border:0;padding:0;margin:0}
+    .salto{break-before:page}
+    .item,.vineta,.pieza,.cortar{break-inside:avoid}
+    .zine{width:27cm;height:19cm;aspect-ratio:auto}
+    @page{margin:1.2cm}
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="index.html">SABICENTEC SUPERACIÓN</a>
+    <nav class="enlaces">
+      <a class="cta claro" href="recursos.html">Laboratorio</a>
+      <a class="cta claro" href="proyectos.html">Proyectos por área</a>
+      <a class="cta" href="tutor.html">Hablar con SABI</a>
+    </nav>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <h1>Taller de Aprendizaje: hacer, jugar y pensar</h1>
+    <p>Experimentos de ciencias para cada grado, fichas de matemáticas que nunca se repiten, lecturas que enseñan a comprender, relacionar y pensar, y didácticas listas para imprimir. Cada recurso hecho con inteligencia artificial pasa por un auditor antes de llegar al aula.</p>
+  </div>
+</section>
+
+<div class="barra">
+  <div class="wrap barra-inner">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" data-panel="ciencia">Ciencia</button>
+      <button class="tab" role="tab" data-panel="mate">Matemáticas</button>
+      <button class="tab" role="tab" data-panel="lectura">Lectura</button>
+      <button class="tab" role="tab" data-panel="didactica">Didácticas</button>
+      <button class="tab" role="tab" data-panel="pensar">Pensar</button>
+    </div>
+    <label class="campo linea" style="margin-left:auto">Grado
+      <select id="grado">
+        <option value="0">Transición</option><option value="1">1°</option><option value="2">2°</option><option value="3">3°</option>
+        <option value="4">4°</option><option value="5">5°</option><option value="6">6°</option><option value="7">7°</option>
+        <option value="8">8°</option><option value="9">9°</option><option value="10">10°</option><option value="11">11°</option>
+      </select>
+    </label>
+    <label class="campo linea"><input type="checkbox" id="ver-resp"> Ver respuestas (docente)</label>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ CIENCIA ============ -->
+  <section class="panel" id="p-ciencia">
+    <h2>Ciencia que se hace con las manos</h2>
+    <p class="lead">Cincuenta experimentos por grado, diez por eje: materia y sus cambios; fuerza y movimiento; luz, sonido y energía; seres vivos y cuerpo humano; química. Cada uno sigue el ciclo predecir, hacer, observar, explicar y volver a preguntar.</p>
+    <div class="no-imprimir" id="c-filtros">
+      <div class="chips" id="c-ejes"></div>
+      <div class="acciones"><input type="text" id="c-buscar" placeholder="Buscar: imán, sombra, semilla, vinagre..." style="flex:1;min-width:220px"></div>
+    </div>
+    <div id="c-lista" class="grid"></div>
+    <div id="c-detalle"></div>
+  </section>
+
+  <!-- ============ MATEMÁTICAS ============ -->
+  <section class="panel" id="p-mate" hidden>
+    <h2>Fichas de matemáticas a medida</h2>
+    <p class="lead">Una buena ficha empieza con una buena idea. Elige el tipo, ajusta el nivel y genera cuantas quieras: cada ficha es distinta, trae su situación motivadora, la clave de respuestas con el porqué y un reto final.</p>
+    <div class="no-imprimir">
+      <div class="chips" id="m-tipos"></div>
+      <div class="acciones" id="m-opciones"></div>
+      <div class="acciones">
+        <label class="campo linea">Ejercicios <input type="number" id="m-cantidad" value="10" min="4" max="30" style="width:80px"></label>
+        <button class="btn" id="m-generar">Nueva ficha</button>
+        <button class="btn sec" onclick="window.print()">Imprimir</button>
+        <button class="btn sec" id="m-sabi">Practicar con SABI</button>
+      </div>
+    </div>
+    <div id="m-ficha"></div>
+  </section>
+
+  <!-- ============ LECTURA ============ -->
+  <section class="panel" id="p-lectura" hidden>
+    <h2>Leer es comprender, relacionar y pensar</h2>
+    <p class="lead">Siete pasos: lo que dice el texto (toca la oración que responde cada pregunta), leer entre líneas, palabras en contexto, ¿dónde lo pone?, orden y causas, piensa y argumenta, y un valor para conversar.</p>
+    <div class="no-imprimir" id="l-inicio">
+      <div id="l-lista" class="grid"></div>
+      <div class="hoja" style="margin-top:22px">
+        <h3 style="margin-top:0">Crear una lectura nueva con SABI</h3>
+        <p class="aviso">Escribe un tema para que SABI escriba un texto original, o pega un texto propio. El auditor comprueba que cada respuesta literal esté copiada del texto.</p>
+        <div class="acciones"><input type="text" id="l-tema" placeholder="Tema: el río Cauca, las abejas, el ahorro..." style="flex:1;min-width:240px"></div>
+        <textarea id="l-texto" placeholder="O pega aquí un texto (opcional)"></textarea>
+        <div class="acciones"><button class="btn" id="l-crear">Crear lectura</button></div>
+        <div id="l-estado" class="aviso"></div>
+      </div>
+    </div>
+    <div id="l-leccion"></div>
+  </section>
+
+  <!-- ============ DIDÁCTICAS ============ -->
+  <section class="panel" id="p-didactica" hidden>
+    <h2>Didácticas para aprender jugando</h2>
+    <p class="lead">Elige la ayuda didáctica, escribe el tema y SABI la produce lista para imprimir. El Dot Auditor resuelve cada reto antes de entregarlo.</p>
+    <div class="no-imprimir">
+      <div class="grid" id="d-comandos"></div>
+      <div class="acciones">
+        <label class="campo" style="flex:1;min-width:200px">Área <input type="text" id="d-area" placeholder="Ciencias, Matemáticas, Inglés..."></label>
+        <label class="campo" style="flex:3;min-width:260px">Tema <input type="text" id="d-tema" placeholder="Ej.: fracciones equivalentes, el ciclo del agua, la Independencia"></label>
+      </div>
+      <div class="acciones"><button class="btn" id="d-crear">Crear</button><button class="btn sec" onclick="window.print()">Imprimir</button></div>
+      <div id="d-estado" class="aviso"></div>
+    </div>
+    <div id="d-recurso"></div>
+  </section>
+
+  <!-- ============ PENSAR ============ -->
+  <section class="panel" id="p-pensar" hidden>
+    <h2>Modos de pensamiento</h2>
+    <p class="lead">Para docentes, directivos y estudiantes de 9° a 11°. Cada modo cambia cómo razona SABI: con más agudeza, más rápido de entender, mejor escrito, mejor decidido y verificado. No reemplazan tu criterio: lo ponen a prueba.</p>
+    <div class="no-imprimir">
+      <div id="t-grupos"></div>
+      <textarea id="t-entrada" placeholder="Escribe la situación, el texto, el código o la pregunta."></textarea>
+      <div class="acciones"><button class="btn" id="t-crear">Pensar</button><button class="btn sec" onclick="window.print()">Imprimir</button></div>
+      <div id="t-estado" class="aviso"></div>
+    </div>
+    <div id="t-salida" class="hoja md" hidden></div>
+  </section>
+</main>
+
+<script src="taller-mate.js"></script>
+<script>
+(() => {
+  'use strict';
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const LS = { get(k, d) { try { const v = localStorage.getItem('taller.' + k); return v === null ? d : v; } catch { return d; } }, set(k, v) { try { localStorage.setItem('taller.' + k, v); } catch {} } };
+  const PARAMS = new URLSearchParams(location.search);
+  const gradoTxt = (g) => (Number(g) === 0 ? 'Transición' : g + '°');
+  const grado = () => Number($('grado').value);
+  function rng(seed) { let a = seed >>> 0; return () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+  const barajar = (arr, r) => { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  const cabecera = (titulo, area) => `<div class="cabecera-ficha"><span>Colegio CENTEC · Taller SABI · ${esc(area)}</span><span>Grado ${esc(gradoTxt(grado()))}</span></div><h2>${esc(titulo)}</h2><div class="nombre-linea"><span>Nombre:</span><span style="max-width:200px">Fecha:</span></div>`;
+  const tutorURL = (materia, tema) => 'tutor.html?' + new URLSearchParams({ rol: 'estudiante', materia, tema: tema.slice(0, 480) });
+
+  // ---------- grado, pestañas y respuestas ----------
+  $('grado').value = PARAMS.get('grado') ?? LS.get('grado', '3');
+  $('grado').addEventListener('change', () => { LS.set('grado', $('grado').value); refrescar(); });
+  $('ver-resp').addEventListener('change', (e) => document.body.classList.toggle('ver-resp', e.target.checked));
+  let panel = PARAMS.get('panel') || LS.get('panel', 'ciencia');
+  function abrirPanel(p) {
+    panel = p; LS.set('panel', p);
+    document.querySelectorAll('.tab').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.panel === p)));
+    document.querySelectorAll('.panel').forEach((s) => (s.hidden = s.id !== 'p-' + p));
+    refrescar();
+  }
+  document.querySelectorAll('.tab').forEach((t) => t.addEventListener('click', () => abrirPanel(t.dataset.panel)));
+  function refrescar() {
+    if (panel === 'ciencia') cargarCiencia();
+    if (panel === 'mate') pintarMateControles();
+    if (panel === 'lectura') cargarLecturas();
+    if (panel === 'didactica') pintarComandos();
+    if (panel === 'pensar') pintarPensar();
+  }
+
+  async function api(cuerpo) {
+    const r = await fetch('/api/taller', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(cuerpo) });
+    const d = await r.json().catch(() => ({ ok: false, error: 'Respuesta inválida del servidor' }));
+    if (!d.ok) throw new Error(d.error || 'No se pudo crear');
+    return d;
+  }
+  const notaAuditor = (a) => !a ? '' : a.revisada ? (a.corregida ? 'Revisado por el Dot Auditor: encontró detalles y los corrigió.' : 'Revisado y aprobado por el Dot Auditor.') : 'El auditor no estuvo disponible: revisa el recurso antes de usarlo.';
+
+  // =====================================================================
+  // CIENCIA
+  // =====================================================================
+  const EJES = { materia: 'Materia y sus cambios', fuerza: 'Fuerza y movimiento', energia: 'Luz, sonido y energía', vida: 'Seres vivos y cuerpo humano', quimica: 'Química' };
+  const cacheExp = {};
+  let ejeSel = '', expDatos = [];
+  async function cargarCiencia() {
+    const g = grado();
+    $('c-detalle').innerHTML = ''; $('c-lista').hidden = false; $('c-filtros').hidden = false;
+    $('c-lista').innerHTML = '<p class="cargando">Cargando experimentos...</p>';
+    try {
+      if (!cacheExp[g]) { const r = await fetch(`data/experimentos/grado-${String(g).padStart(2, '0')}.json`); if (!r.ok) throw 0; cacheExp[g] = await r.json(); }
+      expDatos = cacheExp[g];
+    } catch { expDatos = []; }
+    $('c-ejes').innerHTML = [['', 'Todos'], ...Object.entries(EJES)].map(([k, v]) => `<button class="chip" aria-pressed="${k === ejeSel}" data-eje="${k}">${esc(v)}</button>`).join('');
+    $('c-ejes').querySelectorAll('.chip').forEach((b) => b.addEventListener('click', () => { ejeSel = b.dataset.eje; cargarCiencia(); }));
+    pintarListaExp();
+    const pedido = PARAMS.get('exp'); if (pedido) { PARAMS.delete('exp'); const e = expDatos.find((x) => x.id === pedido); if (e) verExp(e); }
+  }
+  $('c-buscar').addEventListener('input', () => pintarListaExp());
+  function pintarListaExp() {
+    const q = $('c-buscar').value.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    const lista = expDatos.filter((e) => (!ejeSel || e.eje === ejeSel) && (!q || JSON.stringify([e.titulo, e.pregunta, e.materiales]).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').includes(q)));
+    if (!expDatos.length) { $('c-lista').innerHTML = '<p class="cargando">Los experimentos de este grado se están preparando.</p>'; return; }
+    $('c-lista').innerHTML = lista.map((e, i) => `<button class="tarjeta" data-i="${expDatos.indexOf(e)}"><span class="etq eje-${esc(e.eje)}">${esc(EJES[e.eje] || e.eje)}</span><h3>${esc(e.titulo)}</h3><span>${esc(e.pregunta)}</span><span class="meta">${esc(e.duracion_min)} min · ${esc(e.supervision)}</span></button>`).join('') || '<p class="cargando">No hay experimentos con ese filtro.</p>';
+    $('c-lista').querySelectorAll('.tarjeta').forEach((b) => b.addEventListener('click', () => verExp(expDatos[b.dataset.i])));
+  }
+  function verExp(e) {
+    $('c-lista').hidden = true; $('c-filtros').hidden = true;
+    const filas = Array.from({ length: 4 }, () => '<tr><td></td><td></td><td></td></tr>').join('');
+    $('c-detalle').innerHTML = `<div class="acciones no-imprimir"><button class="volver" id="c-volver">Volver a los experimentos</button><button class="btn sec" onclick="window.print()">Imprimir ficha</button><a class="btn" style="text-decoration:none" href="${esc(tutorURL('Ciencias Naturales', `Hice el experimento "${e.titulo}" (${gradoTxt(e.grado)}). Pregunta: ${e.pregunta} Ayúdame a explicar lo que observé y a diseñar mi propio experimento cambiando una variable.`))}">Trabajar con SABI</a></div>
+      <article class="hoja">${cabecera(e.titulo, 'Ciencias Naturales · ' + (EJES[e.eje] || ''))}
+      ${e.revision ? `<div class="caja no-imprimir" style="border-color:#B3261E;background:#FDECEA"><b>En revisión por el Dot auditor (${esc(e.revision.fecha)}):</b> ${esc(e.revision.problema)}. ${esc(e.revision.correccion || '')}</div>` : ''}
+      <div class="caja azul"><b>Pregunta científica:</b> ${esc(e.pregunta)}</div>
+      <p><b>Lo que voy a aprender:</b> ${esc(e.aprendizaje)}</p>
+      <p class="meta">Duración: ${esc(e.duracion_min)} minutos · Supervisión: ${esc(e.supervision)}</p>
+      <div class="cols2"><div><h3>Materiales</h3><ul>${(e.materiales || []).map((m) => `<li>${esc(m)}</li>`).join('')}</ul></div>
+      <div><h3>Seguridad</h3><div class="caja">${esc(e.seguridad)}</div></div></div>
+      <h3>1. Predigo</h3><p>${esc(e.prediccion)}</p><div class="espacio"></div><div class="espacio"></div>
+      <h3>2. Hago</h3><ol>${(e.pasos || []).map((p) => `<li>${esc(p)}</li>`).join('')}</ol>
+      <h3>3. Observo y registro</h3><p>${esc(e.observa)}</p>
+      <table class="tabla-reg"><tr><th>Lo que hice o cambié</th><th>Lo que observé o medí</th><th>Dibujo o dato</th></tr>${filas}</table>
+      <h3>4. Explico</h3><p>¿Por qué crees que pasó? Escríbelo con tus palabras antes de leer la explicación.</p><div class="espacio"></div><div class="espacio"></div>
+      <div class="caja verde resp"><b>Explicación científica:</b> ${esc(e.explicacion)}</div>
+      <div class="caja resp"><b>Idea equivocada frecuente:</b> ${esc(e.error_comun)}</div>
+      <h3>5. Pienso más allá</h3><p>${esc(e.pregunta_pensar)}</p><div class="espacio"></div>
+      <h3>6. Mi propio experimento</h3><p>${esc(e.variable_reto)}</p><div class="espacio"></div>
+      <div class="caja azul"><b>Conexión:</b> ${esc(e.conexion)}</div>
+      <p class="aviso">Autoevaluación: ☐ Hice una predicción ☐ Seguí los pasos con seguridad ☐ Registré lo que observé ☐ Expliqué con mis palabras ☐ Propuse un experimento nuevo</p>
+      </article>`;
+    $('c-volver').addEventListener('click', () => { $('c-detalle').innerHTML = ''; $('c-lista').hidden = false; $('c-filtros').hidden = false; });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // =====================================================================
+  // MATEMÁTICAS (generador procedural: taller-mate.js)
+  // =====================================================================
+  let mTipo = LS.get('mtipo', 'calculo'), mSemilla = Date.now() % 1e9, mFicha = null;
+  function pintarMateControles() {
+    const TM = window.TallerMate;
+    if (!TM) { $('m-ficha').innerHTML = '<p class="cargando">El generador no cargó. Recarga la página.</p>'; return; }
+    $('m-tipos').innerHTML = TM.tipos.map((t) => `<button class="chip" aria-pressed="${t.id === mTipo}" data-t="${t.id}" title="${esc(t.descripcion)}">${esc(t.nombre)}</button>`).join('');
+    $('m-tipos').querySelectorAll('.chip').forEach((b) => b.addEventListener('click', () => { mTipo = b.dataset.t; LS.set('mtipo', mTipo); pintarMateControles(); }));
+    const ops = TM.opciones(mTipo, grado()) || [];
+    $('m-opciones').innerHTML = (Array.isArray(ops) ? ops : Object.entries(ops).map(([id, o]) => ({ id, ...o }))).map(controlHTML).join('');
+    generarFicha();
+  }
+  function controlHTML(o) {
+    const id = 'mo-' + o.id, et = esc(o.etiqueta || o.label || o.nombre || o.id);
+    const valores = o.valores || o.opciones || o.options;
+    if (Array.isArray(valores)) {
+      return `<label class="campo">${et}<select id="${id}" data-op="${esc(o.id)}">${valores.map((v) => { const val = typeof v === 'object' ? v.valor ?? v.value ?? v.id : v; const tx = typeof v === 'object' ? v.etiqueta ?? v.label ?? v.nombre ?? val : v; return `<option value="${esc(val)}" ${String(val) === String(o.valor ?? o.defecto ?? o.default) ? 'selected' : ''}>${esc(tx)}</option>`; }).join('')}</select></label>`;
+    }
+    if (o.tipo === 'checkbox' || o.tipo === 'booleano' || typeof (o.valor ?? o.defecto ?? o.default) === 'boolean') {
+      return `<label class="campo linea"><input type="checkbox" id="${id}" data-op="${esc(o.id)}" data-bool="1" ${(o.valor ?? o.defecto ?? o.default) ? 'checked' : ''}> ${et}</label>`;
+    }
+    return `<label class="campo">${et}<input type="number" id="${id}" data-op="${esc(o.id)}" value="${esc(o.valor ?? o.defecto ?? o.default ?? '')}" ${o.min != null ? `min="${o.min}"` : ''} ${o.max != null ? `max="${o.max}"` : ''} style="width:110px"></label>`;
+  }
+  function leerOpciones() {
+    const r = {};
+    $('m-opciones').querySelectorAll('[data-op]').forEach((el) => { const v = el.dataset.bool ? el.checked : el.value; r[el.dataset.op] = (typeof v === 'string' && v !== '' && !isNaN(v)) ? Number(v) : v; });
+    return r;
+  }
+  $('m-opciones').addEventListener('change', () => generarFicha());
+  $('m-generar').addEventListener('click', () => { mSemilla = Math.floor(Math.random() * 1e9); generarFicha(); });
+  function generarFicha() {
+    const TM = window.TallerMate; if (!TM) return;
+    try {
+      mFicha = TM.generar({ ...leerOpciones(), tipo: mTipo, grado: grado(), cantidad: Number($('m-cantidad').value) || 10, semilla: mSemilla });
+    } catch (e) { $('m-ficha').innerHTML = `<p class="cargando">No se pudo generar con esas opciones (${esc(e.message)}). Prueba otras.</p>`; return; }
+    const f = mFicha;
+    const item = (it) => `<div class="item"><span class="num">${esc(it.n)}.</span><span style="white-space:pre-line">${esc(it.enunciado)}</span>${it.svg && /^\s*<svg[\s>]/i.test(it.svg) && !/<script|on\w+=/i.test(it.svg) ? it.svg : ''}<div class="espacio"></div><div class="resp">Respuesta: ${esc(it.respuesta)}${it.explicacion ? ` <span style="font-weight:400;color:var(--tinta-suave)">· ${esc(it.explicacion)}</span>` : ''}</div></div>`;
+    const reto = f.reto_final ? (typeof f.reto_final === 'string' ? `<div class="caja azul"><b>Reto final:</b> ${esc(f.reto_final)}</div>` : `<div class="caja azul"><b>Reto final:</b> <span style="white-space:pre-line">${esc(f.reto_final.enunciado)}</span>${f.reto_final.svg && /^\s*<svg[\s>]/i.test(f.reto_final.svg) && !/<script|on\w+=/i.test(f.reto_final.svg) ? f.reto_final.svg : ''}<div class="resp">${esc(f.reto_final.respuesta || '')}${f.reto_final.explicacion ? ' · ' + esc(f.reto_final.explicacion) : ''}</div></div>`) : '';
+    $('m-ficha').innerHTML = `<article class="hoja">${cabecera(f.titulo, 'Matemáticas')}
+      ${f.idea ? `<div class="caja"><b>La idea:</b> ${esc(f.idea)}</div>` : ''}
+      <p><b>Instrucción:</b> ${esc(f.instruccion)}</p>
+      <div class="items cols2" style="margin-top:12px">${(f.items || []).map(item).join('')}</div>${reto}
+      <p class="aviso">Ficha número ${mSemilla} · la misma ficha se puede volver a generar con este número.</p></article>`;
+  }
+  $('m-sabi').addEventListener('click', () => {
+    const t = (window.TallerMate?.tipos || []).find((x) => x.id === mTipo);
+    location.href = tutorURL('Matemáticas', `Quiero practicar ${t ? t.nombre.toLowerCase() : 'matemáticas'} de ${gradoTxt(grado())}. Ponme un ejercicio a la vez, deja que yo lo intente y explícame el porqué de cada paso.`);
+  });
+
+  // =====================================================================
+  // LECTURA
+  // =====================================================================
+  let lecturasBanco = null;
+  async function cargarLecturas() {
+    $('l-leccion').innerHTML = ''; $('l-inicio').hidden = false;
+    if (!lecturasBanco) {
+      lecturasBanco = [];
+      for (const f of ['primaria', 'bachillerato']) { try { const r = await fetch(`data/lecturas/${f}.json`); if (r.ok) lecturasBanco.push(...(await r.json())); } catch {} }
+    }
+    const g = grado();
+    const lista = lecturasBanco.filter((l) => Number(l.grado) === g);
+    const cerca = lista.length ? lista : lecturasBanco.filter((l) => Math.abs(Number(l.grado) - g) <= 1);
+    $('l-lista').innerHTML = cerca.map((l) => `<button class="tarjeta" data-id="${esc(l.id)}"><span class="etq">${esc(l.tipologia)}</span><h3>${esc(l.titulo)}</h3><span class="meta">${esc(gradoTxt(l.grado))} · ${l.parrafos.join(' ').split(/\s+/).length} palabras</span></button>`).join('') || '<p class="cargando">Aún no hay lecturas guardadas para este grado: crea una con SABI.</p>';
+    $('l-lista').querySelectorAll('.tarjeta').forEach((b) => b.addEventListener('click', () => verLectura(lecturasBanco.find((l) => l.id === b.dataset.id))));
+  }
+  $('l-crear').addEventListener('click', async () => {
+    const tema = $('l-tema').value.trim(), texto = $('l-texto').value.trim();
+    if (tema.length < 3 && texto.length < 60) { $('l-estado').textContent = 'Escribe un tema o pega un texto de al menos un párrafo.'; return; }
+    $('l-crear').disabled = true; $('l-estado').textContent = 'SABI está escribiendo la lectura y el auditor la está revisando (puede tardar hasta un minuto)...';
+    try { const d = await api({ modo: 'lectura', grado: grado(), area: 'Lenguaje', tema, texto }); $('l-estado').textContent = notaAuditor(d.auditoria); verLectura({ ...d.recurso, grado: grado(), id: 'nueva' }); }
+    catch (e) { $('l-estado').textContent = e.message; }
+    finally { $('l-crear').disabled = false; }
+  });
+  function oraciones(p) { return (p.match(/[^.!?¿¡]*[¡¿]?[^.!?]*[.!?]+["»”)]*\s*|[^.!?]+$/g) || [p]).filter((s) => s.trim()); }
+  const norm = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ ]/g, ' ').replace(/\s+/g, ' ').trim();
+  function verLectura(l) {
+    if (!l) return;
+    $('l-inicio').hidden = true;
+    let activa = 0;
+    const lit = l.literal || [];
+    const texto = l.parrafos.map((p, i) => `<div class="parrafo"><span class="pn">${i + 1}</span><p>${oraciones(p).map((o) => `<span class="oracion" data-p="${i}">${esc(o)}</span>`).join('')}</p></div>`).join('');
+    const r = rng(7);
+    const secuenciaBarajada = barajar((l.orden_causas?.secuencia || []).map((s, i) => ({ s, i })), r);
+    $('l-leccion').innerHTML = `<div class="acciones no-imprimir"><button class="volver" id="l-volver">Volver a las lecturas</button><button class="btn sec" onclick="window.print()">Imprimir</button>
+        <a class="btn" style="text-decoration:none" href="${esc(tutorURL('Lenguaje', `Leí "${l.titulo}". Ayúdame a comprenderlo mejor con preguntas, sin darme las respuestas. Texto: ${l.parrafos.join(' ').slice(0, 300)}`))}">Conversar con SABI</a></div>
+      <article class="hoja">${cabecera(l.titulo, 'Lenguaje · ' + (l.tipologia || 'lectura'))}
+      <div id="l-texto-v">${texto}</div>
+      <h3>1. Lo que dice el texto</h3><p class="aviso">Elige una pregunta y toca en el texto la oración o frase que la responde.</p>
+      ${lit.map((q, i) => `<div class="pregunta-l ${i === 0 ? 'activa' : ''}" data-q="${i}"><b>${i + 1}.</b> ${esc(q.pregunta)}<div class="fb" id="fb-${i}"></div><div class="resp">Está en el párrafo ${esc(q.parrafo)}: «${esc(q.evidencia)}»</div></div>`).join('')}
+      <h3>2. Leer entre líneas</h3>${(l.entre_lineas || []).map((q) => `<div class="pregunta-l">${esc(q.pregunta)}<p class="aviso">Pista: ${esc(q.pista)}</p><div class="espacio"></div><div class="resp">Respuesta posible: ${esc(q.respuesta_modelo)}</div></div>`).join('')}
+      <h3>3. Palabras en contexto</h3>${(l.palabras_contexto || []).map((w, i) => `<div class="pregunta-l">${esc(w.pregunta)}<div class="opciones" data-w="${i}">${(w.opciones || []).map((o, j) => `<button data-j="${j}">${String.fromCharCode(65 + j)}. ${esc(o)}</button>`).join('')}</div><div class="fb" id="fw-${i}"></div><div class="resp">${esc(w.explicacion)}</div></div>`).join('')}
+      <h3>4. ¿Dónde lo pone?</h3>${(l.donde_lo_pone || []).map((d, i) => `<div class="pregunta-l">${esc(d.pregunta)}<div class="opciones" data-d="${i}">${l.parrafos.map((_, j) => `<button data-j="${j + 1}">Párrafo ${j + 1}</button>`).join('')}</div><div class="fb" id="fd-${i}"></div><div class="resp">Párrafo ${esc(d.parrafo)}. ${esc(d.explicacion)}</div></div>`).join('')}
+      <h3>5. Orden y causas</h3><p>Ordena los hechos como ocurren en el texto.</p>
+      <ol class="orden-lista" id="l-orden">${secuenciaBarajada.map((x) => `<li data-i="${x.i}"><button aria-label="Subir">↑</button><button aria-label="Bajar">↓</button><span>${esc(x.s)}</span></li>`).join('')}</ol>
+      <div class="acciones no-imprimir"><button class="btn sec" id="l-revisar-orden">Revisar el orden</button><span class="fb" id="fo"></span></div>
+      ${(l.orden_causas?.causa_efecto || []).map((c) => `<div class="pregunta-l"><b>Causa:</b> ${esc(c.causa)}<br><b>¿Qué efecto produjo?</b><div class="espacio"></div><div class="resp">${esc(c.efecto)}</div></div>`).join('')}
+      <h3>6. Piensa y argumenta</h3>${(l.piensa_argumenta || []).map((q) => `<div class="pregunta-l">${esc(q.pregunta)}<div class="espacio"></div><div class="espacio"></div><div class="resp">Una buena respuesta: ${esc(q.criterios)}</div></div>`).join('')}
+      ${l.valor ? `<h3>7. Para conversar</h3><div class="caja verde">${esc(l.valor)}</div>` : ''}
+      <p class="aviso">Leer es comprender (lo que dice), relacionar (lo que significa y cómo se conecta) y pensar (lo que opino con razones).</p></article>`;
+    const preguntas = [...document.querySelectorAll('.pregunta-l[data-q]')];
+    preguntas.forEach((el) => el.addEventListener('click', () => { activa = Number(el.dataset.q); preguntas.forEach((p) => p.classList.toggle('activa', p === el)); }));
+    document.querySelectorAll('#l-texto-v .oracion').forEach((o) => o.addEventListener('click', () => {
+      const q = lit[activa]; if (!q) return;
+      const so = norm(o.textContent), ev = norm(q.evidencia);
+      const ok = so.includes(ev) || (ev.includes(so) && so.length > 12);
+      o.classList.remove('bien', 'mal'); o.classList.add(ok ? 'bien' : 'mal');
+      const fb = $('fb-' + activa);
+      fb.className = 'fb ' + (ok ? 'ok' : 'no');
+      fb.textContent = ok ? 'Muy bien: esa oración responde la pregunta. Lo encontraste en el texto.' : 'Esa oración no responde esta pregunta. Vuelve a leer la pregunta y busca las palabras clave en el texto.';
+      if (!ok) setTimeout(() => o.classList.remove('mal'), 1600);
+      if (ok && activa < lit.length - 1) { activa++; preguntas.forEach((p) => p.classList.toggle('activa', Number(p.dataset.q) === activa)); }
+    }));
+    document.querySelectorAll('.opciones[data-w]').forEach((box) => box.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+      const w = l.palabras_contexto[box.dataset.w], ok = Number(b.dataset.j) === Number(w.correcta);
+      b.classList.add(ok ? 'bien' : 'mal'); const fb = $('fw-' + box.dataset.w);
+      fb.className = 'fb ' + (ok ? 'ok' : 'no'); fb.textContent = ok ? 'Correcto. ' + (w.explicacion || '') : 'Lee de nuevo la oración donde aparece la palabra: ¿qué palabra podría reemplazarla sin cambiar el sentido?';
+    })));
+    document.querySelectorAll('.opciones[data-d]').forEach((box) => box.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+      const d = l.donde_lo_pone[box.dataset.d], ok = Number(b.dataset.j) === Number(d.parrafo);
+      b.classList.add(ok ? 'bien' : 'mal'); const fb = $('fd-' + box.dataset.d);
+      fb.className = 'fb ' + (ok ? 'ok' : 'no'); fb.textContent = ok ? 'Exacto, ahí lo pone.' : 'No es ese párrafo. Mira los números al lado del texto y busca la idea.';
+    })));
+    const lista = $('l-orden');
+    lista.addEventListener('click', (e) => {
+      const b = e.target.closest('button'); if (!b) return; const li = b.parentElement;
+      if (b.textContent === '↑' && li.previousElementSibling) lista.insertBefore(li, li.previousElementSibling);
+      if (b.textContent === '↓' && li.nextElementSibling) lista.insertBefore(li.nextElementSibling, li);
+    });
+    $('l-revisar-orden').addEventListener('click', () => {
+      const orden = [...lista.children].map((li) => Number(li.dataset.i)); const ok = orden.every((v, i) => v === i);
+      $('fo').className = 'fb ' + (ok ? 'ok' : 'no'); $('fo').textContent = ok ? 'Perfecto: así ocurre en el texto.' : 'Todavía no. Busca palabras que indican tiempo: primero, luego, después, al final.';
+    });
+    $('l-volver').addEventListener('click', () => cargarLecturas());
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // =====================================================================
+  // DIDÁCTICAS
+  // =====================================================================
+  const COMANDOS = {
+    worksheet: ['Ficha de trabajo', 'Práctica variada con clave de respuestas y autoevaluación.'],
+    escape: ['Escape room', 'Candados con retos del tema; el equipo arma el código final.'],
+    detective: ['Detectives', 'Un caso con pistas: razonar con evidencia y descartar hipótesis.'],
+    boardgame: ['Juego de mesa', 'Tablero imprimible, reglas y tarjetas de preguntas en tres niveles.'],
+    stations: ['Estaciones', 'Rotación por experiencias: manipular, leer, crear, explicar.'],
+    manipulative: ['Manipulativo', 'Material para construir: de lo concreto a lo abstracto.'],
+    comic: ['Historieta', 'El concepto contado en viñetas con diálogos.'],
+    lapbook: ['Lapbook', 'Solapas, bolsillos y minilibros para organizar el tema.'],
+    puzzle: ['Acertijos', 'Sopa de letras, parejas, criptograma, anagramas y un acertijo.'],
+    minibook: ['Minilibro', 'Libro de 8 páginas que se dobla de una sola hoja.'],
+  };
+  let dCmd = PARAMS.get('comando') || LS.get('dcmd', 'worksheet');
+  if (PARAMS.get('tema')) $('d-tema').value = PARAMS.get('tema');
+  if (PARAMS.get('area')) $('d-area').value = PARAMS.get('area');
+  function pintarComandos() {
+    $('d-comandos').innerHTML = Object.entries(COMANDOS).map(([k, [n, d]]) => `<button class="tarjeta" aria-pressed="${k === dCmd}" data-c="${k}" style="${k === dCmd ? 'border-color:var(--naranja);box-shadow:0 0 0 2px #FCE5D3' : ''}"><span class="etq">/${k}</span><h3>${esc(n)}</h3><span class="meta">${esc(d)}</span></button>`).join('');
+    $('d-comandos').querySelectorAll('.tarjeta').forEach((b) => b.addEventListener('click', () => { dCmd = b.dataset.c; LS.set('dcmd', dCmd); pintarComandos(); }));
+  }
+  $('d-crear').addEventListener('click', async () => {
+    const tema = $('d-tema').value.trim(); const area = $('d-area').value.trim() || 'General';
+    if (tema.length < 3) { $('d-estado').textContent = 'Escribe el tema.'; return; }
+    $('d-crear').disabled = true; $('d-estado').textContent = `SABI está creando ${COMANDOS[dCmd][0].toLowerCase()} y el Dot Auditor la está resolviendo (hasta un minuto)...`; $('d-recurso').innerHTML = '';
+    try { const d = await api({ modo: 'didactica', comando: dCmd, grado: grado(), area, tema }); $('d-estado').textContent = notaAuditor(d.auditoria); $('d-recurso').innerHTML = `<article class="hoja">${cabecera(d.recurso.titulo || COMANDOS[dCmd][0], area)}${RENDER[dCmd](d.recurso)}</article>`; activarRecurso(); }
+    catch (e) { $('d-estado').textContent = e.message; }
+    finally { $('d-crear').disabled = false; }
+  });
+  const lista = (a) => `<ul>${(a || []).map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`;
+  const listaO = (a) => `<ol>${(a || []).map((x) => `<li>${esc(x)}</li>`).join('')}</ol>`;
+  const RENDER = {
+    worksheet: (r) => `${r.idea ? `<div class="caja"><b>La idea:</b> ${esc(r.idea)}</div>` : ''}<p><b>Objetivo:</b> ${esc(r.objetivo)}</p><p>${esc(r.instrucciones)}</p>
+      ${(r.secciones || []).map((s, k) => `<h3>${k + 1}. ${esc(s.titulo)}</h3><div class="items">${(s.items || []).map((it, i) => `<div class="item"><span class="num">${i + 1}.</span>${esc(it.enunciado)}${Array.isArray(it.opciones) && it.opciones.length ? `<div class="opciones">${it.opciones.map((o, j) => `<span class="chip">${String.fromCharCode(97 + j)}) ${esc(o)}</span>`).join('')}</div>` : ''}<div class="espacio"></div><div class="resp">${esc(it.respuesta)}${it.explicacion ? ' · ' + esc(it.explicacion) : ''}</div></div>`).join('')}</div>`).join('')}
+      ${r.reto_final ? `<div class="caja azul"><b>Reto final:</b> ${esc(r.reto_final)}</div>` : ''}<h3>Me autoevalúo</h3>${(r.autoevaluacion || []).map((a) => `<p>☐ ${esc(a)}</p>`).join('')}`,
+    escape: (r) => `<div class="caja"><b>La historia:</b> ${esc(r.historia)}</div><p><b>Misión:</b> ${esc(r.mision)} · <b>Tiempo:</b> ${esc(r.tiempo_min)} minutos</p><p><b>Equipos:</b> ${esc(r.equipos)}</p><p><b>Materiales:</b> ${esc((r.materiales || []).join(', '))}</p>
+      ${(r.candados || []).map((c) => `<div class="cortar" style="margin:12px 0"><h3 style="margin-top:0">Candado ${esc(c.n)}</h3><p>${esc(c.reto)}</p><p class="aviso">Pista (solo si la piden): ${esc(c.pista)}</p><p>Clave que abre: <span style="display:inline-block;border:2px solid var(--tinta);width:46px;height:34px;vertical-align:middle"></span></p><div class="resp">Respuesta: ${esc(c.respuesta)} · Clave: ${esc(c.clave)}</div></div>`).join('')}
+      <div class="caja azul"><b>Código final:</b> ${(r.candados || []).map(() => '<span style="display:inline-block;border:2px solid var(--navy);width:40px;height:40px;margin:0 3px;vertical-align:middle"></span>').join('')}<span class="resp">${esc(r.codigo_final)}</span></div><p><b>Cierre:</b> ${esc(r.cierre)}</p>`,
+    detective: (r) => `<div class="caja"><b>El caso:</b> ${esc(r.caso)}</div><p><b>La pregunta del caso:</b> ${esc(r.pregunta_del_caso)}</p><h3>Hipótesis (marca y descarta con evidencia)</h3>${(r.hipotesis || []).map((h) => `<p>☐ ${esc(h)}</p>`).join('')}
+      <h3>Pistas</h3><div class="tarjetas-corte">${(r.pistas || []).map((p) => `<div class="cortar"><span class="etq">Pista ${esc(p.n)} · ${esc(p.tipo)}</span><p>${esc(p.pista)}</p></div>`).join('')}</div>
+      <h3>Preguntas del detective</h3>${listaO(r.preguntas_guia)}<h3>Mi conclusión</h3><div class="espacio"></div><div class="espacio"></div>
+      <div class="caja verde resp"><b>Solución:</b> ${esc(r.solucion)}<ol>${(r.razonamiento || []).map((x) => `<li>${esc(x)}</li>`).join('')}</ol><b>Concepto:</b> ${esc(r.concepto)}</div>`,
+    boardgame: (r) => `<p><b>Objetivo:</b> ${esc(r.objetivo)} · <b>Jugadores:</b> ${esc(r.jugadores)}</p><p><b>Materiales:</b> ${esc((r.materiales || []).join(', '))}</p>${tableroSVG(r)}
+      <h3>Reglas</h3>${listaO(r.reglas)}<p><b>Cómo se gana:</b> ${esc(r.como_gana)}</p><h3 class="salto">Tarjetas para recortar</h3><div class="tarjetas-corte">${(r.tarjetas || []).map((t, i) => `<div class="cortar"><span class="etq">Nivel ${esc(t.nivel)} · ${i + 1}</span><p>${esc(t.pregunta)}</p><div class="resp">${esc(t.respuesta)}</div></div>`).join('')}</div><p><b>Al terminar:</b> ${esc(r.reflexion)}</p>`,
+    stations: (r) => `<p><b>Tiempo por estación:</b> ${esc(r.tiempo_por_estacion)} minutos · <b>Rotación:</b> ${esc(r.rotacion)}</p>${(r.estaciones || []).map((e) => `<div class="cortar salto" style="margin:14px 0"><span class="etq">Estación ${esc(e.n)} · ${esc(e.modalidad)}</span><h3 style="margin-top:6px">${esc(e.nombre)}</h3><p><b>Para qué:</b> ${esc(e.proposito)}</p><p><b>Materiales:</b> ${esc((e.materiales || []).join(', '))}</p>${listaO(e.instrucciones)}<p><b>Producto:</b> ${esc(e.producto)}</p><p><b>Pregunta:</b> ${esc(e.pregunta)}</p><div class="espacio"></div></div>`).join('')}<div class="caja azul"><b>Cierre:</b> ${esc(r.cierre)}</div>`,
+    manipulative: (r) => `<p><b>Concepto:</b> ${esc(r.concepto)}</p><p><b>Vamos a construir:</b> ${esc(r.material)}</p><p><b>Materiales:</b> ${esc((r.materiales || []).join(', '))}</p><div class="caja"><b>Plantilla:</b> ${esc(r.plantilla)}</div><h3>Construcción</h3>${listaO(r.construccion)}
+      <h3>Actividades</h3>${(r.actividades || []).map((a) => `<div class="item"><span class="num">${esc(a.n)}.</span>${esc(a.consigna)}<p class="aviso">Observa: ${esc(a.que_observar)}</p><p>${esc(a.pregunta)}</p><div class="espacio"></div></div>`).join('')}
+      <h3>De lo concreto a lo abstracto</h3><div class="cols2"><div class="caja"><b>Concreto:</b> ${esc(r.concreto_pictorico_abstracto?.concreto)}</div><div class="caja"><b>Pictórico:</b> ${esc(r.concreto_pictorico_abstracto?.pictorico)}</div></div><div class="caja azul"><b>Abstracto:</b> ${esc(r.concreto_pictorico_abstracto?.abstracto)}</div>`,
+    comic: (r) => `<p class="aviso">Personajes: ${(r.personajes || []).map((p) => esc(typeof p === 'string' ? p : `${p.nombre} (${p.rasgo})`)).join(' · ')}</p><div class="vineta-grid">${(r.vinetas || []).map((v, i) => `<div class="vineta"><div class="escena">${i + 1}. ${esc(v.escena)} <br>(dibuja la escena)</div>${(v.dialogos || []).map((d) => `<div class="globo"><b>${esc(d.personaje)}</b>${esc(d.texto)}</div>`).join('')}</div>`).join('')}</div><div class="caja azul"><b>Pregunta final:</b> ${esc(r.pregunta_final)}</div><p class="resp">Concepto: ${esc(r.concepto)}</p>`,
+    lapbook: (r) => `<p><b>Tema central:</b> ${esc(r.tema_central)}</p><p class="aviso">Recorta cada pieza por el borde, dobla por la línea punteada y pega la parte de abajo en la carpeta.</p><div class="lap">${(r.piezas || []).map((p) => `<div class="pieza"><div class="frente"><span class="tipo">${esc(p.tipo)}</span><br>${esc(p.titulo)}<br><span style="font-weight:400">${esc(p.frente)}</span></div><div class="dentro">${esc(p.dentro)}</div></div>`).join('')}</div><h3>Cómo se arma</h3>${listaO(r.armado)}<p><b>Evaluación:</b> ${esc(r.evaluacion)}</p>`,
+    puzzle: (r) => puzzleHTML(r),
+    minibook: (r) => minilibroHTML(r),
+  };
+  function tableroSVG(r) {
+    const n = Math.max(12, Math.min(60, Number(r.casillas) || 30)), cols = 8, filas = Math.ceil(n / cols), w = 90, h = 70;
+    const esp = Object.fromEntries((r.especiales || []).map((e) => [Number(e.casilla), e]));
+    const color = { reto: '#F47C20', avanza: '#4C7A5E', retrocede: '#B3261E', comodin: '#F5C518' };
+    let s = `<svg viewBox="0 0 ${cols * w + 20} ${filas * h + 20}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tablero" style="width:100%;max-width:820px;display:block;margin:12px auto">`;
+    for (let i = 1; i <= n; i++) {
+      const fila = Math.floor((i - 1) / cols), c = (i - 1) % cols, col = fila % 2 === 0 ? c : cols - 1 - c;
+      const x = 10 + col * w, y = 10 + (filas - 1 - fila) * h, e = esp[i];
+      s += `<rect x="${x + 3}" y="${y + 3}" width="${w - 6}" height="${h - 6}" rx="6" fill="${e ? color[e.tipo] || '#F5C518' : '#fff'}" fill-opacity="${e ? .28 : 1}" stroke="#1A2D7A" stroke-width="2"/>`;
+      s += `<text x="${x + 10}" y="${y + 22}" font-size="15" font-weight="700" fill="#1A2D7A" font-family="Public Sans, sans-serif">${i === 1 ? 'Salida' : i === n ? 'Meta' : i}</text>`;
+      if (e) s += `<text x="${x + 10}" y="${y + 44}" font-size="11" fill="#1B1B18" font-family="Public Sans, sans-serif">${esc(String(e.tipo || '').toUpperCase())}</text>`;
+    }
+    s += '</svg>';
+    return s + `<div class="cols2">${(r.especiales || []).map((e) => `<p><b>Casilla ${esc(e.casilla)} (${esc(e.tipo)}):</b> ${esc(e.efecto)}</p>`).join('')}</div>`;
+  }
+  function sopaDeLetras(palabras, semilla) {
+    const r = rng(semilla), tam = Math.max(10, Math.min(15, Math.max(...palabras.map((p) => p.length)) + 3));
+    const g = Array.from({ length: tam }, () => Array(tam).fill(''));
+    const dirs = [[0, 1], [1, 0], [1, 1], [-1, 1], [0, -1], [1, -1]];
+    const ubicadas = [], marcas = new Set();
+    for (const p of palabras) {
+      let ok = false;
+      for (let t = 0; t < 300 && !ok; t++) {
+        const [dy, dx] = dirs[Math.floor(r() * (t < 150 ? 3 : dirs.length))];
+        const y0 = Math.floor(r() * tam), x0 = Math.floor(r() * tam);
+        const yf = y0 + dy * (p.length - 1), xf = x0 + dx * (p.length - 1);
+        if (yf < 0 || yf >= tam || xf < 0 || xf >= tam) continue;
+        let cabe = true;
+        for (let k = 0; k < p.length; k++) { const c = g[y0 + dy * k][x0 + dx * k]; if (c && c !== p[k]) { cabe = false; break; } }
+        if (!cabe) continue;
+        for (let k = 0; k < p.length; k++) { g[y0 + dy * k][x0 + dx * k] = p[k]; marcas.add(`${y0 + dy * k},${x0 + dx * k}`); }
+        ok = true; ubicadas.push(p);
+      }
+    }
+    const abc = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
+    for (let y = 0; y < tam; y++) for (let x = 0; x < tam; x++) if (!g[y][x]) g[y][x] = abc[Math.floor(r() * abc.length)];
+    return { g, marcas, ubicadas };
+  }
+  function puzzleHTML(r) {
+    const palabras = (r.palabras || []).map((p) => ({ ...p, palabra: String(p.palabra).toUpperCase().normalize('NFD').replace(/[̀-̂̄-ͯ]/g, '').replace(/[^A-ZÑ]/g, '') })).filter((p) => p.palabra.length >= 3 && p.palabra.length <= 14);
+    const semilla = palabras.reduce((s, p) => s + p.palabra.charCodeAt(0) * p.palabra.length, 17);
+    const { g, marcas, ubicadas } = sopaDeLetras(palabras.map((p) => p.palabra), semilla);
+    const sopa = `<table class="sopa">${g.map((fila, y) => `<tr>${fila.map((c, x) => `<td class="${marcas.has(`${y},${x}`) ? 'es-sol' : ''}">${c}</td>`).join('')}</tr>`).join('')}</table>`;
+    const rr = rng(semilla + 3);
+    // Criptograma: cada letra un número; se regalan 3 letras.
+    const frase = String(r.frase_secreta || '').toUpperCase().normalize('NFD').replace(/[̀-̂̄-ͯ]/g, '').replace(/[^A-ZÑ ]/g, '');
+    const letras = [...new Set(frase.replace(/ /g, ''))], nums = barajar(Array.from({ length: 27 }, (_, i) => i + 1), rr), cod = Object.fromEntries(letras.map((l, i) => [l, nums[i]]));
+    const regalo = new Set(barajar(letras, rr).slice(0, Math.min(3, letras.length)));
+    const cripto = `<div class="cripto">${[...frase].map((c) => c === ' ' ? '<span class="esp"></span>' : `<span class="c"><span class="l">${regalo.has(c) ? c : `<span class="resp" style="display:inline">${c}</span>`}</span><span class="n">${cod[c]}</span></span>`).join('')}</div>`;
+    const parejas = r.parejas || [], derecha = barajar(parejas.map((p, i) => ({ b: p.b, i })), rr);
+    const anagramas = barajar(palabras, rr).slice(0, 5).map((p) => { let s = p.palabra; for (let t = 0; t < 8 && s === p.palabra; t++) s = barajar([...p.palabra], rr).join(''); return { s, p }; });
+    return `<h3>1. Sopa de letras</h3><p class="aviso">Encuentra las palabras. Están en horizontal, vertical y diagonal; algunas al revés.</p><div class="cols2"><div>${sopa}</div><div>${ubicadas.map((u) => { const p = palabras.find((x) => x.palabra === u); return `<p>☐ <b>${esc(u)}</b>: ${esc(p.pista)}</p>`; }).join('')}</div></div>
+      <h3>2. Parejas</h3><p class="aviso">Une cada concepto con su pareja escribiendo la letra.</p><div class="cols2"><div>${parejas.map((p, i) => `<p>${i + 1}. ${esc(p.a)} ( <span class="resp" style="display:inline">${String.fromCharCode(65 + derecha.findIndex((d) => d.i === i))}</span> )</p>`).join('')}</div><div>${derecha.map((d, j) => `<p>${String.fromCharCode(65 + j)}. ${esc(d.b)}</p>`).join('')}</div></div>
+      <h3>3. Criptograma</h3><p class="aviso">Cada número es una letra. Ya tienes algunas: descubre la frase secreta.</p>${cripto}
+      <h3>4. Anagramas</h3>${anagramas.map((a) => `<p><b style="letter-spacing:.2em">${esc(a.s)}</b> · ${esc(a.p.pista)} → ____________ <span class="resp" style="display:inline">${esc(a.p.palabra)}</span></p>`).join('')}
+      ${r.acertijo ? `<h3>5. Acertijo</h3><div class="caja">${esc(r.acertijo.enunciado)}</div><div class="espacio"></div><div class="resp">${esc(r.acertijo.respuesta)} · ${esc(r.acertijo.explicacion)}</div>` : ''}`;
+  }
+  function minilibroHTML(r) {
+    const p = (r.paginas || []).slice(0, 8);
+    const pag = (n, inv) => { const x = p[n - 1] || { titulo: '', texto: '' }; return `<div class="pag ${inv ? 'inv' : ''}"><h4>${esc(x.titulo)}</h4><div>${esc(x.texto)}</div><div class="dib">${n === 1 ? esc(r.autor || 'Escrito por: ________') + '<br>' : ''}Dibuja: ${esc(x.dibujo || '')}</div><span class="pn">${n === 1 ? 'Portada' : n === 8 ? 'Contraportada' : 'Página ' + n}</span></div>`; };
+    // Plantilla clásica de una hoja: fila superior invertida 5-4-3-2, fila inferior 6-7-8-1.
+    return `<p class="aviso">Imprime en una hoja horizontal. Dobla en ocho, corta por la mitad del pliegue central (solo entre las dos páginas del centro), abre y empuja para formar el libro.</p>
+      <div class="zine">${pag(5, true)}${pag(4, true)}${pag(3, true)}${pag(2, true)}${pag(6)}${pag(7)}${pag(8)}${pag(1)}</div>
+      <h3 class="no-imprimir">Vista para leer en pantalla</h3><div class="no-imprimir">${p.map((x, i) => `<div class="item"><span class="num">${i + 1}.</span><b>${esc(x.titulo)}</b><p>${esc(x.texto)}</p><p class="aviso">Dibujo: ${esc(x.dibujo)}</p></div>`).join('')}</div>`;
+  }
+  function activarRecurso() {
+    document.querySelectorAll('.sopa td.es-sol').forEach((td) => td.classList.toggle('es', document.body.classList.contains('ver-resp')));
+  }
+  $('ver-resp').addEventListener('change', activarRecurso);
+
+  // =====================================================================
+  // PENSAR
+  // =====================================================================
+  let tCmd = LS.get('tcmd', 'ultrathink'), catPensar = null;
+  async function pintarPensar() {
+    if (!catPensar) { try { const r = await fetch('/api/taller'); catPensar = (await r.json()).pensar; } catch { catPensar = {}; } }
+    const grupos = {};
+    Object.entries(catPensar).forEach(([k, v]) => (grupos[v.grupo] = grupos[v.grupo] || []).push([k, v]));
+    $('t-grupos').innerHTML = Object.entries(grupos).map(([g, xs]) => `<div class="grupo-pensar"><h4>${esc(g)}</h4><div class="chips">${xs.map(([k, v]) => `<button class="chip" aria-pressed="${k === tCmd}" data-k="${k}" title="${esc(v.que_hace)}">/${k}</button>`).join('')}</div></div>`).join('') || '<p class="cargando">No se pudo cargar el catálogo.</p>';
+    $('t-grupos').querySelectorAll('.chip').forEach((b) => b.addEventListener('click', () => { tCmd = b.dataset.k; LS.set('tcmd', tCmd); pintarPensar(); $('t-estado').textContent = catPensar[tCmd]?.que_hace || ''; }));
+  }
+  $('t-crear').addEventListener('click', async () => {
+    const e = $('t-entrada').value.trim(); if (e.length < 3) { $('t-estado').textContent = 'Escribe la situación o la pregunta.'; return; }
+    $('t-crear').disabled = true; $('t-estado').textContent = `SABI está pensando en modo /${tCmd}...`;
+    try { const d = await api({ modo: 'pensar', comando: tCmd, grado: grado(), texto: e, audiencia: 'docente' }); $('t-salida').hidden = false; $('t-salida').innerHTML = md(d.respuesta); $('t-estado').textContent = ''; }
+    catch (err) { $('t-estado').textContent = err.message; }
+    finally { $('t-crear').disabled = false; }
+  });
+  function md(t) {
+    const lineas = esc(t).split('\n'); let html = '', enLista = null, tabla = [];
+    const inline = (s) => s.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\*(.+?)\*/g, '<i>$1</i>').replace(/`([^`]+)`/g, '<code>$1</code>');
+    const cerrarLista = () => { if (enLista) { html += `</${enLista}>`; enLista = null; } };
+    const cerrarTabla = () => { if (tabla.length) { const filas = tabla.filter((f) => !/^\|?\s*:?-{2,}/.test(f)); html += '<table>' + filas.map((f, i) => '<tr>' + f.replace(/^\||\|$/g, '').split('|').map((c) => `<${i ? 'td' : 'th'}>${inline(c.trim())}</${i ? 'td' : 'th'}>`).join('') + '</tr>').join('') + '</table>'; tabla = []; } };
+    for (const l of lineas) {
+      if (/^\s*\|/.test(l)) { cerrarLista(); tabla.push(l.trim()); continue; } else cerrarTabla();
+      let m;
+      if ((m = l.match(/^(#{1,4})\s+(.*)/))) { cerrarLista(); html += `<h${Math.min(4, m[1].length + 1)}>${inline(m[2])}</h${Math.min(4, m[1].length + 1)}>`; }
+      else if ((m = l.match(/^\s*[-*]\s+(.*)/))) { if (enLista !== 'ul') { cerrarLista(); html += '<ul>'; enLista = 'ul'; } html += `<li>${inline(m[1])}</li>`; }
+      else if ((m = l.match(/^\s*\d+[.)]\s+(.*)/))) { if (enLista !== 'ol') { cerrarLista(); html += '<ol>'; enLista = 'ol'; } html += `<li>${inline(m[1])}</li>`; }
+      else if (l.trim()) { cerrarLista(); html += `<p>${inline(l)}</p>`; }
+      else cerrarLista();
+    }
+    cerrarLista(); cerrarTabla();
+    return html;
+  }
+
+  abrirPanel(panel);
+})();
+</script>
+</body>
+</html>

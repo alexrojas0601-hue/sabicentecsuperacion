@@ -1,0 +1,2426 @@
+[
+ {
+  "id": "L6-01",
+  "grado": 6,
+  "tipologia": "cuento",
+  "titulo": "El guardián de las garzas",
+  "parrafos": [
+   "Mateo tenía doce años y vivía en Ciudad Córdoba, a pocas cuadras del colegio. Todos los sábados, su abuelo Efraín lo llevaba en bicicleta hasta la orilla del río Cauca para mirar las garzas. Mateo prefería quedarse en casa jugando en el celular, pero nunca se lo dijo al abuelo, porque lo veía tan contento que le daba pena.",
+   "Aquel sábado, al llegar a la orilla, Mateo notó algo distinto. Entre las piedras había botellas, bolsas y hasta una llanta vieja. Las garzas no estaban. —¿Dónde se fueron? —preguntó. —Se van cuando el agua se ensucia —respondió el abuelo con voz baja—. Hace treinta años, aquí mismo me bañaba yo con mis hermanos.",
+   "Mateo se quedó callado. Nunca había pensado que un río pudiera enfermarse. Sacó de la mochila la bolsa del almuerzo, la vació y empezó a llenarla de botellas. El abuelo sonrió, pero no dijo nada; se agachó y recogió también la llanta con ayuda de un vecino que pasaba por allí. Mientras trabajaban, le contó que el Cauca nace en el Macizo Colombiano y recorre cientos de kilómetros antes de llegar a Cali, y que cada bolsa que alguien tira en una calle termina, tarde o temprano, arrastrada por el agua hasta el río.",
+   "Esa tarde, Mateo tomó fotos del antes y el después y las mostró en su clase del lunes. La profesora de ciencias le propuso organizar una jornada de limpieza con todo el curso. Mateo dudó, porque le daba vergüenza hablar frente a sus compañeros, pero recordó la voz baja del abuelo y levantó la mano para decir que sí.",
+   "Un mes después, cuarenta estudiantes llenaron veinte costales de basura. Los vecinos del barrio, al ver el trabajo, prometieron instalar canecas en la ribera y vigilar que nadie volviera a botar escombros. Cuando terminaron, una garza blanca aterrizó sobre una piedra limpia y se quedó mirándolos. Mateo no sacó el celular. Prefirió guardar ese momento solo en la memoria, junto a su abuelo."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿Cómo se llamaba el abuelo de Mateo?",
+    "evidencia": "su abuelo Efraín",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "Según el abuelo, ¿cuándo se van las garzas?",
+    "evidencia": "Se van cuando el agua se ensucia",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Qué hizo Mateo con la bolsa del almuerzo?",
+    "evidencia": "Sacó de la mochila la bolsa del almuerzo, la vació y empezó a llenarla de botellas",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿Cuántos estudiantes llenaron costales de basura?",
+    "evidencia": "cuarenta estudiantes llenaron veinte costales de basura",
+    "parrafo": 5
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Por qué Mateo nunca le contó al abuelo que prefería quedarse jugando en el celular?",
+    "pista": "Fíjate en la última parte de la primera oración del párrafo 1, donde se dice cómo se veía el abuelo.",
+    "respuesta_modelo": "Porque quería a su abuelo y no quería entristecerlo; al verlo tan contento, le daba pena decirle la verdad."
+   },
+   {
+    "pregunta": "¿Qué se puede deducir del hecho de que el abuelo sonriera pero no dijera nada cuando Mateo empezó a recoger botellas?",
+    "pista": "Piensa en cómo reacciona alguien que se siente orgulloso pero no quiere interrumpir.",
+    "respuesta_modelo": "Que estaba orgulloso y contento de que su nieto actuara por su cuenta; prefirió acompañarlo con el ejemplo y no con palabras."
+   },
+   {
+    "pregunta": "¿Por qué Mateo no sacó el celular cuando llegó la garza?",
+    "pista": "Relaciona el final con lo que prefería Mateo al comienzo del cuento.",
+    "respuesta_modelo": "Porque ya valoraba más vivir el momento junto a su abuelo que grabarlo; su actitud había cambiado desde el principio del cuento."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "ribera",
+    "pregunta": "¿Qué significa ribera en este texto?",
+    "opciones": [
+     "Orilla de un río",
+     "Fondo profundo del agua",
+     "Puente de cemento"
+    ],
+    "correcta": 0,
+    "explicacion": "Se habla de instalar canecas en la ribera para que nadie bote escombros; antes se mencionó la orilla del río, donde estaba la basura."
+   },
+   {
+    "palabra": "arrastrada",
+    "pregunta": "¿Qué significa arrastrada en este texto?",
+    "opciones": [
+     "Guardada en un lugar seco",
+     "Llevada por la fuerza del agua",
+     "Pintada de colores"
+    ],
+    "correcta": 1,
+    "explicacion": "La bolsa termina en el río porque el agua la lleva consigo desde la calle."
+   },
+   {
+    "palabra": "jornada",
+    "pregunta": "¿Qué significa jornada en la expresión jornada de limpieza?",
+    "opciones": [
+     "Viaje largo en bus",
+     "Fiesta de cumpleaños",
+     "Día de trabajo organizado"
+    ],
+    "correcta": 2,
+    "explicacion": "El curso entero se reúne a limpiar la orilla y termina llenando costales de basura: es un día de trabajo en común."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se dice de dónde nace el río Cauca?",
+    "parrafo": 3,
+    "explicacion": "En el párrafo 3 el abuelo cuenta que el Cauca nace en el Macizo Colombiano."
+   },
+   {
+    "pregunta": "¿En qué párrafo aparece la garza blanca que se posa sobre una piedra limpia?",
+    "parrafo": 5,
+    "explicacion": "Es el final del cuento, después de la limpieza."
+   },
+   {
+    "pregunta": "¿En qué párrafo se dice que Mateo prefería jugar en el celular?",
+    "parrafo": 1,
+    "explicacion": "Se plantea al comienzo, cuando se presentan los personajes y sus gustos."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "Mateo acompañó a su abuelo a la orilla del río",
+    "Mateo notó la basura y la ausencia de las garzas",
+    "Mateo llenó su bolsa con botellas",
+    "Mateo propuso en clase una jornada de limpieza",
+    "Una garza blanca aterrizó sobre una piedra limpia"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "El agua del río se ensució",
+     "efecto": "Las garzas se fueron de la orilla"
+    },
+    {
+     "causa": "Mateo mostró las fotos del antes y el después en su clase",
+     "efecto": "La profesora le propuso organizar una jornada de limpieza"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "¿Crees que una sola persona puede cambiar un problema como la contaminación de un río? Defiende tu opinión con razones del cuento o de tu experiencia.",
+    "criterios": "Toma postura clara, usa al menos dos razones, cita lo que hizo Mateo y puede mencionar que otros se sumaron."
+   },
+   {
+    "pregunta": "Mateo sintió vergüenza antes de hablar en clase. ¿Qué harías tú en su lugar y por qué?",
+    "criterios": "Relaciona el miedo con su propia vida, propone una acción concreta y explica por qué vale la pena superar la vergüenza."
+   }
+  ],
+  "valor": "Responsabilidad con el entorno y el cuidado de lo que compartimos"
+ },
+ {
+  "id": "L6-02",
+  "grado": 6,
+  "tipologia": "texto expositivo científico",
+  "titulo": "El bosque seco tropical, un tesoro del Valle",
+  "parrafos": [
+   "Cuando pensamos en un bosque, solemos imaginar un lugar verde y lluvioso durante todo el año. Sin embargo, en el Valle del Cauca existe un ecosistema muy diferente: el bosque seco tropical. Se caracteriza porque en él llueve poco durante varios meses y los árboles deben adaptarse para sobrevivir a la sequía.",
+   "La principal estrategia de estos árboles consiste en perder las hojas cuando escasea el agua. Al quedarse sin follaje, evitan que la transpiración les quite la humedad que almacenan en el tronco. Cuando regresan las lluvias, el bosque se cubre de verde en pocos días y muchas especies florecen al mismo tiempo, como el guayacán amarillo, que tiñe de oro el paisaje.",
+   "Este ecosistema es muy valioso por varias razones. Primero, alberga animales que no se encuentran en cualquier parte, como la iguana y numerosas aves migratorias que descansan allí durante sus largos viajes. Además, mariposas y murciélagos pasan de flor en flor y ayudan a que los árboles se reproduzcan. Segundo, sus raíces sujetan el suelo y reducen los derrumbes durante los aguaceros. Tercero, los árboles guardan carbono, un gas que, en exceso en la atmósfera, contribuye a calentar el planeta.",
+   "A pesar de su importancia, el bosque seco tropical es uno de los ecosistemas más amenazados de Colombia. Los científicos calculan que solo queda una pequeña parte de lo que existía hace un siglo. La razón principal es que sus suelos planos y fértiles fueron convertidos en cultivos y potreros, y que muchas veces se talaron los árboles para obtener leña o madera. Una vez destruido, recuperarlo toma décadas, y algunas especies de animales y plantas pueden desaparecer para siempre antes de que eso ocurra.",
+   "Por fortuna, existen esfuerzos para salvarlo. Organizaciones ambientales y comunidades rurales siembran especies nativas, protegen los fragmentos que sobreviven y construyen corredores que permiten a los animales moverse de un parche de bosque a otro. Los estudiantes también pueden colaborar: visitar reservas con respeto, no encender fogatas en época seca y preguntar de dónde viene la madera de los muebles que usan en casa."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿Qué hacen los árboles del bosque seco cuando escasea el agua?",
+    "evidencia": "perder las hojas cuando escasea el agua",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Qué árbol tiñe de oro el paisaje cuando florece?",
+    "evidencia": "el guayacán amarillo, que tiñe de oro el paisaje",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Qué función cumplen las raíces durante los aguaceros?",
+    "evidencia": "sus raíces sujetan el suelo y reducen los derrumbes durante los aguaceros",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿Cuál es la razón principal de la amenaza al bosque seco tropical?",
+    "evidencia": "sus suelos planos y fértiles fueron convertidos en cultivos y potreros",
+    "parrafo": 4
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Por qué el autor comienza diciendo que solemos imaginar un bosque verde y lluvioso?",
+    "pista": "Observa la palabra Sin embargo al inicio de la segunda oración del párrafo 1.",
+    "respuesta_modelo": "Para mostrar un contraste: la idea común de bosque no coincide con el bosque seco, así el lector entiende que es un ecosistema distinto y poco conocido."
+   },
+   {
+    "pregunta": "¿Por qué son importantes los corredores para los animales?",
+    "pista": "Lee la explicación de los corredores en el párrafo 5.",
+    "respuesta_modelo": "Porque el bosque quedó dividido en parches; sin corredores los animales no podrían desplazarse para buscar alimento, pareja o refugio."
+   },
+   {
+    "pregunta": "¿Por qué los suelos fértiles son una amenaza para el bosque?",
+    "pista": "Une lo que dice el párrafo 4 sobre los suelos con lo que se hizo con ellos.",
+    "respuesta_modelo": "Porque las tierras buenas para cultivar atraen a quienes quieren sembrar o criar ganado, y para ello eliminan los árboles."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "follaje",
+    "pregunta": "¿Qué significa follaje en este texto?",
+    "opciones": [
+     "Raíces del árbol",
+     "Conjunto de hojas",
+     "Frutos maduros"
+    ],
+    "correcta": 1,
+    "explicacion": "Se dice que los árboles pierden las hojas y quedan sin follaje: el follaje es el conjunto de hojas."
+   },
+   {
+    "palabra": "alberga",
+    "pregunta": "¿Qué significa alberga en este texto?",
+    "opciones": [
+     "Da refugio o hogar a",
+     "Persigue y caza a",
+     "Alimenta con agua a"
+    ],
+    "correcta": 0,
+    "explicacion": "El ecosistema alberga animales que viven o descansan allí: les ofrece un lugar donde estar."
+   },
+   {
+    "palabra": "nativas",
+    "pregunta": "¿Qué significa especies nativas en este texto?",
+    "opciones": [
+     "Traídas de otros países",
+     "Creadas en laboratorio",
+     "Propias del lugar, que crecen allí de forma natural"
+    ],
+    "correcta": 2,
+    "explicacion": "Para recuperar el bosque seco conviene sembrar las especies que ya le pertenecen, es decir, las propias del lugar."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se define el bosque seco tropical?",
+    "parrafo": 1,
+    "explicacion": "El párrafo 1 dice que en él llueve poco durante varios meses."
+   },
+   {
+    "pregunta": "¿En qué párrafo se explican las causas de la amenaza?",
+    "parrafo": 4,
+    "explicacion": "El párrafo 4 habla de cultivos, potreros y tala."
+   },
+   {
+    "pregunta": "¿En qué párrafo se dan recomendaciones para los estudiantes?",
+    "parrafo": 5,
+    "explicacion": "Al final, el texto invita a visitar reservas con respeto y a no encender fogatas."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "Escasean las lluvias durante varios meses",
+    "Los árboles pierden las hojas",
+    "Regresan las lluvias",
+    "El bosque se cubre de verde en pocos días",
+    "Muchas especies florecen al mismo tiempo"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "Los suelos planos y fértiles se convirtieron en cultivos y potreros",
+     "efecto": "Del bosque seco tropical solo queda una pequeña parte"
+    },
+    {
+     "causa": "Los árboles se quedan sin follaje",
+     "efecto": "Evitan que la transpiración les quite la humedad del tronco"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "El texto dice que preguntar de dónde viene la madera de los muebles ayuda al bosque. ¿Estás de acuerdo? Explica con razones.",
+    "criterios": "Establece una postura, conecta el consumo con la tala descrita en el párrafo 4 y propone una acción realista."
+   },
+   {
+    "pregunta": "¿Qué crees que perdería el Valle del Cauca si el bosque seco tropical desapareciera por completo? Usa información del texto.",
+    "criterios": "Menciona al menos dos funciones del bosque (animales, suelo, carbono) y las relaciona con consecuencias para las personas."
+   }
+  ],
+  "valor": "Cuidado de la naturaleza y consumo responsable"
+ },
+ {
+  "id": "L6-03",
+  "grado": 6,
+  "tipologia": "carta",
+  "titulo": "Tres ideas para que la mesada rinda",
+  "parrafos": [
+   "Cali, 14 de marzo. Querida Valentina: Espero que estés muy bien en Medellín y que la semana de exámenes te haya salido mejor de lo que temías. Te escribo porque en nuestra última llamada me contaste que tu mesada se acaba antes de la mitad del mes, y quiero compartirte lo que aprendí en la clase de educación financiera de mi colegio.",
+   "Lo primero es distinguir entre necesidades y deseos. Una necesidad es algo sin lo cual no podrías estudiar o vivir bien, como los útiles escolares o el pasaje del bus. Un deseo es algo agradable pero que puede esperar, como una gaseosa diaria o un juego nuevo. Mi profesor dice que el problema no son los deseos, sino gastar en ellos antes de cubrir las necesidades.",
+   "Lo segundo es la regla de los tres sobres. El día que recibo mi mesada la divido en tres partes: la mitad para los gastos de la semana, una cuarta parte para ahorrar y la cuarta parte restante para un propósito especial. Si mi mesada es de veinte mil pesos semanales, separo diez mil para gastos, cinco mil para el ahorro y cinco mil para el propósito. Mi propósito es comprar una bicicleta, y cada semana me animo más al ver cómo crece la cifra.",
+   "Lo tercero es anotar todo. Yo uso un cuaderno viejo donde escribo cada gasto con su fecha. Al principio me parecía aburrido, pero descubrí que gastaba casi seis mil pesos semanales en dulces sin darme cuenta. Esa cifra, multiplicada por cuatro semanas, suma veinticuatro mil pesos al mes, más de lo que lograba ahorrar en ese mismo tiempo.",
+   "No te propongo que dejes de disfrutar. Te propongo que decidas tú, y no el impulso del momento, en qué se va tu dinero. Pruébalo durante un mes y cuéntame cómo te fue. Si quieres, te mando por correo la tabla que hice. Un abrazo grande para tía Marta. Con cariño, tu prima Camila."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿En qué ciudad vive Valentina?",
+    "evidencia": "Espero que estés muy bien en Medellín",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "¿Cómo define Camila una necesidad?",
+    "evidencia": "Una necesidad es algo sin lo cual no podrías estudiar o vivir bien",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Qué quiere comprar Camila con su ahorro especial?",
+    "evidencia": "Mi propósito es comprar una bicicleta",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿Cuánto gastaba Camila cada semana en dulces?",
+    "evidencia": "gastaba casi seis mil pesos semanales en dulces",
+    "parrafo": 4
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Por qué Camila le escribe esta carta a Valentina?",
+    "pista": "Lee qué le contó Valentina en la última llamada.",
+    "respuesta_modelo": "Porque Valentina le dijo que su mesada se le acaba antes de mitad de mes y Camila quiere ayudarla compartiendo lo que aprendió."
+   },
+   {
+    "pregunta": "¿Qué quiere decir Camila con No te propongo que dejes de disfrutar?",
+    "pista": "Piensa en el tono del último párrafo.",
+    "respuesta_modelo": "Que ahorrar no significa renunciar a todo gusto; se trata de elegir con conciencia en qué gastar, sin imponer una prohibición."
+   },
+   {
+    "pregunta": "¿Cómo cambió la opinión de Camila sobre anotar los gastos?",
+    "pista": "Observa la frase que empieza con Al principio.",
+    "respuesta_modelo": "Al comienzo le parecía aburrido, pero al anotar descubrió gastos que no notaba y entendió que era útil."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "mesada",
+    "pregunta": "¿Qué significa mesada en este texto?",
+    "opciones": [
+     "Dinero que se recibe periódicamente para gastos personales",
+     "Mueble donde se come",
+     "Tarea que se entrega cada mes"
+    ],
+    "correcta": 0,
+    "explicacion": "Camila divide su mesada en partes y habla de pesos: es el dinero que recibe cada cierto tiempo."
+   },
+   {
+    "palabra": "propósito",
+    "pregunta": "¿Qué significa propósito en la expresión propósito especial?",
+    "opciones": [
+     "Castigo por gastar de más",
+     "Meta o fin que se quiere lograr",
+     "Deuda pendiente"
+    ],
+    "correcta": 1,
+    "explicacion": "Camila explica que su propósito es comprar una bicicleta: es la meta para la que ahorra."
+   },
+   {
+    "palabra": "impulso",
+    "pregunta": "¿Qué significa impulso en este texto?",
+    "opciones": [
+     "Deseo de hacer algo de inmediato, sin pensar",
+     "Plan hecho con cuidado",
+     "Dinero ahorrado"
+    ],
+    "correcta": 0,
+    "explicacion": "Se contrapone a decidir tú misma: el impulso es lo que te empuja a gastar sin reflexionar."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se explica la regla de los tres sobres?",
+    "parrafo": 3,
+    "explicacion": "El párrafo 3 reparte la mesada en gastos, ahorro y propósito."
+   },
+   {
+    "pregunta": "¿En qué párrafo se habla de anotar los gastos en un cuaderno?",
+    "parrafo": 4,
+    "explicacion": "Es la tercera idea de la carta."
+   },
+   {
+    "pregunta": "¿En qué párrafo se diferencian necesidades y deseos?",
+    "parrafo": 2,
+    "explicacion": "Es la primera idea de la carta."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "Valentina cuenta que su mesada se acaba temprano",
+    "Camila explica la diferencia entre necesidades y deseos",
+    "Camila describe cómo reparte su mesada",
+    "Camila cuenta que anota todos sus gastos",
+    "Camila invita a Valentina a probar durante un mes"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "Camila anotó cada gasto en un cuaderno",
+     "efecto": "Descubrió que gastaba casi seis mil pesos semanales en dulces"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "De los tres consejos de Camila, ¿cuál te parece más útil para un estudiante de tu edad? Explica por qué.",
+    "criterios": "Elige un consejo, da al menos dos razones y las relaciona con situaciones reales de su vida."
+   },
+   {
+    "pregunta": "¿Cómo te parece que Camila trata a su prima: con respeto o con superioridad? Justifica con frases de la carta.",
+    "criterios": "Evalúa el tono del autor, cita expresiones como Te propongo o Cuéntame y argumenta su conclusión."
+   }
+  ],
+  "valor": "Responsabilidad con el dinero y generosidad al compartir lo aprendido"
+ },
+ {
+  "id": "L7-01",
+  "grado": 7,
+  "tipologia": "crónica de Cali",
+  "titulo": "Madrugada en la galería",
+  "parrafos": [
+   "Son las cinco de la mañana y la galería ya está despierta. Desde la calle se oyen los carritos de carga, el golpe de las cajas de plástico y la voz de doña Gladys, que lleva treinta años vendiendo frutas en el mismo puesto. Todavía es de noche, pero bajo los toldos las bombillas encendidas hacen que las naranjas parezcan pequeñas lunas.",
+   "Aquí todo se mueve con una coordinación que parece magia. Los camiones llegan desde Dagua, Palmira y el norte del Cauca cargados de plátano, lulo, mora y piña. Los cargadores, que reciben una pequeña propina por cada bulto, caminan casi corriendo, con costales que superan su propio peso. Nadie se choca. Cada uno sabe por dónde pasar.",
+   "Doña Gladys me ofrece un jugo de borojó sin que yo lo pida. —Para que le dure el día —dice. Mientras lo bebo, me explica su contabilidad: no usa computador ni calculadora, sino una libreta con las cuentas de sus clientes fijos. —Yo les fío a los de confianza, pero apunto todo, porque la memoria falla y la libreta no —asegura—. Si uno no anota, el negocio se va por el desagüe.",
+   "A las siete de la mañana llega el primer gran flujo de compradores: cocineras de restaurantes, madres con bolsas de tela, estudiantes que buscan una fruta barata para el desayuno. Los precios cambian según la hora. Temprano, los vendedores mantienen firme el valor de la libra de tomate; hacia el mediodía, cuando la fruta madura corre el riesgo de dañarse, empiezan a rebajarla para no perder la mercancía.",
+   "Lo que más me sorprende es la manera en que los comerciantes se cuidan entre sí. Cuando a don Wilson, el vendedor de papa, le robaron la caja una madrugada, sus vecinos de puesto reunieron en una hora lo suficiente para que pudiera comprar su mercancía del día siguiente. Nadie firmó nada. No hubo intereses ni plazos. Solo la certeza de que mañana podría tocarle a cualquiera.",
+   "Al salir, con el sol ya alto, pienso que la galería enseña economía mejor que muchos libros. Allí se ven la oferta y la demanda, el ahorro, la confianza y el crédito sin necesidad de gráficos. Y se aprende, sobre todo, que un mercado no es solo un sitio donde se intercambian productos, sino una red de personas que se necesitan."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿Cuántos años lleva doña Gladys vendiendo frutas en su puesto?",
+    "evidencia": "lleva treinta años vendiendo frutas en el mismo puesto",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "¿De dónde llegan los camiones con la mercancía?",
+    "evidencia": "Los camiones llegan desde Dagua, Palmira y el norte del Cauca",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Dónde anota doña Gladys las cuentas de sus clientes fijos?",
+    "evidencia": "una libreta con las cuentas de sus clientes fijos",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿Por qué los vendedores rebajan la fruta hacia el mediodía?",
+    "evidencia": "cuando la fruta madura corre el riesgo de dañarse, empiezan a rebajarla para no perder la mercancía",
+    "parrafo": 4
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Qué revela sobre doña Gladys el hecho de que ofrezca un jugo sin que el narrador lo pida?",
+    "pista": "Piensa en la frase Para que le dure el día.",
+    "respuesta_modelo": "Que es generosa y amable; trata al visitante con cariño y se preocupa por su bienestar aunque acaba de conocerlo."
+   },
+   {
+    "pregunta": "¿Qué quiere decir doña Gladys con la memoria falla y la libreta no?",
+    "pista": "Relaciona la frase con lo que explica sobre su contabilidad.",
+    "respuesta_modelo": "Que confía más en los registros escritos que en lo que recuerda; anotar evita errores, olvidos y discusiones con los clientes."
+   },
+   {
+    "pregunta": "¿Por qué el narrador afirma que la galería enseña economía mejor que muchos libros?",
+    "pista": "Observa qué conceptos enumera en el último párrafo.",
+    "respuesta_modelo": "Porque allí se ven en la práctica ideas como oferta, demanda, ahorro, crédito y confianza, y se comprenden mejor que en una explicación abstracta."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "propina",
+    "pregunta": "¿Qué significa propina en este texto?",
+    "opciones": [
+     "Multa por llegar tarde",
+     "Dinero extra que se da como agradecimiento por un servicio",
+     "Impuesto por vender frutas"
+    ],
+    "correcta": 1,
+    "explicacion": "Los cargadores reciben una pequeña propina por cada bulto que llevan: es un pago adicional por su trabajo."
+   },
+   {
+    "palabra": "fío",
+    "pregunta": "¿Qué significa Yo les fío a los de confianza?",
+    "opciones": [
+     "Les cobro más caro",
+     "Les vendo a crédito para que paguen después",
+     "Les regalo la mercancía"
+    ],
+    "correcta": 1,
+    "explicacion": "Doña Gladys apunta todo en la libreta: vende ahora y anota la deuda para que le paguen más tarde."
+   },
+   {
+    "palabra": "mercancía",
+    "pregunta": "¿Qué significa mercancía en este texto?",
+    "opciones": [
+     "Productos que se compran y se venden",
+     "Bolsas de tela de los compradores",
+     "Ganancias del día"
+    ],
+    "correcta": 0,
+    "explicacion": "Se rebaja la fruta para no perder la mercancía, es decir, los productos que se venden en el puesto."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se cuenta que los vecinos ayudaron a don Wilson después del robo?",
+    "parrafo": 5,
+    "explicacion": "El párrafo 5 narra cómo reunieron dinero en una hora."
+   },
+   {
+    "pregunta": "¿En qué párrafo se explica que los precios cambian según la hora?",
+    "parrafo": 4,
+    "explicacion": "El párrafo 4 habla del flujo de compradores y de las rebajas del mediodía."
+   },
+   {
+    "pregunta": "¿En qué párrafo se describe la llegada de los camiones y el trabajo de los cargadores?",
+    "parrafo": 2,
+    "explicacion": "Es la descripción del movimiento coordinado de la galería."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "Los camiones llegan cargados de frutas y verduras",
+    "Doña Gladys le ofrece un jugo de borojó al narrador",
+    "Llega a las siete el primer gran flujo de compradores",
+    "Hacia el mediodía los vendedores rebajan la fruta madura"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "A don Wilson le robaron la caja una madrugada",
+     "efecto": "Sus vecinos reunieron dinero para que pudiera comprar mercancía al día siguiente"
+    },
+    {
+     "causa": "La fruta madura corre el riesgo de dañarse hacia el mediodía",
+     "efecto": "Los vendedores rebajan los precios"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "Los vecinos ayudaron a don Wilson sin firmar nada ni cobrar intereses. ¿Crees que esa confianza funcionaría en cualquier negocio? Argumenta con razones.",
+    "criterios": "Asume una postura, considera ventajas y riesgos de la confianza y la compara con contratos o créditos formales."
+   },
+   {
+    "pregunta": "¿Por qué crees que el cronista eligió contar la historia a las cinco de la mañana y no a mediodía? Evalúa su decisión.",
+    "criterios": "Analiza el efecto del escenario (luz, movimiento, ambiente) en el lector y relaciona la hora con el propósito del texto."
+   }
+  ],
+  "valor": "Solidaridad y confianza entre quienes trabajan juntos"
+ },
+ {
+  "id": "L7-02",
+  "grado": 7,
+  "tipologia": "texto expositivo científico",
+  "titulo": "La física de la salsa: cómo viaja el sonido",
+  "parrafos": [
+   "Cuando una conga suena en una tarima de Cali, el sonido llega a nuestros oídos aunque estemos a veinte metros. ¿Qué viaja desde el tambor hasta nosotros? No es el cuero, ni el aire que estaba junto a él, sino una perturbación: una vibración que se transmite de partícula en partícula. A esa perturbación la llamamos onda sonora.",
+   "El proceso comienza cuando la mano golpea el parche del tambor y lo hace vibrar. Al moverse hacia afuera, el parche empuja las moléculas de aire cercanas y las comprime; al regresar, deja un espacio donde las moléculas se separan. Esa alternancia de zonas comprimidas y zonas dispersas se propaga por el aire como una cadena de empujones. Por eso se dice que el sonido es una onda mecánica: necesita un medio material para viajar. En el vacío del espacio, donde no hay aire ni otra sustancia, el sonido no se transmite.",
+   "Dos características permiten describir cualquier sonido. La frecuencia es el número de vibraciones por segundo y se mide en hercios (Hz); determina si el sonido es grave o agudo. Un bajo produce frecuencias bajas, mientras que un timbal agudo o una trompeta producen frecuencias más altas. La amplitud, en cambio, es la altura de la onda y determina el volumen: a mayor amplitud, mayor intensidad del sonido, que se expresa en decibeles (dB).",
+   "La velocidad del sonido depende del medio. En el aire, a temperatura ambiente, es de unos 343 metros por segundo; en el agua es cerca de cuatro veces mayor, y en el acero, todavía más. Esto ocurre porque, en los líquidos y los sólidos, las partículas están más cerca unas de otras y se pasan la vibración con mayor rapidez. Así se explica por qué, si se pega la oreja a un riel, se oye el tren antes de que su ruido llegue por el aire.",
+   "Estas ideas tienen consecuencias muy prácticas. Los ingenieros de sonido de los conciertos ubican varios parlantes y calculan el retraso entre ellos para que el público de atrás no escuche el sonido desfasado. Los músicos afinan sus instrumentos para que sus frecuencias se combinen de manera agradable. Y la exposición prolongada a sonidos de más de 85 decibeles puede dañar de manera permanente las células del oído interno, razón por la cual conviene alejarse de los parlantes y usar protección en conciertos largos."
+  ],
+  "literal": [
+   {
+    "pregunta": "Según el texto, ¿qué es una onda sonora?",
+    "evidencia": "una vibración que se transmite de partícula en partícula",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "¿Por qué se dice que el sonido es una onda mecánica?",
+    "evidencia": "necesita un medio material para viajar",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Qué determina la frecuencia de un sonido?",
+    "evidencia": "determina si el sonido es grave o agudo",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿Cuál es la velocidad del sonido en el aire a temperatura ambiente?",
+    "evidencia": "es de unos 343 metros por segundo",
+    "parrafo": 4
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "Si en el espacio exterior ocurriera una explosión, ¿se escucharía? Explica con lo que dice el texto.",
+    "pista": "Mira la última oración del párrafo 2.",
+    "respuesta_modelo": "No, porque en el vacío no hay aire ni otra sustancia que transmita la vibración; el sonido necesita un medio material."
+   },
+   {
+    "pregunta": "¿Por qué se oye al tren antes por el riel que por el aire?",
+    "pista": "Relaciona la velocidad del sonido con la cercanía de las partículas.",
+    "respuesta_modelo": "Porque en el acero del riel la vibración se transmite más rápido que en el aire, así que el sonido llega antes por el metal."
+   },
+   {
+    "pregunta": "¿Por qué los ingenieros de sonido calculan el retraso entre los parlantes?",
+    "pista": "Recuerda que el sonido tiene una velocidad finita.",
+    "respuesta_modelo": "Porque el sonido tarda en recorrer la distancia; sin corregir ese retraso, el público lejano oiría los sonidos de los parlantes en tiempos distintos."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "perturbación",
+    "pregunta": "¿Qué significa perturbación en este texto?",
+    "opciones": [
+     "Un ruido molesto",
+     "Una alteración que se propaga a través de un medio",
+     "Un golpe fuerte en el tambor"
+    ],
+    "correcta": 1,
+    "explicacion": "El texto la explica con dos puntos: es una vibración que pasa de partícula en partícula, es decir, una alteración que se transmite."
+   },
+   {
+    "palabra": "parche",
+    "pregunta": "¿Qué significa parche en la expresión el parche del tambor?",
+    "opciones": [
+     "Membrana tensa que vibra al golpearla",
+     "Madera del cuerpo del tambor",
+     "Banquito para sentarse a tocar"
+    ],
+    "correcta": 0,
+    "explicacion": "La mano golpea el parche y este vibra y empuja las moléculas de aire, como lo hace la membrana del tambor."
+   },
+   {
+    "palabra": "desfasado",
+    "pregunta": "¿Qué significa sonido desfasado en este texto?",
+    "opciones": [
+     "Sonido que llega muy fuerte",
+     "Sonido que llega en un momento distinto al esperado",
+     "Sonido sin graves"
+    ],
+    "correcta": 1,
+    "explicacion": "Se habla de calcular el retraso entre parlantes para que el sonido no llegue descoordinado al público de atrás."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se explican la frecuencia y la amplitud?",
+    "parrafo": 3,
+    "explicacion": "El párrafo 3 presenta las dos características del sonido."
+   },
+   {
+    "pregunta": "¿En qué párrafo se compara la velocidad del sonido en el aire, el agua y el acero?",
+    "parrafo": 4,
+    "explicacion": "Se explica cómo depende del medio."
+   },
+   {
+    "pregunta": "¿En qué párrafo se advierte sobre el daño al oído interno?",
+    "parrafo": 5,
+    "explicacion": "Es la parte de consecuencias prácticas, al final del texto."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "La mano golpea el parche y lo hace vibrar",
+    "El parche comprime las moléculas de aire cercanas",
+    "Al regresar, el parche deja un espacio donde las moléculas se separan",
+    "La alternancia de zonas comprimidas y dispersas se propaga por el aire",
+    "El sonido llega a nuestros oídos"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "En los líquidos y los sólidos las partículas están más cerca unas de otras",
+     "efecto": "El sonido viaja con mayor rapidez"
+    },
+    {
+     "causa": "Se expone el oído por mucho tiempo a más de 85 decibeles",
+     "efecto": "Pueden dañarse de manera permanente las células del oído interno"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "El texto recomienda usar protección en conciertos largos. ¿Crees que los jóvenes toman en serio este consejo? Opina con razones.",
+    "criterios": "Da una postura clara, usa al menos dos razones y puede referirse a hábitos como los audífonos a alto volumen."
+   },
+   {
+    "pregunta": "¿Qué recurso usa el autor al comenzar con una pregunta y un ejemplo de la salsa? ¿Funciona para captar al lector? Evalúa.",
+    "criterios": "Identifica el recurso (pregunta y ejemplo cercano), explica su efecto y valora si ayuda a comprender el tema."
+   }
+  ],
+  "valor": "Curiosidad científica y cuidado de la propia salud"
+ },
+ {
+  "id": "L7-03",
+  "grado": 7,
+  "tipologia": "noticia escolar",
+  "titulo": "Gota Limpia gana la feria de ciencias",
+  "parrafos": [
+   "CALI. Un grupo de seis estudiantes de séptimo grado del colegio CENTEC ganó el primer lugar en la Feria de Ciencias de los colegios del oriente de la ciudad, celebrada el pasado jueves, con un filtro de agua construido con materiales reciclados y de bajo costo. El proyecto, titulado Gota Limpia, fue elegido entre veintidós trabajos presentados por instituciones de la zona.",
+   "El filtro consta de una botella plástica cortada por la mitad, en la que los estudiantes colocaron capas de algodón, carbón activado, arena fina, arena gruesa y grava. Cada capa cumple una función: la grava y la arena retienen las partículas más grandes; el carbón absorbe olores y algunas sustancias químicas; y el algodón atrapa las impurezas más pequeñas. El costo total de cada prototipo es de aproximadamente ocho mil pesos.",
+   "La idea surgió después de que el grupo visitara una vereda de Dagua, donde varias familias consumen agua de quebrada. —Nos dimos cuenta de que muchas personas toman agua sin tratarla —explicó Sara Londoño, vocera del equipo—. Queríamos construir algo que cualquiera pudiera copiar con lo que tiene en casa. El trabajo contó con la asesoría del profesor de ciencias naturales, Jairo Becerra.",
+   "Los jurados destacaron el rigor del método: el equipo midió la turbidez del agua antes y después del filtrado con una escala comparativa y repitió el experimento cinco veces. Los resultados mostraron una reducción visible de los sedimentos. Sin embargo, el jurado aclaró que el filtro no elimina bacterias ni virus, por lo que el agua filtrada debe hervirse durante al menos un minuto antes de beberla. Los propios estudiantes incluyeron esta advertencia en su cartelera.",
+   "El equipo recibió materiales de laboratorio como premio y la invitación a participar en la feria departamental. La coordinación académica del colegio destacó que el proyecto demuestra que la ciencia no necesita grandes presupuestos, sino preguntas bien hechas. Los estudiantes planean ahora llevar su filtro a la vereda que visitaron y enseñar a las familias cómo construirlo."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿Cuántos estudiantes integran el grupo ganador?",
+    "evidencia": "Un grupo de seis estudiantes de séptimo grado",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "¿Cómo se titula el proyecto ganador?",
+    "evidencia": "titulado Gota Limpia",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "¿Cuánto cuesta aproximadamente cada prototipo?",
+    "evidencia": "aproximadamente ocho mil pesos",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Qué debe hacerse con el agua filtrada antes de beberla?",
+    "evidencia": "el agua filtrada debe hervirse durante al menos un minuto antes de beberla",
+    "parrafo": 4
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Por qué el jurado aclaró que el filtro no elimina bacterias ni virus?",
+    "pista": "Piensa en lo que podría pasar si alguien creyera que el agua filtrada ya es totalmente segura.",
+    "respuesta_modelo": "Para evitar una falsa sensación de seguridad: una persona podría beber agua con microbios y enfermarse si no la hierve."
+   },
+   {
+    "pregunta": "¿Por qué es importante que el equipo repitiera el experimento cinco veces?",
+    "pista": "Relaciona la repetición con la confianza en los resultados.",
+    "respuesta_modelo": "Porque un solo resultado podría deberse al azar; repetirlo muestra que el filtro funciona de manera consistente."
+   },
+   {
+    "pregunta": "¿Qué dice sobre los estudiantes que ellos mismos escribieran la advertencia en su cartelera?",
+    "pista": "Observa la última oración del párrafo 4.",
+    "respuesta_modelo": "Que fueron honestos y responsables: reconocieron las limitaciones de su invento en lugar de exagerar sus beneficios."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "turbidez",
+    "pregunta": "¿Qué significa turbidez en este texto?",
+    "opciones": [
+     "Temperatura del agua",
+     "Falta de transparencia por partículas suspendidas",
+     "Sabor del agua"
+    ],
+    "correcta": 1,
+    "explicacion": "Se mide antes y después del filtrado y se relaciona con sedimentos: indica qué tan turbia o sucia se ve el agua."
+   },
+   {
+    "palabra": "vocera",
+    "pregunta": "¿Qué significa vocera en este texto?",
+    "opciones": [
+     "Persona que habla en nombre de un grupo",
+     "Persona que juzga un concurso",
+     "Persona que dibuja la cartelera"
+    ],
+    "correcta": 0,
+    "explicacion": "Sara explica el trabajo y lo dice en nombre del equipo, como su representante al hablar."
+   },
+   {
+    "palabra": "prototipo",
+    "pregunta": "¿Qué significa prototipo en este texto?",
+    "opciones": [
+     "Dibujo sin construir",
+     "Primer modelo construido para probar una idea",
+     "Producto ya vendido en tiendas"
+    ],
+    "correcta": 1,
+    "explicacion": "Cada filtro es un modelo construido con materiales reciclados para probar si la idea funciona."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se cuenta cómo surgió la idea del proyecto?",
+    "parrafo": 3,
+    "explicacion": "La visita a la vereda de Dagua se relata en el párrafo 3."
+   },
+   {
+    "pregunta": "¿En qué párrafo se explica de qué materiales está hecho el filtro?",
+    "parrafo": 2,
+    "explicacion": "Se enumeran las capas y su función."
+   },
+   {
+    "pregunta": "¿En qué párrafo se informa de los planes futuros del equipo?",
+    "parrafo": 5,
+    "explicacion": "Al final se menciona la feria departamental y la visita a la vereda."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "Los estudiantes visitan una vereda de Dagua",
+    "Construyen el filtro con capas de materiales",
+    "Miden la turbidez del agua antes y después del filtrado",
+    "Ganan el primer lugar en la feria",
+    "Planean llevar el filtro a la vereda"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "Muchas familias de la vereda toman agua de quebrada sin tratarla",
+     "efecto": "El grupo decidió construir un filtro casero y barato"
+    },
+    {
+     "causa": "El filtro no elimina bacterias ni virus",
+     "efecto": "El agua filtrada debe hervirse antes de beberla"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "El colegio dice que la ciencia necesita preguntas bien hechas más que grandes presupuestos. ¿Estás de acuerdo? Defiende tu respuesta.",
+    "criterios": "Toma postura, usa el ejemplo del filtro y puede considerar casos donde sí se requieren recursos."
+   },
+   {
+    "pregunta": "¿Qué problema de tu barrio o ciudad podrías atacar con un proyecto parecido? Explica cómo empezarías.",
+    "criterios": "Describe un problema real, propone una idea viable y menciona al menos un paso concreto de investigación."
+   }
+  ],
+  "valor": "Ciencia al servicio de la comunidad y honestidad con los límites de lo que se hace"
+ },
+ {
+  "id": "L8-01",
+  "grado": 8,
+  "tipologia": "cuento",
+  "titulo": "La abuela y el algoritmo",
+  "parrafos": [
+   "Isabela había aprendido a programar a los diez años, y a los catorce se sentía invencible. Cuando su abuela Rosario, que vivía sola en el barrio San Fernando, empezó a recibir mensajes de un supuesto banco, Isabela se rio. —Abuela, eso es una estafa, cualquiera lo ve —le dijo, sin levantar la vista del computador. La abuela no contestó. Solo apretó con fuerza el teléfono.",
+   "Tres semanas después, Isabela llegó de visita y encontró a su abuela sentada en la sala, con la mirada fija en la pared. Los ahorros de toda una vida, casi cuatro millones de pesos que guardaba para operarse la rodilla, habían desaparecido de su cuenta. Un hombre la había llamado haciéndose pasar por funcionario, le había pedido un código que llegó por mensaje de texto, y ella, confiada, se lo había dictado.",
+   "Isabela sintió una mezcla de rabia y vergüenza. Había sido capaz de escribir programas, pero no de explicarle a la persona que más quería cómo protegerse. Esa noche no durmió. A la mañana siguiente, en lugar de reprochar nada, abrió su computador y le dijo: —Abuela, vamos a enseñarte a defenderte. Y quiero que me ayudes a diseñar una guía para que no le pase a nadie más.",
+   "Durante un mes se sentaron todas las tardes. La abuela hacía preguntas que Isabela nunca se había hecho: ¿por qué un banco te pediría un código por teléfono?, ¿por qué siempre dicen que es urgente? Isabela se dio cuenta de que los estafadores no atacaban las máquinas, sino las emociones: el miedo, la prisa, la confianza. Entre las dos escribieron cinco reglas con letra grande: nunca compartir códigos, desconfiar de la urgencia, colgar y llamar al número oficial, consultar con alguien de confianza y denunciar.",
+   "Cuando la guía estuvo lista, Isabela quiso programar una aplicación que enviara alertas. Su abuela la detuvo con una sonrisa. —Una aplicación no sirve de nada si la gente no sabe por qué debe desconfiar —dijo—. Primero hay que conversar. Con el permiso de la rectoría, Isabela y Rosario dictaron un taller para otros abuelos y abuelas del barrio. Al finalizar, doña Eulalia les preguntó cuándo sería el siguiente.",
+   "Esa noche, Isabela escribió en su cuaderno que la tecnología más potente que había conocido no se había escrito con código, sino con paciencia, y que su abuela, que no sabía programar, le había enseñado el algoritmo más importante: escuchar antes de enseñar."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿A qué edad aprendió Isabela a programar?",
+    "evidencia": "había aprendido a programar a los diez años",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "¿Cuánto dinero perdió la abuela y para qué lo guardaba?",
+    "evidencia": "casi cuatro millones de pesos que guardaba para operarse la rodilla",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Cuántas reglas escribieron Isabela y su abuela?",
+    "evidencia": "Entre las dos escribieron cinco reglas con letra grande",
+    "parrafo": 4
+   },
+   {
+    "pregunta": "¿Por qué la abuela detuvo a Isabela cuando quiso hacer una aplicación?",
+    "evidencia": "Una aplicación no sirve de nada si la gente no sabe por qué debe desconfiar",
+    "parrafo": 5
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Por qué Isabela sintió vergüenza después de la estafa?",
+    "pista": "Relaciona lo que ella sabía hacer con lo que no hizo por su abuela.",
+    "respuesta_modelo": "Porque sabía programar y se creía muy capaz, pero se había burlado de la abuela en lugar de explicarle con paciencia cómo protegerse."
+   },
+   {
+    "pregunta": "¿Qué quiere decir que los estafadores no atacaban las máquinas, sino las emociones?",
+    "pista": "Fíjate en las tres emociones que enumera el texto.",
+    "respuesta_modelo": "Que el engaño funciona porque aprovecha el miedo, la prisa y la confianza de las personas, no porque se rompa un sistema informático."
+   },
+   {
+    "pregunta": "¿Qué cambio se ve en Isabela entre el comienzo y el final del cuento?",
+    "pista": "Compara su actitud en el párrafo 1 con su reflexión final.",
+    "respuesta_modelo": "Pasó de la soberbia a la humildad: entendió que escuchar y enseñar con paciencia vale tanto como saber de tecnología."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "invencible",
+    "pregunta": "¿Qué significa invencible en este texto?",
+    "opciones": [
+     "Que no puede ser derrotada ni equivocarse",
+     "Que siente mucho miedo",
+     "Que tiene poco dinero"
+    ],
+    "correcta": 0,
+    "explicacion": "Isabela se burla de su abuela y se cree muy capaz: se siente imposible de vencer, sin dudas sobre lo que sabe."
+   },
+   {
+    "palabra": "supuesto",
+    "pregunta": "¿Qué significa supuesto en la expresión supuesto banco?",
+    "opciones": [
+     "Muy famoso",
+     "Que se hace pasar por algo que no es",
+     "Ubicado cerca de la casa"
+    ],
+    "correcta": 1,
+    "explicacion": "Isabela dice enseguida que es una estafa: el banco no era real, solo lo parecía."
+   },
+   {
+    "palabra": "reprochar",
+    "pregunta": "¿Qué significa reprochar en este texto?",
+    "opciones": [
+     "Felicitar por un logro",
+     "Culpar a alguien con palabras duras",
+     "Perdonar sin decir nada"
+    ],
+    "correcta": 1,
+    "explicacion": "Isabela, en lugar de reprochar nada, propone ayudar: elige no culpar a la abuela por lo ocurrido."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se cuenta cómo ocurrió la estafa?",
+    "parrafo": 2,
+    "explicacion": "El hombre llamó, pidió el código y la abuela se lo dictó."
+   },
+   {
+    "pregunta": "¿En qué párrafo aparecen las cinco reglas de la guía?",
+    "parrafo": 4,
+    "explicacion": "Se enumeran al final del párrafo 4."
+   },
+   {
+    "pregunta": "¿En qué párrafo se habla del taller para otros abuelos del barrio?",
+    "parrafo": 5,
+    "explicacion": "Se cuenta que dictaron un taller con permiso de la rectoría."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "Isabela se burla de los mensajes que recibe su abuela",
+    "La abuela dicta un código a un falso funcionario",
+    "Isabela propone diseñar una guía junto con su abuela",
+    "Escriben cinco reglas durante un mes de tardes juntas",
+    "Dictan un taller a otros abuelos del barrio"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "La abuela dictó el código a un falso funcionario",
+     "efecto": "Perdió los ahorros que guardaba para su operación"
+    },
+    {
+     "causa": "Isabela sintió rabia y vergüenza por no haber ayudado antes",
+     "efecto": "Decidió enseñar a su abuela y crear una guía para otros"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "La abuela dice que primero hay que conversar y después programar. ¿Estás de acuerdo con que la tecnología sola no resuelve los problemas? Argumenta.",
+    "criterios": "Define postura, usa ejemplos del cuento o de su vida y considera el papel de la educación frente a la tecnología."
+   },
+   {
+    "pregunta": "¿Qué le dirías a un familiar mayor que recibe llamadas pidiendo códigos o claves? Redacta tres consejos y justifícalos.",
+    "criterios": "Consejos claros y aplicables, relacionados con las reglas del cuento, y razones para cada uno."
+   }
+  ],
+  "valor": "Humildad y cuidado de las personas mayores"
+ },
+ {
+  "id": "L8-02",
+  "grado": 8,
+  "tipologia": "infografía en prosa",
+  "titulo": "Dinero que trabaja: el interés compuesto",
+  "parrafos": [
+   "QUÉ ES. El interés es el precio que se paga por usar dinero ajeno o la recompensa que se recibe por prestar el propio. Cuando se ahorra en un banco o en una cooperativa, la entidad usa ese dinero y paga un interés al ahorrador. La tasa de interés se expresa como un porcentaje del capital, que es el dinero inicial.",
+   "DOS FORMAS DE CALCULARLO. En el interés simple, el interés se calcula siempre sobre el capital inicial. En el interés compuesto, los intereses ganados se suman al capital y, en el período siguiente, también producen intereses. Es decir, se gana interés sobre el interés.",
+   "UN EJEMPLO CON NÚMEROS. Supongamos que se depositan $1.000.000 a una tasa del 10 % anual durante tres años. Con interés simple, cada año se ganan $100.000, así que al final habrá $1.300.000. Con interés compuesto, el primer año el saldo llega a $1.100.000; el segundo año, el 10 % se calcula sobre $1.100.000 y el saldo sube a $1.210.000; y el tercer año llega a $1.331.000. La diferencia, $31.000, parece pequeña, pero crece cada año.",
+   "EL FACTOR TIEMPO. El interés compuesto premia la paciencia. Con el mismo capital y la misma tasa, después de veinte años el saldo se multiplica por más de seis y medio: el millón llegaría a unos $6.727.000. Con interés simple solo llegaría a $3.000.000. Por eso se dice que el tiempo es el mejor aliado de quien ahorra desde joven.",
+   "LA CARA OSCURA. El mismo mecanismo funciona en contra de quien debe. Si se deja de pagar una tarjeta de crédito, los intereses no pagados se suman a la deuda y esta crece cada mes. Una deuda de $500.000 con una tasa del 3 % mensual, sin pagar nada durante un año, se convierte en unos $713.000. Por eso conviene pagar a tiempo y comparar las tasas antes de endeudarse.",
+   "RECUERDA. Primero: ahorrar pronto vale más que ahorrar mucho tarde. Segundo: una tasa un poco más alta, sostenida por años, hace una diferencia enorme. Tercero: antes de firmar cualquier crédito, pregunta la tasa y calcula cuánto pagarás en total."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿Qué es el capital?",
+    "evidencia": "capital, que es el dinero inicial",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "¿Cuánto habrá al final de tres años con interés simple?",
+    "evidencia": "al final habrá $1.300.000",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿A cuánto llega el saldo en el tercer año con interés compuesto?",
+    "evidencia": "el tercer año llega a $1.331.000",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿A cuánto llegaría el millón en veinte años con interés simple?",
+    "evidencia": "Con interés simple solo llegaría a $3.000.000",
+    "parrafo": 4
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Por qué el texto dice que el interés compuesto premia la paciencia?",
+    "pista": "Compara los resultados a tres años y a veinte años.",
+    "respuesta_modelo": "Porque la diferencia con el interés simple es pequeña al principio, pero crece mucho con el tiempo; quien espera más años obtiene mucho más."
+   },
+   {
+    "pregunta": "¿Por qué el mismo mecanismo puede ser peligroso para quien tiene una deuda?",
+    "pista": "Lee el párrafo 5 y piensa qué se suma a la deuda.",
+    "respuesta_modelo": "Porque los intereses no pagados se suman a la deuda y, a su vez, producen más intereses, de modo que la deuda crece cada vez más rápido."
+   },
+   {
+    "pregunta": "¿Por qué la diferencia de $31.000 entre el interés simple y el compuesto crece cada año?",
+    "pista": "Piensa sobre qué cantidad se calculan los intereses cada año.",
+    "respuesta_modelo": "Porque en el compuesto cada año el interés se calcula sobre un capital mayor, mientras que en el simple siempre es sobre el mismo capital."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "recompensa",
+    "pregunta": "¿Qué significa recompensa en este texto?",
+    "opciones": [
+     "Castigo por prestar dinero",
+     "Pago o premio que se recibe por algo que se hace",
+     "Deuda que no se paga"
+    ],
+    "correcta": 1,
+    "explicacion": "El texto dice que quien presta su dinero recibe un interés: es lo que obtiene a cambio de prestarlo."
+   },
+   {
+    "palabra": "saldo",
+    "pregunta": "¿Qué significa saldo en este texto?",
+    "opciones": [
+     "Precio de una rebaja",
+     "Dinero que se debe pagar en impuestos",
+     "Cantidad total de dinero que hay en la cuenta en un momento dado"
+    ],
+    "correcta": 2,
+    "explicacion": "El saldo llega a $1.100.000, luego a $1.210.000: es el total acumulado en cada año."
+   },
+   {
+    "palabra": "aliado",
+    "pregunta": "¿Qué significa aliado en la expresión el mejor aliado?",
+    "opciones": [
+     "Rival",
+     "Compañero que ayuda a lograr algo",
+     "Obstáculo para ahorrar"
+    ],
+    "correcta": 1,
+    "explicacion": "El tiempo ayuda al que ahorra desde joven porque los intereses se acumulan; por eso se le llama aliado."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se diferencian el interés simple y el compuesto?",
+    "parrafo": 2,
+    "explicacion": "Es la sección DOS FORMAS DE CALCULARLO."
+   },
+   {
+    "pregunta": "¿En qué párrafo se advierte sobre las deudas con tarjeta de crédito?",
+    "parrafo": 5,
+    "explicacion": "Es la sección LA CARA OSCURA."
+   },
+   {
+    "pregunta": "¿En qué párrafo se presentan los tres consejos finales?",
+    "parrafo": 6,
+    "explicacion": "Es la sección RECUERDA."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "Se depositan $1.000.000 a una tasa del 10 % anual",
+    "Al terminar el primer año el saldo es $1.100.000",
+    "El segundo año el 10 % se calcula sobre $1.100.000",
+    "El saldo sube a $1.210.000",
+    "Al terminar el tercer año el saldo llega a $1.331.000"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "En el interés compuesto los intereses ganados se suman al capital",
+     "efecto": "En el período siguiente esos intereses también producen intereses"
+    },
+    {
+     "causa": "Se deja de pagar una tarjeta de crédito",
+     "efecto": "Los intereses se suman a la deuda y esta crece cada mes"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "Si tuvieras que aconsejar a un joven de tu edad sobre cuándo empezar a ahorrar, ¿qué le dirías? Usa los datos del texto como argumento.",
+    "criterios": "Postura clara, uso de cifras del texto (por ejemplo, la comparación a veinte años) y una recomendación realista."
+   },
+   {
+    "pregunta": "El texto muestra la cara buena y la cara oscura del interés compuesto. ¿Crees que el autor es equilibrado? Justifica.",
+    "criterios": "Evalúa la estructura del texto, identifica ambas caras y argumenta si presenta información suficiente para decidir."
+   }
+  ],
+  "valor": "Prudencia financiera y paciencia para construir futuro"
+ },
+ {
+  "id": "L8-03",
+  "grado": 8,
+  "tipologia": "instructivo",
+  "titulo": "Una huerta en botellas",
+  "parrafos": [
+   "Tener una huerta en casa no exige patio ni grandes gastos. Con botellas plásticas de dos litros y un poco de paciencia, cualquier familia puede cultivar cilantro, cebollín, lechuga y albahaca en un balcón o una ventana. Esta guía explica, paso a paso, cómo montarla en una tarde y mantenerla durante meses.",
+   "Materiales. Necesitas seis botellas plásticas de dos litros, tijeras o un cuchillo con punta (que debe manejar un adulto), tierra negra, cascarilla de arroz o piedras pequeñas, semillas o plántulas, un trozo de cuerda resistente y un marcador. Todo puede conseguirse por menos de quince mil pesos, y las botellas, si las guardas durante unas semanas, no cuestan nada.",
+   "Preparación. Primero, lava las botellas con agua y jabón. Segundo, con la ayuda de un adulto, corta una ventana rectangular en el costado de cada botella, de unos doce centímetros de largo por seis de ancho, dejando intacta la parte de abajo para que sostenga la tierra. Tercero, haz tres orificios pequeños en el fondo; estos permitirán que el exceso de agua salga y las raíces no se pudran.",
+   "Siembra. Coloca en el fondo una capa de dos dedos de cascarilla de arroz o piedras, que ayuda al drenaje. Luego llena la botella con tierra hasta cinco centímetros antes del borde. Si usas semillas, ábrelas en surcos de medio centímetro y cúbrelas con tierra; si usas plántulas, abre un hueco del tamaño de la raíz, introdúcela y presiona suavemente. Escribe con el marcador el nombre de la planta y la fecha de siembra.",
+   "Cuidado. Cuelga las botellas con la cuerda, en un lugar donde reciban al menos cuatro horas de luz solar al día. Riega cuando la tierra, al tocarla con el dedo, se sienta seca a un centímetro de profundidad; casi siempre bastan unos cien mililitros cada dos días. Evita encharcar la tierra, porque el exceso de agua es la causa más frecuente de plantas muertas. Cosecha las hojas exteriores y deja las del centro para que la planta siga creciendo.",
+   "Advertencias. No uses botellas que hayan contenido productos químicos. Lava siempre tus manos después de manipular la tierra y las verduras. Si notas hojas amarillas, revisa primero el riego antes de agregar abono. Y recuerda: una huerta pequeña bien cuidada produce más alimento y más aprendizaje que una grande abandonada."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿Cuántas botellas se necesitan según la guía?",
+    "evidencia": "Necesitas seis botellas plásticas de dos litros",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Cuántos orificios hay que hacer en el fondo de cada botella?",
+    "evidencia": "haz tres orificios pequeños en el fondo",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿Cuántas horas de luz solar necesitan las plantas?",
+    "evidencia": "al menos cuatro horas de luz solar al día",
+    "parrafo": 5
+   },
+   {
+    "pregunta": "¿Cuál es la causa más frecuente de plantas muertas?",
+    "evidencia": "el exceso de agua es la causa más frecuente de plantas muertas",
+    "parrafo": 5
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Por qué el texto indica que un adulto debe manejar el cuchillo?",
+    "pista": "Piensa en el tipo de usuario al que se dirige la guía y en los riesgos del material.",
+    "respuesta_modelo": "Porque la guía puede ser seguida por niños y jóvenes, y cortar plástico con un cuchillo puede causar heridas si no se hace con cuidado."
+   },
+   {
+    "pregunta": "¿Por qué conviene revisar el riego antes de agregar abono si las hojas se ponen amarillas?",
+    "pista": "Relaciona el párrafo 6 con lo que dice el párrafo 5 sobre el exceso de agua.",
+    "respuesta_modelo": "Porque el exceso de agua es la causa más frecuente de problemas; las hojas amarillas pueden indicar que se riega demasiado y no que falte abono."
+   },
+   {
+    "pregunta": "¿Por qué se recomienda cosechar las hojas exteriores y dejar las del centro?",
+    "pista": "Lee la última oración del párrafo 5.",
+    "respuesta_modelo": "Porque el centro es la zona de crecimiento; si se conserva, la planta sigue produciendo hojas nuevas y se puede cosechar durante más tiempo."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "drenaje",
+    "pregunta": "¿Qué significa drenaje en este texto?",
+    "opciones": [
+     "Salida del exceso de agua",
+     "Abono que alimenta las plantas",
+     "Corte hecho en la botella"
+    ],
+    "correcta": 0,
+    "explicacion": "La capa de cascarilla o piedras y los orificios dejan salir el agua sobrante para que las raíces no se pudran."
+   },
+   {
+    "palabra": "encharcar",
+    "pregunta": "¿Qué significa encharcar la tierra?",
+    "opciones": [
+     "Secarla con el sol",
+     "Llenarla de agua hasta que quede empapada",
+     "Mezclarla con abono"
+    ],
+    "correcta": 1,
+    "explicacion": "El texto advierte que el exceso de agua mata las plantas: encharcar es dejar la tierra con demasiada agua."
+   },
+   {
+    "palabra": "plántulas",
+    "pregunta": "¿Qué significa plántulas en este texto?",
+    "opciones": [
+     "Plantas muy pequeñas recién germinadas",
+     "Herramientas de jardinería",
+     "Frutos listos para cosechar"
+    ],
+    "correcta": 0,
+    "explicacion": "Se presentan como alternativa a las semillas y se les abre un hueco del tamaño de la raíz: son plantitas jóvenes."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se enumeran los materiales?",
+    "parrafo": 2,
+    "explicacion": "El párrafo 2 empieza con la palabra Materiales."
+   },
+   {
+    "pregunta": "¿En qué párrafo se explica cómo sembrar semillas y plántulas?",
+    "parrafo": 4,
+    "explicacion": "Es la sección Siembra."
+   },
+   {
+    "pregunta": "¿En qué párrafo aparecen las advertencias de seguridad e higiene?",
+    "parrafo": 6,
+    "explicacion": "La sección Advertencias recuerda lavar las manos y no usar botellas con químicos."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "Lavar las botellas con agua y jabón",
+    "Cortar una ventana en el costado de cada botella",
+    "Hacer tres orificios pequeños en el fondo",
+    "Poner una capa de cascarilla o piedras",
+    "Llenar con tierra y sembrar"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "Se hacen orificios en el fondo de la botella",
+     "efecto": "El exceso de agua sale y las raíces no se pudren"
+    },
+    {
+     "causa": "Se cosechan las hojas exteriores y se dejan las del centro",
+     "efecto": "La planta sigue creciendo"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "¿Qué ventajas y qué dificultades tendría montar esta huerta en tu casa o en tu colegio? Decide si lo harías y explica por qué.",
+    "criterios": "Considera espacio, tiempo, costo y beneficios; toma una decisión argumentada."
+   },
+   {
+    "pregunta": "La guía termina diciendo que una huerta pequeña bien cuidada es mejor que una grande abandonada. ¿Aplica esta idea a otras áreas de la vida? Da un ejemplo.",
+    "criterios": "Relaciona la idea con otro contexto (estudio, deporte, ahorro) y justifica con un ejemplo concreto."
+   }
+  ],
+  "valor": "Constancia, trabajo en familia y cuidado de la vida"
+ },
+ {
+  "id": "L9-01",
+  "grado": 9,
+  "tipologia": "texto argumentativo",
+  "titulo": "El celular en el aula: ¿herramienta o distracción?",
+  "parrafos": [
+   "Cada vez que un colegio discute si permitir o prohibir el celular en clase, el debate se divide en dos bandos: quienes lo consideran una puerta hacia el conocimiento y quienes lo ven como el principal enemigo de la atención. Ambas posiciones tienen parte de razón, pero ninguna acierta por completo. Sostengo que el celular debe tener un lugar en el aula, siempre que su uso sea decidido por el docente, con propósitos claros y en momentos definidos.",
+   "El primer argumento a favor de su presencia es que el celular ya forma parte de la vida de los estudiantes. Prohibirlo de manera absoluta no elimina el hábito; solo lo traslada a los baños y a los pasillos, donde nadie puede orientarlo. Es más productivo enseñar a usarlo que fingir que no existe. Un estudiante que aprende a contrastar fuentes, a medir la distancia entre dos puntos con una aplicación de física o a traducir un texto técnico está desarrollando competencias que le servirán toda la vida.",
+   "Sin embargo, los defensores del uso libre suelen ignorar la evidencia sobre la atención. Algunos estudios en psicología cognitiva sugieren que la mera presencia del teléfono sobre el escritorio, aunque esté apagado, reduce la capacidad de concentración, porque una parte de la mente permanece pendiente de él. Además, cada notificación interrumpe el razonamiento y exige un tiempo de reenfoque que puede tomar varios minutos. Aprender matemáticas o interpretar un poema requiere justo lo contrario: pensamiento sostenido.",
+   "Quienes proponen la prohibición total argumentan también que el celular fomenta el acoso entre compañeros. Es un riesgo real, pero el problema no está en el aparato sino en la convivencia. Un colegio que prohíbe el teléfono sin formar en respeto digital solo desplaza el conflicto a otro lugar y a otra hora. Por eso la solución no puede limitarse a una norma: debe incluir educación en ciudadanía digital.",
+   "¿Cómo se concreta entonces una postura intermedia? Propongo tres reglas. Primera: el teléfono permanece guardado por defecto y solo se saca cuando el docente lo indica para una actividad específica, como una búsqueda, una medición o una simulación. Segunda: en las evaluaciones y en las conversaciones en grupo, los teléfonos se dejan en un lugar común, para proteger la concentración y la atención a los demás. Tercera: al finalizar cada periodo, el curso evalúa en conjunto si las reglas funcionaron y las ajusta.",
+   "Se podría objetar que esta propuesta exige mucho de los docentes. Es cierto: planear actividades con celular toma más tiempo que dictar una lección. Pero también lo es que formar criterio nunca ha sido una tarea sencilla. Si la escuela renuncia a enseñar el uso responsable de la tecnología, otros lo enseñarán por ella, y sus intereses rara vez coinciden con los del estudiante.",
+   "En conclusión, el celular no es ni un enemigo ni un salvador. Es una herramienta poderosa cuyo valor depende de quien la guía. Un colegio que decide con sensatez cuándo usarlo y cuándo guardarlo educa en lo que más necesitan los jóvenes de hoy: la capacidad de elegir en qué poner su atención."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿Cuál es la tesis del autor sobre el celular en el aula?",
+    "evidencia": "Sostengo que el celular debe tener un lugar en el aula",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "Según el autor, ¿a dónde se traslada el hábito cuando el celular se prohíbe de manera absoluta?",
+    "evidencia": "solo lo traslada a los baños y a los pasillos",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Qué efecto tiene cada notificación sobre el razonamiento?",
+    "evidencia": "cada notificación interrumpe el razonamiento",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿Qué dice la primera regla propuesta por el autor?",
+    "evidencia": "el teléfono permanece guardado por defecto",
+    "parrafo": 5
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Por qué el autor dice que ninguna de las dos posiciones del debate acierta por completo?",
+    "pista": "Observa cómo lo desarrolla en los párrafos 2 y 3.",
+    "respuesta_modelo": "Porque cada bando ve solo una parte: los defensores ignoran el daño a la atención y los opositores ignoran que el celular puede ser una herramienta de aprendizaje y que la prohibición no enseña a usarlo."
+   },
+   {
+    "pregunta": "¿Quiénes crees que son los otros que enseñarán el uso de la tecnología si la escuela renuncia a hacerlo?",
+    "pista": "Lee la última oración del párrafo 6 y fíjate en la mención de sus intereses.",
+    "respuesta_modelo": "Probablemente las empresas de tecnología y de redes sociales, cuyo interés es captar la atención y el tiempo del usuario, no necesariamente su formación."
+   },
+   {
+    "pregunta": "¿Qué efecto busca el autor al incluir una objeción posible (párrafo 6)?",
+    "pista": "Piensa en cómo se comporta un buen argumentador frente a las críticas.",
+    "respuesta_modelo": "Mostrar que ha considerado las críticas a su propuesta y responderlas, lo que fortalece su credibilidad y hace su argumento más sólido."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "contrastar",
+    "pregunta": "¿Qué significa contrastar fuentes en este texto?",
+    "opciones": [
+     "Copiar la información de una sola fuente",
+     "Comparar fuentes para comprobar si son confiables y coinciden",
+     "Borrar las fuentes que no se entienden"
+    ],
+    "correcta": 1,
+    "explicacion": "El autor lo presenta como una competencia valiosa: no basta leer una fuente, hay que confrontarla con otras."
+   },
+   {
+    "palabra": "sostenido",
+    "pregunta": "¿Qué significa pensamiento sostenido?",
+    "opciones": [
+     "Pensamiento mantenido durante un tiempo sin interrupciones",
+     "Pensamiento rápido y superficial",
+     "Pensamiento compartido con otros"
+    ],
+    "correcta": 0,
+    "explicacion": "Se contrapone a las interrupciones de las notificaciones: pensar durante un tiempo continuo."
+   },
+   {
+    "palabra": "objetar",
+    "pregunta": "¿Qué significa Se podría objetar?",
+    "opciones": [
+     "Se podría aceptar sin dudar",
+     "Se podría presentar un argumento en contra",
+     "Se podría repetir lo dicho"
+    ],
+    "correcta": 1,
+    "explicacion": "Después de esa expresión el autor presenta una crítica a su propuesta, que luego responde."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo propone el autor sus tres reglas?",
+    "parrafo": 5,
+    "explicacion": "Es el párrafo de la propuesta concreta."
+   },
+   {
+    "pregunta": "¿En qué párrafo responde al argumento sobre el acoso entre compañeros?",
+    "parrafo": 4,
+    "explicacion": "Dice que el problema no está en el aparato sino en la convivencia."
+   },
+   {
+    "pregunta": "¿En qué párrafo se anticipa una objeción a la propuesta?",
+    "parrafo": 6,
+    "explicacion": "Plantea que la propuesta exige mucho de los docentes y la responde."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "El autor presenta su tesis",
+    "Argumenta que el celular ya forma parte de la vida de los estudiantes",
+    "Expone la evidencia sobre la atención",
+    "Responde al argumento del acoso entre compañeros",
+    "Propone tres reglas concretas"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "Cada notificación interrumpe el razonamiento",
+     "efecto": "Se exige un tiempo de reenfoque que puede tomar varios minutos"
+    },
+    {
+     "causa": "El colegio prohíbe el teléfono sin formar en respeto digital",
+     "efecto": "El conflicto se desplaza a otro lugar y a otra hora"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "¿Consideras convincente la postura intermedia del autor? Evalúa la calidad de sus argumentos y señala cuál te parece más fuerte y cuál más débil.",
+    "criterios": "Identifica la tesis, evalúa al menos dos argumentos con criterios (evidencia, coherencia, consideración de objeciones) y justifica su valoración."
+   },
+   {
+    "pregunta": "Si tu colegio adoptara las tres reglas, ¿cómo cambiaría tu día a día en el aula? Argumenta si el cambio sería positivo.",
+    "criterios": "Relaciona las reglas con su experiencia, considera ventajas y dificultades y llega a una conclusión razonada."
+   }
+  ],
+  "valor": "Dominio de la propia atención y uso responsable de la tecnología"
+ },
+ {
+  "id": "L9-02",
+  "grado": 9,
+  "tipologia": "texto discontinuo (encuesta con tablas en prosa)",
+  "titulo": "Dormir o rendir: resultados de una encuesta escolar",
+  "parrafos": [
+   "Durante dos semanas, el comité de bienestar del colegio aplicó una encuesta a 200 estudiantes de los grados noveno, décimo y once para conocer sus hábitos de sueño. El propósito era establecer si existía relación entre las horas dormidas y el rendimiento académico. A continuación se resumen los hallazgos principales. Los datos son ilustrativos de un ejercicio escolar y no representan a una población más amplia. La participación fue voluntaria y anónima, y antes de responder se explicó a cada grupo el propósito del ejercicio, para que las respuestas fueran lo más sinceras posible.",
+   "Tabla 1. Horas de sueño por noche (200 estudiantes). Menos de 6 horas: 50 estudiantes (25 %). Entre 6 y 7 horas: 70 estudiantes (35 %). Entre 7 y 8 horas: 50 estudiantes (25 %). Más de 8 horas: 30 estudiantes (15 %). Es decir, seis de cada diez estudiantes duermen menos de siete horas, cuando los especialistas recomiendan entre ocho y diez horas para los adolescentes.",
+   "Tabla 2. Promedio académico según horas de sueño (escala de 1,0 a 5,0). Menos de 6 horas: 3,4. Entre 6 y 7 horas: 3,7. Entre 7 y 8 horas: 4,0. Más de 8 horas: 4,1. El promedio sube con cada grupo, aunque la diferencia entre los dos últimos es de apenas una décima. Sin embargo, esta correlación no demuestra por sí sola que dormir más cause mejores notas: otros factores, como el apoyo familiar o la salud, podrían influir en ambos resultados.",
+   "Tabla 3. Causas declaradas de acostarse tarde. Del total de encuestados, 90 estudiantes (45 %) señalaron el uso de redes sociales o videojuegos; 60 (30 %), las tareas y los trabajos pendientes; 30 (15 %), el transporte largo o las actividades extracurriculares, y 20 (10 %), otras razones. Llama la atención que casi la mitad atribuye su falta de sueño a una conducta que puede modificar de manera directa.",
+   "Análisis. Al comparar las tablas, el grupo que duerme menos de 6 horas representa una cuarta parte de los encuestados y obtiene el promedio más bajo. Si el colegio lograra que la mitad de esos estudiantes pasara al grupo de 6 a 7 horas, aumentaría el número de jóvenes con promedio de 3,7 o superior. No obstante, el estudio tiene límites: las horas de sueño se obtuvieron por autorreporte, lo que puede generar errores de memoria o de honestidad; además, no se midió la calidad del sueño, que importa tanto como la cantidad.",
+   "Recomendaciones del comité. Primera: realizar una campaña sobre higiene del sueño que incluya apagar las pantallas al menos treinta minutos antes de dormir. Segunda: revisar la carga de tareas para evitar que se acumulen en la misma semana. Tercera: repetir la encuesta al finalizar el año para comparar resultados y verificar si las medidas tuvieron algún efecto. Cuarta: invitar a las familias a una charla sobre el sueño en la adolescencia, porque los hábitos del hogar influyen en los del colegio."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿A cuántos estudiantes se aplicó la encuesta?",
+    "evidencia": "aplicó una encuesta a 200 estudiantes",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "¿Cuántos estudiantes duermen entre 7 y 8 horas?",
+    "evidencia": "Entre 7 y 8 horas: 50 estudiantes (25 %)",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Qué promedio académico tienen quienes duermen menos de 6 horas?",
+    "evidencia": "Menos de 6 horas: 3,4",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿Cuántos estudiantes señalaron las redes sociales o los videojuegos como causa de acostarse tarde?",
+    "evidencia": "90 estudiantes (45 %) señalaron el uso de redes sociales o videojuegos",
+    "parrafo": 4
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Por qué el comité aclara que la correlación no demuestra que dormir más cause mejores notas?",
+    "pista": "Lee la última oración de la tabla 2 y piensa en otros factores.",
+    "respuesta_modelo": "Porque dos variables pueden aparecer juntas sin que una cause la otra; el apoyo familiar o la salud podrían explicar tanto el buen sueño como las buenas notas."
+   },
+   {
+    "pregunta": "¿Qué sugiere la tabla 3 sobre las posibilidades de mejorar el sueño de los estudiantes?",
+    "pista": "Observa la oración que comienza con Llama la atención.",
+    "respuesta_modelo": "Que gran parte del problema depende de hábitos que los estudiantes pueden modificar, como el uso nocturno de pantallas, por lo que una campaña educativa podría tener efecto."
+   },
+   {
+    "pregunta": "¿Por qué el autorreporte puede producir errores en los datos?",
+    "pista": "Piensa en cómo las personas recuerdan y cuentan sus propios hábitos.",
+    "respuesta_modelo": "Porque los estudiantes pueden recordar mal cuánto durmieron o responder lo que creen que es socialmente aceptable, y eso distorsiona las cifras."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "ilustrativos",
+    "pregunta": "¿Qué significa que los datos son ilustrativos?",
+    "opciones": [
+     "Que sirven como ejemplo y no representan a toda la población",
+     "Que son completamente exactos",
+     "Que están dibujados con imágenes"
+    ],
+    "correcta": 0,
+    "explicacion": "Se aclara enseguida que no representan a una población más amplia: son un ejemplo para aprender."
+   },
+   {
+    "palabra": "correlación",
+    "pregunta": "¿Qué significa correlación en este texto?",
+    "opciones": [
+     "Relación o coincidencia entre dos variables",
+     "Error en una medición",
+     "Causa directa de un fenómeno"
+    ],
+    "correcta": 0,
+    "explicacion": "El texto contrapone la correlación a demostrar que una cosa cause la otra: solo muestra que varían juntas."
+   },
+   {
+    "palabra": "autorreporte",
+    "pregunta": "¿Qué significa que los datos se obtuvieron por autorreporte?",
+    "opciones": [
+     "Los midió un aparato en cada estudiante",
+     "Cada persona informó sobre sí misma",
+     "Los profesores los estimaron"
+    ],
+    "correcta": 1,
+    "explicacion": "El prefijo auto indica que cada estudiante reportó sus propias horas de sueño."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se muestra la distribución de estudiantes según las horas de sueño?",
+    "parrafo": 2,
+    "explicacion": "Es la tabla 1."
+   },
+   {
+    "pregunta": "¿En qué párrafo se mencionan las limitaciones del estudio?",
+    "parrafo": 5,
+    "explicacion": "El análisis señala el autorreporte y la falta de medición de la calidad del sueño."
+   },
+   {
+    "pregunta": "¿En qué párrafo se proponen acciones para mejorar la situación?",
+    "parrafo": 6,
+    "explicacion": "Son las recomendaciones del comité."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "El comité aplica la encuesta a 200 estudiantes",
+    "Se registran las horas de sueño por noche",
+    "Se relaciona el sueño con el promedio académico",
+    "Se identifican las causas de acostarse tarde",
+    "El comité formula sus recomendaciones"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "Las horas de sueño se obtuvieron por autorreporte",
+     "efecto": "Pueden existir errores de memoria o de honestidad en los datos"
+    },
+    {
+     "causa": "Otros factores, como el apoyo familiar o la salud, podrían influir en el sueño y en las notas",
+     "efecto": "La correlación no prueba que dormir más cause mejores notas"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "Con estos datos, ¿tendría el colegio razones suficientes para cambiar el horario de entrada? Argumenta en uno u otro sentido.",
+    "criterios": "Usa cifras de las tablas, reconoce los límites del estudio y llega a una conclusión razonada, no solo a una opinión."
+   },
+   {
+    "pregunta": "Si tú formaras parte del comité, ¿qué otra pregunta incluirías en la encuesta y para qué?",
+    "criterios": "Propone una pregunta pertinente (por ejemplo, calidad del sueño o trabajo después del colegio) y explica qué información adicional aportaría."
+   }
+  ],
+  "valor": "Autocuidado y toma de decisiones con base en datos"
+ },
+ {
+  "id": "L9-03",
+  "grado": 9,
+  "tipologia": "texto expositivo científico",
+  "titulo": "Inmunidad colectiva: protegerse protegiendo",
+  "parrafos": [
+   "Imagina un salón de clases donde un estudiante llega con sarampión. En un grupo donde nadie tiene defensas, la enfermedad se propagaría con gran rapidez; en uno donde la mayoría está protegida, el virus encuentra pocos cuerpos donde multiplicarse y la cadena de contagio se rompe. Este fenómeno se conoce como inmunidad colectiva o de rebaño, y explica por qué las vacunas protegen no solo a quien las recibe, sino también a quienes lo rodean.",
+   "Para entenderlo, conviene recordar cómo actúa una vacuna. Contiene una versión inactivada o debilitada de un microorganismo, o uno de sus componentes, que no produce la enfermedad pero sí es reconocido por el sistema inmunitario. Este responde fabricando anticuerpos y células de memoria. Si más tarde el cuerpo se encuentra con el microorganismo real, esas células lo reconocen y reaccionan con mayor rapidez, de modo que la infección se detiene antes de causar daño grave.",
+   "La inmunidad colectiva depende de un número llamado R0 (se lee erre cero), que indica a cuántas personas contagia, en promedio, un enfermo en una población sin protección. El sarampión tiene un R0 de entre 12 y 18, uno de los más altos conocidos; la gripe estacional ronda entre 1 y 2. Cuanto mayor es el R0, mayor es la proporción de personas inmunes necesaria para frenar la transmisión. En el caso del sarampión se estima que se requiere cerca del 95 % de cobertura; para enfermedades menos contagiosas, el umbral es menor.",
+   "Este umbral explica por qué incluso una caída pequeña en la vacunación puede tener consecuencias. Si la cobertura baja del 95 % al 90 %, parece un cambio mínimo, pero deja sin protección a más personas y permite que el virus encuentre suficientes susceptibles para propagarse. Varios brotes de sarampión en distintos países han coincidido con descensos en la cobertura de vacunación.",
+   "La inmunidad colectiva es especialmente importante para quienes no pueden vacunarse: los recién nacidos, las personas con defensas muy bajas por tratamientos como la quimioterapia y quienes han tenido reacciones alérgicas graves a un componente de la vacuna. Ellos dependen de que quienes los rodean estén protegidos. Por eso la vacunación es un acto individual con efecto social: decidir vacunarse implica también cuidar a otros.",
+   "Es necesario precisar los límites de este concepto. La inmunidad colectiva no opera de la misma manera con todas las enfermedades: el tétanos, por ejemplo, no se transmite de persona a persona, de modo que vacunarse protege solo a quien recibe la vacuna. Además, ninguna vacuna es eficaz al 100 %; por eso se habla de reducir el riesgo de manera drástica, no de eliminarlo. Y la cobertura debe mantenerse en el tiempo: cada generación nueva de bebés necesita ser vacunada para sostener la protección del grupo."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿Cómo se llama el fenómeno por el cual la protección de la mayoría frena el contagio?",
+    "evidencia": "inmunidad colectiva o de rebaño",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "¿Qué fabrica el sistema inmunitario cuando reconoce el componente de la vacuna?",
+    "evidencia": "fabricando anticuerpos y células de memoria",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Cuál es el R0 del sarampión según el texto?",
+    "evidencia": "El sarampión tiene un R0 de entre 12 y 18",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿Quiénes no pueden vacunarse, según el texto? Menciona uno de los grupos.",
+    "evidencia": "los recién nacidos, las personas con defensas muy bajas por tratamientos como la quimioterapia",
+    "parrafo": 5
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Por qué una caída de la cobertura del 95 % al 90 % puede ser importante aunque parezca pequeña?",
+    "pista": "Relaciona el umbral del sarampión con la presencia de personas susceptibles.",
+    "respuesta_modelo": "Porque 95 % es el umbral estimado para frenar la transmisión; por debajo de él quedan suficientes personas sin protección para que el virus se propague en la comunidad."
+   },
+   {
+    "pregunta": "¿Por qué el texto dice que la vacunación es un acto individual con efecto social?",
+    "pista": "Piensa en el párrafo 5.",
+    "respuesta_modelo": "Porque la decisión de cada persona de vacunarse la protege a ella, pero también reduce el riesgo para quienes no pueden vacunarse y dependen de que el entorno esté protegido."
+   },
+   {
+    "pregunta": "¿Por qué el ejemplo del tétanos sirve para precisar los límites del concepto?",
+    "pista": "Lee el párrafo 6 y fíjate en cómo se transmite el tétanos.",
+    "respuesta_modelo": "Porque muestra que la inmunidad colectiva solo aplica a enfermedades que pasan de persona a persona; en el tétanos la vacuna protege únicamente a quien la recibe."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "inactivada",
+    "pregunta": "¿Qué significa versión inactivada de un microorganismo?",
+    "opciones": [
+     "Versión que ya no puede causar la enfermedad",
+     "Versión más agresiva que la natural",
+     "Versión que aún no ha sido descubierta"
+    ],
+    "correcta": 0,
+    "explicacion": "El texto aclara que no produce la enfermedad pero sí es reconocida por el sistema inmunitario."
+   },
+   {
+    "palabra": "umbral",
+    "pregunta": "¿Qué significa umbral en este texto?",
+    "opciones": [
+     "Puerta de entrada de un edificio",
+     "Nivel mínimo que debe alcanzarse para que ocurra un efecto",
+     "Dosis máxima de una vacuna"
+    ],
+    "correcta": 1,
+    "explicacion": "Se habla de la proporción de personas inmunes necesaria para frenar la transmisión: un nivel mínimo a partir del cual el efecto se logra."
+   },
+   {
+    "palabra": "susceptibles",
+    "pregunta": "¿Qué significa susceptibles en este texto?",
+    "opciones": [
+     "Personas que pueden contagiarse porque no están protegidas",
+     "Personas que se molestan con facilidad",
+     "Personas inmunes a todas las enfermedades"
+    ],
+    "correcta": 0,
+    "explicacion": "El virus necesita personas sin protección para propagarse; esas personas son las susceptibles."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se explica cómo actúa una vacuna en el cuerpo?",
+    "parrafo": 2,
+    "explicacion": "Se describe el trabajo del sistema inmunitario y de las células de memoria."
+   },
+   {
+    "pregunta": "¿En qué párrafo se explica qué es el R0?",
+    "parrafo": 3,
+    "explicacion": "Se define como el promedio de contagios que produce un enfermo en una población sin protección."
+   },
+   {
+    "pregunta": "¿En qué párrafo se señalan los límites del concepto de inmunidad colectiva?",
+    "parrafo": 6,
+    "explicacion": "Se menciona el tétanos y que ninguna vacuna es eficaz al 100 %."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "Se aplica la vacuna con un microorganismo inactivado o debilitado",
+    "El sistema inmunitario fabrica anticuerpos y células de memoria",
+    "Más tarde, el cuerpo se encuentra con el microorganismo real",
+    "Las células de memoria lo reconocen y reaccionan con mayor rapidez",
+    "La infección se detiene antes de causar daño grave"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "La cobertura de vacunación cae por debajo del umbral",
+     "efecto": "El virus encuentra suficientes personas susceptibles para propagarse"
+    },
+    {
+     "causa": "El tétanos no se transmite de persona a persona",
+     "efecto": "La vacuna protege solo a quien la recibe"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "El texto afirma que vacunarse implica también cuidar a otros. ¿Crees que las personas deben sentirse responsables de la salud de los demás? Argumenta.",
+    "criterios": "Postura clara, razones basadas en el texto (grupos vulnerables, umbral) y consideración de una posible objeción."
+   },
+   {
+    "pregunta": "El autor usa un ejemplo de salón de clases al comienzo. ¿Es una buena estrategia para explicar un concepto científico? Evalúa.",
+    "criterios": "Identifica el recurso, valora su claridad y cercanía con el lector, y señala si deja ideas sin explicar."
+   }
+  ],
+  "valor": "Corresponsabilidad y cuidado del bien común"
+ },
+ {
+  "id": "L10-01",
+  "grado": 10,
+  "tipologia": "texto argumentativo",
+  "titulo": "El ahorro no es un lujo de ricos",
+  "parrafos": [
+   "Con frecuencia se escucha en conversaciones familiares una frase que parece de sentido común: ahorrar es para quienes les sobra el dinero. Si el salario apenas alcanza para el arriendo, el mercado y el transporte, ¿de dónde sacar para guardar? Esta objeción merece respeto, pero conduce a una conclusión equivocada. Sostengo que el ahorro no es un privilegio de los ricos, sino una herramienta que los hogares de menores ingresos necesitan más que ninguno.",
+   "El primer argumento es de naturaleza económica. Los hogares con ingresos bajos son los más vulnerables a los imprevistos: una enfermedad, la pérdida de un empleo, la reparación de una moto que es a la vez herramienta de trabajo. Cuando ocurre una emergencia y no hay un colchón de ahorro, la salida suele ser el crédito informal, conocido en Colombia como gota a gota, que cobra intereses muy superiores a los del sistema financiero. Así, quien no ahorró termina pagando más de lo que habría guardado.",
+   "El segundo argumento es psicológico. Se cree que el ahorro exige grandes sumas, pero los hábitos pequeños son más eficaces que los gestos heroicos. Separar tres mil pesos diarios equivale a noventa mil pesos al mes y a un millón ochenta mil pesos al año, sin contar intereses. La suma no cambiará a nadie la vida de golpe, pero sí cubre un tratamiento, un arriendo atrasado o la matrícula de un curso. Además, ahorrar construye la sensación de control sobre el propio futuro, algo que la pobreza suele erosionar.",
+   "Se objetará que, en la práctica, muchos hogares no tienen margen alguno. Es cierto, y sería injusto exigirles lo imposible. Pero conviene distinguir dos situaciones: la de quien no puede ahorrar nada y la de quien no ahorra porque nunca lo intentó o porque desconfía de los bancos. La primera exige políticas públicas, como mejores salarios y subsidios; la segunda se atiende con educación financiera y con productos adaptados, como cuentas de ahorro sin cuota de manejo y cooperativas barriales.",
+   "Un tercer argumento tiene que ver con la transmisión de hábitos. Los niños aprenden más de lo que ven que de lo que se les dice. Una familia que, aun con poco, aparta una pequeña suma cada semana enseña a sus hijos que el dinero es un recurso que se administra y no una sensación pasajera. Esa enseñanza vale más que cualquier cifra, porque se multiplica en la siguiente generación.",
+   "Por supuesto, el ahorro no sustituye a la justicia económica. Sería un error usar este argumento para culpar a los pobres de su condición o para eximir al Estado y a los empleadores de sus responsabilidades. Pero dos ideas pueden defenderse al mismo tiempo: que el sistema debe ser más equitativo y que cada hogar puede, dentro de sus posibilidades, fortalecer su resiliencia financiera.",
+   "En definitiva, la frase según la cual ahorrar es de ricos funciona más como excusa que como descripción. Quien ahorra poco no se hace rico, pero deja de ser rehén de la próxima emergencia. Esa diferencia, aparentemente modesta, es a menudo la que separa un tropiezo pasajero de una caída sin retorno."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿Cuál es la tesis del autor?",
+    "evidencia": "el ahorro no es un privilegio de los ricos",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "¿Cómo se llama en Colombia el crédito informal al que se recurre en una emergencia?",
+    "evidencia": "el crédito informal, conocido en Colombia como gota a gota",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Cuánto dinero al mes equivale a separar tres mil pesos diarios?",
+    "evidencia": "Separar tres mil pesos diarios equivale a noventa mil pesos al mes",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿Qué dos situaciones distingue el autor al responder a la objeción?",
+    "evidencia": "la de quien no puede ahorrar nada y la de quien no ahorra porque nunca lo intentó",
+    "parrafo": 4
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Qué quiere decir el autor con que quien no ahorró termina pagando más de lo que habría guardado?",
+    "pista": "Relaciona el crédito informal con la falta de colchón de ahorro.",
+    "respuesta_modelo": "Que ante una emergencia sin ahorros la persona debe endeudarse a intereses altos, y lo que termina pagando supera lo que habría tenido que apartar para prevenirla."
+   },
+   {
+    "pregunta": "¿Cuál es la postura del autor sobre culpar a las personas pobres por su situación económica?",
+    "pista": "Lee el inicio del párrafo 6.",
+    "respuesta_modelo": "La rechaza: aclara que su argumento no debe usarse para culpar a los pobres ni para eximir al Estado o a los empleadores de sus responsabilidades."
+   },
+   {
+    "pregunta": "¿Por qué el autor reconoce que sería injusto exigir ahorro a quienes no tienen margen?",
+    "pista": "Piensa en el efecto que tiene sobre su credibilidad.",
+    "respuesta_modelo": "Porque muestra que su argumento es matizado y honesto: no exagera su tesis, distingue casos y propone soluciones distintas según la situación, lo que lo hace más creíble."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "vulnerables",
+    "pregunta": "¿Qué significa vulnerables en este texto?",
+    "opciones": [
+     "Expuestos a sufrir daño con facilidad",
+     "Capaces de ahorrar mucho",
+     "Protegidos contra cualquier riesgo"
+    ],
+    "correcta": 0,
+    "explicacion": "Los hogares de bajos ingresos sufren más los imprevistos porque no tienen reservas: están más expuestos al daño."
+   },
+   {
+    "palabra": "eximir",
+    "pregunta": "¿Qué significa eximir en este texto?",
+    "opciones": [
+     "Exigir con mayor fuerza",
+     "Liberar a alguien de una obligación o responsabilidad",
+     "Premiar por un buen resultado"
+    ],
+    "correcta": 1,
+    "explicacion": "El autor advierte que no debe usarse su argumento para liberar al Estado y a los empleadores de lo que les corresponde."
+   },
+   {
+    "palabra": "rehén",
+    "pregunta": "¿Qué significa rehén en la frase deja de ser rehén de la próxima emergencia?",
+    "opciones": [
+     "Dueño de un negocio",
+     "Persona que depende de algo y no puede actuar con libertad",
+     "Vendedor de seguros"
+    ],
+    "correcta": 1,
+    "explicacion": "Es un uso figurado: quien no tiene ahorros queda atado a lo que pase, sin margen de decisión."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se plantea la objeción de que muchos hogares no tienen margen para ahorrar?",
+    "parrafo": 4,
+    "explicacion": "Comienza con Se objetará que, en la práctica..."
+   },
+   {
+    "pregunta": "¿En qué párrafo se habla de lo que aprenden los hijos al ver ahorrar a su familia?",
+    "parrafo": 5,
+    "explicacion": "Es el tercer argumento, sobre la transmisión de hábitos."
+   },
+   {
+    "pregunta": "¿En qué párrafo se aclara que el ahorro no sustituye la justicia económica?",
+    "parrafo": 6,
+    "explicacion": "El autor matiza los alcances de su propia tesis."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "Plantea la objeción de que ahorrar es solo para ricos y formula su tesis",
+    "Presenta el argumento económico sobre los imprevistos y el crédito informal",
+    "Presenta el argumento psicológico sobre los hábitos pequeños",
+    "Responde a la objeción de los hogares sin margen",
+    "Presenta el tercer argumento sobre la transmisión de hábitos"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "Ocurre una emergencia y no hay un colchón de ahorro",
+     "efecto": "Se recurre al crédito informal con intereses muy altos"
+    },
+    {
+     "causa": "Una familia aparta una pequeña suma cada semana",
+     "efecto": "Los hijos aprenden que el dinero es un recurso que se administra"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "Evalúa la solidez del argumento del autor: ¿cuál de sus tres razones te parece más fuerte y cuál más débil? Justifica con criterios.",
+    "criterios": "Identifica los argumentos, aplica criterios (evidencia, relevancia, coherencia) y sustenta la valoración de cada uno."
+   },
+   {
+    "pregunta": "¿Crees que la educación financiera debería ser obligatoria en los colegios? Defiende tu posición considerando una posible objeción.",
+    "criterios": "Tesis clara, al menos dos razones, reconocimiento de una objeción y respuesta a ella."
+   }
+  ],
+  "valor": "Previsión, dignidad y responsabilidad con el futuro propio y familiar"
+ },
+ {
+  "id": "L10-02",
+  "grado": 10,
+  "tipologia": "cuento",
+  "titulo": "La noche del apagón",
+  "parrafos": [
+   "A las siete y diez de la noche, mientras Camilo repasaba para el examen de física con la luz amarilla de la lámpara, el barrio entero se quedó a oscuras. Primero hubo un silencio extraño, como si hasta el ventilador hubiera contenido la respiración; después, desde las ventanas, empezaron a brotar voces: unas preguntando si era general, otras maldiciendo a la empresa de energía.",
+   "Camilo encendió la linterna del celular, que marcaba el veinte por ciento de batería, y bajó al primer piso. Su madre había sacado unas velas y las había puesto sobre la mesa del comedor, y su hermana menor, Luna, de seis años, se abrazaba al sofá. —¿Y ahora qué hacemos? —preguntó—. No hay televisión ni internet. —Ahora conversamos —dijo la mamá, con una sonrisa que Camilo conocía bien: la que usaba cuando una dificultad le parecía, en el fondo, una oportunidad.",
+   "Una hora después, la mitad del edificio estaba en el patio. Don Hernán, el vecino del tercero, llevó una guitarra y empezó a tocar boleros. Doña Marlene repartió arepas con queso recién calentadas en una parrilla que nadie sabía que tenía. Los niños, entusiasmados con la oscuridad, jugaban a esconderse con linternas. Camilo notó con asombro que, en cuatro años de vivir allí, nunca había visto reunida a toda esa gente. Se saludaban por el nombre, se prestaban sillas y se contaban historias del barrio que él ni siquiera sospechaba, como si la oscuridad hubiera derribado un muro invisible entre los apartamentos.",
+   "Fue entonces cuando Luna le tiró de la manga. —Camilo, mira arriba —susurró. Él levantó la cabeza. Sin las luces de la calle, el cielo era otro: cientos de estrellas, nítidas, como si alguien hubiera quitado una cortina. Hacía años que no veía así de claro el firmamento. Recordó la clase de física: la luz de las estrellas que veían había salido hace siglos y, para algunas, hace milenios. Estaba contemplando el pasado.",
+   "Cuando la luz regresó, a las diez y cuarenta, una ovación recorrió el patio, pero apenas unos segundos después se oyó un suspiro colectivo, casi de pena. Las pantallas volvieron a encenderse; las voces, a bajar de volumen. Camilo subió a su cuarto y miró el cuaderno de física abierto sobre el escritorio. Tenía todavía una hora para estudiar, pero antes de hacerlo apagó la lámpara un momento y se quedó junto a la ventana.",
+   "Pensó que, a veces, la oscuridad no era lo contrario de la luz sino su ausencia: un espacio vacío donde por fin cabían cosas que la claridad había tapado. Después encendió la lámpara y se puso a estudiar. Al día siguiente, en el examen, le preguntaron cómo viaja la luz a través del espacio. Camilo escribió la respuesta con exactitud, pero en el margen dibujó, sin que nadie lo notara, una pequeña guitarra."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿A qué hora se fue la luz?",
+    "evidencia": "A las siete y diez de la noche",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "¿Qué edad tiene Luna?",
+    "evidencia": "Luna, de seis años",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Quién llevó una guitarra al patio?",
+    "evidencia": "Don Hernán, el vecino del tercero, llevó una guitarra",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿A qué hora regresó la luz?",
+    "evidencia": "Cuando la luz regresó, a las diez y cuarenta",
+    "parrafo": 5
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Por qué se oyó un suspiro colectivo, casi de pena, cuando regresó la luz?",
+    "pista": "Piensa en lo que había ocurrido en el patio durante el apagón.",
+    "respuesta_modelo": "Porque la luz puso fin a un momento de encuentro entre vecinos; la gente intuyó que volvería a aislarse en sus pantallas y a perder esa cercanía."
+   },
+   {
+    "pregunta": "¿Qué simboliza la pequeña guitarra que Camilo dibuja en el margen del examen?",
+    "pista": "Relaciona el dibujo con lo vivido durante la noche.",
+    "respuesta_modelo": "Simboliza el recuerdo de la noche compartida con los vecinos: aunque responde con rigor su examen, lo vivido sigue presente y le parece tan importante como lo aprendido."
+   },
+   {
+    "pregunta": "¿Qué dice sobre la madre su sonrisa cuando una dificultad le parece una oportunidad?",
+    "pista": "Lee la descripción de la sonrisa en el párrafo 2.",
+    "respuesta_modelo": "Que es optimista y capaz de encontrar el lado valioso de los problemas; esa actitud contagia a su familia y abre la posibilidad de conversar."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "nítidas",
+    "pregunta": "¿Qué significa nítidas en la expresión estrellas nítidas?",
+    "opciones": [
+     "Muy lejanas",
+     "Claras y bien definidas",
+     "Apagadas y borrosas"
+    ],
+    "correcta": 1,
+    "explicacion": "Sin luces en la calle, el cielo se ve como si hubieran quitado una cortina: las estrellas se perciben con claridad."
+   },
+   {
+    "palabra": "ovación",
+    "pregunta": "¿Qué significa ovación en este texto?",
+    "opciones": [
+     "Aplauso y expresión de alegría de un grupo",
+     "Discusión en voz alta",
+     "Silencio respetuoso"
+    ],
+    "correcta": 0,
+    "explicacion": "Cuando regresa la luz el patio reacciona con entusiasmo colectivo, aplaudiendo y celebrando."
+   },
+   {
+    "palabra": "firmamento",
+    "pregunta": "¿Qué significa firmamento en este texto?",
+    "opciones": [
+     "Documento firmado",
+     "Cielo con sus estrellas",
+     "Techo del edificio"
+    ],
+    "correcta": 1,
+    "explicacion": "Camilo no veía el firmamento tan claro desde hacía años y enseguida habla de las estrellas: se refiere al cielo."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se describe la reunión de los vecinos en el patio?",
+    "parrafo": 3,
+    "explicacion": "Aparecen don Hernán con la guitarra, doña Marlene con las arepas y los niños con linternas."
+   },
+   {
+    "pregunta": "¿En qué párrafo Camilo recuerda que la luz de las estrellas viene del pasado?",
+    "parrafo": 4,
+    "explicacion": "Recuerda la clase de física mientras mira el cielo."
+   },
+   {
+    "pregunta": "¿En qué párrafo Camilo reflexiona sobre la oscuridad y la luz?",
+    "parrafo": 6,
+    "explicacion": "Piensa que la oscuridad es una ausencia donde caben cosas que la claridad tapaba."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "El barrio se queda sin luz mientras Camilo estudia",
+    "La madre propone conversar",
+    "Los vecinos se reúnen en el patio",
+    "Luna invita a Camilo a mirar el cielo",
+    "La luz regresa y Camilo vuelve a estudiar"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "Se apagaron las luces de la calle",
+     "efecto": "Se vio un cielo con cientos de estrellas nítidas"
+    },
+    {
+     "causa": "No había televisión ni internet durante el apagón",
+     "efecto": "Los vecinos se reunieron a conversar en el patio"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "El cuento sugiere que un apagón pudo acercar a los vecinos más que cuatro años de convivencia. ¿Estás de acuerdo con esta idea? Argumenta con ejemplos de tu propia vida.",
+    "criterios": "Toma postura, relaciona la historia con experiencias reales (barrio, familia, colegio) y propone qué haría falta para mantener esa cercanía."
+   },
+   {
+    "pregunta": "Interpreta el final del cuento: ¿qué quiere decir el autor con el dibujo de la guitarra? Defiende tu lectura con elementos del texto.",
+    "criterios": "Propone una interpretación coherente, la apoya con pasajes del cuento (la reunión, la reflexión sobre la oscuridad) y reconoce que puede haber otras lecturas."
+   }
+  ],
+  "valor": "Comunidad y capacidad de encontrar lo valioso en lo inesperado"
+ },
+ {
+  "id": "L10-03",
+  "grado": 10,
+  "tipologia": "texto expositivo",
+  "titulo": "Inteligencia artificial y trabajo: tareas, no empleos",
+  "parrafos": [
+   "Cada vez que aparece una tecnología nueva, reaparece también el temor a que las máquinas dejen sin trabajo a las personas. La inteligencia artificial generativa, capaz de redactar textos, producir imágenes y escribir código, ha reavivado esa preocupación. Pero, para evaluarla con rigor, conviene dejar de hablar de empleos como bloques indivisibles y examinar las tareas que los componen.",
+   "Un empleo es un conjunto de tareas. Una contadora, por ejemplo, clasifica facturas, concilia cuentas, interpreta normas tributarias, asesora a clientes y negocia plazos con el banco. Algunas de esas tareas son rutinarias y fácilmente automatizables; otras requieren juicio, empatía o conocimiento del contexto. La tecnología no suele reemplazar a la contadora completa, sino que asume algunas de sus tareas y modifica el valor de las demás.",
+   "La historia ofrece ejemplos. Cuando los cajeros automáticos se generalizaron, mucha gente anticipó la desaparición de los empleados de ventanilla en los bancos. Sin embargo, al abaratar el costo de operar una sucursal, los bancos abrieron más oficinas y, durante años, el número de empleados no cayó; sus funciones se desplazaron hacia la atención personalizada y la venta de servicios. Este caso no prueba que ocurrirá lo mismo en el futuro, pero advierte contra las predicciones simples.",
+   "Los economistas distinguen tres efectos. El efecto sustitución ocurre cuando una máquina hace una tarea que antes hacía una persona. El efecto productividad se da cuando esa automatización reduce costos y permite producir más, lo que puede aumentar la demanda de otros trabajos. Y el efecto creación aparece cuando surgen oficios que antes no existían, como los analistas de datos o los diseñadores de experiencias digitales. El resultado neto depende de cuál de estos efectos predomine en cada sector y en cada momento.",
+   "Esto no significa que la transición sea indolora. Quienes realizan tareas fácilmente automatizables pueden perder ingresos antes de que surjan nuevas oportunidades, y no siempre están en condiciones de aprender otro oficio. Por eso la discusión pública no debe limitarse a si habrá empleo en el futuro, sino a quién asumirá los costos del cambio y cómo se financiará la formación de los trabajadores afectados.",
+   "Para un joven que hoy cursa décimo grado, la lección práctica es doble. Por un lado, conviene desarrollar capacidades que complementan a las máquinas, como pensar críticamente, comunicarse con claridad, trabajar en equipo y tomar decisiones éticas. Por otro, es útil aprender a usar estas herramientas como apoyo, verificando siempre sus resultados, porque pueden producir errores presentados con total seguridad. Quien aprende a dialogar con la tecnología sin delegarle su criterio estará mejor preparado, cualquiera sea el rumbo que tome el mercado laboral. En ese sentido, la educación no debería preparar para un oficio fijo, sino para aprender de manera continua durante toda la vida."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿Cómo define el texto un empleo?",
+    "evidencia": "Un empleo es un conjunto de tareas",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Qué hicieron los bancos cuando los cajeros automáticos abarataron la operación de las sucursales?",
+    "evidencia": "los bancos abrieron más oficinas",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿Cuándo aparece el efecto creación?",
+    "evidencia": "el efecto creación aparece cuando surgen oficios que antes no existían",
+    "parrafo": 4
+   },
+   {
+    "pregunta": "¿Por qué se debe verificar siempre el resultado de las herramientas de inteligencia artificial?",
+    "evidencia": "pueden producir errores presentados con total seguridad",
+    "parrafo": 6
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Por qué el autor aclara que el caso de los cajeros automáticos no prueba que ocurrirá lo mismo con la inteligencia artificial?",
+    "pista": "Observa la última oración del párrafo 3.",
+    "respuesta_modelo": "Porque cada tecnología y cada época tienen condiciones distintas; un ejemplo del pasado sirve para dudar de las predicciones simples, pero no para garantizar el futuro."
+   },
+   {
+    "pregunta": "¿Por qué el autor propone discutir quién asumirá los costos del cambio y no solo si habrá empleo?",
+    "pista": "Relaciona el párrafo 5 con la idea de transición.",
+    "respuesta_modelo": "Porque aunque se creen nuevos empleos, algunas personas pueden perder ingresos mientras tanto; el problema es de justicia y de formación, no solo de cantidad de puestos."
+   },
+   {
+    "pregunta": "¿Qué significa dialogar con la tecnología sin delegarle el propio criterio?",
+    "pista": "Piensa en la advertencia sobre los errores presentados con seguridad.",
+    "respuesta_modelo": "Usar la herramienta como apoyo, contrastar sus resultados y decidir uno mismo, en lugar de aceptar sin pensar lo que produce."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "reavivado",
+    "pregunta": "¿Qué significa reavivado en este texto?",
+    "opciones": [
+     "Hecho desaparecer",
+     "Vuelto a despertar con fuerza",
+     "Explicado con detalle"
+    ],
+    "correcta": 1,
+    "explicacion": "El temor ya existía con otras tecnologías y la inteligencia artificial lo hizo reaparecer con fuerza."
+   },
+   {
+    "palabra": "indolora",
+    "pregunta": "¿Qué significa que la transición no sea indolora?",
+    "opciones": [
+     "Que no tiene costos ni dificultades para nadie",
+     "Que ocurre muy rápido",
+     "Que genera nuevos empleos"
+    ],
+    "correcta": 0,
+    "explicacion": "El texto aclara enseguida que algunos pueden perder ingresos: el cambio sí tiene un costo para ciertas personas."
+   },
+   {
+    "palabra": "complementan",
+    "pregunta": "¿Qué significa que unas capacidades complementan a las máquinas?",
+    "opciones": [
+     "Compiten con ellas",
+     "Añaden lo que a ellas les falta",
+     "Las reemplazan"
+    ],
+    "correcta": 1,
+    "explicacion": "Se mencionan capacidades como el pensamiento crítico y la ética, que las máquinas no aportan por sí solas; se suman a lo que ellas hacen."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se explican los tres efectos económicos de la automatización?",
+    "parrafo": 4,
+    "explicacion": "Se describen la sustitución, la productividad y la creación."
+   },
+   {
+    "pregunta": "¿En qué párrafo se cita el caso de los cajeros automáticos?",
+    "parrafo": 3,
+    "explicacion": "Es el ejemplo histórico del texto."
+   },
+   {
+    "pregunta": "¿En qué párrafo se dan consejos para un estudiante de décimo grado?",
+    "parrafo": 6,
+    "explicacion": "Es el párrafo final, de lección práctica."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "Aparece una tecnología nueva y reaparece el temor al desempleo",
+    "Se propone analizar las tareas y no los empleos",
+    "Se cita el caso de los cajeros automáticos",
+    "Se explican los tres efectos económicos",
+    "Se plantean recomendaciones para los jóvenes"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "Los cajeros automáticos abarataron el costo de operar una sucursal",
+     "efecto": "Los bancos abrieron más oficinas"
+    },
+    {
+     "causa": "La automatización reduce costos y permite producir más",
+     "efecto": "Puede aumentar la demanda de otros trabajos"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "¿Qué tareas de tu vida escolar crees que una inteligencia artificial podría asumir y cuáles deberías seguir haciendo tú? Justifica con razones.",
+    "criterios": "Distingue tareas rutinarias de las que exigen juicio, creatividad o ética, y sustenta su respuesta con ejemplos concretos."
+   },
+   {
+    "pregunta": "Evalúa al autor: ¿presenta una visión equilibrada del impacto de la inteligencia artificial o inclina la balanza hacia el optimismo o el pesimismo? Sustenta tu juicio.",
+    "criterios": "Identifica pasajes optimistas y cautelosos, evalúa el equilibrio y llega a una conclusión justificada."
+   }
+  ],
+  "valor": "Pensamiento crítico y responsabilidad al usar la tecnología"
+ },
+ {
+  "id": "L11-01",
+  "grado": 11,
+  "tipologia": "texto argumentativo",
+  "titulo": "Una ciudad de espaldas al río",
+  "parrafos": [
+   "Cali suele presentarse como una ciudad de siete ríos, pero quien la recorre a diario rara vez los ve. Canalizados, cubiertos de basura en algunos tramos o escondidos detrás de muros y avenidas, los ríos aparecen en la vida cotidiana más como alcantarillas que como patrimonio. Sostengo que la ciudad debe replantear su relación con el agua, no por nostalgia ambiental, sino porque hacerlo es una inversión inteligente en salud, seguridad y economía.",
+   "El primer argumento es sanitario y de seguridad. Un río degradado transporta residuos y aguas sin tratar que afectan la salud de las comunidades cercanas, y un cauce invadido por viviendas o rellenos pierde su capacidad de desbordarse sin causar daño. Cuando llegan lluvias intensas, el agua busca los espacios que históricamente le pertenecían, y la tragedia que sigue suele atribuirse a la naturaleza, cuando en realidad fue una decisión urbanística aplazada.",
+   "El segundo argumento es económico. Los parques lineales y las riberas recuperadas elevan el valor de los barrios, atraen turismo y reducen los costos de salud pública. Diversas ciudades del mundo han reabierto ríos que estaban cubiertos por vías y han visto cómo las zonas aledañas se revitalizan. No se trata de milagros, sino de aprovechar una infraestructura natural que ya existe y que, bien gestionada, trabaja gratis.",
+   "El tercer argumento es cultural. Un río es un espacio de encuentro y de memoria: allí se bañaron generaciones enteras y se tejieron historias que hoy los jóvenes desconocen. Cuando se pierde el vínculo con el agua, se pierde también una parte de la identidad. Recuperar los ríos es devolverle a la ciudad un lugar donde mirarse.",
+   "Es previsible la objeción de que la recuperación cuesta demasiado y que hay necesidades más urgentes, como el transporte o la vivienda. Pero esa oposición es engañosa: los costos de no actuar también existen, aunque se paguen de manera dispersa, en inundaciones, enfermedades y pérdida de oportunidades. Además, muchos proyectos de recuperación pueden articularse con políticas de vivienda y movilidad, como senderos para bicicletas que conecten los barrios con el centro.",
+   "Otra objeción sostiene que recuperar las riberas implica desalojar a familias que viven en ellas. Es el punto más delicado de la discusión y no admite respuestas fáciles. Una política seria debe garantizar reubicaciones dignas, con participación de las comunidades, y evitar que el costo de la recuperación recaiga sobre quienes menos tienen. Si no se resuelve esa tensión, el proyecto sería injusto y, además, inviable.",
+   "En síntesis, repensar la relación con los ríos no es un capricho de ambientalistas sino una decisión de ciudad que combina prevención, desarrollo y sentido de pertenencia. La pregunta no es si Cali puede permitírselo, sino cuánto más le costará seguir dándole la espalda a su agua."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿Cuál es la tesis del autor?",
+    "evidencia": "la ciudad debe replantear su relación con el agua",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "¿Qué le ocurre a un cauce invadido por viviendas o rellenos?",
+    "evidencia": "un cauce invadido por viviendas o rellenos pierde su capacidad de desbordarse sin causar daño",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Qué efecto tienen los parques lineales y las riberas recuperadas sobre los barrios?",
+    "evidencia": "Los parques lineales y las riberas recuperadas elevan el valor de los barrios",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿Qué debe garantizar una política seria frente a las familias que viven en las riberas?",
+    "evidencia": "Una política seria debe garantizar reubicaciones dignas",
+    "parrafo": 6
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Qué quiere decir el autor con que la tragedia por una inundación fue una decisión urbanística aplazada?",
+    "pista": "Relaciona la frase con la invasión de los cauces mencionada antes.",
+    "respuesta_modelo": "Que el desastre no se debe solo a la lluvia: resulta de haber permitido construir en espacios del río y de no haber corregido el problema a tiempo."
+   },
+   {
+    "pregunta": "¿Por qué el autor califica de engañosa la oposición entre recuperar los ríos y atender el transporte o la vivienda?",
+    "pista": "Lee la explicación sobre los costos de no actuar.",
+    "respuesta_modelo": "Porque presenta como alternativas excluyentes cosas que pueden combinarse, y oculta que no actuar también cuesta, en inundaciones, enfermedades y oportunidades perdidas."
+   },
+   {
+    "pregunta": "¿Qué efecto tiene en el lector que el autor reconozca que la objeción de los desalojos no admite respuestas fáciles?",
+    "pista": "Piensa en la credibilidad de quien admite las partes difíciles de su tesis.",
+    "respuesta_modelo": "Aumenta la confianza en el autor, que no oculta las tensiones de su propuesta, y muestra que su postura considera la justicia social."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "aledañas",
+    "pregunta": "¿Qué significa aledañas en este texto?",
+    "opciones": [
+     "Muy antiguas",
+     "Ubicadas alrededor o cerca",
+     "Situadas bajo tierra"
+    ],
+    "correcta": 1,
+    "explicacion": "Se habla de las zonas que rodean los ríos reabiertos, las que se revitalizan por su cercanía."
+   },
+   {
+    "palabra": "engañosa",
+    "pregunta": "¿Qué significa que la oposición es engañosa?",
+    "opciones": [
+     "Que es fácil de comprobar",
+     "Que da una impresión falsa de la realidad",
+     "Que es muy antigua"
+    ],
+    "correcta": 1,
+    "explicacion": "El autor explica que la oposición ignora los costos de no actuar y la posibilidad de combinar proyectos: parece cierta pero induce a error."
+   },
+   {
+    "palabra": "inviable",
+    "pregunta": "¿Qué significa inviable en este texto?",
+    "opciones": [
+     "Imposible de llevar a cabo",
+     "Muy barato",
+     "Rápido de ejecutar"
+    ],
+    "correcta": 0,
+    "explicacion": "Si no se resuelve la tensión con las familias, el proyecto no podría realizarse con éxito: no tiene condiciones para ejecutarse."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se presenta el argumento económico?",
+    "parrafo": 3,
+    "explicacion": "Habla de parques lineales, valor de los barrios y turismo."
+   },
+   {
+    "pregunta": "¿En qué párrafo se defiende el valor cultural de los ríos?",
+    "parrafo": 4,
+    "explicacion": "Se afirma que un río es espacio de encuentro y de memoria."
+   },
+   {
+    "pregunta": "¿En qué párrafo se discute el problema de los desalojos?",
+    "parrafo": 6,
+    "explicacion": "Es la segunda objeción que el autor responde."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "Presenta su tesis sobre replantear la relación con el agua",
+    "Expone el argumento sanitario y de seguridad",
+    "Expone el argumento económico",
+    "Expone el argumento cultural",
+    "Responde a las objeciones de costo y de desalojos"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "Llegan lluvias intensas a un cauce invadido",
+     "efecto": "El agua ocupa los espacios que le pertenecían y causa daños"
+    },
+    {
+     "causa": "Se recuperan las riberas y se crean parques lineales",
+     "efecto": "Se eleva el valor de los barrios y se atrae turismo"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "Evalúa el argumento del autor sobre los desalojos: ¿lo resuelve de manera satisfactoria o lo deja débil? Sustenta tu juicio.",
+    "criterios": "Identifica lo que el autor dice, aplica criterios de justicia y viabilidad, y llega a una conclusión justificada."
+   },
+   {
+    "pregunta": "Si fueras concejal, ¿votarías por un proyecto de recuperación de las riberas en tu ciudad? Defiende tu decisión con al menos dos razones y una condición.",
+    "criterios": "Postura clara, razones relacionadas con el texto o con datos de su entorno y una condición razonable (por ejemplo, reubicación digna)."
+   }
+  ],
+  "valor": "Responsabilidad con el patrimonio natural y justicia hacia las comunidades"
+ },
+ {
+  "id": "L11-02",
+  "grado": 11,
+  "tipologia": "texto expositivo",
+  "titulo": "El sesgo de confirmación en tiempos de redes",
+  "parrafos": [
+   "Suponga que usted cree que un determinado alimento es perjudicial para la salud y decide buscar información en internet. Es probable que escriba una consulta como por qué el alimento X hace daño, y es probable también que los primeros resultados confirmen su idea. Esa coincidencia no es casual ni prueba de que tenga razón: ilustra un fenómeno que la psicología llama sesgo de confirmación. Lo curioso es que quien lo padece casi nunca lo advierte, porque cada dato que coincide con su idea le parece una demostración independiente, cuando en realidad fue elegido, consciente o inconscientemente, para darle la razón.",
+   "El sesgo de confirmación es la tendencia a buscar, interpretar y recordar la información de manera que coincida con lo que ya creemos. No es un defecto exclusivo de personas poco informadas; afecta a científicos, jueces y médicos. Se origina en parte en una economía mental: contrastar nuestras ideas con la evidencia contraria exige esfuerzo y puede resultar incómodo, mientras que encontrar confirmaciones nos produce una sensación de seguridad.",
+   "Las plataformas digitales intensifican el problema. Los algoritmos de recomendación suelen estar optimizados para maximizar el tiempo que pasamos en la aplicación, y para ello tienden a mostrarnos contenidos similares a los que ya hemos consumido o aprobado. Así se forman las llamadas burbujas de filtro: entornos informativos donde casi todo lo que vemos refuerza nuestra visión y donde las voces discrepantes escasean. Lo más inquietante es que, desde dentro de la burbuja, esta se percibe como el mundo entero.",
+   "Los efectos pueden ser serios. En el plano personal, el sesgo conduce a decisiones mal fundamentadas, desde inversiones basadas en rumores hasta tratamientos de salud sin respaldo científico. En el plano social, contribuye a la polarización: grupos que consumen informaciones distintas llegan a vivir en realidades paralelas y se vuelve difícil el diálogo, porque ya no coinciden ni siquiera en los hechos básicos.",
+   "Ningún método elimina por completo el sesgo, pero hay hábitos que lo reducen. Primero, formular preguntas que puedan refutar la propia idea, como qué evidencia me haría cambiar de opinión. Segundo, buscar de forma deliberada fuentes que piensen distinto y leerlas con la misma exigencia con que se lee a las que nos agradan. Tercero, verificar las afirmaciones llamativas en medios confiables antes de compartirlas. Cuarto, aceptar que cambiar de opinión ante nueva evidencia es una señal de madurez intelectual, no de debilidad.",
+   "Conviene, por último, no caer en el extremo opuesto. Desconfiar de todo es tan problemático como creerlo todo, y tampoco todas las posturas tienen el mismo respaldo: que haya dos versiones no implica que ambas sean igualmente válidas. El objetivo no es la neutralidad absoluta sino el criterio: dar a cada afirmación el peso que su evidencia merece, y estar dispuesto a revisarlo cuando aparezcan razones nuevas."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿Cómo define el texto el sesgo de confirmación?",
+    "evidencia": "la tendencia a buscar, interpretar y recordar la información de manera que coincida con lo que ya creemos",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Qué son las burbujas de filtro?",
+    "evidencia": "entornos informativos donde casi todo lo que vemos refuerza nuestra visión",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿Qué ocurre en el plano social cuando los grupos consumen informaciones distintas?",
+    "evidencia": "grupos que consumen informaciones distintas llegan a vivir en realidades paralelas",
+    "parrafo": 4
+   },
+   {
+    "pregunta": "¿Cuál es el primer hábito que recomienda el texto para reducir el sesgo?",
+    "evidencia": "formular preguntas que puedan refutar la propia idea",
+    "parrafo": 5
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Por qué el texto abre con un ejemplo que se dirige directamente al lector?",
+    "pista": "Piensa en lo que se logra al mostrar el sesgo en la propia conducta del lector.",
+    "respuesta_modelo": "Para que el lector reconozca que el fenómeno también le ocurre a él y no lo vea como algo ajeno; así se involucra con el tema desde el inicio."
+   },
+   {
+    "pregunta": "¿Por qué resulta inquietante que, desde dentro de la burbuja, esta se perciba como el mundo entero?",
+    "pista": "Relaciona la idea con la posibilidad de detectar el sesgo.",
+    "respuesta_modelo": "Porque quien está en la burbuja no nota que le falta información diferente, y por eso es difícil que cuestione sus ideas o reconozca que ve solo una parte."
+   },
+   {
+    "pregunta": "¿Qué quiere decir que haya dos versiones no implica que ambas sean igualmente válidas?",
+    "pista": "Lee el párrafo 6 completo.",
+    "respuesta_modelo": "Que no se debe confundir equilibrio con equivalencia: las posturas deben evaluarse según la evidencia que las respalda, y algunas tienen mucho más respaldo que otras."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "discrepantes",
+    "pregunta": "¿Qué significa voces discrepantes?",
+    "opciones": [
+     "Voces que piensan distinto",
+     "Voces muy fuertes",
+     "Voces de expertos"
+    ],
+    "correcta": 0,
+    "explicacion": "Se contraponen a lo que refuerza nuestra visión: son las voces que no coinciden con ella."
+   },
+   {
+    "palabra": "refutar",
+    "pregunta": "¿Qué significa refutar la propia idea?",
+    "opciones": [
+     "Repetirla con otras palabras",
+     "Demostrar que puede ser falsa",
+     "Compartirla en redes"
+    ],
+    "correcta": 1,
+    "explicacion": "Se recomienda formular preguntas que pongan a prueba la idea, buscando evidencia que la contradiga."
+   },
+   {
+    "palabra": "polarización",
+    "pregunta": "¿Qué significa polarización en este texto?",
+    "opciones": [
+     "Acercamiento entre posturas",
+     "Separación de la sociedad en posturas extremas y opuestas",
+     "Aumento del uso de redes"
+    ],
+    "correcta": 1,
+    "explicacion": "El texto la describe con la imagen de realidades paralelas y diálogo difícil: grupos cada vez más alejados."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se explica el papel de los algoritmos de recomendación?",
+    "parrafo": 3,
+    "explicacion": "Se dice que muestran contenidos similares a los ya consumidos."
+   },
+   {
+    "pregunta": "¿En qué párrafo se proponen hábitos para reducir el sesgo?",
+    "parrafo": 5,
+    "explicacion": "Se enumeran cuatro hábitos."
+   },
+   {
+    "pregunta": "¿En qué párrafo se advierte contra el extremo de desconfiar de todo?",
+    "parrafo": 6,
+    "explicacion": "Es el cierre, con la advertencia sobre el criterio."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "Una persona busca información con una idea previa",
+    "Los primeros resultados confirman su creencia",
+    "El algoritmo le muestra contenidos similares",
+    "Se forma una burbuja de filtro",
+    "Se toman decisiones mal fundamentadas y aumenta la polarización"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "Los algoritmos buscan maximizar el tiempo que pasamos en la aplicación",
+     "efecto": "Tienden a mostrarnos contenidos similares a los que ya hemos consumido"
+    },
+    {
+     "causa": "Contrastar las ideas con evidencia contraria exige esfuerzo",
+     "efecto": "Se prefieren las confirmaciones, que producen sensación de seguridad"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "¿Has notado el sesgo de confirmación en ti o en personas cercanas? Describe un caso y explica cómo lo habrías evitado aplicando los hábitos del texto.",
+    "criterios": "Describe una situación concreta, identifica el sesgo con precisión y aplica al menos un hábito del texto."
+   },
+   {
+    "pregunta": "El autor advierte contra el extremo de desconfiar de todo. ¿Crees que ese cierre mejora o debilita el texto? Evalúa.",
+    "criterios": "Valora la función del último párrafo (equilibrio y matiz) y justifica su opinión con razones sobre coherencia y claridad."
+   }
+  ],
+  "valor": "Honestidad intelectual y disposición a cambiar de opinión ante la evidencia"
+ },
+ {
+  "id": "L11-03",
+  "grado": 11,
+  "tipologia": "ensayo argumentativo",
+  "titulo": "La salsa como archivo de la ciudad",
+  "parrafos": [
+   "Quien quiera entender a Cali no debería empezar por los mapas ni por las estadísticas, sino por una canción. La salsa, que en esta ciudad se baila con una precisión casi científica, es mucho más que un género musical: es un archivo sonoro donde se conservan las alegrías, las migraciones y los conflictos de varias generaciones. Sostengo que tratar la salsa como mero entretenimiento es subestimar su valor como patrimonio y como fuente de conocimiento.",
+   "Una primera razón es histórica. La salsa se formó en el Caribe y en las comunidades latinas de Nueva York a partir de ritmos como el son cubano, y llegó a Colombia a mediados del siglo XX por la radio, los discos y los viajeros. En Cali encontró un terreno fértil: una ciudad de inmigrantes del Pacífico y del interior, que traían sus propios tambores y su propia manera de contar. Esa mezcla explica por qué la salsa caleña tiene un carácter particular, más veloz y más acrobático en el baile.",
+   "Una segunda razón es narrativa. Muchas letras de salsa funcionan como crónicas de barrio: hablan del trabajo duro, del desarraigo, del amor, de la pobreza y del orgullo de pertenecer a un lugar. Quien las escucha con atención aprende cómo vivían, qué temían y qué celebraban quienes las compusieron. Un historiador que ignore ese testimonio renunciaría a una fuente que no figura en los archivos oficiales.",
+   "La tercera razón es económica y social. La música y el baile sostienen en la ciudad escuelas, orquestas, bares, festivales y emprendimientos, y ofrecen a muchos jóvenes un camino alternativo de realización personal. Un bailarín no solo domina un oficio exigente; aprende disciplina, trabajo en equipo y manejo escénico. Reducir esto a pasatiempo es ignorar su contribución a la formación de ciudadanos.",
+   "Podría objetarse que, al tratarla como patrimonio, se corre el riesgo de convertir la salsa en pieza de museo y de congelarla. Es una preocupación legítima. Pero conservar no significa inmovilizar: una tradición vive cuando los jóvenes la reinterpretan, la mezclan con otras músicas y la hacen suya. El patrimonio vivo se protege con transmisión y con práctica, no con vitrinas.",
+   "También cabe la crítica de que hablar de identidad caleña a partir de la salsa excluye a quienes se reconocen en otras músicas, como las del Pacífico, el rock o el hip hop. La observación es válida y obliga a precisar la tesis: la salsa no es la única voz de la ciudad, sino una de las que mejor la han narrado. Una ciudad plural necesita varios archivos.",
+   "En síntesis, escuchar salsa con atención es una forma de leer a Cali. Quien lo hace descubre que cada canción es, a la vez, una pieza de arte, un documento y una invitación a participar. Y es, por eso, una herencia que merece estudio, cuidado y, sobre todo, ser bailada."
+  ],
+  "literal": [
+   {
+    "pregunta": "¿Qué es la salsa según el autor, más allá de un género musical?",
+    "evidencia": "es un archivo sonoro donde se conservan las alegrías, las migraciones y los conflictos de varias generaciones",
+    "parrafo": 1
+   },
+   {
+    "pregunta": "¿Cómo llegó la salsa a Colombia?",
+    "evidencia": "llegó a Colombia a mediados del siglo XX por la radio, los discos y los viajeros",
+    "parrafo": 2
+   },
+   {
+    "pregunta": "¿Con qué compara el autor muchas letras de salsa?",
+    "evidencia": "Muchas letras de salsa funcionan como crónicas de barrio",
+    "parrafo": 3
+   },
+   {
+    "pregunta": "¿Cómo se protege el patrimonio vivo, según el autor?",
+    "evidencia": "El patrimonio vivo se protege con transmisión y con práctica, no con vitrinas",
+    "parrafo": 5
+   }
+  ],
+  "entre_lineas": [
+   {
+    "pregunta": "¿Por qué el autor dice que un historiador que ignore las letras de salsa renunciaría a una fuente?",
+    "pista": "Observa la expresión que no figura en los archivos oficiales.",
+    "respuesta_modelo": "Porque las canciones guardan la experiencia cotidiana de la gente común, que rara vez queda registrada en documentos oficiales, y sin ellas la historia sería incompleta."
+   },
+   {
+    "pregunta": "¿Qué ventaja tiene para el autor reconocer la crítica de que la salsa excluye otras músicas?",
+    "pista": "Lee cómo precisa su tesis en el párrafo 6.",
+    "respuesta_modelo": "Le permite matizar su tesis y hacerla más defendible: ya no dice que la salsa sea la única voz de la ciudad, sino una de las que mejor la narra."
+   },
+   {
+    "pregunta": "¿Qué peligro ve el autor en convertir la salsa en pieza de museo?",
+    "pista": "Piensa en el sentido de congelarla.",
+    "respuesta_modelo": "Que deje de cambiar y de ser practicada por los jóvenes, y se vuelva un objeto del pasado sin vida, cuando una tradición se mantiene viva mediante la práctica."
+   }
+  ],
+  "palabras_contexto": [
+   {
+    "palabra": "subestimar",
+    "pregunta": "¿Qué significa subestimar en este texto?",
+    "opciones": [
+     "Dar menos valor del que realmente tiene",
+     "Estudiar con detalle",
+     "Aumentar el precio"
+    ],
+    "correcta": 0,
+    "explicacion": "El autor sostiene que verla como mero entretenimiento es no reconocer su verdadero valor como patrimonio."
+   },
+   {
+    "palabra": "desarraigo",
+    "pregunta": "¿Qué significa desarraigo en este texto?",
+    "opciones": [
+     "Sensación de estar lejos del propio lugar de origen",
+     "Orgullo de pertenecer a un barrio",
+     "Falta de trabajo en una ciudad"
+    ],
+    "correcta": 0,
+    "explicacion": "Se menciona junto al trabajo duro y a la pobreza, como tema de las letras de los migrantes que dejaron su tierra."
+   },
+   {
+    "palabra": "inmovilizar",
+    "pregunta": "¿Qué significa inmovilizar en la frase conservar no significa inmovilizar?",
+    "opciones": [
+     "Dejar sin cambio ni movimiento",
+     "Hacer más rápido",
+     "Dar a conocer"
+    ],
+    "correcta": 0,
+    "explicacion": "Se contrasta con la tradición viva que los jóvenes reinterpretan: inmovilizar sería impedir que cambie."
+   }
+  ],
+  "donde_lo_pone": [
+   {
+    "pregunta": "¿En qué párrafo se explica el origen histórico de la salsa y su llegada a Cali?",
+    "parrafo": 2,
+    "explicacion": "Es la primera razón del autor."
+   },
+   {
+    "pregunta": "¿En qué párrafo se habla de escuelas, orquestas y emprendimientos?",
+    "parrafo": 4,
+    "explicacion": "Es la razón económica y social."
+   },
+   {
+    "pregunta": "¿En qué párrafo se reconoce que la salsa no es la única voz de la ciudad?",
+    "parrafo": 6,
+    "explicacion": "Responde a la crítica de exclusión."
+   }
+  ],
+  "orden_causas": {
+   "secuencia": [
+    "Presenta su tesis sobre la salsa como patrimonio",
+    "Primera razón: el origen histórico",
+    "Segunda razón: las letras como crónicas de barrio",
+    "Tercera razón: el efecto económico y social",
+    "Responde a las objeciones del museo y de la exclusión"
+   ],
+   "causa_efecto": [
+    {
+     "causa": "Cali recibió inmigrantes del Pacífico y del interior con sus propios tambores",
+     "efecto": "La salsa caleña adquirió un carácter particular"
+    },
+    {
+     "causa": "Los jóvenes reinterpretan la tradición y la mezclan con otras músicas",
+     "efecto": "La tradición sigue viva"
+    }
+   ]
+  },
+  "piensa_argumenta": [
+   {
+    "pregunta": "¿Estás de acuerdo con que una canción puede ser un documento histórico? Defiende tu posición con un ejemplo de una canción que conozcas.",
+    "criterios": "Tesis clara, ejemplo específico y razones sobre lo que la canción revela de su época o su comunidad."
+   },
+   {
+    "pregunta": "Evalúa la estructura del ensayo: ¿son suficientes las tres razones y la respuesta a las objeciones para convencer a un lector escéptico?",
+    "criterios": "Valora la fuerza de cada argumento, la consideración de objeciones y señala qué faltaría para convencer."
+   }
+  ],
+  "valor": "Aprecio por el patrimonio cultural propio y respeto por la pluralidad"
+ }
+]
