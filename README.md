@@ -110,3 +110,21 @@ texto. SABI responde con una etiqueta y `sabi-dots.js` la dibuja e interactúa:
 
 En los turnos con comando el tutor tiene más espacio de respuesta y el Auditor no puede borrar la
 herramienta visual. Archivos: `sabi-dots.js` (motor) y `sabi-dots.css` (estilos).
+
+## Bot de acceso SABI en todas las apps (octubre 2026)
+
+`sabi-puerta.js` (v2) es la puerta al tutor desde cualquier app SABI CENTEC. Una línea antes de `</body>`:
+
+```html
+<script src="https://superacion.sabicentec.com/sabi-puerta.js" data-rol="estudiante" defer></script>
+```
+
+Abre un panel con el avatar de SABI: rol (estudiante, docente, familia), materia, acción (resolver
+mi tarea, lección completa, experimento, lectura, ficha, escape room, tablero, pensar a fondo) y
+tema; abre `tutor.html` con `?rol=&materia=&mision=&tema=&cmd=`. Incluye enlaces a las demás apps.
+Usa Shadow DOM (no lo afectan los estilos de la app) y no envía datos a ningún servidor.
+
+Instalado en: AI CENTEC (sabicentec.com), Familia de Maestros, Escuela de Padres, Pedagogía,
+PreICFES, ICFES, Capacitación docente y en este sitio. Atributos: `data-rol`, `data-materia`,
+`data-mision`, `data-texto`, `data-lado="izquierda"`, `data-boton="no"`. Desde código:
+`SABI.abrir({ materia, tema, cmd: '/paso_a_paso' })`.
