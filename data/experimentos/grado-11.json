@@ -1,0 +1,2124 @@
+[
+ {
+  "id": "g11-e001",
+  "grado": 11,
+  "eje": "materia-cambios",
+  "titulo": "Los zapateros del lago y la piel del agua",
+  "gancho": "En los charcos y lagos del Valle hay insectos llamados zapateros que caminan sobre el agua. ¿Qué 'piel' invisible los sostiene?",
+  "dba": "Explica propiedades de la materia (tensión superficial, capilaridad, coloides, propiedades coligativas) a partir de las interacciones entre partículas y el modelo cinético-molecular.",
+  "prediccion": "¿Cuántas gotas de agua caben sobre una moneda antes de derramarse? ¿Y de agua con jabón?",
+  "materiales": [
+   "moneda de 500 pesos",
+   "gotero o jeringa sin aguja",
+   "agua",
+   "jabón de loza",
+   "clip metálico",
+   "tenedor",
+   "vaso"
+  ],
+  "pasos": [
+   "Seca la moneda y colócala sobre una superficie plana.",
+   "Deja caer gotas de agua de una en una y cuenta hasta que se derrame; repite 3 veces.",
+   "Haz lo mismo con agua con una gota de jabón.",
+   "Pon con el tenedor un clip acostado sobre la superficie del agua de un vaso.",
+   "Toca el agua con un palillo untado de jabón cerca del clip y observa.",
+   "Compara los promedios de gotas y relaciona con la tensión superficial."
+  ],
+  "seguridad": "No ingieras el agua jabonosa; lávate las manos al terminar.",
+  "adulto": false,
+  "que_pasa": "Las moléculas de agua se atraen fuertemente entre sí por puentes de hidrógeno; en la superficie esas fuerzas no están equilibradas hacia arriba y forman una especie de membrana elástica: la tensión superficial. El jabón es un tensoactivo que se ubica entre las moléculas de agua y debilita esas atracciones, por eso caben menos gotas y el clip se hunde.",
+  "concepto": "Tensión superficial",
+  "vocabulario": [
+   "tensión superficial",
+   "cohesión",
+   "puente de hidrógeno",
+   "tensoactivo"
+  ],
+  "preguntas": [
+   "¿Cuántas gotas de agua pura cupieron en promedio?",
+   "¿Por qué un vertimiento de detergentes en un humedal afecta a los insectos que viven sobre el agua? (tipo Saber 11)",
+   "¿Por qué el agua con jabón lava mejor que el agua sola?"
+  ],
+  "reto": "Cambia solo la temperatura del agua (fría vs. tibia) y cuenta las gotas que caben en la moneda.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e002",
+  "grado": 11,
+  "eje": "materia-cambios",
+  "titulo": "¿Cómo sube el agua a lo alto de un samán?",
+  "gancho": "Los samanes del Parque del Perro y los guayacanes de Cali llevan agua desde la raíz hasta hojas a muchos metros de altura sin bombas. Una parte del secreto es la capilaridad.",
+  "dba": "Explica propiedades de la materia (tensión superficial, capilaridad, coloides, propiedades coligativas) a partir de las interacciones entre partículas y el modelo cinético-molecular.",
+  "prediccion": "En dos láminas de vidrio juntas en ángulo, ¿el agua subirá más donde están más cerca o donde están más separadas?",
+  "materiales": [
+   "2 láminas de vidrio de portarretrato (bordes protegidos con cinta)",
+   "liga",
+   "palillo",
+   "plato con agua y colorante",
+   "regla",
+   "tiras de papel absorbente de distintos anchos"
+  ],
+  "pasos": [
+   "Une las dos láminas por un borde con la liga y separa el otro borde con un palillo, formando una cuña.",
+   "Colócalas paradas en el plato con agua coloreada.",
+   "Observa la curva que forma el agua entre las láminas.",
+   "Mide la altura del agua a distintas separaciones entre las láminas.",
+   "Grafica altura contra 1/separación.",
+   "Compara con tiras de papel absorbente: mide la altura que alcanza el agua en 10 minutos."
+  ],
+  "seguridad": "Protege los bordes del vidrio con cinta y manipúlalo con cuidado. Si se rompe, avisa a un adulto.",
+  "adulto": false,
+  "que_pasa": "La capilaridad es la subida de un líquido por espacios muy estrechos debido a la adhesión entre el líquido y las paredes, que vence el peso de la columna. La altura es inversamente proporcional al radio del tubo: h = 2 γ cos θ / (ρ g r). Por eso el agua sube más donde las láminas están más juntas y la curva tiene forma de hipérbola. En los árboles actúan también la transpiración y la cohesión del agua.",
+  "concepto": "Capilaridad",
+  "vocabulario": [
+   "capilaridad",
+   "adhesión",
+   "cohesión",
+   "menisco"
+  ],
+  "preguntas": [
+   "¿Dónde subió más el agua entre las láminas?",
+   "Si el radio de un tubo capilar se reduce a la mitad, ¿qué ocurre con la altura que alcanza el agua? (tipo Saber 11)",
+   "¿Por qué la humedad sube por las paredes de las casas construidas sin impermeabilizar?"
+  ],
+  "reto": "Cambia solo el líquido (agua vs. agua jabonosa) y compara la altura en la misma cuña.",
+  "minutos": 40
+ },
+ {
+  "id": "g11-e003",
+  "grado": 11,
+  "eje": "materia-cambios",
+  "titulo": "Rayos de luz en la neblina del Kilómetro 18",
+  "gancho": "En la vía al mar, en el Kilómetro 18, los faros de los carros dibujan rayos en la neblina. En un vaso de agua clara no se ve el haz. ¿Por qué?",
+  "dba": "Explica propiedades de la materia (tensión superficial, capilaridad, coloides, propiedades coligativas) a partir de las interacciones entre partículas y el modelo cinético-molecular.",
+  "prediccion": "Si pasas una linterna por agua con azúcar, agua con sal y agua con unas gotas de leche, ¿en cuál se verá el haz de luz?",
+  "materiales": [
+   "3 vasos transparentes",
+   "agua",
+   "azúcar",
+   "sal",
+   "leche",
+   "linterna potente o de celular",
+   "cuarto oscuro"
+  ],
+  "pasos": [
+   "Prepara tres vasos: agua con azúcar, agua con sal y agua con 5 gotas de leche.",
+   "Oscurece el salón.",
+   "Dirige la linterna de lado a través de cada vaso.",
+   "Observa si el haz se ve dentro del líquido.",
+   "Agrega gotas de leche de una en una al tercer vaso y describe cómo cambia el color de la luz que sale.",
+   "Clasifica cada mezcla como solución o coloide."
+  ],
+  "seguridad": "No dirijas la linterna a los ojos. No consumas las mezclas.",
+  "adulto": false,
+  "que_pasa": "En una solución verdadera las partículas son tan pequeñas (moléculas o iones) que no desvían la luz. En un coloide, como la leche o la neblina, las partículas son mayores (entre 1 y 1000 nm) y dispersan la luz, haciendo visible el haz: es el efecto Tyndall. Las partículas dispersan más la luz azul, por eso la luz que atraviesa se ve anaranjada.",
+  "concepto": "Coloides y efecto Tyndall",
+  "vocabulario": [
+   "coloide",
+   "solución",
+   "efecto Tyndall",
+   "dispersión de la luz"
+  ],
+  "preguntas": [
+   "¿En qué vaso se vio el haz de luz?",
+   "¿Cómo distinguirías experimentalmente una solución de un coloide? (tipo Saber 11)",
+   "¿Por qué los atardeceres en Cali se ven más rojizos cuando hay humo de quemas de caña?"
+  ],
+  "reto": "Cambia solo la cantidad de leche (2, 5, 10 y 20 gotas) y describe cómo cambia el color de la luz transmitida.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e004",
+  "grado": 11,
+  "eje": "materia-cambios",
+  "titulo": "Agua fría + agua caliente: ¿cuál es la temperatura final?",
+  "gancho": "Para bañar a un bebé se mezcla agua caliente y fría. ¿Se puede calcular la temperatura de la mezcla antes de hacerla?",
+  "dba": "Comprende las leyes de la termodinámica: el calor como energía en tránsito, el equilibrio térmico y la conservación de la energía en procesos de calentamiento, cambio de fase y realización de trabajo.",
+  "prediccion": "Si mezclas 100 g de agua a 60 °C con 200 g de agua a 20 °C, ¿qué temperatura final esperas?",
+  "materiales": [
+   "2 vasos de icopor (calorímetro casero) con tapa",
+   "termómetro",
+   "gramera",
+   "agua a temperatura ambiente",
+   "agua caliente (la sirve el adulto, máx. 60 °C)",
+   "cuchara"
+  ],
+  "pasos": [
+   "Pesa 200 g de agua ambiente en el vaso de icopor y mide su temperatura.",
+   "El adulto sirve 100 g de agua caliente en otro vaso; mide su temperatura.",
+   "Vierte el agua caliente en el vaso de icopor, tapa y revuelve.",
+   "Registra la temperatura máxima estable.",
+   "Calcula la temperatura teórica con m1 · c · (T1 − Te) = m2 · c · (Te − T2).",
+   "Calcula el error porcentual y explica las pérdidas de calor."
+  ],
+  "seguridad": "El agua caliente la maneja un adulto y no debe superar 60 °C. Coloca los vasos sobre una superficie estable.",
+  "adulto": true,
+  "que_pasa": "Cuando dos cuerpos a distinta temperatura entran en contacto, el calor fluye del más caliente al más frío hasta alcanzar el equilibrio térmico. Si no hay pérdidas, el calor que cede uno es igual al que gana el otro (ley cero y primera ley de la termodinámica). Con los datos del ejemplo, Te ≈ 33,3 °C; el valor medido suele ser algo menor por pérdidas al ambiente y al vaso.",
+  "concepto": "Equilibrio térmico y calorimetría",
+  "vocabulario": [
+   "calorimetría",
+   "equilibrio térmico",
+   "calor específico",
+   "sistema aislado"
+  ],
+  "preguntas": [
+   "¿Qué temperatura final midieron?",
+   "Si se mezclan masas iguales de agua a 80 °C y 20 °C, ¿cuál es la temperatura de equilibrio ideal? (tipo Saber 11)",
+   "¿Por qué un termo conserva caliente el tinto durante horas?"
+  ],
+  "reto": "Cambia solo la proporción de masas (1:1, 1:2, 1:3) y compara la temperatura final con la predicha.",
+  "minutos": 40
+ },
+ {
+  "id": "g11-e005",
+  "grado": 11,
+  "eje": "materia-cambios",
+  "titulo": "¿Cuánta energía necesita un cubo de hielo para derretirse?",
+  "gancho": "En las fiestas se enfrían las bebidas con hielo en neveras de icopor. ¿Cuánta energía 'roba' cada gramo de hielo al derretirse?",
+  "dba": "Comprende las leyes de la termodinámica: el calor como energía en tránsito, el equilibrio térmico y la conservación de la energía en procesos de calentamiento, cambio de fase y realización de trabajo.",
+  "prediccion": "¿Enfría más agregar 50 g de hielo a 0 °C o 50 g de agua a 0 °C a un vaso de agua tibia?",
+  "materiales": [
+   "vaso de icopor con tapa",
+   "termómetro",
+   "gramera",
+   "cubos de hielo secados con papel",
+   "agua tibia (unos 40 °C, servida por un adulto)",
+   "cuchara"
+  ],
+  "pasos": [
+   "Pesa 200 g de agua tibia en el vaso de icopor y mide su temperatura T1.",
+   "Seca rápidamente unos cubos de hielo y pésalos (unos 40 g).",
+   "Agrégalos, tapa y revuelve hasta que se derritan por completo.",
+   "Registra la temperatura final Tf.",
+   "Pesa de nuevo para confirmar la masa de hielo.",
+   "Calcula Lf con m_agua · c · (T1 − Tf) = m_hielo · Lf + m_hielo · c · (Tf − 0) y compara con 334 J/g."
+  ],
+  "seguridad": "El agua tibia la sirve un adulto. Seca el piso si cae agua o hielo.",
+  "adulto": true,
+  "que_pasa": "Para fundirse, el hielo absorbe energía sin cambiar de temperatura: el calor latente de fusión del agua es cerca de 334 J/g. Luego, el agua resultante se calienta desde 0 °C. Por eso el hielo enfría mucho más que la misma masa de agua a 0 °C: primero absorbe la energía para fundirse.",
+  "concepto": "Calor latente de fusión",
+  "vocabulario": [
+   "calor latente",
+   "fusión",
+   "conservación de la energía",
+   "calorímetro"
+  ],
+  "preguntas": [
+   "¿Qué valor de Lf obtuviste y cuál fue el error porcentual?",
+   "¿Cuánta energía se necesita para fundir 10 g de hielo a 0 °C? (tipo Saber 11)",
+   "¿Por qué los pescadores de Buenaventura conservan el pescado con hielo y no solo con agua fría?"
+  ],
+  "reto": "Cambia solo la masa de hielo (20, 40 y 60 g) y verifica si el valor de Lf calculado se mantiene.",
+  "minutos": 45
+ },
+ {
+  "id": "g11-e006",
+  "grado": 11,
+  "eje": "materia-cambios",
+  "titulo": "Vidrios empañados en la lluvia caleña",
+  "gancho": "En los aguaceros de Cali los vidrios del carro se empañan. ¿A qué temperatura el vapor del aire se convierte en gotitas?",
+  "dba": "Explica propiedades de la materia (tensión superficial, capilaridad, coloides, propiedades coligativas) a partir de las interacciones entre partículas y el modelo cinético-molecular.",
+  "prediccion": "Si enfrías poco a poco una lata, ¿a qué temperatura crees que aparecerá rocío en su superficie?",
+  "materiales": [
+   "lata metálica limpia y brillante",
+   "agua",
+   "hielo",
+   "termómetro",
+   "cuchara",
+   "hoja de registro"
+  ],
+  "pasos": [
+   "Llena la lata con agua a temperatura ambiente y mide la temperatura del aire.",
+   "Agrega trocitos de hielo de uno en uno, revolviendo con suavidad.",
+   "Observa la superficie exterior de la lata con atención.",
+   "Anota la temperatura exacta del agua cuando aparece la primera neblina: es el punto de rocío.",
+   "Calcula la diferencia entre la temperatura del aire y el punto de rocío.",
+   "Repite en otro día o en otro lugar (salón con aire acondicionado vs. patio)."
+  ],
+  "seguridad": "Manipula la lata por la parte superior para no cortarte con el borde.",
+  "adulto": false,
+  "que_pasa": "El aire contiene vapor de agua. Si se enfría hasta su punto de rocío, el aire se satura y el vapor se condensa en gotitas sobre superficies frías. Cuanto más cerca está el punto de rocío de la temperatura del aire, mayor es la humedad relativa. En días lluviosos en Cali la diferencia es pequeña y por eso los vidrios se empañan con facilidad.",
+  "concepto": "Condensación y punto de rocío",
+  "vocabulario": [
+   "condensación",
+   "punto de rocío",
+   "saturación",
+   "humedad relativa"
+  ],
+  "preguntas": [
+   "¿A qué temperatura apareció el rocío?",
+   "Si el punto de rocío se acerca a la temperatura del aire, ¿la humedad relativa aumenta o disminuye? (tipo Saber 11)",
+   "¿Por qué el desempañador del carro sopla aire seco o caliente sobre el vidrio?"
+  ],
+  "reto": "Cambia solo el lugar de medición (salón cerrado, patio, cocina) y compara el punto de rocío.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e007",
+  "grado": 11,
+  "eje": "materia-cambios",
+  "titulo": "Helado de paila con sal",
+  "gancho": "El helado de paila se prepara girando una paila sobre hielo con sal. ¿Por qué la sal hace que el hielo enfríe más?",
+  "dba": "Explica propiedades de la materia (tensión superficial, capilaridad, coloides, propiedades coligativas) a partir de las interacciones entre partículas y el modelo cinético-molecular.",
+  "prediccion": "¿El hielo con sal llegará a una temperatura menor que el hielo solo? ¿Cuántos grados menos?",
+  "materiales": [
+   "2 bolsas plásticas con cierre (grande y pequeña)",
+   "hielo picado",
+   "sal",
+   "termómetro",
+   "gramera",
+   "jugo de fruta (en la bolsa pequeña)",
+   "guantes o toalla"
+  ],
+  "pasos": [
+   "Pon 500 g de hielo picado en un recipiente y mide su temperatura.",
+   "Pon 500 g de hielo con 100 g de sal en la bolsa grande y mide la temperatura.",
+   "Introduce la bolsa pequeña bien cerrada con jugo dentro de la bolsa grande.",
+   "Agita envuelto en una toalla durante 10 minutos, midiendo la temperatura cada 2 minutos.",
+   "Calcula la molalidad aproximada de la sal en el agua líquida formada.",
+   "Compara el descenso observado con ΔTf = i · Kf · m (Kf del agua = 1,86 °C·kg/mol)."
+  ],
+  "seguridad": "Usa guantes o toalla: la mezcla de hielo y sal puede bajar de −10 °C y lastimar la piel. No comas el producto si la bolsa se abrió.",
+  "adulto": false,
+  "que_pasa": "Las propiedades coligativas dependen del número de partículas de soluto, no de su identidad. Al disolverse, la sal se separa en iones Na+ y Cl− (i ≈ 2) que dificultan que el agua se organice en hielo, y el punto de congelación desciende: ΔTf = i · Kf · m. El hielo sigue fundiéndose y absorbe calor, así que la mezcla baja de 0 °C y congela el jugo.",
+  "concepto": "Propiedades coligativas",
+  "vocabulario": [
+   "propiedad coligativa",
+   "descenso crioscópico",
+   "molalidad",
+   "factor de van't Hoff"
+  ],
+  "preguntas": [
+   "¿Qué temperatura mínima alcanzó la mezcla con sal?",
+   "¿Qué solución tiene menor punto de congelación: 1 mol de azúcar o 1 mol de sal en 1 kg de agua? (tipo Saber 11)",
+   "¿Por qué en países con nieve echan sal en las carreteras?"
+  ],
+  "reto": "Cambia solo la masa de sal (0, 50, 100 y 150 g por 500 g de hielo) y grafica la temperatura mínima.",
+  "minutos": 40
+ },
+ {
+  "id": "g11-e008",
+  "grado": 11,
+  "eje": "fuerza-movimiento",
+  "titulo": "El tapón que gira: fuerza centrípeta",
+  "gancho": "En las curvas de la Autopista Simón Bolívar los carros necesitan fricción para no salirse. ¿Qué fuerza se necesita para mantener algo girando en círculo?",
+  "dba": "Explica el movimiento circular y el movimiento oscilatorio a partir de las fuerzas que los producen, relacionando periodo, frecuencia, radio y velocidad.",
+  "prediccion": "Si duplicas la velocidad del tapón que gira, ¿cuánta más fuerza necesitas?",
+  "materiales": [
+   "tapón de caucho o pelotita",
+   "carcasa de lapicero (tubo)",
+   "pita de 1,5 m",
+   "arandelas o tuercas iguales",
+   "clip como marcador",
+   "cronómetro",
+   "gramera"
+  ],
+  "pasos": [
+   "Pasa la pita por el tubo; ata el tapón arriba y las arandelas abajo.",
+   "Marca con el clip un radio de 50 cm entre el tubo y el tapón.",
+   "Haz girar el tapón horizontalmente sobre tu cabeza manteniendo el clip junto al tubo.",
+   "Mide el tiempo de 20 vueltas y calcula el periodo T y la velocidad v = 2πr / T.",
+   "Repite con 2, 4 y 6 arandelas.",
+   "Grafica el peso de las arandelas contra v² y compara con F = m · v² / r."
+  ],
+  "seguridad": "Hazlo en un espacio abierto, lejos de compañeros y ventanas. Usa gafas y un objeto blando.",
+  "adulto": false,
+  "que_pasa": "Para que un cuerpo describa un círculo con rapidez constante, necesita una fuerza neta dirigida hacia el centro: la fuerza centrípeta, F = m · v² / r. En este montaje la tensión de la cuerda, causada por el peso de las arandelas, provee esa fuerza. Al duplicar la velocidad, la fuerza necesaria se cuadruplica.",
+  "concepto": "Fuerza centrípeta",
+  "vocabulario": [
+   "movimiento circular uniforme",
+   "fuerza centrípeta",
+   "periodo",
+   "aceleración centrípeta"
+  ],
+  "preguntas": [
+   "¿Qué periodo obtuviste con 4 arandelas?",
+   "Si un carro toma una curva al doble de velocidad, ¿cuántas veces mayor debe ser la fuerza de fricción? (tipo Saber 11)",
+   "¿Por qué las curvas de las autopistas tienen peralte (inclinación)?"
+  ],
+  "reto": "Deja fija la masa de arandelas y cambia solo el radio (30, 50 y 70 cm); mide el periodo.",
+  "minutos": 45
+ },
+ {
+  "id": "g11-e009",
+  "grado": 11,
+  "eje": "fuerza-movimiento",
+  "titulo": "Midiendo la gravedad de Cali con un péndulo",
+  "gancho": "El valor de g no es igual en todo el planeta: cerca del ecuador es un poco menor. Con un péndulo puedes medir la gravedad de Cali.",
+  "dba": "Explica el movimiento circular y el movimiento oscilatorio a partir de las fuerzas que los producen, relacionando periodo, frecuencia, radio y velocidad.",
+  "prediccion": "Si alargas el péndulo al cuádruple, ¿su periodo será el doble o el cuádruple?",
+  "materiales": [
+   "hilo de 1,5 m",
+   "tuerca o plomada",
+   "soporte (marco de puerta o palo)",
+   "cinta métrica",
+   "transportador",
+   "cronómetro"
+  ],
+  "pasos": [
+   "Cuelga la tuerca de un hilo de 1,00 m medido hasta el centro de la tuerca.",
+   "Sepárala unos 10° y suéltala sin empujar.",
+   "Mide el tiempo de 20 oscilaciones completas y calcula el periodo T.",
+   "Repite con longitudes de 0,25; 0,50; 0,75 y 1,25 m.",
+   "Grafica T² contra L.",
+   "Calcula g con g = 4π² · L / T² (pendiente de la gráfica) y compara con 9,78 m/s²."
+  ],
+  "seguridad": "Asegura bien el soporte para que no caiga. No balancees la tuerca cerca de la cara de nadie.",
+  "adulto": false,
+  "que_pasa": "Para oscilaciones pequeñas, el periodo de un péndulo simple solo depende de su longitud y de la gravedad: T = 2π · raíz(L/g); no depende de la masa ni de la amplitud. Por eso al cuadruplicar la longitud el periodo se duplica. En Cali, por estar cerca del ecuador y por la rotación terrestre, g es cerca de 9,78 m/s².",
+  "concepto": "Péndulo simple",
+  "vocabulario": [
+   "periodo",
+   "oscilación",
+   "aceleración de la gravedad",
+   "amplitud"
+  ],
+  "preguntas": [
+   "¿Qué valor de g obtuviste?",
+   "Si un péndulo de 1 m se lleva a la Luna, donde g es 6 veces menor, ¿su periodo aumenta o disminuye? (tipo Saber 11)",
+   "¿Cómo se ajusta un reloj de péndulo que se atrasa?"
+  ],
+  "reto": "Cambia solo la masa colgada (1, 2 y 3 tuercas) con la misma longitud y comprueba si el periodo cambia.",
+  "minutos": 45
+ },
+ {
+  "id": "g11-e010",
+  "grado": 11,
+  "eje": "fuerza-movimiento",
+  "titulo": "Choques de canicas en la mesa de billar",
+  "gancho": "En los billares del centro de Cali, cuando una bola golpea de frente a otra igual, la primera se detiene y la segunda sale disparada. ¿Qué se conserva en un choque?",
+  "dba": "Comprende la conservación del momento lineal y la relación entre impulso y cambio de momento para analizar choques e interacciones entre cuerpos.",
+  "prediccion": "Si una canica grande choca contra una pequeña en reposo, ¿la grande se detendrá o seguirá avanzando?",
+  "materiales": [
+   "regla con canal o dos reglas paralelas",
+   "canicas iguales",
+   "una canica grande (o balín)",
+   "gramera",
+   "cinta métrica",
+   "celular para video en cámara lenta"
+  ],
+  "pasos": [
+   "Pesa las canicas.",
+   "Pon una canica en reposo en el centro del canal.",
+   "Lanza otra canica igual y graba el choque.",
+   "Con el video mide las velocidades antes y después del choque (distancia sobre tiempo entre cuadros).",
+   "Calcula el momento lineal total antes y después: p = m · v.",
+   "Repite con la canica grande contra la pequeña y luego la pequeña contra la grande."
+  ],
+  "seguridad": "Trabaja sobre una mesa con borde o una caja para que las canicas no caigan al piso.",
+  "adulto": false,
+  "que_pasa": "El momento lineal (p = m · v) de un sistema aislado se conserva en un choque: la suma antes es igual a la suma después. En un choque elástico frontal entre masas iguales, la primera transfiere todo su momento y se detiene. Si la que golpea es más pesada, sigue avanzando más despacio; si es más liviana, rebota.",
+  "concepto": "Conservación del momento lineal",
+  "vocabulario": [
+   "momento lineal",
+   "choque elástico",
+   "sistema aislado",
+   "conservación"
+  ],
+  "preguntas": [
+   "¿Se conservó el momento total dentro del error experimental?",
+   "Un carro de 1000 kg a 10 m/s choca y queda pegado a otro de 1000 kg en reposo: ¿a qué velocidad se mueven juntos? (tipo Saber 11)",
+   "¿Cómo usan los peritos de tránsito este principio para reconstruir un accidente?"
+  ],
+  "reto": "Cambia solo la masa de la canica que golpea (pequeña, igual y grande) y registra su velocidad después del choque.",
+  "minutos": 50
+ },
+ {
+  "id": "g11-e011",
+  "grado": 11,
+  "eje": "fuerza-movimiento",
+  "titulo": "Huevos que caen: el casco del motociclista",
+  "gancho": "Los cascos y los airbags no evitan el golpe, pero salvan vidas. ¿Por qué caer sobre algo blando duele menos?",
+  "dba": "Comprende la conservación del momento lineal y la relación entre impulso y cambio de momento para analizar choques e interacciones entre cuerpos.",
+  "prediccion": "Si un huevo cae desde 1 m sobre una almohada o sobre una baldosa, ¿cambia su momento final? ¿Qué cambia entonces?",
+  "materiales": [
+   "huevos crudos (en bolsas plásticas cerradas)",
+   "almohada",
+   "toalla doblada",
+   "icopor",
+   "cartón",
+   "cinta métrica",
+   "celular para video en cámara lenta"
+  ],
+  "pasos": [
+   "Mete cada huevo en una bolsa con cierre.",
+   "Déjalo caer desde 50 cm sobre cada superficie (empieza por la más blanda).",
+   "Graba en cámara lenta para estimar el tiempo de frenado Δt.",
+   "Aumenta la altura de 25 en 25 cm hasta que el huevo se rompa en cada superficie.",
+   "Calcula la velocidad de impacto v = raíz(2 g h) y el momento p = m · v.",
+   "Estima la fuerza media F = Δp / Δt en cada caso."
+  ],
+  "seguridad": "Usa los huevos dentro de bolsas cerradas para evitar contaminación; lávate las manos. No consumas los huevos.",
+  "adulto": false,
+  "que_pasa": "El impulso es el producto de la fuerza por el tiempo y es igual al cambio de momento: F · Δt = Δp. Desde la misma altura el huevo llega con el mismo momento y debe perderlo todo, pero una superficie blanda alarga el tiempo de frenado y reduce la fuerza media. Así funcionan los cascos, los airbags y las colchonetas.",
+  "concepto": "Impulso y cantidad de movimiento",
+  "vocabulario": [
+   "impulso",
+   "cantidad de movimiento",
+   "fuerza media",
+   "tiempo de impacto"
+  ],
+  "preguntas": [
+   "¿Desde qué altura se rompió el huevo en cada superficie?",
+   "Si el tiempo de frenado se triplica con el mismo cambio de momento, ¿qué le pasa a la fuerza media? (tipo Saber 11)",
+   "¿Por qué el uso del casco certificado es obligatorio para los motociclistas en Colombia?"
+  ],
+  "reto": "Cambia solo el grosor de la toalla (1, 2 y 4 dobleces) y busca la altura de ruptura.",
+  "minutos": 45
+ },
+ {
+  "id": "g11-e012",
+  "grado": 11,
+  "eje": "fuerza-movimiento",
+  "titulo": "El balancín del parque y el torque",
+  "gancho": "En el balancín del parque, un niño liviano puede levantar a un adulto si se sienta lejos del centro. ¿Por qué importa la distancia?",
+  "dba": "Explica el equilibrio de los cuerpos rígidos a partir del torque y del centro de masa, y aplica estas condiciones a estructuras y máquinas.",
+  "prediccion": "Si pones 2 monedas a 6 cm del centro, ¿a qué distancia debes poner 1 moneda al otro lado para equilibrar?",
+  "materiales": [
+   "regla de 30 cm",
+   "lápiz como pivote",
+   "monedas iguales",
+   "cinta",
+   "gramera"
+  ],
+  "pasos": [
+   "Equilibra la regla sobre el lápiz en su punto medio.",
+   "Coloca 2 monedas a 6 cm del pivote a un lado.",
+   "Busca dónde poner 1 moneda al otro lado para equilibrar; anota la distancia.",
+   "Repite con otras combinaciones (3 monedas a 4 cm, 2 monedas a 7 cm, etc.); recuerda que en una regla de 30 cm solo tienes 15 cm a cada lado.",
+   "Calcula los torques τ = F · d de cada lado.",
+   "Verifica la condición de equilibrio: suma de torques horarios = suma de antihorarios."
+  ],
+  "seguridad": "Trabaja sobre la mesa; evita que las monedas caigan al piso.",
+  "adulto": false,
+  "que_pasa": "El torque o momento de fuerza mide la capacidad de una fuerza para hacer girar un cuerpo: τ = F · d, donde d es la distancia perpendicular al eje. Un cuerpo está en equilibrio de rotación cuando los torques se compensan. Por eso una fuerza pequeña lejos del eje equilibra una fuerza grande cerca de él.",
+  "concepto": "Torque y equilibrio rotacional",
+  "vocabulario": [
+   "torque",
+   "brazo de palanca",
+   "pivote",
+   "equilibrio"
+  ],
+  "preguntas": [
+   "¿A qué distancia equilibró la moneda sola?",
+   "Si una fuerza de 20 N actúa a 0,5 m del eje, ¿qué fuerza a 0,2 m al otro lado equilibra? (tipo Saber 11)",
+   "¿Por qué es más fácil aflojar un perno con una llave de mango largo?"
+  ],
+  "reto": "Cambia solo la posición del pivote (no centrado) y halla cuántas monedas equilibran la regla.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e013",
+  "grado": 11,
+  "eje": "fuerza-movimiento",
+  "titulo": "El mapa de Colombia en equilibrio",
+  "gancho": "Los equilibristas del circo y los meseros que llevan bandejas buscan el centro de masa. ¿Dónde está el centro de masa de Colombia?",
+  "dba": "Explica el equilibrio de los cuerpos rígidos a partir del torque y del centro de masa, y aplica estas condiciones a estructuras y máquinas.",
+  "prediccion": "¿El centro de masa del mapa de Colombia en cartón quedará cerca de Bogotá, del Meta o de otra región?",
+  "materiales": [
+   "cartón grueso",
+   "mapa de Colombia impreso",
+   "tijeras",
+   "puntilla o alfiler",
+   "hilo con plomada (tuerca)",
+   "regla",
+   "lápiz"
+  ],
+  "pasos": [
+   "Pega el mapa en el cartón y recórtalo.",
+   "Haz 3 agujeros pequeños cerca de los bordes en distintos puntos.",
+   "Cuelga el mapa de un agujero junto con la plomada y traza la línea vertical del hilo.",
+   "Repite colgándolo de los otros dos agujeros.",
+   "El cruce de las líneas es el centro de masa; verifica equilibrándolo sobre la punta de un lápiz.",
+   "Identifica en qué departamento quedó."
+  ],
+  "seguridad": "Usa las tijeras y el alfiler con cuidado; las perforaciones las puede hacer un adulto.",
+  "adulto": false,
+  "que_pasa": "El centro de masa es el punto donde se puede considerar concentrada toda la masa de un cuerpo. Un cuerpo colgado se queda quieto cuando su centro de masa está justo debajo del punto de suspensión, por eso la vertical de la plomada pasa por él. Si el cuerpo se apoya en su centro de masa, el torque del peso es cero y queda en equilibrio.",
+  "concepto": "Centro de masa",
+  "vocabulario": [
+   "centro de masa",
+   "centro de gravedad",
+   "plomada",
+   "estabilidad"
+  ],
+  "preguntas": [
+   "¿En qué departamento quedó el centro de masa?",
+   "¿Por qué un bus de dos pisos es más propenso a volcarse en una curva que uno de un piso? (tipo Saber 11)",
+   "¿Por qué al cargar un morral pesado te inclinas hacia adelante?"
+  ],
+  "reto": "Cambia solo la distribución de masa pegando una moneda en San Andrés y busca el nuevo centro de masa.",
+  "minutos": 40
+ },
+ {
+  "id": "g11-e014",
+  "grado": 11,
+  "eje": "fuerza-movimiento",
+  "titulo": "Techos que vuelan en un vendaval",
+  "gancho": "En los vendavales del oriente de Cali algunos techos se levantan. El aire rápido no los empuja hacia arriba directamente: ¡baja la presión encima!",
+  "dba": "Explica el comportamiento de los fluidos en reposo y en movimiento (principio de Pascal, ecuación de continuidad y principio de Bernoulli) y sus aplicaciones tecnológicas.",
+  "prediccion": "Si soplas entre dos hojas de papel que cuelgan paralelas, ¿se separarán o se juntarán?",
+  "materiales": [
+   "2 hojas de papel",
+   "2 globos inflados con hilo",
+   "pitillo",
+   "secador de pelo en modo frío o soplido",
+   "pelota de ping-pong",
+   "embudo"
+  ],
+  "pasos": [
+   "Sostén dos hojas colgando paralelas a 5 cm y sopla entre ellas.",
+   "Cuelga dos globos a 10 cm y sopla entre ellos con el pitillo.",
+   "Sopla sobre una hoja horizontal sostenida bajo tus labios.",
+   "Pon la pelota de ping-pong en el embudo y sopla hacia arriba con fuerza.",
+   "Para cada caso dibuja las zonas de alta y baja velocidad del aire.",
+   "Relaciona tus observaciones con P + (1/2) ρ v² + ρ g h = constante."
+  ],
+  "seguridad": "Si usas secador, solo en modo frío y lejos del agua. No soples hasta marearte; descansa entre intentos.",
+  "adulto": false,
+  "que_pasa": "El principio de Bernoulli dice que, a lo largo de una línea de corriente de un fluido, cuando la velocidad aumenta la presión disminuye: P + (1/2) ρ v² + ρ g h = constante. Entre las hojas el aire se mueve rápido y su presión baja, así que la presión del aire quieto exterior las junta. En un vendaval el aire rápido sobre el techo reduce la presión arriba y el aire de la casa lo empuja hacia afuera. Ojo: Bernoulli compara puntos de una misma línea de corriente; en el soplo sobre la hoja también influye que el chorro se curva siguiendo la superficie (efecto Coanda), así que no todo se explica solo con «aire rápido = presión baja».",
+  "concepto": "Principio de Bernoulli",
+  "vocabulario": [
+   "presión",
+   "velocidad del fluido",
+   "principio de Bernoulli",
+   "sustentación"
+  ],
+  "preguntas": [
+   "¿Qué pasó con los globos al soplar entre ellos?",
+   "¿Por qué un avión que despega del aeropuerto Alfonso Bonilla Aragón necesita alcanzar cierta velocidad? (tipo Saber 11)",
+   "¿Por qué se recomienda no pararse muy cerca del borde del andén cuando pasa un MIO rápido?"
+  ],
+  "reto": "Cambia solo la distancia entre los globos (5, 10 y 20 cm) y observa a cuál se acercan más al soplar igual.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e015",
+  "grado": 11,
+  "eje": "fuerza-movimiento",
+  "titulo": "Gato hidráulico con jeringas",
+  "gancho": "En los talleres de la Carrera 15 un mecánico levanta un carro de una tonelada con un gato hidráulico y poca fuerza. ¿Cómo multiplica la fuerza un líquido?",
+  "dba": "Explica el comportamiento de los fluidos en reposo y en movimiento (principio de Pascal, ecuación de continuidad y principio de Bernoulli) y sus aplicaciones tecnológicas.",
+  "prediccion": "Si empujas la jeringa pequeña, ¿la grande subirá con más fuerza o con menos fuerza que la que tú aplicas?",
+  "materiales": [
+   "jeringa de 10 mL y jeringa de 60 mL sin aguja",
+   "manguera delgada que ajuste en ambas",
+   "agua",
+   "regla",
+   "monedas o pesas",
+   "calibrador o regla para diámetros"
+  ],
+  "pasos": [
+   "Llena el sistema (dos jeringas unidas por la manguera) con agua sin burbujas.",
+   "Mide el diámetro de cada émbolo y calcula sus áreas A1 y A2.",
+   "Pon monedas sobre el émbolo grande y empuja el pequeño hasta levantarlas.",
+   "Mide cuánto baja el émbolo pequeño y cuánto sube el grande.",
+   "Verifica F1 / A1 = F2 / A2 y la relación de desplazamientos.",
+   "Calcula el trabajo en cada émbolo y compáralos."
+  ],
+  "seguridad": "Ajusta bien las conexiones; si salpica agua, seca el área. No apuntes las jeringas a la cara.",
+  "adulto": false,
+  "que_pasa": "El principio de Pascal dice que la presión aplicada a un fluido encerrado se transmite igual a todos sus puntos. Como P = F / A, en el émbolo grande la fuerza se multiplica en la proporción A2 / A1. Sin embargo, el émbolo grande sube menos: el trabajo (F · d) es el mismo en ambos lados, porque la energía se conserva.",
+  "concepto": "Principio de Pascal",
+  "vocabulario": [
+   "principio de Pascal",
+   "presión",
+   "área",
+   "ventaja mecánica"
+  ],
+  "preguntas": [
+   "¿Cuántas veces más área tiene el émbolo grande?",
+   "Si A2 = 10 · A1 y aplicas 50 N en el pequeño, ¿qué fuerza obtienes en el grande? (tipo Saber 11)",
+   "¿Por qué los frenos de las motos usan líquido y no aire?"
+  ],
+  "reto": "Cambia solo la jeringa grande por una de 20 mL y compara la fuerza obtenida.",
+  "minutos": 40
+ },
+ {
+  "id": "g11-e016",
+  "grado": 11,
+  "eje": "fuerza-movimiento",
+  "titulo": "El río Pance en las angosturas",
+  "gancho": "En los charcos del río Pance, donde el cauce se angosta, el agua corre más rápido. Al apretar una manguera pasa lo mismo. ¿Por qué?",
+  "dba": "Explica el comportamiento de los fluidos en reposo y en movimiento (principio de Pascal, ecuación de continuidad y principio de Bernoulli) y sus aplicaciones tecnológicas.",
+  "prediccion": "Si reduces a la mitad el área de salida de una manguera, ¿qué le pasa a la velocidad del agua?",
+  "materiales": [
+   "manguera conectada a una llave",
+   "balde de volumen conocido",
+   "cronómetro",
+   "cinta métrica",
+   "boquillas o tapas con agujeros de distinto diámetro",
+   "calibrador o regla"
+  ],
+  "pasos": [
+   "Llena el balde con la manguera sin boquilla y mide el tiempo: calcula el caudal Q = V / t.",
+   "Mide el diámetro interno de la manguera y calcula su área A1.",
+   "Calcula la velocidad del agua dentro de la manguera v1 = Q / A1.",
+   "Pon una boquilla de diámetro menor sin cambiar la apertura de la llave; mide de nuevo el caudal.",
+   "Calcula la velocidad de salida v2 = Q / A2 y verifica A1 · v1 = A2 · v2.",
+   "Lanza el chorro horizontal desde 1 m y compara el alcance."
+  ],
+  "seguridad": "Trabaja al aire libre y reutiliza el agua del balde para regar plantas. Evita mojar equipos eléctricos.",
+  "adulto": false,
+  "que_pasa": "En un fluido incompresible que fluye por un tubo, el caudal es constante: Q = A · v. Por eso, si el área disminuye, la velocidad aumenta en la misma proporción (ecuación de continuidad: A1 · v1 = A2 · v2). Es la conservación de la masa aplicada a fluidos en movimiento.",
+  "concepto": "Ecuación de continuidad",
+  "vocabulario": [
+   "caudal",
+   "ecuación de continuidad",
+   "flujo",
+   "fluido incompresible"
+  ],
+  "preguntas": [
+   "¿Qué caudal tenía la manguera?",
+   "Si el agua pasa de un tubo de 4 cm² a uno de 1 cm², ¿cuántas veces aumenta su velocidad? (tipo Saber 11)",
+   "¿Por qué las aguas del río Cali son más peligrosas en los tramos estrechos tras un aguacero?"
+  ],
+  "reto": "Cambia solo el diámetro de la boquilla (3 tamaños) y grafica velocidad de salida contra 1/área.",
+  "minutos": 40
+ },
+ {
+  "id": "g11-e017",
+  "grado": 11,
+  "eje": "fuerza-movimiento",
+  "titulo": "Suspensión de moto: masa y resorte que oscilan",
+  "gancho": "Cuando una moto pasa por un hueco, la suspensión sube y baja unas veces y luego se calma. ¿De qué depende la rapidez de esa oscilación?",
+  "dba": "Explica el movimiento circular y el movimiento oscilatorio a partir de las fuerzas que los producen, relacionando periodo, frecuencia, radio y velocidad.",
+  "prediccion": "Si cuadruplicas la masa colgada de un resorte, ¿el periodo de oscilación se duplicará o se cuadruplicará?",
+  "materiales": [
+   "resorte (de cuaderno argollado grande o de ferretería)",
+   "vaso plástico con hilo",
+   "monedas o arandelas",
+   "gramera",
+   "soporte",
+   "cronómetro",
+   "regla"
+  ],
+  "pasos": [
+   "Cuelga el vaso del resorte y mide la constante k con la ley de Hooke (F = k · x).",
+   "Pon 50 g en el vaso, estira 2 cm hacia abajo y suelta.",
+   "Mide el tiempo de 20 oscilaciones y calcula el periodo T.",
+   "Repite con 100, 150 y 200 g.",
+   "Grafica T² contra m.",
+   "Compara la pendiente con 4π² / k, según T = 2π · raíz(m / k)."
+  ],
+  "seguridad": "No estires el resorte más allá de su límite; mantén la cara lejos del montaje.",
+  "adulto": false,
+  "que_pasa": "Un sistema masa-resorte realiza un movimiento armónico simple: la fuerza restauradora es proporcional al desplazamiento. Su periodo es T = 2π · raíz(m / k): aumenta con la masa y disminuye con la rigidez del resorte. Cuadruplicar la masa duplica el periodo; los amortiguadores disipan esa energía para que la oscilación se detenga pronto.",
+  "concepto": "Movimiento armónico simple",
+  "vocabulario": [
+   "movimiento armónico simple",
+   "periodo",
+   "constante elástica",
+   "amortiguamiento"
+  ],
+  "preguntas": [
+   "¿Qué periodo midieron con 100 g?",
+   "Si se usa un resorte cuatro veces más rígido con la misma masa, ¿qué pasa con el periodo? (tipo Saber 11)",
+   "¿Por qué una moto con amortiguadores dañados rebota muchas veces después de un hueco?"
+  ],
+  "reto": "Deja la masa fija y cambia solo el resorte (dos resortes en serie vs. uno) y compara el periodo.",
+  "minutos": 45
+ },
+ {
+  "id": "g11-e018",
+  "grado": 11,
+  "eje": "fuerza-movimiento",
+  "titulo": "Parapentes de Roldanillo: velocidad terminal",
+  "gancho": "Roldanillo, en el norte del Valle, es famoso en el mundo por el parapente. ¿Por qué los parapentistas no aceleran sin parar mientras bajan?",
+  "dba": "Analiza el efecto de las fuerzas de rozamiento con el aire sobre el movimiento de los cuerpos y explica el concepto de velocidad terminal.",
+  "prediccion": "Si dejas caer 1 filtro de café y 4 filtros apilados, ¿cuál llega primero al piso? ¿Cuatro veces más rápido?",
+  "materiales": [
+   "filtros de café de papel iguales",
+   "cinta métrica",
+   "cronómetro o video",
+   "silla o escalera estable (sube con supervisión)"
+  ],
+  "pasos": [
+   "Deja caer 1 filtro desde 2 m de altura y mide el tiempo de caída (3 veces).",
+   "Repite con 2, 3, 4 y 5 filtros apilados.",
+   "Observa en video si después del primer tramo la velocidad se vuelve constante.",
+   "Calcula la velocidad terminal aproximada v = d / t para cada caso.",
+   "Grafica v² contra el número de filtros.",
+   "Interpreta la recta según F_aire = k · v² = m · g."
+  ],
+  "seguridad": "Quien suelta los filtros desde altura debe estar sobre una superficie estable y con supervisión; nunca se para en una silla giratoria.",
+  "adulto": false,
+  "que_pasa": "Al caer, la fuerza de arrastre del aire crece con la velocidad (para objetos como estos, aproximadamente con v²). Cuando iguala al peso, la fuerza neta es cero y el objeto cae con velocidad constante: la velocidad terminal. Como m · g = k · v², la velocidad terminal es proporcional a la raíz de la masa: 4 filtros caen solo el doble de rápido. El parapente tiene un área enorme para que su velocidad de descenso sea baja.",
+  "concepto": "Velocidad terminal",
+  "vocabulario": [
+   "fuerza de arrastre",
+   "velocidad terminal",
+   "resistencia del aire",
+   "fuerza neta"
+  ],
+  "preguntas": [
+   "¿Cuál fue la velocidad terminal de 4 filtros?",
+   "Cuando un paracaidista alcanza la velocidad terminal, ¿cuál es su aceleración? (tipo Saber 11)",
+   "¿Por qué las semillas del árbol de guácimo o de los arces tienen formas que giran al caer?"
+  ],
+  "reto": "Cambia solo la forma del filtro (abierto vs. arrugado en bola) con la misma masa y compara el tiempo de caída.",
+  "minutos": 40
+ },
+ {
+  "id": "g11-e019",
+  "grado": 11,
+  "eje": "luz-sonido-energia",
+  "titulo": "Ley de Ohm con pilas de control remoto",
+  "gancho": "Los cargadores, los LED y los celulares funcionan con corriente controlada. ¿Qué relación hay entre el voltaje aplicado y la corriente que circula?",
+  "dba": "Comprende las relaciones entre corriente, voltaje, resistencia y potencia en circuitos eléctricos en serie y en paralelo.",
+  "prediccion": "Si duplicas el voltaje sobre una resistencia, ¿la corriente se duplica, se reduce a la mitad o no cambia?",
+  "materiales": [
+   "4 pilas AA de 1,5 V con portapilas",
+   "resistencias de 470 Ω y 1 kΩ de 1/4 W (kit escolar)",
+   "multímetro escolar",
+   "cables con caimanes",
+   "protoboard opcional"
+  ],
+  "pasos": [
+   "Arma un circuito con 1 pila y la resistencia de 470 Ω.",
+   "Mide el voltaje sobre la resistencia y la corriente (multímetro en serie, escala de mA).",
+   "Repite con 2, 3 y 4 pilas en serie.",
+   "Grafica V contra I.",
+   "Calcula la pendiente y compárala con el valor nominal de la resistencia.",
+   "Repite con la de 1 kΩ y compara las pendientes; calcula la potencia P = V · I."
+  ],
+  "seguridad": "Usa solo pilas (máximo 6 V en este montaje), nunca la red eléctrica. No uses resistencias menores de 470 Ω: con 6 V una de 100 Ω disiparía 0,36 W y se recalentaría (las del kit soportan 0,25 W). Desconecta el circuito si algo se calienta.",
+  "adulto": false,
+  "que_pasa": "La ley de Ohm dice que, en un conductor óhmico, la corriente es proporcional al voltaje: V = I · R. La gráfica V contra I es una recta que pasa por el origen y su pendiente es la resistencia. La potencia que disipa la resistencia en forma de calor es P = V · I = I² · R.",
+  "concepto": "Ley de Ohm",
+  "vocabulario": [
+   "voltaje",
+   "corriente",
+   "resistencia",
+   "potencia eléctrica"
+  ],
+  "preguntas": [
+   "¿Qué resistencia obtuviste a partir de la pendiente?",
+   "Si una resistencia de 10 Ω está conectada a 5 V, ¿qué corriente circula y qué potencia disipa? (tipo Saber 11)",
+   "¿Por qué un cable delgado conectado a un aparato muy potente se calienta?"
+  ],
+  "reto": "Deja fijo el voltaje (4 pilas) y cambia solo la resistencia (470 Ω, 1 kΩ y 2,2 kΩ); grafica I contra 1/R.",
+  "minutos": 50
+ },
+ {
+  "id": "g11-e020",
+  "grado": 11,
+  "eje": "luz-sonido-energia",
+  "titulo": "Alumbrados navideños: serie o paralelo",
+  "gancho": "En diciembre Cali se llena de alumbrados. En algunas instalaciones viejas, si un bombillo se daña, se apaga toda la serie. ¿Por qué otras siguen encendidas?",
+  "dba": "Comprende las relaciones entre corriente, voltaje, resistencia y potencia en circuitos eléctricos en serie y en paralelo.",
+  "prediccion": "Si conectas dos bombillos en serie, ¿brillarán más, menos o igual que uno solo? ¿Y en paralelo?",
+  "materiales": [
+   "3 bombillos de linterna de 3 V con portabombillo",
+   "2 pilas AA con portapilas (3 V)",
+   "cables con caimanes",
+   "multímetro escolar"
+  ],
+  "pasos": [
+   "Conecta un bombillo a la batería y observa su brillo; mide voltaje y corriente.",
+   "Conecta dos bombillos en serie, observa el brillo y mide la corriente.",
+   "Afloja un bombillo de la serie y observa qué pasa con el otro.",
+   "Conecta dos bombillos en paralelo, mide la corriente total y en cada rama.",
+   "Afloja un bombillo del paralelo y observa.",
+   "Calcula las resistencias equivalentes: serie R = R1 + R2; paralelo 1/R = 1/R1 + 1/R2."
+  ],
+  "seguridad": "Usa solo pilas de 1,5 V; los bombillos pueden calentarse: no los toques encendidos. Nunca uses la red de 110 V.",
+  "adulto": false,
+  "que_pasa": "En serie la corriente es la misma en todos los elementos y el voltaje se reparte; la resistencia equivalente aumenta, la corriente baja y los bombillos brillan menos. Si uno se abre, el circuito se interrumpe. En paralelo cada rama recibe el voltaje completo, la resistencia equivalente disminuye y cada bombillo funciona independiente; así están conectados los enchufes de una casa.",
+  "concepto": "Circuitos en serie y en paralelo",
+  "vocabulario": [
+   "serie",
+   "paralelo",
+   "resistencia equivalente",
+   "circuito abierto"
+  ],
+  "preguntas": [
+   "¿Cómo fue el brillo de los bombillos en serie comparado con uno solo?",
+   "Dos resistencias de 6 Ω en paralelo, ¿qué resistencia equivalente tienen? (tipo Saber 11)",
+   "¿Por qué las tomas de una casa se conectan en paralelo?"
+  ],
+  "reto": "Cambia solo el número de bombillos en paralelo (1, 2 y 3) y mide la corriente total que entrega la batería.",
+  "minutos": 45
+ },
+ {
+  "id": "g11-e021",
+  "grado": 11,
+  "eje": "luz-sonido-energia",
+  "titulo": "Electroimán de chatarrería",
+  "gancho": "En las chatarrerías de Cali hay grúas que levantan carros con un electroimán gigante y luego los sueltan. ¿Cómo se 'enciende' un imán?",
+  "dba": "Comprende que la interacción de cargas en reposo genera fuerzas eléctricas y que las cargas en movimiento generan fuerzas magnéticas, y explica la inducción electromagnética y sus aplicaciones.",
+  "prediccion": "Si duplicas el número de vueltas de alambre alrededor del clavo, ¿levantará el doble de clips?",
+  "materiales": [
+   "puntilla grande de hierro (10 cm)",
+   "2 m de alambre de cobre esmaltado",
+   "lija",
+   "pila de 1,5 V (tipo D o AA)",
+   "clips",
+   "brújula",
+   "cinta"
+  ],
+  "pasos": [
+   "Lija 2 cm en cada extremo del alambre.",
+   "Enrolla 20 vueltas alrededor de la puntilla.",
+   "Conecta los extremos a la pila solo por unos segundos y cuenta cuántos clips levanta.",
+   "Acércale la brújula para identificar sus polos.",
+   "Repite con 40 y 60 vueltas.",
+   "Grafica número de clips contra número de vueltas e invierte la pila para ver qué pasa con los polos."
+  ],
+  "seguridad": "Con el docente presente. Conecta la pila solo pocos segundos: el alambre y la pila se calientan porque es casi un cortocircuito; sujeta el alambre por la parte aislada y no lo toques después de usarlo. Usa pilas alcalinas de 1,5 V, nunca baterías recargables de litio ni la red eléctrica.",
+  "adulto": true,
+  "que_pasa": "Una corriente eléctrica produce un campo magnético a su alrededor (Oersted). Enrollar el alambre en bobina suma los campos de cada vuelta, y el núcleo de hierro se magnetiza y lo refuerza mucho. La intensidad del campo depende del número de vueltas y de la corriente; al cortar la corriente el electroimán se apaga casi por completo.",
+  "concepto": "Electromagnetismo",
+  "vocabulario": [
+   "campo magnético",
+   "bobina",
+   "electroimán",
+   "polo magnético"
+  ],
+  "preguntas": [
+   "¿Cuántos clips levantó con 40 vueltas?",
+   "¿Qué ocurre con los polos del electroimán si se invierte el sentido de la corriente? (tipo Saber 11)",
+   "¿Qué ventaja tiene una grúa con electroimán frente a un imán permanente?"
+  ],
+  "reto": "Deja fijas las vueltas y cambia solo el núcleo (puntilla de hierro, lápiz de madera, tornillo de acero).",
+  "minutos": 40
+ },
+ {
+  "id": "g11-e022",
+  "grado": 11,
+  "eje": "luz-sonido-energia",
+  "titulo": "Imán que cae en cámara lenta",
+  "gancho": "Las hidroeléctricas del Valle, como Alto Anchicayá, generan electricidad moviendo imanes y bobinas. Un imán que cae por un tubo de cobre muestra la misma física… ¡y cae muy despacio!",
+  "dba": "Comprende que la interacción de cargas en reposo genera fuerzas eléctricas y que las cargas en movimiento generan fuerzas magnéticas, y explica la inducción electromagnética y sus aplicaciones.",
+  "prediccion": "Si dejas caer un imán por un tubo de cobre (que no es magnético), ¿caerá igual de rápido que por un tubo de PVC?",
+  "materiales": [
+   "tubo de cobre de 30 cm (ferretería)",
+   "tubo de PVC del mismo largo",
+   "imán de neodimio pequeño que pase por el tubo",
+   "tornillo de acero del mismo tamaño",
+   "cronómetro"
+  ],
+  "pasos": [
+   "Comprueba que el imán no se pega al tubo de cobre.",
+   "Deja caer el tornillo por el tubo de cobre y mide el tiempo.",
+   "Deja caer el imán por el tubo de PVC y mide el tiempo.",
+   "Deja caer el imán por el tubo de cobre y mide el tiempo (3 veces).",
+   "Calcula la velocidad media en cada caso.",
+   "Explica con un dibujo las corrientes inducidas y el campo que generan."
+  ],
+  "seguridad": "Los imanes de neodimio son muy fuertes: pueden pellizcar los dedos y se rompen al chocar. Mantenlos lejos de celulares, tarjetas y marcapasos. Nunca los ingieras.",
+  "adulto": true,
+  "que_pasa": "Al caer, el imán cambia el flujo magnético a través del tubo y, según la ley de Faraday, induce corrientes en el cobre (corrientes de Foucault). Por la ley de Lenz, esas corrientes generan un campo magnético que se opone al movimiento que las produce, y frenan el imán. La energía mecánica se transforma en energía eléctrica y luego en calor; el PVC no conduce, por eso allí no hay freno.",
+  "concepto": "Inducción electromagnética",
+  "vocabulario": [
+   "inducción",
+   "ley de Faraday",
+   "ley de Lenz",
+   "corrientes de Foucault",
+   "flujo magnético"
+  ],
+  "preguntas": [
+   "¿Cuántas veces más tardó el imán en el tubo de cobre que en el de PVC?",
+   "Según la ley de Lenz, ¿por qué la corriente inducida se opone al cambio que la produce? (tipo Saber 11)",
+   "¿Cómo convierte una hidroeléctrica la energía del agua en energía eléctrica?"
+  ],
+  "reto": "Cambia solo el material del tubo (cobre vs. aluminio del mismo tamaño) y compara los tiempos de caída.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e023",
+  "grado": 11,
+  "eje": "luz-sonido-energia",
+  "titulo": "El motor eléctrico más simple del mundo",
+  "gancho": "En Cali cada vez hay más patinetas y bicicletas eléctricas. Todas tienen motores que convierten electricidad en movimiento. ¿Cuál es el principio?",
+  "dba": "Comprende que la interacción de cargas en reposo genera fuerzas eléctricas y que las cargas en movimiento generan fuerzas magnéticas, y explica la inducción electromagnética y sus aplicaciones.",
+  "prediccion": "Si colocas un alambre que toca una pila y un imán, ¿se moverá? ¿Hacia qué lado?",
+  "materiales": [
+   "pila AA de 1,5 V",
+   "imán de neodimio plano del diámetro de la pila",
+   "alambre de cobre desnudo de 20 cm",
+   "pinzas",
+   "tornillo de acero"
+  ],
+  "pasos": [
+   "Coloca el imán bajo el polo negativo de la pila.",
+   "Dobla el alambre en forma de corazón o rectángulo que toque el polo positivo arriba y el costado del imán abajo, sin apretar.",
+   "Ajusta el alambre hasta que gire libremente.",
+   "Observa el sentido de giro.",
+   "Voltea el imán y observa si cambia el sentido.",
+   "Explica con la regla de la mano derecha la dirección de la fuerza."
+  ],
+  "seguridad": "Es un cortocircuito: el alambre y la pila se calientan. Haz contactos de pocos segundos y no toques el alambre después de girar. Cuidado con los dedos y el imán de neodimio.",
+  "adulto": true,
+  "que_pasa": "Un conductor con corriente dentro de un campo magnético recibe una fuerza (fuerza de Lorentz): F = B · I · L. En este motor homopolar la corriente va de la pila por el alambre hasta el imán, y la fuerza magnética sobre el alambre lo hace girar. Si se invierte el campo o la corriente, el sentido de giro cambia.",
+  "concepto": "Fuerza magnética sobre una corriente",
+  "vocabulario": [
+   "fuerza de Lorentz",
+   "campo magnético",
+   "motor eléctrico",
+   "regla de la mano derecha"
+  ],
+  "preguntas": [
+   "¿En qué sentido giró el alambre al principio?",
+   "¿Qué le ocurre a la fuerza sobre un conductor si la corriente se duplica? (tipo Saber 11)",
+   "¿Qué transformación de energía ocurre en el motor de una bicicleta eléctrica?"
+  ],
+  "reto": "Cambia solo la forma del alambre (rectángulo vs. espiral) y compara la velocidad de giro.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e024",
+  "grado": 11,
+  "eje": "luz-sonido-energia",
+  "titulo": "La chispa al bajarse del carro",
+  "gancho": "A veces, al bajarse del carro en un día seco, se siente una pequeña descarga al tocar la puerta. ¿De dónde salen esas cargas?",
+  "dba": "Comprende que la interacción de cargas en reposo genera fuerzas eléctricas y que las cargas en movimiento generan fuerzas magnéticas, y explica la inducción electromagnética y sus aplicaciones.",
+  "prediccion": "Si frotas un globo en tu pelo y lo acercas a otro globo frotado, ¿se atraerán o se repelerán?",
+  "materiales": [
+   "2 globos",
+   "hilo",
+   "paño de lana o el propio cabello",
+   "trocitos de papel",
+   "regla",
+   "lata vacía de gaseosa"
+  ],
+  "pasos": [
+   "Infla los globos y cuélgalos del mismo punto con hilos de igual longitud.",
+   "Frota ambos con la lana y déjalos colgar: mide la separación entre ellos.",
+   "Acerca la mano a uno y observa.",
+   "Acerca un globo frotado a la lata acostada y observa cómo rueda.",
+   "Acerca el globo a trocitos de papel desde distintas distancias.",
+   "Relaciona la separación de los globos con la carga usando F = k · q1 · q2 / r²."
+  ],
+  "seguridad": "Hazlo lejos de equipos electrónicos sensibles. Usa globos solo si nadie es alérgico al látex.",
+  "adulto": false,
+  "que_pasa": "Al frotar, algunos electrones pasan de un material a otro y ambos quedan cargados (electrización por frotamiento). Cargas iguales se repelen y opuestas se atraen, con una fuerza que disminuye con el cuadrado de la distancia (ley de Coulomb). Un objeto cargado induce cargas en un objeto neutro (polarización) y por eso lo atrae.",
+  "concepto": "Electrostática y ley de Coulomb",
+  "vocabulario": [
+   "carga eléctrica",
+   "electrización",
+   "ley de Coulomb",
+   "inducción electrostática"
+  ],
+  "preguntas": [
+   "¿Los dos globos frotados se atrajeron o se repelieron?",
+   "Si la distancia entre dos cargas se duplica, ¿qué pasa con la fuerza? (tipo Saber 11)",
+   "¿Por qué los camiones de gasolina llevan una cadena que toca el suelo?"
+  ],
+  "reto": "Cambia solo el material de frotamiento (lana, papel, bolsa plástica) y compara la separación de los globos.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e025",
+  "grado": 11,
+  "eje": "luz-sonido-energia",
+  "titulo": "La ambulancia de la Calle 5: efecto Doppler",
+  "gancho": "Cuando una ambulancia pasa por la Calle 5 su sirena suena más aguda al acercarse y más grave al alejarse, aunque la sirena no cambia. ¿Por qué?",
+  "dba": "Comprende la naturaleza de la propagación del sonido y de la luz como fenómenos ondulatorios (efecto Doppler, difracción, interferencia y polarización).",
+  "prediccion": "Si un zumbador gira en círculo, ¿lo escucharás con un tono constante o cambiante?",
+  "materiales": [
+   "zumbador piezoeléctrico con pila de 9 V",
+   "media gruesa o bolsa de tela",
+   "pita de 1 m resistente",
+   "celular con app analizadora de frecuencias",
+   "espacio abierto"
+  ],
+  "pasos": [
+   "Mide la frecuencia del zumbador en reposo con la app.",
+   "Mete el zumbador encendido en la media y átala bien a la pita.",
+   "En un espacio abierto, un estudiante lo gira sobre su cabeza; los demás escuchan a 3 m de distancia.",
+   "Graba el sonido con la app y anota la frecuencia máxima y mínima.",
+   "Mide el periodo de giro para calcular la velocidad del zumbador.",
+   "Compara con f' = f · v / (v ± vs), donde v ≈ 343 m/s."
+  ],
+  "seguridad": "Gira solo en un área despejada, con la media bien atada; los observadores se ubican fuera del alcance de la pita. Usa pilas de 9 V como máximo.",
+  "adulto": false,
+  "que_pasa": "El efecto Doppler es el cambio de frecuencia percibida cuando la fuente y el observador se mueven uno respecto al otro. Al acercarse la fuente, las ondas se comprimen (menor longitud de onda, mayor frecuencia); al alejarse se estiran (frecuencia menor). Se usa en los radares de velocidad, en la ecografía Doppler y en astronomía.",
+  "concepto": "Efecto Doppler",
+  "vocabulario": [
+   "efecto Doppler",
+   "frecuencia percibida",
+   "longitud de onda",
+   "fuente en movimiento"
+  ],
+  "preguntas": [
+   "¿Cuál fue la diferencia entre la frecuencia máxima y la mínima?",
+   "Si una fuente sonora se aleja de ti, ¿la frecuencia que percibes es mayor o menor que la emitida? (tipo Saber 11)",
+   "¿Cómo usan los agentes de tránsito este efecto en los radares de velocidad?"
+  ],
+  "reto": "Cambia solo la velocidad de giro (lento y rápido) y compara el cambio de frecuencia percibido.",
+  "minutos": 35
+ },
+ {
+  "id": "g11-e026",
+  "grado": 11,
+  "eje": "luz-sonido-energia",
+  "titulo": "El arcoíris escondido en un CD",
+  "gancho": "Los colores que se ven en un CD o en las plumas de los colibríes del Valle no vienen de pigmentos, sino de la difracción de la luz.",
+  "dba": "Comprende la naturaleza de la propagación del sonido y de la luz como fenómenos ondulatorios (efecto Doppler, difracción, interferencia y polarización).",
+  "prediccion": "Si iluminas un CD con una linterna blanca, ¿qué color verás más desviado: el rojo o el azul?",
+  "materiales": [
+   "CD o DVD viejo",
+   "linterna LED blanca o del celular",
+   "cartulina negra con una ranura de 2 mm",
+   "pantalla blanca (cartulina)",
+   "regla y transportador",
+   "LEDs de colores (rojo, verde, azul) opcionales"
+  ],
+  "pasos": [
+   "Oscurece el salón y apoya el CD sobre la mesa.",
+   "Haz pasar la luz por la ranura e ilumina el CD de frente.",
+   "Ubica la pantalla y observa el espectro de colores (primer orden).",
+   "Mide la distancia CD-pantalla (L) y la distancia del centro a cada color (y).",
+   "Calcula el ángulo con tan θ = y / L.",
+   "Calcula la longitud de onda de cada color con d · sen θ = m · λ, con d = 1,6 μm para un CD y m = 1."
+  ],
+  "seguridad": "No mires directamente la linterna ni dirijas la luz a los ojos de nadie. No uses apuntadores láser.",
+  "adulto": false,
+  "que_pasa": "Las pistas del CD forman una rejilla de difracción: la luz se difracta en cada pista y las ondas interfieren. Solo en ciertas direcciones se suman en fase y se cumple d · sen θ = m · λ. Como cada color tiene distinta longitud de onda, se desvía con distinto ángulo; el rojo (λ mayor, unos 650 nm) se desvía más que el azul (unos 450 nm).",
+  "concepto": "Difracción e interferencia",
+  "vocabulario": [
+   "difracción",
+   "interferencia",
+   "rejilla de difracción",
+   "longitud de onda"
+  ],
+  "preguntas": [
+   "¿Qué longitud de onda calculaste para el color rojo?",
+   "En una rejilla de difracción, ¿qué color se desvía más y por qué? (tipo Saber 11)",
+   "¿Por qué los billetes colombianos tienen elementos que cambian de color según el ángulo?"
+  ],
+  "reto": "Cambia solo la rejilla (CD vs. DVD, con pistas más juntas) y compara los ángulos de cada color.",
+  "minutos": 45
+ },
+ {
+  "id": "g11-e027",
+  "grado": 11,
+  "eje": "luz-sonido-energia",
+  "titulo": "Gafas polarizadas de los pescadores de Calima",
+  "gancho": "Los pescadores de la represa de Calima usan gafas polarizadas para ver a través del reflejo del agua. ¿Qué hacen esas gafas con la luz?",
+  "dba": "Comprende la naturaleza de la propagación del sonido y de la luz como fenómenos ondulatorios (efecto Doppler, difracción, interferencia y polarización).",
+  "prediccion": "Si miras la pantalla del celular a través de unas gafas polarizadas y las giras, ¿qué pasará con la imagen?",
+  "materiales": [
+   "gafas de sol polarizadas (o dos láminas polarizadoras)",
+   "pantalla de celular o computador (LCD)",
+   "transportador",
+   "app luxómetro en un segundo celular",
+   "vaso con agua o superficie brillante"
+  ],
+  "pasos": [
+   "Mira la pantalla LCD a través de un lente de las gafas.",
+   "Gira las gafas lentamente y observa cómo cambia el brillo.",
+   "Coloca el luxómetro detrás del lente y mide la intensidad cada 15° de 0° a 90°.",
+   "Grafica la intensidad contra cos² θ.",
+   "Mira el reflejo de una mesa brillante o de agua con y sin las gafas, girándolas.",
+   "Concluye en qué dirección está polarizada la luz reflejada."
+  ],
+  "seguridad": "No mires directamente al sol, ni siquiera con gafas polarizadas.",
+  "adulto": false,
+  "que_pasa": "La luz es una onda electromagnética transversal; un polarizador solo deja pasar la componente de vibración en una dirección. Las pantallas LCD emiten luz ya polarizada, por eso al girar el filtro la intensidad cambia según la ley de Malus: I = I0 · cos² θ. La luz reflejada en el agua queda parcialmente polarizada en dirección horizontal y las gafas, con eje vertical, la bloquean.",
+  "concepto": "Polarización de la luz",
+  "vocabulario": [
+   "polarización",
+   "onda transversal",
+   "ley de Malus",
+   "luz reflejada"
+  ],
+  "preguntas": [
+   "¿En qué ángulo la pantalla se vio más oscura?",
+   "¿Por qué el sonido no se puede polarizar y la luz sí? (tipo Saber 11)",
+   "¿Cómo ayudan las gafas polarizadas a un conductor en una carretera mojada?"
+  ],
+  "reto": "Cambia solo la superficie reflectante (agua, vidrio, mesa barnizada) y compara cuánto reflejo bloquean las gafas.",
+  "minutos": 35
+ },
+ {
+  "id": "g11-e028",
+  "grado": 11,
+  "eje": "luz-sonido-energia",
+  "titulo": "Frenos calientes en la vía a Buenaventura",
+  "gancho": "Los camiones que bajan de Dagua a Buenaventura calientan tanto sus frenos que a veces deben parar a enfriarlos. ¿Se puede convertir movimiento en calor?",
+  "dba": "Comprende las leyes de la termodinámica: el calor como energía en tránsito, el equilibrio térmico y la conservación de la energía en procesos de calentamiento, cambio de fase y realización de trabajo.",
+  "prediccion": "Si agitas fuertemente una botella con arena durante 5 minutos, ¿subirá su temperatura? ¿Cuánto?",
+  "materiales": [
+   "botella plástica gruesa con tapa",
+   "500 g de arena seca",
+   "termómetro de cocina",
+   "toalla para aislar la botella",
+   "cronómetro",
+   "gramera"
+  ],
+  "pasos": [
+   "Pesa la arena y mide su temperatura inicial.",
+   "Envuelve la botella con la toalla para reducir pérdidas.",
+   "Agita vigorosamente durante 2 minutos (se pueden turnar compañeros).",
+   "Abre y mide la temperatura de inmediato.",
+   "Repite hasta completar 10 minutos de agitación.",
+   "Calcula el calor ganado Q = m · c · ΔT (c de la arena ≈ 0,8 J/g·°C) y estima la potencia mecánica transferida."
+  ],
+  "seguridad": "Cierra bien la botella para que la arena no salga a los ojos. Turnarse para no cansar los brazos.",
+  "adulto": false,
+  "que_pasa": "La primera ley de la termodinámica dice que la energía interna de un sistema cambia por el calor y el trabajo que intercambia: ΔU = Q − W, donde W es el trabajo que hace el sistema (si se hace trabajo sobre él, W es negativo y ΔU aumenta). Al agitar, el trabajo mecánico se convierte, por fricción entre los granos, en energía interna y la temperatura sube. Joule usó una idea así para mostrar que calor y trabajo son formas de transferir energía. El aumento es pequeño (alrededor de 1 °C en 10 minutos): sostén la botella por la toalla para que el calor de tus manos no se confunda con el efecto.",
+  "concepto": "Primera ley de la termodinámica",
+  "vocabulario": [
+   "energía interna",
+   "trabajo",
+   "calor",
+   "equivalente mecánico del calor"
+  ],
+  "preguntas": [
+   "¿Cuántos grados subió la arena en 10 minutos?",
+   "Si un sistema recibe 500 J de trabajo y pierde 200 J de calor, ¿cuánto cambia su energía interna? (tipo Saber 11)",
+   "¿Por qué se recomienda bajar las lomas en un cambio bajo en lugar de frenar todo el tiempo?"
+  ],
+  "reto": "Cambia solo la masa de arena (250 g vs. 500 g) con el mismo tiempo de agitación y compara ΔT.",
+  "minutos": 40
+ },
+ {
+  "id": "g11-e029",
+  "grado": 11,
+  "eje": "seres-vivos-cuerpo",
+  "titulo": "El pan aliñado y la levadura que respira",
+  "gancho": "El pan aliñado de las panaderías caleñas crece gracias a hongos microscópicos. ¿A qué temperatura trabaja mejor la levadura?",
+  "dba": "Explica la respiración celular y la fermentación, y la función de las proteínas y enzimas en los procesos metabólicos.",
+  "prediccion": "¿Qué globo se inflará más: el de levadura en agua fría, tibia o caliente?",
+  "materiales": [
+   "3 botellas pequeñas",
+   "3 globos",
+   "levadura seca de panadería",
+   "azúcar",
+   "agua fría, tibia (unos 37 °C) y caliente (unos 60 °C, servida por el adulto)",
+   "termómetro",
+   "cinta métrica flexible"
+  ],
+  "pasos": [
+   "Pon en cada botella 1 cucharadita de levadura y 1 de azúcar.",
+   "Agrega 100 mL de agua: fría en una, tibia en otra y caliente en la tercera.",
+   "Coloca un globo en cada boca.",
+   "Mide la circunferencia de los globos cada 10 minutos durante 40 minutos.",
+   "Grafica circunferencia contra tiempo para cada temperatura.",
+   "Identifica la temperatura óptima de la levadura."
+  ],
+  "seguridad": "El agua caliente la sirve un adulto. No consumas las mezclas.",
+  "adulto": true,
+  "que_pasa": "La levadura obtiene energía de la glucosa. Sin suficiente oxígeno realiza fermentación alcohólica: C6H12O6 → 2 C2H5OH + 2 CO2, y el CO2 infla el globo. Las enzimas de la levadura funcionan mejor cerca de 30–37 °C; con agua muy caliente se desnaturalizan y la levadura muere, y con agua fría el metabolismo es lento.",
+  "concepto": "Fermentación y respiración celular",
+  "vocabulario": [
+   "fermentación",
+   "respiración celular",
+   "levadura",
+   "temperatura óptima"
+  ],
+  "preguntas": [
+   "¿Qué globo creció más?",
+   "¿Qué diferencia hay entre la respiración aerobia y la fermentación en cuanto a la energía obtenida? (tipo Saber 11)",
+   "¿Por qué la masa del pan se pone a reposar en un lugar tibio?"
+  ],
+  "reto": "Deja la temperatura óptima fija y cambia solo la cantidad de azúcar (0, 1 y 2 cucharaditas).",
+  "minutos": 50
+ },
+ {
+  "id": "g11-e030",
+  "grado": 11,
+  "eje": "seres-vivos-cuerpo",
+  "titulo": "Herencia con fríjoles: el cuadro de Punnett en la mesa",
+  "gancho": "En el Valle se cruzan variedades de fríjol, maíz y ganado para obtener características deseadas. ¿Se puede predecir qué proporción de hijos heredará un rasgo?",
+  "dba": "Explica la herencia de características a partir de la genética mendeliana y la evolución de las poblaciones por selección natural.",
+  "prediccion": "Si dos padres heterocigotos (Aa) tienen 100 descendientes, ¿cuántos esperas que muestren el rasgo recesivo?",
+  "materiales": [
+   "2 bolsas de tela opacas",
+   "fríjoles rojos (alelo dominante A) y blancos (alelo recesivo a)",
+   "hoja de registro",
+   "calculadora"
+  ],
+  "pasos": [
+   "Pon en cada bolsa 20 fríjoles rojos y 20 blancos: cada bolsa representa un progenitor Aa.",
+   "Sin mirar, saca un fríjol de cada bolsa: esa pareja es el genotipo del hijo.",
+   "Anota el genotipo (AA, Aa o aa) y devuelve los fríjoles a su bolsa.",
+   "Repite 100 veces (pueden repartirse en grupos).",
+   "Calcula las proporciones fenotípicas y genotípicas obtenidas.",
+   "Compara con el cuadro de Punnett (1:2:1 y 3:1) y calcula la diferencia porcentual."
+  ],
+  "seguridad": "No te lleves los fríjoles a la boca. Recoge los que caigan para evitar resbalones.",
+  "adulto": false,
+  "que_pasa": "Según Mendel, cada individuo tiene dos alelos para un gen y transmite solo uno a cada descendiente, al azar (ley de la segregación). Al cruzar dos heterocigotos, el cuadro de Punnett predice 1/4 AA, 1/2 Aa y 1/4 aa, es decir, 3 con rasgo dominante por 1 con rasgo recesivo. Con pocos datos el resultado se aleja del ideal; con muchos, se acerca (ley de los grandes números).",
+  "concepto": "Herencia mendeliana",
+  "vocabulario": [
+   "alelo",
+   "genotipo",
+   "fenotipo",
+   "dominante",
+   "recesivo"
+  ],
+  "preguntas": [
+   "¿Qué proporción de aa obtuvo tu grupo?",
+   "Si se cruza Aa con aa, ¿qué porcentaje de la descendencia muestra el rasgo recesivo? (tipo Saber 11)",
+   "¿Por qué dos padres de ojos cafés pueden tener un hijo de ojos claros?"
+  ],
+  "reto": "Cambia solo la proporción de alelos en una bolsa (un progenitor AA: solo fríjoles rojos) y compara los resultados.",
+  "minutos": 40
+ },
+ {
+  "id": "g11-e031",
+  "grado": 11,
+  "eje": "seres-vivos-cuerpo",
+  "titulo": "Mariposas, pinzas y selección natural",
+  "gancho": "Colombia es uno de los países con más especies de mariposas del mundo. ¿Por qué en cada ambiente predominan ciertos colores y formas?",
+  "dba": "Explica la herencia de características a partir de la genética mendeliana y la evolución de las poblaciones por selección natural.",
+  "prediccion": "Sobre un mantel de flores, ¿qué 'presas' sobrevivirán más: las de colores llamativos o las que se camuflan?",
+  "materiales": [
+   "mantel o tela estampada",
+   "confeti o papelitos de 4 colores (uno parecido a la tela)",
+   "pinzas de ropa, cucharas y palillos chinos (como 'picos')",
+   "vasos",
+   "cronómetro"
+  ],
+  "pasos": [
+   "Riega 40 papelitos de cada color sobre la tela (población inicial).",
+   "Cada 'pájaro' tiene 20 segundos para capturar presas con su pico y depositarlas en su vaso.",
+   "Cuenta las presas sobrevivientes de cada color.",
+   "Cada sobreviviente 'se reproduce': agrega un papelito del mismo color por cada uno que quedó.",
+   "Repite 3 generaciones.",
+   "Grafica la frecuencia de cada color por generación y también qué tipo de pico capturó más."
+  ],
+  "seguridad": "Usa las pinzas y los palillos con cuidado, sin pellizcar a nadie. Recoge todo el confeti al final.",
+  "adulto": false,
+  "que_pasa": "En una población hay variación heredable. Los individuos con rasgos que les permiten sobrevivir mejor en su ambiente (como el camuflaje) dejan más descendientes, y la frecuencia de esos rasgos aumenta generación tras generación: es la selección natural propuesta por Darwin y Wallace. Lo mismo ocurre con los 'picos': los más eficientes 'sobreviven' en la simulación.",
+  "concepto": "Selección natural",
+  "vocabulario": [
+   "selección natural",
+   "variación",
+   "adaptación",
+   "presión selectiva"
+  ],
+  "preguntas": [
+   "¿Qué color aumentó su frecuencia en tres generaciones?",
+   "¿Por qué el uso excesivo de antibióticos favorece bacterias resistentes? (tipo Saber 11)",
+   "¿Cómo podría afectar la urbanización de los cerros de Cali a la selección de especies de aves?"
+  ],
+  "reto": "Cambia solo el fondo (tela lisa de otro color) con la misma población inicial y compara qué color sobrevive.",
+  "minutos": 45
+ },
+ {
+  "id": "g11-e032",
+  "grado": 11,
+  "eje": "seres-vivos-cuerpo",
+  "titulo": "Gelatina con piña: ¿por qué no cuaja?",
+  "gancho": "Las abuelas saben que la gelatina con piña fresca no cuaja, pero con piña en almíbar sí. La piña tiene una enzima que 'corta' proteínas.",
+  "dba": "Explica la respiración celular y la fermentación, y la función de las proteínas y enzimas en los procesos metabólicos.",
+  "prediccion": "¿Cuajará la gelatina con jugo de piña fresca, con piña hervida o con piña en lata?",
+  "materiales": [
+   "gelatina sin sabor o de sabores",
+   "piña fresca",
+   "piña en lata",
+   "jugo de piña fresca hervido 5 minutos por un adulto",
+   "4 vasos",
+   "agua caliente (la prepara el adulto)",
+   "nevera"
+  ],
+  "pasos": [
+   "El adulto prepara la gelatina con agua caliente y la reparte en 4 vasos.",
+   "Cuando esté tibia, agrega: vaso 1 trozos de piña fresca; vaso 2 piña hervida; vaso 3 piña en lata; vaso 4 nada (control).",
+   "Lleva los vasos a la nevera 3 horas.",
+   "Inclina cada vaso y observa si cuajó.",
+   "Registra la firmeza en una escala de 0 a 3.",
+   "Relaciona los resultados con la acción de la enzima y el calor."
+  ],
+  "seguridad": "El agua caliente y el hervido los maneja un adulto. No consumas la gelatina del experimento.",
+  "adulto": true,
+  "que_pasa": "La piña contiene bromelina, una proteasa: una enzima que rompe las proteínas en fragmentos pequeños. La gelatina es una red de proteína (colágeno) que atrapa agua; si la bromelina la corta, no se forma el gel. Al calentar la piña (hervida o enlatada) la enzima se desnaturaliza y la gelatina sí cuaja.",
+  "concepto": "Enzimas proteolíticas",
+  "vocabulario": [
+   "proteasa",
+   "bromelina",
+   "desnaturalización",
+   "proteína"
+  ],
+  "preguntas": [
+   "¿Qué vasos cuajaron?",
+   "¿Por qué una enzima pierde su función al calentarse, si sus átomos siguen allí? (tipo Saber 11)",
+   "¿Por qué la papaya o la piña se usan para ablandar carnes?"
+  ],
+  "reto": "Cambia solo la fruta fresca (piña, papaya, kiwi, mango) y averigua cuáles impiden que la gelatina cuaje.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e033",
+  "grado": 11,
+  "eje": "seres-vivos-cuerpo",
+  "titulo": "Fríjoles en el laberinto: plantas que buscan la luz",
+  "gancho": "En el sotobosque de los Farallones las plantas compiten por un poco de luz. ¿Puede una planta encontrar la salida de un laberinto?",
+  "dba": "Analiza cómo los factores del ambiente (luz, salinidad, contaminación) afectan el desarrollo de los seres vivos y los ecosistemas.",
+  "prediccion": "Si siembras un fríjol dentro de una caja oscura con un solo agujero, ¿crecerá recto o buscará el agujero?",
+  "materiales": [
+   "caja de zapatos",
+   "cartón para tabiques",
+   "cinta",
+   "vaso con tierra",
+   "semillas de fríjol germinadas",
+   "regla",
+   "agua"
+  ],
+  "pasos": [
+   "Haz un agujero de 3 cm en un extremo de la caja.",
+   "Pega dos tabiques de cartón dentro de la caja formando un laberinto.",
+   "Pon el vaso con el fríjol germinado en el extremo opuesto al agujero.",
+   "Cierra la caja y colócala con el agujero hacia una ventana; ábrela solo para regar.",
+   "Mide y dibuja el crecimiento cada 2 días durante 2 semanas.",
+   "Compara con un fríjol control que crece fuera de la caja."
+  ],
+  "seguridad": "Lávate las manos después de manipular tierra. No consumas las semillas.",
+  "adulto": false,
+  "que_pasa": "Las plantas presentan fototropismo: crecen hacia la luz. La hormona auxina se acumula en el lado sombreado del tallo y estimula el alargamiento de esas células, lo que hace que el tallo se curve hacia la luz. Las plantas en oscuridad crecen alargadas y pálidas (etiolación) porque no producen suficiente clorofila.",
+  "concepto": "Fototropismo",
+  "vocabulario": [
+   "fototropismo",
+   "auxina",
+   "etiolación",
+   "hormona vegetal"
+  ],
+  "preguntas": [
+   "¿Logró la planta salir del laberinto? ¿En cuántos días?",
+   "¿Por qué el tallo se curva hacia la luz si todas sus células tienen la misma información genética? (tipo Saber 11)",
+   "¿Cómo deben ubicarse las plantas de una huerta escolar para aprovechar la luz?"
+  ],
+  "reto": "Cambia solo el color del filtro de luz en el agujero (celofán rojo vs. azul) y compara el crecimiento.",
+  "minutos": 20
+ },
+ {
+  "id": "g11-e034",
+  "grado": 11,
+  "eje": "seres-vivos-cuerpo",
+  "titulo": "Suelos salinos y lentejas que no germinan",
+  "gancho": "El riego excesivo y algunos fertilizantes pueden salinizar los suelos agrícolas del Valle del Cauca. ¿Cuánta sal soporta una semilla?",
+  "dba": "Analiza cómo los factores del ambiente (luz, salinidad, contaminación) afectan el desarrollo de los seres vivos y los ecosistemas.",
+  "prediccion": "¿Qué porcentaje de lentejas germinará en agua con 1 % de sal comparado con agua pura?",
+  "materiales": [
+   "semillas de lenteja",
+   "5 platos",
+   "algodón o servilletas",
+   "agua",
+   "sal",
+   "gramera",
+   "vaso medidor",
+   "regla"
+  ],
+  "pasos": [
+   "Prepara soluciones de 0; 0,25; 0,5; 1 y 2 % m/v de sal.",
+   "Pon algodón en cada plato y humedécelo con la misma cantidad de su solución.",
+   "Coloca 20 lentejas en cada plato.",
+   "Mantén los platos en el mismo lugar y rehumedécelos con su propia solución cada día.",
+   "Cuenta las semillas germinadas y mide la raíz más larga durante 5 días.",
+   "Grafica el porcentaje de germinación contra la concentración (curva dosis-respuesta)."
+  ],
+  "seguridad": "No consumas las semillas. Lávate las manos después de manipularlas.",
+  "adulto": false,
+  "que_pasa": "La sal en el medio hace que el agua tienda a salir de las células de la semilla (estrés osmótico) y los iones de sodio pueden ser tóxicos. Por eso, al aumentar la concentración, disminuyen la germinación y el crecimiento de la raíz. Las curvas dosis-respuesta se usan en ecotoxicología para establecer límites ambientales.",
+  "concepto": "Estrés salino y bioensayo",
+  "vocabulario": [
+   "salinización",
+   "germinación",
+   "estrés osmótico",
+   "dosis-respuesta"
+  ],
+  "preguntas": [
+   "¿A qué concentración se redujo a la mitad la germinación?",
+   "¿Por qué una alta concentración de sales en el suelo impide que las raíces absorban agua? (tipo Saber 11)",
+   "¿Qué prácticas agrícolas pueden evitar la salinización del suelo en el Valle?"
+  ],
+  "reto": "Cambia solo la semilla (lenteja, fríjol, maíz) en la misma concentración de 1 % y compara su tolerancia.",
+  "minutos": 20
+ },
+ {
+  "id": "g11-e035",
+  "grado": 11,
+  "eje": "quimica",
+  "titulo": "Pila de monedas al estilo de Volta",
+  "gancho": "En 1800 Alessandro Volta apiló discos de metal con cartón mojado y creó la primera batería. Con arandelas de cobre y zinc puedes reconstruirla.",
+  "dba": "Comprende que la óxido-reducción permite transformar energía química en eléctrica y viceversa (pilas, electrólisis, galvanoplastia y corrosión), y relaciona cuantitativamente carga y masa.",
+  "prediccion": "¿Cuántas celdas cobre-zinc crees que necesitas para encender un LED?",
+  "materiales": [
+   "6 arandelas de cobre (las monedas colombianas actuales no son de cobre)",
+   "6 arandelas galvanizadas (zinc)",
+   "cartón o papel secante en círculos",
+   "vinagre con una cucharadita de sal",
+   "multímetro escolar",
+   "LED rojo",
+   "cinta aislante"
+  ],
+  "pasos": [
+   "Remoja los círculos de cartón en vinagre con sal.",
+   "Apila: cobre – cartón húmedo – zinc; esa es una celda. Mide su voltaje.",
+   "Agrega celdas una sobre otra en el mismo orden y mide el voltaje con 2, 3, 4, 5 y 6 celdas.",
+   "Grafica voltaje contra número de celdas.",
+   "Conecta el LED (pata larga al cobre del extremo) y comprueba si enciende.",
+   "Mide la corriente con el LED conectado y calcula la potencia P = V · I."
+  ],
+  "seguridad": "Usa guantes si tienes heridas en las manos; el vinagre irrita. Desecha las arandelas y el cartón en el punto de residuos indicado. No pruebes la solución.",
+  "adulto": false,
+  "que_pasa": "En cada celda el zinc se oxida (Zn → Zn²⁺ + 2e⁻) y cede electrones que fluyen por el circuito hacia el cobre, donde se reducen iones H+ del electrolito. La diferencia de potencial de cada celda es cercana a 0,6–0,9 V en estas condiciones; al apilarlas en serie los voltajes se suman. La energía química se convierte en energía eléctrica.",
+  "concepto": "Celda galvánica",
+  "vocabulario": [
+   "celda galvánica",
+   "potencial de reducción",
+   "ánodo",
+   "cátodo",
+   "electrolito"
+  ],
+  "preguntas": [
+   "¿Qué voltaje dio una celda y cuál dio la pila completa?",
+   "En una celda Zn-Cu, ¿hacia dónde fluyen los electrones por el circuito externo? (tipo Saber 11)",
+   "¿Por qué las baterías de los carros eléctricos se fabrican con muchas celdas en serie?"
+  ],
+  "reto": "Cambia solo el electrolito (agua, agua con sal, vinagre con sal) y compara el voltaje de una celda.",
+  "minutos": 45
+ },
+ {
+  "id": "g11-e036",
+  "grado": 11,
+  "eje": "quimica",
+  "titulo": "Partiendo el agua con una pila",
+  "gancho": "El hidrógeno verde se propone como combustible del futuro en Colombia. Se obtiene separando el agua con electricidad. ¿En qué proporción salen los gases?",
+  "dba": "Comprende que la óxido-reducción permite transformar energía química en eléctrica y viceversa (pilas, electrólisis, galvanoplastia y corrosión), y relaciona cuantitativamente carga y masa.",
+  "prediccion": "Al separar el agua, ¿se producirá igual volumen de hidrógeno que de oxígeno?",
+  "materiales": [
+   "batería de 9 V",
+   "2 minas de lápiz gruesas (grafito) o lápices con punta en ambos extremos",
+   "vaso transparente",
+   "agua",
+   "bicarbonato de sodio",
+   "2 tubos de ensayo pequeños o jeringas sin émbolo",
+   "cables con caimanes",
+   "regla"
+  ],
+  "pasos": [
+   "Disuelve 1 cucharada de bicarbonato en 250 mL de agua.",
+   "Llena dos tubos con la solución e inviértelos dentro del vaso, cada uno sobre una mina de grafito.",
+   "Conecta cada mina a un polo de la batería con los caimanes (los caimanes fuera del agua).",
+   "Observa las burbujas en cada electrodo durante 15 minutos.",
+   "Mide la altura del gas acumulado en cada tubo cada 5 minutos.",
+   "Calcula la razón entre los volúmenes y compárala con la ecuación 2 H2O → 2 H2 + O2."
+  ],
+  "seguridad": "Usa SOLO bicarbonato como electrolito, nunca sal (produce cloro). Solo pila de 9 V, nunca la red eléctrica. No acerques llamas a los gases. Trabaja en un lugar ventilado con supervisión.",
+  "adulto": true,
+  "que_pasa": "La electrólisis usa energía eléctrica para provocar una reacción no espontánea. En el cátodo (polo negativo) el agua se reduce y produce hidrógeno; en el ánodo (polo positivo) se oxida y produce oxígeno. Por la estequiometría 2 H2O → 2 H2 + O2, el volumen de hidrógeno es el doble que el de oxígeno; en el ánodo de grafito parte del oxígeno puede reaccionar con el carbono, por eso a veces la razón sale mayor que 2.",
+  "concepto": "Electrólisis",
+  "vocabulario": [
+   "electrólisis",
+   "cátodo",
+   "ánodo",
+   "reacción no espontánea"
+  ],
+  "preguntas": [
+   "¿En qué electrodo se produjo más gas?",
+   "¿Qué relación de volúmenes predice la ecuación 2 H2O → 2 H2 + O2 a igual presión y temperatura? (tipo Saber 11)",
+   "¿Qué ventajas y desventajas tendría producir hidrógeno con energía solar en La Guajira?"
+  ],
+  "reto": "Cambia solo la concentración de bicarbonato (½, 1 y 2 cucharadas) y mide la rapidez de producción de gas.",
+  "minutos": 40
+ },
+ {
+  "id": "g11-e037",
+  "grado": 11,
+  "eje": "quimica",
+  "titulo": "La llave cobriza: galvanoplastia casera",
+  "gancho": "Las joyas 'enchapadas' y los grifos cromados se recubren con una capa delgada de metal usando electricidad. ¿Cuánto cobre se deposita en un tiempo dado?",
+  "dba": "Comprende que la óxido-reducción permite transformar energía química en eléctrica y viceversa (pilas, electrólisis, galvanoplastia y corrosión), y relaciona cuantitativamente carga y masa.",
+  "prediccion": "Si dejas pasar corriente el doble de tiempo, ¿se depositará el doble de cobre?",
+  "materiales": [
+   "vinagre blanco (sin sal)",
+   "2 trozos de alambre de cobre grueso (uno es el ánodo; el otro solo se usa si hay que preparar la solución)",
+   "llave vieja o clip de hierro limpio (cátodo)",
+   "pila de 1,5 V con portapilas",
+   "cables con caimanes",
+   "multímetro escolar",
+   "gramera de 0,01 g (si hay)",
+   "lija",
+   "vaso"
+  ],
+  "pasos": [
+   "Pon 150 mL de vinagre solo en el vaso; NO agregues sal.",
+   "Lija la llave, lávala, sécala y pésala.",
+   "Conecta el cobre al polo positivo y la llave al negativo; sumérgelos sin que se toquen. Si la corriente es muy baja, deja primero 5 minutos el cobre conectado con otro alambre de cobre como cátodo para que la solución gane iones Cu²⁺.",
+   "Mide la corriente con el multímetro en serie.",
+   "Deja funcionar 20 minutos; observa el color de la llave.",
+   "Saca, enjuaga, seca y pesa la llave. Compara con la ley de Faraday m = I · t · M / (n · F)."
+  ],
+  "seguridad": "Nunca agregues sal al electrolito: con sal la electrólisis puede liberar cloro, un gas tóxico. Usa solo una pila de 1,5 V, nunca la red eléctrica. Usa gafas y guantes; no pruebes ni toques la solución, que contiene iones de cobre, y deséchala diluida en el punto de residuos indicado por el docente.",
+  "adulto": true,
+  "que_pasa": "En la galvanoplastia el ánodo de cobre se oxida (Cu → Cu²⁺ + 2e⁻) y los iones viajan por la solución hasta el cátodo, donde se reducen y se depositan como cobre metálico (Cu²⁺ + 2e⁻ → Cu). La ley de Faraday indica que la masa depositada es proporcional a la carga que pasa: m = I · t · M / (n · F), con F = 96 485 C/mol, M = 63,5 g/mol y n = 2. Con 20 mA durante 20 minutos pasan 24 C y se esperan solo unos 8 mg de cobre: necesitas la gramera más precisa disponible o comparar el color.",
+  "concepto": "Galvanoplastia y ley de Faraday",
+  "vocabulario": [
+   "galvanoplastia",
+   "ley de Faraday",
+   "carga eléctrica",
+   "reducción"
+  ],
+  "preguntas": [
+   "¿De qué color quedó la llave y qué masa ganó?",
+   "Si se duplica la corriente durante el mismo tiempo, ¿qué pasa con la masa depositada? (tipo Saber 11)",
+   "¿Por qué se recubren con zinc o cromo algunas piezas de motos y carros?"
+  ],
+  "reto": "Cambia solo el tiempo de electrólisis (10, 20 y 30 minutos) y verifica la proporcionalidad de la masa depositada.",
+  "minutos": 50
+ },
+ {
+  "id": "g11-e038",
+  "grado": 11,
+  "eje": "quimica",
+  "titulo": "Ánodos de sacrificio en el puerto",
+  "gancho": "Los barcos y muelles de Buenaventura llevan bloques de zinc atornillados que se van 'gastando' para que el acero no se oxide. ¿Cómo funciona esta protección?",
+  "dba": "Comprende que la óxido-reducción permite transformar energía química en eléctrica y viceversa (pilas, electrólisis, galvanoplastia y corrosión), y relaciona cuantitativamente carga y masa.",
+  "prediccion": "¿Qué clavo se oxidará menos en agua salada: el desnudo, el pintado, el envuelto en papel aluminio o el unido a un trozo de zinc?",
+  "materiales": [
+   "5 clavos de hierro sin galvanizar",
+   "1 clavo galvanizado",
+   "esmalte de uñas transparente",
+   "papel aluminio",
+   "arandela galvanizada",
+   "6 frascos",
+   "agua con sal (3,5 %)",
+   "lupa"
+  ],
+  "pasos": [
+   "Lija los clavos de hierro para limpiarlos.",
+   "Prepara: clavo desnudo; clavo pintado con esmalte; clavo envuelto en aluminio; clavo atado a una arandela de zinc; clavo galvanizado; clavo desnudo en agua dulce (control).",
+   "Sumerge cada uno en su frasco con agua salada (el control en agua dulce).",
+   "Observa con lupa cada 2 días durante 10 días.",
+   "Califica la corrosión en una escala de 0 a 4 y toma fotos.",
+   "Explica los resultados con la tabla de potenciales de reducción."
+  ],
+  "seguridad": "Usa guantes al lijar. Desecha el agua con óxido por el desagüe con bastante agua.",
+  "adulto": false,
+  "que_pasa": "La corrosión del hierro es una oxidación electroquímica acelerada por la sal, que hace al agua más conductora. Una capa de pintura separa el metal del ambiente. Un metal más activo (con menor potencial de reducción), como el zinc o el aluminio, se oxida en lugar del hierro y lo protege: es la protección catódica con ánodo de sacrificio.",
+  "concepto": "Corrosión y protección catódica",
+  "vocabulario": [
+   "corrosión",
+   "ánodo de sacrificio",
+   "protección catódica",
+   "potencial de reducción"
+  ],
+  "preguntas": [
+   "¿Qué clavo mostró menos corrosión?",
+   "¿Por qué el zinc protege al hierro si ambos son metales? (tipo Saber 11)",
+   "¿Por qué los techos de zinc de las casas cerca del mar se deterioran más rápido?"
+  ],
+  "reto": "Cambia solo la concentración de sal del agua (0, 1, 3,5 y 7 %) con clavos desnudos y compara la corrosión.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e039",
+  "grado": 11,
+  "eje": "quimica",
+  "titulo": "Soplando en el repollo: el equilibrio del gas carbónico",
+  "gancho": "La gaseosa pierde el gas cuando se calienta, y el mar absorbe parte del CO2 que emitimos. Esas transformaciones son reversibles y están en equilibrio.",
+  "dba": "Explica el equilibrio químico como un proceso dinámico y predice su desplazamiento ante cambios de concentración, presión o temperatura (principio de Le Chatelier).",
+  "prediccion": "Si soplas con un pitillo en agua con indicador de repollo morado, ¿cambiará de color? ¿Y si luego la calientas?",
+  "materiales": [
+   "indicador de repollo morado",
+   "pitillo",
+   "2 vasos",
+   "agua",
+   "una pizca de bicarbonato",
+   "agua tibia en baño María (la maneja el adulto)",
+   "gafas"
+  ],
+  "pasos": [
+   "Pon 100 mL de agua con 30 mL de indicador y una pizca muy pequeña de bicarbonato (color azul-verdoso).",
+   "Sopla suavemente con el pitillo durante 1 a 3 minutos y anota el cambio de color.",
+   "Divide la solución en dos vasos.",
+   "Deja un vaso a temperatura ambiente y pon el otro en baño María tibio (el adulto lo maneja).",
+   "Observa cuál regresa a su color original y en cuánto tiempo.",
+   "Escribe el equilibrio y explica los desplazamientos con el principio de Le Chatelier."
+  ],
+  "seguridad": "Sopla, nunca aspires por el pitillo. Usa gafas. El baño María lo maneja un adulto.",
+  "adulto": true,
+  "que_pasa": "El CO2 del aliento se disuelve en el agua y forma ácido carbónico: CO2 + H2O ⇌ H2CO3 ⇌ H+ + HCO3−. Al aumentar el CO2 el equilibrio se desplaza a la derecha, sube la concentración de H+ y el indicador cambia hacia el morado o rosado. Al calentar, el CO2 es menos soluble y escapa; el equilibrio se desplaza a la izquierda y el color regresa (principio de Le Chatelier).",
+  "concepto": "Equilibrio químico y principio de Le Chatelier",
+  "vocabulario": [
+   "equilibrio químico",
+   "reacción reversible",
+   "principio de Le Chatelier",
+   "ácido carbónico"
+  ],
+  "preguntas": [
+   "¿Qué color tomó la solución después de soplar?",
+   "Si a un sistema en equilibrio se le retira un producto, ¿hacia dónde se desplaza? (tipo Saber 11)",
+   "¿Por qué el aumento de CO2 en la atmósfera hace más ácidos los océanos?"
+  ],
+  "reto": "Cambia solo el tiempo de soplado (30 s, 1 min, 2 min) y relaciona el color con la cantidad de CO2 agregado.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e040",
+  "grado": 11,
+  "eje": "quimica",
+  "titulo": "Equilibrio dinámico con dos probetas",
+  "gancho": "En el MIO de la Estación Universidades, en la hora pico, tantas personas entran como salen: el número dentro parece constante, aunque nadie está quieto. Así es un equilibrio químico.",
+  "dba": "Explica el equilibrio químico como un proceso dinámico y predice su desplazamiento ante cambios de concentración, presión o temperatura (principio de Le Chatelier).",
+  "prediccion": "Si trasvasas agua entre dos recipientes con vasos de distinto tamaño, ¿uno terminará vacío o ambos se estabilizarán?",
+  "materiales": [
+   "2 probetas o botellas iguales con marcas en mL",
+   "pitillo grueso y pitillo delgado (o dos vasitos de distinto tamaño)",
+   "agua con colorante",
+   "hoja cuadriculada"
+  ],
+  "pasos": [
+   "Llena la probeta A con 100 mL de agua (reactivo) y deja vacía la B (producto).",
+   "Un estudiante pasa agua de A a B con el pitillo grueso; otro, al mismo tiempo, pasa de B a A con el pitillo delgado.",
+   "Cada ciclo, anota el volumen en A y en B.",
+   "Repite 20 ciclos.",
+   "Grafica volumen en A y B contra número de ciclo.",
+   "Calcula la 'constante de equilibrio' K = volumen B / volumen A al final; repite empezando con el agua en B."
+  ],
+  "seguridad": "Trabaja sobre una bandeja y seca los derrames. Cada estudiante usa su propio pitillo.",
+  "adulto": false,
+  "que_pasa": "Al principio la transferencia directa domina, pero a medida que A se vacía y B se llena, las velocidades de ida y vuelta se igualan: el sistema llega a un equilibrio dinámico donde los volúmenes no cambian aunque el agua sigue moviéndose. El valor final (K) depende de la relación entre las velocidades, no del punto de partida, como ocurre con la constante de equilibrio Kc = [productos] / [reactivos].",
+  "concepto": "Equilibrio dinámico",
+  "vocabulario": [
+   "equilibrio dinámico",
+   "constante de equilibrio",
+   "velocidad directa",
+   "velocidad inversa"
+  ],
+  "preguntas": [
+   "¿Después de cuántos ciclos se estabilizaron los volúmenes?",
+   "En el equilibrio, ¿la reacción se detiene? Explica con base en las velocidades. (tipo Saber 11)",
+   "¿Qué otros ejemplos de equilibrio dinámico ves en tu ciudad o en tu cuerpo?"
+  ],
+  "reto": "Cambia solo el tamaño del pitillo que va de B a A y compara el nuevo valor de K.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e041",
+  "grado": 11,
+  "eje": "quimica",
+  "titulo": "Vinagre diluido y la velocidad de reacción",
+  "gancho": "Para limpiar el sarro de la tetera se usa vinagre. ¿Actúa igual de rápido el vinagre puro que el diluido?",
+  "dba": "Explica cómo la concentración, la temperatura y los catalizadores modifican la velocidad de las reacciones a partir de la teoría de colisiones.",
+  "prediccion": "Si diluyes el vinagre a la mitad, ¿la reacción con bicarbonato tardará el doble?",
+  "materiales": [
+   "vinagre",
+   "agua",
+   "bicarbonato",
+   "4 botellas pequeñas iguales",
+   "4 globos",
+   "jeringa de 20 mL",
+   "gramera",
+   "cronómetro",
+   "cinta métrica flexible"
+  ],
+  "pasos": [
+   "Prepara 40 mL de vinagre al 100 %, 75 %, 50 % y 25 % (completando con agua).",
+   "Pon 1 g de bicarbonato en cada globo.",
+   "Ajusta los globos a las botellas y deja caer el bicarbonato al mismo tiempo.",
+   "Mide la circunferencia de cada globo a los 10, 20, 30 y 60 segundos.",
+   "Calcula la velocidad inicial como cambio de volumen en los primeros 10 s.",
+   "Grafica la velocidad inicial contra la concentración del vinagre."
+  ],
+  "seguridad": "Usa gafas; no pruebes las soluciones. Trabaja sobre una bandeja.",
+  "adulto": false,
+  "que_pasa": "Según la teoría de colisiones, una reacción ocurre cuando las partículas chocan con suficiente energía y orientación adecuada. A mayor concentración hay más partículas por unidad de volumen y más choques por segundo, así que la reacción es más rápida. La forma de la gráfica velocidad contra concentración permite estimar el orden de reacción.",
+  "concepto": "Velocidad de reacción: concentración",
+  "vocabulario": [
+   "velocidad de reacción",
+   "concentración",
+   "teoría de colisiones",
+   "orden de reacción"
+  ],
+  "preguntas": [
+   "¿Qué velocidad inicial tuvo el vinagre al 100 % y al 50 %?",
+   "Si al duplicar la concentración la velocidad se duplica, ¿de qué orden es la reacción respecto a ese reactivo? (tipo Saber 11)",
+   "¿Por qué los productos de limpieza concentrados se diluyen según la etiqueta?"
+  ],
+  "reto": "Deja la concentración en 100 % y cambia solo la masa de bicarbonato (0,5; 1 y 2 g).",
+  "minutos": 40
+ },
+ {
+  "id": "g11-e042",
+  "grado": 11,
+  "eje": "quimica",
+  "titulo": "Espuma de elefante: catalizadores en acción",
+  "gancho": "En el cuerpo, enzimas como la catalasa aceleran reacciones millones de veces. La levadura de panadería contiene esa enzima y puede servir de catalizador.",
+  "dba": "Explica cómo la concentración, la temperatura y los catalizadores modifican la velocidad de las reacciones a partir de la teoría de colisiones.",
+  "prediccion": "Si agregas levadura al agua oxigenada, ¿cuánto más rápido se producirá oxígeno? ¿Se gastará la levadura?",
+  "materiales": [
+   "agua oxigenada al 3 % (farmacia)",
+   "levadura seca",
+   "agua tibia",
+   "jabón de loza",
+   "probeta o botella angosta de 250 mL",
+   "bandeja",
+   "regla",
+   "cronómetro",
+   "gafas y guantes"
+  ],
+  "pasos": [
+   "Con gafas y guantes, pon 50 mL de agua oxigenada y un chorrito de jabón en la botella sobre la bandeja.",
+   "Mezcla aparte 1 cucharadita de levadura con 2 cucharadas de agua tibia.",
+   "Vierte la levadura en la botella y mide la altura de la espuma cada 10 s durante 1 minuto.",
+   "Repite sin levadura (control) y observa.",
+   "Repite con ½ y 2 cucharaditas de levadura.",
+   "Grafica altura de espuma contra tiempo para cada cantidad de catalizador."
+  ],
+  "seguridad": "Usa solo agua oxigenada al 3 %, gafas y guantes. No toques la espuma con los ojos ni la boca. No mezcles con otros productos de limpieza.",
+  "adulto": true,
+  "que_pasa": "El peróxido de hidrógeno se descompone lentamente: 2 H2O2 → 2 H2O + O2. La catalasa de la levadura actúa como catalizador: ofrece un camino de reacción con menor energía de activación, y la reacción se acelera muchísimo. El oxígeno queda atrapado en el jabón y forma la espuma. El catalizador no se consume: se recupera al final de la reacción.",
+  "concepto": "Catalizadores",
+  "vocabulario": [
+   "catalizador",
+   "energía de activación",
+   "enzima",
+   "descomposición"
+  ],
+  "preguntas": [
+   "¿Cuánto más alta fue la espuma con levadura que sin ella?",
+   "¿Cómo cambia el diagrama de energía de una reacción cuando se agrega un catalizador? (tipo Saber 11)",
+   "¿Para qué sirve el convertidor catalítico del escape de los carros?"
+  ],
+  "reto": "Cambia solo la temperatura del agua oxigenada (fría vs. ambiente) con la misma cantidad de levadura.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e043",
+  "grado": 11,
+  "eje": "quimica",
+  "titulo": "Diez veces más ácido: la escala logarítmica del pH",
+  "gancho": "La lluvia ácida, los jugos y el agua del río se comparan con el pH. Pero bajar un solo punto de pH significa diez veces más acidez. ¿Cómo se ve eso?",
+  "dba": "Relaciona la concentración de iones hidrógeno con el pH mediante una escala logarítmica y explica el comportamiento de ácidos y bases en soluciones diluidas.",
+  "prediccion": "Si diluyes vinagre 10 veces, ¿su pH subirá en 1 unidad, en 10 unidades o no cambiará?",
+  "materiales": [
+   "vinagre",
+   "agua",
+   "indicador de repollo morado (o papel indicador universal)",
+   "6 vasos transparentes",
+   "jeringa de 10 mL",
+   "marcador"
+  ],
+  "pasos": [
+   "Pon 10 mL de vinagre en el vaso 1.",
+   "Toma 1 mL del vaso 1 y complétalo con 9 mL de agua en el vaso 2 (dilución 1:10).",
+   "Repite la dilución sucesiva hasta el vaso 6.",
+   "Agrega 10 mL de indicador (o mide con papel universal) en cada vaso.",
+   "Asigna el pH aproximado a cada vaso con la escala de colores.",
+   "Calcula la concentración relativa de H+ con [H+] = 10^(−pH) y compara con la dilución."
+  ],
+  "seguridad": "Usa gafas. No pruebes las soluciones. Desecha todo por el desagüe con abundante agua.",
+  "adulto": false,
+  "que_pasa": "El pH es el logaritmo negativo de la concentración de iones hidrógeno: pH = −log [H+]. Para un ácido fuerte, diluir 10 veces sube el pH exactamente en 1 unidad; el ácido acético es débil, por eso el pH sube aproximadamente 0,5 por cada dilución 1:10 hasta acercarse a 7. La escala logarítmica permite expresar concentraciones muy diferentes con números manejables.",
+  "concepto": "Escala logarítmica de pH",
+  "vocabulario": [
+   "pH",
+   "logaritmo",
+   "dilución",
+   "ácido débil"
+  ],
+  "preguntas": [
+   "¿Qué pH tuvo el vaso 1 y el vaso 4?",
+   "Una solución con pH 4 tiene ___ veces más iones H+ que una con pH 6. (tipo Saber 11)",
+   "¿Por qué un pequeño cambio de pH en el río Cauca puede afectar a los peces?"
+  ],
+  "reto": "Cambia solo el ácido (vinagre vs. jugo de limón) y compara cómo cambia el pH con las diluciones.",
+  "minutos": 40
+ },
+ {
+  "id": "g11-e044",
+  "grado": 11,
+  "eje": "quimica",
+  "titulo": "Moles de gas a la presión de Cali",
+  "gancho": "Cali está a unos 1000 m de altura, donde la presión atmosférica es cerca de 0,89 atm. ¿Cuántos moles de CO2 caben en un volumen medido?",
+  "dba": "Usa la ecuación de estado de los gases ideales para relacionar presión, volumen, temperatura y cantidad de sustancia en reacciones que producen gases.",
+  "prediccion": "Si 1 g de bicarbonato reacciona con vinagre en exceso, ¿qué volumen de CO2 (en mL) esperas recoger en Cali?",
+  "materiales": [
+   "botella de 2 L llena de agua",
+   "platón grande con agua",
+   "manguera delgada",
+   "botella pequeña con tapa perforada para la manguera",
+   "bicarbonato",
+   "vinagre",
+   "gramera",
+   "termómetro",
+   "vaso medidor"
+  ],
+  "pasos": [
+   "Invierte la botella de 2 L llena de agua en el platón.",
+   "Pon 100 mL de vinagre en la botella pequeña y conecta la manguera hasta dentro de la botella invertida.",
+   "Agrega 1,0 g de bicarbonato envuelto en papel y tapa rápidamente.",
+   "Cuando termine la reacción, mide el volumen de gas recogido (agua desplazada).",
+   "Mide la temperatura y usa la presión del CO2: P ≈ 0,89 atm − 0,03 atm (vapor de agua a 25 °C) = 0,86 atm para calcular n = P · V / (R · T), con R = 0,082 atm·L/(mol·K).",
+   "Compara con los moles teóricos de CO2 (1,0 g / 84 g/mol) y calcula el rendimiento."
+  ],
+  "seguridad": "Sujeta bien la tapa con la manguera; si se acumula presión, retírala. Usa gafas. No pruebes los líquidos.",
+  "adulto": false,
+  "que_pasa": "La ecuación de los gases ideales relaciona presión, volumen, moles y temperatura: P · V = n · R · T. 1,0 g de bicarbonato produce 0,0119 mol de CO2, que a 0,89 atm y 298 K ocuparían unos 327 mL; como el gas se recoge sobre agua, también contiene vapor (unos 0,03 atm a 25 °C), así que el volumen esperado sube a unos 338 mL. A menor presión que a nivel del mar, el mismo número de moles ocupa más volumen. El valor medido suele ser algo menor porque el CO2 se disuelve parcialmente en el agua.",
+  "concepto": "Ecuación de estado de los gases ideales",
+  "vocabulario": [
+   "gas ideal",
+   "constante R",
+   "mol",
+   "presión atmosférica"
+  ],
+  "preguntas": [
+   "¿Qué volumen de CO2 recogiste?",
+   "A temperatura constante, ¿el mismo número de moles de gas ocupa más volumen en Bogotá o en Cartagena? (tipo Saber 11)",
+   "¿Por qué los paquetes de papas compradas en Cali se inflan al llegar a Bogotá?"
+  ],
+  "reto": "Cambia solo la masa de bicarbonato (0,5; 1,0 y 1,5 g) y verifica que el volumen sea proporcional a los moles.",
+  "minutos": 50
+ },
+ {
+  "id": "g11-e045",
+  "grado": 11,
+  "eje": "quimica",
+  "titulo": "Bioplástico de almidón de yuca",
+  "gancho": "El Valle del Cauca y el Cauca producen mucha yuca, y Colombia restringe cada vez más los plásticos de un solo uso. ¿Podemos fabricar un plástico biodegradable con almidón?",
+  "dba": "Explica la estructura de compuestos orgánicos y polímeros, sus propiedades y su impacto ambiental, proponiendo alternativas sostenibles.",
+  "prediccion": "¿El bioplástico con más glicerina saldrá más rígido o más flexible?",
+  "materiales": [
+   "almidón de yuca (fécula)",
+   "agua",
+   "vinagre",
+   "glicerina de farmacia",
+   "olla pequeña y estufa (uso del adulto)",
+   "cuchara",
+   "papel mantequilla",
+   "colorante vegetal opcional"
+  ],
+  "pasos": [
+   "Mezcla en frío 10 g de almidón, 60 mL de agua, 5 mL de vinagre y 5 mL de glicerina.",
+   "El adulto calienta la mezcla a fuego bajo revolviendo hasta que se vuelva transparente y espesa (unos 5 minutos).",
+   "Extiende la mezcla sobre papel mantequilla con una capa delgada y uniforme.",
+   "Prepara una segunda mezcla igual pero con 10 mL de glicerina, y otra sin glicerina.",
+   "Deja secar 2 días y compara flexibilidad, resistencia y transparencia.",
+   "Entierra un trozo en tierra húmeda y otro de plástico común; observa durante 3 semanas."
+  ],
+  "seguridad": "El calentamiento lo hace un adulto en la estufa; la mezcla caliente puede quemar. Nunca lo hace el estudiante solo. No consumas el producto.",
+  "adulto": true,
+  "que_pasa": "El almidón es un polímero natural formado por cadenas de glucosa (amilosa y amilopectina). Al calentarlo en agua, las cadenas se desordenan y forman un gel; al secarse se unen formando una película. La glicerina actúa como plastificante: se ubica entre las cadenas y reduce sus atracciones, haciendo el material más flexible. Los microorganismos del suelo pueden degradar el almidón, a diferencia del polietileno derivado del petróleo.",
+  "concepto": "Polímeros y bioplásticos",
+  "vocabulario": [
+   "polímero",
+   "monómero",
+   "plastificante",
+   "biodegradable"
+  ],
+  "preguntas": [
+   "¿Qué muestra resultó más flexible?",
+   "¿Por qué el polietileno tarda cientos de años en degradarse y el bioplástico de almidón no? (tipo Saber 11)",
+   "¿Qué productos del colegio podrían reemplazarse por bioplásticos hechos con yuca?"
+  ],
+  "reto": "Cambia solo la cantidad de glicerina (0, 2, 5 y 10 mL) y mide la elongación de una tira antes de romperse.",
+  "minutos": 60
+ },
+ {
+  "id": "g11-e046",
+  "grado": 11,
+  "eje": "quimica",
+  "titulo": "Antiácido en agua fría y caliente: la regla de los 10 grados",
+  "gancho": "Los alimentos se dañan más rápido fuera de la nevera en el calor caleño. Las reacciones químicas se aceleran con la temperatura. ¿Cuánto?",
+  "dba": "Explica cómo la concentración, la temperatura y los catalizadores modifican la velocidad de las reacciones a partir de la teoría de colisiones.",
+  "prediccion": "Si la temperatura del agua aumenta 10 °C, ¿la tableta efervescente se disolverá el doble de rápido?",
+  "materiales": [
+   "4 tabletas efervescentes iguales",
+   "4 vasos con 200 mL de agua",
+   "agua con hielo, agua ambiente y agua tibia a dos temperaturas (servida por un adulto, máx. 50 °C)",
+   "termómetro",
+   "cronómetro"
+  ],
+  "pasos": [
+   "Prepara 4 vasos de agua a unos 10, 20, 30 y 40 °C y mide su temperatura exacta.",
+   "Echa una tableta entera en el primer vaso y mide el tiempo hasta que termine de burbujear.",
+   "Repite en los demás vasos.",
+   "Calcula la rapidez relativa como 1 / tiempo.",
+   "Grafica la rapidez contra la temperatura y calcula cuántas veces aumenta cada 10 °C.",
+   "Opcional: grafica ln(1/t) contra 1/T (en kelvin) para explorar la ecuación de Arrhenius."
+  ],
+  "seguridad": "Las tabletas efervescentes (preferiblemente antiácido sin aspirina o vitamina C efervescente) las aporta y guarda el docente. El agua tibia la sirve un adulto (máx. 50 °C). No ingieras las tabletas ni la solución.",
+  "adulto": true,
+  "que_pasa": "Al aumentar la temperatura, las partículas se mueven más rápido, chocan más a menudo y, sobre todo, una fracción mucho mayor de choques supera la energía de activación. Por eso, para muchas reacciones, la velocidad aproximadamente se duplica con cada aumento de 10 °C. La ecuación de Arrhenius, k = A · e^(−Ea / RT), describe esta dependencia.",
+  "concepto": "Velocidad de reacción: temperatura",
+  "vocabulario": [
+   "energía de activación",
+   "ecuación de Arrhenius",
+   "temperatura",
+   "constante de velocidad"
+  ],
+  "preguntas": [
+   "¿Cuántas veces más rápido reaccionó la tableta a 40 °C que a 10 °C?",
+   "¿Por qué refrigerar los alimentos retrasa su descomposición? (tipo Saber 11)",
+   "¿Por qué los medicamentos indican 'consérvese en lugar fresco'?"
+  ],
+  "reto": "Deja la temperatura fija en 20 °C y cambia solo el volumen de agua (100, 200 y 400 mL).",
+  "minutos": 35
+ },
+ {
+  "id": "g11-e047",
+  "grado": 11,
+  "eje": "tierra-universo",
+  "titulo": "Medir el Sol desde Cali con una cámara oscura",
+  "gancho": "El Sol está a unos 150 millones de kilómetros. Con una caja de cartón y una regla puedes calcular su diámetro sin mirarlo directamente.",
+  "dba": "Analiza fenómenos de la Tierra y el universo (escalas del sistema solar, sismicidad, cambio climático) y cuestiones ambientales actuales como la acidificación de los océanos, con base en evidencia.",
+  "prediccion": "¿Cuántas veces más grande que la Tierra crees que es el Sol?",
+  "materiales": [
+   "tubo o caja larga de cartón (1 m)",
+   "papel aluminio",
+   "alfiler",
+   "papel blanco",
+   "cinta",
+   "regla"
+  ],
+  "pasos": [
+   "Tapa un extremo del tubo con papel aluminio y hazle un agujero con el alfiler.",
+   "Pega papel blanco en el otro extremo como pantalla.",
+   "Apunta el tubo al Sol guiándote por su sombra (sin mirar al Sol) hasta ver un disco de luz en la pantalla.",
+   "Mide el diámetro de la imagen (d) y la distancia agujero-pantalla (L).",
+   "Calcula el diámetro del Sol: D = d · (distancia Tierra-Sol) / L, usando 1,5 × 10^8 km.",
+   "Compara tu resultado con el valor aceptado (unos 1,39 millones de km) y con el diámetro de la Tierra."
+  ],
+  "seguridad": "NUNCA mires al Sol directamente ni a través del agujero o de una lupa. Usa solo la imagen proyectada en la pantalla.",
+  "adulto": false,
+  "que_pasa": "La cámara oscura forma una imagen invertida del Sol por la propagación rectilínea de la luz. Se forman dos triángulos semejantes, así que d / L = D / distancia al Sol. La razón diámetro/distancia del Sol es cerca de 1/107, por eso con un tubo de 1 m la imagen mide unos 9 mm. El Sol tiene un diámetro unas 109 veces mayor que el de la Tierra.",
+  "concepto": "Triángulos semejantes en astronomía",
+  "vocabulario": [
+   "cámara oscura",
+   "triángulos semejantes",
+   "diámetro angular",
+   "unidad astronómica"
+  ],
+  "preguntas": [
+   "¿Qué diámetro de la imagen obtuviste?",
+   "Si se duplica la longitud del tubo, ¿qué pasa con el tamaño de la imagen del Sol? (tipo Saber 11)",
+   "¿Cómo se podría observar con seguridad un eclipse solar desde Cali?"
+  ],
+  "reto": "Cambia solo la longitud del tubo (50 cm, 1 m y 1,5 m) y verifica que la razón d / L se mantenga.",
+  "minutos": 40
+ },
+ {
+  "id": "g11-e048",
+  "grado": 11,
+  "eje": "tierra-universo",
+  "titulo": "El sistema solar a escala en la ciclovía",
+  "gancho": "Los domingos la ciclovía de Cali recorre kilómetros. Si el Sol fuera un balón de fútbol en el Parque del Perro, ¿dónde quedaría Neptuno?",
+  "dba": "Analiza fenómenos de la Tierra y el universo (escalas del sistema solar, sismicidad, cambio climático) y cuestiones ambientales actuales como la acidificación de los océanos, con base en evidencia.",
+  "prediccion": "Si el Sol es un balón de 22 cm, ¿qué tamaño tendría la Tierra y a qué distancia estaría?",
+  "materiales": [
+   "balón de fútbol (Sol)",
+   "semillas, granos y bolitas de plastilina",
+   "cinta métrica de 30 m o decámetro",
+   "app de mapas en el celular",
+   "tabla de datos astronómicos",
+   "calculadora"
+  ],
+  "pasos": [
+   "Calcula la escala: 22 cm / 1 392 000 km (diámetro del Sol).",
+   "Con esa escala calcula el diámetro de cada planeta y fabrícalo con plastilina o semillas.",
+   "Calcula la distancia de cada planeta al Sol a escala.",
+   "Ubica el Sol en el patio y mide con pasos o cinta la posición de Mercurio, Venus, Tierra y Marte.",
+   "Con la app de mapas ubica sobre el mapa de Cali dónde quedarían Júpiter, Saturno, Urano y Neptuno.",
+   "Calcula a escala la distancia a la estrella más cercana (Próxima Centauri, 4,24 años luz)."
+  ],
+  "seguridad": "Si salen del colegio, háganlo con docente y respetando las normas de tránsito. Trabajen en zonas peatonales.",
+  "adulto": false,
+  "que_pasa": "Con un Sol de 22 cm, la Tierra sería un grano de unos 2 mm a cerca de 24 m, Júpiter una canica de unos 2,2 cm a unos 123 m y Neptuno estaría a más de 700 m. A esa escala la estrella más cercana quedaría a unos 6000 km, más allá de México. Los modelos a escala muestran que el universo es mayoritariamente espacio vacío y que las distancias son enormes comparadas con los tamaños.",
+  "concepto": "Escalas del sistema solar",
+  "vocabulario": [
+   "escala",
+   "unidad astronómica",
+   "año luz",
+   "notación científica"
+  ],
+  "preguntas": [
+   "¿A qué distancia quedó la Tierra del 'Sol'?",
+   "Si la luz tarda unos 8 minutos en llegar del Sol a la Tierra, ¿cuánto tardaría en llegar a Júpiter, que está a unas 5,2 UA? (tipo Saber 11)",
+   "¿Por qué los dibujos de los libros muestran los planetas mucho más cerca de lo que están?"
+  ],
+  "reto": "Cambia solo el objeto que representa al Sol (una pelota de ping-pong de 4 cm) y recalcula las distancias.",
+  "minutos": 60
+ },
+ {
+  "id": "g11-e049",
+  "grado": 11,
+  "eje": "tierra-universo",
+  "titulo": "Corales de Gorgona y cáscaras de huevo ácidas",
+  "gancho": "Los arrecifes de coral de Gorgona y Malpelo están formados por carbonato de calcio. Cuando el océano absorbe CO2 se vuelve más ácido. ¿Qué le pasa al carbonato?",
+  "dba": "Analiza fenómenos de la Tierra y el universo (escalas del sistema solar, sismicidad, cambio climático) y cuestiones ambientales actuales como la acidificación de los océanos, con base en evidencia.",
+  "prediccion": "¿Qué cáscara de huevo perderá más masa en una semana: la que está en agua, en agua con gas o en vinagre?",
+  "materiales": [
+   "cáscaras de huevo limpias y secas (carbonato de calcio)",
+   "agua",
+   "agua con gas sin sabor",
+   "vinagre",
+   "3 frascos",
+   "gramera de 0,1 g",
+   "indicador de repollo morado",
+   "papel de cocina"
+  ],
+  "pasos": [
+   "Pesa tres porciones iguales de cáscara (unos 3 g cada una).",
+   "Ponlas en frascos con 100 mL de agua, agua con gas y vinagre, respectivamente.",
+   "Mide el pH aproximado de cada líquido con el indicador.",
+   "Observa las burbujas y tapa con un paño (no herméticamente).",
+   "Después de 7 días, saca, enjuaga, seca y pesa las cáscaras.",
+   "Calcula el porcentaje de masa perdida y relaciónalo con el pH."
+  ],
+  "seguridad": "No tapes herméticamente los frascos: se produce CO2. Lávate las manos después de manipular cáscaras de huevo. No pruebes los líquidos.",
+  "adulto": false,
+  "que_pasa": "El carbonato de calcio reacciona con los ácidos y se disuelve: CaCO3 + 2 H+ → Ca²⁺ + H2O + CO2. El CO2 que absorbe el océano forma ácido carbónico y disminuye el pH del agua de mar, y además reduce los iones carbonato que los corales necesitan para construir su esqueleto. Así, la acidificación debilita arrecifes, conchas y cadenas alimentarias marinas.",
+  "concepto": "Acidificación de los océanos",
+  "vocabulario": [
+   "acidificación",
+   "carbonato de calcio",
+   "arrecife",
+   "ciclo del carbono"
+  ],
+  "preguntas": [
+   "¿Qué porcentaje de masa perdió la cáscara en vinagre?",
+   "¿Cómo se relaciona el aumento de CO2 atmosférico con la disminución del pH del océano? (tipo Saber 11)",
+   "¿Por qué la protección de Gorgona y Malpelo es importante para la pesca del Pacífico colombiano?"
+  ],
+  "reto": "Cambia solo la concentración de vinagre (25, 50 y 100 %) y grafica la masa perdida.",
+  "minutos": 30
+ },
+ {
+  "id": "g11-e050",
+  "grado": 11,
+  "eje": "tierra-universo",
+  "titulo": "¿Dónde fue el temblor? Triangulación de epicentros",
+  "gancho": "El Servicio Geológico Colombiano ubica cada sismo en minutos usando estaciones sismológicas en todo el país. ¿Cómo saben dónde ocurrió?",
+  "dba": "Analiza fenómenos de la Tierra y el universo (escalas del sistema solar, sismicidad, cambio climático) y cuestiones ambientales actuales como la acidificación de los océanos, con base en evidencia.",
+  "prediccion": "Si una estación registra la onda S 5 segundos después de la onda P, ¿a cuántos kilómetros crees que está el epicentro?",
+  "materiales": [
+   "mapa del suroccidente colombiano con escala",
+   "compás",
+   "regla",
+   "datos de tres estaciones (tiempos de llegada de ondas P y S dados por el docente)",
+   "calculadora"
+  ],
+  "pasos": [
+   "Para cada estación calcula la diferencia de tiempo Δt = tS − tP.",
+   "Calcula la distancia al epicentro con d = Δt · (vP · vS) / (vP − vS), usando vP ≈ 6 km/s y vS ≈ 3,5 km/s.",
+   "Convierte cada distancia a la escala del mapa.",
+   "Traza con el compás un círculo alrededor de cada estación con su radio.",
+   "El punto donde se cruzan los tres círculos es el epicentro: identifica el municipio más cercano.",
+   "Discute qué pasa si solo tienes dos estaciones."
+  ],
+  "seguridad": "Usa el compás con cuidado: tiene punta. Este experimento no requiere materiales de riesgo.",
+  "adulto": false,
+  "que_pasa": "Los sismos generan ondas P (primarias, más rápidas, longitudinales) y ondas S (secundarias, más lentas, transversales). Cuanto más lejos está la estación, mayor es el retraso entre ambas. Con la distancia a tres estaciones se determina un único punto: el epicentro. Con aproximadamente 8 km por cada segundo de diferencia S-P se hace un cálculo rápido.",
+  "concepto": "Ondas sísmicas y triangulación",
+  "vocabulario": [
+   "onda P",
+   "onda S",
+   "epicentro",
+   "triangulación",
+   "sismógrafo"
+  ],
+  "preguntas": [
+   "¿A qué distancia de cada estación quedó el epicentro?",
+   "¿Por qué se necesitan al menos tres estaciones para ubicar un epicentro en un mapa? (tipo Saber 11)",
+   "¿Por qué los sistemas de alerta temprana pueden avisar unos segundos antes de que lleguen las ondas S a una ciudad?"
+  ],
+  "reto": "Cambia solo el valor de la diferencia de tiempos de una estación (±2 s) y analiza cuánto se desplaza el epicentro.",
+  "minutos": 40
+ }
+]
