@@ -36,7 +36,7 @@ const SUPERVISION = [
   [/\b(cuchillo|bisturi|cuchilla|cortador|navaja|bistur)\b/, "objeto cortante", 5, 99],
   [/\b(agua caliente|agua hirviendo|hervir|estufa|horno|microondas|plancha|calentar)\b/, "calor o agua caliente", 3, 99],
   [/\b(vidrio|frasco de vidrio|botella de vidrio)\b/, "vidrio", -1, 99],
-  [/\bglobos?\b/, "globos (riesgo de asfixia en menores de 8)", -1, 8],
+  [/\bglobos?\b(?! terraque)/, "globos (riesgo de asfixia en menores de 8)", -1, 8],
   [/\bagua oxigenada|peroxido de hidrogeno\b/, "agua oxigenada al 3 %: guantes y gafas", 5, 99],
   [/\balcohol\b/, "alcohol antiséptico", 5, 99],
   [/\b(pila de 9 ?v|bateria de 9 ?v|cables?|bombillo|led)\b/, "circuito con pilas", -1, 6],

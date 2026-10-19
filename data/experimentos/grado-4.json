@@ -1,0 +1,2451 @@
+{
+  "grado": 4,
+  "experimentos": [
+    {
+      "id": "g4-materia-01",
+      "grado": 4,
+      "eje": "materia-cambios",
+      "titulo": "Detectives de fases",
+      "pregunta": "¿Cómo saber si una mezcla es homogénea o heterogénea contando sus fases?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "8 vasos plásticos transparentes",
+        "agua",
+        "sal",
+        "arena",
+        "aceite de cocina",
+        "arroz y fríjoles",
+        "jugo con pulpa",
+        "café instantáneo",
+        "cuchara",
+        "cuaderno"
+      ],
+      "pasos": [
+        "Numera los vasos del 1 al 8.",
+        "Prepara en cada vaso una mezcla: agua con sal, agua con arena, agua con aceite, arroz con fríjol, agua con café, jugo con pulpa, agua sola y arena con sal.",
+        "Revuelve cada vaso y espera 3 minutos.",
+        "Mira cada vaso de lado, a la altura de tus ojos.",
+        "Cuenta cuántas partes diferentes (fases) puedes ver en cada uno.",
+        "Escribe en una tabla: vaso, número de fases, homogénea o heterogénea."
+      ],
+      "prediccion": "Antes de mezclar: ¿cuáles mezclas crees que se verán como una sola sustancia y cuáles mostrarán partes separadas?",
+      "observa": "Cuenta las fases visibles de cada vaso después de 3 minutos y regístralas en una tabla de tres columnas: mezcla, número de fases, tipo.",
+      "explicacion": "Una mezcla homogénea se ve igual en todas sus partes: tiene una sola fase (como agua con sal o con café). Una mezcla heterogénea tiene dos o más fases que se pueden distinguir a simple vista (como agua con arena o con aceite). Las sustancias siguen ahí aunque no las veamos: la sal no desaparece, se reparte en partes muy pequeñas entre el agua.",
+      "error_comun": "Creer que la sal 'desaparece' al mezclarse con agua. En realidad sigue en el agua: se puede probar porque el agua sabe salada y porque al evaporarse queda la sal.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el tiempo de espera (1, 5 y 20 minutos) y mira si alguna mezcla cambia su número de fases.",
+      "conexion": "En la cocina de casa se preparan mezclas todos los días: el agua de panela es homogénea y el sancocho es heterogéneo.",
+      "tags": [
+        "mezclas",
+        "homogénea",
+        "heterogénea",
+        "fases",
+        "clasificación"
+      ]
+    },
+    {
+      "id": "g4-materia-02",
+      "grado": 4,
+      "eje": "materia-cambios",
+      "titulo": "Coladores a la obra",
+      "pregunta": "¿Cómo separo arena, piedritas y harina usando coladores de distinto tamaño?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "colador grueso de cocina",
+        "colador fino o de té",
+        "arena",
+        "piedritas pequeñas",
+        "harina de trigo",
+        "3 platos",
+        "periódico"
+      ],
+      "pasos": [
+        "Cubre la mesa con periódico.",
+        "Mezcla en un plato un puñado de arena, uno de piedritas y dos cucharadas de harina.",
+        "Pasa la mezcla por el colador grueso sobre un plato limpio y sacude suave.",
+        "Lo que quedó arriba sepáralo en otro plato.",
+        "Pasa lo que cayó por el colador fino.",
+        "Observa qué quedó en cada plato y dibújalo."
+      ],
+      "prediccion": "¿Qué material crees que quedará atrapado en cada colador?",
+      "observa": "Observa qué componente queda en cada colador y qué pasa al plato. Anota si la separación fue completa o si quedaron granos mezclados.",
+      "explicacion": "El tamizado separa materiales sólidos según el tamaño de sus partículas: las partículas más grandes que los huecos del tamiz se quedan arriba y las más pequeñas pasan. Por eso se necesitan tamices de distintos tamaños para separar más de dos componentes.",
+      "error_comun": "Pensar que el colador separa por peso. En realidad separa por tamaño: un grano pesado pero pequeño pasa, y una hoja seca liviana pero grande se queda.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el tamaño de los huecos del tamiz (colador, malla de toldillo, media velada) y compara qué pasa.",
+      "conexion": "En las obras de construcción de Cali tamizan la arena con una malla para separar las piedras antes de hacer la mezcla de cemento.",
+      "tags": [
+        "tamizado",
+        "separación de mezclas",
+        "tamaño de partícula",
+        "colador"
+      ]
+    },
+    {
+      "id": "g4-materia-03",
+      "grado": 4,
+      "eje": "materia-cambios",
+      "titulo": "Filtro de servilleta",
+      "pregunta": "¿Qué material filtra mejor el agua turbia: servilleta, tela o algodón?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "agua con tierra",
+        "3 vasos transparentes",
+        "embudo o botella plástica cortada por un adulto",
+        "servilleta de papel",
+        "pedazo de tela de camiseta",
+        "motas de algodón",
+        "cuchara"
+      ],
+      "pasos": [
+        "Prepara agua turbia mezclando una cucharada de tierra en un vaso de agua.",
+        "Pon la servilleta dentro del embudo sobre un vaso limpio.",
+        "Vierte un tercio del agua turbia y espera a que pase.",
+        "Repite con la tela y luego con el algodón, cada uno en un vaso distinto.",
+        "Pon los tres vasos sobre una hoja blanca y compara qué tan claros quedaron.",
+        "Ordénalos del más claro al más turbio."
+      ],
+      "prediccion": "¿Cuál de los tres filtros dejará el agua más clara? ¿Por qué lo crees?",
+      "observa": "Compara la claridad del agua filtrada sobre hoja blanca y mide con reloj cuántos segundos tarda en pasar por cada filtro.",
+      "explicacion": "La filtración separa un sólido que no se disuelve (la tierra) de un líquido. El filtro tiene poros: deja pasar el agua y atrapa las partículas más grandes que esos poros. Un filtro con poros más pequeños deja el agua más clara pero el agua pasa más despacio.",
+      "error_comun": "Creer que el agua filtrada ya se puede tomar. Se ve clara, pero puede tener microbios y sustancias disueltas que el filtro no atrapa; para tomarla hay que hervirla o potabilizarla.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Un adulto corta la botella si se usa como embudo. Nunca beber el agua filtrada."
+      },
+      "variable": "Cambia solo el número de capas del mismo filtro (1, 2 y 4 servilletas) y mide la claridad y el tiempo.",
+      "conexion": "EMCALI filtra el agua del río Cauca en la planta de Puerto Mallarino antes de enviarla a las casas.",
+      "tags": [
+        "filtración",
+        "agua turbia",
+        "poros",
+        "separación de mezclas"
+      ]
+    },
+    {
+      "id": "g4-materia-04",
+      "grado": 4,
+      "eje": "materia-cambios",
+      "titulo": "Arena que se asienta",
+      "pregunta": "¿Cuánto tarda la arena en asentarse en el fondo del agua?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "botella plástica transparente con tapa",
+        "agua",
+        "arena",
+        "tierra",
+        "reloj o celular con cronómetro",
+        "regla",
+        "marcador"
+      ],
+      "pasos": [
+        "Llena la botella hasta la mitad con agua.",
+        "Agrega dos cucharadas de arena y una de tierra.",
+        "Tapa bien y agita 10 veces.",
+        "Pon la botella quieta sobre la mesa e inicia el cronómetro.",
+        "Cada minuto marca con el marcador la altura de la capa del fondo.",
+        "Cuando el agua de arriba se vea clara, vierte despacio esa agua a otro vaso sin mover el fondo."
+      ],
+      "prediccion": "¿Qué crees que bajará primero: la arena o la tierra fina? ¿Cuánto tiempo tardará en aclararse el agua?",
+      "observa": "Registra en una tabla cada minuto la altura (en cm) de la capa del fondo y si el agua de arriba está turbia o clara.",
+      "explicacion": "La decantación separa un sólido que no se disuelve de un líquido dejando la mezcla en reposo: la gravedad hace que las partículas más densas bajen. Los granos de arena, más grandes, caen rápido; las partículas finas de tierra bajan más despacio. Luego se vierte con cuidado el líquido de arriba.",
+      "error_comun": "Pensar que la decantación separa todo por completo. Las partículas muy finas pueden quedar flotando mucho tiempo y el agua no queda totalmente limpia.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el tipo de sólido (arena, tierra, harina) y compara los tiempos de asentamiento.",
+      "conexion": "Cuando el río Cauca o el Pance crecen con lluvia, el agua baja café; en los tanques y en el fondo del río el barro se asienta con el tiempo.",
+      "tags": [
+        "decantación",
+        "sedimentación",
+        "gravedad",
+        "tabla de datos"
+      ]
+    },
+    {
+      "id": "g4-materia-05",
+      "grado": 4,
+      "eje": "materia-cambios",
+      "titulo": "La sal que vuelve",
+      "pregunta": "¿Cómo recupero la sal que disolví en agua?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "agua",
+        "sal",
+        "plato oscuro",
+        "vaso",
+        "cuchara",
+        "lupa",
+        "cuaderno"
+      ],
+      "pasos": [
+        "Disuelve dos cucharaditas de sal en medio vaso de agua y revuelve hasta no ver granos.",
+        "Prueba una gota con la punta del dedo y anota el sabor.",
+        "Vierte un poco del agua salada en el plato oscuro.",
+        "Deja el plato en un lugar soleado o ventilado durante 2 o 3 días.",
+        "Cada día dibuja lo que ves en el plato.",
+        "Observa los cristales que quedan con la lupa en el salón."
+      ],
+      "prediccion": "¿Qué crees que quedará en el plato cuando el agua se vaya?",
+      "observa": "Dibuja el plato cada día y anota cuánto líquido queda. Al final observa con lupa la forma de los cristales (cubitos).",
+      "explicacion": "La evaporación separa un sólido disuelto de un líquido: el agua pasa a vapor y se va al aire, pero la sal no se evapora y queda en el plato formando cristales. Esto prueba que la sal nunca desapareció, solo estaba repartida en el agua.",
+      "error_comun": "Creer que la sal 'se evaporó con el agua' o que 'se gastó'. Solo el agua se evapora; la sal queda.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el lugar donde dejas el plato (patio soleado, sombra, dentro del salón) y cuenta los días hasta que se seca.",
+      "conexion": "Así se produce la sal en las salinas de Manaure, La Guajira: el sol evapora el agua de mar y queda la sal.",
+      "tags": [
+        "evaporación",
+        "cristales",
+        "sal",
+        "separación de mezclas",
+        "observación a largo plazo"
+      ]
+    },
+    {
+      "id": "g4-materia-06",
+      "grado": 4,
+      "eje": "materia-cambios",
+      "titulo": "El imán rescatista",
+      "pregunta": "¿Cómo separo clips perdidos en la arena sin tocarlos uno por uno?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 20,
+      "materiales": [
+        "imán grande de nevera o de herradura",
+        "clips metálicos",
+        "arena",
+        "bolsa plástica delgada",
+        "bandeja",
+        "papelitos y botones plásticos"
+      ],
+      "pasos": [
+        "Mezcla en la bandeja arena, 10 clips, papelitos y botones.",
+        "Mete el imán dentro de la bolsa plástica.",
+        "Pasa el imán envuelto despacio sobre la mezcla.",
+        "Ponlo sobre otro plato y saca el imán de la bolsa: los clips caen.",
+        "Cuenta cuántos clips recuperaste.",
+        "Repite hasta recuperar todos y anota cuántas pasadas necesitaste."
+      ],
+      "prediccion": "¿Qué objetos crees que atraerá el imán? ¿Cuántas pasadas necesitarás para sacar los 10 clips?",
+      "observa": "Cuenta los clips recuperados en cada pasada y anota qué materiales no fueron atraídos.",
+      "explicacion": "La separación magnética sirve cuando uno de los componentes es atraído por un imán, como el hierro o el acero de los clips. La arena, el papel y el plástico no son atraídos, así que se quedan. La bolsa evita que los clips se peguen al imán y facilita soltarlos.",
+      "error_comun": "Creer que el imán atrae todos los metales. Atrae el hierro y el acero, pero no el aluminio de una lata, el cobre ni el oro.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la distancia entre el imán y la arena (tocándola, a 1 cm, a 3 cm) y cuenta cuántos clips recupera.",
+      "conexion": "En los centros de reciclaje de Cali usan imanes grandes para separar latas de acero de las latas de aluminio.",
+      "tags": [
+        "imán",
+        "separación magnética",
+        "metales",
+        "reciclaje"
+      ]
+    },
+    {
+      "id": "g4-materia-07",
+      "grado": 4,
+      "eje": "materia-cambios",
+      "titulo": "El reto de los cuatro componentes",
+      "pregunta": "¿En qué orden debo usar las técnicas para separar arena, sal, clips y piedras?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 60,
+      "materiales": [
+        "arena",
+        "sal",
+        "clips",
+        "piedritas",
+        "imán grande",
+        "colador",
+        "servilleta y embudo",
+        "plato oscuro",
+        "vasos",
+        "agua"
+      ],
+      "pasos": [
+        "Recibe la mezcla de arena, sal, clips y piedras.",
+        "Con tu equipo, escribe un plan: qué técnica usarás primero y por qué.",
+        "Saca los clips con el imán envuelto en bolsa.",
+        "Separa las piedras con el colador.",
+        "Agrega agua a lo que queda, revuelve y filtra con la servilleta.",
+        "Deja el agua filtrada en el plato para evaporar.",
+        "Compara tu plan con lo que realmente funcionó."
+      ],
+      "prediccion": "¿Qué crees que pasaría si empiezas filtrando antes de sacar los clips y las piedras?",
+      "observa": "Registra en un diagrama de flujo cada paso, la técnica usada y qué componente se separó. Marca si lograste los cuatro componentes por separado.",
+      "explicacion": "Cada técnica aprovecha una propiedad distinta: el imán, el magnetismo; el colador, el tamaño; la filtración, que la arena no se disuelve; y la evaporación, que el agua se evapora y la sal no. El orden importa: primero se separan los sólidos grandes y luego los que necesitan agua.",
+      "error_comun": "Pensar que existe una sola técnica que separa cualquier mezcla. Cada técnica sirve solo para ciertas mezclas.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el orden de dos pasos (por ejemplo, filtrar antes de tamizar) y compara el resultado.",
+      "conexion": "En las plantas de reciclaje y en la minería se separan materiales con varias técnicas en orden, como una línea de pasos.",
+      "tags": [
+        "separación de mezclas",
+        "diagrama de flujo",
+        "resolución de problemas",
+        "trabajo en equipo"
+      ]
+    },
+    {
+      "id": "g4-materia-08",
+      "grado": 4,
+      "eje": "materia-cambios",
+      "titulo": "Torre de líquidos",
+      "pregunta": "¿Por qué la miel, el agua y el aceite no se mezclan y forman capas?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "vaso alto transparente",
+        "miel o melao de panela",
+        "agua con colorante de comida",
+        "aceite de cocina",
+        "cuchara",
+        "pedacitos de corcho, uva y tapa plástica"
+      ],
+      "pasos": [
+        "Vierte en el vaso tres dedos de miel.",
+        "Inclina el vaso y agrega despacio el agua coloreada por el borde.",
+        "Agrega despacio el aceite de la misma forma.",
+        "Cuenta las capas que ves.",
+        "Deja caer con cuidado los pedacitos de corcho, uva y tapa.",
+        "Dibuja en qué capa quedó cada objeto."
+      ],
+      "prediccion": "¿En qué orden crees que quedarán los líquidos? ¿Dónde flotará cada objeto?",
+      "observa": "Cuenta las capas (fases) y dibuja la torre con el nombre de cada líquido y el lugar donde se detuvo cada objeto.",
+      "explicacion": "Es una mezcla heterogénea con tres fases. Cada líquido tiene distinta densidad: la miel es la más densa y queda abajo, el aceite es el menos denso y queda arriba. El aceite y el agua además no se disuelven entre sí. Cada objeto se queda en la capa que tiene una densidad parecida a la suya.",
+      "error_comun": "Creer que lo que queda abajo es lo que 'pesa más' en total. Lo que importa es la densidad: cuánta masa hay en un mismo espacio, no cuánto líquido se echó.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el orden en que viertes los líquidos y observa si al final quedan en las mismas capas.",
+      "conexion": "Cuando se derrama aceite o ACPM en el río o el mar, queda flotando encima del agua y daña a los animales.",
+      "tags": [
+        "densidad",
+        "capas",
+        "heterogénea",
+        "flotación"
+      ]
+    },
+    {
+      "id": "g4-materia-09",
+      "grado": 4,
+      "eje": "materia-cambios",
+      "titulo": "Colores escondidos en la tinta",
+      "pregunta": "¿El color negro de un marcador está hecho de un solo color?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "filtros de café o servilletas blancas",
+        "marcadores lavables negro, café y verde",
+        "vaso con poquita agua",
+        "regla",
+        "cinta",
+        "lápiz"
+      ],
+      "pasos": [
+        "Corta tiras de filtro de 2 cm de ancho.",
+        "Haz un punto grueso de marcador a 2 cm del borde de abajo de cada tira.",
+        "Pega la tira a un lápiz atravesado sobre el vaso.",
+        "Ajusta para que el agua toque la tira pero no el punto.",
+        "Espera 10 minutos sin mover el vaso.",
+        "Saca las tiras, déjalas secar y pégalas en el cuaderno."
+      ],
+      "prediccion": "¿Crees que la tinta negra se quedará negra o mostrará otros colores?",
+      "observa": "Mide con la regla hasta dónde subió cada color en la tira y anota los colores que aparecieron para cada marcador.",
+      "explicacion": "Esta técnica se llama cromatografía. La tinta es una mezcla de varios colorantes. El agua sube por el papel y arrastra cada colorante a distinta distancia, según qué tanto se pega al papel y qué tanto se disuelve en el agua. Así se separan los componentes de la mezcla.",
+      "error_comun": "Creer que el agua 'pinta' o 'cambia' el color. El agua solo separa colores que ya estaban mezclados en la tinta.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la marca o el tipo de marcador negro y compara los colores que aparecen.",
+      "conexion": "Los laboratorios de la Policía usan cromatografía para saber qué tinta se usó en un documento o qué sustancia hay en una muestra.",
+      "tags": [
+        "cromatografía",
+        "tinta",
+        "separación de mezclas",
+        "colorantes"
+      ]
+    },
+    {
+      "id": "g4-fuerza-01",
+      "grado": 4,
+      "eje": "fuerza-movimiento",
+      "titulo": "Empujón suave, empujón fuerte",
+      "pregunta": "¿Qué tan lejos llega un carrito si lo empujo con más o menos fuerza?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "carrito de juguete",
+        "regla plástica",
+        "cinta de enmascarar",
+        "metro o cinta métrica",
+        "liga elástica",
+        "2 sillas"
+      ],
+      "pasos": [
+        "Ata la liga entre las patas de dos sillas a la misma altura del carrito.",
+        "Marca una línea de salida con cinta.",
+        "Pon el carrito contra la liga y estírala hacia atrás 2 cm; suelta.",
+        "Mide con el metro la distancia que recorrió.",
+        "Repite estirando 4 cm y luego 6 cm.",
+        "Haz tres intentos por cada estiramiento y anota todo en una tabla."
+      ],
+      "prediccion": "¿Si estiras la liga el doble, el carrito llegará el doble de lejos, más o menos?",
+      "observa": "Mide en centímetros la distancia de cada intento y calcula cuál fue la distancia más común para cada estiramiento.",
+      "explicacion": "Una fuerza puede poner en movimiento un objeto y cambiar su rapidez. Cuanto más estiras la liga, mayor es la fuerza con la que empuja al carrito: sale más rápido y recorre más distancia antes de que el rozamiento con el piso lo frene.",
+      "error_comun": "Creer que el carrito se detiene porque 'se le acaba la fuerza' que lleva adentro. Se detiene porque el rozamiento con el piso y el aire actúan en contra de su movimiento.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la superficie (baldosa, cartón, tapete) y deja igual el estiramiento.",
+      "conexion": "Al patear un balón en la cancha del barrio, una patada más fuerte lo hace salir más rápido y llegar más lejos.",
+      "tags": [
+        "fuerza",
+        "rapidez",
+        "medición",
+        "prueba justa"
+      ]
+    },
+    {
+      "id": "g4-fuerza-02",
+      "grado": 4,
+      "eje": "fuerza-movimiento",
+      "titulo": "Cambio de rumbo",
+      "pregunta": "¿Cómo cambia la dirección de una pelota que rueda si la empujo de lado?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "pelota pequeña",
+        "pitillo",
+        "cinta de enmascarar",
+        "tiza o marcador",
+        "regla"
+      ],
+      "pasos": [
+        "Marca en el piso una línea recta de 2 metros con cinta.",
+        "Haz rodar la pelota suave sobre la línea.",
+        "Cuando pase por la mitad, sopla fuerte con el pitillo desde un lado.",
+        "Marca con tiza dónde terminó la pelota.",
+        "Repite soplando desde el otro lado y luego desde atrás.",
+        "Dibuja las trayectorias con flechas."
+      ],
+      "prediccion": "¿Hacia dónde crees que se moverá la pelota si soplas desde la izquierda?",
+      "observa": "Dibuja con flechas la trayectoria y mide cuántos centímetros se desvió la pelota de la línea en cada caso.",
+      "explicacion": "Una fuerza no solo cambia la rapidez, también puede cambiar la dirección del movimiento. Si la fuerza se aplica de lado, la pelota se desvía hacia donde empuja la fuerza. Si se aplica desde atrás, en la misma dirección del movimiento, la pelota va más rápido sin desviarse.",
+      "error_comun": "Creer que un objeto en movimiento sigue siempre derecho aunque lo empujen de lado. Cualquier fuerza que no esté en la dirección del movimiento cambia su rumbo.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la distancia desde donde soplas (5 cm, 10 cm, 20 cm) y mide la desviación.",
+      "conexion": "Un arquero desvía el balón con la mano: cambia la dirección del tiro con una fuerza de lado.",
+      "tags": [
+        "dirección",
+        "fuerza",
+        "trayectoria",
+        "desviación"
+      ]
+    },
+    {
+      "id": "g4-fuerza-03",
+      "grado": 4,
+      "eje": "fuerza-movimiento",
+      "titulo": "Rampa y superficies",
+      "pregunta": "¿Sobre qué superficie llega más lejos un carrito que baja por una rampa?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "tabla o cartón grueso",
+        "3 libros",
+        "carrito de juguete",
+        "toalla",
+        "papel aluminio",
+        "tela de jean",
+        "metro",
+        "cinta"
+      ],
+      "pasos": [
+        "Arma una rampa apoyando la tabla sobre 3 libros.",
+        "Pon el carrito arriba y suéltalo sin empujarlo.",
+        "Mide la distancia que recorre después de la rampa sobre la baldosa.",
+        "Cubre el piso con la toalla y repite.",
+        "Repite con papel aluminio y con la tela de jean.",
+        "Haz 3 intentos por superficie y anota en una tabla.",
+        "Haz una gráfica de barras con la distancia más común."
+      ],
+      "prediccion": "¿En cuál superficie crees que el carrito llegará más lejos y en cuál menos?",
+      "observa": "Registra la distancia en centímetros de 3 intentos por superficie y represéntalos en una gráfica de barras.",
+      "explicacion": "El rozamiento (o fricción) es una fuerza que aparece cuando dos superficies se tocan y actúa contra el movimiento. Las superficies ásperas, como la toalla, producen más rozamiento y frenan más rápido el carrito. Las lisas producen menos rozamiento y el carrito llega más lejos.",
+      "error_comun": "Creer que el rozamiento siempre es malo. Sin rozamiento no podríamos caminar, frenar una bicicleta ni sostener un lápiz.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la altura de la rampa (1, 2 o 3 libros) sobre la misma superficie.",
+      "conexion": "Los buses del MIO frenan más despacio cuando el pavimento está mojado porque hay menos rozamiento.",
+      "tags": [
+        "rozamiento",
+        "fricción",
+        "rampa",
+        "gráfica de barras",
+        "prueba justa"
+      ]
+    },
+    {
+      "id": "g4-fuerza-04",
+      "grado": 4,
+      "eje": "fuerza-movimiento",
+      "titulo": "Palanca de regla",
+      "pregunta": "¿Dónde debo poner el punto de apoyo para levantar un libro con menos esfuerzo?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 35,
+      "materiales": [
+        "regla de 30 cm",
+        "lápiz hexagonal",
+        "libro pequeño o cartuchera",
+        "monedas iguales",
+        "cinta"
+      ],
+      "pasos": [
+        "Pon el lápiz debajo de la regla como punto de apoyo.",
+        "Pon la cartuchera en un extremo de la regla.",
+        "Ubica el lápiz en la marca de 10 cm.",
+        "Pon monedas, una por una, en el otro extremo hasta que la cartuchera se levante.",
+        "Anota cuántas monedas necesitaste.",
+        "Repite con el apoyo en 15 cm y en 20 cm."
+      ],
+      "prediccion": "¿Necesitarás más o menos monedas cuando el punto de apoyo esté cerca de la cartuchera?",
+      "observa": "Cuenta las monedas necesarias para cada posición del apoyo y anótalas en una tabla: posición del apoyo, distancia a la carga, número de monedas.",
+      "explicacion": "La palanca es una máquina simple: una barra rígida que gira sobre un punto de apoyo. Cuanto más cerca está el apoyo de la carga y más lejos de donde haces la fuerza, menos fuerza necesitas. A cambio, tienes que mover tu extremo una distancia mayor.",
+      "error_comun": "Creer que una máquina simple 'crea' fuerza o energía. Solo cambia cuánta fuerza necesitas y en qué dirección: lo que ahorras en fuerza lo pagas en distancia.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la carga (1, 2 o 3 cartucheras) y deja fijo el apoyo.",
+      "conexion": "El balancín del parque, el destapador de gaseosas y la carretilla de los constructores son palancas.",
+      "tags": [
+        "palanca",
+        "máquinas simples",
+        "punto de apoyo",
+        "fuerza"
+      ]
+    },
+    {
+      "id": "g4-fuerza-05",
+      "grado": 4,
+      "eje": "fuerza-movimiento",
+      "titulo": "Subir por la rampa",
+      "pregunta": "¿Cuesta menos fuerza subir una caja directo o por un plano inclinado?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 35,
+      "materiales": [
+        "liga elástica",
+        "regla",
+        "cartuchera llena",
+        "tabla de 60 cm",
+        "libros",
+        "cuerda delgada"
+      ],
+      "pasos": [
+        "Amarra la cuerda a la cartuchera y la liga a la cuerda.",
+        "Levanta la cartuchera directo hacia arriba tirando de la liga y mide cuánto se estira la liga con la regla.",
+        "Arma una rampa con la tabla y los libros a la misma altura a la que levantaste la cartuchera.",
+        "Arrastra la cartuchera por la rampa tirando de la liga.",
+        "Mide cuánto se estira la liga.",
+        "Repite haciendo la rampa más larga y menos empinada."
+      ],
+      "prediccion": "¿La liga se estirará más subiendo directo o por la rampa?",
+      "observa": "Mide en centímetros el estiramiento de la liga en cada caso: más estiramiento significa más fuerza. Anota también la longitud del camino recorrido.",
+      "explicacion": "El plano inclinado es una máquina simple. Subir un objeto por una rampa necesita menos fuerza que levantarlo directo, pero hay que recorrer un camino más largo. Mientras menos empinada es la rampa, menos fuerza se necesita.",
+      "error_comun": "Creer que la rampa hace que el objeto 'pese menos'. El objeto pesa igual; lo que cambia es la fuerza que tú debes hacer y la distancia que recorres.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la inclinación de la rampa (número de libros) con la misma cartuchera.",
+      "conexion": "Las rampas para sillas de ruedas en el colegio y los camiones que suben motos por una tabla usan el plano inclinado.",
+      "tags": [
+        "plano inclinado",
+        "máquinas simples",
+        "dinamómetro casero",
+        "fuerza"
+      ]
+    },
+    {
+      "id": "g4-fuerza-06",
+      "grado": 4,
+      "eje": "fuerza-movimiento",
+      "titulo": "Polea de carrete",
+      "pregunta": "¿Una polea hace más fácil subir un balde pequeño?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "carrete de hilo vacío",
+        "palo de escoba",
+        "2 sillas",
+        "cuerda",
+        "balde pequeño o vaso con asa",
+        "piedras",
+        "liga elástica",
+        "regla"
+      ],
+      "pasos": [
+        "Mete el palo de escoba por el carrete y apóyalo entre dos sillas.",
+        "Amarra el balde con piedras a la cuerda.",
+        "Levanta el balde directamente con la liga y mide su estiramiento.",
+        "Pasa la cuerda por encima del carrete.",
+        "Tira de la cuerda hacia abajo con la liga y mide el estiramiento.",
+        "Compara cuál forma te resultó más cómoda."
+      ],
+      "prediccion": "¿Crees que con la polea necesitarás menos fuerza, la misma o más?",
+      "observa": "Mide el estiramiento de la liga en los dos casos y anota la dirección en la que tiraste (hacia arriba o hacia abajo).",
+      "explicacion": "Una polea fija es una rueda con una cuerda. No reduce la fuerza necesaria (la liga se estira casi igual), pero cambia su dirección: puedes tirar hacia abajo para subir algo, que es más cómodo porque usas tu propio peso. Con varias poleas juntas sí se reduce la fuerza.",
+      "error_comun": "Creer que cualquier polea reduce la fuerza a la mitad. Una polea fija sola solo cambia la dirección de la fuerza.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Usa poca carga y mantén los pies lejos debajo del balde."
+      },
+      "variable": "Cambia solo la cantidad de piedras en el balde y mide el estiramiento con y sin polea.",
+      "conexion": "Los pozos de agua en el campo, las astas de bandera del colegio y las grúas de construcción usan poleas.",
+      "tags": [
+        "polea",
+        "máquinas simples",
+        "dirección de la fuerza"
+      ]
+    },
+    {
+      "id": "g4-fuerza-07",
+      "grado": 4,
+      "eje": "fuerza-movimiento",
+      "titulo": "Rodillos de lápiz",
+      "pregunta": "¿Es más fácil arrastrar una caja de libros sobre la mesa o sobre lápices redondos?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "caja de zapatos",
+        "4 libros",
+        "6 lápices redondos o marcadores",
+        "liga elástica",
+        "cuerda",
+        "regla"
+      ],
+      "pasos": [
+        "Mete los libros en la caja y amarra la cuerda con la liga.",
+        "Arrastra la caja sobre la mesa tirando de la liga.",
+        "Mide con la regla cuánto se estira la liga justo cuando la caja empieza a moverse.",
+        "Pon los lápices debajo de la caja como rodillos.",
+        "Arrastra otra vez y mide el estiramiento.",
+        "Repite 3 veces cada caso."
+      ],
+      "prediccion": "¿Cuánto crees que cambiará el estiramiento de la liga con los rodillos?",
+      "observa": "Anota el estiramiento de la liga en centímetros en los dos casos, tres veces cada uno.",
+      "explicacion": "Cuando algo se arrastra, el rozamiento es grande. Las ruedas y rodillos hacen que las superficies rueden en vez de deslizarse, y así el rozamiento es mucho menor. Por eso se necesita menos fuerza. La rueda con eje es una de las máquinas simples más importantes.",
+      "error_comun": "Creer que la rueda quita el peso del objeto. El peso es el mismo; lo que disminuye es el rozamiento.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el número de lápices rodillo (2, 4, 6) y mide la fuerza.",
+      "conexion": "Las maletas con ruedas en el aeropuerto Alfonso Bonilla Aragón y los carritos del supermercado aprovechan la rueda.",
+      "tags": [
+        "rueda y eje",
+        "rozamiento",
+        "máquinas simples",
+        "medición"
+      ]
+    },
+    {
+      "id": "g4-fuerza-08",
+      "grado": 4,
+      "eje": "fuerza-movimiento",
+      "titulo": "Cazadores de máquinas simples",
+      "pregunta": "¿Qué máquinas simples hay escondidas en la casa y el colegio?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 45,
+      "materiales": [
+        "tijeras escolares",
+        "pinzas de ropa",
+        "destapador",
+        "cuchara",
+        "tornillo grande",
+        "tapa de rosca",
+        "cuaderno",
+        "lápices de colores"
+      ],
+      "pasos": [
+        "Observa cada objeto y úsalo con cuidado.",
+        "Busca dónde está el punto de apoyo, dónde haces la fuerza y dónde está la carga.",
+        "Clasifica cada objeto: palanca, rueda y eje, plano inclinado, polea o tornillo.",
+        "Dibuja cada objeto y marca con colores apoyo, fuerza y carga.",
+        "Recorre el colegio y busca 5 máquinas simples más.",
+        "Comparte tu tabla con otro equipo y discutan los desacuerdos."
+      ],
+      "prediccion": "¿Cuántas máquinas simples crees que encontrarás en el salón? ¿Cuál será la más común?",
+      "observa": "Construye una tabla de clasificación: objeto, tipo de máquina simple, qué tarea facilita. Cuenta cuántas hay de cada tipo.",
+      "explicacion": "Las máquinas simples cambian la fuerza que necesitamos o su dirección. Las tijeras son dos palancas unidas; la pinza también es una palanca; el tornillo y la tapa de rosca son planos inclinados enrollados; la manija de una puerta es una rueda con eje.",
+      "error_comun": "Creer que las máquinas tienen que tener motor o ser complicadas. Una cuchara usada para abrir una lata ya es una máquina simple.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el lugar de búsqueda (cocina, parque, tienda del barrio) y compara qué máquina simple aparece más.",
+      "conexion": "En la plaza de mercado de Santa Elena se ven carretillas, balanzas y poleas trabajando todos los días.",
+      "tags": [
+        "máquinas simples",
+        "clasificación",
+        "palanca",
+        "tornillo"
+      ]
+    },
+    {
+      "id": "g4-fuerza-09",
+      "grado": 4,
+      "eje": "fuerza-movimiento",
+      "titulo": "Cohete de pitillo",
+      "pregunta": "¿Qué tan lejos vuela un cohete de papel si soplo más fuerte o lo apunto en otra dirección?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 35,
+      "materiales": [
+        "pitillo",
+        "hoja de papel",
+        "cinta",
+        "tijeras escolares",
+        "metro",
+        "transportador"
+      ],
+      "pasos": [
+        "Enrolla un rectángulo de papel alrededor del pitillo y pégalo para formar un tubo.",
+        "Cierra un extremo doblándolo y pégale aletas de papel.",
+        "Saca el tubo, ponlo en la punta del pitillo y sopla suave.",
+        "Mide la distancia que alcanzó.",
+        "Repite soplando fuerte.",
+        "Repite apuntando a distintos ángulos medidos con el transportador.",
+        "Anota todo en una tabla."
+      ],
+      "prediccion": "¿Con qué fuerza de soplo y con qué ángulo crees que el cohete llegará más lejos?",
+      "observa": "Mide la distancia en centímetros para cada combinación de soplo y ángulo; haz 3 lanzamientos por caso.",
+      "explicacion": "Al soplar, el aire empuja el cohete: aplicas una fuerza. Una fuerza mayor lo hace salir más rápido y llegar más lejos. La dirección en que apuntas define hacia dónde se mueve. Luego la gravedad lo hace bajar y el aire lo frena.",
+      "error_comun": "Creer que el cohete sigue volando porque 'lleva la fuerza adentro'. Después de salir, ninguna fuerza lo empuja hacia adelante; sigue por su impulso mientras la gravedad y el aire lo frenan y lo hacen caer.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el ángulo de lanzamiento (15°, 30°, 45°, 60°) soplando con la misma fuerza.",
+      "conexion": "Los jugadores de tejo calculan la fuerza y el ángulo del lanzamiento para acertar en la cancha.",
+      "tags": [
+        "cohete",
+        "fuerza",
+        "ángulo",
+        "lanzamiento",
+        "medición"
+      ]
+    },
+    {
+      "id": "g4-fuerza-10",
+      "grado": 4,
+      "eje": "fuerza-movimiento",
+      "titulo": "Choque de canicas",
+      "pregunta": "¿Qué pasa cuando una canica en movimiento choca con otra que está quieta?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "regla con canal",
+        "4 canicas iguales",
+        "1 canica grande",
+        "libros",
+        "cinta"
+      ],
+      "pasos": [
+        "Pega la regla con canal sobre la mesa.",
+        "Pon una canica quieta en la mitad del canal.",
+        "Suelta otra canica desde un libro que hace de rampa para que choque con la primera.",
+        "Observa qué canica se mueve y cuál se queda.",
+        "Repite con 2 y 3 canicas quietas en fila.",
+        "Repite usando la canica grande para chocar."
+      ],
+      "prediccion": "Si una canica choca con una fila de tres, ¿cuántas crees que saldrán rodando?",
+      "observa": "Anota en cada caso cuántas canicas salieron y qué tan lejos llegaron comparadas con la que chocó.",
+      "explicacion": "En el choque, la canica que llega ejerce una fuerza sobre la que está quieta y le transmite su movimiento. Si son del mismo tamaño, la que choca casi se detiene y la última de la fila sale con rapidez parecida. Una canica más grande, al chocar, empuja con más efecto.",
+      "error_comun": "Creer que solo se mueve el objeto que recibe el golpe. En un choque las dos canicas se empujan entre sí con fuerzas iguales en sentido contrario.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la altura desde la que sueltas la canica que choca.",
+      "conexion": "En el billar y en el juego de bolas criollas se usa este principio para mover unas bolas con otras.",
+      "tags": [
+        "choque",
+        "fuerza",
+        "transmisión del movimiento",
+        "canicas"
+      ]
+    },
+    {
+      "id": "g4-energia-01",
+      "grado": 4,
+      "eje": "luz-sonido-energia",
+      "titulo": "La luz va derechito",
+      "pregunta": "¿La luz viaja en línea recta o puede doblar esquinas?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "linterna",
+        "3 cartulinas de 15 x 15 cm",
+        "plastilina",
+        "punzón escolar o lápiz para hacer el hueco con ayuda",
+        "regla",
+        "hoja blanca"
+      ],
+      "pasos": [
+        "Haz con ayuda de un adulto un hueco del mismo tamaño en el centro de cada cartulina.",
+        "Para las cartulinas con plastilina en fila, a 10 cm una de otra.",
+        "Alinea los huecos con ayuda de una cuerda o una regla.",
+        "Pon la hoja blanca detrás de la última cartulina.",
+        "Alumbra con la linterna por el primer hueco y mira la hoja.",
+        "Mueve un poco la cartulina del medio y vuelve a observar."
+      ],
+      "prediccion": "¿Llegará la luz a la hoja si una de las cartulinas queda corrida?",
+      "observa": "Anota si aparece el punto de luz en la hoja cuando los huecos están alineados y cuando la cartulina del medio está corrida 1 cm.",
+      "explicacion": "La luz viaja en línea recta. Solo llega a la hoja si los tres huecos están en la misma línea. Por eso el Sol ilumina solo la cara de la Tierra que está hacia él: la luz no puede doblar para llegar al otro lado.",
+      "error_comun": "Creer que la luz 'llena' todo el espacio como el agua y puede ir por detrás de los objetos. La luz va en línea recta; lo que hay detrás de un objeto opaco queda en sombra.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Un adulto ayuda a perforar las cartulinas."
+      },
+      "variable": "Cambia solo el tamaño de los huecos y observa cómo cambia el punto de luz.",
+      "conexion": "Los rayos de sol que entran por un hueco del techo de zinc forman un camino recto de luz que se ve con el polvo.",
+      "tags": [
+        "luz",
+        "línea recta",
+        "propagación",
+        "modelo"
+      ]
+    },
+    {
+      "id": "g4-energia-02",
+      "grado": 4,
+      "eje": "luz-sonido-energia",
+      "titulo": "Sombras del patio",
+      "pregunta": "¿Cómo cambian la longitud y la dirección de la sombra de un palo durante el día?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "palo de escoba",
+        "balde con arena o piedras",
+        "tiza",
+        "metro",
+        "reloj",
+        "cuaderno"
+      ],
+      "pasos": [
+        "Fija el palo derecho en el balde con arena en un lugar del patio donde dé el sol todo el día.",
+        "A las 8:00 marca con tiza el final de la sombra y escribe la hora.",
+        "Mide la sombra con el metro.",
+        "Repite cada hora hasta las 2:00 de la tarde.",
+        "Une las marcas con una línea.",
+        "Haz una gráfica de puntos: hora contra longitud de la sombra."
+      ],
+      "prediccion": "¿A qué hora crees que la sombra será más corta?",
+      "observa": "Mide cada hora la longitud de la sombra en centímetros y la dirección hacia donde apunta; registra en tabla y gráfica.",
+      "explicacion": "La sombra se forma porque el palo bloquea la luz del Sol. Como la Tierra rota, desde aquí vemos que el Sol cambia de posición en el cielo: en la mañana está bajo y la sombra es larga; cerca del mediodía está alto y la sombra es corta; en la tarde se alarga hacia el otro lado.",
+      "error_comun": "Creer que el Sol se mueve alrededor de la Tierra. Es la Tierra la que rota sobre su eje; el Sol solo parece moverse.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Usa gorra y bloqueador; nunca mires directo al Sol."
+      },
+      "variable": "Cambia solo la altura del palo y compara la longitud de la sombra a la misma hora.",
+      "conexion": "En Cali, cerca del ecuador, al mediodía las sombras son muy cortas; por eso a esa hora casi no hay sombra bajo los árboles.",
+      "tags": [
+        "sombra",
+        "rotación",
+        "Sol",
+        "gráfica",
+        "medición"
+      ]
+    },
+    {
+      "id": "g4-energia-03",
+      "grado": 4,
+      "eje": "luz-sonido-energia",
+      "titulo": "Sombras que crecen",
+      "pregunta": "¿Cómo cambia el tamaño de una sombra si acerco el objeto a la linterna?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "linterna",
+        "muñeco pequeño",
+        "pared blanca o cartulina",
+        "metro",
+        "cinta"
+      ],
+      "pasos": [
+        "Pon la linterna fija a 1 metro de la pared.",
+        "Ubica el muñeco a 20 cm de la pared y mide la altura de su sombra.",
+        "Acerca el muñeco a la linterna: a 40, 60 y 80 cm de la pared.",
+        "Mide la sombra en cada posición.",
+        "Anota en una tabla distancia y tamaño de la sombra.",
+        "Observa también qué tan nítido es el borde."
+      ],
+      "prediccion": "¿La sombra crecerá o se achicará al acercar el muñeco a la linterna?",
+      "observa": "Mide en centímetros la altura de la sombra en cada posición y nota si el borde se ve nítido o borroso.",
+      "explicacion": "Como la luz viaja en línea recta desde la linterna, cuando el objeto está cerca de la fuente bloquea más rayos y su sombra en la pared se hace más grande. Lejos de la linterna y cerca de la pared, la sombra es más pequeña y nítida.",
+      "error_comun": "Creer que la sombra es una parte del objeto o que es 'oscuridad que sale' del objeto. Es solo el lugar a donde la luz no llega porque el objeto la bloquea.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la distancia de la linterna a la pared, dejando el muñeco fijo.",
+      "conexion": "En los teatros de sombras y en las presentaciones de títeres usan este efecto para hacer personajes gigantes.",
+      "tags": [
+        "sombra",
+        "luz",
+        "distancia",
+        "tabla de datos"
+      ]
+    },
+    {
+      "id": "g4-energia-04",
+      "grado": 4,
+      "eje": "luz-sonido-energia",
+      "titulo": "¿Pasa o no pasa la luz?",
+      "pregunta": "¿Qué materiales dejan pasar la luz, cuáles un poco y cuáles nada?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "linterna",
+        "hoja blanca",
+        "papel mantequilla",
+        "bolsa plástica transparente",
+        "cartón",
+        "tela delgada",
+        "papel aluminio",
+        "botella plástica transparente"
+      ],
+      "pasos": [
+        "Pon la hoja blanca como pantalla.",
+        "Alumbra con la linterna a través de cada material.",
+        "Mira cuánta luz llega a la pantalla.",
+        "Clasifica: transparente (pasa casi toda), translúcido (pasa algo y se ve borroso), opaco (no pasa).",
+        "Haz una tabla con tres columnas.",
+        "Predice y prueba 3 materiales más del salón."
+      ],
+      "prediccion": "¿El papel mantequilla será transparente, translúcido u opaco?",
+      "observa": "Clasifica cada material en la tabla según la luz que llega a la pantalla y si se puede ver la forma de la linterna a través de él.",
+      "explicacion": "Los materiales transparentes dejan pasar casi toda la luz y se ve claro a través de ellos. Los translúcidos dejan pasar parte de la luz pero la esparcen, por eso se ve borroso. Los opacos no dejan pasar la luz y forman sombra. La Tierra y la Luna son opacas: por eso solo la mitad que mira al Sol está iluminada.",
+      "error_comun": "Creer que los objetos opacos 'absorben' toda la luz siempre. Muchos opacos la reflejan, como el aluminio, pero no la dejan pasar.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el número de capas de un mismo material translúcido y observa cuándo se vuelve opaco.",
+      "conexion": "Las tejas traslúcidas de las casas y las cortinas dejan entrar luz pero no permiten ver hacia adentro.",
+      "tags": [
+        "transparente",
+        "translúcido",
+        "opaco",
+        "luz",
+        "clasificación"
+      ]
+    },
+    {
+      "id": "g4-energia-05",
+      "grado": 4,
+      "eje": "luz-sonido-energia",
+      "titulo": "La Luna es un espejo",
+      "pregunta": "¿La Luna tiene luz propia o refleja la luz del Sol?",
+      "dba": [
+        4
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "linterna",
+        "pelota blanca",
+        "pelota negra",
+        "espejo plástico de mano",
+        "salón oscuro"
+      ],
+      "pasos": [
+        "Oscurece el salón.",
+        "Pon la pelota blanca en la mesa sin alumbrarla y obsérvala.",
+        "Alumbra la pelota con la linterna desde un lado.",
+        "Observa qué parte se ilumina y qué parte queda oscura.",
+        "Repite con la pelota negra.",
+        "Usa el espejo para llevar la luz de la linterna a una pelota que está detrás de ti."
+      ],
+      "prediccion": "¿Se verá la pelota blanca en la oscuridad sin la linterna? ¿Brillará igual la pelota negra?",
+      "observa": "Anota cuándo se ve la pelota y qué parte está iluminada; compara cuánta luz reflejan la blanca y la negra.",
+      "explicacion": "La Luna no produce luz: la vemos porque refleja la luz del Sol, como la pelota refleja la luz de la linterna. Solo está iluminada la mitad que mira hacia el Sol. Los objetos claros reflejan más luz que los oscuros.",
+      "error_comun": "Creer que la Luna brilla con luz propia como una bombilla. La Luna solo refleja la luz del Sol.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el color de la pelota (blanca, gris, negra) y compara cuánto brilla.",
+      "conexion": "Las señales de tránsito y los chalecos de los guardas de tránsito de Cali reflejan la luz de los carros en la noche.",
+      "tags": [
+        "Luna",
+        "reflexión",
+        "luz",
+        "modelo"
+      ]
+    },
+    {
+      "id": "g4-energia-06",
+      "grado": 4,
+      "eje": "luz-sonido-energia",
+      "titulo": "Luz de frente, luz de lado",
+      "pregunta": "¿Por qué la luz que llega inclinada calienta menos?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "linterna",
+        "hoja cuadriculada",
+        "lápiz",
+        "transportador",
+        "libros"
+      ],
+      "pasos": [
+        "Pon la hoja cuadriculada en la mesa.",
+        "Alumbra con la linterna justo desde arriba, a 20 cm, y dibuja el borde del círculo de luz.",
+        "Cuenta los cuadros que quedaron iluminados.",
+        "Inclina la linterna 45° manteniendo la distancia y dibuja la mancha.",
+        "Cuenta los cuadros otra vez.",
+        "Compara qué mancha se ve más brillante."
+      ],
+      "prediccion": "¿La mancha de luz será más grande o más pequeña cuando inclines la linterna?",
+      "observa": "Cuenta los cuadros iluminados en cada caso y compara el brillo de cada mancha.",
+      "explicacion": "La misma cantidad de luz se reparte en un área más grande cuando llega inclinada, por eso cada cuadro recibe menos luz y menos energía. En la Tierra, cerca del ecuador la luz del Sol llega más directa y calienta más; cerca de los polos llega muy inclinada y calienta menos.",
+      "error_comun": "Creer que hace más frío en los polos porque están 'más lejos' del Sol. La diferencia de distancia es mínima; lo que importa es la inclinación con que llega la luz.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el ángulo de la linterna (90°, 60°, 30°) y cuenta los cuadros.",
+      "conexion": "Colombia está cerca del ecuador y recibe luz muy directa todo el año; por eso no tenemos invierno con nieve, solo temporadas de lluvia y sequía.",
+      "tags": [
+        "energía solar",
+        "ángulo",
+        "ecuador",
+        "luz"
+      ]
+    },
+    {
+      "id": "g4-energia-07",
+      "grado": 4,
+      "eje": "luz-sonido-energia",
+      "titulo": "Hielo al sol: negro contra blanco",
+      "pregunta": "¿Se derrite más rápido un hielo sobre papel negro o sobre papel blanco?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "2 cubos de hielo del mismo tamaño",
+        "cartulina negra",
+        "cartulina blanca",
+        "2 platos",
+        "reloj",
+        "cuaderno"
+      ],
+      "pasos": [
+        "Pon cada cartulina sobre un plato en un lugar soleado.",
+        "Pon un cubo de hielo encima de cada una al mismo tiempo.",
+        "Cada 5 minutos dibuja el tamaño de cada hielo.",
+        "Anota cuántos minutos tarda cada uno en derretirse.",
+        "Repite el experimento a la sombra.",
+        "Compara los resultados."
+      ],
+      "prediccion": "¿Cuál hielo crees que se derretirá primero? ¿Pasará lo mismo a la sombra?",
+      "observa": "Mide en minutos el tiempo que tarda cada hielo en derretirse por completo, al sol y a la sombra.",
+      "explicacion": "La luz del Sol transporta energía. Las superficies oscuras absorben más de esa energía y se calientan más; las claras reflejan más luz. Por eso el hielo sobre negro se derrite antes al sol. A la sombra llega muy poca luz directa y la diferencia casi desaparece.",
+      "error_comun": "Creer que el color negro 'atrae el calor'. El negro no atrae nada: absorbe más la luz que le llega y la convierte en calor.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el color de la cartulina (blanco, amarillo, rojo, azul, negro).",
+      "conexion": "Por eso en el calor de Cali se recomienda usar ropa clara y los techos blancos mantienen más frescas las casas.",
+      "tags": [
+        "energía solar",
+        "absorción",
+        "color",
+        "calor",
+        "prueba justa"
+      ]
+    },
+    {
+      "id": "g4-energia-08",
+      "grado": 4,
+      "eje": "luz-sonido-energia",
+      "titulo": "Reloj de sol del salón",
+      "pregunta": "¿Puedo saber la hora usando solo la sombra?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 60,
+      "materiales": [
+        "plato de cartón",
+        "lápiz",
+        "plastilina",
+        "marcador",
+        "reloj",
+        "brújula del celular"
+      ],
+      "pasos": [
+        "Pon el lápiz derecho en el centro del plato con plastilina.",
+        "Lleva el plato al patio, a un lugar con sol todo el día.",
+        "Marca con una flecha el norte usando la brújula, para ubicar el plato siempre igual.",
+        "A cada hora en punto marca la sombra del lápiz y escribe la hora.",
+        "Al día siguiente pon el plato en el mismo lugar y mira la sombra.",
+        "Compara la hora del reloj de sol con la del reloj normal."
+      ],
+      "prediccion": "¿Crees que tu reloj de sol marcará la misma hora que el reloj del celular al día siguiente?",
+      "observa": "Registra la hora marcada por la sombra y la del reloj normal; calcula la diferencia en minutos.",
+      "explicacion": "La sombra del lápiz cambia de posición a medida que la Tierra rota, siempre de la misma forma cada día. Por eso se puede usar para medir el tiempo. Los relojes de sol funcionan solo con luz: de noche, cuando nuestra cara de la Tierra no mira al Sol, no sirven.",
+      "error_comun": "Creer que el reloj de sol funciona en cualquier posición. Hay que ponerlo siempre orientado igual, o marcará horas equivocadas.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la orientación del plato (gíralo 90°) y compara la hora que marca.",
+      "conexion": "Antiguamente los pueblos indígenas y los españoles usaban relojes de sol en plazas y templos; algunos aún se ven en iglesias coloniales.",
+      "tags": [
+        "reloj de sol",
+        "rotación",
+        "sombra",
+        "tiempo"
+      ]
+    },
+    {
+      "id": "g4-energia-09",
+      "grado": 4,
+      "eje": "luz-sonido-energia",
+      "titulo": "Eclipse en la mesa",
+      "pregunta": "¿Qué posición deben tener el Sol, la Tierra y la Luna para que haya un eclipse?",
+      "dba": [
+        4
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "linterna",
+        "pelota mediana (Tierra)",
+        "pelota pequeña o canica grande (Luna)",
+        "plastilina",
+        "palitos de madera",
+        "salón oscuro"
+      ],
+      "pasos": [
+        "Pon la linterna (Sol) en un extremo de la mesa.",
+        "Pon la pelota mediana (Tierra) a 50 cm sobre plastilina.",
+        "Pon la pelota pequeña (Luna) en un palito.",
+        "Pasa la Luna entre el Sol y la Tierra y mira la sombra sobre la Tierra.",
+        "Pasa la Luna detrás de la Tierra y mira si queda en sombra.",
+        "Dibuja las dos posiciones."
+      ],
+      "prediccion": "¿Qué crees que pasará con la luz que llega a la Tierra cuando la Luna se pone en el medio?",
+      "observa": "Dibuja las dos posiciones con flechas de luz y marca dónde cae la sombra en cada caso.",
+      "explicacion": "Un eclipse ocurre cuando el Sol, la Tierra y la Luna quedan alineados. Si la Luna está en medio, su sombra cae sobre una parte de la Tierra: eclipse de Sol. Si la Tierra está en medio, su sombra cubre la Luna: eclipse de Luna. No pasa todos los meses porque la órbita de la Luna está un poco inclinada.",
+      "error_comun": "Creer que la luna nueva y el eclipse son lo mismo, o que las fases de la Luna se deben a la sombra de la Tierra. Las fases se deben a la parte iluminada que vemos; la sombra de la Tierra solo cae en la Luna durante un eclipse de Luna.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "En un eclipse real, nunca observes el Sol directamente ni con gafas comunes."
+      },
+      "variable": "Cambia solo la inclinación del palito de la Luna y mira si la sombra sigue cayendo sobre la Tierra.",
+      "conexion": "En Colombia se han visto eclipses parciales de Sol; las noticias recomiendan usar filtros especiales certificados.",
+      "tags": [
+        "eclipse",
+        "Sol",
+        "Luna",
+        "sombra",
+        "modelo"
+      ]
+    },
+    {
+      "id": "g4-vida-01",
+      "grado": 4,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Cadena del Valle",
+      "pregunta": "¿Quién se come a quién en un potrero del Valle del Cauca?",
+      "dba": [
+        6
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "tarjetas con dibujos: pasto, saltamontes, rana, culebra, gavilán, hongos",
+        "lana",
+        "cinta",
+        "marcadores",
+        "cartulina"
+      ],
+      "pasos": [
+        "Lee la información de cada tarjeta: qué come cada ser vivo.",
+        "Ordena las tarjetas desde el que fabrica su alimento hasta el último consumidor.",
+        "Une las tarjetas con flechas que apunten hacia quien se come.",
+        "Escribe al lado de cada una: productor, consumidor primario, secundario o terciario.",
+        "Ubica a los hongos y explica dónde van.",
+        "Pega tu cadena en la cartulina y preséntala."
+      ],
+      "prediccion": "¿Quién crees que va al comienzo de toda cadena alimenticia?",
+      "observa": "Revisa la dirección de las flechas (del alimento al que se lo come) y el nivel trófico escrito en cada tarjeta.",
+      "explicacion": "Una cadena alimenticia muestra cómo pasa la energía de un ser vivo a otro. Siempre empieza con un productor (planta) que fabrica su alimento con la luz del Sol. Luego siguen los consumidores. Los descomponedores, como hongos y bacterias, transforman los restos de todos en sustancias que vuelven al suelo.",
+      "error_comun": "Dibujar la flecha al revés (del que come al comido). La flecha indica hacia dónde va la energía: del pasto al saltamontes.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el ecosistema (río, bosque de los Farallones) y construye otra cadena.",
+      "conexion": "En los cañaduzales del Valle viven ratones que comen caña y búhos que comen ratones: una cadena real cerca de Cali.",
+      "tags": [
+        "cadena alimenticia",
+        "productor",
+        "consumidor",
+        "niveles tróficos"
+      ]
+    },
+    {
+      "id": "g4-vida-02",
+      "grado": 4,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Red de lana",
+      "pregunta": "¿Qué pasa en una red alimenticia si desaparece una especie?",
+      "dba": [
+        6
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "ovillo de lana",
+        "tarjetas de seres vivos para colgar en el cuello",
+        "cinta",
+        "tijeras escolares"
+      ],
+      "pasos": [
+        "Cada estudiante se cuelga una tarjeta de un ser vivo.",
+        "Formen un círculo.",
+        "El que tiene la tarjeta del Sol pasa la lana a una planta.",
+        "Pasen la lana a quien se come al anterior, sin soltar su punta, hasta formar una red.",
+        "El docente 'elimina' una especie: ese estudiante tira suave de la lana.",
+        "Cuenten cuántos sienten el tirón.",
+        "Dibujen la red en el cuaderno."
+      ],
+      "prediccion": "Si desaparecen las ranas, ¿qué otros seres vivos crees que se verán afectados?",
+      "observa": "Cuenta cuántas personas sintieron el tirón cuando se eliminó cada especie y anótalo en una tabla.",
+      "explicacion": "En la naturaleza las cadenas se cruzan y forman redes alimenticias: un animal puede comer varias cosas y ser comido por varios. Si una especie desaparece, afecta a sus depredadores (que pierden alimento) y a sus presas (que pueden aumentar demasiado). Todo el ecosistema está conectado.",
+      "error_comun": "Creer que si desaparece un depredador 'todo mejora' para las presas. Las presas pueden crecer tanto que se acaba su comida y luego disminuyen también.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la especie eliminada (productor, consumidor, descomponedor) y compara cuántos se afectan.",
+      "conexion": "En el humedal del Charco Azul y en el río Cali, si se pierden los peces se afectan las garzas y los martín pescadores.",
+      "tags": [
+        "red alimenticia",
+        "ecosistema",
+        "equilibrio",
+        "juego de roles"
+      ]
+    },
+    {
+      "id": "g4-vida-03",
+      "grado": 4,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Pirámide de energía",
+      "pregunta": "¿Por qué en un ecosistema hay muchas más plantas que depredadores?",
+      "dba": [
+        6
+      ],
+      "duracion_min": 35,
+      "materiales": [
+        "1000 granos de arroz o fríjol",
+        "vasos",
+        "cartulina",
+        "marcador",
+        "regla"
+      ],
+      "pasos": [
+        "Pon 1000 granos en el vaso de 'plantas': es la energía que fabricaron con el Sol.",
+        "Pasa solo 100 granos al vaso de 'herbívoros' (el resto se gasta en vivir).",
+        "Pasa solo 10 granos al vaso de 'carnívoros'.",
+        "Pasa 1 grano al vaso del 'súper depredador'.",
+        "Dibuja una pirámide con barras del tamaño de cada cantidad.",
+        "Responde: ¿cuántos gavilanes podría alimentar este pasto?"
+      ],
+      "prediccion": "¿Crees que la energía de las plantas pasa completa al animal que se las come?",
+      "observa": "Cuenta los granos en cada nivel y dibuja una pirámide con barras proporcionales.",
+      "explicacion": "Cada ser vivo usa la mayor parte de la energía de su alimento para moverse, respirar y mantener su cuerpo; parte se pierde como calor. Solo cerca de una décima parte pasa al siguiente nivel. Por eso hay pocos niveles en una cadena y pocos grandes depredadores.",
+      "error_comun": "Creer que el animal que come guarda toda la energía de lo que se comió. La mayor parte la usa para vivir y se pierde como calor.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la cantidad inicial de energía (500 o 2000 granos) y calcula cuántos depredadores se sostienen.",
+      "conexion": "Por eso en los Farallones de Cali hay muchos árboles y pocos pumas u osos de anteojos.",
+      "tags": [
+        "pirámide trófica",
+        "energía",
+        "niveles tróficos",
+        "modelo"
+      ]
+    },
+    {
+      "id": "g4-vida-04",
+      "grado": 4,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Pan con moho",
+      "pregunta": "¿Qué necesita el moho para descomponer el pan?",
+      "dba": [
+        6
+      ],
+      "duracion_min": 20,
+      "materiales": [
+        "3 tajadas de pan sin conservantes",
+        "3 bolsas plásticas con cierre",
+        "atomizador con agua",
+        "cinta",
+        "marcador",
+        "lupa"
+      ],
+      "pasos": [
+        "Rocía agua a dos tajadas y deja una seca.",
+        "Mete cada tajada en una bolsa y ciérrala bien con cinta; no la vuelvas a abrir.",
+        "Rotula: seca-sombra, húmeda-sombra, húmeda-nevera.",
+        "Pon cada bolsa en su lugar.",
+        "Observa con lupa durante 7 días sin abrir las bolsas.",
+        "Dibuja y estima qué parte de la tajada tiene moho cada día."
+      ],
+      "prediccion": "¿En cuál tajada crees que aparecerá primero el moho?",
+      "observa": "Registra cada día el día de aparición del moho y qué fracción de la tajada cubre (nada, un cuarto, la mitad, toda).",
+      "explicacion": "El moho es un hongo, un descomponedor. Sus esporas viajan por el aire y crecen donde hay alimento, humedad y temperatura templada. Los descomponedores transforman los restos de seres vivos en sustancias simples que vuelven al suelo y sirven a las plantas.",
+      "error_comun": "Creer que el moho 'nace' del pan. El moho crece de esporas muy pequeñas que ya estaban en el aire o en el pan.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Nunca abras las bolsas ni huelas el moho: puede causar alergias. Al final el docente las bota cerradas."
+      },
+      "variable": "Cambia solo la temperatura del lugar (nevera, salón, junto a una ventana soleada) con tajadas igual de húmedas.",
+      "conexion": "Por eso la arepa y el pan se guardan en la nevera en Cali: el calor húmedo hace que se enmohezcan rápido.",
+      "tags": [
+        "descomponedores",
+        "hongos",
+        "moho",
+        "observación a largo plazo"
+      ]
+    },
+    {
+      "id": "g4-vida-05",
+      "grado": 4,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "¿Qué se pudre bajo tierra?",
+      "pregunta": "¿Qué materiales descomponen los seres vivos del suelo y cuáles no?",
+      "dba": [
+        6,
+        7
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "4 vasos plásticos grandes",
+        "tierra de jardín",
+        "cáscara de banano",
+        "hoja seca",
+        "pedazo de bolsa plástica",
+        "papel",
+        "agua",
+        "guantes"
+      ],
+      "pasos": [
+        "Llena los vasos con tierra hasta la mitad.",
+        "Pon en cada uno un material: cáscara, hoja, plástico o papel.",
+        "Cubre con más tierra y humedece.",
+        "Rotula los vasos y déjalos en la sombra.",
+        "Riega un poco cada semana.",
+        "Después de 4 semanas, con guantes, desentierra y observa cada material."
+      ],
+      "prediccion": "¿Cuáles materiales crees que habrán cambiado después de 4 semanas?",
+      "observa": "Compara el aspecto de cada material el día 1 y la semana 4: tamaño, color, si se rompe. Usa fotos o dibujos.",
+      "explicacion": "En el suelo viven bacterias, hongos y pequeños animales descomponedores que se alimentan de restos de seres vivos, como la cáscara y la hoja. El plástico no es alimento para ellos, por eso casi no cambia en semanas ni en muchos años. Así se forma el abono del compost.",
+      "error_comun": "Creer que 'todo se pudre con el tiempo'. Muchos plásticos tardan cientos de años en degradarse.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Usa guantes y lávate las manos con jabón al terminar."
+      },
+      "variable": "Cambia solo la humedad: un vaso regado y otro seco con el mismo material.",
+      "conexion": "El compostaje en las huertas comunitarias de Cali convierte las cáscaras de la cocina en abono.",
+      "tags": [
+        "descomposición",
+        "compost",
+        "plástico",
+        "suelo",
+        "observación a largo plazo"
+      ]
+    },
+    {
+      "id": "g4-vida-06",
+      "grado": 4,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Lombrices escogen casa",
+      "pregunta": "¿Las lombrices prefieren un lugar húmedo y oscuro o seco e iluminado?",
+      "dba": [
+        7
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "bandeja",
+        "tierra",
+        "agua",
+        "cartón para tapar la mitad",
+        "5 lombrices de jardín",
+        "linterna",
+        "reloj",
+        "guantes"
+      ],
+      "pasos": [
+        "Llena la bandeja con tierra: un lado húmedo y otro seco.",
+        "Tapa con cartón solo la mitad húmeda.",
+        "Pon con cuidado las 5 lombrices en la mitad de la bandeja.",
+        "Espera 10 minutos.",
+        "Cuenta cuántas lombrices hay en cada lado.",
+        "Devuelve las lombrices al jardín y lávate las manos."
+      ],
+      "prediccion": "¿Hacia qué lado crees que irán las lombrices?",
+      "observa": "Cuenta las lombrices en cada mitad a los 5 y a los 10 minutos; registra en una tabla.",
+      "explicacion": "Las lombrices respiran a través de su piel, que debe estar húmeda; si se secan, mueren. Por eso buscan lugares húmedos y oscuros. Las características físicas del lugar (humedad, luz, tipo de suelo) determinan qué seres vivos pueden vivir allí.",
+      "error_comun": "Creer que las lombrices son plagas. Son descomponedores muy útiles: airean el suelo y lo hacen más fértil.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Trata a las lombrices con respeto, no las dejes al sol y devuélvelas al jardín. Lávate las manos."
+      },
+      "variable": "Cambia solo una condición a la vez: prueba luz contra oscuridad con la tierra igual de húmeda.",
+      "conexion": "Los agricultores del Valle valoran la tierra con muchas lombrices porque es más fértil.",
+      "tags": [
+        "lombrices",
+        "hábitat",
+        "humedad",
+        "comportamiento animal"
+      ]
+    },
+    {
+      "id": "g4-vida-07",
+      "grado": 4,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Plantas en la oscuridad",
+      "pregunta": "¿Puede crecer sana una planta sin luz?",
+      "dba": [
+        6
+      ],
+      "duracion_min": 20,
+      "materiales": [
+        "2 matas pequeñas de fríjol de la misma edad",
+        "caja de cartón",
+        "agua",
+        "regla",
+        "cuaderno"
+      ],
+      "pasos": [
+        "Pon las dos matas juntas y mide su altura.",
+        "Tapa una con la caja de cartón.",
+        "Riega las dos con la misma cantidad de agua cada dos días.",
+        "Mide la altura y anota el color de las hojas cada 2 días durante 2 semanas.",
+        "Haz una gráfica de líneas con las dos plantas.",
+        "Destapa la planta y déjala a la luz una semana más."
+      ],
+      "prediccion": "¿Cuál planta crees que crecerá más alta y cuál estará más sana?",
+      "observa": "Mide la altura en centímetros y el color de las hojas (verde, amarillo, blanco) cada 2 días; grafica los datos.",
+      "explicacion": "Las plantas son productoras: fabrican su alimento (azúcares) con la luz del Sol, el agua y el aire, en un proceso llamado fotosíntesis. Sin luz no pueden fabricarlo. La planta tapada se estira buscando luz, pero se pone pálida y débil porque está gastando sus reservas.",
+      "error_comun": "Creer que las plantas sacan su alimento de la tierra. Del suelo toman agua y minerales, pero el alimento lo fabrican con luz.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la cantidad de luz: una planta al sol, otra en sombra parcial, otra en caja.",
+      "conexion": "Los cultivos de caña del Valle se siembran en campos abiertos porque necesitan mucha luz para producir azúcar.",
+      "tags": [
+        "fotosíntesis",
+        "productores",
+        "luz",
+        "plantas",
+        "gráfica de líneas"
+      ]
+    },
+    {
+      "id": "g4-vida-08",
+      "grado": 4,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Semillas con sed",
+      "pregunta": "¿Cuánta agua necesitan las semillas de fríjol para germinar?",
+      "dba": [
+        7
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "12 semillas de fríjol",
+        "4 vasos plásticos",
+        "algodón",
+        "agua",
+        "jeringa sin aguja o cuchara",
+        "marcador"
+      ],
+      "pasos": [
+        "Pon algodón en los 4 vasos y 3 semillas en cada uno.",
+        "Rotula: sin agua, poca agua, agua húmeda, inundado.",
+        "Agrega el agua según el rótulo: nada, 1 cucharada, algodón húmedo, cubierto de agua.",
+        "Pon todos los vasos en el mismo lugar.",
+        "Revisa cada día durante 10 días.",
+        "Cuenta las semillas germinadas y mide la raíz."
+      ],
+      "prediccion": "¿Crees que las semillas inundadas germinarán mejor que las del algodón húmedo?",
+      "observa": "Cuenta cuántas semillas germinaron en cada vaso y mide la longitud de la raíz en milímetros; anota día por día.",
+      "explicacion": "Para germinar, la semilla necesita agua, oxígeno del aire y una temperatura adecuada. Sin agua no despierta; con demasiada agua le falta oxígeno y puede pudrirse. Por eso cada ser vivo prospera en ecosistemas con la humedad adecuada para él.",
+      "error_comun": "Creer que mientras más agua, mejor crece la planta. El exceso de agua impide que la semilla respire.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la temperatura (vaso en nevera y vaso en el salón) con la misma cantidad de agua.",
+      "conexion": "Los campesinos del Valle siembran fríjol al comenzar las lluvias, pero cuidan que el terreno no quede encharcado.",
+      "tags": [
+        "germinación",
+        "semillas",
+        "agua",
+        "prueba justa",
+        "observación a largo plazo"
+      ]
+    },
+    {
+      "id": "g4-vida-09",
+      "grado": 4,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Mi desayuno es una cadena",
+      "pregunta": "¿De dónde viene la energía de mi desayuno?",
+      "dba": [
+        6
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "lista de lo que desayunaste",
+        "hojas de papel",
+        "lápices de colores",
+        "flechas recortadas"
+      ],
+      "pasos": [
+        "Escribe todo lo que desayunaste hoy.",
+        "Para cada alimento, pregunta: ¿de qué ser vivo viene?",
+        "Si viene de un animal, pregunta: ¿qué comió ese animal?",
+        "Sigue preguntando hasta llegar a una planta.",
+        "Dibuja cada cadena con flechas y ponte al final.",
+        "Marca qué nivel trófico ocupas tú en cada cadena."
+      ],
+      "prediccion": "¿Crees que todas tus cadenas empiezan en una planta?",
+      "observa": "Cuenta cuántas cadenas armaste, cuántos eslabones tiene cada una y en qué nivel trófico quedas tú.",
+      "explicacion": "Los seres humanos somos consumidores omnívoros: comemos plantas (consumidores primarios cuando comemos arepa de maíz) y animales (secundarios cuando comemos huevo o carne de una gallina que comió maíz). Toda la energía de nuestro cuerpo viene, al final, de las plantas que la captaron del Sol.",
+      "error_comun": "Creer que los humanos no hacemos parte de las cadenas alimenticias. Somos consumidores y nuestros restos también son descompuestos.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la comida analizada (almuerzo o comida típica del Pacífico) y compara las cadenas.",
+      "conexion": "El pandebono, el champús y el cholado vienen de plantas como el maíz, la yuca y las frutas del Valle.",
+      "tags": [
+        "consumidor",
+        "omnívoro",
+        "alimentación",
+        "cuerpo humano",
+        "cadena alimenticia"
+      ]
+    },
+    {
+      "id": "g4-vida-10",
+      "grado": 4,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Dientes que cuentan historias",
+      "pregunta": "¿Qué nos dicen los dientes sobre lo que come un animal?",
+      "dba": [
+        6
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "espejo de mano",
+        "plastilina",
+        "imágenes de cráneos de vaca, perro y humano",
+        "galleta",
+        "zanahoria cocida",
+        "palitos de madera"
+      ],
+      "pasos": [
+        "Mírate los dientes en el espejo y cuenta incisivos, caninos y muelas.",
+        "Muerde la galleta y nota qué dientes usas para cortar y cuáles para moler.",
+        "Observa las imágenes de cráneos de vaca y perro.",
+        "Modela en plastilina dientes planos y dientes puntiagudos.",
+        "Prueba cuál modelo corta mejor la zanahoria y cuál la aplasta.",
+        "Clasifica a cada animal como herbívoro, carnívoro u omnívoro."
+      ],
+      "prediccion": "¿Qué forma tendrán los dientes de un animal que come solo pasto?",
+      "observa": "Anota cuántos dientes de cada tipo tienes y completa una tabla: animal, forma de dientes, tipo de alimentación, nivel trófico.",
+      "explicacion": "La forma de los dientes muestra la dieta. Los herbívoros tienen muelas anchas y planas para moler plantas. Los carnívoros tienen colmillos afilados para desgarrar carne. Los humanos tenemos incisivos, caninos y muelas porque somos omnívoros: comemos plantas y animales.",
+      "error_comun": "Creer que los humanos tenemos colmillos de carnívoro 'para cazar'. Nuestros caninos son pequeños; nuestra dentadura es mixta, de omnívoro.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el animal estudiado (caballo, gato, mono) y predice su dieta por los dientes.",
+      "conexion": "En el Zoológico de Cali se ve cómo la dieta de cada animal coincide con su dentadura.",
+      "tags": [
+        "dientes",
+        "herbívoro",
+        "carnívoro",
+        "omnívoro",
+        "cuerpo humano"
+      ]
+    },
+    {
+      "id": "g4-vida-11",
+      "grado": 4,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "La saliva trabaja",
+      "pregunta": "¿Por qué una galleta de soda se pone dulce si la mastico mucho?",
+      "dba": [
+        6
+      ],
+      "duracion_min": 15,
+      "materiales": [
+        "galletas de soda sin sal o pan blanco",
+        "cronómetro",
+        "vaso de agua",
+        "cuaderno"
+      ],
+      "pasos": [
+        "Lávate las manos.",
+        "Pon un pedazo de galleta en tu boca.",
+        "Mastica despacio durante 2 minutos sin tragar.",
+        "Cada 30 segundos anota el sabor: salado, nada, un poco dulce, dulce.",
+        "Traga y toma agua.",
+        "Comparen los resultados del grupo."
+      ],
+      "prediccion": "¿Crees que el sabor de la galleta cambiará mientras la masticas?",
+      "observa": "Anota cada 30 segundos el sabor en una escala de 0 (nada dulce) a 3 (muy dulce) y haz una gráfica.",
+      "explicacion": "La galleta tiene almidón, que no sabe dulce. La saliva tiene una sustancia llamada amilasa que empieza a romper el almidón en azúcares más pequeños, que sí saben dulces. Así empieza la digestión: el cuerpo transforma el alimento para obtener la energía que necesitamos como consumidores.",
+      "error_comun": "Creer que la digestión empieza en el estómago. Empieza en la boca, con los dientes y la saliva.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Cada estudiante usa solo su galleta. Verifica antes alergias al trigo o al gluten."
+      },
+      "variable": "Cambia solo el tiempo de masticación (30 segundos, 1 minuto, 3 minutos) y compara el sabor.",
+      "conexion": "Por eso los médicos recomiendan masticar bien la comida: ayuda a la digestión desde la boca.",
+      "tags": [
+        "digestión",
+        "saliva",
+        "almidón",
+        "cuerpo humano",
+        "energía"
+      ]
+    },
+    {
+      "id": "g4-vida-12",
+      "grado": 4,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Guante de grasa",
+      "pregunta": "¿Cómo sobreviven los animales en aguas muy frías?",
+      "dba": [
+        7
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "2 bolsas plásticas con cierre",
+        "manteca vegetal",
+        "balde con agua y hielo",
+        "cinta",
+        "cronómetro"
+      ],
+      "pasos": [
+        "Llena una bolsa con una capa gruesa de manteca.",
+        "Mete otra bolsa vacía dentro para poner tu mano y pega los bordes con cinta (guante de grasa).",
+        "Pon una mano sin guante en el agua con hielo y mide cuánto tiempo aguantas cómodo (máximo 1 minuto).",
+        "Sácala y sécala.",
+        "Pon la mano con el guante de grasa en el agua.",
+        "Compara las sensaciones y los tiempos."
+      ],
+      "prediccion": "¿Cuál mano crees que sentirá menos frío?",
+      "observa": "Mide en segundos cuánto tiempo estás cómodo con cada mano (sin pasar de 1 minuto) y describe lo que sientes.",
+      "explicacion": "La grasa es un aislante térmico: hace más lenta la salida de calor del cuerpo hacia el agua fría. Las ballenas, focas y pingüinos tienen una capa gruesa de grasa bajo la piel. Las características físicas de un ecosistema, como la temperatura, determinan qué adaptaciones necesitan sus habitantes.",
+      "error_comun": "Creer que el frío 'entra' a la mano. En realidad es el calor el que sale de la mano hacia el agua fría; la grasa frena esa salida.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "No mantengas la mano en el agua con hielo más de 1 minuto."
+      },
+      "variable": "Cambia solo el grosor de la capa de manteca y mide el tiempo cómodo.",
+      "conexion": "Las ballenas jorobadas que llegan a Bahía Solano y Buenaventura vienen de aguas muy frías de la Antártida protegidas por su grasa.",
+      "tags": [
+        "adaptación",
+        "aislante",
+        "temperatura",
+        "ecosistemas acuáticos"
+      ]
+    },
+    {
+      "id": "g4-quimica-01",
+      "grado": 4,
+      "eje": "quimica",
+      "titulo": "¿Se disuelve o no?",
+      "pregunta": "¿Qué sustancias de la cocina se disuelven en agua y cuáles no?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "6 vasos transparentes",
+        "agua",
+        "sal",
+        "azúcar",
+        "harina",
+        "aceite",
+        "arena",
+        "café instantáneo",
+        "cuchara"
+      ],
+      "pasos": [
+        "Pon la misma cantidad de agua en cada vaso.",
+        "Agrega una cucharadita de una sustancia distinta en cada vaso.",
+        "Revuelve 20 veces cada vaso.",
+        "Espera 2 minutos y observa.",
+        "Clasifica: soluble (se disuelve) o insoluble (no se disuelve).",
+        "Escribe si la mezcla quedó homogénea o heterogénea."
+      ],
+      "prediccion": "¿Cuáles sustancias crees que desaparecerán de la vista al revolver?",
+      "observa": "Completa una tabla: sustancia, ¿se ve después de 2 minutos?, soluble o insoluble, tipo de mezcla.",
+      "explicacion": "Cuando una sustancia se disuelve, sus partículas se separan y se reparten entre las partículas del agua, formando una solución (mezcla homogénea). La sustancia que se disuelve se llama soluto y el agua, solvente. Las sustancias insolubles, como la arena o el aceite, forman mezclas heterogéneas.",
+      "error_comun": "Confundir disolver con derretir. Derretir es pasar de sólido a líquido por calor (el hielo); disolver es repartirse dentro de otra sustancia (la sal en agua).",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el solvente (agua, vinagre, aceite) con la misma sustancia.",
+      "conexion": "El agua de panela, el café y el refresco en polvo son soluciones que preparamos todos los días.",
+      "tags": [
+        "solubilidad",
+        "soluto",
+        "solvente",
+        "solución",
+        "clasificación"
+      ]
+    },
+    {
+      "id": "g4-quimica-02",
+      "grado": 4,
+      "eje": "quimica",
+      "titulo": "Carrera de azúcar",
+      "pregunta": "¿El azúcar se disuelve más rápido en agua fría de nevera o en agua tibia al sol?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "2 vasos transparentes",
+        "agua de nevera",
+        "agua que estuvo una hora al sol",
+        "azúcar",
+        "cuchara medidora",
+        "cronómetro"
+      ],
+      "pasos": [
+        "Pon la misma cantidad de agua en los dos vasos: uno con agua de nevera y otro con agua tibia del sol.",
+        "Agrega una cucharadita de azúcar en cada uno al mismo tiempo.",
+        "Revuelve los dos de la misma forma, 1 vuelta por segundo.",
+        "Mide cuántos segundos tarda en no verse ningún grano.",
+        "Repite 3 veces.",
+        "Anota en una tabla y compara."
+      ],
+      "prediccion": "¿En qué vaso crees que el azúcar se disolverá primero?",
+      "observa": "Mide en segundos el tiempo de disolución en cada vaso, 3 veces, y calcula cuál fue más rápido en promedio.",
+      "explicacion": "En el agua tibia las partículas se mueven más rápido y chocan más con los granos de azúcar, separándolos más pronto. Por eso la temperatura acelera la disolución. Es una prueba justa porque solo cambias la temperatura: la cantidad de agua, de azúcar y la forma de revolver son iguales.",
+      "error_comun": "Creer que el azúcar se disuelve más en agua tibia porque 'se derrite'. No se derrite: se reparte entre las partículas del agua.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la forma de revolver (sin revolver, revolviendo despacio, revolviendo rápido).",
+      "conexion": "Por eso la panela se disuelve más rápido en el agua de panela caliente que en la limonada fría.",
+      "tags": [
+        "disolución",
+        "temperatura",
+        "rapidez",
+        "prueba justa"
+      ]
+    },
+    {
+      "id": "g4-quimica-03",
+      "grado": 4,
+      "eje": "quimica",
+      "titulo": "Cubo contra granitos",
+      "pregunta": "¿Se disuelve más rápido un cubo de azúcar o la misma cantidad en granitos?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "cubos de azúcar",
+        "azúcar granulada",
+        "3 vasos",
+        "agua",
+        "cuchara",
+        "bolsa y rodillo",
+        "cronómetro"
+      ],
+      "pasos": [
+        "Pon la misma cantidad de agua en los tres vasos.",
+        "En el primero echa un cubo de azúcar entero.",
+        "En el segundo echa un cubo partido en 4 pedazos.",
+        "En el tercero echa un cubo triturado con el rodillo dentro de la bolsa.",
+        "Revuelve los tres igual y mide el tiempo de disolución.",
+        "Ordena los resultados del más rápido al más lento."
+      ],
+      "prediccion": "¿Cuál forma de azúcar se disolverá primero?",
+      "observa": "Mide en segundos el tiempo de disolución para cada tamaño de partícula y haz una gráfica de barras.",
+      "explicacion": "Al partir el azúcar en pedazos más pequeños aumenta la superficie que toca el agua. Más superficie significa que más partículas de azúcar se separan al mismo tiempo, y la disolución es más rápida. La cantidad de azúcar es la misma; solo cambia el tamaño de los pedazos.",
+      "error_comun": "Creer que el azúcar triturado 'es menos azúcar'. Es la misma cantidad; solo está en pedazos más pequeños.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la cantidad de agua con el mismo tamaño de azúcar.",
+      "conexion": "La panela rallada se disuelve más rápido que el bloque entero cuando se prepara aguapanela.",
+      "tags": [
+        "disolución",
+        "tamaño de partícula",
+        "superficie",
+        "gráfica de barras"
+      ]
+    },
+    {
+      "id": "g4-quimica-04",
+      "grado": 4,
+      "eje": "quimica",
+      "titulo": "Hasta que no cabe más",
+      "pregunta": "¿Cuánta sal puede disolverse en medio vaso de agua?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "vaso transparente",
+        "agua",
+        "sal",
+        "cucharita medidora",
+        "cuchara para revolver",
+        "cuaderno"
+      ],
+      "pasos": [
+        "Pon medio vaso de agua (100 ml).",
+        "Agrega una cucharadita rasa de sal y revuelve hasta que se disuelva.",
+        "Anota la cuenta: 1.",
+        "Sigue agregando una cucharadita a la vez y revolviendo 1 minuto.",
+        "Detente cuando la sal se quede en el fondo aunque revuelvas.",
+        "Anota cuántas cucharaditas se disolvieron."
+      ],
+      "prediccion": "¿Cuántas cucharaditas de sal crees que se podrán disolver?",
+      "observa": "Cuenta las cucharaditas que se disolvieron por completo y anota en cuál empezó a quedar sal en el fondo.",
+      "explicacion": "El agua puede disolver solo cierta cantidad de soluto. Cuando ya no admite más, decimos que la solución está saturada y la sal extra queda en el fondo, formando una mezcla heterogénea. Esa cantidad máxima depende de la sustancia y de la temperatura.",
+      "error_comun": "Creer que en el agua se puede disolver una cantidad infinita de sal si se revuelve lo suficiente.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la sustancia (azúcar en lugar de sal) y compara cuántas cucharaditas se disuelven.",
+      "conexion": "En el mar Muerto el agua tiene tanta sal que está casi saturada y las personas flotan con facilidad.",
+      "tags": [
+        "saturación",
+        "solubilidad",
+        "solución",
+        "conteo"
+      ]
+    },
+    {
+      "id": "g4-quimica-05",
+      "grado": 4,
+      "eje": "quimica",
+      "titulo": "Gotas que viajan",
+      "pregunta": "¿Cómo se reparte una gota de colorante en el agua sin revolver?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "2 vasos transparentes",
+        "agua de nevera",
+        "agua tibia al sol",
+        "colorante de comida",
+        "gotero",
+        "hoja blanca",
+        "cronómetro"
+      ],
+      "pasos": [
+        "Pon los dos vasos quietos sobre la hoja blanca.",
+        "Deja que el agua se quede quieta 1 minuto.",
+        "Deja caer una gota de colorante en el centro de cada vaso al mismo tiempo.",
+        "No muevas ni revuelvas.",
+        "Dibuja cada vaso a los 1, 5 y 10 minutos.",
+        "Anota en qué vaso se repartió primero el color."
+      ],
+      "prediccion": "¿El color se repartirá solo o habrá que revolver? ¿En qué vaso será más rápido?",
+      "observa": "Dibuja cada 5 minutos la mancha de color y mide el tiempo hasta que todo el vaso tiene el mismo color.",
+      "explicacion": "Las partículas del agua y del colorante están siempre en movimiento y chocan entre sí. Por eso el colorante se reparte solo, sin revolver: se llama difusión. En agua tibia las partículas se mueven más rápido y la difusión es más rápida. Al final queda una mezcla homogénea.",
+      "error_comun": "Creer que las partículas del agua están quietas. Aunque el agua se vea quieta, sus partículas se mueven todo el tiempo.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el líquido (agua, agua con azúcar, leche) a la misma temperatura.",
+      "conexion": "El olor del café recién hecho llega a toda la casa por difusión de sus partículas en el aire.",
+      "tags": [
+        "difusión",
+        "partículas",
+        "mezcla homogénea",
+        "temperatura"
+      ]
+    },
+    {
+      "id": "g4-quimica-06",
+      "grado": 4,
+      "eje": "quimica",
+      "titulo": "Mezcla o reacción: el volcán",
+      "pregunta": "¿Mezclar bicarbonato y vinagre es solo una mezcla o se forma algo nuevo?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "bicarbonato de sodio",
+        "vinagre",
+        "sal",
+        "azúcar",
+        "4 vasos",
+        "bandeja",
+        "cuchara"
+      ],
+      "pasos": [
+        "Pon los vasos en la bandeja.",
+        "Mezcla en un vaso sal con agua y en otro azúcar con agua; observa.",
+        "En el tercer vaso pon una cucharadita de bicarbonato.",
+        "Agrega vinagre poco a poco.",
+        "Observa las burbujas y escucha.",
+        "Compara: ¿qué mezcla produjo algo nuevo?"
+      ],
+      "prediccion": "¿Qué crees que pasará al mezclar bicarbonato y vinagre? ¿Será igual que mezclar sal con agua?",
+      "observa": "Anota en cada vaso si aparecieron burbujas, cambió el olor o la temperatura; clasifícalo como mezcla o cambio químico.",
+      "explicacion": "En la sal con agua solo hay una mezcla: las sustancias siguen siendo las mismas y se pueden separar por evaporación. Con bicarbonato y vinagre ocurre una reacción química: se forman sustancias nuevas, entre ellas un gas (dióxido de carbono) que hace las burbujas. Este gas no estaba antes en los vasos.",
+      "error_comun": "Creer que las burbujas son aire que estaba atrapado en el bicarbonato. Son un gas nuevo que se forma en la reacción.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "No acerques la cara al vaso y evita que el vinagre toque los ojos."
+      },
+      "variable": "Cambia solo la cantidad de vinagre (1, 2 o 3 cucharadas) con la misma cantidad de bicarbonato.",
+      "conexion": "Los polvos de hornear para pandebono y buñuelos producen gas parecido que hace crecer la masa.",
+      "tags": [
+        "reacción química",
+        "mezcla",
+        "gas",
+        "bicarbonato",
+        "vinagre"
+      ]
+    },
+    {
+      "id": "g4-quimica-07",
+      "grado": 4,
+      "eje": "quimica",
+      "titulo": "Repollo detective",
+      "pregunta": "¿Puede el jugo de repollo morado mostrar qué sustancias son ácidas?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "hojas de repollo morado",
+        "bolsa plástica con cierre",
+        "agua",
+        "colador",
+        "6 vasos",
+        "limón",
+        "vinagre",
+        "bicarbonato",
+        "jabón de manos",
+        "leche"
+      ],
+      "pasos": [
+        "Rompe las hojas de repollo en pedacitos y mételas en la bolsa con un vaso de agua.",
+        "Cierra la bolsa y amasa con las manos 5 minutos hasta que el agua se ponga morada.",
+        "Cuela el jugo y repártelo en los 6 vasos.",
+        "Deja un vaso sin nada para comparar.",
+        "Agrega a cada vaso una sustancia distinta.",
+        "Anota el color que toma cada vaso."
+      ],
+      "prediccion": "¿Crees que el limón y el bicarbonato cambiarán el color del jugo de la misma forma?",
+      "observa": "Registra el color de cada vaso comparándolo con el vaso de control y ordena las sustancias de rojo a verde.",
+      "explicacion": "El repollo morado tiene un pigmento que cambia de color según la sustancia que se le agregue: es un indicador. Con ácidos (limón, vinagre) se pone rosado o rojo; con sustancias contrarias a los ácidos, llamadas bases (bicarbonato, jabón), se pone verde o azul. Así podemos clasificar sustancias que se ven parecidas.",
+      "error_comun": "Creer que todo lo ácido es peligroso. El limón y el vinagre son ácidos débiles que comemos; lo peligroso son los ácidos fuertes de limpieza.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "No pruebes ni mezcles las sustancias. Si salpica a los ojos, lava con abundante agua."
+      },
+      "variable": "Cambia solo la cantidad de limón (1, 5 y 10 gotas) y observa cómo cambia el color.",
+      "conexion": "El borojó, el lulo y la maracuyá del Pacífico son frutas ácidas; el jugo de repollo se pone rosado con ellas.",
+      "tags": [
+        "indicador",
+        "ácido",
+        "base",
+        "repollo morado",
+        "clasificación"
+      ]
+    },
+    {
+      "id": "g4-tierra-01",
+      "grado": 4,
+      "eje": "tierra-ambiente",
+      "titulo": "Día y noche en una naranja",
+      "pregunta": "¿Por qué cuando en Cali es de día en otros lugares es de noche?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "naranja o bola de icopor",
+        "lápiz como eje",
+        "linterna",
+        "plastilina para marcar Colombia",
+        "salón oscuro"
+      ],
+      "pasos": [
+        "Atraviesa la naranja con el lápiz: es el eje de la Tierra.",
+        "Marca con plastilina dónde estaría Colombia.",
+        "Oscurece el salón y alumbra la naranja con la linterna (Sol).",
+        "Gira la naranja despacio sobre su eje, de oeste a este.",
+        "Observa cuándo Colombia está en la luz y cuándo en la sombra.",
+        "Dibuja la naranja con la mitad iluminada."
+      ],
+      "prediccion": "¿Qué parte de la naranja crees que estará iluminada al mismo tiempo?",
+      "observa": "Observa y dibuja qué fracción de la naranja queda iluminada y cuándo pasa Colombia de la luz a la sombra.",
+      "explicacion": "La Tierra rota sobre su eje una vez cada 24 horas. El Sol solo puede iluminar la mitad de la Tierra que está mirando hacia él: allí es de día. La otra mitad está en sombra: allí es de noche. Al rotar, cada lugar pasa del día a la noche.",
+      "error_comun": "Creer que la noche ocurre porque el Sol 'se esconde detrás de las montañas' o se apaga. El Sol siempre está iluminando; es la Tierra la que gira.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la rapidez con que giras la naranja e imagina qué pasaría con la duración del día.",
+      "conexion": "Cuando en Cali es de noche, en Japón es de día; por eso los partidos de fútbol del otro lado del mundo los vemos de madrugada.",
+      "tags": [
+        "día y noche",
+        "rotación",
+        "modelo",
+        "Tierra"
+      ]
+    },
+    {
+      "id": "g4-tierra-02",
+      "grado": 4,
+      "eje": "tierra-ambiente",
+      "titulo": "¿Qué hora es en Tokio?",
+      "pregunta": "¿En qué orden amanece en Brasil, Colombia y Japón?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "pelota con el mapa del mundo dibujado",
+        "linterna",
+        "3 papelitos con nombres de países",
+        "cinta",
+        "cuaderno"
+      ],
+      "pasos": [
+        "Pega los papelitos en Brasil, Colombia y Japón.",
+        "Alumbra la pelota con la linterna desde un lado.",
+        "Gira la pelota de oeste a este muy despacio.",
+        "Anota el orden en que cada país entra en la luz.",
+        "Busca en el celular la hora actual de cada país.",
+        "Compara tu orden con las horas reales."
+      ],
+      "prediccion": "¿Dónde crees que amanece primero: en Brasil o en Colombia?",
+      "observa": "Registra el orden de entrada a la zona iluminada y compara con la hora real de cada país en una tabla.",
+      "explicacion": "Como la Tierra rota de oeste a este, el Sol 'aparece' primero en los lugares que están más al este. Brasil está al este de Colombia, por eso allá amanece antes. Japón está casi al otro lado del planeta: cuando aquí es de día, allá es de noche. Por eso existen husos horarios.",
+      "error_comun": "Creer que en todo el mundo es la misma hora al mismo tiempo.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el país de comparación (España, México, Australia) y predice su hora.",
+      "conexion": "Las videollamadas con familiares que viven en España requieren pensar en la diferencia de horas.",
+      "tags": [
+        "husos horarios",
+        "rotación",
+        "día y noche",
+        "mapa del mundo"
+      ]
+    },
+    {
+      "id": "g4-tierra-03",
+      "grado": 4,
+      "eje": "tierra-ambiente",
+      "titulo": "Fases con mi cabeza",
+      "pregunta": "¿Por qué la Luna cambia de forma a lo largo del mes?",
+      "dba": [
+        4
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "bola de icopor blanca",
+        "lápiz",
+        "linterna potente o lámpara de mano",
+        "salón oscuro",
+        "hoja con 8 círculos dibujados"
+      ],
+      "pasos": [
+        "Clava la bola en el lápiz: es la Luna.",
+        "Pon la linterna fija en una mesa al frente (Sol).",
+        "Tu cabeza es la Tierra: sostén la Luna con el brazo estirado.",
+        "Gira despacio sobre ti mismo, en sentido contrario a las manecillas del reloj.",
+        "Detente en 8 posiciones y observa la parte iluminada de la Luna.",
+        "Dibuja cada forma en un círculo de la hoja."
+      ],
+      "prediccion": "¿Cuándo crees que verás la Luna completamente iluminada: cuando está entre tú y la linterna o detrás de ti?",
+      "observa": "Dibuja la forma de la parte iluminada que ves en cada una de las 8 posiciones y escribe el nombre de la fase.",
+      "explicacion": "La Luna siempre tiene una mitad iluminada por el Sol. Según su posición alrededor de la Tierra, desde aquí vemos más o menos de esa mitad. Cuando la Luna está entre la Tierra y el Sol, vemos su lado oscuro: luna nueva. Cuando está al otro lado, vemos toda la mitad iluminada: luna llena.",
+      "error_comun": "Creer que las fases se deben a la sombra de la Tierra sobre la Luna. Se deben a la posición relativa del Sol, la Tierra y la Luna.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la posición de la linterna (más alta) y mira si cambian las fases que observas.",
+      "conexion": "Los pescadores del Pacífico y muchos agricultores del Valle se guían por las fases de la Luna en su calendario.",
+      "tags": [
+        "fases de la Luna",
+        "modelo",
+        "posición relativa",
+        "Sol"
+      ]
+    },
+    {
+      "id": "g4-tierra-04",
+      "grado": 4,
+      "eje": "tierra-ambiente",
+      "titulo": "Diario de la Luna",
+      "pregunta": "¿Cada cuántos días se repite la misma forma de la Luna?",
+      "dba": [
+        4
+      ],
+      "duracion_min": 15,
+      "materiales": [
+        "cuaderno o calendario",
+        "lápiz",
+        "tabla de 30 casillas",
+        "ayuda de un familiar"
+      ],
+      "pasos": [
+        "Haz una tabla con 30 casillas, una por día.",
+        "Cada noche, con un familiar, sal a mirar la Luna desde el mismo sitio.",
+        "Dibuja la forma de la parte iluminada y anota la hora.",
+        "Si está nublado o no la ves, escribe 'no visible'.",
+        "Al final del mes, colorea las casillas de luna llena y luna nueva.",
+        "Cuenta los días entre una luna llena y la siguiente."
+      ],
+      "prediccion": "¿Cuántos días crees que pasarán entre una luna llena y la siguiente?",
+      "observa": "Dibuja la forma de la Luna cada noche durante un mes y cuenta los días entre fases iguales.",
+      "explicacion": "La Luna tarda unos 29 días y medio en pasar por todas sus fases, porque es lo que demora en volver a la misma posición respecto al Sol y la Tierra. Por eso hay más o menos una luna llena cada mes. A veces la Luna se ve de día, porque no siempre está del lado de la noche.",
+      "error_comun": "Creer que la Luna solo sale de noche. Muchas veces se puede ver de día.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Observa con un adulto y desde un lugar seguro de la casa."
+      },
+      "variable": "Cambia solo la hora de observación (7 p. m. o 6 a. m.) y compara dónde está la Luna en el cielo.",
+      "conexion": "El calendario de siembra de muchas familias campesinas del Valle y el Cauca se apoya en la Luna.",
+      "tags": [
+        "fases de la Luna",
+        "observación a largo plazo",
+        "calendario",
+        "registro"
+      ]
+    },
+    {
+      "id": "g4-tierra-05",
+      "grado": 4,
+      "eje": "tierra-ambiente",
+      "titulo": "Calendario lunar de galletas",
+      "pregunta": "¿En qué orden aparecen las fases de la Luna?",
+      "dba": [
+        4
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "8 galletas de dos capas con crema blanca",
+        "palito de paleta",
+        "plato",
+        "hoja con el dibujo de la órbita",
+        "imagen del calendario lunar del mes"
+      ],
+      "pasos": [
+        "Abre las galletas y deja la crema en una tapa.",
+        "Mira el calendario lunar del mes.",
+        "Con el palito, quita crema para que la parte blanca tenga la forma de cada fase.",
+        "Ubica las 8 galletas en orden alrededor de la Tierra dibujada.",
+        "Escribe el nombre de cada fase.",
+        "Explica a un compañero por qué ese es el orden."
+      ],
+      "prediccion": "¿Después de la luna llena crece o se achica la parte iluminada?",
+      "observa": "Revisa que la parte blanca de cada galleta coincida con la fase del calendario y que el orden sea el correcto.",
+      "explicacion": "Las fases siguen siempre el mismo orden: luna nueva, creciente, cuarto creciente, gibosa creciente, llena, gibosa menguante, cuarto menguante y menguante. Ese orden ocurre porque la Luna da vueltas alrededor de la Tierra y cambia su posición respecto al Sol.",
+      "error_comun": "Creer que la Luna crece y se encoge de verdad. Su tamaño no cambia; solo cambia la parte iluminada que vemos.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el punto de vista: dibuja cómo vería las fases un astronauta que mira desde el Sol.",
+      "conexion": "En la televisión colombiana y en el almanaque Bristol aparecen las fases de la Luna de cada mes.",
+      "tags": [
+        "fases de la Luna",
+        "secuencia",
+        "modelo",
+        "galletas"
+      ]
+    },
+    {
+      "id": "g4-tierra-06",
+      "grado": 4,
+      "eje": "tierra-ambiente",
+      "titulo": "Ecosistema en botella",
+      "pregunta": "¿Puede un pequeño ecosistema mantenerse vivo en una botella cerrada?",
+      "dba": [
+        7
+      ],
+      "duracion_min": 45,
+      "materiales": [
+        "botella plástica grande transparente",
+        "piedritas",
+        "tierra de jardín",
+        "plantitas pequeñas o musgo",
+        "atomizador con agua",
+        "cinta"
+      ],
+      "pasos": [
+        "Pide a un adulto que corte la botella a dos tercios.",
+        "Pon una capa de piedritas, luego tierra.",
+        "Siembra las plantitas.",
+        "Rocía agua hasta que la tierra esté húmeda.",
+        "Cierra la botella con su parte de arriba y cinta.",
+        "Pon el terrario donde reciba luz pero no sol directo.",
+        "Observa y dibuja cada semana durante un mes."
+      ],
+      "prediccion": "¿Crees que las plantas necesitarán que les eches agua otra vez?",
+      "observa": "Anota cada semana si hay gotas en las paredes, el color de las plantas y si aparecieron nuevos seres vivos (hongos, insectos).",
+      "explicacion": "En el terrario el agua circula: se evapora del suelo y de las hojas, forma gotas en las paredes y vuelve a caer. Las plantas producen su alimento con la luz. Así se representa cómo las condiciones físicas (luz, humedad, temperatura, suelo) permiten que vivan ciertos seres en un ecosistema.",
+      "error_comun": "Creer que un ecosistema es solo un conjunto de seres vivos. También incluye lo no vivo: el agua, el aire, la luz, el suelo y la temperatura.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Un adulto corta la botella."
+      },
+      "variable": "Cambia solo la luz: un terrario junto a la ventana y otro en un rincón oscuro.",
+      "conexion": "El bosque de niebla de los Farallones de Cali funciona parecido: mucha humedad que se recicla entre plantas y nubes.",
+      "tags": [
+        "terrario",
+        "ecosistema",
+        "ciclo del agua",
+        "observación a largo plazo"
+      ]
+    },
+    {
+      "id": "g4-tierra-07",
+      "grado": 4,
+      "eje": "tierra-ambiente",
+      "titulo": "Termómetro por el colegio",
+      "pregunta": "¿Cambian la temperatura y la humedad entre la cancha, el jardín y el salón?",
+      "dba": [
+        7
+      ],
+      "duracion_min": 45,
+      "materiales": [
+        "termómetro digital de ambiente",
+        "papel absorbente",
+        "atomizador con agua",
+        "reloj",
+        "cuaderno",
+        "lápices"
+      ],
+      "pasos": [
+        "Elige 4 lugares: cancha al sol, sombra de un árbol, jardín, salón.",
+        "En cada lugar deja el termómetro 5 minutos y anota la temperatura.",
+        "Rocía igual una hoja de papel absorbente en cada lugar y mide cuántos minutos tarda en secarse.",
+        "Busca y cuenta los seres vivos que veas (plantas, hormigas, aves).",
+        "Haz una tabla con los datos de cada lugar.",
+        "Compara: ¿dónde hay más seres vivos?"
+      ],
+      "prediccion": "¿En qué lugar crees que habrá más seres vivos: en la cancha caliente o en el jardín húmedo?",
+      "observa": "Registra la temperatura (°C), el tiempo de secado del papel (más rápido = aire más seco) y el número de seres vivos de cada lugar.",
+      "explicacion": "Las características físicas de un lugar, como la temperatura y la humedad, cambian incluso dentro del mismo colegio. Los lugares con sombra y humedad suelen tener más seres vivos porque ofrecen agua y protección del calor. Cada especie vive donde las condiciones le permiten sobrevivir.",
+      "error_comun": "Creer que la sombra 'produce' frío. La sombra solo bloquea la luz del Sol, que es la que calienta.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la hora de medición (mañana y mediodía) en el mismo lugar.",
+      "conexion": "Los árboles del parque del Perro y de la avenida Sexta hacen que esas zonas sean más frescas y con más aves.",
+      "tags": [
+        "temperatura",
+        "humedad",
+        "microhábitat",
+        "tabla de datos",
+        "ecosistemas"
+      ]
+    },
+    {
+      "id": "g4-tierra-08",
+      "grado": 4,
+      "eje": "tierra-ambiente",
+      "titulo": "Suelos que guardan agua",
+      "pregunta": "¿Qué tipo de suelo guarda más agua: arena, arcilla o tierra negra?",
+      "dba": [
+        7
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "3 botellas plásticas cortadas por un adulto como embudo",
+        "3 vasos",
+        "arena",
+        "arcilla o barro",
+        "tierra negra",
+        "servilletas",
+        "agua",
+        "vaso medidor"
+      ],
+      "pasos": [
+        "Pon una servilleta en cada embudo y llénalo con la misma cantidad de un suelo.",
+        "Pon cada embudo sobre un vaso.",
+        "Vierte 200 ml de agua en cada suelo al mismo tiempo.",
+        "Espera 10 minutos.",
+        "Mide cuánta agua cayó en cada vaso.",
+        "Calcula cuánta agua guardó cada suelo: 200 menos lo que cayó."
+      ],
+      "prediccion": "¿Cuál suelo crees que dejará pasar más agua y cuál guardará más?",
+      "observa": "Mide en ml el agua que atravesó cada suelo y calcula cuánta retuvo; haz una gráfica de barras.",
+      "explicacion": "La arena tiene granos grandes con espacios grandes entre ellos: el agua pasa rápido. La arcilla tiene partículas muy finas que retienen el agua. La tierra negra tiene materia orgánica que guarda agua y nutrientes. Por eso cada tipo de suelo permite que vivan distintas plantas.",
+      "error_comun": "Creer que todos los suelos son iguales y que la planta solo necesita 'tierra'.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Un adulto corta las botellas."
+      },
+      "variable": "Cambia solo la cantidad de agua que viertes con el mismo suelo.",
+      "conexion": "La tierra negra del valle del río Cauca es muy fértil y por eso se cultiva caña, maíz y frutas.",
+      "tags": [
+        "suelo",
+        "retención de agua",
+        "medición",
+        "gráfica de barras"
+      ]
+    },
+    {
+      "id": "g4-tierra-09",
+      "grado": 4,
+      "eje": "tierra-ambiente",
+      "titulo": "De la playa al páramo",
+      "pregunta": "¿Cómo cambia la temperatura con la altitud y qué seres viven en cada piso térmico?",
+      "dba": [
+        7
+      ],
+      "duracion_min": 45,
+      "materiales": [
+        "tabla de altitud y temperatura de Buenaventura, Cali, Bogotá y el Nevado del Huila",
+        "papel cuadriculado",
+        "lápices de colores",
+        "imágenes de plantas y animales de cada piso térmico"
+      ],
+      "pasos": [
+        "Lee la tabla: altitud en metros y temperatura promedio de cada ciudad.",
+        "Dibuja una gráfica: altitud en el eje horizontal y temperatura en el vertical.",
+        "Une los puntos y observa la tendencia.",
+        "Ubica las imágenes de seres vivos en el piso térmico donde viven.",
+        "Explica por qué el frailejón no vive en Cali.",
+        "Predice la temperatura de un lugar a 3000 m."
+      ],
+      "prediccion": "¿Qué crees que pasa con la temperatura a medida que subimos una montaña?",
+      "observa": "Ubica los puntos en la gráfica y escribe cuántos grados baja la temperatura aproximadamente por cada 1000 metros de altura.",
+      "explicacion": "A mayor altitud, la temperatura del aire es menor: en Colombia baja unos 6 °C por cada 1000 metros. Por eso tenemos pisos térmicos: cálido (Buenaventura), templado-cálido (Cali), frío (Bogotá), páramo y nieves. Cada piso tiene condiciones que permiten la vida de seres vivos distintos, como el frailejón en el páramo o la palma de coco en la costa.",
+      "error_comun": "Creer que en la cima de una montaña hace más calor porque está 'más cerca del Sol'. La diferencia de distancia es insignificante; el aire de arriba es más frío.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la región: busca datos de la Sierra Nevada de Santa Marta y compara.",
+      "conexion": "Desde Cali, en una hora se sube a los Farallones o a Dapa, donde hace más frío y hay otros árboles y aves.",
+      "tags": [
+        "pisos térmicos",
+        "altitud",
+        "temperatura",
+        "gráfica",
+        "biodiversidad"
+      ]
+    },
+    {
+      "id": "g4-tierra-10",
+      "grado": 4,
+      "eje": "tierra-ambiente",
+      "titulo": "Mini río de lluvia",
+      "pregunta": "¿Por qué los ríos se llevan el suelo cuando no hay plantas?",
+      "dba": [
+        7
+      ],
+      "duracion_min": 35,
+      "materiales": [
+        "2 bandejas",
+        "tierra",
+        "pasto o grama con raíces",
+        "regadera o botella con huecos",
+        "2 vasos",
+        "libros"
+      ],
+      "pasos": [
+        "Llena una bandeja con tierra suelta y la otra con tierra cubierta de pasto.",
+        "Inclina las dos bandejas sobre libros a la misma altura.",
+        "Pon un vaso en el extremo bajo de cada bandeja.",
+        "Riega las dos con la misma cantidad de agua, como si lloviera.",
+        "Compara el agua que cae en cada vaso.",
+        "Deja reposar los vasos y mide la capa de tierra del fondo."
+      ],
+      "prediccion": "¿En cuál bandeja crees que el agua arrastrará más tierra?",
+      "observa": "Mide en milímetros la capa de tierra asentada en cada vaso y compara el color del agua.",
+      "explicacion": "Las raíces de las plantas sostienen el suelo y las hojas frenan el golpe de las gotas. Sin plantas, la lluvia arrastra la tierra: eso se llama erosión. El suelo es una característica física del ecosistema y, cuando se pierde, se pierden también los seres vivos que dependen de él.",
+      "error_comun": "Creer que la erosión es solo cosa de grandes inundaciones. Ocurre poco a poco con cada lluvia en suelos sin cobertura vegetal.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la inclinación de las bandejas con la misma cantidad de agua.",
+      "conexion": "En las laderas de Cali y en los cerros de Siloé se siembran árboles para evitar derrumbes en temporada de lluvias.",
+      "tags": [
+        "erosión",
+        "suelo",
+        "vegetación",
+        "lluvia",
+        "ecosistema"
+      ]
+    }
+  ]
+}
