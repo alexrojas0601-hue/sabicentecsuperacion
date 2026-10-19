@@ -1,0 +1,817 @@
+{
+  "fuente": {
+    "titulo": "Derechos Básicos de Aprendizaje (DBA) Ciencias Naturales, V.1; Derechos Básicos de Aprendizaje Transición, V.1",
+    "entidad": "Ministerio de Educación Nacional de Colombia",
+    "anio": 2016,
+    "urls": [
+      "http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf",
+      "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf",
+      "https://www.atlantico.gov.co/images/stories/adjuntos/educacion/Calidad/2016-DBAs_Transicion.pdf",
+      "https://itgonzalosuarez.edu.co/gsr-content/uploads/DBA_Transici%C3%B3n.pdf",
+      "http://colombiaaprende.edu.co/sites/default/files/files_public/2026-06/dba_transicion-min_0.pdf",
+      "https://colombiaaprende.edu.co/recurso-coleccion/derechos-basicos-de-aprendizaje-dba-ciencias-naturales",
+      "https://colombiaaprende.edu.co/recurso-coleccion/derechos-basicos-de-aprendizaje-transicion"
+    ]
+  },
+  "nota": "Clasificación por eje hecha por el equipo SABI; los enunciados son textuales del MEN. Las evidencias son una muestra (solo se incluyeron evidencias leídas completas). Total grados 1-11: 54 DBA (conteo cotejado con el PDF oficial). Los documentos no imprimen año; créditos citan el Contrato No. 0803 de 2016.",
+  "ejes": {
+    "materia-cambios": "Materia y sus cambios",
+    "fuerza-movimiento": "Fuerza y movimiento",
+    "luz-sonido-energia": "Luz, sonido y energía",
+    "seres-vivos-cuerpo": "Seres vivos y cuerpo humano",
+    "quimica": "Química",
+    "tierra-ambiente": "Tierra, universo y ambiente"
+  },
+  "grados": {
+    "0": {
+      "nombre": "Transición",
+      "nota": "Selección: solo los DBA de Transición relacionados con exploración del mundo natural, cuerpo, materiales, causa-efecto, medida y observación. El PDF oficial de Colombia Aprende (http://colombiaaprende.edu.co/sites/default/files/files_public/2026-06/dba_transicion-min_0.pdf) no pudo abrirse; se usó copia del documento MEN V.1 alojada por la Gobernación del Atlántico, cotejada con una segunda copia.",
+      "dba": [
+        {
+          "n": 2,
+          "enunciado": "Se apropia de hábitos y prácticas para el cuidado personal y de su entorno.",
+          "evidencias": [
+            "Muestra independencia en la realización de prácticas de higiene y alimentación saludables.",
+            "Identifica algunas situaciones que ponen en riesgo su salud y seguridad."
+          ],
+          "ejes": [
+            "seres-vivos-cuerpo",
+            "tierra-ambiente"
+          ],
+          "verificado": true,
+          "fuente": "https://www.atlantico.gov.co/images/stories/adjuntos/educacion/Calidad/2016-DBAs_Transicion.pdf (reproducción íntegra del documento MEN V.1); cotejado con https://itgonzalosuarez.edu.co/gsr-content/uploads/DBA_Transici%C3%B3n.pdf"
+        },
+        {
+          "n": 3,
+          "enunciado": "Identifica y valora las características corporales y emocionales en sí mismo y en los demás.",
+          "evidencias": [
+            "Menciona algunas similitudes y diferencias que encuentra entre él y sus compañeros."
+          ],
+          "ejes": [
+            "seres-vivos-cuerpo"
+          ],
+          "verificado": true,
+          "fuente": "https://www.atlantico.gov.co/images/stories/adjuntos/educacion/Calidad/2016-DBAs_Transicion.pdf (reproducción íntegra del documento MEN V.1); cotejado con https://itgonzalosuarez.edu.co/gsr-content/uploads/DBA_Transici%C3%B3n.pdf"
+        },
+        {
+          "n": 7,
+          "enunciado": "Expresa y representa lo que observa, siente, piensa e imagina, a través del juego, la música, el dibujo y la expresión corporal.",
+          "evidencias": [
+            "Expresa libremente sus pensamientos y emociones a través de dibujos, pinturas, figuras modeladas o fotografías."
+          ],
+          "ejes": [
+            "luz-sonido-energia",
+            "seres-vivos-cuerpo"
+          ],
+          "verificado": true,
+          "fuente": "https://www.atlantico.gov.co/images/stories/adjuntos/educacion/Calidad/2016-DBAs_Transicion.pdf (reproducción íntegra del documento MEN V.1); cotejado con https://itgonzalosuarez.edu.co/gsr-content/uploads/DBA_Transici%C3%B3n.pdf"
+        },
+        {
+          "n": 11,
+          "enunciado": "Crea situaciones y propone alternativas de solución a problemas cotidianos a partir de sus conocimientos e imaginación.",
+          "evidencias": [
+            "Crea ambientes haciendo uso de objetos, materiales y espacios."
+          ],
+          "ejes": [
+            "materia-cambios",
+            "fuerza-movimiento"
+          ],
+          "verificado": true,
+          "fuente": "https://www.atlantico.gov.co/images/stories/adjuntos/educacion/Calidad/2016-DBAs_Transicion.pdf (reproducción íntegra del documento MEN V.1); cotejado con https://itgonzalosuarez.edu.co/gsr-content/uploads/DBA_Transici%C3%B3n.pdf"
+        },
+        {
+          "n": 12,
+          "enunciado": "Establece relaciones entre las causas y consecuencias de los acontecimientos que le suceden a él o a su alrededor.",
+          "evidencias": [
+            "Observa y hace registros gráficos, sonoros o audiovisuales para explicar lo que sucede.",
+            "Realiza preguntas de temas que son de su interés."
+          ],
+          "ejes": [
+            "materia-cambios",
+            "fuerza-movimiento",
+            "tierra-ambiente"
+          ],
+          "verificado": true,
+          "fuente": "https://www.atlantico.gov.co/images/stories/adjuntos/educacion/Calidad/2016-DBAs_Transicion.pdf (reproducción íntegra del documento MEN V.1); cotejado con https://itgonzalosuarez.edu.co/gsr-content/uploads/DBA_Transici%C3%B3n.pdf"
+        },
+        {
+          "n": 13,
+          "enunciado": "Usa diferentes herramientas y objetos con variadas posibilidades.",
+          "evidencias": [
+            "Identifica características de las cosas que encuentra a su alrededor y se pegunta sobre cómo funcionan."
+          ],
+          "ejes": [
+            "fuerza-movimiento",
+            "materia-cambios"
+          ],
+          "verificado": true,
+          "fuente": "https://www.atlantico.gov.co/images/stories/adjuntos/educacion/Calidad/2016-DBAs_Transicion.pdf (reproducción íntegra del documento MEN V.1); cotejado con https://itgonzalosuarez.edu.co/gsr-content/uploads/DBA_Transici%C3%B3n.pdf",
+          "nota": "'se pegunta' es errata del original MEN, conservada textualmente."
+        },
+        {
+          "n": 14,
+          "enunciado": "Construye nociones de espacio, tiempo y medida a través de experiencias cotidianas.",
+          "evidencias": [
+            "Reconoce el antes, el ahora y el después de un evento."
+          ],
+          "ejes": [
+            "fuerza-movimiento",
+            "tierra-ambiente"
+          ],
+          "verificado": true,
+          "fuente": "https://www.atlantico.gov.co/images/stories/adjuntos/educacion/Calidad/2016-DBAs_Transicion.pdf (reproducción íntegra del documento MEN V.1); cotejado con https://itgonzalosuarez.edu.co/gsr-content/uploads/DBA_Transici%C3%B3n.pdf"
+        },
+        {
+          "n": 15,
+          "enunciado": "Compara, ordena, clasifica objetos e identifica patrones de acuerdo con diferentes criterios.",
+          "evidencias": [
+            "Crea series de acuerdo a un atributo (del más largo al más corto, del más pesado al más liviano, etc)."
+          ],
+          "ejes": [
+            "materia-cambios",
+            "quimica"
+          ],
+          "verificado": true,
+          "fuente": "https://www.atlantico.gov.co/images/stories/adjuntos/educacion/Calidad/2016-DBAs_Transicion.pdf (reproducción íntegra del documento MEN V.1); cotejado con https://itgonzalosuarez.edu.co/gsr-content/uploads/DBA_Transici%C3%B3n.pdf"
+        }
+      ]
+    },
+    "1": {
+      "nombre": "Primero",
+      "dba": [
+        {
+          "n": 1,
+          "enunciado": "Comprende que los sentidos le permiten percibir algunas características de los objetos que nos rodean (temperatura, sabor, sonidos, olor, color, texturas y formas).",
+          "evidencias": [
+            "Describe y caracteriza, utilizando el sentido apropiado, sonidos, sabores, olores, colores, texturas y formas."
+          ],
+          "ejes": [
+            "seres-vivos-cuerpo",
+            "materia-cambios"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 2,
+          "enunciado": "Comprende que existe una gran variedad de materiales y que éstos se utilizan para distintos fines, según sus características (longitud, dureza, flexibilidad, permeabilidad al agua, solubilidad, ductilidad, maleabilidad, color, sabor, textura).",
+          "evidencias": [],
+          "ejes": [
+            "materia-cambios",
+            "quimica"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 3,
+          "enunciado": "Comprende que los seres vivos (plantas y animales) tienen características comunes (se alimentan, respiran, tienen un ciclo de vida, responden al entorno) y los diferencia de los objetos inertes.",
+          "evidencias": [],
+          "ejes": [
+            "seres-vivos-cuerpo"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 4,
+          "enunciado": "Comprende que su cuerpo experimenta constantes cambios a lo largo del tiempo y reconoce a partir de su comparación que tiene características similares y diferentes a las de sus padres y compañeros.",
+          "evidencias": [],
+          "ejes": [
+            "seres-vivos-cuerpo"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        }
+      ]
+    },
+    "2": {
+      "nombre": "Segundo",
+      "dba": [
+        {
+          "n": 1,
+          "enunciado": "Comprende que una acción mecánica (fuerza) puede producir distintas deformaciones en un objeto, y que este resiste a las fuerzas de diferente modo, de acuerdo con el material del que está hecho.",
+          "evidencias": [
+            "Clasifica los materiales según su resistencia a ser deformados cuando se les aplica una fuerza."
+          ],
+          "ejes": [
+            "fuerza-movimiento",
+            "materia-cambios"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 2,
+          "enunciado": "Comprende que las sustancias pueden encontrarse en distintos estados (sólido, líquido y gaseoso).",
+          "evidencias": [],
+          "ejes": [
+            "materia-cambios",
+            "quimica"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 3,
+          "enunciado": "Comprende la relación entre las características físicas de plantas y animales con los ambientes en donde viven, teniendo en cuenta sus necesidades básicas (luz, agua, aire, suelo, nutrientes, desplazamiento y protección).",
+          "evidencias": [
+            "Describe y clasifica plantas y animales de su entorno, según su tipo de desplazamiento, dieta y protección."
+          ],
+          "ejes": [
+            "seres-vivos-cuerpo",
+            "tierra-ambiente"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 4,
+          "enunciado": "Explica los procesos de cambios físicos que ocurren en el ciclo de vida de plantas y animales de su entorno, en un período de tiempo determinado.",
+          "evidencias": [],
+          "ejes": [
+            "seres-vivos-cuerpo"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        }
+      ]
+    },
+    "3": {
+      "nombre": "Tercero",
+      "dba": [
+        {
+          "n": 1,
+          "enunciado": "Comprende la forma en que se propaga la luz a través de diferentes materiales (opacos, transparentes como el aire, translúcidos como el papel y reflectivos como el espejo).",
+          "evidencias": [],
+          "ejes": [
+            "luz-sonido-energia",
+            "materia-cambios"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 2,
+          "enunciado": "Comprende la forma en que se produce la sombra y la relación de su tamaño con las distancias entre la fuente de luz, el objeto interpuesto y el lugar donde se produce la sombra.",
+          "evidencias": [
+            "Predice dónde se producirá la sombra de acuerdo con la posición de la fuente de luz y del objeto."
+          ],
+          "ejes": [
+            "luz-sonido-energia"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 3,
+          "enunciado": "Comprende la naturaleza (fenómeno de la vibración) y las características del sonido (altura, timbre, intensidad) y que este se propaga en distintos medios (sólidos, líquidos, gaseosos).",
+          "evidencias": [
+            "Describe y compara sonidos según su altura (grave o agudo) y su intensidad (fuerte o débil)."
+          ],
+          "ejes": [
+            "luz-sonido-energia"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 4,
+          "enunciado": "Comprende la influencia de la variación de la temperatura en los cambios de estado de la materia, considerando como ejemplo el caso del agua.",
+          "evidencias": [],
+          "ejes": [
+            "materia-cambios",
+            "quimica"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 5,
+          "enunciado": "Explica la influencia de los factores abióticos (luz, temperatura, suelo y aire) en el desarrollo de los factores bióticos (fauna y flora) de un ecosistema.",
+          "evidencias": [],
+          "ejes": [
+            "tierra-ambiente",
+            "seres-vivos-cuerpo"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 6,
+          "enunciado": "Comprende las relaciones de los seres vivos con otros organismos de su entorno (intra e interespecíficas) y las explica como esenciales para su supervivencia en un ambiente determinado.",
+          "evidencias": [],
+          "ejes": [
+            "seres-vivos-cuerpo",
+            "tierra-ambiente"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        }
+      ]
+    },
+    "4": {
+      "nombre": "Cuarto",
+      "dba": [
+        {
+          "n": 1,
+          "enunciado": "Comprende que la magnitud y la dirección en que se aplica una fuerza puede producir cambios en la forma como se mueve un objeto (dirección y rapidez).",
+          "evidencias": [],
+          "ejes": [
+            "fuerza-movimiento"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 2,
+          "enunciado": "Comprende los efectos y las ventajas de utilizar máquinas simples en diferentes tareas que requieren la aplicación de una fuerza.",
+          "evidencias": [
+            "Describe la función que cumplen fuerzas en una máquina simple para generar movimiento."
+          ],
+          "ejes": [
+            "fuerza-movimiento"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 3,
+          "enunciado": "Comprende que el fenómeno del día y la noche se debe a que la Tierra rota sobre su eje y en consecuencia el sol sólo ilumina la mitad de su superficie.",
+          "evidencias": [
+            "Explica cómo se producen el día y la noche por medio de una maqueta o modelo de la Tierra y del Sol."
+          ],
+          "ejes": [
+            "tierra-ambiente",
+            "luz-sonido-energia"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 4,
+          "enunciado": "Comprende que las fases de la Luna se deben a la posición relativa del Sol, la Luna y la Tierra a lo largo del mes.",
+          "evidencias": [],
+          "ejes": [
+            "tierra-ambiente",
+            "luz-sonido-energia"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 5,
+          "enunciado": "Comprende que existen distintos tipos de mezclas (homogéneas y heterogéneas) que de acuerdo con los materiales que las componen pueden separarse mediante diferentes técnicas (filtración, tamizado, decantación, evaporación).",
+          "evidencias": [
+            "Clasifica como homogénea o heterogénea una mezcla dada, a partir del número de fases observadas."
+          ],
+          "ejes": [
+            "materia-cambios",
+            "quimica"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 6,
+          "enunciado": "Comprende que los organismos cumplen distintas funciones en cada uno de los niveles tróficos y que las relaciones entre ellos pueden representarse en cadenas y redes alimenticias.",
+          "evidencias": [
+            "Representa cadenas, pirámides o redes tróficas para establecer relaciones entre los niveles tróficos."
+          ],
+          "ejes": [
+            "seres-vivos-cuerpo",
+            "tierra-ambiente"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 7,
+          "enunciado": "Comprende que existen distintos tipos de ecosistemas (terrestres y acuáticos) y que sus características físicas (temperatura, humedad, tipos de suelo, altitud) permiten que habiten en ellos diferentes seres vivos.",
+          "evidencias": [],
+          "ejes": [
+            "tierra-ambiente",
+            "seres-vivos-cuerpo"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        }
+      ]
+    },
+    "5": {
+      "nombre": "Quinto",
+      "nota": "En el PDF las páginas de 5° aparecen en desorden (DBA 2 antes que 1, 4 antes que 3); se respeta la numeración impresa.",
+      "dba": [
+        {
+          "n": 1,
+          "enunciado": "Comprende que un circuito eléctrico básico está formado por un generador o fuente (pila), conductores (cables) y uno o más dispositivos (bombillos, motores, timbres), que deben estar conectados apropiadamente (por sus dos polos) para que funcionen y produzcan diferentes efectos.",
+          "evidencias": [
+            "Identifica y soluciona dificultades cuando construye un circuito que no funciona."
+          ],
+          "ejes": [
+            "luz-sonido-energia"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 2,
+          "enunciado": "Comprende que algunos materiales son buenos conductores de la corriente eléctrica y otros no (denominados aislantes) y que el paso de la corriente siempre genera calor.",
+          "evidencias": [],
+          "ejes": [
+            "luz-sonido-energia",
+            "materia-cambios"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 3,
+          "enunciado": "Comprende que los sistemas del cuerpo humano están formados por órganos, tejidos y células y que la estructura de cada tipo de célula está relacionada con la función del tejido que forman.",
+          "evidencias": [
+            "Explica la estructura (órganos, tejidos y células) y las funciones de los sistemas de su cuerpo."
+          ],
+          "ejes": [
+            "seres-vivos-cuerpo"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 4,
+          "enunciado": "Comprende que en los seres humanos (y en muchos otros animales) la nutrición involucra el funcionamiento integrado de un conjunto de sistemas de órganos: digestivo, respiratorio y circulatorio.",
+          "evidencias": [],
+          "ejes": [
+            "seres-vivos-cuerpo"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        }
+      ]
+    },
+    "6": {
+      "nombre": "Sexto",
+      "dba": [
+        {
+          "n": 1,
+          "enunciado": "Comprende cómo los cuerpos pueden ser cargados eléctricamente asociando esta carga a efectos de atracción y repulsión.",
+          "evidencias": [],
+          "ejes": [
+            "luz-sonido-energia",
+            "fuerza-movimiento"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 2,
+          "enunciado": "Comprende que la temperatura (T) y la presión (P) influyen en algunas propiedades fisicoquímicas (solubilidad, viscosidad, densidad, puntos de ebullición y fusión) de las sustancias, y que estas pueden ser aprovechadas en las técnicas de separación de mezclas.",
+          "evidencias": [],
+          "ejes": [
+            "quimica",
+            "materia-cambios"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 3,
+          "enunciado": "Comprende la clasificación de los materiales a partir de grupos de sustancias (elementos y compuestos) y mezclas (homogéneas y heterogéneas).",
+          "evidencias": [],
+          "ejes": [
+            "quimica",
+            "materia-cambios"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 4,
+          "enunciado": "Comprende algunas de las funciones básicas de la célula (transporte de membrana, obtención de energía y división celular) a partir del análisis de su estructura.",
+          "evidencias": [
+            "Explica el proceso de respiración celular e identifica el rol de la mitocondria en dicho proceso."
+          ],
+          "ejes": [
+            "seres-vivos-cuerpo"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 5,
+          "enunciado": "Comprende la clasificación de los organismos en grupos taxonómicos, de acuerdo con el tipo de células que poseen y reconoce la diversidad de especies que constituyen nuestro planeta y las relaciones de parentesco entre ellas.",
+          "evidencias": [],
+          "ejes": [
+            "seres-vivos-cuerpo",
+            "tierra-ambiente"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        }
+      ]
+    },
+    "7": {
+      "nombre": "Séptimo",
+      "dba": [
+        {
+          "n": 1,
+          "enunciado": "Comprende las formas y las transformaciones de energía en un sistema mecánico y la manera como, en los casos reales, la energía se disipa en el medio (calor, sonido).",
+          "evidencias": [
+            "Representa gráficamente las energías cinética y potencial gravitacional en función del tiempo."
+          ],
+          "ejes": [
+            "luz-sonido-energia",
+            "fuerza-movimiento"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)",
+          "nota": "El PDF imprime 'transformacionesde' (sin espacio, errata tipográfica); se normalizó a 'transformaciones de'."
+        },
+        {
+          "n": 2,
+          "enunciado": "Explica cómo las sustancias se forman a partir de la interacción de los elementos y que estos se encuentran agrupados en un sistema periódico.",
+          "evidencias": [
+            "Ubica a los elementos en la Tabla Periódica con relación a los números atómicos (Z) y másicos (A)."
+          ],
+          "ejes": [
+            "quimica"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 3,
+          "enunciado": "Comprende que en las cadenas y redes tróficas existen flujos de materia y energía, y los relaciona con procesos de nutrición, fotosíntesis y respiración celular.",
+          "evidencias": [
+            "Explica tipos de nutrición (autótrofa y heterótrofa) en las cadenas y redes tróficas dentro de los ecosistemas."
+          ],
+          "ejes": [
+            "seres-vivos-cuerpo",
+            "tierra-ambiente"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 4,
+          "enunciado": "Comprende la relación entre los ciclos del carbono, el nitrógeno y del agua, explicando su importancia en el mantenimiento de los ecosistemas.",
+          "evidencias": [
+            "Propone acciones de uso responsable del agua en su hogar, en la escuela y en sus contextos cercanos."
+          ],
+          "ejes": [
+            "tierra-ambiente",
+            "quimica"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        }
+      ]
+    },
+    "8": {
+      "nombre": "Octavo",
+      "dba": [
+        {
+          "n": 1,
+          "enunciado": "Comprende el funcionamiento de máquinas térmicas (motores de combustión, refrigeración) por medio de las leyes de la termodinámica (primera y segunda ley).",
+          "evidencias": [],
+          "ejes": [
+            "luz-sonido-energia",
+            "fuerza-movimiento"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 2,
+          "enunciado": "Comprende que en una reacción química se recombinan los átomos de las moléculas de los reactivos para generar productos nuevos, y que dichos productos se forman a partir de fuerzas intramoleculares (enlaces iónicos y covalentes).",
+          "evidencias": [],
+          "ejes": [
+            "quimica",
+            "materia-cambios"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 3,
+          "enunciado": "Comprende que el comportamiento de un gas ideal está determinado por las relaciones entre Temperatura (T), Presión (P), Volumen (V) y Cantidad de sustancia (n).",
+          "evidencias": [],
+          "ejes": [
+            "quimica",
+            "materia-cambios"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 4,
+          "enunciado": "Analiza relaciones entre sistemas de órganos (excretor, inmune, nervioso, endocrino, óseo y muscular) con los procesos de regulación de las funciones en los seres vivos.",
+          "evidencias": [
+            "Relaciona los fenómenos homeostáticos de los organismos con el funcionamiento de órganos y sistemas."
+          ],
+          "ejes": [
+            "seres-vivos-cuerpo"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 5,
+          "enunciado": "Analiza la reproducción (asexual, sexual) de distintos grupos de seres vivos y su importancia para la preservación de la vida en el planeta.",
+          "evidencias": [
+            "Identifica riesgos y consecuencias físicas y psicológicas de un embarazo en la adolescencia."
+          ],
+          "ejes": [
+            "seres-vivos-cuerpo"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        }
+      ]
+    },
+    "9": {
+      "nombre": "Noveno",
+      "dba": [
+        {
+          "n": 1,
+          "enunciado": "Comprende que el movimiento de un cuerpo, en un marco de referencia inercial dado, se puede describir con gráficos y predecir por medio de expresiones matemáticas.",
+          "evidencias": [],
+          "ejes": [
+            "fuerza-movimiento"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 2,
+          "enunciado": "Comprende que la acidez y la basicidad son propiedades químicas de algunas sustancias y las relaciona con su importancia biológica y su uso cotidiano e industrial.",
+          "evidencias": [],
+          "ejes": [
+            "quimica"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 3,
+          "enunciado": "Analiza las relaciones cuantitativas entre solutos y solventes, así como los factores que afectan la formación de soluciones.",
+          "evidencias": [],
+          "ejes": [
+            "quimica",
+            "materia-cambios"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 4,
+          "enunciado": "Comprende la forma en que los principios genéticos mendelianos y post-mendelianos explican la herencia y el mejoramiento de las especies existentes.",
+          "evidencias": [
+            "Diseña experiencias que puedan demostrar cada una de las leyes de Mendel y los resultados numéricos obtenidos."
+          ],
+          "ejes": [
+            "seres-vivos-cuerpo"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 5,
+          "enunciado": "Explica la forma como se expresa la información genética contenida en el –ADN–, relacionando su expresión con los fenotipos de los organismos y reconoce su capacidad de modificación a lo largo del tiempo (por mutaciones y otros cambios), como un factor determinante en la generación de diversidad del planeta y en la evolución de las especies.",
+          "evidencias": [],
+          "ejes": [
+            "seres-vivos-cuerpo"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 6,
+          "enunciado": "Analiza teorías científicas sobre el origen de las especies (selección natural y ancestro común) como modelos científicos que sustentan sus explicaciones desde diferentes evidencias y argumentaciones.",
+          "evidencias": [
+            "Argumenta con evidencias científicas la influencia de las mutaciones en la selección natural de las especies."
+          ],
+          "ejes": [
+            "seres-vivos-cuerpo",
+            "tierra-ambiente"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        }
+      ]
+    },
+    "10": {
+      "nombre": "Décimo",
+      "dba": [
+        {
+          "n": 1,
+          "enunciado": "Comprende, que el reposo o el movimiento rectilíneo uniforme, se presentan cuando las fuerzas aplicadas sobre el sistema se anulan entre ellas, y que en presencia de fuerzas resultantes no nulas se producen cambios de velocidad.",
+          "evidencias": [],
+          "ejes": [
+            "fuerza-movimiento"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 2,
+          "enunciado": "Comprende la conservación de la energía mecánica como un principio que permite cuantificar y explicar diferentes fenómenos mecánicos: choques entre cuerpos, movimiento pendular, caída libre, deformación de un sistema masa-resorte.",
+          "evidencias": [
+            "Predice cualitativa y cuantitativamente el movimiento de un cuerpo al hacer uso del principio de conservación de la energía mecánica en diferentes situaciones físicas."
+          ],
+          "ejes": [
+            "luz-sonido-energia",
+            "fuerza-movimiento"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 3,
+          "enunciado": "Comprende que los diferentes mecanismos de reacción química (oxido-reducción, descomposición, neutralización y precipitación) posibilitan la formación de compuestos inorgánicos.",
+          "evidencias": [
+            "Explica a partir de relaciones cuantitativas y reacciones químicas (oxido-reducción, descomposición, neutralización y precipitación) la formación de nuevos compuestos, dando ejemplos de cada tipo de reacción."
+          ],
+          "ejes": [
+            "quimica"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 4,
+          "enunciado": "Comprende que la biotecnología conlleva el uso y manipulación de la información genética a través de distintas técnicas (fertilización asistida, clonación reproductiva y terapéutica, modificación genética, terapias génicas), y que tiene implicaciones sociales, bioéticas y ambientales.",
+          "evidencias": [
+            "Explica los usos de la biotecnología y sus efectos en diferentes contextos (salud, agricultura, producción energética y ambiente)."
+          ],
+          "ejes": [
+            "seres-vivos-cuerpo",
+            "tierra-ambiente"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        }
+      ]
+    },
+    "11": {
+      "nombre": "Undécimo",
+      "dba": [
+        {
+          "n": 1,
+          "enunciado": "Comprende la naturaleza de la propagación del sonido y de la luz como fenómenos ondulatorios (ondas mecánicas y electromagnéticas, respectivamente).",
+          "evidencias": [],
+          "ejes": [
+            "luz-sonido-energia"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 2,
+          "enunciado": "Comprende que la interacción de las cargas en reposo genera fuerzas eléctricas y que cuando las cargas están en movimiento genera fuerzas magnéticas.",
+          "evidencias": [
+            "Construye y explica el funcionamiento de un electroimán."
+          ],
+          "ejes": [
+            "luz-sonido-energia",
+            "fuerza-movimiento"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 3,
+          "enunciado": "Comprende las relaciones entre corriente y voltaje en circuitos resistivos sencillos en serie, en paralelo y mixtos.",
+          "evidencias": [
+            "Identifica configuraciones en serie, en paralelo y mixtas en diferentes circuitos representados en esquemas."
+          ],
+          "ejes": [
+            "luz-sonido-energia"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 4,
+          "enunciado": "Comprende que los diferentes mecanismos de reacción química (oxido-reducción, homólisis, heterólisis y pericíclicas) posibilitan la formación de distintos tipos de compuestos orgánicos.",
+          "evidencias": [],
+          "ejes": [
+            "quimica"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        },
+        {
+          "n": 5,
+          "enunciado": "Analiza cuestiones ambientales actuales, como el calentamiento global, contaminación, tala de bosques y minería, desde una visión sistémica (económico, social, ambiental y cultural).",
+          "evidencias": [],
+          "ejes": [
+            "tierra-ambiente"
+          ],
+          "verificado": true,
+          "fuente": "https://blog.utp.edu.co/educacion-ambiental-de-risaralda/files/2023/12/DBA-Ciencias-Naturales.pdf (texto completo); http://www.colombiaaprende.edu.co/sites/default/files/files_public/2026-05/dba_c.naturales-min.pdf (PDF oficial MEN: numeración y conteo por grado cotejados)"
+        }
+      ]
+    }
+  }
+}

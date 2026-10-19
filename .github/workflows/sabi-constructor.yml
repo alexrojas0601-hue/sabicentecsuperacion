@@ -1,0 +1,66 @@
+# Dot constructor de SABI: completa el banco de experimentos (mínimo 50 por grado, de Transición a 11°)
+# en ciclos automáticos, con el auditor de seguridad por código y el auditor científico.
+# Se detiene solo cuando el banco cumple la meta. Nada llega al sitio sin "Merge" de coordinación.
+name: SABI · Dot constructor (banco de experimentos)
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # cada 6 horas mientras falte
+  workflow_dispatch:
+    inputs:
+      ciclos:
+        description: "Ciclos en esta corrida (cada ciclo agrega hasta 6 experimentos a un grado y eje)"
+        default: "6"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sabi-constructor
+  cancel-in-progress: false
+
+jobs:
+  construir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Continuar desde la propuesta pendiente (si existe)
+        run: |
+          if git ls-remote --exit-code --heads origin sabi-constructor/experimentos >/dev/null 2>&1; then
+            git fetch origin sabi-constructor/experimentos
+            git checkout FETCH_HEAD -- data/experimentos data/experimentos.json || true
+          fi
+
+      - name: Ciclos de diseño y auditoría
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MAX_NUEVOS: "6"
+          CICLOS: ${{ inputs.ciclos || '6' }}
+        run: |
+          node scripts/banco-experimentos.mjs armar > /dev/null
+          node scripts/investigador-areas.mjs completar
+          node scripts/banco-experimentos.mjs cobertura
+
+      - name: Validar JSON
+        run: node -e "JSON.parse(require('fs').readFileSync('data/experimentos.json','utf8'))"
+
+      - name: Pull Request para aprobación humana
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: sabi-constructor/experimentos
+          commit-message: "SABI Dot constructor: banco de experimentos"
+          title: "SABI Dot constructor · banco de experimentos · revisión de coordinación"
+          body: |
+            El Dot constructor sigue llenando el banco de experimentos hasta llegar a 50 por grado.
+            Cada experimento pasó el auditor de seguridad (código) y el auditor científico (IA).
+            Lee los informes en `data/informes/`. **Aprobar = publicar** en experimentos.html y en el tutor.
+          labels: investigacion

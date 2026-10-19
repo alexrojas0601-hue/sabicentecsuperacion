@@ -18,7 +18,7 @@
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { revisarSeguridad, nivelSuficiente } from "./seguridad-experimentos.mjs";
-import { EJES, CORTO, MINIMO_EJE, validarExperimento, coberturaDe, armar } from "./banco-experimentos.mjs";
+import { EJES, CORTO, MINIMO_EJE, MINIMO_GRADO, validarExperimento, coberturaDe, armar } from "./banco-experimentos.mjs";
 
 const BANCO = "data/proyectos-areas.json";
 const VIGENTE = "data/pedagogia-vigente.json";
@@ -523,10 +523,11 @@ async function modoExperimentos() {
   let grado, eje;
   if (process.env.FOCO && process.env.FOCO.includes("|")) [grado, eje] = [Number(process.env.FOCO.split("|")[0]), process.env.FOCO.split("|")[1]];
   else {
+    // Primero los grados que no llegan a 50; dentro de ellos, el eje más lejos de su mínimo.
     const celdas = [];
-    for (let g = 0; g <= 11; g++) for (const e of Object.keys(EJES)) celdas.push([(t[g]?.[e] || 0) / MINIMO_EJE[e], t[g]?.total || 0, g, e]);
-    celdas.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
-    [, , grado, eje] = celdas[0];
+    for (let g = 0; g <= 11; g++) for (const e of Object.keys(EJES)) celdas.push([(t[g]?.total || 0) >= MINIMO_GRADO ? 1 : 0, (t[g]?.[e] || 0) / MINIMO_EJE[e], t[g]?.total || 0, g, e]);
+    celdas.sort((a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2]);
+    [, , , grado, eje] = celdas[0];
   }
   const archivo = `data/experimentos/grado-${grado}.json`;
   let base;
@@ -589,8 +590,29 @@ alineación con el DBA citado. Puntúa de 1 a 5 y corrige la explicación si tie
   await guardarInforme("experimentos-investigador", l.join("\n"));
 }
 
+// ---------------------------------------------------------------------------
+// Dot constructor — completa el banco hasta la meta (mínimo 50 por grado y por eje) en varios ciclos
+// ---------------------------------------------------------------------------
+async function bancoCompleto() {
+  let banco = [];
+  try { banco = JSON.parse(await readFile("data/experimentos.json", "utf8")).experimentos || []; } catch {}
+  const t = coberturaDe(banco);
+  for (let g = 0; g <= 11; g++) {
+    if ((t[g]?.total || 0) < MINIMO_GRADO) return false;
+    for (const e of Object.keys(EJES)) if ((t[g]?.[e] || 0) < MINIMO_EJE[e]) return false;
+  }
+  return true;
+}
+async function modoCompletar() {
+  const ciclos = Number(process.env.CICLOS || 6);
+  for (let k = 0; k < ciclos; k++) {
+    if (await bancoCompleto()) { console.log("El banco de experimentos ya cumple la meta. Nada que hacer."); break; }
+    try { await modoExperimentos(); } catch (e) { console.error(`Ciclo ${k + 1} falló, sigue el siguiente:`, e.message); }
+  }
+}
+
 const modo = process.argv[2] || "proyectos";
-({ proyectos: modoProyectos, pedagogia: modoPedagogia, cobertura: modoCobertura, herramientas: modoHerramientas, experimentos: modoExperimentos }[modo] || modoProyectos)().catch((e) => {
+({ proyectos: modoProyectos, pedagogia: modoPedagogia, cobertura: modoCobertura, herramientas: modoHerramientas, experimentos: modoExperimentos, completar: modoCompletar }[modo] || modoProyectos)().catch((e) => {
   console.error("El equipo investigador se detuvo sin modificar los datos:", e.message);
   process.exit(1);
 });
