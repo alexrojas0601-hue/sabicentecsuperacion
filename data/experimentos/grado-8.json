@@ -1,0 +1,2444 @@
+{
+  "grado": 8,
+  "experimentos": [
+    {
+      "id": "g8-materia-01",
+      "grado": 8,
+      "eje": "materia-cambios",
+      "titulo": "¿Sal o azúcar? El detector de iones",
+      "pregunta": "¿Por qué el agua con sal conduce la electricidad y el agua con azúcar no?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "pila de 9 V",
+        "2 cables con caimanes",
+        "1 led",
+        "3 vasos plásticos",
+        "agua de la llave",
+        "sal de cocina",
+        "azúcar",
+        "cuchara medidora"
+      ],
+      "pasos": [
+        "Arma el circuito: pila, cable, led y otro cable con las dos puntas libres.",
+        "Prepara tres vasos con 100 mL de agua: uno solo con agua, otro con 2 cucharaditas de sal y otro con 2 cucharaditas de azúcar.",
+        "Mete las dos puntas libres en el vaso de agua sola, separadas unos 2 cm, y anota si el led prende y con qué brillo (0 = apagado, 3 = muy brillante).",
+        "Lava y seca las puntas; repite con el agua azucarada.",
+        "Repite con el agua salada.",
+        "Agrega una cucharadita más de sal y vuelve a calificar el brillo.",
+        "Organiza los resultados en una tabla."
+      ],
+      "prediccion": "Antes de probar: ¿en cuál de los tres vasos crees que prenderá el led? ¿Por qué el azúcar, que también se disuelve, se comportaría distinto?",
+      "observa": "Brillo del led (escala 0 a 3) en cada vaso y después de agregar más sal; registra en una tabla vaso–sustancia–brillo.",
+      "explicacion": "La sal (cloruro de sodio) es un compuesto iónico: al disolverse se separa en iones Na⁺ y Cl⁻ con carga eléctrica que se mueven y transportan la corriente. El azúcar es un compuesto covalente: sus moléculas se disuelven enteras, sin carga, por eso casi no conducen. Más sal significa más iones y más brillo.",
+      "error_comun": "Creer que todo lo que se disuelve en agua conduce electricidad, o que es el agua pura la que conduce. El agua pura conduce muy poco; lo que conduce son los iones disueltos.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Usa solo una pila de 9 V; no unas los dos cables directamente (la pila se calienta). Nunca uses corriente de la casa."
+      },
+      "variable": "Cambia solo la cantidad de sal (1, 2, 3 y 4 cucharaditas) manteniendo igual el agua y la distancia entre las puntas.",
+      "conexion": "Por eso es peligroso usar aparatos eléctricos con las manos mojadas con sudor o agua salada, y por eso las bebidas hidratantes llevan sales (electrolitos).",
+      "tags": [
+        "enlace iónico",
+        "enlace covalente",
+        "conductividad",
+        "electrolitos",
+        "circuito"
+      ]
+    },
+    {
+      "id": "g8-materia-02",
+      "grado": 8,
+      "eje": "materia-cambios",
+      "titulo": "El hielo que no sube de temperatura",
+      "pregunta": "¿Qué pasa con la temperatura del hielo mientras se derrite?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 60,
+      "materiales": [
+        "termómetro digital de cocina",
+        "vaso plástico",
+        "cubos de hielo picado",
+        "un poco de agua fría",
+        "reloj o celular",
+        "hoja cuadriculada"
+      ],
+      "pasos": [
+        "Llena el vaso con hielo picado y agrega un poco de agua fría para que el termómetro quede rodeado.",
+        "Mide la temperatura y anótala como minuto 0.",
+        "Revuelve suavemente y anota la temperatura cada 3 minutos.",
+        "Anota también qué fracción del hielo queda (todo, tres cuartos, mitad, un cuarto, nada).",
+        "Sigue midiendo hasta 15 minutos después de que se derrita todo el hielo.",
+        "Haz una gráfica de temperatura (eje vertical) contra tiempo (eje horizontal)."
+      ],
+      "prediccion": "¿Crees que la temperatura subirá de forma constante desde el inicio, o se quedará quieta en algún momento? Dibuja tu gráfica predicha.",
+      "observa": "Temperatura cada 3 minutos y cantidad de hielo restante; busca en la gráfica la parte plana (meseta) y su valor.",
+      "explicacion": "Mientras hay hielo y agua juntos, la temperatura se queda cerca de 0 °C: el calor que entra del ambiente se usa para romper las uniones entre las moléculas del hielo (calor latente de fusión), no para subir la temperatura. Cuando se acaba el hielo, la energía ya sí aumenta la temperatura del agua. Es la primera ley: la energía no desaparece, cambia de tarea.",
+      "error_comun": "Pensar que si entra calor la temperatura siempre sube, o que \"el frío sale del hielo\". En realidad el calor fluye del ambiente hacia el hielo; nunca \"entra frío\".",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el tipo de hielo: picado contra cubos enteros de la misma masa, y compara cuánto dura la meseta.",
+      "conexion": "Por eso una limonada con hielo en una tarde caleña se mantiene fría mientras quede hielo, y las neveras de icopor de los vendedores ambulantes funcionan igual.",
+      "tags": [
+        "cambio de estado",
+        "fusión",
+        "calor latente",
+        "gráfica",
+        "temperatura"
+      ]
+    },
+    {
+      "id": "g8-materia-03",
+      "grado": 8,
+      "eje": "materia-cambios",
+      "titulo": "Cristales de sal que crecen",
+      "pregunta": "¿Por qué los cristales de sal siempre tienen forma de cubo?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "sal de cocina (sin yodo si es posible)",
+        "agua caliente de la llave o del termo",
+        "vaso plástico resistente",
+        "plato oscuro",
+        "lana o hilo de algodón",
+        "lápiz",
+        "lupa",
+        "regla"
+      ],
+      "pasos": [
+        "Con ayuda de un adulto, disuelve sal en 100 mL de agua caliente, cucharadita por cucharadita, hasta que ya no se disuelva más.",
+        "Vierte una parte en el plato oscuro y deja el resto en el vaso.",
+        "Amarra un hilo al lápiz y cuélgalo dentro del vaso sin tocar el fondo.",
+        "Deja ambos en un lugar sin movimiento durante 5 a 7 días.",
+        "Observa cada día con la lupa y mide con la regla el cristal más grande.",
+        "Dibuja la forma de los cristales y anota las medidas en una tabla día–tamaño."
+      ],
+      "prediccion": "¿Qué forma crees que tendrán los cristales? ¿Crecerán más rápido en el plato o en el hilo?",
+      "observa": "Forma de los cristales con la lupa y tamaño (en mm) del cristal más grande cada día, en el plato y en el hilo.",
+      "explicacion": "Al evaporarse el agua, los iones Na⁺ y Cl⁻ vuelven a unirse por enlaces iónicos. Se acomodan alternados en una red ordenada que se repite en las tres direcciones, y esa red es cúbica; por eso el cristal crece en forma de cubitos. En el plato la evaporación es más rápida y salen muchos cristales pequeños.",
+      "error_comun": "Creer que la sal \"desaparece\" al disolverse. Los iones siguen en el agua; solo se separan y se vuelven a unir cuando el agua se evapora.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Un adulto prepara el agua caliente; manipula los recipientes con cuidado para evitar quemaduras."
+      },
+      "variable": "Cambia solo la velocidad de evaporación: un plato al aire libre y otro tapado a medias, con la misma solución.",
+      "conexion": "Así se obtiene la sal marina en las salinas de Manaure (La Guajira) y la sal de Zipaquirá se formó por evaporación de un mar antiguo.",
+      "tags": [
+        "cristales",
+        "enlace iónico",
+        "evaporación",
+        "solución saturada",
+        "red cristalina"
+      ]
+    },
+    {
+      "id": "g8-materia-04",
+      "grado": 8,
+      "eje": "materia-cambios",
+      "titulo": "50 + 50 no siempre da 100",
+      "pregunta": "¿Si mezclo 50 mL de agua con 50 mL de alcohol obtengo 100 mL de mezcla?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 20,
+      "materiales": [
+        "alcohol antiséptico",
+        "agua",
+        "jeringa de 60 mL sin aguja o probeta plástica",
+        "botella plástica angosta transparente",
+        "marcador",
+        "colorante de comida"
+      ],
+      "pasos": [
+        "Mide 50 mL de agua con la jeringa, colorea con una gota de colorante y viértela en la botella angosta.",
+        "Marca con el marcador el nivel del agua.",
+        "Mide 50 mL de alcohol y marca dónde debería quedar el nivel si se sumaran exactamente.",
+        "Vierte el alcohol despacio, tapa y agita suavemente.",
+        "Espera 2 minutos y marca el nivel real.",
+        "Mide con la jeringa el volumen final de la mezcla y anótalo.",
+        "Repite con 50 mL de agua más 50 mL de agua como control."
+      ],
+      "prediccion": "¿El volumen final será mayor, igual o menor que 100 mL? Escribe un número.",
+      "observa": "Volumen final de agua + alcohol y de agua + agua (control), en mL; calcula la diferencia con 100 mL.",
+      "explicacion": "Las moléculas de agua y de alcohol son de tamaños distintos y se atraen entre sí por puentes de hidrógeno. Al mezclarse, unas se acomodan en los espacios entre las otras y quedan más juntas, así que el volumen total es algo menor (cerca de 96–97 mL). La masa sí se conserva: no se pierde materia, solo se reorganiza.",
+      "error_comun": "Pensar que \"se perdió líquido\" o que se evaporó. La masa total se mantiene; lo que cambia es el espacio que ocupan las moléculas juntas.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Alcohol antiséptico: lejos de cualquier fuente de calor, en lugar ventilado y sin probarlo. Guárdalo tapado al terminar."
+      },
+      "variable": "Cambia solo la proporción: 30 mL de alcohol + 70 mL de agua, y compara la disminución de volumen.",
+      "conexion": "En las fábricas de bebidas y de gel antibacterial se mezcla por masa o con tablas de corrección precisamente porque los volúmenes no se suman.",
+      "tags": [
+        "volumen",
+        "mezclas",
+        "modelo de partículas",
+        "puentes de hidrógeno",
+        "conservación de la masa"
+      ]
+    },
+    {
+      "id": "g8-materia-05",
+      "grado": 8,
+      "eje": "materia-cambios",
+      "titulo": "Jeringa tapada: presión contra volumen",
+      "pregunta": "¿Cómo cambia el volumen del aire encerrado cuando le pongo más peso encima?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "jeringa de 60 mL sin aguja",
+        "plastilina o silicona para tapar la punta",
+        "4 a 6 libros o cuadernos iguales",
+        "báscula de cocina",
+        "cinta adhesiva",
+        "hoja cuadriculada"
+      ],
+      "pasos": [
+        "Saca el émbolo hasta 50 mL y tapa bien la punta con plastilina.",
+        "Pesa un libro en la báscula y anota su masa.",
+        "Pon la jeringa de pie, sostenida con cinta contra una pared o una caja.",
+        "Coloca un libro sobre el émbolo, espera 10 segundos y lee el volumen.",
+        "Agrega un libro a la vez y anota el volumen cada vez.",
+        "Quita los libros y verifica que el émbolo vuelve casi a 50 mL.",
+        "Grafica volumen contra número de libros."
+      ],
+      "prediccion": "Si duplicas el peso, ¿crees que el volumen se reducirá a la mitad, un poco menos o nada? Escribe tu predicción con números.",
+      "observa": "Volumen de aire (mL) para 0, 1, 2, 3, 4… libros; observa la forma de la curva y calcula volumen × (peso total + presión del aire) si tu docente te ayuda.",
+      "explicacion": "Las partículas del aire chocan contra las paredes y el émbolo; eso es la presión. Al aumentar la fuerza sobre el émbolo, las partículas se juntan hasta que sus choques equilibran la nueva presión. A temperatura constante, si la presión aumenta, el volumen disminuye (ley de Boyle: P × V se mantiene casi constante). No es una línea recta porque el aire ya tenía la presión de la atmósfera encima.",
+      "error_comun": "Creer que las partículas del gas se encogen al comprimirlo. Las partículas no cambian de tamaño; lo que se reduce es el espacio vacío entre ellas.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la cantidad inicial de aire (30 mL en vez de 50 mL) y compara cuánto se comprime con el mismo número de libros.",
+      "conexion": "Las llantas de las motos y los tanques de gas comprimido aprovechan que el aire se puede comprimir; el agua, en cambio, casi no.",
+      "tags": [
+        "ley de Boyle",
+        "gases",
+        "presión",
+        "volumen",
+        "gráfica"
+      ]
+    },
+    {
+      "id": "g8-materia-06",
+      "grado": 8,
+      "eje": "materia-cambios",
+      "titulo": "La botella que infla un globo sola",
+      "pregunta": "¿Qué le pasa al volumen del aire de una botella cuando cambia su temperatura?",
+      "dba": [
+        3,
+        1
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "botella plástica vacía de 500 mL",
+        "globo",
+        "2 platones",
+        "agua caliente de la llave o del termo",
+        "agua con hielo",
+        "termómetro digital de cocina",
+        "cinta métrica de costura"
+      ],
+      "pasos": [
+        "Coloca el globo desinflado en la boca de la botella vacía.",
+        "Mide la temperatura del agua de cada platón y anótala.",
+        "Sumerge la botella en el platón de agua caliente durante 2 minutos.",
+        "Mide con la cinta la circunferencia del globo.",
+        "Pasa la botella al platón con agua con hielo por 2 minutos y vuelve a medir.",
+        "Repite el ciclo dos veces y saca el promedio de cada medida."
+      ],
+      "prediccion": "¿Qué crees que pasará con el globo en el agua caliente y en el agua fría? ¿Hay aire nuevo entrando a la botella?",
+      "observa": "Circunferencia del globo (cm) y temperatura del agua en cada caso; anota en una tabla temperatura–circunferencia.",
+      "explicacion": "Al subir la temperatura, las partículas del aire se mueven más rápido y chocan con más fuerza; como el globo es flexible, el gas ocupa más volumen. Al enfriarse, se mueven más despacio y el volumen disminuye. Con la misma cantidad de gas y presión casi constante, el volumen aumenta con la temperatura (ley de Charles).",
+      "error_comun": "Decir que \"el calor sube y empuja el globo\" o que el frío \"entra y lo desinfla\". El aire no se crea ni se escapa: es el mismo aire ocupando más o menos espacio.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "El agua caliente la prepara un adulto; no uses agua hirviendo para que la botella no se deforme ni haya quemaduras."
+      },
+      "variable": "Cambia solo la temperatura del agua (hielo, ambiente, tibia, caliente) y grafica circunferencia contra temperatura.",
+      "conexion": "Por eso las llantas de los carros marcan más presión después de rodar por la Autopista Sur al mediodía, y no se deben inflar en caliente.",
+      "tags": [
+        "ley de Charles",
+        "gases",
+        "temperatura",
+        "volumen",
+        "dilatación"
+      ]
+    },
+    {
+      "id": "g8-materia-07",
+      "grado": 8,
+      "eje": "materia-cambios",
+      "titulo": "Carrera de colores en papel",
+      "pregunta": "¿Una tinta negra está hecha de un solo color o de una mezcla de colores?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 35,
+      "materiales": [
+        "filtros de papel para café",
+        "marcadores de colores lavables (negro, café, verde)",
+        "vaso plástico con 1 cm de agua",
+        "lápiz",
+        "clip",
+        "regla"
+      ],
+      "pasos": [
+        "Corta tiras de filtro de 2 cm por 10 cm.",
+        "Traza con lápiz una línea a 2 cm del borde inferior y haz un punto grueso de marcador sobre ella.",
+        "Cuelga la tira con un clip del lápiz, de modo que el borde toque el agua pero el punto quede por encima.",
+        "Espera 15 minutos hasta que el agua suba casi hasta arriba.",
+        "Saca la tira, marca hasta dónde llegó el agua y deja secar.",
+        "Mide la distancia que recorrió cada color y la que recorrió el agua.",
+        "Calcula para cada color: distancia del color ÷ distancia del agua."
+      ],
+      "prediccion": "¿El punto negro se quedará negro, desaparecerá o se separará en otros colores? ¿Cuáles?",
+      "observa": "Colores que aparecen y la distancia recorrida (mm) por cada uno y por el agua; registra el cociente de cada color.",
+      "explicacion": "Esto se llama cromatografía. La tinta es una mezcla de pigmentos. El agua sube por el papel y arrastra los pigmentos; cada uno tiene distinta atracción por el agua (que es polar) y por las fibras del papel, así que viajan a distinta velocidad y se separan. Es un cambio físico: los pigmentos no se transforman, solo se separan.",
+      "error_comun": "Creer que el agua \"crea\" los colores nuevos o que la tinta reaccionó químicamente. Los colores ya estaban en la mezcla; solo se separaron.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el líquido que sube: agua contra agua con sal, usando el mismo marcador.",
+      "conexion": "La cromatografía se usa en laboratorios de medicina legal y en el control de calidad de alimentos y del café colombiano.",
+      "tags": [
+        "cromatografía",
+        "mezclas",
+        "separación",
+        "polaridad",
+        "pigmentos"
+      ]
+    },
+    {
+      "id": "g8-materia-08",
+      "grado": 8,
+      "eje": "materia-cambios",
+      "titulo": "¿Cuánta sal cabe en un vaso?",
+      "pregunta": "¿Cuántos gramos de sal y de azúcar se pueden disolver en 100 mL de agua a temperatura ambiente?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "báscula de cocina",
+        "sal de cocina",
+        "azúcar",
+        "2 vasos plásticos",
+        "jeringa o taza medidora",
+        "cuchara",
+        "agua a temperatura ambiente"
+      ],
+      "pasos": [
+        "Pon 100 mL de agua en cada vaso.",
+        "Pesa 50 g de sal en un recipiente y anota la masa.",
+        "Agrega una cucharadita de sal al primer vaso y revuelve 1 minuto; repite hasta que quede sal sin disolver en el fondo.",
+        "Pesa la sal que sobró en el recipiente y calcula cuánta se disolvió.",
+        "Repite todo con azúcar en el segundo vaso, empezando con 250 g.",
+        "Compara las dos cantidades en una tabla y en una gráfica de barras."
+      ],
+      "prediccion": "¿Crees que se disuelve más sal o más azúcar en la misma agua? Escribe un número aproximado para cada una.",
+      "observa": "Gramos disueltos de sal y de azúcar en 100 mL hasta que aparece el sólido sin disolver (punto de saturación).",
+      "explicacion": "Una solución se satura cuando el agua ya no puede rodear más partículas. La sal se disuelve hasta unos 36 g por 100 mL y el azúcar hasta unos 200 g: depende de cómo las moléculas de agua atraen a los iones de la sal o a las moléculas del azúcar. Cada sustancia tiene su propia solubilidad, que también cambia con la temperatura.",
+      "error_comun": "Creer que en el agua se puede disolver una cantidad ilimitada de cualquier sustancia, o que lo que más se disuelve es lo que tiene granos más pequeños.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la temperatura del agua (agua con hielo contra agua ambiente) y mide de nuevo la solubilidad del azúcar.",
+      "conexion": "El melao de caña y el almíbar de los dulces caleños son soluciones muy concentradas de azúcar; si se enfrían mucho, el azúcar se cristaliza.",
+      "tags": [
+        "solubilidad",
+        "saturación",
+        "soluciones",
+        "medición",
+        "gráfica de barras"
+      ]
+    },
+    {
+      "id": "g8-materia-09",
+      "grado": 8,
+      "eje": "materia-cambios",
+      "titulo": "Gotas sobre una moneda",
+      "pregunta": "¿Cuántas gotas de agua caben sobre una moneda antes de que se derramen, y qué cambia si el agua tiene jabón?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "moneda de 500 o 1000 pesos",
+        "gotero o pitillo",
+        "agua",
+        "jabón líquido",
+        "vaso plástico",
+        "toalla de papel",
+        "lupa"
+      ],
+      "pasos": [
+        "Seca bien la moneda y ponla sobre la toalla de papel.",
+        "Deja caer gotas de agua una por una, contando, hasta que el agua se derrame.",
+        "Observa con la lupa la forma de la gota antes de derramarse.",
+        "Repite tres veces y calcula el promedio.",
+        "Prepara agua con unas gotas de jabón y repite el conteo tres veces.",
+        "Compara los promedios en una tabla."
+      ],
+      "prediccion": "¿Cuántas gotas de agua crees que caben? ¿Más o menos con jabón?",
+      "observa": "Número de gotas antes del derrame en cada intento (agua y agua jabonosa) y forma de la superficie (abombada o plana).",
+      "explicacion": "La molécula de agua es polar: tiene un lado un poco negativo (el oxígeno) y otro un poco positivo (los hidrógenos). Por eso las moléculas se atraen entre sí (cohesión) y la superficie actúa como una piel elástica: la tensión superficial. El jabón se mete entre las moléculas de agua, debilita esa atracción y la gota se derrama antes.",
+      "error_comun": "Pensar que la gota no se derrama porque el agua \"se pega\" a la moneda como pegante. Lo principal es la atracción del agua consigo misma.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el líquido: agua, agua con sal y aceite de cocina, con la misma moneda y el mismo gotero.",
+      "conexion": "Los insectos zapateros caminan sobre el agua del río Pance gracias a la tensión superficial, y el jabón ayuda a lavar porque la reduce.",
+      "tags": [
+        "tensión superficial",
+        "polaridad",
+        "cohesión",
+        "conteo",
+        "promedio"
+      ]
+    },
+    {
+      "id": "g8-fuerza-01",
+      "grado": 8,
+      "eje": "fuerza-movimiento",
+      "titulo": "Manos que calientan: trabajo en calor",
+      "pregunta": "¿Cuánto sube la temperatura de una superficie cuando la frotamos con fuerza?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 20,
+      "materiales": [
+        "termómetro digital de cocina",
+        "lija o trozo de tela",
+        "bloque de madera",
+        "reloj o celular",
+        "cuaderno"
+      ],
+      "pasos": [
+        "Mide la temperatura de la superficie del bloque de madera apoyando la punta del termómetro 20 segundos.",
+        "Frota la madera con la lija rápidamente durante 30 segundos.",
+        "Mide de inmediato la temperatura en la zona frotada.",
+        "Deja enfriar 3 minutos y repite frotando 60 segundos.",
+        "Repite frotando suave durante 60 segundos.",
+        "Anota todos los datos en una tabla tiempo–fuerza–aumento de temperatura."
+      ],
+      "prediccion": "¿Crees que la temperatura subirá más si frotas más tiempo o si frotas con más fuerza? ¿Cuántos grados?",
+      "observa": "Temperatura antes y después de frotar (°C) y el aumento en cada condición.",
+      "explicacion": "Al frotar, tus músculos hacen trabajo contra la fuerza de fricción. Ese trabajo no se pierde: se convierte en energía interna de las superficies, cuyas partículas vibran más y la temperatura sube. La primera ley de la termodinámica dice que la energía se transforma pero se conserva. Más tiempo o más fuerza implica más trabajo y más aumento de temperatura.",
+      "error_comun": "Creer que el calor \"estaba guardado\" dentro de la madera o que la fricción \"crea\" energía de la nada. Es tu trabajo muscular el que se transforma en energía térmica.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la superficie frotada (madera, metal, plástico) con el mismo tiempo y fuerza.",
+      "conexion": "Los frenos de las busetas del MIO se calientan al detenerse; por eso en la bajada al mar se recomienda frenar con motor.",
+      "tags": [
+        "fricción",
+        "trabajo",
+        "primera ley",
+        "energía térmica",
+        "conservación de la energía"
+      ]
+    },
+    {
+      "id": "g8-fuerza-02",
+      "grado": 8,
+      "eje": "fuerza-movimiento",
+      "titulo": "El rebote que se va apagando",
+      "pregunta": "¿Qué porcentaje de su altura recupera una pelota en cada rebote y adónde va la energía que pierde?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "pelota de caucho",
+        "pelota de pimpón",
+        "cinta métrica de 2 m",
+        "cinta adhesiva",
+        "celular para grabar video en cámara lenta",
+        "pared lisa"
+      ],
+      "pasos": [
+        "Pega la cinta métrica vertical en la pared, con el cero en el piso.",
+        "Suelta la pelota desde 1 m de altura sin empujarla.",
+        "Graba el rebote y, pausando el video, lee la altura máxima del primer y segundo rebote.",
+        "Repite tres veces y saca el promedio.",
+        "Calcula el porcentaje: altura del rebote ÷ altura de caída × 100.",
+        "Repite todo con la pelota de pimpón y compara."
+      ],
+      "prediccion": "¿Qué porcentaje de la altura inicial crees que recuperará cada pelota en el primer rebote?",
+      "observa": "Alturas de caída y de rebote (cm) de cada pelota, su promedio y el porcentaje de recuperación.",
+      "explicacion": "Al caer, la energía potencial gravitatoria se convierte en energía cinética. En el choque contra el piso parte de esa energía se transforma en vibración, sonido y calentamiento de la pelota y del piso, que no se puede recuperar completa para volver a subir. Esta es una idea de la segunda ley: en las transformaciones reales siempre se dispersa parte de la energía como calor, por eso ningún rebote alcanza la altura inicial.",
+      "error_comun": "Pensar que la pelota \"gasta\" o destruye energía. La energía total se conserva; parte se transforma en energía térmica y sonido que ya no sirven para subir.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la superficie del piso (baldosa, cemento, tapete) con la misma pelota y la misma altura.",
+      "conexion": "Los guayos y los balones de fútbol se diseñan para controlar cuánto rebotan; un balón desinflado pierde más energía en cada bote.",
+      "tags": [
+        "energía potencial",
+        "energía cinética",
+        "segunda ley",
+        "porcentaje",
+        "video"
+      ]
+    },
+    {
+      "id": "g8-fuerza-03",
+      "grado": 8,
+      "eje": "fuerza-movimiento",
+      "titulo": "Huellas en plastilina: presión y área",
+      "pregunta": "¿Por qué la misma botella se hunde más en la plastilina si la apoyo por la tapa que por la base?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "botella plástica de 600 mL llena de agua",
+        "plastilina",
+        "regla",
+        "palillo",
+        "báscula de cocina",
+        "tabla o cartón"
+      ],
+      "pasos": [
+        "Haz tres bloques de plastilina iguales, lisos, de unos 3 cm de alto.",
+        "Pesa la botella llena y anota su masa.",
+        "Mide el diámetro de la tapa y de la base de la botella.",
+        "Apoya la botella de pie sobre el primer bloque durante 30 segundos y retírala.",
+        "Apoya la botella al revés, por la tapa, sobre el segundo bloque durante 30 segundos.",
+        "Mide con el palillo y la regla la profundidad de cada huella.",
+        "Calcula el área de la tapa y de la base y compara presión = peso ÷ área."
+      ],
+      "prediccion": "¿Cuántas veces más profunda crees que será la huella de la tapa que la de la base?",
+      "observa": "Profundidad de cada huella (mm), área de apoyo (cm²) y la relación entre ellas; regístralo en una tabla.",
+      "explicacion": "La presión es la fuerza repartida en un área: P = F ÷ A. El peso de la botella es el mismo, pero al apoyarse en la tapa se concentra en un área mucho menor, así que la presión es mayor y se hunde más. Esa misma idea se usa en gases: la presión de un gas es la fuerza de los choques de sus partículas por cada unidad de área.",
+      "error_comun": "Creer que la botella \"pesa más\" cuando se apoya por la tapa. El peso es el mismo; lo que cambia es el área y por tanto la presión.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el peso (botella llena, a la mitad, vacía) manteniendo la misma forma de apoyo.",
+      "conexion": "Las raquetas para caminar en barro, las llantas anchas de los tractores del Valle y los tacones finos se explican con presión y área.",
+      "tags": [
+        "presión",
+        "área",
+        "fuerza",
+        "medición",
+        "cálculo"
+      ]
+    },
+    {
+      "id": "g8-fuerza-04",
+      "grado": 8,
+      "eje": "fuerza-movimiento",
+      "titulo": "Brazo hidráulico con jeringas",
+      "pregunta": "¿Por qué con una jeringa pequeña puedo mover con poca fuerza el émbolo de una jeringa grande?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 45,
+      "materiales": [
+        "jeringa de 10 mL sin aguja",
+        "jeringa de 60 mL sin aguja",
+        "30 cm de manguera delgada de acuario",
+        "agua con colorante",
+        "monedas de 500 pesos",
+        "regla"
+      ],
+      "pasos": [
+        "Llena la jeringa grande con 20 mL de agua coloreada y únela a la manguera.",
+        "Llena la manguera y la jeringa pequeña sin dejar burbujas, y conéctala.",
+        "Empuja el émbolo pequeño 5 mL y mide cuánto sube el émbolo grande.",
+        "Pon monedas sobre el émbolo grande hasta que cueste moverlo y cuenta cuántas puede levantar la jeringa pequeña.",
+        "Ahora intercambia: empuja la grande y mide cuánto se mueve la pequeña.",
+        "Anota distancias y cantidad de monedas en una tabla."
+      ],
+      "prediccion": "¿Qué jeringa necesita menos fuerza para levantar las monedas? ¿Y cuál se mueve más distancia?",
+      "observa": "Desplazamiento (mm) de cada émbolo y número de monedas levantadas en cada configuración.",
+      "explicacion": "Según el principio de Pascal, la presión aplicada a un líquido encerrado se transmite igual a todos sus puntos. Como F = P × A, el émbolo grande (más área) recibe más fuerza. Pero no se gana energía gratis: el émbolo grande se mueve menos distancia, y el trabajo (fuerza × distancia) es casi el mismo a los dos lados.",
+      "error_comun": "Creer que el sistema hidráulico \"multiplica la energía\". Multiplica la fuerza a cambio de recorrer menos distancia; el trabajo se conserva o se pierde un poco por fricción.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el líquido por aire en el sistema y compara cuánto se mueve el émbolo grande.",
+      "conexion": "Los gatos hidráulicos de los talleres de mecánica, las volquetas y los frenos de los carros funcionan con este principio.",
+      "tags": [
+        "principio de Pascal",
+        "presión",
+        "hidráulica",
+        "trabajo",
+        "máquinas"
+      ]
+    },
+    {
+      "id": "g8-fuerza-05",
+      "grado": 8,
+      "eje": "fuerza-movimiento",
+      "titulo": "El buzo que obedece",
+      "pregunta": "¿Por qué un gotero dentro de una botella se hunde cuando aprieto la botella y sube cuando la suelto?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "botella plástica de 1,5 L con tapa",
+        "gotero plástico o tapa de lapicero con plastilina",
+        "agua",
+        "vaso transparente",
+        "marcador"
+      ],
+      "pasos": [
+        "Llena la botella hasta el borde con agua.",
+        "Ajusta el gotero en un vaso con agua para que flote apenas, con un poco de agua adentro.",
+        "Pasa el gotero a la botella y ciérrala bien.",
+        "Aprieta la botella poco a poco y observa el aire dentro del gotero.",
+        "Marca con el marcador en el gotero el nivel del agua cuando flota y cuando empieza a hundirse.",
+        "Suelta la presión y observa lo que pasa.",
+        "Repite 5 veces y describe el patrón."
+      ],
+      "prediccion": "¿Qué crees que le pasará a la burbuja de aire dentro del gotero cuando aprietes la botella?",
+      "observa": "Tamaño de la burbuja de aire del gotero (marcas) al flotar y al hundirse, y el momento en que cambia de dirección.",
+      "explicacion": "Al apretar la botella aumenta la presión del agua, que empuja y comprime el aire dentro del gotero (ley de Boyle). Entra más agua al gotero, aumenta su masa sin cambiar su tamaño exterior, su densidad promedio supera a la del agua y se hunde. Al soltar, el aire se expande, saca agua y el buzo sube porque el empuje vuelve a ser mayor que su peso.",
+      "error_comun": "Pensar que al apretar empujamos directamente el gotero hacia abajo. No lo tocamos: cambiamos la presión, y eso cambia el volumen del gas y la densidad del buzo.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la cantidad de aire inicial dentro del gotero y mide cuánta presión (cuánto apretar) necesita para hundirse.",
+      "conexion": "Los peces tienen una vejiga natatoria y los submarinos tanques de lastre que funcionan con la misma idea para subir y bajar.",
+      "tags": [
+        "ludión",
+        "flotación",
+        "presión",
+        "densidad",
+        "ley de Boyle"
+      ]
+    },
+    {
+      "id": "g8-fuerza-06",
+      "grado": 8,
+      "eje": "fuerza-movimiento",
+      "titulo": "El vaso que no se derrama",
+      "pregunta": "¿Qué sostiene un cartón tapando un vaso con agua puesto boca abajo?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 20,
+      "materiales": [
+        "vaso plástico liso",
+        "cartulina un poco más grande que la boca del vaso",
+        "agua",
+        "platón",
+        "vaso con un orificio pequeño en el fondo hecho por un adulto"
+      ],
+      "pasos": [
+        "Sobre el platón, llena el vaso de agua hasta el borde.",
+        "Coloca la cartulina encima, presiónala y voltea el vaso con cuidado.",
+        "Suelta la mano de la cartulina y cuenta cuántos segundos aguanta.",
+        "Inclina el vaso de lado y observa si la cartulina sigue pegada.",
+        "Repite con el vaso lleno solo hasta la mitad.",
+        "Repite con el vaso que tiene el orificio en el fondo, tapando primero el orificio con el dedo y luego destapándolo."
+      ],
+      "prediccion": "¿Crees que la cartulina se caerá al soltarla? ¿Qué pasará cuando destapes el orificio?",
+      "observa": "Tiempo que se sostiene la cartulina en cada caso (vaso lleno, medio lleno, con orificio tapado y destapado).",
+      "explicacion": "El aire de la atmósfera empuja en todas direcciones, también hacia arriba sobre la cartulina, con una presión de unos 100 000 pascales a nivel del mar (en Cali, a unos 1 000 m de altura, algo menos: cerca de 90 000). Esa fuerza es mucho mayor que el peso del agua del vaso. Al destapar el orificio, el aire empuja también desde arriba, las presiones se igualan y el agua cae.",
+      "error_comun": "Decir que la cartulina se sostiene porque \"el agua se pega\" o porque hay un \"vacío que chupa\". Lo que empuja es el aire de afuera; el vacío no jala nada.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el material que tapa el vaso (cartulina, papel periódico, malla de tela) y compara el tiempo que se sostiene.",
+      "conexion": "Así funcionan los pitillos, los goteros y las ventosas de los soportes para celular en los carros.",
+      "tags": [
+        "presión atmosférica",
+        "aire",
+        "fuerzas",
+        "fluidos",
+        "altura sobre el nivel del mar"
+      ]
+    },
+    {
+      "id": "g8-fuerza-07",
+      "grado": 8,
+      "eje": "fuerza-movimiento",
+      "titulo": "Cohete de pisotón",
+      "pregunta": "¿Cómo depende la distancia que vuela un cohete de papel de la fuerza con que piso la botella?",
+      "dba": [
+        1,
+        3
+      ],
+      "duracion_min": 50,
+      "materiales": [
+        "botella plástica de 2 L vacía",
+        "1 m de manguera de jardín delgada",
+        "cinta aislante",
+        "tubo de PVC delgado o pitillo grueso",
+        "hojas de papel",
+        "cinta métrica",
+        "tiza"
+      ],
+      "pasos": [
+        "Une con cinta la boca de la botella a un extremo de la manguera y el otro extremo al tubo, que sirve de rampa de lanzamiento.",
+        "Enrolla papel alrededor del tubo para hacer un cohete, cierra la punta y agrega aletas.",
+        "Coloca el cohete en el tubo apuntando a 45° en un patio abierto, lejos de las personas.",
+        "Pisa la botella con un pie desde 10 cm de altura, luego desde 20 y 30 cm.",
+        "Marca con tiza dónde cae el cohete y mide la distancia.",
+        "Infla de nuevo la botella soplando por la manguera antes de cada lanzamiento.",
+        "Haz tres lanzamientos por altura y saca el promedio."
+      ],
+      "prediccion": "Si pisas desde el doble de altura, ¿el cohete volará el doble de distancia, más o menos?",
+      "observa": "Distancia de vuelo (m) para cada altura de pisotón; tabla con tres intentos y promedio.",
+      "explicacion": "Al pisar, haces trabajo sobre el aire de la botella: lo comprimes y aumenta su presión. El aire a presión empuja el cohete y transforma esa energía en energía cinética. Un pisotón más fuerte da más presión y más energía al cohete, pero no proporcionalmente, porque parte de la energía se pierde en fricción y en calentar el aire.",
+      "error_comun": "Creer que el cohete sigue empujado por el aire durante todo el vuelo. El empuje solo actúa dentro del tubo; después vuela por inercia mientras la gravedad y el aire lo frenan.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el ángulo de lanzamiento (30°, 45°, 60°) con la misma altura de pisotón.",
+      "conexion": "Los frenos de aire de las tractomulas y las herramientas neumáticas de los talleres usan aire comprimido para hacer trabajo.",
+      "tags": [
+        "aire comprimido",
+        "trabajo",
+        "energía cinética",
+        "presión",
+        "proyectiles"
+      ]
+    },
+    {
+      "id": "g8-fuerza-08",
+      "grado": 8,
+      "eje": "fuerza-movimiento",
+      "titulo": "Carrito de motor de liga",
+      "pregunta": "¿Cuánto avanza un carrito por cada vuelta que le doy a la liga?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 60,
+      "materiales": [
+        "caja pequeña de cartón o botella plástica",
+        "4 tapas de botella",
+        "2 palos de pincho sin punta o pitillos",
+        "ligas de caucho",
+        "cinta adhesiva",
+        "plastilina",
+        "cinta métrica"
+      ],
+      "pasos": [
+        "Arma el chasis con la caja y pon los dos ejes con las tapas como ruedas, sujetos con pitillos para que giren libres.",
+        "Amarra una liga al eje trasero y el otro extremo al frente del carrito.",
+        "Enrolla la liga dándole 5 vueltas al eje trasero.",
+        "Suelta el carrito en un piso liso y mide la distancia recorrida.",
+        "Repite con 10, 15 y 20 vueltas.",
+        "Haz tres intentos por cada número de vueltas y grafica distancia contra vueltas."
+      ],
+      "prediccion": "¿La distancia aumentará igual por cada 5 vueltas que agregues? Dibuja la gráfica que esperas.",
+      "observa": "Distancia (cm) recorrida para 5, 10, 15 y 20 vueltas, con promedio de tres intentos.",
+      "explicacion": "Al enrollar la liga haces trabajo y queda guardado como energía potencial elástica. Al soltar, la liga se desenrolla, hace girar las ruedas y esa energía se transforma en energía cinética. La fricción con el piso y en los ejes transforma parte en calor, por eso el carrito se detiene. Con más vueltas hay más energía, hasta que la liga se deforma o patina.",
+      "error_comun": "Pensar que el carrito se detiene porque \"se le acaba la fuerza\". La fuerza no se gasta; lo que se transforma es la energía, y la fricción la va convirtiendo en energía térmica.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el grosor de la liga (o usa dos ligas juntas) con el mismo número de vueltas.",
+      "conexion": "Los relojes de cuerda, los juguetes de cuerda y los resortes de las puertas guardan energía elástica de la misma forma.",
+      "tags": [
+        "energía elástica",
+        "transformación de energía",
+        "fricción",
+        "gráfica",
+        "diseño"
+      ]
+    },
+    {
+      "id": "g8-energia-01",
+      "grado": 8,
+      "eje": "luz-sonido-energia",
+      "titulo": "Mezcla tibia: predecir la temperatura final",
+      "pregunta": "¿Qué temperatura tendrá la mezcla de agua caliente con agua fría, según las cantidades de cada una?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "agua caliente del termo",
+        "agua fría de la nevera",
+        "termómetro digital de cocina",
+        "3 vasos de icopor",
+        "jeringa de 60 mL o taza medidora",
+        "cuchara"
+      ],
+      "pasos": [
+        "Mide 100 mL de agua fría en un vaso de icopor y anota su temperatura.",
+        "Mide 100 mL de agua caliente en otro vaso y anota su temperatura.",
+        "Calcula la temperatura que esperas al mezclarlas (promedio).",
+        "Vierte las dos en el tercer vaso, revuelve y mide la temperatura final.",
+        "Repite con 50 mL de agua caliente y 150 mL de fría; calcula antes con el promedio ponderado.",
+        "Compara en una tabla la temperatura calculada y la medida."
+      ],
+      "prediccion": "Con 100 mL a 60 °C y 100 mL a 20 °C, ¿qué temperatura final esperas? ¿Y con 50 mL caliente y 150 mL fría?",
+      "observa": "Temperaturas iniciales y finales (°C) y la diferencia entre lo calculado y lo medido.",
+      "explicacion": "El calor pasa del agua caliente a la fría hasta que llegan a la misma temperatura (equilibrio térmico). La energía que pierde la caliente es la que gana la fría (primera ley), por eso la temperatura final es un promedio ponderado por las masas: Tf = (m₁T₁ + m₂T₂) ÷ (m₁ + m₂). La medida suele quedar un poco por debajo porque algo de calor se escapa al vaso y al aire.",
+      "error_comun": "Sumar las temperaturas (60 + 20 = 80 °C) o creer que el frío del agua fría \"pasa\" a la caliente. Solo se transfiere calor, y siempre de lo caliente a lo frío.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "El agua caliente la sirve un adulto desde el termo; usa recipientes plásticos resistentes y no la manipules corriendo."
+      },
+      "variable": "Cambia solo el recipiente (icopor contra vaso de metal) y compara cuánto se aleja el resultado medido del calculado.",
+      "conexion": "Así se prepara el agua tibia para bañar a un bebé o se calcula cuánta agua fría añadir al aguapanela caliente.",
+      "tags": [
+        "equilibrio térmico",
+        "calor",
+        "primera ley",
+        "promedio ponderado",
+        "calorimetría"
+      ]
+    },
+    {
+      "id": "g8-energia-02",
+      "grado": 8,
+      "eje": "luz-sonido-energia",
+      "titulo": "La bomba de bicicleta que se calienta",
+      "pregunta": "¿Por qué se calienta la bomba de inflar cuando la uso muchas veces seguidas?",
+      "dba": [
+        1,
+        3
+      ],
+      "duracion_min": 20,
+      "materiales": [
+        "bomba manual de bicicleta",
+        "balón o llanta de bicicleta para inflar",
+        "termómetro digital de cocina",
+        "reloj o celular",
+        "cinta adhesiva"
+      ],
+      "pasos": [
+        "Pega la punta del termómetro con cinta al tubo de la bomba, cerca de la salida del aire.",
+        "Anota la temperatura inicial.",
+        "Infla el balón con 20 bombazos rápidos y anota la temperatura.",
+        "Sigue con 20 bombazos más y anota de nuevo.",
+        "Deja reposar 5 minutos y mide otra vez.",
+        "Repite bombeando 20 veces sin conectar nada (aire libre) y compara."
+      ],
+      "prediccion": "¿Subirá más la temperatura cuando el aire se comprime dentro del balón o cuando bombeas al aire libre?",
+      "observa": "Temperatura del tubo (°C) tras 0, 20 y 40 bombazos con balón y sin balón, y tras el reposo.",
+      "explicacion": "Al comprimir rápido el aire haces trabajo sobre él; esa energía aumenta la energía interna del gas y su temperatura sube (primera ley: el trabajo hecho sobre un sistema puede convertirse en energía interna). Cuando bombeas al aire libre casi no hay compresión y se calienta menos (solo por la fricción del émbolo). Al revés, un gas que se expande se enfría: así funcionan las neveras.",
+      "error_comun": "Creer que la bomba se calienta solo por el roce de las manos. Gran parte del calentamiento viene de comprimir el aire.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la velocidad de bombeo (20 bombazos en 10 segundos contra en 40 segundos).",
+      "conexion": "El compresor de la nevera calienta el gas refrigerante al comprimirlo; por eso la parte de atrás de la nevera está tibia.",
+      "tags": [
+        "compresión",
+        "primera ley",
+        "temperatura",
+        "gases",
+        "refrigeración"
+      ]
+    },
+    {
+      "id": "g8-energia-03",
+      "grado": 8,
+      "eje": "luz-sonido-energia",
+      "titulo": "Nevera de barro sin electricidad",
+      "pregunta": "¿Puede una olla de barro mojada mantener los alimentos más frescos sin usar electricidad?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "2 materas de barro sin esmalte (una más pequeña)",
+        "arena",
+        "agua",
+        "toalla de tela",
+        "2 termómetros digitales o uno usado por turnos",
+        "2 tomates o limones iguales"
+      ],
+      "pasos": [
+        "Pon arena en el fondo de la matera grande y coloca la pequeña dentro.",
+        "Llena con arena el espacio entre las dos materas y mójala bien.",
+        "Pon un tomate y un termómetro dentro de la matera pequeña y tápala con la toalla húmeda.",
+        "Pon otro tomate y termómetro en una matera seca igual, como control, a la sombra y con viento.",
+        "Mide la temperatura de las dos cada hora durante la jornada escolar.",
+        "Moja la arena cuando se seque y observa los tomates durante 5 días."
+      ],
+      "prediccion": "¿Cuántos grados más fresca crees que estará la nevera de barro respecto al control?",
+      "observa": "Temperatura (°C) dentro de cada matera cada hora y estado de los tomates por 5 días.",
+      "explicacion": "El agua de la arena y del barro se evapora. Para pasar de líquido a gas, las moléculas necesitan energía, y la toman del interior de la olla en forma de calor; por eso el interior se enfría unos grados. Es el mismo principio que usan los refrigeradores: un líquido que se evapora absorbe calor. Funciona mejor con aire seco y viento.",
+      "error_comun": "Pensar que el agua \"le pasa el frío\" a los alimentos. El agua al evaporarse se lleva calor del interior; no transfiere frío.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el lugar: con ventilador o corriente de aire contra en un rincón sin viento.",
+      "conexion": "Las tinajas de barro de las casas campesinas del Valle y las ollas \"zeer\" que se usan en zonas sin electricidad funcionan así.",
+      "tags": [
+        "evaporación",
+        "refrigeración",
+        "calor latente",
+        "tecnología apropiada",
+        "temperatura"
+      ]
+    },
+    {
+      "id": "g8-energia-04",
+      "grado": 8,
+      "eje": "luz-sonido-energia",
+      "titulo": "Lata negra contra lata blanca",
+      "pregunta": "¿El color de una superficie cambia cuánta energía del sol absorbe?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 50,
+      "materiales": [
+        "2 latas o botellas plásticas iguales",
+        "pintura o papel negro",
+        "papel blanco",
+        "agua",
+        "termómetro digital",
+        "cinta adhesiva",
+        "reloj"
+      ],
+      "pasos": [
+        "Forra una lata con papel negro y otra con papel blanco.",
+        "Llena ambas con la misma cantidad de agua a la misma temperatura.",
+        "Ponlas al sol en el mismo lugar, una al lado de la otra.",
+        "Mide la temperatura del agua de cada una cada 5 minutos durante 30 minutos.",
+        "Llévalas a la sombra y mide cada 5 minutos durante 20 minutos más.",
+        "Grafica las dos curvas en el mismo plano."
+      ],
+      "prediccion": "¿Cuál se calentará más rápido al sol y cuál se enfriará más rápido en la sombra?",
+      "observa": "Temperatura (°C) del agua de cada lata cada 5 minutos, al sol y luego a la sombra.",
+      "explicacion": "La luz solar es energía en forma de radiación. Una superficie negra absorbe la mayor parte de esa radiación y la convierte en energía térmica; una blanca refleja la mayor parte. Por eso el agua de la lata negra se calienta más. Los cuerpos oscuros también emiten radiación con facilidad, así que en la sombra suelen enfriarse algo más rápido.",
+      "error_comun": "Decir que lo negro \"atrae el calor\". No lo atrae: absorbe más de la luz que le llega y la transforma en energía térmica.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el color del forro (negro, rojo, verde, blanco, papel aluminio) con la misma agua y el mismo tiempo.",
+      "conexion": "Los calentadores solares de agua tienen placas negras y en Cali se recomiendan techos y ropa clara para sentir menos calor.",
+      "tags": [
+        "radiación",
+        "absorción",
+        "color",
+        "energía solar",
+        "gráfica"
+      ]
+    },
+    {
+      "id": "g8-energia-05",
+      "grado": 8,
+      "eje": "luz-sonido-energia",
+      "titulo": "Horno solar de caja de pizza",
+      "pregunta": "¿Qué temperatura puede alcanzar un horno solar hecho con una caja de cartón?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 90,
+      "materiales": [
+        "caja de pizza",
+        "papel aluminio",
+        "papel negro",
+        "plástico transparente de cocina",
+        "cinta adhesiva",
+        "palo de pincho sin punta",
+        "termómetro digital",
+        "tijeras"
+      ],
+      "pasos": [
+        "Corta con tijeras una solapa en la tapa de la caja dejando 2 cm de borde y fórrala por dentro con papel aluminio.",
+        "Cubre la abertura de la tapa con plástico transparente bien pegado, como una ventana.",
+        "Pon papel negro en el fondo de la caja.",
+        "Coloca el termómetro dentro y cierra; inclina la solapa con el palo para reflejar luz hacia la ventana.",
+        "Pon el horno al sol del mediodía y mide la temperatura cada 10 minutos durante una hora.",
+        "Mide también la temperatura del aire a la sombra y compara."
+      ],
+      "prediccion": "¿Qué temperatura máxima crees que alcanzará dentro? ¿Cuántos grados más que el aire de afuera?",
+      "observa": "Temperatura interior (°C) cada 10 minutos y temperatura exterior; calcula la diferencia máxima.",
+      "explicacion": "El aluminio refleja más luz hacia la caja; el fondo negro la absorbe y se calienta; el plástico deja pasar la luz pero frena la salida del aire caliente y de parte del calor. Así entra más energía de la que sale y la temperatura sube hasta un equilibrio. Ninguna máquina convierte toda la energía solar en calor útil: parte se pierde por las paredes (segunda ley).",
+      "error_comun": "Creer que el plástico \"atrapa los rayos\". Lo que hace es reducir la pérdida de aire caliente; la luz sí entra y se transforma en calor en el fondo negro.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "El interior puede superar 60 °C: saca los objetos con un trapo. Nunca mires directo al reflejo del papel aluminio."
+      },
+      "variable": "Cambia solo un elemento del diseño, por ejemplo con y sin papel aluminio en la solapa.",
+      "conexion": "En La Guajira y en zonas rurales se usan cocinas solares para ahorrar leña y gas.",
+      "tags": [
+        "energía solar",
+        "radiación",
+        "aislamiento",
+        "diseño",
+        "eficiencia"
+      ]
+    },
+    {
+      "id": "g8-energia-06",
+      "grado": 8,
+      "eje": "luz-sonido-energia",
+      "titulo": "Carrera de cucharas: ¿quién conduce el calor?",
+      "pregunta": "¿Por qué la cuchara de metal se calienta más rápido que la de madera o la de plástico?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "cuchara de metal",
+        "cuchara de madera",
+        "cuchara de plástico resistente",
+        "agua caliente del termo",
+        "taza de icopor o plástico grueso",
+        "mantequilla",
+        "3 lentejas o semillas",
+        "reloj"
+      ],
+      "pasos": [
+        "Pega con una bolita de mantequilla una lenteja en el mango de cada cuchara, a la misma distancia del extremo.",
+        "Coloca las tres cucharas en la taza vacía, con los mangos hacia afuera.",
+        "Pide a un adulto que vierta agua caliente en la taza.",
+        "Cronometra cuánto tarda en caer la lenteja de cada cuchara.",
+        "Si una no cae en 10 minutos, anota \"más de 10\".",
+        "Ordena los materiales de mejor a peor conductor en una tabla."
+      ],
+      "prediccion": "¿En qué orden crees que caerán las lentejas? ¿Por qué?",
+      "observa": "Tiempo (s) que tarda en caer cada lenteja, según el material de la cuchara.",
+      "explicacion": "La conducción es el paso de energía térmica de partícula en partícula dentro de un material. Los metales tienen electrones libres que transportan energía muy rápido, por eso son buenos conductores. La madera y el plástico no tienen esos electrones libres y son aislantes: el calor avanza muy despacio.",
+      "error_comun": "Pensar que el metal \"es frío\" porque al tocarlo se siente frío. Está a la misma temperatura que la madera; se siente frío porque saca calor de tu mano más rápido.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "El agua caliente la sirve un adulto; no toques el agua ni la punta de las cucharas metálicas."
+      },
+      "variable": "Cambia solo la distancia de la lenteja al agua (3, 6 y 9 cm) en la cuchara de metal.",
+      "conexion": "Las ollas tienen fondo metálico y mangos de plástico o madera; los vendedores de chontaduro usan guantes de tela por la misma razón.",
+      "tags": [
+        "conducción",
+        "conductores",
+        "aislantes",
+        "calor",
+        "tiempo"
+      ]
+    },
+    {
+      "id": "g8-energia-07",
+      "grado": 8,
+      "eje": "luz-sonido-energia",
+      "titulo": "Corrientes de colores",
+      "pregunta": "¿Cómo se mueve el agua caliente dentro del agua fría?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "recipiente plástico transparente grande",
+        "agua fría",
+        "agua caliente del termo",
+        "colorante de comida rojo y azul",
+        "frasco plástico pequeño con tapa",
+        "cubos de hielo coloreados de azul",
+        "reloj"
+      ],
+      "pasos": [
+        "Llena el recipiente grande con agua a temperatura ambiente y deja que se quede quieta.",
+        "Llena el frasco pequeño con agua caliente teñida de rojo, tápalo y colócalo en el fondo del recipiente.",
+        "Destápalo con cuidado y observa durante 3 minutos.",
+        "Coloca un cubo de hielo azul flotando en la superficie y observa.",
+        "Dibuja con flechas el movimiento del rojo y del azul.",
+        "Anota el tiempo que tarda el rojo en llegar a la superficie."
+      ],
+      "prediccion": "¿El agua roja subirá, bajará o se quedará en el fondo? ¿Y el agua azul del hielo?",
+      "observa": "Dirección de movimiento de cada color y tiempo que tarda el rojo en llegar arriba; dibujo con flechas.",
+      "explicacion": "El agua caliente tiene sus partículas más separadas, es menos densa y sube; el agua fría es más densa y baja. Esa circulación del fluido que transporta energía se llama convección. Así se forman las corrientes en los océanos y en la atmósfera.",
+      "error_comun": "Decir que \"el calor sube\". Lo que sube es el fluido caliente, menos denso; el calor en sí puede ir en cualquier dirección por conducción o radiación.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Un adulto sirve el agua caliente en el frasco pequeño plástico; manipula con cuidado."
+      },
+      "variable": "Cambia solo la temperatura del agua del frasco (tibia, caliente) y compara el tiempo en que el rojo llega arriba.",
+      "conexion": "Las brisas de la tarde en Cali y el viento que baja de los Farallones se deben a corrientes de convección del aire.",
+      "tags": [
+        "convección",
+        "densidad",
+        "fluidos",
+        "calor",
+        "corrientes"
+      ]
+    },
+    {
+      "id": "g8-energia-08",
+      "grado": 8,
+      "eje": "luz-sonido-energia",
+      "titulo": "Molino de espiral: una máquina térmica",
+      "pregunta": "¿Puede el calor de una vela hacer girar un molino de papel?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "hoja de cartulina",
+        "tijeras",
+        "palo de pincho",
+        "plastilina",
+        "vela pequeña en un plato con arena",
+        "fósforos (los usa el docente)",
+        "reloj"
+      ],
+      "pasos": [
+        "Dibuja una espiral en la cartulina y recórtala con tijeras.",
+        "Haz un hoyito en el centro con el pincho y apóyala en la punta del pincho, sostenido vertical con plastilina.",
+        "Verifica que la espiral gire libre al soplar suavemente.",
+        "El docente enciende la vela y ubica la espiral a 25–30 cm por encima de la llama.",
+        "Cuenta las vueltas que da en 30 segundos.",
+        "Repite cambiando la altura (30, 40 cm) y anota las vueltas."
+      ],
+      "prediccion": "¿La espiral girará? ¿Girará más rápido si está más cerca o más lejos de la vela?",
+      "observa": "Número de vueltas en 30 segundos a cada altura.",
+      "explicacion": "La llama calienta el aire, que se vuelve menos denso y sube (convección). Ese aire que sube empuja la espiral y la hace girar: parte de la energía térmica se convierte en movimiento. Es una máquina térmica sencilla. Pero solo una pequeña parte del calor produce giro; la mayoría se dispersa en el aire, como dice la segunda ley: ninguna máquina térmica convierte todo el calor en trabajo.",
+      "error_comun": "Creer que una máquina térmica puede convertir todo el calor en movimiento. Siempre hay calor que se pierde al ambiente más frío.",
+      "seguridad": {
+        "nivel": "docente",
+        "nota": "Solo con el docente: la vela va en un plato con arena, la espiral siempre a más de 25 cm por encima de la llama, el cabello recogido y un vaso con agua a mano."
+      },
+      "variable": "Cambia solo el número de vueltas de la espiral (2, 3 o 4 vueltas) a la misma altura.",
+      "conexion": "Los motores de las motos y carros de Cali son máquinas térmicas: queman combustible, mueven pistones y liberan mucho calor por el escape y el radiador.",
+      "tags": [
+        "máquina térmica",
+        "segunda ley",
+        "convección",
+        "trabajo",
+        "eficiencia"
+      ]
+    },
+    {
+      "id": "g8-energia-09",
+      "grado": 8,
+      "eje": "luz-sonido-energia",
+      "titulo": "Arena contra agua bajo el sol",
+      "pregunta": "¿Por qué la arena de la playa quema y el agua del mar se siente fresca bajo el mismo sol?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 60,
+      "materiales": [
+        "2 recipientes plásticos iguales",
+        "arena seca",
+        "agua",
+        "báscula de cocina",
+        "termómetro digital",
+        "reloj",
+        "hoja cuadriculada"
+      ],
+      "pasos": [
+        "Pon 300 g de arena en un recipiente y 300 g de agua en el otro.",
+        "Déjalos 15 minutos a la sombra y mide la temperatura inicial de ambos.",
+        "Ponlos al sol, uno junto al otro.",
+        "Mide la temperatura (a 1 cm de profundidad) cada 5 minutos durante 30 minutos.",
+        "Llévalos a la sombra y mide cada 5 minutos durante 20 minutos más.",
+        "Grafica las dos curvas y calcula cuántos grados subió cada uno."
+      ],
+      "prediccion": "¿Cuál se calentará más con el mismo sol y la misma masa? ¿Cuál se enfriará más rápido?",
+      "observa": "Temperatura (°C) de arena y agua cada 5 minutos; aumento total y velocidad de enfriamiento.",
+      "explicacion": "Cada sustancia necesita una cantidad distinta de energía para subir 1 °C la temperatura de 1 g: es su calor específico. El agua tiene un calor específico muy alto (unas cinco veces el de la arena), así que con la misma energía solar sube mucho menos. Por la misma razón el agua también se enfría más despacio.",
+      "error_comun": "Creer que el agua \"recibe menos sol\". Las dos reciben casi la misma energía; la diferencia es cuánta energía necesita cada una para cambiar su temperatura.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la sustancia: tierra de jardín o sal en lugar de arena, con la misma masa.",
+      "conexion": "Las ciudades costeras como Buenaventura tienen temperaturas más estables que las del interior, y nuestro cuerpo, con mucha agua, resiste cambios bruscos de temperatura.",
+      "tags": [
+        "calor específico",
+        "temperatura",
+        "energía solar",
+        "agua",
+        "gráfica"
+      ]
+    },
+    {
+      "id": "g8-vida-01",
+      "grado": 8,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Pulso en recuperación",
+      "pregunta": "¿Cuánto tiempo tarda mi corazón en volver a su ritmo de reposo después del ejercicio?",
+      "dba": [
+        4
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "reloj con segundero o celular",
+        "cuaderno",
+        "espacio para saltar",
+        "hoja cuadriculada"
+      ],
+      "pasos": [
+        "Siéntate 3 minutos y toma tu pulso en la muñeca o el cuello durante 15 segundos; multiplica por 4.",
+        "Haz 1 minuto de saltos de tijera a un ritmo cómodo.",
+        "Toma el pulso de inmediato y luego cada minuto durante 6 minutos, sentado.",
+        "Anota también la frecuencia respiratoria (respiraciones por minuto) en los mismos momentos.",
+        "Grafica pulso contra tiempo.",
+        "Compara tu tiempo de recuperación con el promedio del grupo, sin juzgar a nadie."
+      ],
+      "prediccion": "¿Cuántos minutos crees que tardará tu pulso en volver al valor de reposo?",
+      "observa": "Pulso (latidos por minuto) y respiraciones por minuto en reposo, al terminar y cada minuto después.",
+      "explicacion": "Durante el ejercicio los músculos necesitan más oxígeno y producen más dióxido de carbono. El sistema nervioso y hormonas como la adrenalina (sistema endocrino) aceleran el corazón y la respiración. Al terminar, el cuerpo detecta que ya no hace falta y los regresa poco a poco a sus valores normales: eso es la homeostasis, un equilibrio que el cuerpo regula constantemente.",
+      "error_comun": "Creer que el corazón se acelera \"porque se cansa\". Se acelera porque el cuerpo lo ordena para llevar más oxígeno; es una respuesta de regulación, no una falla.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la intensidad del ejercicio (caminar en el puesto, trotar, saltar) durante el mismo minuto.",
+      "conexion": "Los entrenadores de deportistas del Valle y los médicos usan el tiempo de recuperación del pulso como señal de buena condición física.",
+      "tags": [
+        "homeostasis",
+        "sistema circulatorio",
+        "sistema nervioso",
+        "pulso",
+        "gráfica"
+      ]
+    },
+    {
+      "id": "g8-vida-02",
+      "grado": 8,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Atrapa la regla: tiempo de reacción",
+      "pregunta": "¿Cuánto tarda mi sistema nervioso en reaccionar a algo que veo, y mejora con la práctica?",
+      "dba": [
+        4
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "regla de 30 cm",
+        "un compañero",
+        "cuaderno",
+        "calculadora o tabla de conversión"
+      ],
+      "pasos": [
+        "Tu compañero sostiene la regla vertical con el cero entre tu pulgar y tu índice, sin tocarla.",
+        "Sin avisar, la suelta y tú la atrapas lo más rápido posible.",
+        "Anota en qué centímetro la atrapaste.",
+        "Haz 10 intentos con tu mano dominante y 10 con la otra.",
+        "Convierte la distancia a tiempo con t = √(2d ÷ 9,8), con d en metros.",
+        "Calcula el promedio de los primeros 5 y de los últimos 5 intentos y compáralos."
+      ],
+      "prediccion": "¿Con qué mano reaccionarás más rápido? ¿Mejorarás en los últimos intentos?",
+      "observa": "Distancia de caída (cm) en cada intento, el tiempo de reacción calculado (s) y los promedios.",
+      "explicacion": "Los ojos detectan que la regla cae, envían un impulso nervioso al cerebro, este decide y envía la orden por los nervios a los músculos de los dedos. Ese recorrido toma tiempo (unos 0,15 a 0,25 segundos). Con la práctica el cerebro anticipa mejor y la reacción mejora un poco. Así se ve que el sistema nervioso coordina al sistema muscular.",
+      "error_comun": "Creer que atrapar la regla es un reflejo como retirar la mano de algo caliente. Es una reacción voluntaria que pasa por el cerebro; el reflejo es más rápido porque lo procesa la médula espinal.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la señal: atrapar viendo la regla o con los ojos cerrados cuando el compañero dice \"ya\".",
+      "conexion": "Por eso usar el celular al manejar o al cruzar la calle es peligroso: alarga el tiempo de reacción.",
+      "tags": [
+        "sistema nervioso",
+        "tiempo de reacción",
+        "promedio",
+        "cálculo",
+        "coordinación"
+      ]
+    },
+    {
+      "id": "g8-vida-03",
+      "grado": 8,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Mapa de sensibilidad de la piel",
+      "pregunta": "¿Por qué siento dos puntos separados en la yema del dedo pero uno solo en la espalda?",
+      "dba": [
+        4
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "2 clips desdoblados o 2 palillos de dientes sin punta afilada",
+        "regla",
+        "cinta adhesiva",
+        "un compañero",
+        "venda para los ojos"
+      ],
+      "pasos": [
+        "Pega los dos palillos a la regla separados 2 mm.",
+        "Con el compañero con los ojos vendados, toca suavemente la yema de su dedo con las dos puntas a la vez o con una sola, al azar.",
+        "Pregunta si siente uno o dos puntos y anota.",
+        "Aumenta la separación (5, 10, 20, 40 mm) hasta que diga \"dos\" de forma segura.",
+        "Repite en la palma, el antebrazo y la parte de atrás del brazo.",
+        "Haz una tabla con la distancia mínima para sentir dos puntos en cada zona."
+      ],
+      "prediccion": "Ordena las zonas de la más sensible a la menos sensible antes de medir.",
+      "observa": "Distancia mínima (mm) para distinguir dos puntos en cada zona del cuerpo.",
+      "explicacion": "La piel tiene receptores del tacto conectados a neuronas. En la yema de los dedos hay muchísimos receptores muy juntos y el cerebro dedica más área a procesarlos, así que distingue puntos muy cercanos. En el brazo hay menos receptores y más separados. El sistema nervioso no recibe la misma información de todas las partes del cuerpo.",
+      "error_comun": "Pensar que la piel siente igual en todas partes o que \"siente\" la piel misma. Quien interpreta la sensación es el cerebro, a partir de los receptores.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la zona de la mano (yema, palma, dorso) con el mismo procedimiento.",
+      "conexion": "El sistema braille de lectura para personas ciegas aprovecha la alta sensibilidad de las yemas de los dedos.",
+      "tags": [
+        "sistema nervioso",
+        "receptores",
+        "tacto",
+        "medición",
+        "tabla"
+      ]
+    },
+    {
+      "id": "g8-vida-04",
+      "grado": 8,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "La pupila que se ajusta sola",
+      "pregunta": "¿Cómo cambia el tamaño de la pupila con la cantidad de luz y por qué no lo podemos controlar?",
+      "dba": [
+        4
+      ],
+      "duracion_min": 20,
+      "materiales": [
+        "espejo",
+        "regla pequeña o tarjeta con círculos de 2 a 8 mm dibujados",
+        "cuarto que se pueda oscurecer",
+        "linterna del celular",
+        "un compañero"
+      ],
+      "pasos": [
+        "Con la luz normal del salón, compara tu pupila en el espejo con los círculos de la tarjeta y anota su tamaño.",
+        "Cubre tus ojos con las manos durante 30 segundos.",
+        "Destápalos frente al espejo y observa qué pasa con la pupila en los primeros segundos.",
+        "En un cuarto en penumbra, mide de nuevo el tamaño de la pupila del compañero.",
+        "Enciende la linterna apuntando a la pared cerca de él, sin alumbrar directo a los ojos, y mide de nuevo.",
+        "Anota los tamaños en una tabla luz–tamaño de pupila."
+      ],
+      "prediccion": "¿La pupila se agrandará o se achicará con poca luz? ¿Puedes hacer que cambie a voluntad?",
+      "observa": "Diámetro aproximado de la pupila (mm) con luz normal, después de tapar los ojos, en penumbra y con más luz.",
+      "explicacion": "El iris tiene músculos que controla el sistema nervioso autónomo, que funciona sin que lo decidamos. Con poca luz la pupila se dilata para dejar entrar más luz; con mucha luz se contrae para proteger la retina. Es un reflejo de regulación: el sistema nervioso y el muscular trabajan juntos para mantener la entrada de luz adecuada.",
+      "error_comun": "Creer que la pupila es un \"punto negro\" pintado en el ojo. Es un orificio que deja pasar la luz, y su tamaño cambia constantemente.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la intensidad de la luz del cuarto (tres niveles) y mide el tamaño de la pupila en cada uno.",
+      "conexion": "Los médicos alumbran los ojos para revisar el reflejo pupilar después de un golpe en la cabeza, porque indica cómo funciona el sistema nervioso.",
+      "tags": [
+        "sistema nervioso autónomo",
+        "reflejo",
+        "ojo",
+        "homeostasis",
+        "observación"
+      ]
+    },
+    {
+      "id": "g8-vida-05",
+      "grado": 8,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Brazo robot: músculos que jalan",
+      "pregunta": "¿Cómo trabajan juntos los huesos y los músculos para doblar y estirar el brazo?",
+      "dba": [
+        4
+      ],
+      "duracion_min": 50,
+      "materiales": [
+        "2 tiras de cartón grueso de 25 cm",
+        "gancho mariposa",
+        "2 ligas o hilos",
+        "2 pitillos",
+        "cinta adhesiva",
+        "tijeras",
+        "regla"
+      ],
+      "pasos": [
+        "Une las dos tiras de cartón por un extremo con el gancho mariposa: serán el brazo, el antebrazo y el codo.",
+        "Pega un trozo de pitillo arriba y otro abajo del brazo, como guías.",
+        "Pasa un hilo por el pitillo de arriba y átalo al antebrazo cerca del codo (bíceps).",
+        "Pasa otro hilo por el pitillo de abajo y átalo detrás del codo (tríceps).",
+        "Jala solo el hilo de arriba y observa; luego jala solo el de abajo.",
+        "Mide con la regla cuánto se acorta cada hilo para doblar el codo 90°.",
+        "Dibuja tu modelo señalando huesos, articulación y músculos."
+      ],
+      "prediccion": "¿Un músculo puede empujar un hueso o solo puede jalarlo? ¿Por qué hacen falta dos?",
+      "observa": "Qué movimiento produce cada hilo y cuántos centímetros se acorta para doblar el codo 90°.",
+      "explicacion": "Los músculos solo pueden contraerse (acortarse y jalar); no pueden empujar. Por eso trabajan en parejas antagonistas: el bíceps se contrae para doblar el codo mientras el tríceps se relaja, y al revés para estirarlo. Los huesos son palancas y la articulación del codo es el punto de giro. El sistema nervioso decide cuál músculo se contrae.",
+      "error_comun": "Creer que el bíceps empuja el brazo hacia abajo para estirarlo. Para estirar, el tríceps jala y el bíceps se relaja.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el punto de unión del hilo del bíceps (2, 4 y 6 cm del codo) y mide cuánta fuerza o recorrido necesita.",
+      "conexion": "Los fisioterapeutas usan este conocimiento para rehabilitar lesiones de los futbolistas y de personas después de accidentes en moto.",
+      "tags": [
+        "sistema muscular",
+        "sistema óseo",
+        "modelo",
+        "palancas",
+        "articulaciones"
+      ]
+    },
+    {
+      "id": "g8-vida-06",
+      "grado": 8,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Fatiga en la pinza de ropa",
+      "pregunta": "¿Qué le pasa a la fuerza de los músculos de la mano cuando repiten el mismo movimiento sin descanso?",
+      "dba": [
+        4
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "pinza de ropa de resorte",
+        "reloj o celular",
+        "cuaderno",
+        "hoja cuadriculada"
+      ],
+      "pasos": [
+        "Toma la pinza entre el pulgar y el índice.",
+        "Cuenta cuántas veces la abres y cierras completamente en 30 segundos.",
+        "Sin descansar, repite 5 rondas seguidas de 30 segundos y anota cada conteo.",
+        "Descansa 2 minutos abriendo y cerrando la mano suavemente.",
+        "Haz una ronda más de 30 segundos y anota.",
+        "Grafica número de apretones contra ronda."
+      ],
+      "prediccion": "¿Cuántos apretones crees que harás en la primera ronda y en la quinta? ¿Te recuperarás con el descanso?",
+      "observa": "Número de apretones en cada ronda de 30 segundos y después del descanso; sensaciones en la mano.",
+      "explicacion": "Los músculos obtienen energía de la glucosa usando oxígeno. Al trabajar sin descanso, el oxígeno no alcanza y se acumulan sustancias que dificultan la contracción, y el músculo se fatiga. Al descansar, la sangre lleva oxígeno y retira desechos, y el músculo se recupera. Los sistemas muscular, circulatorio y nervioso se regulan juntos.",
+      "error_comun": "Creer que el músculo se cansa porque \"se acaba la fuerza para siempre\". La fatiga es temporal y el cuerpo la regula; con descanso la capacidad vuelve.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el tiempo de descanso entre rondas (0, 30 y 60 segundos) y compara la caída de los conteos.",
+      "conexion": "Los trabajadores de la caña de azúcar y los que digitan en computador necesitan pausas activas para evitar lesiones por fatiga.",
+      "tags": [
+        "sistema muscular",
+        "fatiga",
+        "respiración celular",
+        "gráfica",
+        "pausas activas"
+      ]
+    },
+    {
+      "id": "g8-vida-07",
+      "grado": 8,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Riñón de laboratorio",
+      "pregunta": "¿Cómo separa el riñón lo que el cuerpo necesita de lo que debe eliminar?",
+      "dba": [
+        4
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "filtro de papel para café",
+        "embudo o botella plástica cortada",
+        "2 vasos plásticos transparentes",
+        "arena fina",
+        "sal",
+        "colorante de comida",
+        "agua",
+        "cucharita"
+      ],
+      "pasos": [
+        "Mezcla en un vaso agua, una cucharadita de arena, una de sal y dos gotas de colorante: es la \"sangre\" del modelo.",
+        "Pon el filtro en el embudo sobre el otro vaso.",
+        "Vierte despacio la mezcla y espera a que pase.",
+        "Observa qué quedó en el filtro y qué pasó al vaso.",
+        "Deja evaporar al sol unas gotas del líquido filtrado en un plato oscuro y busca un residuo blanco de sal (nunca pruebes las mezclas del laboratorio).",
+        "Haz una tabla: qué quedó retenido y qué pasó.",
+        "Compara tu modelo con un dibujo de la nefrona."
+      ],
+      "prediccion": "¿Qué crees que pasará por el filtro y qué quedará retenido: la arena, la sal, el colorante?",
+      "observa": "Qué sustancias quedan en el filtro y cuáles pasan al vaso, según su tamaño; residuo blanco al evaporar.",
+      "explicacion": "El riñón filtra la sangre en millones de pequeñas unidades llamadas nefronas. Primero deja pasar agua y sustancias pequeñas (sales, urea, glucosa) y retiene lo grande (células, proteínas), como el filtro retiene la arena. Luego, a diferencia del filtro, el riñón reabsorbe el agua, la glucosa y las sales que el cuerpo necesita, y deja salir en la orina el exceso y los desechos. Así regula la cantidad de agua y sales: homeostasis.",
+      "error_comun": "Creer que el riñón solo \"bota lo malo\" como un colador. También decide cuánta agua y sal conservar según lo que el cuerpo necesite.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el tipo de filtro (papel de café, tela, papel higiénico) y compara qué deja pasar.",
+      "conexion": "Las personas con enfermedad renal necesitan diálisis, una máquina que filtra la sangre; tomar agua suficiente en el calor de Cali ayuda a los riñones.",
+      "tags": [
+        "sistema excretor",
+        "riñón",
+        "filtración",
+        "modelo",
+        "homeostasis"
+      ]
+    },
+    {
+      "id": "g8-vida-08",
+      "grado": 8,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "El hueso que se dobla",
+      "pregunta": "¿Qué le da dureza a un hueso y qué le da flexibilidad?",
+      "dba": [
+        4,
+        2
+      ],
+      "duracion_min": 20,
+      "materiales": [
+        "2 huesos de muslo de pollo cocidos y limpios",
+        "vinagre blanco",
+        "frasco plástico con tapa",
+        "agua",
+        "báscula de cocina",
+        "regla"
+      ],
+      "pasos": [
+        "Limpia bien los dos huesos, pésalos y mídelos.",
+        "Intenta doblar suavemente uno y anota qué tan rígido es.",
+        "Pon un hueso en el frasco cubierto de vinagre y el otro en agua como control.",
+        "Cambia el vinagre cada 2 días y observa las burbujas.",
+        "Al día 7, saca los huesos, enjuágalos, pésalos e intenta doblarlos.",
+        "Compara masa y flexibilidad en una tabla."
+      ],
+      "prediccion": "¿Qué crees que le pasará al hueso en vinagre después de una semana? ¿Cambiará su masa?",
+      "observa": "Masa (g) al inicio y al día 7, burbujas, y si el hueso se puede doblar o hacer un nudo.",
+      "explicacion": "El hueso tiene dos componentes: minerales de calcio (como el fosfato y algo de carbonato de calcio), que le dan dureza, y una proteína flexible llamada colágeno. El ácido del vinagre reacciona con los minerales y los disuelve, por eso pierde masa y queda solo el colágeno, que se dobla. El sistema óseo sirve de reserva de calcio que el cuerpo regula con hormonas.",
+      "error_comun": "Creer que el hueso está \"muerto\" o que es solo una piedra de calcio. Es un tejido vivo con células, proteínas y minerales, que se renueva.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Usa huesos de pollo cocidos y limpios; lávate las manos con jabón después de manipularlos y desecha el vinagre al terminar."
+      },
+      "variable": "Cambia solo el número de días en vinagre (2, 4 y 7) usando huesos parecidos.",
+      "conexion": "La leche, el queso campesino y el sol (vitamina D) son importantes para huesos fuertes, sobre todo en la adolescencia.",
+      "tags": [
+        "sistema óseo",
+        "calcio",
+        "colágeno",
+        "reacción química",
+        "masa"
+      ]
+    },
+    {
+      "id": "g8-vida-09",
+      "grado": 8,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Pan, manos y microbios",
+      "pregunta": "¿Lavarse las manos con jabón reduce de verdad los microbios que pasan a los alimentos?",
+      "dba": [
+        4
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "4 tajadas de pan sin conservantes",
+        "4 bolsas plásticas con cierre",
+        "marcador",
+        "guantes desechables o pinzas limpias",
+        "agua y jabón",
+        "gel antibacterial",
+        "lupa"
+      ],
+      "pasos": [
+        "Con guantes, pon una tajada en una bolsa sin tocarla: es el control.",
+        "Toca una tajada con las manos sin lavar y guárdala en otra bolsa.",
+        "Lávate las manos con agua sola, toca la tercera tajada y guárdala.",
+        "Lávate con agua y jabón durante 20 segundos, toca la cuarta y guárdala.",
+        "Rotula y deja las bolsas cerradas en un lugar oscuro y tibio.",
+        "Durante 10 días, sin abrir, observa con la lupa y estima el porcentaje de superficie con manchas.",
+        "Grafica el avance por día."
+      ],
+      "prediccion": "¿En qué tajada aparecerán primero manchas de moho o bacterias? Ordénalas.",
+      "observa": "Día en que aparecen las primeras colonias y porcentaje de superficie cubierta en cada tajada.",
+      "explicacion": "Nuestras manos llevan microorganismos (bacterias y esporas de hongos) que se transfieren al tocar. En el pan húmedo y tibio se multiplican y forman colonias visibles. El jabón despega la grasa y arrastra los microbios con el agua. El sistema inmune defiende el cuerpo de los microbios que entran, pero la higiene evita que muchos lleguen.",
+      "error_comun": "Creer que todos los microbios son malos, o que el agua sola limpia igual que el jabón. Muchos microbios son útiles, y el agua sola deja la mayoría.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Las bolsas permanecen cerradas: no abras las que tengan moho ni las huelas. Bótalas cerradas a la basura al terminar."
+      },
+      "variable": "Cambia solo el tiempo de lavado con jabón (5, 20 y 40 segundos).",
+      "conexion": "En los restaurantes y en las ventas de comida de la Galería Alameda, lavarse las manos previene diarreas y enfermedades.",
+      "tags": [
+        "sistema inmune",
+        "microorganismos",
+        "higiene",
+        "observación prolongada",
+        "gráfica"
+      ]
+    },
+    {
+      "id": "g8-vida-10",
+      "grado": 8,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Clones de una planta",
+      "pregunta": "¿Puede crecer una planta nueva a partir de un trozo de tallo, sin semillas?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "plantas de poto (oreja de burro), coleo o caña de azúcar",
+        "tijeras",
+        "4 botellas plásticas cortadas",
+        "agua",
+        "regla",
+        "marcador"
+      ],
+      "pasos": [
+        "Corta con tijeras 4 trozos de tallo de 10–15 cm, cada uno con al menos 2 nudos.",
+        "Quita las hojas de la parte baja de cada trozo.",
+        "Pon cada esqueje en una botella con agua, cubriendo al menos un nudo.",
+        "Rotula cada botella con la planta y la fecha.",
+        "Cada 3 días cuenta las raíces y mide la más larga durante 3 semanas.",
+        "Cambia el agua cada semana.",
+        "Grafica la longitud de la raíz más larga contra los días."
+      ],
+      "prediccion": "¿Cuántos días tardarán en salir las primeras raíces? ¿De qué parte del tallo saldrán?",
+      "observa": "Número de raíces y longitud (mm) de la más larga cada 3 días, y en qué nudo aparecen.",
+      "explicacion": "Es reproducción asexual por esquejes: un solo progenitor produce una planta nueva genéticamente idéntica (un clon). En los nudos hay células que todavía pueden convertirse en distintos tejidos y forman raíces nuevas. No hay mezcla de material genético, por eso no hay variedad entre los descendientes.",
+      "error_comun": "Creer que las plantas solo se reproducen por semillas, o que los clones son \"más débiles\". Son copias genéticas; su desventaja es que todos tienen las mismas defensas.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el número de nudos sumergidos (uno o dos) con la misma especie.",
+      "conexion": "La caña de azúcar del Valle del Cauca se siembra por trozos de tallo, y la yuca también; por eso un cultivo entero puede ser susceptible a la misma plaga.",
+      "tags": [
+        "reproducción asexual",
+        "esquejes",
+        "clones",
+        "crecimiento",
+        "gráfica"
+      ]
+    },
+    {
+      "id": "g8-vida-11",
+      "grado": 8,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Papa, cebolla y ajo que brotan",
+      "pregunta": "¿Qué estructuras usan la papa, la cebolla y el ajo para formar plantas nuevas sin semilla?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "1 papa con ojos",
+        "1 cebolla cabezona pequeña",
+        "1 diente de ajo",
+        "palillos de dientes",
+        "3 vasos plásticos",
+        "agua",
+        "regla"
+      ],
+      "pasos": [
+        "Cuenta los \"ojos\" de la papa y descríbelos.",
+        "Clava 3 palillos alrededor de cada vegetal para que quede apoyado sobre el vaso con la base tocando el agua.",
+        "Pon los vasos en un lugar con luz indirecta.",
+        "Cada 3 días mide la longitud de los brotes y cuenta las raíces durante 3 semanas.",
+        "Dibuja de dónde sale cada brote.",
+        "Organiza los datos en una tabla comparativa."
+      ],
+      "prediccion": "¿Cuál crees que brotará primero? ¿De qué parte de la papa saldrán los tallos?",
+      "observa": "Día de aparición de brotes y raíces, y longitud (mm) de los brotes cada 3 días en cada vegetal.",
+      "explicacion": "La papa es un tubérculo (tallo subterráneo con reservas de almidón) y sus \"ojos\" son yemas que forman tallos nuevos. La cebolla y el ajo son bulbos: hojas modificadas con reservas alrededor de un tallo corto. Las tres son formas de reproducción asexual vegetativa: la planta nueva usa las reservas para crecer y es idéntica a la madre.",
+      "error_comun": "Creer que la papa es una raíz. Es un tallo modificado: por eso tiene yemas (ojos) de las que salen tallos.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la luz (oscuridad total contra luz indirecta) con el mismo vegetal.",
+      "conexion": "Los cultivadores de papa de Nariño y Boyacá siembran trozos de papa con ojos; así conservan las variedades nativas.",
+      "tags": [
+        "reproducción asexual",
+        "tubérculo",
+        "bulbo",
+        "yemas",
+        "medición"
+      ]
+    },
+    {
+      "id": "g8-vida-12",
+      "grado": 8,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Levaduras que se multiplican",
+      "pregunta": "¿A qué temperatura se reproducen y trabajan mejor las levaduras?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "levadura seca de panadería",
+        "azúcar",
+        "3 botellas plásticas pequeñas iguales",
+        "3 globos",
+        "agua con hielo, agua ambiente y agua tibia",
+        "termómetro digital",
+        "cinta métrica de costura"
+      ],
+      "pasos": [
+        "Pon en cada botella 1 cucharadita de levadura y 1 de azúcar.",
+        "Agrega 100 mL de agua: fría en una, ambiente en otra y tibia (unos 35 °C) en la tercera; mide y anota cada temperatura.",
+        "Pon un globo en la boca de cada botella.",
+        "Mide la circunferencia de cada globo cada 5 minutos durante 30 minutos.",
+        "Observa la espuma de cada botella.",
+        "Grafica circunferencia contra tiempo para las tres temperaturas."
+      ],
+      "prediccion": "¿En qué botella se inflará más el globo? ¿Pasará algo en la de agua fría?",
+      "observa": "Circunferencia del globo (cm) cada 5 minutos y cantidad de espuma en cada botella.",
+      "explicacion": "La levadura es un hongo unicelular que se reproduce asexualmente por gemación: a la célula madre le sale una yema que se separa como nueva célula. Al alimentarse del azúcar hace fermentación y libera dióxido de carbono, que infla el globo. A temperatura tibia sus enzimas trabajan mejor, hay más actividad y más células; en el frío trabajan muy lento, y en agua muy caliente mueren.",
+      "error_comun": "Creer que la levadura es un polvo químico sin vida. Son seres vivos que comen, respiran o fermentan y se reproducen.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la cantidad de azúcar (0, 1 y 2 cucharaditas) con agua tibia.",
+      "conexion": "El pandebono, el pan aliñado y la cerveza dependen de la fermentación de levaduras.",
+      "tags": [
+        "levaduras",
+        "gemación",
+        "reproducción asexual",
+        "fermentación",
+        "temperatura"
+      ]
+    },
+    {
+      "id": "g8-vida-13",
+      "grado": 8,
+      "eje": "seres-vivos-cuerpo",
+      "titulo": "Disección de una flor",
+      "pregunta": "¿Qué partes de una flor sirven para la reproducción sexual de la planta?",
+      "dba": [
+        5
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "2 flores grandes (lirio, cayena o hibisco)",
+        "tijeras",
+        "lupa",
+        "hoja blanca",
+        "cinta adhesiva",
+        "regla"
+      ],
+      "pasos": [
+        "Observa la flor completa y dibújala.",
+        "Retira los pétalos uno por uno y cuéntalos.",
+        "Identifica los estambres (con polen) y cuéntalos; toca uno y observa el polen con la lupa.",
+        "Identifica el pistilo en el centro y mide su largo.",
+        "Con las tijeras corta a lo largo la base del pistilo (ovario) y busca los óvulos con la lupa.",
+        "Pega cada parte en la hoja y rotúlala con su nombre y función."
+      ],
+      "prediccion": "¿Dónde crees que se forman las semillas? ¿Qué parte es masculina y cuál femenina?",
+      "observa": "Número de pétalos y estambres, longitud del pistilo y cantidad aproximada de óvulos.",
+      "explicacion": "La flor es el órgano de reproducción sexual de las plantas con flor. Los estambres producen polen, que contiene las células sexuales masculinas; el pistilo tiene en su base el ovario con los óvulos, que contienen las células femeninas. Con la polinización y la fecundación se forman semillas que combinan la información genética de dos progenitores, lo que genera variedad entre los descendientes.",
+      "error_comun": "Creer que el polen es la semilla o que todas las flores se fecundan solas. El polen lleva células masculinas, y muchas plantas necesitan polen de otra planta llevado por insectos, aves o viento.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la especie de flor y compara número de estambres y óvulos.",
+      "conexion": "Las abejas y los colibríes del Valle polinizan cultivos como el café, el aguacate y el maracuyá; sin ellos habría menos frutos.",
+      "tags": [
+        "reproducción sexual",
+        "flor",
+        "polinización",
+        "disección",
+        "conteo"
+      ]
+    },
+    {
+      "id": "g8-quimica-01",
+      "grado": 8,
+      "eje": "quimica",
+      "titulo": "La masa no se pierde",
+      "pregunta": "¿Cambia la masa total cuando reaccionan el vinagre y el bicarbonato en un recipiente cerrado?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 35,
+      "materiales": [
+        "báscula de cocina (con decimales si es posible)",
+        "botella plástica de 500 mL",
+        "globo",
+        "vinagre",
+        "bicarbonato de sodio",
+        "embudo de papel",
+        "cucharita"
+      ],
+      "pasos": [
+        "Echa 50 mL de vinagre en la botella.",
+        "Con el embudo de papel, pon 1 cucharadita de bicarbonato dentro del globo.",
+        "Coloca el globo en la boca de la botella sin dejar caer el polvo.",
+        "Pesa todo el conjunto y anota la masa.",
+        "Levanta el globo para que el bicarbonato caiga y observa la reacción.",
+        "Cuando termine, pesa otra vez el conjunto cerrado.",
+        "Repite sin globo (botella abierta) y compara las masas antes y después."
+      ],
+      "prediccion": "¿La masa después de la reacción será mayor, menor o igual? ¿Y si la botella está abierta?",
+      "observa": "Masa (g) antes y después en el sistema cerrado y en el abierto; tamaño del globo.",
+      "explicacion": "En la reacción, los átomos del ácido acético y del bicarbonato de sodio se separan y se recombinan formando sustancias nuevas: acetato de sodio, agua y dióxido de carbono (gas). No se crean ni se destruyen átomos, solo se reorganizan; por eso en el sistema cerrado la masa no cambia (ley de conservación de la masa de Lavoisier). En el abierto parece que \"disminuye\" porque el gas se escapa al aire.",
+      "error_comun": "Creer que los gases no tienen masa, o que en una reacción la materia \"desaparece\". El gas que se escapa tiene masa; si lo atrapas, la balanza no cambia.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la cantidad de bicarbonato (1, 2 y 3 cucharaditas) y verifica si la masa se conserva en todos los casos.",
+      "conexion": "En las panaderías el pan crece por el CO₂ del polvo de hornear, y en las industrias de Yumbo los químicos balancean las reacciones para no desperdiciar materias primas.",
+      "tags": [
+        "conservación de la masa",
+        "reacción química",
+        "Lavoisier",
+        "gases",
+        "báscula"
+      ]
+    },
+    {
+      "id": "g8-quimica-02",
+      "grado": 8,
+      "eje": "quimica",
+      "titulo": "Arcoíris de repollo morado",
+      "pregunta": "¿Qué productos de la casa son ácidos, neutros o básicos según el indicador de repollo morado?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 45,
+      "materiales": [
+        "hojas de repollo morado",
+        "agua caliente del termo",
+        "colador",
+        "8 vasos plásticos transparentes",
+        "vinagre",
+        "limón",
+        "bicarbonato",
+        "jabón de manos",
+        "leche",
+        "agua de la llave",
+        "gaseosa clara"
+      ],
+      "pasos": [
+        "Pica las hojas de repollo en pedazos con las manos, ponlas en una taza y pide a un adulto que agregue agua caliente.",
+        "Deja reposar 15 minutos y cuela: obtienes un líquido morado (indicador).",
+        "Pon 50 mL de indicador en cada vaso.",
+        "Agrega a cada vaso una cucharadita de un producto distinto y rotúlalo.",
+        "Anota el color que toma cada uno.",
+        "Ordena los vasos del rojo al verde-amarillo y asigna un pH aproximado con la tabla de colores del docente."
+      ],
+      "prediccion": "Clasifica los productos como ácidos o básicos antes de probarlos. ¿Qué color esperas en cada uno?",
+      "observa": "Color final de cada vaso y pH aproximado (rojo ≈ 2, rosado ≈ 4, morado ≈ 7, azul ≈ 8, verde ≈ 10, amarillo ≈ 12).",
+      "explicacion": "El repollo morado contiene antocianinas, moléculas que cambian de estructura y de color según la cantidad de iones de hidrógeno en la solución. En ácidos (muchos H⁺) se ponen rojas o rosadas; en neutros, moradas; en bases, azules, verdes o amarillas. La escala de pH va de 0 a 14: menos de 7 es ácido, 7 es neutro y más de 7 es básico.",
+      "error_comun": "Creer que \"ácido\" significa siempre peligroso o que lo básico es inofensivo. El limón y el vinagre son ácidos que comemos; algunas bases fuertes son muy peligrosas.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Un adulto prepara el extracto con agua caliente. Usa solo productos de cocina y aseo personal; nunca cloro, limpiadores fuertes ni destapacañerías."
+      },
+      "variable": "Cambia solo la cantidad de vinagre en un vaso (gota a gota) y observa cómo cambia el color poco a poco.",
+      "conexion": "Las piscinas, los cultivos de caña y los acuarios controlan el pH, y el jugo gástrico del estómago es muy ácido.",
+      "tags": [
+        "pH",
+        "indicador",
+        "ácidos y bases",
+        "repollo morado",
+        "clasificación"
+      ]
+    },
+    {
+      "id": "g8-quimica-03",
+      "grado": 8,
+      "eje": "quimica",
+      "titulo": "Efervescencia a distintas temperaturas",
+      "pregunta": "¿Cómo cambia la velocidad de una reacción química con la temperatura del agua?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "3 tabletas efervescentes iguales",
+        "3 vasos plásticos transparentes",
+        "agua con hielo",
+        "agua a temperatura ambiente",
+        "agua tibia de la llave",
+        "termómetro digital",
+        "cronómetro del celular"
+      ],
+      "pasos": [
+        "Pon 150 mL de agua en cada vaso: con hielo (sin los cubos), ambiente y tibia.",
+        "Mide y anota la temperatura de cada vaso.",
+        "Echa una tableta en el agua con hielo y cronometra hasta que deje de burbujear y desaparezca.",
+        "Repite en el agua ambiente y luego en la tibia.",
+        "Haz una tabla temperatura–tiempo.",
+        "Grafica tiempo contra temperatura."
+      ],
+      "prediccion": "¿En qué vaso crees que la tableta tardará más? Escribe un tiempo estimado para cada uno.",
+      "observa": "Temperatura (°C) del agua y tiempo (s) que tarda la tableta en reaccionar completamente.",
+      "explicacion": "La tableta contiene un ácido y bicarbonato que reaccionan al disolverse y producen CO₂. Para reaccionar, las partículas tienen que chocar con suficiente energía. A mayor temperatura se mueven más rápido, chocan más veces y con más energía, y la reacción es más rápida.",
+      "error_comun": "Creer que en agua fría se forma menos gas en total. Se forma la misma cantidad; solo que más despacio.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la cantidad de agua (100, 150, 200 mL) a la misma temperatura.",
+      "conexion": "Por eso guardamos los alimentos en la nevera: el frío hace más lentas las reacciones que los dañan.",
+      "tags": [
+        "velocidad de reacción",
+        "temperatura",
+        "teoría de colisiones",
+        "cronómetro",
+        "gráfica"
+      ]
+    },
+    {
+      "id": "g8-quimica-04",
+      "grado": 8,
+      "eje": "quimica",
+      "titulo": "Entera o en polvo: la carrera de las tabletas",
+      "pregunta": "¿Reacciona más rápido una tableta efervescente entera o triturada?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "4 tabletas efervescentes iguales",
+        "4 vasos plásticos",
+        "agua a temperatura ambiente",
+        "cuchara",
+        "hoja de papel",
+        "cronómetro del celular"
+      ],
+      "pasos": [
+        "Pon 150 mL de agua a la misma temperatura en cada vaso.",
+        "Deja una tableta entera, parte otra en 4 pedazos, otra en 8 y tritura la última en polvo dentro de la hoja doblada, con la cuchara.",
+        "Echa la tableta entera en el primer vaso y cronometra hasta que termine de burbujear.",
+        "Repite con los 4 pedazos, los 8 pedazos y el polvo.",
+        "Anota los tiempos en una tabla.",
+        "Explica la relación entre tamaño de los trozos y tiempo."
+      ],
+      "prediccion": "¿Cuál terminará primero? ¿La diferencia será pequeña o grande?",
+      "observa": "Tiempo (s) de reacción para tableta entera, en 4, en 8 y en polvo.",
+      "explicacion": "Las partículas del agua solo pueden reaccionar con la superficie de la tableta. Al triturarla, aumenta muchísimo el área de contacto, hay más choques al mismo tiempo y la reacción es más rápida. La cantidad de gas producido es la misma; cambia la velocidad.",
+      "error_comun": "Creer que el polvo reacciona más rápido porque \"es más fuerte\" o tiene más químico. Tiene la misma cantidad; lo que cambia es la superficie expuesta.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la agitación: polvo en agua quieta contra polvo con agua revuelta.",
+      "conexion": "El café molido fino se prepara más rápido que el grueso, y el polvo de harina o azúcar en las fábricas puede ser peligroso porque reacciona muy rápido.",
+      "tags": [
+        "velocidad de reacción",
+        "superficie de contacto",
+        "colisiones",
+        "medición",
+        "tabla"
+      ]
+    },
+    {
+      "id": "g8-quimica-05",
+      "grado": 8,
+      "eje": "quimica",
+      "titulo": "¿Cuánto gas da cada cucharadita?",
+      "pregunta": "¿Cómo depende la cantidad de gas producido de la cantidad de bicarbonato, si el vinagre es siempre el mismo?",
+      "dba": [
+        2,
+        3
+      ],
+      "duracion_min": 50,
+      "materiales": [
+        "5 botellas plásticas de 500 mL iguales",
+        "5 globos iguales",
+        "vinagre",
+        "bicarbonato de sodio",
+        "báscula de cocina",
+        "jeringa de 60 mL sin aguja",
+        "cinta métrica de costura",
+        "embudo de papel"
+      ],
+      "pasos": [
+        "Pon 50 mL de vinagre en cada botella.",
+        "Pesa y pon en cada globo 1, 2, 4, 6 y 8 g de bicarbonato.",
+        "Coloca cada globo en su botella y deja caer el bicarbonato.",
+        "Agita suavemente y espera a que pare la reacción.",
+        "Mide la circunferencia de cada globo y anota si sobró polvo sin reaccionar.",
+        "Grafica circunferencia contra gramos de bicarbonato.",
+        "Identifica a partir de qué cantidad el globo deja de crecer."
+      ],
+      "prediccion": "Si duplicas el bicarbonato, ¿se duplicará el gas siempre? ¿Hasta qué cantidad?",
+      "observa": "Circunferencia del globo (cm) para cada masa de bicarbonato y presencia de polvo sobrante.",
+      "explicacion": "Los reactivos reaccionan en proporciones fijas. Mientras haya vinagre suficiente, más bicarbonato produce más CO₂ (más moles de gas, más volumen del globo). Cuando se acaba el ácido acético del vinagre, el bicarbonato extra ya no reacciona y sobra: el vinagre es el reactivo limitante. Con 50 mL de vinagre al 5 % el límite está alrededor de 3–4 g de bicarbonato.",
+      "error_comun": "Creer que agregar más de un reactivo siempre produce más producto. Si el otro reactivo se acaba, el exceso no reacciona.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la cantidad de vinagre (50 o 100 mL) y busca el nuevo punto donde el globo deja de crecer.",
+      "conexion": "En la cocina, las recetas usan proporciones exactas de polvo de hornear y ácido; en las fábricas se calcula el reactivo limitante para no desperdiciar.",
+      "tags": [
+        "reactivo limitante",
+        "estequiometría",
+        "proporciones",
+        "gases",
+        "gráfica"
+      ]
+    },
+    {
+      "id": "g8-quimica-06",
+      "grado": 8,
+      "eje": "quimica",
+      "titulo": "La esponjilla que se come el oxígeno",
+      "pregunta": "¿Qué parte del aire se gasta cuando el hierro se oxida?",
+      "dba": [
+        2,
+        3
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "esponjilla de lana de acero sin jabón",
+        "vinagre",
+        "botella plástica transparente angosta o tubo de ensayo plástico",
+        "platón con agua coloreada",
+        "regla",
+        "marcador",
+        "guantes"
+      ],
+      "pasos": [
+        "Con guantes, moja la esponjilla en vinagre 1 minuto para quitarle la capa protectora y escúrrela.",
+        "Introdúcela al fondo de la botella.",
+        "Invierte la botella dentro del platón con agua coloreada y marca el nivel del agua.",
+        "Mide la altura total de aire dentro de la botella.",
+        "Marca el nivel del agua cada hora durante la jornada y al día siguiente.",
+        "Calcula qué fracción del aire se gastó: altura que subió el agua ÷ altura inicial de aire."
+      ],
+      "prediccion": "¿Subirá el agua dentro de la botella? ¿Qué fracción del aire crees que se gastará?",
+      "observa": "Altura (cm) del agua dentro de la botella con el tiempo y color de la esponjilla.",
+      "explicacion": "El hierro reacciona con el oxígeno del aire y el agua formando óxido de hierro (herrumbre): los átomos de hierro y oxígeno se recombinan en una sustancia nueva. Al gastarse el oxígeno del aire encerrado, disminuye la cantidad de gas (n), baja la presión y la presión del aire de afuera empuja el agua hacia arriba. El agua sube cerca de 1/5, porque el aire tiene un 21 % de oxígeno.",
+      "error_comun": "Creer que el agua sube porque la esponjilla \"la chupa\". El agua es empujada por la presión del aire exterior, mayor que la del gas que quedó adentro.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el tratamiento de la esponjilla (con vinagre, con agua sola, seca) y compara cuánto sube el agua.",
+      "conexion": "Las rejas y los techos de zinc en Cali y Buenaventura se oxidan más rápido por la humedad y la sal del aire; por eso se pintan.",
+      "tags": [
+        "oxidación",
+        "oxígeno",
+        "presión de gases",
+        "composición del aire",
+        "fracciones"
+      ]
+    },
+    {
+      "id": "g8-quimica-07",
+      "grado": 8,
+      "eje": "quimica",
+      "titulo": "Espuma de oxígeno con levadura",
+      "pregunta": "¿Cómo acelera la levadura la descomposición del agua oxigenada?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "agua oxigenada de farmacia al 3 %",
+        "levadura seca",
+        "agua tibia",
+        "jabón líquido",
+        "3 botellas plásticas pequeñas",
+        "bandeja",
+        "regla",
+        "guantes",
+        "gafas"
+      ],
+      "pasos": [
+        "Coloca las botellas sobre la bandeja y ponte guantes y gafas.",
+        "Pon 50 mL de agua oxigenada y un chorrito de jabón en cada botella.",
+        "Prepara la levadura con 3 cucharadas de agua tibia y espera 2 minutos.",
+        "Agrega a la primera botella 1 cucharadita de levadura, a la segunda 2 y a la tercera nada.",
+        "Mide la altura máxima de espuma en cada una.",
+        "Toca la botella por fuera con la mano y anota si está más tibia.",
+        "Haz una tabla cantidad de levadura–altura de espuma."
+      ],
+      "prediccion": "¿En cuál botella habrá más espuma? ¿Pasará algo en la que no tiene levadura?",
+      "observa": "Altura máxima de espuma (cm) en cada botella y cambio de temperatura al tacto.",
+      "explicacion": "El agua oxigenada (peróxido de hidrógeno, H₂O₂) se descompone sola muy lentamente en agua y oxígeno. La levadura tiene una enzima, la catalasa, que actúa como catalizador: acelera muchísimo la reacción sin gastarse. El oxígeno queda atrapado en el jabón formando espuma, y la botella se calienta porque la reacción libera energía.",
+      "error_comun": "Creer que el catalizador es un reactivo que se consume. El catalizador se recupera al final; solo hace que la reacción ocurra más rápido.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Usa solo agua oxigenada de farmacia al 3 %, con guantes y gafas; no la lleves a la boca ni a los ojos. Haz el experimento sobre una bandeja."
+      },
+      "variable": "Cambia solo la temperatura del agua con que se prepara la levadura (fría, tibia) y compara la espuma.",
+      "conexion": "Por eso el agua oxigenada burbujea en una herida: nuestras células también tienen catalasa.",
+      "tags": [
+        "catalizador",
+        "enzimas",
+        "descomposición",
+        "oxígeno",
+        "reacción exotérmica"
+      ]
+    },
+    {
+      "id": "g8-quimica-08",
+      "grado": 8,
+      "eje": "quimica",
+      "titulo": "Separar el agua con una pila",
+      "pregunta": "¿Qué gases salen cuando la electricidad de una pila pasa por agua con bicarbonato?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "pila de 9 V",
+        "2 cables con caimanes",
+        "2 minas de lápiz gruesas (grafito)",
+        "vaso plástico transparente",
+        "agua",
+        "bicarbonato de sodio",
+        "lupa",
+        "cronómetro"
+      ],
+      "pasos": [
+        "Disuelve 1 cucharadita de bicarbonato en 200 mL de agua dentro del vaso.",
+        "Conecta cada mina de lápiz a un caimán y cada cable a un borne de la pila.",
+        "Introduce las dos minas en el agua, separadas 2 cm, sin que se toquen.",
+        "Observa con la lupa en qué mina salen más burbujas.",
+        "Cuenta las burbujas que salen de cada mina durante 30 segundos.",
+        "Calcula la proporción entre las burbujas de las dos minas."
+      ],
+      "prediccion": "¿Saldrán burbujas en las dos minas? ¿En cuál habrá más?",
+      "observa": "Número de burbujas en 30 segundos en el electrodo negativo y en el positivo, y su proporción.",
+      "explicacion": "La corriente eléctrica rompe las moléculas de agua (H₂O): sus átomos se recombinan en hidrógeno (H₂), en la mina conectada al polo negativo, y oxígeno (O₂), en la positiva. Como cada molécula de agua tiene dos átomos de hidrógeno por uno de oxígeno, se forma más o menos el doble de hidrógeno. El bicarbonato solo aporta iones para que conduzca. Esto se llama electrólisis.",
+      "error_comun": "Creer que las burbujas son aire disuelto o vapor por calentamiento. Son gases nuevos que antes no existían como tales: hidrógeno y oxígeno.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "Usa solo una pila de 9 V y bicarbonato de sodio: nunca sal de cocina, porque produciría cloro. Trabaja en un lugar ventilado."
+      },
+      "variable": "Cambia solo la distancia entre las minas (1, 2 y 4 cm) y cuenta las burbujas.",
+      "conexion": "Algunos buses y fábricas del mundo usan hidrógeno obtenido por electrólisis como combustible limpio.",
+      "tags": [
+        "electrólisis",
+        "agua",
+        "hidrógeno",
+        "oxígeno",
+        "enlace covalente"
+      ]
+    },
+    {
+      "id": "g8-quimica-09",
+      "grado": 8,
+      "eje": "quimica",
+      "titulo": "El huevo sin cáscara",
+      "pregunta": "¿Qué le pasa a la cáscara de huevo y a la masa del huevo cuando lo dejo en vinagre?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 20,
+      "materiales": [
+        "2 huevos crudos",
+        "vinagre blanco",
+        "2 vasos plásticos",
+        "agua",
+        "báscula de cocina",
+        "cinta métrica de costura",
+        "plato"
+      ],
+      "pasos": [
+        "Pesa cada huevo y mide su circunferencia.",
+        "Pon un huevo en vinagre y el otro en agua como control.",
+        "Observa las burbujas durante los primeros 10 minutos.",
+        "Al día siguiente, cambia el vinagre por vinagre nuevo.",
+        "Al día 3, saca los huevos con cuidado, enjuágalos, pésalos y mídelos.",
+        "Compara masa y tamaño en una tabla."
+      ],
+      "prediccion": "¿Qué pasará con la cáscara? ¿El huevo pesará más o menos al final?",
+      "observa": "Burbujas, desaparición de la cáscara, masa (g) y circunferencia (cm) al inicio y al día 3.",
+      "explicacion": "La cáscara está hecha de carbonato de calcio. El ácido acético del vinagre reacciona con ella: los átomos se recombinan formando acetato de calcio (que se disuelve), agua y dióxido de carbono (las burbujas). Queda solo la membrana. Luego el agua del vinagre entra por la membrana (ósmosis) y el huevo crece y gana masa.",
+      "error_comun": "Creer que el vinagre \"ablanda\" la cáscara sin cambiarla. La cáscara se transforma en otras sustancias; es una reacción química.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el líquido final: después de quitar la cáscara, pon el huevo en agua con mucha azúcar y mide si pierde masa.",
+      "conexion": "La lluvia ácida daña de igual manera las estatuas de mármol, y el sarro de las ollas (carbonato de calcio) se limpia con vinagre.",
+      "tags": [
+        "reacción química",
+        "carbonato de calcio",
+        "ácido acético",
+        "ósmosis",
+        "masa"
+      ]
+    },
+    {
+      "id": "g8-tierra-01",
+      "grado": 8,
+      "eje": "tierra-ambiente",
+      "titulo": "Invernadero en una botella",
+      "pregunta": "¿Se calienta más el aire de una botella que tiene más dióxido de carbono?",
+      "dba": [
+        1,
+        3
+      ],
+      "duracion_min": 50,
+      "materiales": [
+        "2 botellas plásticas transparentes iguales de 2 L",
+        "2 termómetros digitales",
+        "plastilina",
+        "vinagre",
+        "bicarbonato de sodio",
+        "cartulina negra",
+        "reloj"
+      ],
+      "pasos": [
+        "Pon un trozo de cartulina negra en el fondo de cada botella.",
+        "En una botella echa 50 mL de vinagre y una cucharadita de bicarbonato; espera 2 minutos a que llene de CO₂. En la otra pon 50 mL de agua.",
+        "Introduce un termómetro en cada botella y sella la boca con plastilina.",
+        "Deja las dos botellas a la sombra 10 minutos y anota la temperatura.",
+        "Ponlas juntas al sol y mide cada 3 minutos durante 30 minutos.",
+        "Grafica las dos curvas."
+      ],
+      "prediccion": "¿Qué botella crees que se calentará más? ¿Cuántos grados de diferencia?",
+      "observa": "Temperatura (°C) en cada botella cada 3 minutos; diferencia final entre ellas.",
+      "explicacion": "La luz del sol entra, calienta la cartulina negra y esta emite calor como radiación infrarroja. El CO₂ absorbe parte de esa radiación infrarroja y la devuelve, así que el aire se calienta un poco más: es el efecto invernadero. La diferencia en la botella suele ser pequeña (1–2 °C), pero en la atmósfera de todo el planeta un aumento de CO₂ cambia el clima.",
+      "error_comun": "Creer que el efecto invernadero es malo en sí mismo, o que se debe al hueco de la capa de ozono. Sin él la Tierra sería helada; el problema es su aumento por quemar combustibles, y el ozono es un tema distinto.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la cantidad de CO₂ (media, una o dos cucharaditas de bicarbonato) y compara la temperatura final.",
+      "conexion": "El aumento de temperatura afecta los páramos de los que viene el agua de Cali y la producción de café en el Valle.",
+      "tags": [
+        "efecto invernadero",
+        "cambio climático",
+        "CO₂",
+        "radiación",
+        "gráfica"
+      ]
+    },
+    {
+      "id": "g8-tierra-02",
+      "grado": 8,
+      "eje": "tierra-ambiente",
+      "titulo": "Lluvia ácida contra la tiza",
+      "pregunta": "¿Cuánto daña un líquido ácido a las rocas de carbonato de calcio, comparado con el agua?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "4 tizas blancas de carbonato de calcio",
+        "vinagre",
+        "jugo de limón",
+        "agua",
+        "4 vasos plásticos",
+        "báscula de cocina",
+        "indicador de repollo morado (opcional)",
+        "papel absorbente"
+      ],
+      "pasos": [
+        "Pesa cada tiza y anota su masa.",
+        "Pon una tiza en agua, otra en vinagre, otra en jugo de limón y otra en vinagre diluido a la mitad con agua.",
+        "Si tienes indicador de repollo, mide el pH de cada líquido.",
+        "Observa las burbujas durante 10 minutos.",
+        "Deja las tizas 24 horas, sácalas, sécalas 2 días y pésalas.",
+        "Calcula el porcentaje de masa perdida y compara con el pH."
+      ],
+      "prediccion": "¿Cuál tiza perderá más masa? ¿Habrá diferencia entre el vinagre puro y el diluido?",
+      "observa": "Burbujas, masa inicial y final (g), porcentaje de masa perdida y pH aproximado de cada líquido.",
+      "explicacion": "La tiza escolar es carbonato de calcio, igual que el mármol y la caliza. Los ácidos reaccionan con ella: se forman una sal que se disuelve, agua y dióxido de carbono (burbujas). La lluvia ácida se forma cuando los óxidos de azufre y nitrógeno de los motores y fábricas reaccionan con el agua del aire, y desgasta rocas, edificios y estatuas.",
+      "error_comun": "Creer que la lluvia normal es neutra con pH 7. La lluvia es naturalmente un poco ácida (cerca de pH 5,6) por el CO₂; se considera lluvia ácida cuando el pH es menor.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la concentración del vinagre (puro, 1/2, 1/4) y relaciónala con la masa perdida.",
+      "conexion": "La contaminación del tráfico en el centro de Cali y de las zonas industriales de Yumbo contribuye a la acidez de la lluvia y al desgaste de monumentos.",
+      "tags": [
+        "lluvia ácida",
+        "carbonato de calcio",
+        "contaminación",
+        "pH",
+        "porcentaje"
+      ]
+    },
+    {
+      "id": "g8-tierra-03",
+      "grado": 8,
+      "eje": "tierra-ambiente",
+      "titulo": "Barómetro de vaso",
+      "pregunta": "¿Cambia la presión del aire de un día a otro y tiene que ver con el tiempo atmosférico?",
+      "dba": [
+        3
+      ],
+      "duracion_min": 30,
+      "materiales": [
+        "vaso plástico rígido o lata limpia",
+        "globo",
+        "liga",
+        "pitillo",
+        "cinta adhesiva",
+        "cartulina",
+        "regla",
+        "marcador"
+      ],
+      "pasos": [
+        "Corta el cuello del globo y estíralo sobre la boca del vaso; asegúralo con la liga para que quede tenso y sellado.",
+        "Pega un extremo del pitillo en el centro del globo, de modo que sobresalga horizontal.",
+        "Pega la cartulina vertical detrás de la punta del pitillo y marca la posición inicial.",
+        "Deja el barómetro en un lugar a la sombra y con temperatura estable.",
+        "Marca la posición de la punta todos los días a la misma hora durante 2 semanas.",
+        "Anota junto a cada marca el estado del tiempo (sol, nublado, lluvia).",
+        "Haz una gráfica de posición contra día."
+      ],
+      "prediccion": "¿La punta del pitillo subirá o bajará en los días lluviosos?",
+      "observa": "Posición (mm) de la punta del pitillo cada día y estado del tiempo.",
+      "explicacion": "El aire encerrado en el vaso tiene una cantidad fija de gas. Si la presión atmosférica aumenta, empuja la membrana hacia adentro y la punta del pitillo sube; si disminuye, el aire de adentro empuja la membrana hacia afuera y la punta baja. Las bajas presiones suelen asociarse a nubes y lluvia. Ojo: la temperatura también cambia el volumen del aire encerrado, por eso debe estar a la sombra.",
+      "error_comun": "Creer que el aire no pesa ni hace presión porque no lo sentimos. Nos empuja en todas direcciones y nuestro cuerpo lo equilibra.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo la ubicación (sombra estable contra ventana con sol) y compara para ver el efecto de la temperatura.",
+      "conexion": "El IDEAM y los aeropuertos como el Alfonso Bonilla Aragón miden la presión atmosférica para pronosticar el tiempo.",
+      "tags": [
+        "presión atmosférica",
+        "barómetro",
+        "tiempo atmosférico",
+        "gases",
+        "registro diario"
+      ]
+    },
+    {
+      "id": "g8-tierra-04",
+      "grado": 8,
+      "eje": "tierra-ambiente",
+      "titulo": "Una nube en la botella",
+      "pregunta": "¿Qué condiciones hacen falta para que se forme una nube?",
+      "dba": [
+        3,
+        1
+      ],
+      "duracion_min": 25,
+      "materiales": [
+        "botella plástica transparente de 2 L con tapa",
+        "agua tibia",
+        "fósforos (los usa un adulto)",
+        "linterna del celular",
+        "fondo oscuro"
+      ],
+      "pasos": [
+        "Pon unos 3 cm de agua tibia en la botella, tápala y agítala para humedecer el aire.",
+        "Aprieta y suelta la botella con fuerza varias veces y observa con la linterna sobre el fondo oscuro.",
+        "Abre la botella; un adulto apaga un fósforo y deja entrar un poco del humo; tapa de inmediato.",
+        "Aprieta fuerte la botella 10 segundos y suéltala de golpe.",
+        "Observa qué aparece al soltar y qué pasa al volver a apretar.",
+        "Repite 5 veces y anota en qué casos se forma la nube."
+      ],
+      "prediccion": "¿Se formará la nube al apretar o al soltar? ¿Hará falta el humo?",
+      "observa": "Aparición de la nube (sí/no) al apretar y al soltar, con y sin humo; densidad de la nube.",
+      "explicacion": "Al soltar la botella el aire se expande de golpe, hace trabajo y se enfría (primera ley). El vapor de agua del aire frío se condensa en gotitas diminutas, pero necesita partículas sobre las que formarse: los núcleos de condensación (aquí el humo). Al apretar, el aire se comprime, se calienta y las gotitas se evaporan. En la atmósfera, el aire que sube se expande, se enfría y forma nubes.",
+      "error_comun": "Creer que las nubes son vapor de agua o humo. El vapor es invisible; las nubes son gotitas de agua líquida o cristales de hielo.",
+      "seguridad": {
+        "nivel": "supervision",
+        "nota": "El docente o un adulto enciende y apaga el fósforo; solo se usa el humo de un fósforo ya apagado."
+      },
+      "variable": "Cambia solo la temperatura del agua inicial (fría contra tibia) y compara la densidad de la nube.",
+      "conexion": "Las nubes que se forman sobre los Farallones de Cali en la tarde se deben al aire húmedo que sube por la montaña y se enfría.",
+      "tags": [
+        "nubes",
+        "condensación",
+        "expansión adiabática",
+        "presión",
+        "ciclo del agua"
+      ]
+    },
+    {
+      "id": "g8-tierra-05",
+      "grado": 8,
+      "eje": "tierra-ambiente",
+      "titulo": "Océano en un vaso: soplar CO₂",
+      "pregunta": "¿Qué le pasa al agua cuando absorbe el dióxido de carbono que exhalamos?",
+      "dba": [
+        2
+      ],
+      "duracion_min": 20,
+      "materiales": [
+        "indicador de repollo morado ya preparado",
+        "2 vasos plásticos transparentes",
+        "pitillo",
+        "agua de la llave",
+        "cronómetro",
+        "hoja blanca"
+      ],
+      "pasos": [
+        "Pon 100 mL de agua y 20 mL de indicador en cada vaso; uno será el control.",
+        "Pon los vasos sobre la hoja blanca y anota el color inicial.",
+        "Sopla suavemente con el pitillo dentro de un vaso durante 1 minuto, sin aspirar.",
+        "Compara el color con el del control.",
+        "Sigue soplando en tramos de 1 minuto hasta 4 minutos y anota el color cada vez.",
+        "Deja el vaso quieto 30 minutos y observa si el color vuelve a cambiar."
+      ],
+      "prediccion": "¿El agua se volverá más ácida, más básica o seguirá igual al soplar?",
+      "observa": "Color del indicador cada minuto de soplado y después de reposar, comparado con el control.",
+      "explicacion": "El aire que exhalamos tiene más CO₂ que el aire normal. El CO₂ reacciona con el agua y forma ácido carbónico (H₂CO₃), que libera iones H⁺: el agua se acidifica y el indicador cambia hacia rosado. Los océanos absorben gran parte del CO₂ que emitimos y se están acidificando, lo que daña corales y conchas de carbonato de calcio.",
+      "error_comun": "Creer que el CO₂ solo se queda en el aire. Una gran parte se disuelve en el océano y cambia su química.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el tiempo de soplado y relaciónalo con el color (escala de pH del repollo).",
+      "conexion": "Los corales de la isla Gorgona y de Malpelo, en el Pacífico colombiano, están amenazados por la acidificación y el calentamiento del océano.",
+      "tags": [
+        "acidificación del océano",
+        "CO₂",
+        "pH",
+        "indicador",
+        "cambio climático"
+      ]
+    },
+    {
+      "id": "g8-tierra-06",
+      "grado": 8,
+      "eje": "tierra-ambiente",
+      "titulo": "Compostera en botella",
+      "pregunta": "¿Qué residuos de cocina se descomponen más rápido y qué pasa con la temperatura del compost?",
+      "dba": [
+        2,
+        4
+      ],
+      "duracion_min": 40,
+      "materiales": [
+        "botella plástica de 2 L con agujeros pequeños hechos por un adulto",
+        "tierra de jardín",
+        "cáscaras de frutas y verduras",
+        "hojas secas",
+        "un trozo de bolsa plástica pequeña",
+        "termómetro digital",
+        "agua",
+        "regla"
+      ],
+      "pasos": [
+        "Arma capas en la botella: tierra, cáscaras picadas, hojas secas y otra vez tierra.",
+        "Entierra el trozo de bolsa plástica en el centro como comparación.",
+        "Humedece sin encharcar y marca la altura del material.",
+        "Mide la temperatura en el centro y la del ambiente cada 3 días durante 5 semanas.",
+        "Mide la altura del material cada semana.",
+        "Al final, saca el contenido y compara el estado de cáscaras, hojas y plástico.",
+        "Grafica temperatura y altura contra días."
+      ],
+      "prediccion": "¿Qué crees que pasará con la temperatura del interior? ¿Qué material se descompondrá primero y cuál no?",
+      "observa": "Temperatura del centro y del ambiente (°C), altura del material (cm) y estado de cada residuo cada semana.",
+      "explicacion": "Bacterias, hongos y lombrices descomponen la materia orgánica: con oxígeno transforman sus moléculas en CO₂, agua, sales minerales y humus. Esas reacciones liberan energía, por eso el centro del compost se calienta. Los descomponedores regresan los nutrientes al suelo y cierran el ciclo de la materia. El plástico casi no cambia porque los microbios no pueden descomponerlo fácilmente.",
+      "error_comun": "Creer que la basura orgánica \"desaparece\". Se transforma en otras sustancias: gases, agua y humus; la materia se conserva.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el tamaño de los trozos de cáscara (enteras contra picadas) en dos botellas iguales.",
+      "conexion": "En Cali, separar los residuos orgánicos reduce lo que llega al relleno sanitario de Yotoco y produce abono para huertas urbanas.",
+      "tags": [
+        "compostaje",
+        "descomposición",
+        "ciclo de la materia",
+        "residuos",
+        "observación prolongada"
+      ]
+    },
+    {
+      "id": "g8-tierra-07",
+      "grado": 8,
+      "eje": "tierra-ambiente",
+      "titulo": "Cazadores de islas de calor",
+      "pregunta": "¿Por qué algunas zonas del colegio y del barrio están más calientes que otras a la misma hora?",
+      "dba": [
+        1
+      ],
+      "duracion_min": 60,
+      "materiales": [
+        "termómetro digital o termómetro infrarrojo si lo hay",
+        "cinta métrica",
+        "mapa o croquis del colegio",
+        "reloj",
+        "cuaderno",
+        "gorra y agua para el sol"
+      ],
+      "pasos": [
+        "Dibuja un croquis del colegio y elige 6 puntos: pavimento al sol, pasto al sol, tierra, techo de zinc, sombra de árbol y sombra de techo.",
+        "Mide la temperatura de la superficie en cada punto a las 7 a.m.",
+        "Repite a las 10 a.m. y a las 12 m.",
+        "Mide también la temperatura del aire a 1 m de altura en cada punto.",
+        "Anota los datos en una tabla punto–hora–temperatura.",
+        "Colorea el croquis con colores según la temperatura del mediodía.",
+        "Propón una mejora para el punto más caliente."
+      ],
+      "prediccion": "¿Cuál punto será el más caliente al mediodía? ¿Cuántos grados de diferencia esperas entre el pavimento y la sombra del árbol?",
+      "observa": "Temperatura (°C) de superficie y del aire en 6 puntos a tres horas distintas; mapa de colores.",
+      "explicacion": "Las superficies oscuras y secas como el asfalto absorben mucha radiación solar y la guardan; el pasto y los árboles evaporan agua por sus hojas (transpiración), lo que toma energía y refresca; la sombra impide que la radiación llegue al suelo. Por eso las ciudades con mucho cemento y pocos árboles forman islas de calor.",
+      "error_comun": "Creer que los árboles refrescan solo porque dan sombra. También enfrían al evaporar agua por las hojas.",
+      "seguridad": {
+        "nivel": "libre"
+      },
+      "variable": "Cambia solo el tipo de superficie al sol (asfalto, baldosa, pasto, tierra) midiendo a la misma hora.",
+      "conexion": "Cali tiene programas de arborización como el corredor verde porque los barrios con pocos árboles, como muchos de la Comuna 15, son más calientes.",
+      "tags": [
+        "islas de calor",
+        "radiación",
+        "ciudad",
+        "árboles",
+        "mapa"
+      ]
+    }
+  ]
+}
