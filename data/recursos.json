@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "actualizado": "2026-10-02",
+  "actualizado": "2026-10-19",
   "recursos": [
     {
       "id": "taller-armar-sabi",
@@ -1739,6 +1739,75 @@
       "estado": "activo",
       "verificado": "2026-10-02",
       "origen": "semilla-2"
+    },
+    {
+      "id": "classroomscreen",
+      "titulo": "Classroomscreen",
+      "url": "https://www.classroomscreen.com",
+      "tipo": [
+        "docente"
+      ],
+      "areas": [
+        "Transversales",
+        "Gestión de aula"
+      ],
+      "grados": {
+        "desde": 0,
+        "hasta": 11
+      },
+      "costo": "gratis",
+      "hardware": "ninguno",
+      "idioma": "multilingüe",
+      "acceso": "ya",
+      "descripcion": "Pizarra digital interactiva con más de 13 widgets (temporizador, encuestas, generador de grupos, nivel de sonido, QR, semáforo) para organizar y dinamizar la clase presencial o virtual sin instalar nada.",
+      "reto": {
+        "titulo": "Normas visuales de convivencia digital en aula vulnerable",
+        "problema": "En Ciudad Córdoba, estudiantes de primaria no entienden límites entre espacio físico y digital. Necesitan construir (no recibir) reglas visuales de respeto en clase presencial.",
+        "producto": "Estudiantes de 4°-5° diseñan en Classroomscreen un semáforo y temporizador de 'Ley de palabra' que documenta: cuándo todos hablan (verde), cuándo escuchan (amarillo), silencio reflexivo (rojo). Se fotografía y cuelga en muro de aula. Conexión con Guardianes Digitales: empatía en convivencia."
+      },
+      "proyecto_institucional": "Guardianes Digitales",
+      "bloom": "aplicar",
+      "seguridad": "Sin cuentas de menores requeridas. Versión gratuita no guarda datos. Uso presencial sin chat o publicación. Compatible con proyección segura en pizarra escolar.",
+      "estado": "activo",
+      "verificado": "2026-10-19",
+      "origen": "curador"
+    },
+    {
+      "id": "didaxis-lab",
+      "titulo": "Didaxis Lab",
+      "url": "https://didaxislab.com/",
+      "tipo": [
+        "steam",
+        "simulacion",
+        "juego"
+      ],
+      "areas": [
+        "Matemáticas",
+        "Pensamiento numérico",
+        "Pensamiento métrico",
+        "Pensamiento variacional",
+        "Pensamiento aleatorio"
+      ],
+      "grados": {
+        "desde": 2,
+        "hasta": 11
+      },
+      "costo": "gratis",
+      "hardware": "ninguno",
+      "idioma": "español",
+      "acceso": "ya",
+      "descripcion": "Simuladores interactivos de matemáticas con juegos pedagógicos (operaciones numéricas, funciones, deducción) alineados a DBA de Colombia. Cada laboratorio incluye preguntas tipo Saber 11 con retroalimentación y guía docente descargable.",
+      "reto": {
+        "titulo": "Miedo a las matemáticas en comunidades vulnerables",
+        "problema": "Estudiantes de primaria en CENTEC evitan matemáticas por métodos tradicionales desconectados de realidad. Necesitan exploración lúdica y sin presión de calificación inmediata.",
+        "producto": "Docentes de 3°-5° grado usan los juegos de Didaxis Lab (ej: 'Neutralizar invasores hallando opuestos de números enteros') como estación de descubrimiento; estudiantes generan confianza y reporte de progreso va a familias."
+      },
+      "proyecto_institucional": "Ciudadano 2040",
+      "bloom": "crear",
+      "seguridad": "Sin cuentas, sin registro, sin datos personales. Simuladores embebibles en LMS escolar (Moodle). Retroalimentación inmediata sin publicación pública. Conforme a RGPD educativo.",
+      "estado": "activo",
+      "verificado": "2026-10-19",
+      "origen": "curador"
     }
   ]
 }
