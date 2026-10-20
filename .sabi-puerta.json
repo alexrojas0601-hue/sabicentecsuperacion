@@ -1,0 +1,8 @@
+{
+ "rol": "estudiante",
+ "texto": "Aprender con SABI",
+ "excluir": [
+  "(^|/)tutor\\.html$"
+ ],
+ "reglas": []
+}
