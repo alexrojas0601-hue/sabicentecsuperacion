@@ -261,6 +261,58 @@
    "seguridad": "Cuentas de estudiante creadas por el docente con su sección; sin publicidad.",
    "estado": "activo",
    "fecha": "2026-10-16"
+  },
+  {
+   "nombre": "Robótica Desenchufada + Bristlebots Caseros (Bajo Costo)",
+   "tipo": "material concreto",
+   "grados": "3° a 8°",
+   "para_que": "Enseñar pensamiento computacional, secuencias lógicas y algoritmos sin pantallas ni presupuesto",
+   "como_usarla": "Sesión 1 (Desenchufada): Cuadrícula en piso, tarjetas con instrucciones (avanza, gira), estudiantes son robot. Sesión 2 (Bristlebot): Materiales caseros (cepillo viejo, motor 1.5V, pilas, cartón). Arman robot vibrador. Sesión 3: Programan movimientos con reglas (si-entonces). Carrera de robots.",
+   "comando_sabi": "docente o /escape",
+   "evidencia": "Recursostics (2026): Robótica desenchufada funciona sin tecnología y enseña algoritmos. Bristlebots son económicos y tangibles. Research UNLP (2019): robots bajo costo desarrollan pensamiento algorítmico. Accesible sin infraestructura.",
+   "fuente": "https://www.recursostics.com/robotica-en-el-aula/; https://sedici.unlp.edu.ar/handle/10915/90812",
+   "url": "",
+   "costo": "bajo",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin tecnología digital en fase 1; materiales reciclados/seguros en fase 2 (con supervisión adulto)",
+   "area": "Ciencias Naturales, Química, Física y STEAM",
+   "dot": "Dot_CienciasNaturales_STEAM",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": {
+     "detalle": "Riesgo mínimo. Fase 1 (desenchufada) es juego estructurado sin tecnología. Fase 2 requiere supervisión por: motor de 1.5V (bajo voltaje, seguro), cepillo/cartón (materiales no tóxicos si son reciclados verificados), pilas estándar. Recomendación: verificar que cepillos no contengan BPA y provenir de fuentes limpias.",
+     "cumplimiento_1581": "✓ Sin recopilación de datos personales. ✓ Materiales físicos, no digitales. ✓ Supervisión adulto explícita. ✓ Acta de consentimiento para manejo de materiales recomendada."
+    },
+    "evidencia": {
+     "fortaleza": "Recursostics y UNLP son fuentes confiables. UNLP (2019) es investigación universitaria. Recursostics es portal de recursos educativos verificable.",
+     "debilidad": "URLs válidas pero no acceso directo a full-text UNLP. Recursostics es recurso agregador (no investigación primaria). Recomendación: añadir artículo de referencia de robótica educativa de Papert (constructivismo) o publicación reciente de IEEE/ACM sobre computational thinking."
+    },
+    "nota": "Para CENTEC (contexto rural/bajo presupuesto):\n1. Crear guía visual A3 laminada (sin QR) con instrucciones desenchufadas en pictogramas.\n2. Kit reutilizable: guardar bristlebots armados en caja para reutilización en próximos grupos.\n3. Sesión 3 ampliar: registrar en papel (tabla de movimientos) antes de carrera → evidencia de pensamiento algorítmico.\n4. Agregar cuestionario post (papel): ¿Qué instrucciones dio el robot? ¿Qué pasó si faltaba una? (metacognición).\n5. Evaluar con rúbrica: precisión de secuencias, precisión de construcción, precisión de predicción de movimiento."
+   },
+   "fecha": "2026-10-20"
+  },
+  {
+   "nombre": "Biblioteca de Experimentos Caseros Validados (PISA + Educa.jcyl)",
+   "tipo": "banco de actividades",
+   "grados": "3° a 7°",
+   "para_que": "Realizar 20+ experimentos con materiales del hogar que enseñan reacciones químicas, densidad, capilaridad y física de forma segura",
+   "como_usarla": "1. Docente selecciona experimento (ej. arcoíris de densidades, volcán bicarbonato, huevo flotante). 2. Proporciona lista de materiales cotidianos a familias. 3. Estudiantes experimentan en casa o aula. 4. Registran observaciones en cuaderno. 5. Presentan conclusión: qué pasó y por qué. 6. Replican con variaciones (más sal, otra sustancia).",
+   "comando_sabi": "[[experimento casero N]] o /worksheet",
+   "evidencia": "PISA 2022 (OCDE, 2023): alumnado con experimentos prácticos tiene más confianza científica. Paradoxo (2025): 20 experimentos caseros seguros con materiales comunes. BNEscolar: guías con método científico integrado.",
+   "fuente": "https://paraninos.org/experimentos-caseros-para-ninos/; https://bnescolar.bne.es/; https://educa.jcyl.es/crol/es/recursos-educativos/phet-interactive-simulations",
+   "url": "https://educa.jcyl.es/crol/es/recursos-educativos/phet-interactive-simulations",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Materiales no tóxicos; supervisión adulto recomendada; sin conexión requerida; sin datos personales",
+   "area": "Ciencias Naturales, Química, Física y STEAM",
+   "dot": "Dot_CienciasNaturales_STEAM",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para máximo impacto en CENTEC: (a) Crear matriz de mapeo: cada experimento → objetivo STEM específico (ej. 'arcoíris densidades'→densidad de líquidos, solubilidad, miscibilidad). (b) Proporcionar plantilla de laboratorio casero: pre-predicción (qué crees que pasará), observación estructurada, datos cuantitativos si es posible (medidas, tiempos). (c) Generar rúbrica para conclusiones científicas (lenguaje académico, causalidad, limitaciones). (d) Crear repositorio de replicaciones fotográficas de estudiantes de CENTEC (galería sin identificación personal) para modelaje. (e) Vincular a PhET si hay conexión disponible: simulaciones pre/post experimento (modelado molecular del volcán de bicarbonato, p.ej.)."
+   },
+   "fecha": "2026-10-20"
   }
  ]
 }
