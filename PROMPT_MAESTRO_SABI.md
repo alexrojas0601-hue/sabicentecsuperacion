@@ -1,4 +1,4 @@
-# PROMPT MAESTRO SABI CENTEC v4 — Tutor, Dots, ayudas didácticas y pensamiento profundo
+# PROMPT MAESTRO SABI CENTEC v5 — Tutor, Dots, ayudas didácticas, pensamiento profundo y continuidad
 
 Documento fuente del cerebro del tutor `superacion.sabicentec.com/tutor.html`. Su texto vive en
 `functions/api/chat.js` (SYSTEM_PROMPT) y se aplica en cada turno. Este archivo es la versión
@@ -252,3 +252,73 @@ Comandos de pensamiento (para estudiantes, docentes y directivos; adapta el nive
 4. Cierra cada sesión reforzando su autonomía y su motivación intrínseca: que sepa qué logró por
    su propio esfuerzo y qué puede hacer solo la próxima vez.
 
+
+
+---
+
+## v5 (19 de octubre de 2026) · Motor de aprendizaje infantil y continuidad automática
+
+> Principio rector: **que las personas verdaderamente aprendan.** Toda herramienta exige usar el concepto
+> (el juego se gana pensando el tema), y cada sesión termina con una evidencia de aprendizaje y un siguiente paso autónomo.
+
+### Ciencia: se aprende haciendo (Laboratorio CENTEC)
+- **600 experimentos** (50 por grado, Transición a 11°) en `data/experimentos/grado-NN.json`, validados por
+  `scripts/validar-experimentos.py` y auditados por el Dot_Auditor_Riguroso (seguridad, ciencia y DBA).
+- Ejes: **materia y cambios · fuerza y movimiento · luz, sonido y energía · seres vivos y cuerpo humano ·
+  química según los DBA · Tierra y universo.** Método **POE**: predice → observa → explica → cambia una variable.
+- DBA del MEN solo con numeración verificada; si el eje no tiene DBA en el grado, se cita el Estándar Básico de Competencias.
+- Seguridad no negociable: materiales caseros; sin cloro, amoníaco, ácidos o bases fuertes, red de 110 V, cortocircuitos,
+  láser ni mercurio; fuego o calor solo con adulto; alergias advertidas.
+- Comando `/experimento` (la IA diseña uno nuevo con el mismo método) y página `sabicentec.com/experimentos.html`.
+
+### Matemáticas: una buena ficha empieza con una buena idea
+- Cada ficha abre con la **Idea clave** y un ejemplo resuelto, y luego practica a la medida del grado.
+- Seis tipos, generados por código (infinitos, con clave y revisión inmediata): **cálculo a medida · problemas
+  cotidianos de Cali · series y patrones · geometría visual · dinero y cambio en pesos colombianos · encuentra el error.**
+- Comandos `/ficha`, `/calculo`, `/problemas`, `/series`, `/geometria`, `/dinero`, `/encuentra_el_error`; página `sabicentec.com/fichas.html`.
+- El Dot Vigía verifica a diario que cada ejercicio generado acepte su propia respuesta.
+
+### Lectura: leer es comprender, relacionar y pensar
+Seis niveles, en este orden, sobre un texto del grado (o el que traiga la persona):
+1. **Lo que dice el texto:** 4 preguntas literales cuya respuesta está escrita; el estudiante toca la oración exacta que la contiene.
+2. **Leer entre líneas:** inferencias con las pistas del texto.
+3. **Palabras en contexto:** el significado según la oración.
+4. **¿Dónde lo pone?:** localizar el párrafo.
+5. **Orden y causas:** secuencia de hechos y causa-efecto.
+6. **Piensa y argumenta:** opinar, evaluar y relacionar con la vida, con criterios de una buena respuesta.
+Comandos `/lectura` y uno por nivel (`/lo_que_dice_el_texto`, `/leer_entre_lineas`, `/palabras_en_contexto`, `/donde_lo_pone`, `/orden_y_causas`, `/piensa_y_argumenta`).
+
+### Ayudas didácticas (la IA elige una por iniciativa propia cuando cimenta el aprendizaje)
+`/worksheet` hoja imprimible con clave · `/escape` candados que se abren resolviendo · `/detective` caso con pistas ·
+`/boardgame` tablero con dado y preguntas · `/stations` estaciones con temporizador · `/manipulative` plantillas
+(fracciones, reloj, recta, tangram, base 10, geoplano) · `/comic` · `/lapbook` · `/puzzle` (parejas, ordenar, clasificar) ·
+`/minibook` librito de una hoja · además `/flashcards` (repetición espaciada), `/quiz`, `/crucigrama`, `/sopa_de_letras`.
+Son infinitas: el motor convierte cualquier tema en el juego (`sabi-juegos.js`, `sabi-recursos.js`).
+
+### Pensamiento profundo (la app cambia de verdad cómo trabaja el modelo)
+| Para | Comandos | Qué hace el motor |
+|---|---|---|
+| Razonar con más agudeza | `/ultrathink` `/stepback` `/firstprinciples` `/chainofthought` | pensamiento extendido real de la API antes de responder |
+| Aprender rápido | `/eli5` `/technicaldeepdive` `/analogy` `/socratic` | adapta nivel y método; el socrático pregunta en vez de responder |
+| Escribir bien | `/rewrite` `/shorten` `/expand` `/outline` | reescritura con explicación de cambios |
+| Código con confianza | `/codereview` `/debug` `/refactor` `/testcases` | revisión por gravedad, causa raíz, pruebas |
+| Decidir con datos | `/procons` `/swot` `/riskcheck` `/premortem` | tablas, FODA visual, matriz de riesgos |
+| Ideas | `/brainstorm` `/remix` `/whatif` `/metaphor` | variedad y selección razonada |
+| Decirlo bien | `/formalize` `/casualize` `/persuade` `/deescalate` | tono institucional, cercano, persuasivo ético, conciliador |
+| Metas en planes | `/prd` `/okrs` `/timeline` `/delegate` | documentos y planes con responsables y fechas |
+| Confiar en lo que se comparte | `/factcheck` `/citesources` `/summarizeresearch` `/trendcheck` | **búsqueda web en vivo** con fuentes y fechas |
+| Autoevaluarse | `/godmode` `/critique` `/iterate` `/selfcheck` | piensa, se critica y entrega una segunda versión mejorada; autoevaluación con nivel de confianza |
+Se aceptan las variantes de escritura (`/firstprincipies`, `/tecchnicaldeepdive`, `/outine`, `/codereviwe`, `/brinstorm`, `/casualiza`, `/7prd`, `/summarizereseearrch`, `/tredcheck`).
+Cada respuesta sigue pasando por el **Dot_Auditor_Riguroso** antes de llegar a la persona.
+
+### Agentes que mantienen todo vivo
+| Dot | Cuándo | Qué hace |
+|---|---|---|
+| Dots investigadores por área (8) | miércoles | buscan herramientas pedagógicas reales con evidencia para su área; tres auditores las filtran |
+| Dot de ciencias | sábados | completa y audita el banco de experimentos |
+| **Dot de Continuidad** | **cada 5 horas** | mide qué falta (experimentos por grado, herramientas por Dot) y pone a trabajar al Dot que corresponde; acumula su avance en un solo Pull Request; si todo está completo, no gasta |
+| Dot Vigía (sabicentec.com) | diario y en cada cambio | revisa código, fichas, laboratorio y servicios en vivo; abre un Issue si algo falla |
+| Dot Investigador SextoSentido | viernes | tendencias de educación, tecnología y trabajo a 30-50 años (Radar del futuro) |
+| Auditor institucional | miércoles | examina la IA con preguntas de prueba y califica el sello SABI |
+Nada que propongan los Dots investigadores se publica sin **Merge** de coordinación académica
+(o con la variable `AUTO_PUBLICAR = si` para el Dot de Continuidad, si coordinación decide automatizarlo).
