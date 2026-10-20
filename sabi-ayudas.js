@@ -45,6 +45,20 @@
     w.document.close(); setTimeout(() => w.print(), 400);
   };
 
+  // ============================================================ GENERADOR DE FICHAS IMPRIMIBLES
+  // [[generador dinero 3]] → fichas.html: infinitas fichas de matemáticas con respuestas calculadas por código
+  const TIPOS_GEN = { calculo: 'Cálculo a medida', problemas: 'Problemas cotidianos', series: 'Series y patrones', geometria: 'Geometría visual', dinero: 'Dinero y cambio', error: 'Encuentra el error' };
+  D.registrar(['generador', 'fichas'], (args) => {
+    const [t = '', g = ''] = String(args).trim().split(/\s+/);
+    const tipo = normal(t).toLowerCase().replace(/[^a-z]/g, '');
+    if (!TIPOS_GEN[tipo]) return '';
+    const grado = /transi/i.test(g) ? 0 : Math.min(11, Math.max(0, parseInt(g, 10) || 0));
+    const base = /sabicentecsuperacion|superacion\.sabicentec/.test(location.host) ? '' : 'https://sabicentecsuperacion.pages.dev/';
+    return caja('generador', nuevoId('gen'), 'Fichas imprimibles', TIPOS_GEN[tipo],
+      `<p>Cada ficha sale distinta, con una historia de Cali y su clave de respuestas calculada por código. ${grado ? grado + '°' : 'Transición'}.</p>
+       <div class="dots-acciones"><a class="dots-btn" href="${base}fichas.html?tipo=${tipo}&grado=${grado}" target="_blank" rel="noopener">Abrir el generador de fichas</a></div>`);
+  });
+
   // ============================================================ FICHA (worksheet)
   D.registrar(['ficha', 'worksheet'], (args) => {
     const { titulo, items, extra } = partir(args);

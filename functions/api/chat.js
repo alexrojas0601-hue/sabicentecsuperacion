@@ -1447,6 +1447,9 @@ Ciencias por experimentos (el niño aprende ciencia haciendo):
   misma estructura: predicción, procedimiento, observación, explicación, reto.
 
 Fichas de matemáticas (una buena ficha empieza con una buena idea: un gancho real de Cali):
+- Además de la [[ficha]] interactiva, ofrece las fichas imprimibles infinitas, con respuestas
+  calculadas por código: [[generador TIPO GRADO]], por ejemplo [[generador dinero 3]]. Tipos:
+  calculo, problemas, series, geometria, dinero, error. Grado 0 (Transición) a 11.
 - /calculo → [[ficha]] de cálculo a medida: dificultad graduada en tres escalones, con el nivel
   que el estudiante mostró; incluye cálculo mental y estimación.
 - /problemas → [[ficha]] de problemas cotidianos (tienda, MIO, recetas, mercado, fútbol, ahorro).
@@ -1575,6 +1578,44 @@ function moduloPara(materia) {
   };
   return [MODULOS[PROFUNDO[area]] || "", MODULOS_AREAS[area] ? "MÓDULO ESPECÍFICO DEL ÁREA:\n" + MODULOS_AREAS[area] : ""]
     .filter(Boolean).join("\n\n");
+}
+
+// ---------- Verificación por código de la lectura comprensiva ----------
+// En el bloque [[lectura]] … [[/lectura]], cada "LITERAL: pregunta :: fragmento" y "DONDE: … :: fragmento"
+// debe estar copiado tal cual del TEXTO; si no, el niño nunca podría encontrarlo (sabi-ayudas.js lo
+// descarta en silencio). Usa la misma normalización y la misma división en oraciones que el navegador.
+const planoLectura = (t) => String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9ñ/.,-]+/g, " ").trim();
+export function fragmentosSinTexto(respuesta) {
+  const r = String(respuesta || "");
+  const i = r.search(/\[\[\s*lectura\b/i), j = r.search(/\[\[\s*\/\s*lectura\s*\]\]/i);
+  if (i < 0) return null;
+  const cuerpo = r.slice(i, j > i ? j : undefined).split("\n");
+  const textos = [], fragmentos = [];
+  for (const l of cuerpo) {
+    const m = l.trim().match(/^([A-ZÁÉÍÓÚÑ]+)\s*:\s*(.+)$/);
+    if (!m) continue;
+    const k = m[1].normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    if (k === "TEXTO") textos.push(m[2].trim());
+    if ((k === "LITERAL" || k === "DONDE") && m[2].includes("::")) fragmentos.push({ tipo: k, frag: m[2].split("::").slice(1).join("::").trim() });
+  }
+  const oraciones = textos.flatMap((p) => p.split(/(?<=[.!?…]["»”)]?)\s+/).map((o) => o.trim()).filter(Boolean)).map(planoLectura);
+  const faltan = fragmentos.filter(({ frag }) => { const f = planoLectura(frag); return !f || !oraciones.some((o) => o.includes(f) || (f.includes(o) && o.length > 8)); });
+  return { literales: fragmentos.filter((x) => x.tipo === "LITERAL").length, total: fragmentos.length, faltan };
+}
+async function asegurarFragmentosLectura(env, borrador) {
+  const v = fragmentosSinTexto(borrador);
+  if (!v || !v.faltan.length) return borrador;
+  try {
+    const corregida = await llamarClaude(env, {
+      model: env.MODELO_TUTOR || "claude-haiku-4-5-20251001",
+      system: "Eres el corrector de lecturas comprensivas de SABI (Colegio CENTEC). Corriges sin cambiar el formato ni el texto.",
+      max_tokens: 3500,
+      messages: [{ role: "user", content: `RESPUESTA CON BLOQUE DE LECTURA:\n${borrador}\n\nEstos fragmentos (después de "::" en las líneas LITERAL y DONDE) NO aparecen copiados tal cual en las líneas TEXTO:\n${v.faltan.map((f) => "- " + f.tipo + ": " + f.frag).join("\n")}\n\nCorrige solo esas líneas: el fragmento debe ser una copia exacta, palabra por palabra, de una parte de UNA sola oración del TEXTO que responda la pregunta (si hace falta, cambia la pregunta). No cambies las líneas TEXTO. Devuelve la respuesta completa con el mismo formato.` }],
+    });
+    const v2 = fragmentosSinTexto(corregida);
+    if (v2 && v2.faltan.length < v.faltan.length && v2.literales >= Math.min(4, v.literales)) return corregida;
+  } catch (err) { console.error("No se pudo corregir la lectura:", err); }
+  return borrador;
 }
 
 async function llamarClaude(env, { model, system, messages, max_tokens }) {
@@ -1762,7 +1803,7 @@ Rúbrica (todas deben cumplirse):
    Conserva también, completas y en una sola línea, las herramientas del Prompt Maestro y de las
    ayudas didácticas (sopa, crucigrama, flashcards, linea_tiempo, flujo, 5w1h, mapamental,
    revelar, grafica, comic, detectaerror, atlas, ficha, escape, detective, tablero, estaciones,
-   manipulativo, lapbook, parejas, minilibro, experimento, lectura); verifica su contenido
+   manipulativo, lapbook, parejas, minilibro, experimento, lectura, generador); verifica su contenido
    (fechas, cálculos y respuestas de cada ficha, pistas que llevan a la palabra correcta, que
    detectaerror tenga exactamente un error, que cada pregunta literal de lectura tenga su
    respuesta escrita en el texto, que los experimentos usen solo materiales seguros). Si hay
@@ -2107,6 +2148,9 @@ export async function onRequestPost(context) {
         console.error("Auditor no disponible; se entrega el borrador:", err);
       }
     }
+
+    // ---------- Lectura: cada fragmento LITERAL/DONDE debe estar copiado del texto (lo revisa el código) ----------
+    if (/\[\[\s*lectura\b/i.test(replyFinal)) replyFinal = await asegurarFragmentosLectura(env, replyFinal);
 
     // Guardar el turno en KV solo para el rol estudiante (es su propio historial).
     if (role === "estudiante" && profile.name && profile.grade) {
