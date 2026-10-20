@@ -1,6 +1,6 @@
 {
- "version": "2026-10-16",
- "nota": "Herramientas pedagógicas que encuentran los Dots investigadores por área (scripts/dots-didacticos.mjs), filtradas por el Dot Auditor Riguroso y aprobadas por coordinación con Merge. La IA institucional y sabicentec.com las recomiendan según el Dot activo ('todos' = estrategias para todas las áreas).",
+ "version": "2026-10-20",
+ "nota": "Herramientas pedagógicas encontradas por los Dots investigadores por área y filtradas por el Dot Auditor Riguroso. El tutor (chat.js) las usa según la asignatura. Solo entran con Pull Request aprobado por coordinación académica.",
  "herramientas": [
   {
    "nombre": "Práctica de recuperación",
