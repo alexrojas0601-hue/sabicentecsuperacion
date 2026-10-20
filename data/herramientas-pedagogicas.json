@@ -313,6 +313,98 @@
     "nota": "Para máximo impacto en CENTEC: (a) Crear matriz de mapeo: cada experimento → objetivo STEM específico (ej. 'arcoíris densidades'→densidad de líquidos, solubilidad, miscibilidad). (b) Proporcionar plantilla de laboratorio casero: pre-predicción (qué crees que pasará), observación estructurada, datos cuantitativos si es posible (medidas, tiempos). (c) Generar rúbrica para conclusiones científicas (lenguaje académico, causalidad, limitaciones). (d) Crear repositorio de replicaciones fotográficas de estudiantes de CENTEC (galería sin identificación personal) para modelaje. (e) Vincular a PhET si hay conexión disponible: simulaciones pre/post experimento (modelado molecular del volcán de bicarbonato, p.ej.)."
    },
    "fecha": "2026-10-20"
+  },
+  {
+   "nombre": "Peardeck (Formative Assessment con privacidad)",
+   "tipo": "recurso digital",
+   "grados": "6° a 11°",
+   "para_que": "Realizar evaluaciones formativas interactivas con respuestas anónimas, aumentando seguridad psicológica y participación equitativa en debate-análisis de fuentes",
+   "como_usarla": "1) Docente crea slides con fuente primaria (documento histórico). 2) Inserta preguntas: opción múltiple, texto libre, dibujo o drag-drop. 3) Estudiantes responden vía celular/tablet sin identificarse. 4) Docente visualiza respuestas anónimas en tiempo real. 5) Usa para iniciar debate con evidencias reales.",
+   "comando_sabi": "/evaluacion_formativa, /respuesta_anonima",
+   "evidencia": "Respuestas anónimas mejoran honestidad y seguridad psicológica. No recopila datos de estudiantes menores (cumple FERPA/COPPA). Peardeck firmó Student Privacy Pledge",
+   "fuente": "https://edtechbooks.org/onlinetools/pear-deck",
+   "url": "https://www.peardeck.com/",
+   "costo": "bajo (versión gratuita limitada; $50 USD/año docente)",
+   "requiere_cuenta": true,
+   "seguridad_menores": "Cifrado de datos. No guarda info personal estudiantes. Sin publicidad. Respuestas anónimas. Cumple GDPR/FERPA.",
+   "area": "Ciencias Sociales y Competencias Ciudadanas",
+   "dot": "Dot_CienciasSociales_Ciudadanas",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para máximo impacto en CENTEC: (1) Protocolo antes de usar: docente enseña a leer CRÍTICAMENTE la fuente primaria (contexto, sesgo, autor); (2) Post-debate: registra en wiki colaborativa cuál fue la fuente y qué aprendieron (trazabilidad pedagógica sin identificar respuestas); (3) Integra con /analisis_fuente de SABI para triangular: Peardeck (respuesta anónima) → debate → evidencia científica en base de datos CENTEC; (4) Capacita docentes: anonimato ≠ irresponsabilidad (honor code explícito); (5) Audita trimestral: cotejar cumplimiento de FERPA con Peardeck directamente."
+   },
+   "fecha": "2026-10-20"
+  },
+  {
+   "nombre": "Juego de Rol Deliberativo + Mapas (Roll20/sin app)",
+   "tipo": "juego educativo + estrategia",
+   "grados": "7° a 11°",
+   "para_que": "Simular conflictos históricos o cívicos actuales asumiendo roles de actores reales (comunidades, gobiernos, pueblos indígenas), integrando pensamiento crítico, empatía y toma de decisiones colectivas",
+   "como_usarla": "1) Docente define escenario (ej. Conflicto por tierra en Cauca 1800s). 2) Divide clase en 4-5 grupos con rol asignado. 3) Grupos investigan fuentes primarias de su postura. 4) Sesión 1: Cada grupo expone argumentos (5 min). 5) Sesión 2: Debate estructurado con reglas de evidencia. 6) Cierre: Votación y reflexión sobre perspectivas aprendidas.",
+   "comando_sabi": "/juego_rol, /debate_estructurado, /asamblea_ciudadana",
+   "evidencia": "Juego de rol desarrolla competencias cívicas (empatía, negociación, liderazgo) más efectivamente que métodos tradicionales. Mejora comprensión de conflictos históricos complejos (5 RCTs, meta-análisis PRISMA). Deliberación tiene efectos positivos en competencias cívicas de adolescentes.",
+   "fuente": "https://www.researchgate.net/publication/275582830; https://www.redalyc.org/journal/4595/459578426018/html/",
+   "url": "Sin app requerida (offline: roleplay + mapas físicos/Padlet para armar escenario)",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Actividad presencial/aula. Control total del docente sobre roles y narrativa. No hay interacción con externos.",
+   "area": "Ciencias Sociales y Competencias Ciudadanas",
+   "dot": "Dot_CienciasSociales_Ciudadanas",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para CENTEC: 1) Crear biblioteca de escenarios locales colombianos (conflictos por agua en La Guajira, desplazamiento en Putumayo, tierra en Cauca) con fuentes primarias curadas. 2) Incorporar rúbrica de evaluación alineada con DBA Ciencias Sociales (analiza múltiples perspectivas, reconoce sesgos). 3) Sesión previa: enseñar a estudiantes a identificar sesgos en fuentes primarias (literacidad crítica). 4) Documentar decisiones en Padlet colaborativo para evidencia de aprendizaje. 5) Cierre: reflexión escrita sobre 'qué rol cambió mi perspectiva y por qué' (evaluación de empatía). 6) Extensión opcional: comparar decisiones simuladas vs. desenlaces históricos reales."
+   },
+   "fecha": "2026-10-20"
+  },
+  {
+   "nombre": "Mentimeter (Encuestas + Nubes de Palabras Interactivas)",
+   "tipo": "recurso digital",
+   "grados": "5° a 11°",
+   "para_que": "Recopilar conocimientos previos, ideas durante debate y evaluaciones participativas sobre temas históricos en tiempo real con respuestas anónimas; aumenta equidad de voz",
+   "como_usarla": "1) Docente abre sesión Mentimeter (código único). 2) Proyecto pregunta/encuesta en pantalla. 3) Estudiantes responden vía celular/tablet en www.menti.com + código. 4) Resultados visuales instantáneos (nube de palabras, gráficos). 5) Usa para validar hipótesis sobre interpretaciones históricas o iniciar debate desde datos reales.",
+   "comando_sabi": "/encuesta_instantanea, /nube_palabras, /retroalimentacion_viva",
+   "evidencia": "Encuestas anónimas mejoran seguridad psicológica. Respuestas en tiempo real permiten feedback inmediato del docente. Integrado en presentaciones de contenido histórico, acelera identificación de vacíos conceptuales",
+   "fuente": "https://dialnet.unirioja.es/descarga/articulo/8529877.pdf",
+   "url": "https://www.mentimeter.com/",
+   "costo": "bajo (versión gratuita: 1 encuesta/mes; pago: $100-200 USD/año)",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Respuestas anónimas. Docente controla contenido. Filtro de profanidades automático. No recopila datos personales. Acceso vía código (sin registro estudiante).",
+   "area": "Ciencias Sociales y Competencias Ciudadanas",
+   "dot": "Dot_CienciasSociales_Ciudadanas",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para optimizar en CENTEC: (1) Docente debe revisar preguntas ANTES de proyectar para evitar sesgos históricos o interpretaciones tendenciosas. (2) Usar principalmente en secundaria (9°-11°) para debates historiográficos complejos; en primaria (5°-6°) solo para identificación de conceptos simples. (3) Complementar con análisis crítico posterior: '¿Por qué respondieron así?' cataliza pensamiento ciudadano. (4) Guardar resultados anónimos en carpeta institucional para trazabilidad pedagógica, NO compartir capturas con nombres. (5) Establecer norma explícita: respuestas respetuosas (el filtro de profanidades no cubre sesgos históricos). Comando SABI recomendado: **/encuesta_instantanea_critica** (añadiendo reflexión posterior)."
+   },
+   "fecha": "2026-10-20"
+  },
+  {
+   "nombre": "Aprendizaje-Servicio (ApS) con Comisión Histórica Escolar",
+   "tipo": "estrategia didáctica",
+   "grados": "8° a 11°",
+   "para_que": "Transformar aprendizaje histórico en acción cívica real: estudiantes investigan memoria local y la comunican (murales, podcasts, libros digitales, testimonios), desarrollando compromiso ético y pensamiento crítico",
+   "como_usarla": "1) Docente identifica problema histórico-cívico local (ej. Historia olvidada de barrio). 2) Estudiantes forman comisión de investigación. 3) Buscan fuentes primarias y secundarias (archivos, entrevistas a abuelos). 4) Producen bien público (exposición virtual, documental de 3-5 min, guía educativa). 5) Presentan a comunidad. 6) Reflexionan sobre impacto y ciudadanía.",
+   "comando_sabi": "/proyecto_servicio, /investigacion_colaborativa, /presentacion_comunidad",
+   "evidencia": "ApS desarrolla competencias ciudadanas (compromiso ético, pensamiento crítico, trabajo en equipo) más que métodos pasivos. Mejora significativa en 6 estudios empíricos españoles (búsqueda en Dialnet 2015-2023). Banco Mundial (2018) resalta que ApS desarrolla reflexión y espíritu de equipo esenciales para cohesión social",
+   "fuente": "https://dialnet.unirioja.es/descarga/articulo/10454344.pdf; https://tesis.pucp.edu.pe/server/api/core/bitstreams/69241423-79cf-4ae9-a409-e78dd35a5133/content",
+   "url": "Recurso guía: https://www.roserblanquer.cat/que-es-aprendizaje-servicio/ (adaptable a contexto colombiano)",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Actividad escolar supervisada. Involucra comunidad cercana (barrio, colegio). Consentimiento de padres para entrevistas. Docente valida calidad de interacción con adultos externos.",
+   "area": "Ciencias Sociales y Competencias Ciudadanas",
+   "dot": "Dot_CienciasSociales_Ciudadanas",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 4,
+    "evidencia": 4,
+    "nota": "Para máxima efectividad en CENTEC: 1) Especificar formato de consentimiento informado de padres (modelo incluido en guía). 2) Definir criterios para validar 'adultos externos' (verificación de identidad por docente, máximo 2 entrevistas por estudiante). 3) Adaptar ejemplos a historia local colombiana (desplazamiento, conflicto, resistencia comunitaria) usando archivos de Memoria Histórica. 4) Establecer límite de edades para entrevistas: solo estudiantes 8° en adelante conducen entrevistas (no 6°-7°), con docente presente en primeras 2. 5) Documentar reflexión final de estudiantes sobre impacto ético (evidencia de aprendizaje transformador). 6) Crear plantilla de rúbrica que equilibre rigor histórico + impacto social. Recurso Roserblanquer es excelente; complementar con guía ICBF sobre interacción segura niño-comunidad."
+   },
+   "fecha": "2026-10-20"
   }
  ]
 }
