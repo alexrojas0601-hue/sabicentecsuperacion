@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fichas y lecturas — SABICENTEC SUPERACIÓN</title>
+<meta name="description" content="Fichas de matemáticas infinitas con respuestas verificadas y lecturas en siete pasos. Colegio CENTEC, Cali.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,680&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --noche:#0B1F3F; --noche-2:#14315C; --alba:#F5A623; --barro:#E8792B;
+    --brote:#4C7A5E; --papel:#F7F3E9; --tinta:#1B1B18; --tinta-suave:#5B584E;
+    --linea:rgba(27,27,24,.14); --navy:#1A2D7A; --naranja:#F47C20; --oro:#F5C518;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  [hidden]{display:none!important}
+  body{background:var(--papel);color:var(--tinta);font-family:'Public Sans',sans-serif;font-size:18px;line-height:1.6}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:560;letter-spacing:-.01em;line-height:1.2}
+  a{color:inherit}
+  button{font:inherit;cursor:pointer}
+  :focus-visible{outline:3px solid var(--alba);outline-offset:2px}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+  @media(max-width:640px){.wrap{padding:0 16px}}
+  header.top{border-bottom:1px solid var(--linea)}
+  .top-inner{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:16px;flex-wrap:wrap}
+  .brand{font-weight:600;text-decoration:none}
+  .enlaces{display:flex;gap:8px;flex-wrap:wrap}
+  .cta{background:var(--noche);color:var(--papel);text-decoration:none;padding:9px 16px;border-radius:2px;font-weight:600;font-size:.92rem;border:1px solid var(--noche)}
+  .cta.claro{background:#fff;color:var(--noche)}
+  .intro{background:var(--noche);color:var(--papel);padding:56px 0 40px}
+  .intro h1{font-size:clamp(2rem,5vw,3.3rem);font-weight:450;max-width:20ch}
+  .intro p{max-width:62ch;margin-top:14px;color:rgba(247,243,233,.84)}
+  .barra{position:sticky;top:0;z-index:10;background:rgba(247,243,233,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+  .barra-inner{display:flex;gap:14px;align-items:center;flex-wrap:wrap;padding:10px 0}
+  .tabs{display:flex;gap:4px;flex-wrap:wrap}
+  .tab{border:1px solid var(--linea);background:#fff;padding:8px 14px;border-radius:2px;font-weight:600;font-size:.95rem;color:var(--tinta)}
+  .tab[aria-selected="true"]{background:var(--noche);color:var(--papel);border-color:var(--noche)}
+  .campo{display:flex;flex-direction:column;gap:4px;font-size:.85rem;color:var(--tinta-suave)}
+  .campo.linea{flex-direction:row;align-items:center;gap:8px}
+  select,input[type=text],input[type=number],textarea{font:inherit;font-size:.98rem;color:var(--tinta);background:#fff;border:1px solid var(--linea);padding:8px 10px;border-radius:2px}
+  textarea{width:100%;min-height:110px;resize:vertical}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{border:1px solid var(--linea);background:#fff;padding:6px 12px;border-radius:999px;font-size:.9rem;color:var(--tinta)}
+  .chip[aria-pressed="true"]{background:var(--noche);color:var(--papel);border-color:var(--noche)}
+  .btn{background:var(--naranja);color:#fff;border:0;padding:10px 18px;border-radius:2px;font-weight:700}
+  .btn.sec{background:#fff;color:var(--noche);border:1px solid var(--noche)}
+  .btn:disabled{opacity:.6;cursor:wait}
+  .acciones{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+  main{padding:28px 0 90px}
+  .panel[hidden]{display:none}
+  .panel h2{font-size:1.9rem;margin-bottom:6px}
+  .lead{color:var(--tinta-suave);max-width:70ch;margin-bottom:18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+  .tarjeta{background:#fff;border:1px solid var(--linea);border-radius:2px;padding:16px;text-align:left;color:var(--tinta);display:flex;flex-direction:column;gap:6px}
+  button.tarjeta:hover{border-color:var(--noche)}
+  .tarjeta h3{font-size:1.12rem}
+  .tarjeta .meta{font-size:.82rem;color:var(--tinta-suave)}
+  .etq{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:2px;background:var(--papel);color:var(--noche)}
+  .eje-materia{background:#E3ECF7}.eje-fuerza{background:#FCE5D3}.eje-energia{background:#FFF3C4}.eje-vida{background:#DCEBDF}.eje-quimica{background:#EFE0F5}
+  .hoja{background:#fff;border:1px solid var(--linea);padding:36px 40px;border-radius:2px;margin-top:10px}
+  @media(max-width:640px){.hoja{padding:20px 16px}}
+  .hoja h2{font-size:1.75rem}
+  .hoja h3{font-size:1.2rem;margin:22px 0 8px;color:var(--navy)}
+  .hoja p,.hoja li{max-width:75ch}
+  .hoja ol,.hoja ul{margin-left:1.4em}
+  .hoja li{margin:4px 0}
+  .cabecera-ficha{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--navy);padding-bottom:10px;margin-bottom:14px;font-size:.9rem;color:var(--tinta-suave)}
+  .nombre-linea{display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem;margin:6px 0 14px}
+  .nombre-linea span{flex:1;min-width:180px;border-bottom:1px solid var(--tinta);padding-bottom:2px}
+  .caja{border-left:4px solid var(--naranja);background:#FFF8EF;padding:12px 16px;margin:12px 0;border-radius:2px}
+  .caja.azul{border-color:var(--navy);background:#EEF2FB}
+  .caja.verde{border-color:var(--brote);background:#EEF5F0}
+  .caja b{font-weight:700}
+  .resp{display:none;color:var(--brote);font-weight:600}
+  body.ver-resp .resp{display:block}
+  body.ver-resp span.resp{display:inline}
+  .tabla-reg{border-collapse:collapse;width:100%;margin-top:8px}
+  .tabla-reg td,.tabla-reg th{border:1px solid #999;padding:10px;height:38px;font-size:.9rem;text-align:left}
+  .items{display:grid;gap:14px;counter-reset:it}
+  .item{border:1px solid var(--linea);border-radius:2px;padding:14px 16px;break-inside:avoid}
+  .item .num{font-weight:700;color:var(--navy);margin-right:6px}
+  .item svg{max-width:100%;height:auto;display:block;margin:8px 0}
+  .espacio{border-bottom:1px dashed #aaa;height:30px;margin-top:6px}
+  .cols2{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px}
+  @media(max-width:640px){.cols2{grid-template-columns:1fr}}
+  .oracion{cursor:pointer;border-radius:2px;padding:1px 2px;transition:background .15s}
+  .oracion:hover{background:#FFF1D6}
+  .oracion.sel{background:var(--oro)}
+  .oracion.bien{background:#BFE3C8}
+  .oracion.mal{background:#F6C9C3}
+  .parrafo{display:flex;gap:10px;margin:10px 0}
+  .parrafo .pn{flex:0 0 auto;font-weight:700;color:var(--navy);font-size:.85rem;padding-top:4px;min-width:22px}
+  .pregunta-l{border:1px solid var(--linea);padding:10px 14px;border-radius:2px;margin:8px 0;background:#fff}
+  .pregunta-l.activa{border-color:var(--naranja);box-shadow:0 0 0 2px #FCE5D3}
+  .fb{font-size:.92rem;margin-top:6px}
+  .fb.ok{color:var(--brote)} .fb.no{color:#B3261E}
+  .opciones{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .opciones button{border:1px solid var(--linea);background:#fff;padding:6px 12px;border-radius:2px}
+  .opciones button.bien{background:#BFE3C8;border-color:var(--brote)}
+  .opciones button.mal{background:#F6C9C3}
+  .orden-lista{list-style:none;margin:0!important}
+  .orden-lista li{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--linea);padding:8px 10px;margin:6px 0;border-radius:2px}
+  .orden-lista li button{border:1px solid var(--linea);background:var(--papel);padding:2px 8px}
+  .vineta-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+  .vineta{border:3px solid var(--tinta);border-radius:4px;padding:10px;min-height:220px;background:#fff;break-inside:avoid;display:flex;flex-direction:column;gap:8px}
+  .vineta .escena{font-size:.82rem;color:var(--tinta-suave);font-style:italic;border-bottom:1px dashed #bbb;padding-bottom:6px;min-height:60px}
+  .globo{background:#fff;border:2px solid var(--tinta);border-radius:16px;padding:6px 10px;font-size:.9rem;position:relative}
+  .globo b{display:block;font-size:.75rem;color:var(--navy)}
+  .sopa{border-collapse:collapse;margin:10px 0;font-family:'IBM Plex Mono',monospace}
+  .sopa td{width:32px;height:32px;text-align:center;border:1px solid #ccc;font-weight:600;font-size:1rem}
+  .sopa td.es{background:var(--oro)}
+  .cripto{display:flex;flex-wrap:wrap;gap:6px 4px;margin:10px 0}
+  .cripto .c{display:flex;flex-direction:column;align-items:center;min-width:26px}
+  .cripto .c .l{border-bottom:2px solid var(--tinta);width:24px;height:28px;text-align:center;font-weight:700}
+  .cripto .c .n{font-size:.75rem;color:var(--tinta-suave)}
+  .cripto .esp{width:16px}
+  .cortar{border:2px dashed #888;padding:10px;border-radius:2px;break-inside:avoid;font-size:.92rem}
+  .tarjetas-corte{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  @media(max-width:640px){.tarjetas-corte{grid-template-columns:1fr 1fr}}
+  .lap{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+  .pieza{border:2px solid var(--navy);border-radius:2px;background:#fff;break-inside:avoid}
+  .pieza .frente{padding:10px;border-bottom:2px dashed var(--navy);font-weight:600;min-height:70px}
+  .pieza .dentro{padding:10px;font-size:.9rem;min-height:90px}
+  .pieza .tipo{font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--naranja);font-weight:700}
+  .zine{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;border:1px solid #999;aspect-ratio:1.414/1;width:100%}
+  .zine .pag{border:1px dashed #999;padding:8px;font-size:.72rem;display:flex;flex-direction:column;gap:4px;overflow:hidden}
+  .zine .pag.inv{transform:rotate(180deg)}
+  .zine .pag h4{font-size:.85rem}
+  .zine .pag .dib{flex:1;border:1px solid #ddd;border-radius:2px;color:#999;font-size:.65rem;padding:4px;min-height:40px}
+  .zine .pn{font-size:.6rem;color:#888;margin-top:auto}
+  .cargando{padding:24px;color:var(--tinta-suave)}
+  .aviso{font-size:.88rem;color:var(--tinta-suave);margin-top:8px}
+  .md table{border-collapse:collapse;margin:10px 0}
+  .md td,.md th{border:1px solid #bbb;padding:6px 10px;font-size:.92rem;vertical-align:top}
+  .md h3,.md h4{margin:18px 0 6px;color:var(--navy)}
+  .md p{margin:8px 0}
+  .grupo-pensar{margin:12px 0}
+  .grupo-pensar h4{font-size:1rem;margin-bottom:6px;color:var(--navy)}
+  .volver{background:none;border:0;color:var(--navy);font-weight:600;text-decoration:underline;padding:0}
+  @media print{
+    header.top,.intro,.barra,.no-imprimir,.acciones,.volver,.lead,.panel>h2{display:none!important}
+    body{background:#fff;font-size:12pt}
+    main{padding:0}
+    .wrap{max-width:none;padding:0}
+    .hoja{border:0;padding:0;margin:0}
+    .salto{break-before:page}
+    .item,.vineta,.pieza,.cortar{break-inside:avoid}
+    .zine{width:27cm;height:19cm;aspect-ratio:auto}
+    @page{margin:1.2cm}
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="index.html">SABICENTEC SUPERACIÓN</a>
+    <nav class="enlaces">
+      <a class="cta claro" href="recursos.html">Laboratorio</a>
+      <a class="cta claro" href="proyectos.html">Proyectos por área</a>
+      <a class="cta" href="tutor.html">Hablar con SABI</a>
+    </nav>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <h1>Fichas y lecturas para imprimir o resolver en pantalla</h1>
+    <p>Fichas de matemáticas que nunca se repiten, con cada respuesta calculada por el programa y no escrita a mano, y lecturas que enseñan a comprender, relacionar y pensar en siete pasos. Para experimentos, juegos y las demás ayudas didácticas, usa los botones de arriba.</p>
+  </div>
+</section>
+
+<div class="barra">
+  <div class="wrap barra-inner">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" data-panel="mate">Fichas de matemáticas</button>
+      <button class="tab" role="tab" data-panel="lectura">Lecturas</button>
+      <a class="tab" style="text-decoration:none" id="ir-exp" href="experimentos.html">Experimentos</a>
+      <a class="tab" style="text-decoration:none" href="tutor.html?rol=estudiante">Juegos y didácticas en SABI</a>
+    </div>
+    <label class="campo linea" style="margin-left:auto">Grado
+      <select id="grado">
+        <option value="0">Transición</option><option value="1">1°</option><option value="2">2°</option><option value="3">3°</option>
+        <option value="4">4°</option><option value="5">5°</option><option value="6">6°</option><option value="7">7°</option>
+        <option value="8">8°</option><option value="9">9°</option><option value="10">10°</option><option value="11">11°</option>
+      </select>
+    </label>
+    <label class="campo linea"><input type="checkbox" id="ver-resp"> Ver respuestas (docente)</label>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ MATEMÁTICAS ============ -->
+  <section class="panel" id="p-mate">
+    <h2>Fichas de matemáticas a medida</h2>
+    <p class="lead">Una buena ficha empieza con una buena idea. Elige el tipo, ajusta el nivel y genera cuantas quieras: cada ficha es distinta, trae su situación motivadora, la clave de respuestas con el porqué y un reto final.</p>
+    <div class="no-imprimir">
+      <div class="chips" id="m-tipos"></div>
+      <div class="acciones" id="m-opciones"></div>
+      <div class="acciones">
+        <button class="btn" id="m-generar">Nueva ficha</button>
+        <button class="btn sec" onclick="window.print()">Imprimir</button>
+        <button class="btn sec" id="m-sabi">Practicar con SABI</button>
+      </div>
+    </div>
+    <div id="m-ficha"></div>
+  </section>
+
+  <!-- ============ LECTURA ============ -->
+  <section class="panel" id="p-lectura" hidden>
+    <h2>Leer es comprender, relacionar y pensar</h2>
+    <p class="lead">Siete pasos: lo que dice el texto (toca la oración que responde cada pregunta), leer entre líneas, palabras en contexto, ¿dónde lo pone?, orden y causas, piensa y argumenta, y un valor para conversar.</p>
+    <div class="no-imprimir" id="l-inicio">
+      <div id="l-lista" class="grid"></div>
+      <div class="hoja" style="margin-top:22px">
+        <h3 style="margin-top:0">Crear una lectura nueva con SABI</h3>
+        <p class="aviso">Escribe un tema o pega un texto propio: SABI abre la lectura comprensiva en siete pasos dentro del tutor.</p>
+        <div class="acciones"><input type="text" id="l-tema" placeholder="Tema: el río Cauca, las abejas, el ahorro..." style="flex:1;min-width:240px"></div>
+        <textarea id="l-texto" placeholder="O pega aquí un texto (opcional)"></textarea>
+        <div class="acciones"><button class="btn" id="l-crear">Crear lectura con SABI</button></div>
+        <div id="l-estado" class="aviso"></div>
+      </div>
+    </div>
+    <div id="l-leccion"></div>
+  </section>
+
+</main>
+
+<script src="taller-mate.js"></script>
+<script>
+(() => {
+  'use strict';
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const LS = { get(k, d) { try { const v = localStorage.getItem('taller.' + k); return v === null ? d : v; } catch { return d; } }, set(k, v) { try { localStorage.setItem('taller.' + k, v); } catch {} } };
+  const PARAMS = new URLSearchParams(location.search);
+  const gradoTxt = (g) => (Number(g) === 0 ? 'Transición' : g + '°');
+  const grado = () => Number($('grado').value);
+  function rng(seed) { let a = seed >>> 0; return () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+  const barajar = (arr, r) => { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  const cabecera = (titulo, area) => `<div class="cabecera-ficha"><span>Colegio CENTEC · Taller SABI · ${esc(area)}</span><span>Grado ${esc(gradoTxt(grado()))}</span></div><h2>${esc(titulo)}</h2><div class="nombre-linea"><span>Nombre:</span><span style="max-width:200px">Fecha:</span></div>`;
+  const tutorURL = (materia, tema) => 'tutor.html?' + new URLSearchParams({ rol: 'estudiante', materia, tema: tema.slice(0, 480) });
+
+  // ---------- grado, pestañas y respuestas ----------
+  $('grado').value = PARAMS.get('grado') ?? LS.get('grado', '3');
+  $('grado').addEventListener('change', () => { LS.set('grado', $('grado').value); refrescar(); });
+  $('ver-resp').addEventListener('change', (e) => document.body.classList.toggle('ver-resp', e.target.checked));
+  let panel = PARAMS.get('panel') || LS.get('panel', 'mate');
+  if (!['mate', 'lectura'].includes(panel)) panel = 'mate';
+  function abrirPanel(p) {
+    panel = p; LS.set('panel', p);
+    document.querySelectorAll('.tab[data-panel]').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.panel === p)));
+    $('ir-exp').href = 'experimentos.html?grado=' + grado();
+    document.querySelectorAll('.panel').forEach((s) => (s.hidden = s.id !== 'p-' + p));
+    refrescar();
+  }
+  document.querySelectorAll('.tab[data-panel]').forEach((t) => t.addEventListener('click', () => abrirPanel(t.dataset.panel)));
+  function refrescar() {
+    if (panel === 'mate') pintarMateControles();
+    if (panel === 'lectura') cargarLecturas();
+  }
+
+
+  // =====================================================================
+  // MATEMÁTICAS (generador procedural: taller-mate.js)
+  // =====================================================================
+  let mTipo = LS.get('mtipo', 'calculo'), mSemilla = Date.now() % 1e9, mFicha = null;
+  function pintarMateControles() {
+    const TM = window.TallerMate;
+    if (!TM) { $('m-ficha').innerHTML = '<p class="cargando">El generador no cargó. Recarga la página.</p>'; return; }
+    $('m-tipos').innerHTML = TM.tipos.map((t) => `<button class="chip" aria-pressed="${t.id === mTipo}" data-t="${t.id}" title="${esc(t.descripcion)}">${esc(t.nombre)}</button>`).join('');
+    $('m-tipos').querySelectorAll('.chip').forEach((b) => b.addEventListener('click', () => { mTipo = b.dataset.t; LS.set('mtipo', mTipo); pintarMateControles(); }));
+    const ops = TM.opciones(mTipo, grado()) || [];
+    $('m-opciones').innerHTML = (Array.isArray(ops) ? ops : Object.entries(ops).map(([id, o]) => ({ id, ...o }))).map(controlHTML).join('');
+    generarFicha();
+  }
+  function controlHTML(o) {
+    const id = 'mo-' + o.id, et = esc(o.etiqueta || o.label || o.nombre || o.id);
+    const valores = o.valores || o.opciones || o.options;
+    if (Array.isArray(valores)) {
+      return `<label class="campo">${et}<select id="${id}" data-op="${esc(o.id)}">${valores.map((v) => { const val = typeof v === 'object' ? v.valor ?? v.value ?? v.id : v; const tx = typeof v === 'object' ? v.etiqueta ?? v.label ?? v.nombre ?? val : v; return `<option value="${esc(val)}" ${String(val) === String(o.valor ?? o.defecto ?? o.default) ? 'selected' : ''}>${esc(tx)}</option>`; }).join('')}</select></label>`;
+    }
+    if (o.tipo === 'checkbox' || o.tipo === 'booleano' || typeof (o.valor ?? o.defecto ?? o.default) === 'boolean') {
+      return `<label class="campo linea"><input type="checkbox" id="${id}" data-op="${esc(o.id)}" data-bool="1" ${(o.valor ?? o.defecto ?? o.default) ? 'checked' : ''}> ${et}</label>`;
+    }
+    return `<label class="campo">${et}<input type="number" id="${id}" data-op="${esc(o.id)}" value="${esc(o.valor ?? o.defecto ?? o.default ?? '')}" ${o.min != null ? `min="${o.min}"` : ''} ${o.max != null ? `max="${o.max}"` : ''} style="width:110px"></label>`;
+  }
+  function leerOpciones() {
+    const r = {};
+    $('m-opciones').querySelectorAll('[data-op]').forEach((el) => { const v = el.dataset.bool ? el.checked : el.value; r[el.dataset.op] = (typeof v === 'string' && v !== '' && !isNaN(v)) ? Number(v) : v; });
+    return r;
+  }
+  $('m-opciones').addEventListener('change', () => generarFicha());
+  $('m-generar').addEventListener('click', () => { mSemilla = Math.floor(Math.random() * 1e9); generarFicha(); });
+  function generarFicha() {
+    const TM = window.TallerMate; if (!TM) return;
+    try {
+      const op = leerOpciones(); mFicha = TM.generar({ ...op, tipo: mTipo, grado: grado(), cantidad: Number(op.cantidad) || 10, semilla: mSemilla });
+    } catch (e) { $('m-ficha').innerHTML = `<p class="cargando">No se pudo generar con esas opciones (${esc(e.message)}). Prueba otras.</p>`; return; }
+    const f = mFicha;
+    const item = (it) => `<div class="item"><span class="num">${esc(it.n)}.</span><span style="white-space:pre-line">${esc(it.enunciado)}</span>${it.svg && /^\s*<svg[\s>]/i.test(it.svg) && !/<script|on\w+=/i.test(it.svg) ? it.svg : ''}<div class="espacio"></div><div class="resp">Respuesta: ${esc(it.respuesta)}${it.explicacion ? ` <span style="font-weight:400;color:var(--tinta-suave)">· ${esc(it.explicacion)}</span>` : ''}</div></div>`;
+    const reto = f.reto_final ? (typeof f.reto_final === 'string' ? `<div class="caja azul"><b>Reto final:</b> ${esc(f.reto_final)}</div>` : `<div class="caja azul"><b>Reto final:</b> <span style="white-space:pre-line">${esc(f.reto_final.enunciado)}</span>${f.reto_final.svg && /^\s*<svg[\s>]/i.test(f.reto_final.svg) && !/<script|on\w+=/i.test(f.reto_final.svg) ? f.reto_final.svg : ''}<div class="resp">${esc(f.reto_final.respuesta || '')}${f.reto_final.explicacion ? ' · ' + esc(f.reto_final.explicacion) : ''}</div></div>`) : '';
+    $('m-ficha').innerHTML = `<article class="hoja">${cabecera(f.titulo, 'Matemáticas')}
+      ${f.idea ? `<div class="caja"><b>La idea:</b> ${esc(f.idea)}</div>` : ''}
+      <p><b>Instrucción:</b> ${esc(f.instruccion)}</p>
+      <div class="items cols2" style="margin-top:12px">${(f.items || []).map(item).join('')}</div>${reto}
+      <p class="aviso">Ficha número ${mSemilla} · la misma ficha se puede volver a generar con este número.</p></article>`;
+  }
+  $('m-sabi').addEventListener('click', () => {
+    const t = (window.TallerMate?.tipos || []).find((x) => x.id === mTipo);
+    location.href = tutorURL('Matemáticas', `Quiero practicar ${t ? t.nombre.toLowerCase() : 'matemáticas'} de ${gradoTxt(grado())}. Ponme un ejercicio a la vez, deja que yo lo intente y explícame el porqué de cada paso.`);
+  });
+
+  // =====================================================================
+  // LECTURA
+  // =====================================================================
+  let lecturasBanco = null;
+  async function cargarLecturas() {
+    $('l-leccion').innerHTML = ''; $('l-inicio').hidden = false;
+    if (!lecturasBanco) {
+      lecturasBanco = [];
+      for (const f of ['primaria', 'bachillerato']) { try { const r = await fetch(`data/lecturas/${f}.json`); if (r.ok) lecturasBanco.push(...(await r.json())); } catch {} }
+    }
+    const g = grado();
+    const lista = lecturasBanco.filter((l) => Number(l.grado) === g);
+    const cerca = lista.length ? lista : lecturasBanco.filter((l) => Math.abs(Number(l.grado) - g) <= 1);
+    $('l-lista').innerHTML = cerca.map((l) => `<button class="tarjeta" data-id="${esc(l.id)}"><span class="etq">${esc(l.tipologia)}</span><h3>${esc(l.titulo)}</h3><span class="meta">${esc(gradoTxt(l.grado))} · ${l.parrafos.join(' ').split(/\s+/).length} palabras</span></button>`).join('') || '<p class="cargando">Aún no hay lecturas guardadas para este grado: crea una con SABI.</p>';
+    $('l-lista').querySelectorAll('.tarjeta').forEach((b) => b.addEventListener('click', () => verLectura(lecturasBanco.find((l) => l.id === b.dataset.id))));
+  }
+  $('l-crear').addEventListener('click', () => {
+    const tema = $('l-tema').value.trim(), texto = $('l-texto').value.trim();
+    if (tema.length < 3 && texto.length < 60) { $('l-estado').textContent = 'Escribe un tema o pega un texto de al menos un párrafo.'; return; }
+    const pedido = texto ? `Lectura comprensiva para ${gradoTxt(grado())} con este texto: ${texto}` : `Lectura comprensiva para ${gradoTxt(grado())} sobre: ${tema}`;
+    location.href = 'tutor.html?' + new URLSearchParams({ rol: 'estudiante', materia: 'Lenguaje', cmd: '/lectura', tema: pedido.slice(0, 480) });
+  });
+  function oraciones(p) { return (p.match(/[^.!?¿¡]*[¡¿]?[^.!?]*[.!?]+["»”)]*\s*|[^.!?]+$/g) || [p]).filter((s) => s.trim()); }
+  const norm = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ ]/g, ' ').replace(/\s+/g, ' ').trim();
+  function verLectura(l) {
+    if (!l) return;
+    $('l-inicio').hidden = true;
+    let activa = 0;
+    const lit = l.literal || [];
+    const texto = l.parrafos.map((p, i) => `<div class="parrafo"><span class="pn">${i + 1}</span><p>${oraciones(p).map((o) => `<span class="oracion" data-p="${i}">${esc(o)}</span>`).join('')}</p></div>`).join('');
+    const r = rng(7);
+    const secuenciaBarajada = barajar((l.orden_causas?.secuencia || []).map((s, i) => ({ s, i })), r);
+    $('l-leccion').innerHTML = `<div class="acciones no-imprimir"><button class="volver" id="l-volver">Volver a las lecturas</button><button class="btn sec" onclick="window.print()">Imprimir</button>
+        <a class="btn" style="text-decoration:none" href="${esc(tutorURL('Lenguaje', `Leí "${l.titulo}". Ayúdame a comprenderlo mejor con preguntas, sin darme las respuestas. Texto: ${l.parrafos.join(' ').slice(0, 300)}`))}">Conversar con SABI</a></div>
+      <article class="hoja">${cabecera(l.titulo, 'Lenguaje · ' + (l.tipologia || 'lectura'))}
+      <div id="l-texto-v">${texto}</div>
+      <h3>1. Lo que dice el texto</h3><p class="aviso">Elige una pregunta y toca en el texto la oración o frase que la responde.</p>
+      ${lit.map((q, i) => `<div class="pregunta-l ${i === 0 ? 'activa' : ''}" data-q="${i}"><b>${i + 1}.</b> ${esc(q.pregunta)}<div class="fb" id="fb-${i}"></div><div class="resp">Está en el párrafo ${esc(q.parrafo)}: «${esc(q.evidencia)}»</div></div>`).join('')}
+      <h3>2. Leer entre líneas</h3>${(l.entre_lineas || []).map((q) => `<div class="pregunta-l">${esc(q.pregunta)}<p class="aviso">Pista: ${esc(q.pista)}</p><div class="espacio"></div><div class="resp">Respuesta posible: ${esc(q.respuesta_modelo)}</div></div>`).join('')}
+      <h3>3. Palabras en contexto</h3>${(l.palabras_contexto || []).map((w, i) => `<div class="pregunta-l">${esc(w.pregunta)}<div class="opciones" data-w="${i}">${(w.opciones || []).map((o, j) => `<button data-j="${j}">${String.fromCharCode(65 + j)}. ${esc(o)}</button>`).join('')}</div><div class="fb" id="fw-${i}"></div><div class="resp">${esc(w.explicacion)}</div></div>`).join('')}
+      <h3>4. ¿Dónde lo pone?</h3>${(l.donde_lo_pone || []).map((d, i) => `<div class="pregunta-l">${esc(d.pregunta)}<div class="opciones" data-d="${i}">${l.parrafos.map((_, j) => `<button data-j="${j + 1}">Párrafo ${j + 1}</button>`).join('')}</div><div class="fb" id="fd-${i}"></div><div class="resp">Párrafo ${esc(d.parrafo)}. ${esc(d.explicacion)}</div></div>`).join('')}
+      <h3>5. Orden y causas</h3><p>Ordena los hechos como ocurren en el texto.</p>
+      <ol class="orden-lista" id="l-orden">${secuenciaBarajada.map((x) => `<li data-i="${x.i}"><button aria-label="Subir">↑</button><button aria-label="Bajar">↓</button><span>${esc(x.s)}</span></li>`).join('')}</ol>
+      <div class="acciones no-imprimir"><button class="btn sec" id="l-revisar-orden">Revisar el orden</button><span class="fb" id="fo"></span></div>
+      ${(l.orden_causas?.causa_efecto || []).map((c) => `<div class="pregunta-l"><b>Causa:</b> ${esc(c.causa)}<br><b>¿Qué efecto produjo?</b><div class="espacio"></div><div class="resp">${esc(c.efecto)}</div></div>`).join('')}
+      <h3>6. Piensa y argumenta</h3>${(l.piensa_argumenta || []).map((q) => `<div class="pregunta-l">${esc(q.pregunta)}<div class="espacio"></div><div class="espacio"></div><div class="resp">Una buena respuesta: ${esc(q.criterios)}</div></div>`).join('')}
+      ${l.valor ? `<h3>7. Para conversar</h3><div class="caja verde">${esc(l.valor)}</div>` : ''}
+      <p class="aviso">Leer es comprender (lo que dice), relacionar (lo que significa y cómo se conecta) y pensar (lo que opino con razones).</p></article>`;
+    const preguntas = [...document.querySelectorAll('.pregunta-l[data-q]')];
+    preguntas.forEach((el) => el.addEventListener('click', () => { activa = Number(el.dataset.q); preguntas.forEach((p) => p.classList.toggle('activa', p === el)); }));
+    document.querySelectorAll('#l-texto-v .oracion').forEach((o) => o.addEventListener('click', () => {
+      const q = lit[activa]; if (!q) return;
+      const so = norm(o.textContent), ev = norm(q.evidencia);
+      const ok = so.includes(ev) || (ev.includes(so) && so.length > 12);
+      o.classList.remove('bien', 'mal'); o.classList.add(ok ? 'bien' : 'mal');
+      const fb = $('fb-' + activa);
+      fb.className = 'fb ' + (ok ? 'ok' : 'no');
+      fb.textContent = ok ? 'Muy bien: esa oración responde la pregunta. Lo encontraste en el texto.' : 'Esa oración no responde esta pregunta. Vuelve a leer la pregunta y busca las palabras clave en el texto.';
+      if (!ok) setTimeout(() => o.classList.remove('mal'), 1600);
+      if (ok && activa < lit.length - 1) { activa++; preguntas.forEach((p) => p.classList.toggle('activa', Number(p.dataset.q) === activa)); }
+    }));
+    document.querySelectorAll('.opciones[data-w]').forEach((box) => box.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+      const w = l.palabras_contexto[box.dataset.w], ok = Number(b.dataset.j) === Number(w.correcta);
+      b.classList.add(ok ? 'bien' : 'mal'); const fb = $('fw-' + box.dataset.w);
+      fb.className = 'fb ' + (ok ? 'ok' : 'no'); fb.textContent = ok ? 'Correcto. ' + (w.explicacion || '') : 'Lee de nuevo la oración donde aparece la palabra: ¿qué palabra podría reemplazarla sin cambiar el sentido?';
+    })));
+    document.querySelectorAll('.opciones[data-d]').forEach((box) => box.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+      const d = l.donde_lo_pone[box.dataset.d], ok = Number(b.dataset.j) === Number(d.parrafo);
+      b.classList.add(ok ? 'bien' : 'mal'); const fb = $('fd-' + box.dataset.d);
+      fb.className = 'fb ' + (ok ? 'ok' : 'no'); fb.textContent = ok ? 'Exacto, ahí lo pone.' : 'No es ese párrafo. Mira los números al lado del texto y busca la idea.';
+    })));
+    const lista = $('l-orden');
+    lista.addEventListener('click', (e) => {
+      const b = e.target.closest('button'); if (!b) return; const li = b.parentElement;
+      if (b.textContent === '↑' && li.previousElementSibling) lista.insertBefore(li, li.previousElementSibling);
+      if (b.textContent === '↓' && li.nextElementSibling) lista.insertBefore(li.nextElementSibling, li);
+    });
+    $('l-revisar-orden').addEventListener('click', () => {
+      const orden = [...lista.children].map((li) => Number(li.dataset.i)); const ok = orden.every((v, i) => v === i);
+      $('fo').className = 'fb ' + (ok ? 'ok' : 'no'); $('fo').textContent = ok ? 'Perfecto: así ocurre en el texto.' : 'Todavía no. Busca palabras que indican tiempo: primero, luego, después, al final.';
+    });
+    $('l-volver').addEventListener('click', () => cargarLecturas());
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  abrirPanel(panel);
+})();
+</script>
+</body>
+</html>
