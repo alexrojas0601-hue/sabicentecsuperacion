@@ -589,6 +589,98 @@
     "nota": "En CENTEC: 1) Descargar kit completo y catalogarlo por competencia emocional (autoconocimiento, autorregulación, empatía, relaciones, toma de decisiones responsable). 2) Crear matriz de alineación con estándares de CENTEC por grado. 3) Acompañamiento docente: capacitación breve sobre facilitación sin sermones (los conversatorios generan aprendizaje si hay escucha activa). 4) Extensión familia: enviar cartillas en formato descargable sin formularios; evaluar con rubrica simple (observación de comportamientos, no notas). 5) Monitoreo: seguimiento trimestral de indicadores de convivencia (reportes de conflictos, mediciones de clima escolar) sin identificar menores en reportes públicos."
    },
    "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Presupuesto Dinámico + Diario Financiero (enfoque vivencial)",
+   "tipo": "recurso digital",
+   "grados": "7° a 11°",
+   "para_que": "Enseña gestión de dinero real mediante registro diario de gastos/ingresos con retroalimentación semanal sobre hábitos, no simulación abstracta",
+   "como_usarla": "1) Estudiantes crean cuaderno (digital o físico) simple: Fecha | Ingreso/Egreso | Categoría | Saldo. 2) Registran mesada, trabajos, gastos 2 semanas. 3) Docente facilita reflexión: ¿Dónde se va el dinero? 4) Fijan meta ahorro. 5) Cada semana, comparar saldo vs meta. 6) Conexión: presupuesto escolar de proyecto emprendedor.",
+   "comando_sabi": "/lectura + [[plantilla presupuesto personal]] + /escape (retos ahorro)",
+   "evidencia": "Elliott (University of Michigan) comprobó que niños con cuentas de ahorro a su nombre tienen mayor probabilidad de asistir a universidad y mejor conducta de ahorro en adultez. FDIC (2024) confirma que herramientas de seguimiento diario mejoran retención de hábitos financieros.",
+   "fuente": "https://hiwavemakers.com/blog/financial-literacy-teens-what-research-shows-works/; https://www.fdic.gov/consumer-resource-center/2026-07/preparacion-financiera-para-jovenes",
+   "url": "https://www.practicalmoneyskills.com/es/teach.html",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin datos bancarios reales. Registro manual en cuaderno o hoja Excel local.",
+   "area": "Formación técnica SENA y emprendimiento",
+   "dot": "Dot_Tecnico_SENA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para CENTEC: (1) Crear plantilla presupuesto 2 páginas A4 imprimible con columnas: Fecha | Concepto (Ingreso/Egreso) | Categoría (Alimentación, Transporte, Ahorro, Emprendimiento, Ocio) | Cantidad | Saldo Acumulado. (2) Protocolo docente: semana 1-2 registro libre; semana 3 análisis de categoría más gastada; semana 4 meta SMART de ahorro; semana 5 proyectar presupuesto de microempresa (ej: venta de productos). (3) Rúbrica de evaluación: precisión en registros (40%), análisis de patrones de gasto (30%), meta ahorro realista (20%), conexión a plan emprendedor (10%). (4) Extensión opcional: comparar presupuesto personal vs presupuesto de SENA (transporte, materiales, tiempo). (5) No subir datos a ninguna plataforma sin consentimiento explícito de padre/acudiente."
+   },
+   "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Prototipado SAUCE (Sentir-Actuar-Ubicar-Crear-Enseñar) – Bajo Costo",
+   "tipo": "material concreto",
+   "grados": "6° a 11°",
+   "para_que": "Desarrolla pensamiento técnico-creativo con materiales de bajo costo, accesible en territorios vulnerables, conecta con necesidades reales del entorno CENTEC",
+   "como_usarla": "1) Identificar problema local (agua, luz, organización). 2) Equipos recopilan materiales reciclados (botellas, madera, cartón, electrónica básica). 3) Sesión 1: Diseñar en papel, con restricción presupuestaria ($0-10K COP). 4) Sesión 2-3: Construir prototipo funcional. 5) Prueba: ¿funciona? ¿resuelve el problema?. 6) Documentar aprendizaje: fallas, iteraciones.",
+   "comando_sabi": "docente + [[guía SAUCE Lab-Dii]] + /escape (ciclo iterativo)",
+   "evidencia": "Lab-Dii (Colombia) demostró impacto en educación inclusiva con prototipado didáctico accesible. Investigación en Secundaria (Guadalajara) confirmó relaciones positivas entre proyectos Maker y competencias científicas, especialmente en resolución de problemas y razonamiento hipotético-deductivo. Mediación tecnológica Maker aumenta participación y colaboración cuando existe acompañamiento docente constante.",
+   "fuente": "https://epsir.net/index.php/epsir/article/view/1996; https://zenodo.org/records/19597617; https://revistaiberociencias.org/index.php/multidisciplinar/article/view/953",
+   "url": "https://www.researchgate.net/publication/381551581_Aprendizaje-Servicio_ApS_Una_metodologia_educativa_para_la_promocion_del_emprendimiento_social",
+   "costo": "bajo",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Actividades presenciales con supervisión docente. No requiere internet ni dispositivos personales.",
+   "area": "Formación técnica SENA y emprendimiento",
+   "dot": "Dot_Tecnico_SENA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "RECOMENDACIONES PARA CENTEC: (1) Explicitar en guía SAUCE Lab-Dii la matriz de evaluación de prototipos (funcionalidad + sostenibilidad + impacto comunitario) vinculada a competencias SENA. (2) Añadir plantilla de 'Falla Documentada' para que menores registren errores y aprendizajes (cultura de iteración, no de fracaso). (3) Vincular sesión final a emprendimiento social: ¿este prototipo puede escalarse? ¿genera ingresos en el territorio? (puente SENA emprendimiento). (4) Solicitar a docentes registro fotográfico de proceso (no de menores: solo de prototipos y materiales) para portafolio pedagógico CENTEC. (5) Garantizar que 'comando_sabi' incluya: docente responsable identificado + duración total + cobertura de grados + acta de cierre con aprendizajes por equipo."
+   },
+   "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Desafíos de Soft Skills mediante Juego de Mesa + Reflexión Guiada",
+   "tipo": "juego",
+   "grados": "7° a 11°",
+   "para_que": "Entrena habilidades blandas clave (comunicación, resolución de problemas, liderazgo) mediante situaciones de juego que replican conflictos laborales reales",
+   "como_usarla": "1) Equipos reciben tarjetas de 'Dilema Laboral' (p.ej: 'Tu compañero no termina su parte, vence el plazo mañana. ¿Qué haces?'). 2) Cada miembro propone solución, justifica. 3) Docente guía reflexión: ¿cuál refleja empatía? ¿cuál es más colaborativa?. 4) Asignar puntos a 'respuesta más empleable'. 5) Rotar dilemas. 6) Cierre: lluvia de ideas sobre qué hizo empleable cada respuesta.",
+   "comando_sabi": "/escape (dilema resolución) + [[tarjetas soft skills]]",
+   "evidencia": "Proyecto 'Sophia' (EBA Perú) incrementó niveles de habilidades blandas (interpersonales, intrapersonales, cognitivas) con talleres focalizados. NCBI (2024) muestra que soft skills predisponen recursos psicológicos y preparación laboral post-COVID. OCDE y Comisión Europea destacan creatividad, resolución de problemas y pensamiento crítico como competencias laborales esenciales.",
+   "fuente": "https://www.researchgate.net/publication/376088769_Habilidades_blandas_para_la_empleabilidad_en_jovenes_de_Educacion_Basica_Alternativa; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12652763/; https://cifpvirgendegracia.com/proyecto-soft-skills-games/",
+   "url": "https://www.mondragonmexico.edu.mx",
+   "costo": "bajo",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Tarjetas impresas sin acceso online. Dinámicas de grupo presenciales con supervisión docente.",
+   "area": "Formación técnica SENA y emprendimiento",
+   "dot": "Dot_Tecnico_SENA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "1) Documentar antes/después con rúbrica SENA (ej: escala 1-5 en empatía, resolución colaborativa) para fortalecer línea base de evidencia local. 2) Integrar dilemas contextualizados a sectores SENA priorizados (manufactura, agroindustria, servicios) para mayor pertinencia. 3) Registrar justificaciones de estudiantes en formato anónimo para análisis de patrones de pensamiento. 4) Usar como módulo precursor a proyectos de emprendimiento (dilemas → plan de negocio con equipos reales)."
+   },
+   "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Aprendizaje-Servicio (ApS) Técnico: Proyecto Comunitario con Competencia Curricular",
+   "tipo": "estrategia",
+   "grados": "9° a 11°",
+   "para_que": "Integra formación técnica SENA + emprendimiento social: estudiantes resuelven necesidad real de la comunidad CENTEC, aprenden mientras prestan servicio, registran competencia laboral",
+   "como_usarla": "1) Identificación: comunidad + docente eligen necesidad (p.ej: sistema de riego para huerta comunitaria). 2) Diagnóstico técnico (2 sesiones): estudiantes investigan, diseñan solución. 3) Ejecución (3-4 semanas): prototipan, ajustan, instalan. 4) Servicio: comunidad usa solución, estudiantes documentan impacto. 5) Reflexión: cómo aprendizaje técnico resolvió problema real. 6) Certificación: competencias desarrolladas según marco SENA.",
+   "comando_sabi": "docente + [[guía ApS técnico SENA]] + /escape (ciclo reflexivo)",
+   "evidencia": "Ministerio de Educación España (2024) respalda ApS como práctica educativa que mejora pensamiento creativo, toma de decisiones, empatía y competencias socio-ciudadanas. Tapia (2010) y Centro Promotor Cataluña: ApS desarrolla destrezas mientras se atienden necesidades reales. JES Asturias (Valnalón): estudiantes crean ONG real de cooperación, generando aprendizaje duradero y curricular integrado.",
+   "fuente": "https://www.educacionfpydeportes.gob.es/mc/sgctie/educacion-para-sostenibilidad/aprendizaje-servicio.html; https://www.aprendizajeservicio.net/esj-y-aps/; https://fundacionlacaixa.org/documents/d/guest/aprendizaje-servicio-proyectos-socioeducativos-pdf",
+   "url": "https://www.zerbikas.es/zerbika/",
+   "costo": "bajo",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Actividades comunitarias supervisadas. Involucramiento auténtico sin exposición a riesgos. Beneficio real para comunidad.",
+   "area": "Formación técnica SENA y emprendimiento",
+   "dot": "Dot_Tecnico_SENA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "1) SABI integre plantilla de 'Diagnóstico Técnico de Necesidad' (matriz impacto-viabilidad-competencias SENA requeridas) para alinear proyecto con currículo específico. 2) Docente defina checklist de supervisión en fases 3-4 (ejecución) con responsables comunitarios claros. 3) Certificación: vincular competencias desarrolladas a estándares SENA (p.ej: 'Diseño de sistemas de riego' → código competencia DTA-145). 4) Reflexión final en formato video-testimonio (5 min) de estudiante + líder comunitario sobre aprendizaje/impacto, archivable en portafolio CENTEC. 5) Replicabilidad: documentar 'receta técnica' del proyecto para que otros cursos/años lo adapten."
+   },
+   "fecha": "2026-10-21"
   }
  ]
 }
