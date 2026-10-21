@@ -1,6 +1,6 @@
 {
- "version": "2026-10-16",
- "nota": "Herramientas pedagógicas que encuentran los Dots investigadores por área (scripts/dots-didacticos.mjs), filtradas por el Dot Auditor Riguroso y aprobadas por coordinación con Merge. La IA institucional y sabicentec.com las recomiendan según el Dot activo ('todos' = estrategias para todas las áreas).",
+ "version": "2026-10-21",
+ "nota": "Herramientas pedagógicas encontradas por los Dots investigadores por área y filtradas por el Dot Auditor Riguroso. El tutor (chat.js) las usa según la asignatura. Solo entran con Pull Request aprobado por coordinación académica.",
  "herramientas": [
   {
    "nombre": "Práctica de recuperación",
@@ -261,6 +261,98 @@
    "seguridad": "Cuentas de estudiante creadas por el docente con su sección; sin publicidad.",
    "estado": "activo",
    "fecha": "2026-10-16"
+  },
+  {
+   "nombre": "Mapas Interactivos (GeoGebra + Umap para Historia)",
+   "tipo": "recurso digital",
+   "grados": "4° a 11°",
+   "para_que": "Relacionar procesos históricos con territorios mejora significativamente la comprensión de hechos y estructuras espaciales.",
+   "como_usarla": "1) Docente elige evento histórico (ej: Independencia). 2) Estudiantes crean mapa interactivo con capas (personajes, fechas, batallas). 3) Añaden puntos de información: documentos, imágenes, testimonios. 4) Presentan conexiones territorio-historia.",
+   "comando_sabi": "/mapa_interactivo o [[mapa personalizado]]",
+   "evidencia": "Taylor & Plewe (2006) demuestran que mapas interactivos mejoran el aprendizaje conceptual en tareas de búsqueda, comparación y análisis de patrones.",
+   "fuente": "https://www.researchgate.net/publication/258277807_The_Effectiveness_of_Interactive_Maps_in_Secondary_Historical_Geography_Education",
+   "url": "https://www.geogebra.org (libre) o https://umap.openstreetmap.fr (gratuito, sin registro)",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Ninguno: sin login, sin datos personales, sin chat, sin publicidad.",
+   "area": "Ciencias Sociales y Competencias Ciudadanas",
+   "dot": "Dot_CienciasSociales_Ciudadanas",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para CENTEC: 1) **Integración interdisciplinar**: Combinar con Competencias Ciudadanas pidiendo a estudiantes que analicen cómo decisiones territoriales histórias impactaron poblaciones (ej: desplazamientos en Violencia colombiana). 2) **Rigor de fuentes**: Exigir que documentos/testimonios añadidos al mapa sean de acervos verificables (Biblioteca Nacional, centros de memoria) no redes sociales. 3) **Guía docente estructurada**: Proporcionar rúbrica de evaluación que valore no solo precisión geográfica sino análisis causal (por qué ocurrió allí, no solo qué ocurrió). 4) **Escalonamiento grados**: 4°-6° mapas evento único; 7°-9° comparación múltiples periodos; 10°-11° análisis de procesos territoriales complejos (migraciones, conflictos). Herramienta APROBADA con recomendación de máxima prioridad."
+   },
+   "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Juego de Rol Debate Ciudadano (Asambleas simuladas)",
+   "tipo": "juego",
+   "grados": "5° a 11°",
+   "para_que": "Desarrolla argumentación crítica, empatía y comprensión de posturas diversas en problemas ciudadanos reales.",
+   "como_usarla": "1) Docente plantea dilema local o nacional (ej: expansión de mina vs. empleos). 2) Divide clase en grupos (minería, ambiente, trabajadores, gobierno, prensa). 3) Cada grupo investiga fuentes primarias y argumenta. 4) Se realiza asamblea ciudadana con debate y votación final.",
+   "comando_sabi": "/debate o /rol_ciudadano",
+   "evidencia": "Sadler (2011) y estudios de Simonneaux confirman que juegos de rol son efectivos para abordar problemas sociocientíficos desarrollando competencias básicas de argumentación y pensamiento crítico.",
+   "fuente": "https://www.researchgate.net/publication/341710448_El_juego_de_rol_como_estrategia_didactica_para_el_desarrollo_de_la_conciencia_ambiental",
+   "url": "Sin plataforma (presencial/híbrida con documentos descargables)",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Ninguno: no es digital. Supervisado por docente.",
+   "area": "Ciencias Sociales y Competencias Ciudadanas",
+   "dot": "Dot_CienciasSociales_Ciudadanas",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para CENTEC: 1) Crear banco de dilemas locales verificados (minería Cesar, hídrico, conflicto armado adaptado a edad) con fuentes primarias descargables previamente curadas. 2) Incluir rúbrica de evaluación de argumentación (lógica, evidencia, refutación) observable por docentes. 3) Protocolo obligatorio: rol 'moderador neutral' (docente o estudiante) que previene sesgo político. 4) Documentar evidencias de aprendizaje (grabaciones o actas de debate anónimas) para demostrar impacto en competencias ciudadanas. 5) Conectar con currículo oficial (Estándares Básicos de Competencias Ciudadanas del MEN)."
+   },
+   "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Aprendizaje-Servicio en Ciencias Sociales",
+   "tipo": "estrategia",
+   "grados": "4° a 11°",
+   "para_que": "Combina aprendizaje académico de ciudadanía con servicio comunitario real, aumentando retención y compromiso cívico.",
+   "como_usarla": "1) Clase identifica problema local (ej: desconocimiento de derechos en barrio). 2) Fase pedagógica: talleres, conversatorios sobre derechos. 3) Fase de servicio: estudiantes crean cartillas, dictan charlas a vecinos. 4) Reflexión final sobre aprendizaje y impacto comunitario.",
+   "comando_sabi": "/servicio_comunitario o [[proyecto ApS]]",
+   "evidencia": "Henao-Castro & Vives-Hurtado (2025) demuestran que ApS en Colombia mejora pensamiento crítico, habilidades socioemocionales y sensibilidad cívica. Applicable al currículo formal.",
+   "fuente": "http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0121-38142025000119074",
+   "url": "https://www.centroplanetario.org/aprendizaje-servicio/ (recursos colombianos)",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Ninguno: supervisado por docente y comunidad. Sin plataforma digital.",
+   "area": "Ciencias Sociales y Competencias Ciudadanas",
+   "dot": "Dot_CienciasSociales_Ciudadanas",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 5,
+    "nota": "Para optimizar en CENTEC: (a) Documentar matriz de asociación entre problema local → estándar de Ciencias Sociales → derechos (DBA), para trazabilidad curricular. (b) Crear plantilla de reflexión final estructurada (¿Qué aprendí? ¿Cómo cambió mi visión? ¿Qué impacto generamos?) para sistematizar metacognición. (c) Establecer protocolo mínimo de seguridad: consentimiento informado a familias, registro de actividades comunitarias, debriefing docente post-servicio. (d) Vincular con Personería Local o secretarías de gobierno para asegurar validación del impacto. Herramienta lista para implementación inmediata."
+   },
+   "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Biblioteca Digital Andina + Archivo General de la Nación (fuentes primarias)",
+   "tipo": "banco de actividades",
+   "grados": "4° a 11°",
+   "para_que": "Acceso a documentos originales (cartas, leyes, fotografías) desarrolla pensamiento histórico auténtico y crítica de fuentes.",
+   "como_usarla": "1) Docente busca documento primario (ej: Constitución de 1886 en AGN). 2) Estudiantes analizan: quién escribió, cuándo, propósito, sesgos. 3) Comparan con interpretaciones historiográficas modernas. 4) Debate: ¿por qué cambian las interpretaciones?",
+   "comando_sabi": "/fuentes_primarias o [[documento histórico]]",
+   "evidencia": "Education Endowment Foundation confirma que el análisis de fuentes primarias mejora comprensión profunda de contexto histórico y pensamiento crítico.",
+   "fuente": "https://dialnet.unirioja.es/servlet/articulo?codigo=7832658 y https://ucsd.libguides.com/c.php?amp=&g=90789&p=2253594",
+   "url": "https://www.archivogeneral.gov.co (Colombia) o https://www.biblioteca.org.ar (América Latina)",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Chat no; Publicidad no; Compras no; Datos personales no (acceso abierto).",
+   "area": "Ciencias Sociales y Competencias Ciudadanas",
+   "dot": "Dot_CienciasSociales_Ciudadanas",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "En CENTEC: (1) Crear guía de análisis de fuentes primarias con matriz de preguntas cerradas para evitar interpretaciones vagas. (2) Diseñar secuencia didáctica con documentos andinos específicos (actas cabildo colonial, legislación muisca, cartas libertadores) graduados por complejidad 4°-11°. (3) Incorporar ejercicio comparativo: '¿Cómo interpreta Wikipedia vs. AGN el mismo evento?' (metacognición de sesgos informativos). (4) Validar accesibilidad de interfaces AGN para grados 4°-6° (vocabulario, navegabilidad). (5) Documentar sesiones en bitácora: qué fuentes funcionan mejor por edad/contexto."
+   },
+   "fecha": "2026-10-21"
   }
  ]
 }
