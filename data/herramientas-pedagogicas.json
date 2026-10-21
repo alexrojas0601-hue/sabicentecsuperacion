@@ -497,6 +497,98 @@
     "nota": "En CENTEC: (1) Docente crea deck Anki con colocaciones B2/C1 propias (p.ej. verbos frasales jurídicos: 'bring to justice', 'stand trial'—contexto curricular). (2) Sesión 10 min en clase + 5 min/día en casa. (3) Si usas Duolingo Max, desactivar TODAS las notificaciones push antes de dar acceso a estudiantes. (4) Padres reciben captura de racha semanal (vía worksheet/LMS, NO WhatsApp personal). (5) Anki: preferir versión offline en tablets/PCs de CENTEC antes que web. (6) Combinar con *producción*: después de 10 colocaciones memorizadas, pedir redacción de 3 oraciones B2/C1 que las incluyan (cierre: de reconocimiento a producción). Esto eleva nivel de procesamiento profundo."
    },
    "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Dilemas Morales Interactivos",
+   "tipo": "estrategia",
+   "grados": "3° a 11°",
+   "para_que": "Desarrollar razonamiento moral postconvencional y conciencia ética mediante análisis de conflictos de valores sin respuestas únicas",
+   "como_usarla": "1) Docente presenta dilema breve (5-10 min) sobre situación ética real (robo, honestidad, justicia, solidaridad). 2) Estudiantes responden individualmente por escrito. 3) Debate grupal en círculo: escuchar argumentos sin juzgar. 4) Reflexión final: ¿qué valores entran en conflicto? ¿Qué aprendieron de otros?",
+   "comando_sabi": "docente",
+   "evidencia": "Suárez & Meza (2008) demostraron efecto positivo en desarrollo moral postconvencional de estudiantes de secundaria. Meza Rueda confirmó que estimular razonamiento moral mediante dilemas es efectivo",
+   "fuente": "https://ap.lasalle.edu.co/article/view/456",
+   "url": "",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin riesgo: es estrategia presencial, sin plataforma digital",
+   "area": "Inteligencia emocional, ética y valores",
+   "dot": "Dot_InteligenciaEmocional_Valores",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para CENTEC: 1) Documentar dilemas culturales locales (Colombia) para mayor relevancia. 2) Añadir rúbrica de evaluación del razonamiento moral (niveles preconvencional→postconvencional) para docente. 3) Capacitar docente en facilitación sin sesgo: énfasis en 'escuchar sin juzgar' es crítico. 4) Complementar con reflexión escrita post-debate (metacognición ética). 5) Adaptar dilemas por edad: 3°-5° (dilemas cercanos: familia, escuela); 6°-8° (comunidad, justicia escolar); 9°-11° (sistemas, justicia social)."
+   },
+   "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Mindfulness Escolar Estructurado (10-15 min diarios)",
+   "tipo": "estrategia",
+   "grados": "3° a 11°",
+   "para_que": "Reducir estrés, ansiedad y síntomas de TDAH; mejorar atención sostenida, regulación emocional y bienestar general en aula",
+   "como_usarla": "1) Inicio de jornada (10-15 min): respiración consciente guiada (inhalar 4, retener 4, exhalar 6). 2) Body scan: escaneo corporal de pies a cabeza. 3) Atención plena a sonidos o sensaciones. 4) Cierre con intención del día. Docente practica primero para enseñar con autenticidad",
+   "comando_sabi": "docente",
+   "evidencia": "Gómez et al. (2020): programa 12 semanas mejoró significativamente bienestar emocional, atención y rendimiento académico. Estudio España mostró reducción cortisol salival y estrés percibido tras 1 mes. Mindfulness reduce TDAH sintomatología principal",
+   "fuente": "https://addi.ehu.es/bitstream/handle/10810/61882/TFM_Amaia_Olano.pdf",
+   "url": "",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin riesgo: actividad presencial silenciosa, sin dispositivos",
+   "area": "Inteligencia emocional, ética y valores",
+   "dot": "Dot_InteligenciaEmocional_Valores",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para CENTEC: (1) Adapta duración flexible: 10 min grado 3°-5°, 12 min grado 6°-8°, 15 min grado 9°-11°. (2) Crea tarjetas de 'intención del día' escritas (no verbales) para que niños registren meta emocional: evidencia retroalimentación aumenta adherencia. (3) Mide impacto: aplica escala de bienestar emocional (pre/post 4 semanas) o cortisol salival si es viable en tu contexto. (4) Forma docentes con protocolo estandarizado para garantizar autenticidad. (5) Comunica a familias: incluye breve guía de mindfulness para casa (alineación hogar-escuela)."
+   },
+   "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Comunicación No Violenta (CNV) - 4 Pasos Rosenberg",
+   "tipo": "estrategia",
+   "grados": "3° a 11°",
+   "para_que": "Resolver conflictos de forma pacífica y respetuosa; prevenir violencia escolar mediante expresión de necesidades y empatía",
+   "como_usarla": "1) Docente enseña 4 pasos: Observar hechos (no juzgar). Nombrar emoción personal ('Me siento...'). Identificar necesidad ('Necesito...'). Hacer petición clara y doable. 2) Práctica rol-play: dos estudiantes practican con conflicto real del aula. 3) Refuerzo semanal en reuniones de aula",
+   "comando_sabi": "docente",
+   "evidencia": "Estudio Zenodo (2025) en México grado 6°: CNV como herramienta eficaz para resolver conflictos y reducir violencia escolar. Baesler (2014) evaluó impacto de CNV demostrando prevención de violencia",
+   "fuente": "https://zenodo.org/records/16740409",
+   "url": "https://rodin.uca.es/bitstream/handle/10498/35455/9788410282841.pdf",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin riesgo: estrategia presencial de comunicación, sin tecnología",
+   "area": "Inteligencia emocional, ética y valores",
+   "dot": "Dot_InteligenciaEmocional_Valores",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "1) Integrar explícitamente con Ley 1581/2012: enfatizar que CNV protege derechos de niños a expresarse sin represalia. 2) Crear fichas de rol-play contextualizadas a conflictos comunes en CENTEC (exclusión, burla, desacuerdos académicos). 3) Documentar casos de resolución exitosa (sin nombres) para evidencia local. 4) Entrenar docentes en modelaje: deben usar CNV con estudiantes, no solo enseñarla. 5) Extender a padres: taller CNV para familias aumenta impacto preventivo en violencia escolar."
+   },
+   "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Kit de Herramientas para Convivencia Escolar (MEN Colombia)",
+   "tipo": "banco de actividades",
+   "grados": "Transición a 11°",
+   "para_que": "Fortalecer convivencia pacífica, prevenir maltrato y violencia escolar mediante actividades, infografías, videos y cartillas para docentes, familias y estudiantes",
+   "como_usarla": "1) Docente descarga cartillas y recursos del Kit (gratis, MEN). 2) Selecciona taller temático (p.ej. 'Buen trato', 'Mediación de conflictos'). 3) Implementa en aula: dinámicas, conversatorios, análisis de casos. 4) Extiende a familias con cartillas visuales para casa",
+   "comando_sabi": "[[recurso-men convivencia-escolar]]",
+   "evidencia": "MEN (2013, Ley 1620): Decreto 1965 establece ruta de atención integral con componentes pedagógicos validados. Villamaría estudio evidencia que diálogo, mediación y resolución asertiva fortalecen convivencia basada en reconocimiento humano",
+   "fuente": "https://www.colombiaaprende.edu.co/contenidos/coleccion/kit-de-herramientas-para-la-convivencia-escolar",
+   "url": "https://www.colombiaaprende.edu.co/contenidos/coleccion/kit-de-herramientas-para-la-convivencia-escolar",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin riesgo: recurso oficial MEN descargable; sin plataforma, sin chat, sin datos personales",
+   "area": "Inteligencia emocional, ética y valores",
+   "dot": "Dot_InteligenciaEmocional_Valores",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "En CENTEC: 1) Descargar kit completo y catalogarlo por competencia emocional (autoconocimiento, autorregulación, empatía, relaciones, toma de decisiones responsable). 2) Crear matriz de alineación con estándares de CENTEC por grado. 3) Acompañamiento docente: capacitación breve sobre facilitación sin sermones (los conversatorios generan aprendizaje si hay escucha activa). 4) Extensión familia: enviar cartillas en formato descargable sin formularios; evaluar con rubrica simple (observación de comportamientos, no notas). 5) Monitoreo: seguimiento trimestral de indicadores de convivencia (reportes de conflictos, mediciones de clima escolar) sin identificar menores en reportes públicos."
+   },
+   "fecha": "2026-10-21"
   }
  ]
 }
