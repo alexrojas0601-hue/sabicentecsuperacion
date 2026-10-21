@@ -405,6 +405,98 @@
     "nota": "Para máxima efectividad en CENTEC: 1) Especificar formato de consentimiento informado de padres (modelo incluido en guía). 2) Definir criterios para validar 'adultos externos' (verificación de identidad por docente, máximo 2 entrevistas por estudiante). 3) Adaptar ejemplos a historia local colombiana (desplazamiento, conflicto, resistencia comunitaria) usando archivos de Memoria Histórica. 4) Establecer límite de edades para entrevistas: solo estudiantes 8° en adelante conducen entrevistas (no 6°-7°), con docente presente en primeras 2. 5) Documentar reflexión final de estudiantes sobre impacto ético (evidencia de aprendizaje transformador). 6) Crear plantilla de rúbrica que equilibre rigor histórico + impacto social. Recurso Roserblanquer es excelente; complementar con guía ICBF sobre interacción segura niño-comunidad."
    },
    "fecha": "2026-10-20"
+  },
+  {
+   "nombre": "Vosk Speech Recognition + tareas de pronunciación",
+   "tipo": "recurso digital",
+   "grados": "5° a 11°",
+   "para_que": "Mejora pronunciación y reconocimiento auditivo mediante retroalimentación en tiempo real",
+   "como_usarla": "Docente asigna 10-15 min diarios: estudiante graba oración (palabra B2/C1), Vosk compara con nativo, señala errores. Estudiante corrige iterativamente. Registra progreso en /worksheet.",
+   "comando_sabi": "/escape (pronunciación registrada) + [[feedback auditivo]]",
+   "evidencia": "Mejora 16.6% en precisión de palabras, 16.5% reducción en errores de pronunciación (p=0.004). ASR con corrección entre pares es efectivo para hablantes de chino (Guo et al., 2023)",
+   "fuente": "https://link.springer.com/article/10.1007/s10791-026-09992-0",
+   "url": "https://github.com/alphacep/vosk-api",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin chat, sin publicidad, sin compras. Solo almacena audio localmente si se configura offline.",
+   "area": "Inglés (hacia B2/C1)",
+   "dot": "Dot_Bilinguismo_Ingles",
+   "auditoria": {
+    "pedagogico": 4,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "1) Complementar con lista de palabras/frases B2/C1 contextualizadas CENTEC (áreas STEAM, no genéricas). 2) Docente calibra umbral de aceptación de Vosk (evita frustración si es muy exigente). 3) Registrar en /worksheet: tiempo, intentos, autoevaluación del estudiante (metacognición). 4) Validar offline-first para garantizar cero conexión a servidores externos. 5) Prueba piloto con 15-20 estudiantes hispanohablantes B2 para medir transferencia de resultados chinos."
+   },
+   "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Lectura Graduada + Quizlet/Anki (repetición espaciada)",
+   "tipo": "banco de actividades",
+   "grados": "5° a 11°",
+   "para_que": "Construye vocabulario B2/C1 mediante lectura auténtica + retención a largo plazo",
+   "como_usarla": "1) Docente elige graded reader (Oxford, Penguin) B2. 2) Extrae 40 palabras clave → Anki (repetición espaciada). 3) Estudiante lee 20 min/semana, hace quiz. 4) App repasa palabras en intervalos óptimos. 5) Test de retención a 2 meses.",
+   "comando_sabi": "/lectura (extensiva graduada) + [[manipulativo tarjetas Anki]]",
+   "evidencia": "Correlación significativa entre tareas de lectura graduada y examen final (grammar/voc). Anki mejora retención 70% vs 61% (massed practice). Lectores graduados refuerzan 4 skills (Oxford).",
+   "fuente": "https://www.researchgate.net/publication/398971953_The_Impact_of_Graded_Readers_on_Foreign_Language_Learning_and_Acquisition_in_Higher_Education; https://training.safetyculture.com/blog/evidence-around-spaced-repetition/",
+   "url": "https://ankiweb.net; https://www.oxfordlearnersbookshop.com/es/oxford-graded-readers/",
+   "costo": "gratis (Anki) o bajo (libros usados)",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Anki offline: sin datos personales. Oxford Graded Readers: editorial establecida, sin riesgos.",
+   "area": "Inglés (hacia B2/C1)",
+   "dot": "Dot_Bilinguismo_Ingles",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "1) Validar que graded readers sean 100% offline o descargables (no requieran login durante lectura). 2) Protocolo CENTEC: Docente carga corpus de palabras en Anki antes de dar acceso a estudiantes (evita entrada manual de datos). 3) Establecer rutina: lectura colaborativa primero (15 min en clase: predicción + inferencia contextual), luego consumo individual asincrónico. 4) Test de retención a 2 meses + producción escrita (resumen en inglés) para verificar transferencia, no solo reconocimiento. 5) Incluir 'pausas de reflexión' cada 500 palabras leídas (anotaciones sobre estrategias de comprensión). Esto añade cognición metacognitiva sin costo."
+   },
+   "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Podcasts educativos + Anotación Colaborativa (Hypothesis)",
+   "tipo": "recurso digital",
+   "grados": "7° a 11°",
+   "para_que": "Mejora comprensión auditiva y vocabulario en contexto académico mediante escucha repetida + reflexión",
+   "como_usarla": "1) Docente selecciona podcast B2 (BBC Learning English, TED-Ed, Real English). 2) Estudiante escucha 2x: sin subtítulos (general), con subtítulos (detalle). 3) Abre transcript en Hypothesis, subraya palabras nuevas, comenta significado. 4) Comparte anotaciones; compañeros amplían definiciones. 5) Docente revisa /lectura.",
+   "comando_sabi": "/lectura (auditiva), [[anotación colaborativa Hypothesis]]",
+   "evidencia": "Podcasts mejoran comprensión auditiva significativamente (p<0.05). Escucha repetida + notas sobre vocab nuevo. Al-Qahtani et al. (2023): mejora notable en listening vs control. Autonomía y flexibilidad comprobadas.",
+   "fuente": "https://eric.ed.gov/?id=EJ1245044; https://www.researchgate.net/publication/393347350_English_Podcasts_Their_Impact_on_the_Listening_Skills_of_Students",
+   "url": "https://web.hypothes.is; https://www.bbc.co.uk/learningenglish/english/course/intermediate; https://www.youtube.com/c/RealEnglish",
+   "costo": "gratis",
+   "requiere_cuenta": true,
+   "seguridad_menores": "Hypothesis permite anonimato. Crear grupo cerrado de clase. Monitorear comentarios docente. Podcasts de fuentes reconocidas (BBC, TED).",
+   "area": "Inglés (hacia B2/C1)",
+   "dot": "Dot_Bilinguismo_Ingles",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 4,
+    "evidencia": 4,
+    "nota": "1) **Validación de fuentes**: Exigir que docente cree lista blanca de podcasts pre-auditados (BBC Learning English, TED-Ed Español, Real English) antes de implementar. 2) **Protocolo de Hypothesis**: Crear cuenta docente institucional única; estudiantes acceden sin cuenta personal (link de acceso anónimo a grupos cerrados). 3) **Monitoreo**: Establecer rúbrica clara para comentarios (vocabulario, gramática, preguntas lingüísticas válidas); revisar posts antes de visibilidad. 4) **Complemento pedagógico**: Añadir tarea post-anotación: estudiantes escriben párrafo resumen (5-7 oraciones) sobre tema del podcast con vocabulario subrayado. Esto ancla comprensión auditiva → producción escrita (progresión B2→C1). 5) **Accesibilidad**: Garantizar transcripts completos descargables (no solo en Hypothesis) para estudiantes con necesidades auditivas."
+   },
+   "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Flashcards Espaciadas (SuperMemo/Anki) + Gamificación (Duolingo Max)",
+   "tipo": "juego",
+   "grados": "5° a 11°",
+   "para_que": "Retención de vocabulario B2/C1 (fraseología, colocaciones) mediante algoritmo adaptativo + motivación por puntos",
+   "como_usarla": "1) Docente crea deck Anki con 100 colocaciones B2/C1 (ej. 'make a difference', 'take for granted'). 2) Estudiante practica 10 min/día. 3) Algoritmo muestra palabras en punto crítico de olvido (curva de Ebbinghaus). 4) Opcional: Duolingo Max (menos flexible pero más gamificado) para refuerzo lúdico. 5) Registra racha ('streak') en /worksheet.",
+   "comando_sabi": "[[manipulativo tarjetas Anki]] + /gamificación (Duolingo Max)",
+   "evidencia": "Spaced repetition: 80+ años de investigación. SuperMemo predice curva de olvido individual. Anki users aprenden 3 palabras/hora vs 1 en estudio bloqueado. MALL apps (Anki/Quizlet): d=0.71 (post-test), d=0.66 (4 sem después). Duolingo: +time-on-app correlaciona con ganancia (r=0.54).",
+   "fuente": "https://training.safetyculture.com/blog/evidence-around-spaced-repetition/; https://academicsciencepress.com/index.php/IJAEPS/article/view/94",
+   "url": "https://ankiweb.net; https://www.duolingo.com/max (versión Max)",
+   "costo": "gratis (Anki) o pago bajo (Duolingo Max ~$10/mes)",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Anki: offline, sin datos. Duolingo: crear cuenta solo con email escolar, NO redes sociales. Padres revisan racha. Desactivar notificaciones push. Sin compras en-app.",
+   "area": "Inglés (hacia B2/C1)",
+   "dot": "Dot_Bilinguismo_Ingles",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 4,
+    "evidencia": 5,
+    "nota": "En CENTEC: (1) Docente crea deck Anki con colocaciones B2/C1 propias (p.ej. verbos frasales jurídicos: 'bring to justice', 'stand trial'—contexto curricular). (2) Sesión 10 min en clase + 5 min/día en casa. (3) Si usas Duolingo Max, desactivar TODAS las notificaciones push antes de dar acceso a estudiantes. (4) Padres reciben captura de racha semanal (vía worksheet/LMS, NO WhatsApp personal). (5) Anki: preferir versión offline en tablets/PCs de CENTEC antes que web. (6) Combinar con *producción*: después de 10 colocaciones memorizadas, pedir redacción de 3 oraciones B2/C1 que las incluyan (cierre: de reconocimiento a producción). Esto eleva nivel de procesamiento profundo."
+   },
+   "fecha": "2026-10-21"
   }
  ]
 }
