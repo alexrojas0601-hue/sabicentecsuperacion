@@ -1,6 +1,6 @@
 {
  "version": "2026-10-02",
- "actualizado": "2026-10-02",
+ "actualizado": "2026-10-22",
  "nota": "Banco de proyectos por área de SABI Superación. Lo amplían cada semana los agentes investigadores (scripts/investigador-areas.mjs) mediante Pull Requests que aprueba coordinación académica.",
  "areas": [
   {
@@ -2125,6 +2125,66 @@
      "estado": "activo",
      "origen": "sabi",
      "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-instalacion-sensorial-la-huerta-brilla",
+     "titulo": "Instalación sensorial: la huerta brilla",
+     "tipo": [
+      "raspberry",
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Cómo puede la luz inteligente embellecer y proteger la huerta del colegio sin gastar mucha energía?",
+     "problema": "La huerta nocturna del colegio está oscura y los estudiantes no ven su belleza; además, no hay alerta de intrusos",
+     "producto": "Prototipo de sistema de iluminación interactiva con sensor de movimiento y luz ambiental, simulado en Wokwi, documentado para instalación futura",
+     "aprendizaje": "Integración de arte y tecnología: luz como elemento expresivo; sensores y accionadores; diseño de interfaces amigables; pensamiento sistémico (causa-efecto en sistemas físicos)",
+     "pensamiento": "Diseño de sistemas y pensamiento computacional: ciclos de entrada (sensores) → procesamiento → salida (luz)",
+     "logica": "Lógica condicional (if/else): si detecta movimiento Y es de noche, enciende LED RGB progresivamente; ejemplo: sensor PIR + sensor LDR → luminosidad adaptativa",
+     "gamificacion": "Sin juego: aprendizaje mediante retos: '¿Cuántos patrones de luz puedes crear?', '¿Cuál es el más eficiente energéticamente?'",
+     "herramienta": {
+      "nombre": "Wokwi",
+      "url": "https://wokwi.com",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Simulador en navegador: cero riesgo eléctrico. No conecta hardware real. Menores usan bloques predefinidos sin código crudo.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "investigador",
+     "verificado": "2026-10-22"
+    },
+    {
+     "id": "p-danzante-pixel-tu-sombra-se-mueve-con-se",
+     "titulo": "Danzante pixel: tu sombra se mueve con sensores",
+     "tipo": [
+      "programacion",
+      "raspberry"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Cómo podemos traducir el movimiento de nuestro cuerpo en arte visual y luz que responda en tiempo real?",
+     "problema": "En Artes, los estudiantes crean personajes animados pero no pueden hacerlos reaccionar a movimientos reales; la frontera entre digital y físico está cerrada",
+     "producto": "Performance interactivo: personaje pixel animado en Scratch que se mueve según sensores simulados de aceleración/proximidad; video-documental del resultado",
+     "aprendizaje": "Integración Scratch + lógica Raspberry Pi (entrada/salida GPIO simulada); arte generativo; narrativa interactiva; competencia corporal (expresión física) + digital",
+     "pensamiento": "Pensamiento computacional iterativo: captura → procesamiento → feedback visual; ciclo de mejora estética",
+     "logica": "Lógica de eventos: cuando webcam detecta movimiento (sin identificación), sprite gira; agregar deslizadores como entrada alternativa para distancia/aceleración simulada; usar variables para feedback suave.",
+     "gamificacion": "Reemplazar competencia por colaboración: 'diseña el personaje más expresivo del grupo'; 'crea patrones de baile que el equipo pueda replicar'. Énfasis en iteración estética, no en ranking.",
+     "herramienta": {
+      "nombre": "Scratch 3 (online o Raspberry Pi OS)",
+      "url": "https://scratch.mit.edu",
+      "acceso": "ya",
+      "costo": "gratis"
+     },
+     "seguridad": "Scratch online: sandbox seguro, webcam opcional solo para detectar movimiento (no almacena, no identifica menores). Cero GPIO físico ni Raspberry Pi local. Sin chat, sin cuentas con datos.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "investigador",
+     "verificado": "2026-10-22"
     }
    ]
   },
