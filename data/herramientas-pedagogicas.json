@@ -681,6 +681,98 @@
     "nota": "1) SABI integre plantilla de 'Diagnóstico Técnico de Necesidad' (matriz impacto-viabilidad-competencias SENA requeridas) para alinear proyecto con currículo específico. 2) Docente defina checklist de supervisión en fases 3-4 (ejecución) con responsables comunitarios claros. 3) Certificación: vincular competencias desarrolladas a estándares SENA (p.ej: 'Diseño de sistemas de riego' → código competencia DTA-145). 4) Reflexión final en formato video-testimonio (5 min) de estudiante + líder comunitario sobre aprendizaje/impacto, archivable en portafolio CENTEC. 5) Replicabilidad: documentar 'receta técnica' del proyecto para que otros cursos/años lo adapten."
    },
    "fecha": "2026-10-21"
+  },
+  {
+   "nombre": "Computer Science Unplugged (CSU)",
+   "tipo": "estrategia|material concreto",
+   "grados": "Transición a 7°",
+   "para_que": "Desarrollar pensamiento computacional sin pantallas mediante juegos con cartas, tableros y objetos físicos (abstracción, algoritmos, patrones, resolución de problemas)",
+   "como_usarla": "1. Docente imprime o fabrica materiales (algoritmos con cartas, búsqueda binaria con números). 2. Estudiantes juegan en equipos: siguen instrucciones, buscan patrones, resuelven problemas colaborativamente sin dispositivos. 3. Reflexión: ¿qué reglas seguimos? ¿Cómo lo solucionamos?",
+   "comando_sabi": "docente o [[manipulativo cartas_algoritmo N]]",
+   "evidencia": "Estudio UNED-Universidad Rey Juan Carlos (España) con 73 estudiantes 5°-6°: grupo con unplugged mejoró PC significativamente más que control (p<0.05). Brackmann et al. (2017) en WiPSCE comprobó que iniciar con unplugged aumenta confianza en programación posterior",
+   "fuente": "https://intef.es/Noticias/se-puede-desarrollar-el-pensamiento-computacional-sin-ordenador-evidencia-cientifica/ | https://formacion.intef.es/aulaenabierto/mod/book/tool/print/index.php?id=5166",
+   "url": "https://csunplugged.org/es/",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "100% offline. Sin conexión, sin cuentas, sin datos. Ideal para baja conectividad",
+   "area": "Educación digital, programación e IA",
+   "dot": "Dot_EducacionDigital_IA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 5,
+    "nota": "Para CENTEC: (1) Imprimir o laminar kits reutilizables de cartas y tableros por grado. (2) Capacitar docentes en protocolo de reflexión post-juego: registrar en bitácora qué estrategias usaron niños, qué patrones descubrieron, para documentar progreso cognitivo sin datos personales. (3) Combinar sesiones unplugged (30-40 min) con reflexión escrita colaborativa en papelógrafo (no digital). (4) Usar comando [[manipulativo cartas_algoritmo N]] para rastrear qué actividades se usan por grado, sin identificar estudiantes. (5) Aprovechar para baja/nula conectividad rural: es la herramienta ideal."
+   },
+   "fecha": "2026-10-22"
+  },
+  {
+   "nombre": "ScratchJr",
+   "tipo": "recurso digital",
+   "grados": "Transición a 4°",
+   "para_que": "Introducir programación visual con bloques para edades tempranas (5-7 años): crear historias interactivas, animaciones simples y juegos cooperativos",
+   "como_usarla": "1. Docente abre ScratchJr en tablet/PC compartida. 2. Estudiantes arrastran bloques de movimiento, sonido, apariencia. 3. Guardan proyectos localmente. 4. Comparten físicamente (no en línea) mostrando creaciones al grupo",
+   "comando_sabi": "[[manipulativo bloques_scratchjr N]] o /lectura + reflexión de acciones",
+   "evidencia": "Desenvolupat pel MIT (Lifelong Kindergarten). Usado en miles de aulas primarias. Simplifica Scratch para menores (sin publicación en línea obligatoria)",
+   "fuente": "https://simplified.com/es/blog/diseno-de-ia/aplicaciones-ai-para-ninos",
+   "url": "https://www.scratchjr.org/",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Opción de sin cuenta. Si se usa cuenta: sin chat público, padres/docentes controlan permisos de compartir. No recopila datos innecesarios",
+   "area": "Educación digital, programación e IA",
+   "dot": "Dot_EducacionDigital_IA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 5,
+    "nota": "En CENTEC implementar: (a) Sesiones en tablet/PC compartida (1 docente + 4-6 estudiantes máximo) para supervisión directa. (b) Guardar proyectos en carpeta local del servidor escolar (no nube pública). (c) Después de crear: actividad de reflexión oral grupal ('¿qué hizo el personaje? ¿por qué pusiste ese bloque?') para anclar pensamiento computacional. (d) Opcional avanzado (3°-4°): mostrar mismo proyecto sin bloques visuales (pseudocódigo escrito simple) para transición gradual a código textual. (e) Consentimiento informado a padres: 'herramienta de programación sin internet ni datos personales'."
+   },
+   "fecha": "2026-10-22"
+  },
+  {
+   "nombre": "Machine Learning for Kids (MLforKids)",
+   "tipo": "recurso digital",
+   "grados": "4° a 7°",
+   "para_que": "Alfabetización en IA: entrenar modelos simples de reconocimiento de imágenes, texto y sonido; integrarlos en proyectos Scratch para comprender cómo aprende la IA",
+   "como_usarla": "1. Docente crea proyecto en MLforKids (sin datos personales de niños). 2. Estudiantes recopilan ejemplos (fotos de objetos, palabras, sonidos). 3. Entrenan modelo ('esto es un gato'). 4. Prueban modelo y lo integran en Scratch. 5. Reflexionan: ¿por qué se equivoca la máquina?",
+   "comando_sabi": "/escape + [[manipulativo IA_vision N]] o proyecto Scratch conectado",
+   "evidencia": "Druga et al. (2019) recomienda actividades con agentes inteligentes y juguetes para alfabetización IA temprana. OECD AILit Framework (2025) incluye 'aprender con IA' como competencia. Eboixader (2024) valida MLforKids integrado en Scratch para primaria",
+   "fuente": "https://universoabierto.org/2025/07/17/alfabetizacion-en-inteligencia-artificial-en-ensenanza-primaria/ | https://eboixader.es/formar-para-transformar-la-imperiosa-necesidad-de-la-alfabetizacion-en-ia-desde-la-educacion-primaria",
+   "url": "https://machinelearningforkids.co.uk/",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Docente crea cuenta (no menores). No almacena fotos de niños identificables. Entrena localmente. Compatible con FERPA/RGPD",
+   "area": "Educación digital, programación e IA",
+   "dot": "Dot_EducacionDigital_IA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 5,
+    "nota": "Para CENTEC: (1) Docente debe usar MLforKids SOLO en versión de proyecto (no dataset público); crear carpeta compartida en servidor local para ejemplos recopilados (no nube). (2) Establecer protocolo: estudiantes fotografían objetos SIN rostros (ej: frutas, animales de peluche, símbolos). (3) Incorporar sesión de 20 min sobre sesgo en IA (¿por qué el modelo confunde gatos con otras cosas? Conversación sobre datos insuficientes). (4) Certificar que docente completó módulo sobre FERPA/Ley 1581 de 2012 antes de usar. (5) Documentar consentimiento parental explícito para 'actividades con datos anónimos de aprendizaje automático'."
+   },
+   "fecha": "2026-10-22"
+  },
+  {
+   "nombre": "AseguraTIC (INTEF - Ministerio Educación España + AEPD)",
+   "tipo": "banco de actividades|material concreto",
+   "grados": "2° a 11°",
+   "para_que": "Desarrollar competencias en ciudadanía digital, privacidad, seguridad y bienestar digital mediante lecciones, dinámicas de aula y recursos para padres/docentes",
+   "como_usarla": "1. Docente descarga fichas de 'Tú decides en Internet' (AEPD) según edad. 2. Realiza dinámicas: role-playing de suplantación, análisis de permisos en apps, cartas sobre privacidad. 3. Estudiantes reflexionan y crean compromisos de seguridad. 4. SABI registra participación en debates",
+   "comando_sabi": "docente o [[manipulativo ciudadania_debate N]]",
+   "evidencia": "AseguraTIC es iniciativa oficial española (Agencia de Protección de Datos). Decreto 0769 de 2026 de Colombia obliga a colegios a integrar 'alfabetización mediática y digital' en PEI; AseguraTIC responde a este mandato. Estructurado por edad y riesgos reales",
+   "fuente": "https://intef.es/recursos-educativos/aseguratic/ | https://dplnews.com/colombia-marco-fortalecer-seguridad-en-linea-menores/",
+   "url": "https://intef.es/recursos-educativos/aseguratic/",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Recurso para enseñar seguridad, no plataforma de datos. Docentes + padres median. Promueve consentimiento informado, privacidad desde diseño, reconocimiento de grooming/suplantación",
+   "area": "Educación digital, programación e IA",
+   "dot": "Dot_EducacionDigital_IA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para SABI CENTEC: (1) Docente descarga fichas según grado y eje (privacidad, grooming, huella digital, consentimiento). (2) Antes de dinámicas: firma consentimiento informado de padres (Ley 1581/2012). (3) SABI registra solo: tema, grado, participación sí/no, NO datos personales de estudiantes. (4) Post-actividad: docente sistematiza compromisos en documento anónimo como evidencia de aprendizaje. (5) Ampliar: vincular fichas AEPD con casos de suplantación reales (desidentificados) de contexto colombiano. Recomendación: verificar con AEPD disponibilidad de versión en español latinoamericano adaptada."
+   },
+   "fecha": "2026-10-22"
   }
  ]
 }
