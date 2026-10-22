@@ -773,6 +773,75 @@
     "nota": "Para SABI CENTEC: (1) Docente descarga fichas según grado y eje (privacidad, grooming, huella digital, consentimiento). (2) Antes de dinámicas: firma consentimiento informado de padres (Ley 1581/2012). (3) SABI registra solo: tema, grado, participación sí/no, NO datos personales de estudiantes. (4) Post-actividad: docente sistematiza compromisos en documento anónimo como evidencia de aprendizaje. (5) Ampliar: vincular fichas AEPD con casos de suplantación reales (desidentificados) de contexto colombiano. Recomendación: verificar con AEPD disponibilidad de versión en español latinoamericano adaptada."
    },
    "fecha": "2026-10-22"
+  },
+  {
+   "nombre": "Calculalo.app - Banco de juegos de cálculo mental",
+   "tipo": "juego|banco de actividades",
+   "grados": "2° a 6°",
+   "para_que": "Automatizar hechos numéricos y estrategias mentales mediante juegos progresivos sin ansiedad",
+   "como_usarla": "El docente selecciona el juego según el nivel (Pacman Matemático para 1-4°, Matemáticas FC para 2-6°). Los niños juegan 2-5 min/día en clase. Registra progreso automático. Alterna con fichas concretas (CPA).",
+   "comando_sabi": "[[juego Calculalo/Pacman Matematico N° grado]] o /escape para práctica rápida",
+   "evidencia": "Estudios de la UVA (2023) y ministerios educativos confirman que juegos diseñados específicamente mejoran cálculo mental sin aumentar ansiedad; sesiones breves diarias son más efectivas que largas",
+   "fuente": "https://calculalo.app/juegos | https://uvadoc.uva.es/bitstream/handle/10324/75398/TFG-O-2826.pdf",
+   "url": "https://calculalo.app/juegos",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin publicidad, sin chat, sin compras, sin datos personales (offline posible)",
+   "area": "Matemáticas, Estadística y Matemática Financiera",
+   "dot": "Dot_Matematicas_Estrategica",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "RECOMENDACIONES PARA CENTEC: (1) Integrar en secuencia: máximo 3 min/sesión en Calculalo, seguido de manipulables concretos (fichas, ábacos) para reforzar transferencia a contexto no digital. (2) Docente revisa progreso semanal en dashboard para identificar niños con dificultad y brindar apoyo personalizado. (3) Alternar juegos (Pacman vs Matemáticas FC) cada 2 semanas para mantener motivación sin fatiga. (4) Usar comando /escape solo para refuerzo, no como sustituto de clase. (5) Verificar anualmente que plataforma mantiene estándares de seguridad (sin migración a versión con datos o publicidad)."
+   },
+   "fecha": "2026-10-22"
+  },
+  {
+   "nombre": "Khan Academy Kids (descargar para offline)",
+   "tipo": "recurso digital|banco de actividades",
+   "grados": "1° a 4°",
+   "para_que": "Acceso a lecciones breves, ejercicios y videos de matemáticas descargables sin conexión permanente",
+   "como_usarla": "1) Docente descarga temas en WiFi (ej: sumas, restas, números). 2) Niños trabajan offline en tablet/computadora sin conectarse. 3) Ritmo personalizado según nivel. 4) Usa enfoque visual+interactivo (complementa CPA). 5) Evaluación automática de progreso.",
+   "comando_sabi": "/lectura Khan_Academy_Kids o [[recurso Khan sumas N° grado]]",
+   "evidencia": "Khan Academy (validada por universidades) ofrece contenido alineado a currículos; funciona sin conexión después de descargar. En contextos de baja conectividad, descarga offline mejora equidad (Moreno, 2023; UDES)",
+   "fuente": "https://learn.khanacademy.org/khan-academy-kids/ | https://repositorio.udes.edu.co/handle/001/8538",
+   "url": "https://learn.khanacademy.org/khan-academy-kids/",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "App para niños: sin publicidad, sin chat, sin compras, control parental integrado",
+   "area": "Matemáticas, Estadística y Matemática Financiera",
+   "dot": "Dot_Matematicas_Estrategica",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "En CENTEC optimizar así: 1) Docente descarga temas relevantes a trimestre/grado en WiFi institucional antes de clase. 2) Crear perfiles offline por grupo sin requerir login (cumple Ley 1581). 3) Usar en laboratorio/aula para refuerzo diferenciado de sumas, restas, fracciones (1°-3°). 4) Registrar progreso en cuaderno del estudiante (no en la app) para evitar acumulación de datos digitales. 5) Complementar con actividades CPA físicas (ábacos, bloques, dinero real) después de la app. 6) Revisar periódicamente permisos de privacidad del dispositivo (cámara, micrófono deshabilitados)."
+   },
+   "fecha": "2026-10-22"
+  },
+  {
+   "nombre": "Regletas de Cuisenaire (física + fichas para copiar patrones)",
+   "tipo": "material concreto|banco de actividades",
+   "grados": "1° a 5°",
+   "para_que": "Construir comprensión relacional de números, operaciones y proporciones mediante longitud visible (concreto → pictórico)",
+   "como_usarla": "1) Fase concreto: niños manipulan regletas por colores/longitudes. 2) Docente da fichas con patrones para reproducir (transición pictórica). 3) Descubren equivalencias (ej: 2 rojas = 1 rosa). 4) Anotan en papel como dibujo. 5) Luego números abstractos. Funciona sin conectividad.",
+   "comando_sabi": "[[manipulativo regletas Cuisenaire grado N]] o docente",
+   "evidencia": "Gonzalez Marí (2010) y FUHEM (2019): regletas permiten pasar de concreto a abstracción, favorecen autonomía del niño. Izaguirre (2017) demostró mejora significativa en 1° primaria con bloques base10 vs grupo control. Costo bajo por escuela.",
+   "fuente": "https://reunir.unir.net/bitstream/handle/123456789/6100/PI%20FUSTER,%20ARIADNA.pdf | https://www.fuhem.es/wp-content/uploads/2019/12/09_Materiales_Manipulativos_Matematicas_Secundaria_FUHEM.pdf",
+   "url": "https://www.amazon.es/Regletas-Cuisenaire-36-barras-colores/dp/B00NYBZACU",
+   "costo": "bajo",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Material físico, sin componentes digitales",
+   "area": "Matemáticas, Estadística y Matemática Financiera",
+   "dot": "Dot_Matematicas_Estrategica",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": ""
+   },
+   "fecha": "2026-10-22"
   }
  ]
 }

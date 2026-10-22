@@ -1,11 +1,11 @@
 # SABI · Dots didácticos · herramientas · 2026-10-22
 
-## Dot_EducacionDigital_IA — Educación digital, programación e IA (2026-10-22)
+## Dot_Matematicas_Estrategica — Matemáticas, Estadística y Matemática Financiera (2026-10-22)
 Propuestas del investigador: 6
-- Rechazada por enlace caído: Blockly (Google)
-- Aprobada: Computer Science Unplugged (CSU) (estrategia|material concreto, Transición a 7°) → docente o [[manipulativo cartas_algoritmo N]]
-- Aprobada: ScratchJr (recurso digital, Transición a 4°) → [[manipulativo bloques_scratchjr N]] o /lectura + reflexión de acciones
-- Aprobada: Machine Learning for Kids (MLforKids) (recurso digital, 4° a 7°) → /escape + [[manipulativo IA_vision N]] o proyecto Scratch conectado
-- Rechazada por enlace caído: Interland (Google Be Internet Awesome)
-- Aprobada: AseguraTIC (INTEF - Ministerio Educación España + AEPD) (banco de actividades|material concreto, 2° a 11°) → docente o [[manipulativo ciudadania_debate N]]
-Nuevas aprobadas: 4. Total en el banco: 36.
+- Aprobada: Calculalo.app - Banco de juegos de cálculo mental (juego|banco de actividades, 2° a 6°) → [[juego Calculalo/Pacman Matematico N° grado]] o /escape para práctica rápida
+- Rechazada: Fichas graduadas de dinero y cambio (contextos cotidianos) — La herramienta tiene excelente diseño pedagógico (CPA: concreto-pictórico-abstracto, contextos cotidianos, manipulación activa, rol playing) y seguridad impecable (material offline, sin datos personales, sin interacción digital). Sin embargo, la evidencia científica es DÉBIL: (1) La URL de Orientación Andújar contiene fecha futura imposible (2026/10/13), señal de fuente no verificable. (2) No se citan estudios peer-reviewed sobre eficacia de dinero ficticio en matemática financiera. (3) La conexión 'motivación y retención' es afirmación genérica sin referencias específicas. (4) Borja Fabregat es blog, no fuente primaria. SABI CENTEC exige evidencia con DOI, meta-análisis o estudios experimentales controlados.
+- Rechazada: Spot the Patterns (Cokitos) - Secuencias visuales de formas — Rechazada por evidencia insuficiente. Aunque la herramienta tiene solidez pedagógica (transición concreto→pictórico→abstracto bien fundamentada) y seguridad impecable, las referencias científicas son débiles: Moyer-Packenham (2013) es válida pero genérica sobre manipulativos virtuales; falta evidencia específica sobre 'Spot the Patterns' de Cokitos. URLs de Khan Academy no conducen a validación directa del juego. Para grados 1-4°, el alineamiento curricular colombiano no está documentado.
+- Aprobada: Khan Academy Kids (descargar para offline) (recurso digital|banco de actividades, 1° a 4°) → /lectura Khan_Academy_Kids o [[recurso Khan sumas N° grado]]
+- Aprobada: Regletas de Cuisenaire (física + fichas para copiar patrones) (material concreto|banco de actividades, 1° a 5°) → [[manipulativo regletas Cuisenaire grado N]] o docente
+- Rechazada: DragonBox Algebra (introducción lúdica al pensamiento algebraico) — No alcanza el estándar SABI CENTEC. Pedagogía y evidencia son sólidas (transición CPA, gamificación narrativa validada, progresión adaptativa). Pero seguridad presenta tres riesgos críticos según Ley 1581/2012 Colombia: (1) REQUIERE CUENTA registrada (riesgo de datos personales de menores), (2) Sin transparencia verificada sobre qué datos captura, almacena y con quién los comparte, (3) POLÍTICA DE PRIVACIDAD DEL DESARROLLADOR NO LINKEADA EN LA FICHA (imposible auditar cumplimiento colombiano). Aunque menciona 'sin publicidad de terceros', esto no está verificado públicamente.
+Nuevas aprobadas: 3. Total en el banco: 39.
