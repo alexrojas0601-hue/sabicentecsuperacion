@@ -842,6 +842,75 @@
     "nota": ""
    },
    "fecha": "2026-10-22"
+  },
+  {
+   "nombre": "Preguntas predictivas y de inferencia con pausas estratégicas",
+   "tipo": "estrategia",
+   "grados": "2° a 11°",
+   "para_que": "Desarrollar comprensión inferencial anticipando resultados y conectando información explícita con implícita durante la lectura.",
+   "como_usarla": "1) Docente selecciona texto narrativo. 2) Pausa en puntos clave y hace preguntas: '¿Qué crees que pasará?' o '¿Por qué el personaje hizo esto?' 3) Niños predicen oralmente o escriben. 4) Continúa lectura, valida/ajusta predicciones. 5) Registra mejoras en nivel inferencial.",
+   "comando_sabi": "/lectura o [[estrategia inferencial]]",
+   "evidencia": "Sanhueza y Quintanilla (2024) confirman que estrategias de lectura inferencial (identificar causas, plantear inferencias lógicas, reconocer vacíos) mejoran significativamente la comprensión lectora en línea.",
+   "fuente": "https://www.researchgate.net/publication/386269891_El_Aporte_de_las_Estrategias_de_Lectura_Inferencial_para_Mejorar_la_Habilidad_de_Comprension_Lectora_en_un_Contexto_de_Clase_Privada_en_Linea",
+   "url": "",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin riesgos: estrategia oral/escrita dentro del aula.",
+   "area": "Lectura crítica y Lenguaje",
+   "dot": "Dot_LecturaCritica_Lenguaje",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para CENTEC: 1) Estructurar registro de progresión inferencial en matriz simple (estudiante → fecha → tipo inferencia: causal/predictiva/interpretativa → nivel: inicial/básico/avanzado). 2) Incorporar textos que desafíen prejuicios locales (género, diversidad, conflicto) para fomentar lectura crítica real, no solo decodificación. 3) Validar predicciones sin descalificar; usar modelo socrático ('¿Qué evidencia del texto te llevó a esa conclusión?'). 4) Documentar una sesión trimestral con rúbrica de pensamiento inferencial para medir ganancia."
+   },
+   "fecha": "2026-10-22"
+  },
+  {
+   "nombre": "Organizadores gráficos (mapas conceptuales y mapas de lectura)",
+   "tipo": "estrategia|material concreto",
+   "grados": "3° a 11°",
+   "para_que": "Fortalecer comprensión literal, inferencial y crítica visualizando relaciones entre conceptos y jerarquía de ideas.",
+   "como_usarla": "1) Lectura de texto. 2) Identificar concepto central (círculo). 3) Ramificar conceptos secundarios con líneas. 4) Conectar con palabras clave. 5) Elaborar en parejas y exponer. Imprimible o digital en Canva/Draw.io gratis.",
+   "comando_sabi": "/worksheet [[organizador gráfico]] o [[mapa conceptual]]",
+   "evidencia": "Solís-Martínez y Ramas-Arauz (2024) demuestran que mapas conceptuales y mapas de lectura fortalecen comprensión lectora; estudiantes reflexionan y cuestionan desarrollando habilidades de interpretación. Puntajes mejoraron significativamente en pruebas SisAT.",
+   "fuente": "https://revistaredca.uaemex.mx/article/view/22146",
+   "url": "https://www.canva.com o https://draw.io (gratis)",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin riesgos si es offline. Draw.io permite trabajo sin cuenta.",
+   "area": "Lectura crítica y Lenguaje",
+   "dot": "Dot_LecturaCritica_Lenguaje",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para máximo impacto en CENTEC: 1) Proporcionar plantillas preelaboradas por grado (3°-5° max 3 niveles jerárquicos; 6°-8° hasta 4; 9°-11° pensamiento sistémico). 2) Incluir rúbrica de evaluación: ¿Las conexiones muestran causalidad o solo agrupación? 3) Fomentar versión analógica primero (papel/colores) antes de herramientas digitales para desarrollar motricidad fina y control metacognitivo. 4) Conectar con SisAT locales si disponibles para triangular impacto."
+   },
+   "fecha": "2026-10-22"
+  },
+  {
+   "nombre": "Cervantesvirtual.com - Biblioteca Virtual Miguel de Cervantes (Literatura infantil y juvenil)",
+   "tipo": "recurso digital|banco de actividades",
+   "grados": "1° a 11°",
+   "para_que": "Acceder a cientos de textos clásicos y contemporáneos en español para lectura crítica, análisis literario y ampliación de vocabulario en contexto auténtico.",
+   "como_usarla": "1) Acceder sin registro a www.cervantesvirtual.com. 2) Seleccionar 'Literatura Infantil y Juvenil'. 3) Buscar por autor, título o género. 4) Leer en línea o descargar PDF. 5) Generar preguntas para comprensión literal/inferencial/crítica con textos completos.",
+   "comando_sabi": "/lectura [[biblioteca Cervantes]]",
+   "evidencia": "Biblioteca oficial del Cervantes (desde 1999) con 135.000 registros, incluye análisis críticos y estudios literarios. Verificado por múltiples fuentes educativas como recurso confiable, sin publicidad ni datos personales requeridos.",
+   "fuente": "https://fundacioncarlosslim.org/accede-a-nuestro-catalogo-gratuito-en-linea-de-literatura-infantil-y-juvenil/ y https://www.cervantesvirtual.com/",
+   "url": "https://www.cervantesvirtual.com/",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Segura: sin chat, sin publicidad, sin compras, sin recolección de datos. Solo lectura de textos clásicos verificados.",
+   "area": "Lectura crítica y Lenguaje",
+   "dot": "Dot_LecturaCritica_Lenguaje",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 5,
+    "nota": "En CENTEC implementar así: (a) Crear secuencias didácticas por grado donde docentes seleccionen textos según nivel (ej: cuentos cortos para 1°-3°, novelas adaptadas para 4°-6°, clásicos completos para 7°-11°). (b) Acompañar con guías de preguntas en espiral cognitiva (comprensión → análisis → crítica). (c) Descargar PDF offline para estudiantes sin conectividad continua. (d) Vincular con escritura creativa: leer → analizar técnica literaria → producir textos similares. (e) Aprovechar estudios críticos incluidos para fortalecer argumentación en secundaria. (f) Usar como fuente verificada para trabajos de investigación en literatura."
+   },
+   "fecha": "2026-10-22"
   }
  ]
 }
