@@ -582,4 +582,12 @@
     util: { esc, txt, limpio, partir, par, caja, nuevoId, estados, normal, semilla, azar, enviarA, refrescarMath, bloque, PALETA } };
   window.SabiDots = api;
   document.addEventListener('DOMContentLoaded', pintarRepaso);
+  // En celular el mapa mental es más ancho que la pantalla: se abre centrado en la idea central.
+  function centrarMapas(raiz) {
+    (raiz.querySelectorAll ? raiz.querySelectorAll('.mentemapa .dots-scroll:not([data-centrado])') : []).forEach((el) => {
+      el.dataset.centrado = '1';
+      requestAnimationFrame(() => { if (el.scrollWidth > el.clientWidth) el.scrollLeft = (el.scrollWidth - el.clientWidth) / 2; });
+    });
+  }
+  if (window.MutationObserver) new MutationObserver((ms) => ms.forEach((m) => m.addedNodes.forEach((n) => n.nodeType === 1 && centrarMapas(n)))).observe(document.documentElement, { childList: true, subtree: true });
 })();

@@ -155,10 +155,10 @@
   @media (prefers-reduced-motion: reduce){ *{transition:none !important;} }
   :focus-visible{outline:3px solid var(--alba); outline-offset:2px;}
   @media (max-width:600px){
-    header{gap:8px; padding:12px 14px;}
+    header{gap:6px; padding:10px 12px; flex-wrap:wrap;}
+    header .titulos{flex:1 1 auto; min-width:0;}
     header .mono, header a.volver{display:none;}
-    header .btn-bitacora, header .cambiar-rol{margin-left:4px; padding:6px 9px; font-size:.75rem;}
-    header .btn-bitacora{margin-left:auto;}
+    header .btn-bitacora, header .cambiar-rol{margin-left:0; padding:6px 9px; font-size:.75rem; white-space:nowrap;}
   }
 
   .pendiente{width:100%; max-width:760px; background:rgba(245,166,35,.12); border:1.5px solid var(--alba); border-radius:16px; padding:16px 18px; display:none; gap:12px; align-items:center; flex-wrap:wrap;}

@@ -405,7 +405,7 @@
     const pal = [...sec.querySelectorAll('.lec-pal')].map((d) => d.querySelector('.lec-op.elegida')).filter(Boolean);
     const abiertas = [...sec.querySelectorAll('textarea[data-abierta]')].map((t) => `${t.dataset.abierta} → ${t.value.trim() || '(sin responder)'}`);
     sec.querySelector('[data-lec="enviar"]').disabled = true;
-    enviarA(`Terminé la lectura «${limpio(st.titulo || '')}». Literal: encontré ${lit} de ${(st.literal || []).length} a la primera. Palabras en contexto: ${pal.filter((b) => b.dataset.ok === '1').length} de ${(st.palabras || []).length}. ${sec.querySelector('.lec-ordres')?.textContent || ''}\n${abiertas.join('\n')}\nRevisa mis respuestas abiertas con la evidencia del texto.`);
+    enviarA(`Terminé la lectura «${limpio(st.titulo || '')}». Literal: encontré ${lit} de ${(st.literal || []).length} a la primera. Palabras en contexto: ${pal.filter((b) => b.dataset.ok === '1').length} de ${(st.palabras || []).length}. ${(sec.querySelector('.lec-ordres')?.textContent || '').replace(/\s*Busca en el texto.*$/, '').trim()}\n${abiertas.join('\n')}\nRevisa mis respuestas abiertas con la evidencia del texto.`);
   }
 
   // ============================================================ EVENTOS

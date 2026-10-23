@@ -844,7 +844,7 @@
     ],
     "seguridad": "Usa un bombillo de 3 V para no quemarlo. Máximo dos pilas de 1,5 V. Nunca la red eléctrica.",
     "adulto": false,
-    "que_pasa": "Cada pila de 1,5 V empuja la corriente con cierta fuerza llamada voltaje. Al conectar dos pilas en serie (+ con -), sus voltajes se suman (3 V) y el bombillo brilla más. Si una pila está al revés, sus empujes se oponen y el bombillo casi no prende.",
+    "que_pasa": "Cada pila de 1,5 V empuja la corriente con cierta fuerza llamada voltaje. Al conectar dos pilas en serie (+ con -), sus voltajes se suman (3 V) y el bombillo brilla más. Si una pila está al revés, sus empujes se cancelan y el bombillo no prende.",
     "concepto": "Voltaje y pilas en serie",
     "vocabulario": [
       "voltaje",
@@ -1567,7 +1567,7 @@
     "eje": "quimica",
     "titulo": "Plástico de leche",
     "gancho": "Hace muchos años se fabricaban botones y peinetas con un plástico hecho de leche. ¿Cómo puede la leche volverse sólida?",
-    "dba": "Estándar básico de competencias de 4° a 5°: diferencia cambios físicos y químicos en situaciones cotidianas e identifica evidencias de una reacción (gas, cambio de color, formación de sólidos).",
+    "dba": "Estándar de 4.° a 5.°: identifica transformaciones en su entorno a partir de la aplicación de algunos principios físicos, químicos y biológicos (acercamiento a los cambios químicos). Pendiente de verificar con el docente.",
     "prediccion": "Si mezclas leche tibia con vinagre, ¿qué crees que va a aparecer?",
     "materiales": [
       "1 taza de leche entera",

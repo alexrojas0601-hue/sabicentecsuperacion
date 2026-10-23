@@ -297,7 +297,6 @@
       "1 platón grande con agua",
       "1 limón",
       "1 mandarina",
-      "1 uva",
       "1 banano pequeño",
       "1 papa pequeña",
       "1 piedra grande"
@@ -309,7 +308,7 @@
       "Mira si se quedan arriba o se van al fondo.",
       "Compara con lo que habías dicho."
     ],
-    "seguridad": "Uva y objetos pequeños solo los maneja el adulto o se usan enteros con supervisión, nunca a la boca. No se comen las frutas del experimento.",
+    "seguridad": "Usar solo frutas y una piedra más grandes que el puño de un niño; nada va a la boca. No se comen las frutas del experimento.",
     "adulto": true,
     "que_pasa": "Algunas cosas flotan y otras se hunden según el material del que están hechas, no solo por su tamaño. El limón y la mandarina tienen aire en la cáscara y flotan; la piedra y la papa se hunden.",
     "concepto": "Flotar y hundirse",
@@ -498,7 +497,7 @@
       "1 imán grande (de barra o de herradura, no imanes pequeños)",
       "clips metálicos",
       "1 cuchara de metal",
-      "1 tapa de gaseosa",
+      "1 tapa metálica grande de frasco de mermelada",
       "1 lápiz",
       "1 borrador",
       "1 bloque de plástico",
@@ -629,11 +628,11 @@
     "pasos": [
       "El adulto ayuda a amarrar los 4 hilos a las puntas del pañuelo.",
       "Une los hilos al muñeco con cinta.",
-      "Sube a una silla con el adulto al lado o suéltalos desde lo alto de tus brazos.",
+      "El adulto se sube a una silla y sostiene los muñecos en alto, o tú los sostienes desde lo alto de tus brazos, de pie en el piso.",
       "Suelta los dos muñecos al mismo tiempo.",
       "Mira cuál cae más despacio."
     ],
-    "seguridad": "El adulto sostiene la silla o suelta los muñecos él mismo. No usar bolsas plásticas.",
+    "seguridad": "Solo el adulto se sube a la silla; los niños se quedan en el piso. No usar bolsas plásticas.",
     "adulto": true,
     "que_pasa": "Cuando el paracaídas cae, el aire queda atrapado debajo de la tela y la empuja hacia arriba. Eso lo frena y por eso baja despacio. El muñeco sin paracaídas casi no tiene aire que lo frene.",
     "concepto": "El aire frena la caída",
@@ -819,12 +818,11 @@
     "prediccion": "Si hablas dentro de un vaso unido a otro con una cuerda, ¿tu amigo te escuchará en el otro vaso?",
     "materiales": [
       "2 vasos de cartón o plástico",
-      "3 metros de cuerda o pita",
-      "2 clips"
+      "3 metros de cuerda o pita"
     ],
     "pasos": [
       "El adulto hace un huequito en el fondo de cada vaso.",
-      "Pasa la cuerda por los huecos y amárrala a un clip por dentro.",
+      "El adulto pasa la cuerda por los huecos y le hace un nudo grueso por dentro de cada vaso.",
       "Cada niño toma un vaso y se alejan hasta que la cuerda quede estirada.",
       "Uno habla bajito dentro del vaso y el otro pone la oreja.",
       "Ahora prueben con la cuerda floja."
@@ -863,13 +861,13 @@
       "cinta"
     ],
     "pasos": [
-      "Echa arroz en una botella, fríjoles en otra y piedritas en otra (la misma cantidad).",
-      "El adulto cierra bien las tapas con cinta.",
+      "El adulto echa arroz en una botella, fríjoles en otra y piedritas en otra (la misma cantidad); los niños solo miran.",
+      "El adulto cierra bien las tapas y las sella con cinta.",
       "Agita cada maraca con los ojos cerrados.",
       "Di cuál suena más fuerte y cuál más suave.",
       "Toquen una salsa con las tres maracas."
     ],
-    "seguridad": "El adulto sella las tapas con cinta: los granos y piedritas son pequeños y no deben ir a la boca ni a la nariz.",
+    "seguridad": "Solo el adulto llena y sella las botellas: los granos y las piedritas son piezas pequeñas que no deben ir a la boca ni a la nariz. Los niños solo agitan las maracas ya cerradas y el adulto revisa que la cinta siga firme.",
     "adulto": true,
     "que_pasa": "Cuando agitas la maraca, los granos chocan con la botella y hacen vibrar el plástico: eso produce el sonido. Los granos más grandes y duros golpean más fuerte y hacen un sonido distinto al de los granos pequeños.",
     "concepto": "Sonidos fuertes y suaves",
@@ -892,27 +890,27 @@
     "id": "g00-e023",
     "grado": 0,
     "eje": "luz-sonido-energia",
-    "titulo": "El arroz que baila",
+    "titulo": "Las bolitas que bailan",
     "gancho": "Cuando pasa un camión grande por la calle, tiemblan las ventanas. ¿El sonido puede mover cosas?",
     "dba": "Transición: usa diferentes herramientas y objetos con variadas posibilidades y observa qué ocurre cuando actúa sobre ellos.",
-    "prediccion": "Si golpeas una olla cerca de un tambor con arroz encima, ¿el arroz se moverá?",
+    "prediccion": "Si golpeas una olla cerca de un tambor con bolitas de papel encima, ¿las bolitas se moverán?",
     "materiales": [
       "1 tazón",
-      "plástico de cocina (vinipel) o un globo cortado",
+      "plástico de cocina (vinipel)",
       "1 caucho",
-      "10 granos de arroz crudo",
+      "10 bolitas de papel de seda del tamaño de una uva (más grandes que una moneda)",
       "1 olla metálica y 1 cuchara de palo"
     ],
     "pasos": [
       "El adulto estira el plástico sobre el tazón y lo asegura con el caucho.",
-      "Pon los granos de arroz encima del plástico.",
+      "Pon las bolitas de papel encima del plástico.",
       "Acerca la olla al tazón sin tocarlo.",
       "Golpea la olla con la cuchara.",
-      "Mira qué hacen los granos de arroz."
+      "Mira qué hacen las bolitas de papel."
     ],
-    "seguridad": "Granos solo sobre el tambor, no en la boca. Golpear suave para cuidar los oídos.",
+    "seguridad": "Sin globos: solo plástico de cocina. Las bolitas de papel se quedan sobre el tambor, nunca en la boca ni en la nariz. Golpear suave para cuidar los oídos.",
     "adulto": true,
-    "que_pasa": "El golpe en la olla hace vibrar el aire. Esa vibración viaja hasta el plástico del tazón, el plástico tiembla y hace saltar el arroz. El sonido es aire que vibra aunque no lo veamos.",
+    "que_pasa": "El golpe hace vibrar la olla, y la olla hace vibrar el aire. Esa vibración viaja hasta el plástico del tazón, el plástico tiembla y hace saltar las bolitas. El sonido es una vibración que viaja, aunque no la veamos.",
     "concepto": "El sonido viaja por el aire",
     "vocabulario": [
       "vibración",
@@ -921,8 +919,8 @@
       "aire"
     ],
     "preguntas": [
-      "¿Qué hizo el arroz cuando golpeaste la olla?",
-      "Si no tocaste el tazón, ¿qué movió el arroz?",
+      "¿Qué hicieron las bolitas cuando golpeaste la olla?",
+      "Si no tocaste el tazón, ¿qué movió las bolitas?",
       "¿Por qué tiemblan las ventanas con la música de una fiesta?"
     ],
     "reto": "Golpea la olla igual de fuerte pero más lejos del tazón. Solo cambia la distancia.",
@@ -1065,7 +1063,7 @@
     ],
     "seguridad": "Usar espejo de plástico o con bordes cubiertos de cinta.",
     "adulto": false,
-    "que_pasa": "Las superficies brillantes devuelven la luz: eso es reflejar. En el espejo plano te ves igual. En la parte hondita de la cuchara la luz se cruza y te ves al revés. En la parte abombada te ves derecho pero pequeño.",
+    "que_pasa": "Las superficies brillantes devuelven la luz: eso es reflejar. En el espejo plano te ves igual. En la parte hondita de la cuchara, cuando la tienes un poco lejos, la luz se cruza y te ves al revés; si la pegas mucho a tu ojo, te ves derecho y grande. En la parte abombada te ves derecho pero pequeño.",
     "concepto": "Reflejo de la luz",
     "vocabulario": [
       "espejo",
@@ -1574,8 +1572,8 @@
       "Echa el vinagre de una vez.",
       "Mira lo que pasa sin acercar la cara."
     ],
-    "seguridad": "No acercar la cara ni los ojos a la botella. No probar ni el vinagre ni la espuma. Trabajar sobre la bandeja.",
-    "adulto": false,
+    "seguridad": "Un adulto acompaña y sirve el vinagre. No acercar la cara ni los ojos a la botella. No probar ni el vinagre ni la espuma. Trabajar sobre la bandeja.",
+    "adulto": true,
     "que_pasa": "El bicarbonato y el vinagre se transforman al mezclarse y forman un gas nuevo. El gas hace muchas burbujas que suben y salen como lava. Cuando dos sustancias forman algo nuevo, decimos que hubo una reacción química.",
     "concepto": "Reacción que forma gas",
     "vocabulario": [
@@ -1719,23 +1717,23 @@
     "titulo": "El colador separador",
     "gancho": "Para hacer jugo de maracuyá colamos las semillas. ¿Un colador puede separar cosas mezcladas?",
     "dba": "Transición: crea situaciones y propone alternativas de solución a problemas cotidianos a partir de sus conocimientos e imaginación.",
-    "prediccion": "Si mezclas arena con piedritas, ¿cómo podrías separarlas otra vez?",
+    "prediccion": "Si mezclas arena con piedras grandes, ¿cómo podrías separarlas otra vez?",
     "materiales": [
       "1 taza de arena",
-      "piedritas",
+      "5 piedras grandes (más grandes que una tapa de gaseosa), lavadas",
       "1 colador de cocina",
       "2 tazones",
       "1 cuchara"
     ],
     "pasos": [
-      "Mezcla la arena y las piedritas en un tazón.",
+      "Mezcla la arena y las piedras grandes en un tazón.",
       "Piensa cómo separarlas.",
       "Pon el colador sobre el otro tazón.",
       "Echa la mezcla en el colador y muévelo despacio.",
       "Mira qué quedó arriba y qué cayó abajo."
     ],
-    "seguridad": "No soplar la arena. No llevar piedritas a la boca. Lavarse las manos al final.",
-    "adulto": false,
+    "seguridad": "Solo piedras más grandes que una tapa de gaseosa, para que no quepan en la boca ni en la nariz. No soplar la arena. Adulto presente. Lavarse las manos al final.",
+    "adulto": true,
     "que_pasa": "El colador tiene huequitos. La arena es más pequeña que los huecos y pasa. Las piedras son más grandes y se quedan arriba. Así se puede separar una mezcla según el tamaño de sus partes.",
     "concepto": "Separar mezclas con colador",
     "vocabulario": [
@@ -1878,11 +1876,11 @@
     "titulo": "Detectives del suelo",
     "gancho": "Los Farallones tienen tierra negra donde crecen muchas plantas. ¿El suelo de todos los lugares es igual?",
     "dba": "Transición: explora su entorno natural (plantas, animales, agua, suelo, cielo) y describe con sus palabras lo que observa.",
-    "prediccion": "¿La tierra del jardín, la arena y las piedritas se sentirán igual?",
+    "prediccion": "¿La tierra del jardín, la arena y las piedras se sentirán igual?",
     "materiales": [
       "1 puñado de tierra de jardín",
       "1 puñado de arena",
-      "piedritas",
+      "3 piedras grandes (más grandes que una tapa de gaseosa)",
       "3 platos",
       "1 lupa",
       "guantes"
@@ -1894,8 +1892,8 @@
       "Busca restos de hojas o raíces en la tierra.",
       "Dibuja lo que encontraste en cada una."
     ],
-    "seguridad": "Usar guantes y lavarse las manos al final. No llevarse las manos a la boca ni a los ojos. No mirar el sol con la lupa.",
-    "adulto": false,
+    "seguridad": "Usar guantes y lavarse las manos al final. Solo piedras grandes, que no quepan en la boca. No llevarse las manos a la boca ni a los ojos. No mirar el sol con la lupa. Adulto presente.",
+    "adulto": true,
     "que_pasa": "El suelo tiene pedacitos de roca de distintos tamaños: piedras grandes, arena pequeña y tierra muy fina. La tierra del jardín también tiene restos de hojas y raíces que sirven de alimento a las plantas.",
     "concepto": "El suelo",
     "vocabulario": [

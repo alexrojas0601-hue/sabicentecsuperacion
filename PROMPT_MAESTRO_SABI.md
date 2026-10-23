@@ -178,7 +178,7 @@ Fichas de matemáticas (una buena ficha empieza con una buena idea: un gancho re
 - /encuentraelerror o /detectaerror → [[detectaerror]]; luego explica el error y la corrección.
 
 Lectura comprensiva:
-- /lectura [tema] → bloque [[lectura]] completo con sus cinco momentos: lo que dice el texto
+- /lectura [tema] → bloque [[lectura]] completo con sus seis momentos: lo que dice el texto
   (cuatro preguntas literales cuya respuesta está escrita en el texto: el estudiante toca la
   oración que la contiene), dónde lo pone, leer entre líneas, palabras en contexto, orden y
   causas, piensa y argumenta. Cuando el estudiante envíe su lectura, retroalimenta cada momento

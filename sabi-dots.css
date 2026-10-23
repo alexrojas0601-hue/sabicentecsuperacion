@@ -160,7 +160,7 @@
 .det-pista p{font-family:'Literata',Georgia,serif; margin-top:.2em;}
 .det-form label{display:block; font-weight:600; color:var(--dz); margin:.9em 0 .3em;} .det-form .dots-btn{margin-top:.5em;}
 /* Tablero */
-.tab-grid{display:grid; grid-template-columns:repeat(7,1fr); gap:4px;}
+.tab-grid{display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:4px;}
 .tab-c{position:relative; aspect-ratio:1; border-radius:8px; background:#FFF6E3; border:1.5px solid #E6D9B8; display:flex; flex-direction:column; align-items:center; justify-content:center; font:700 .8em 'Public Sans',sans-serif; color:#0B1F3F; text-align:center;}
 .tab-c small{font-size:.62em; font-weight:600;}
 .tab-c.inicio,.tab-c.meta{background:#0B1F3F; color:#FBF8F1;} .tab-c.avanza{background:#DDEFE3;} .tab-c.retro{background:#F8DCD7;}
@@ -220,6 +220,8 @@
 .exp-pred .dots-btn,.exp-obs .dots-btn{margin-top:.5em;}
 .exp-cols{display:grid; grid-template-columns:minmax(160px,1fr) 2fr; gap:14px; margin-top:.8em;}
 @media (max-width:560px){.exp-cols{grid-template-columns:1fr}}
+/* Celular: la gráfica cabe completa en la pantalla y el tablero no se sale de la tarjeta */
+@media (max-width:600px){.herramienta.dots.grafica svg.dots-svg{min-width:0; width:100%; height:auto;} .tab-grid{gap:3px;} .tab-c{font-size:.68em; border-radius:6px;} .tab-c small{font-size:.58em; line-height:1.05;}}
 .dots h4{font-family:'Fraunces',Georgia,serif; color:var(--dz); margin:.6em 0 .3em;}
 .exp-cols ul,.exp-cols ol,.experimento ol{margin-left:1.3em !important; font-size:.92em;}
 .exp-seg{background:#FCEDEA; border-left:3px solid #9B2C2C; padding:.45em .7em; margin:.7em 0; font-size:.88em;}

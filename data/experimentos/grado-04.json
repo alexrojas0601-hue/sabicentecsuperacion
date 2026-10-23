@@ -117,7 +117,7 @@
       "¿Por qué las gotas de afuera no tenían colorante?",
       "¿Por qué se empañan los vidrios de un carro con aire acondicionado en un día húmedo en Cali?"
     ],
-    "reto": "Haz el mismo experimento en un lugar con aire acondicionado y en el patio. Cambia solo la humedad del lugar.",
+    "reto": "Haz el experimento en un salón con aire acondicionado (aire más seco) y en el patio. Cambia solo el lugar y compara cuántas gotas se forman.",
     "minutos": 20
   },
   {
@@ -367,25 +367,25 @@
     "id": "g04-e010",
     "grado": 4,
     "eje": "fuerza-movimiento",
-    "titulo": "La palanca que levanta el libro gordo",
+    "titulo": "La palanca que levanta el borrador",
     "gancho": "En las obras de construcción del barrio los obreros levantan piedras pesadas con una barra larga de metal. ¿Cómo lo logran con tan poca fuerza?",
     "dba": "Comprende los efectos y las ventajas de utilizar máquinas simples (palanca, polea, plano inclinado, rueda y eje) para facilitar tareas cotidianas.",
-    "prediccion": "¿Dónde debes poner el lápiz (el punto de apoyo) para levantar el libro con menos esfuerzo: cerca del libro o lejos de él?",
+    "prediccion": "¿Dónde debes poner el lápiz (el punto de apoyo) para levantar el borrador con menos esfuerzo: cerca del borrador o lejos de él?",
     "materiales": [
       "regla de 30 cm rígida",
       "lápiz hexagonal o marcador grueso",
-      "libro pequeño",
+      "1 borrador grande o una cartuchera pequeña casi vacía",
       "monedas iguales"
     ],
     "pasos": [
       "Pon el lápiz sobre la mesa como punto de apoyo y la regla encima, formando un balancín.",
-      "Coloca el libro en un extremo de la regla.",
-      "Pon el lápiz cerca del libro (marca 5 cm).",
-      "Pon monedas, una por una, en el otro extremo hasta levantar el libro. Cuéntalas.",
+      "Coloca el borrador en un extremo de la regla.",
+      "Pon el lápiz cerca del borrador (marca 5 cm).",
+      "Pon monedas, una por una, en el otro extremo hasta levantar el borrador. Cuéntalas.",
       "Mueve el lápiz al centro (15 cm) y repite.",
-      "Mueve el lápiz cerca de las monedas (25 cm) y repite."
+      "Mueve el lápiz a 20 cm y repite."
     ],
-    "seguridad": "Mantén los dedos lejos del punto de apoyo al levantar. Usa un libro liviano para que la regla no se quiebre.",
+    "seguridad": "Mantén los dedos lejos del punto de apoyo al levantar. Usa un objeto liviano para que la regla no se quiebre.",
     "adulto": false,
     "que_pasa": "La palanca es una máquina simple. Cuanto más cerca está el punto de apoyo del objeto que quieres levantar, más largo es el brazo donde empujas y menos fuerza necesitas. Por eso la barra larga ayuda a los obreros: cambian distancia por fuerza.",
     "concepto": "Palanca y punto de apoyo",
@@ -396,11 +396,11 @@
       "máquina simple"
     ],
     "preguntas": [
-      "¿Con cuántas monedas levantaste el libro en cada posición?",
-      "¿Por qué se necesitaron menos monedas cuando el apoyo estaba cerca del libro?",
+      "¿Con cuántas monedas levantaste el borrador en cada posición?",
+      "¿Por qué se necesitaron menos monedas cuando el apoyo estaba cerca del borrador?",
       "¿Dónde debes agarrar una puerta para abrirla con menos fuerza: cerca de las bisagras o lejos?"
     ],
-    "reto": "Deja el apoyo en el centro y cambia solo el objeto: un libro más pesado. Cuenta cuántas monedas se necesitan.",
+    "reto": "Deja el apoyo en el centro y cambia solo el objeto: pon dos borradores en vez de uno. Cuenta cuántas monedas se necesitan.",
     "minutos": 25
   },
   {
@@ -493,25 +493,25 @@
     "titulo": "¿Dónde frena mejor la bici?",
     "gancho": "En la Ciclovía de los domingos, algunos ciclistas resbalan cuando frenan sobre la pintura de las calles. ¿Por qué no pasa lo mismo sobre el asfalto?",
     "dba": "Comprende que la magnitud y la dirección en que se aplica una fuerza pueden producir cambios en la forma, la velocidad o la dirección del movimiento de los objetos.",
-    "prediccion": "¿Sobre qué superficie se deslizará más lejos el borrador: baldosa, cartón, toalla o lija?",
+    "prediccion": "¿Sobre qué superficie llegará más lejos el carrito: baldosa, papel, toalla o lija?",
     "materiales": [
       "tabla o cartón grueso para rampa",
       "pila de libros",
-      "borrador o caja de fósforos vacía",
+      "carrito de juguete",
       "superficies: baldosa lisa, toalla, lija, papel",
       "regla o metro"
     ],
     "pasos": [
       "Arma una rampa con la tabla sobre 3 libros.",
       "Pon la superficie de prueba al final de la rampa.",
-      "Suelta el borrador desde lo alto de la rampa, sin empujarlo.",
+      "Suelta el carrito desde lo alto de la rampa, sin empujarlo.",
       "Mide la distancia que recorre sobre la superficie hasta detenerse.",
       "Repite 3 veces y saca el promedio.",
       "Cambia la superficie y repite."
     ],
     "seguridad": "Manipula la lija con cuidado. Mantén la rampa estable.",
     "adulto": false,
-    "que_pasa": "Cuando dos superficies se rozan aparece una fuerza contraria al movimiento llamada fricción o rozamiento. Las superficies ásperas, como la lija o la toalla, producen más fricción y detienen antes el borrador. Las lisas producen poca fricción y el objeto se desliza más lejos.",
+    "que_pasa": "Cuando dos superficies se rozan aparece una fuerza contraria al movimiento llamada fricción o rozamiento. Las superficies ásperas, como la lija o la toalla, producen más fricción y detienen antes el carrito. Las lisas producen poca fricción y el carrito llega más lejos.",
     "concepto": "Fricción o rozamiento",
     "vocabulario": [
       "fricción",
@@ -520,7 +520,7 @@
       "liso"
     ],
     "preguntas": [
-      "¿Sobre qué superficie llegó más lejos el borrador?",
+      "¿Sobre qué superficie llegó más lejos el carrito?",
       "¿Por qué la lija lo detuvo más rápido?",
       "¿Por qué los zapatos de fútbol tienen guayos y las llantas tienen labrado?"
     ],
@@ -1040,8 +1040,8 @@
       "Ordena las botellas del sonido más grave al más agudo.",
       "Intenta tocar una canción sencilla."
     ],
-    "seguridad": "Golpea suavemente para no romper las botellas. Si una se agrieta, avísale a un adulto y no la toques.",
-    "adulto": false,
+    "seguridad": "Un adulto acompaña y acomoda las botellas. Golpea suavemente para no romper las botellas. Si una se agrieta, avísale a un adulto y no la toques.",
+    "adulto": true,
     "que_pasa": "Al golpear la botella, el vidrio y el agua vibran juntos. Cuanta más agua tiene, más masa vibra y lo hace más despacio, por eso suena más grave. La botella con menos agua vibra más rápido y suena más aguda. A esta característica del sonido se le llama tono.",
     "concepto": "Tono del sonido (grave y agudo)",
     "vocabulario": [
@@ -1478,7 +1478,7 @@
     "dba": "Comprende que existen distintos tipos de ecosistemas y que sus características físicas permiten que en ellos habiten diferentes seres vivos con adaptaciones particulares.",
     "prediccion": "Si cierras un frasco con tierra, plantas y un poco de agua, ¿las plantas sobrevivirán sin regarlas durante tres semanas?",
     "materiales": [
-      "frasco grande de vidrio o plástico transparente con tapa",
+      "frasco grande de plástico transparente con tapa",
       "piedritas",
       "tierra de jardín o abono",
       "plantas pequeñas como helechos o musgo",
@@ -1493,7 +1493,7 @@
       "Tapa el frasco y ponlo donde reciba luz pero no sol directo.",
       "Observa y dibuja cada 3 días durante 3 semanas, sin abrirlo."
     ],
-    "seguridad": "Usa guantes o lávate las manos después de tocar la tierra. Un adulto ayuda si el frasco es de vidrio.",
+    "seguridad": "Usa guantes o lávate las manos después de tocar la tierra.",
     "adulto": false,
     "que_pasa": "Dentro del frasco el agua se evapora de la tierra, las plantas transpiran, el vapor se condensa en las paredes y vuelve a caer: es un ciclo del agua en miniatura. Las plantas usan la luz para fabricar su alimento. Así, el frasco funciona como un pequeño ecosistema con factores vivos y no vivos.",
     "concepto": "Ecosistema y ciclo del agua",

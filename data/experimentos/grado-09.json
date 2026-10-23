@@ -405,7 +405,7 @@
   ],
   "seguridad": "Sin riesgos especiales; recoge las canicas para evitar caídas.",
   "adulto": false,
-  "que_pasa": "En un choque, la cantidad de movimiento total (masa por velocidad) se conserva si no actúan fuerzas externas importantes. Cuando dos canicas iguales chocan de frente casi elásticamente, la que llega transfiere casi toda su velocidad a la otra y se detiene. Si la que llega es más masiva, sigue avanzando; si es más liviana, rebota.",
+  "que_pasa": "En un choque, la cantidad de movimiento total (masa por velocidad) se conserva si no actúan fuerzas externas importantes. Cuando dos canicas iguales chocan de frente casi elásticamente, la que llega transfiere casi toda su velocidad a la otra y se detiene. Si la que llega es más masiva, sigue avanzando; si es más liviana, rebota. Como las canicas ruedan, la que llega puede seguir avanzando despacio tras el choque por su giro; en el billar la bola se queda quieta solo si se golpea sin efecto.",
   "concepto": "Conservación de la cantidad de movimiento",
   "vocabulario": [
    "cantidad de movimiento",
@@ -785,7 +785,7 @@
    "Repite cada caída cinco veces y calcula promedios.",
    "Registra los datos en una tabla y haz un gráfico de barras."
   ],
-  "seguridad": "Con el docente presente. Los imanes de neodimio son muy fuertes: pueden pellizcar los dedos, astillarse al chocar y dañar celulares, tarjetas y marcapasos. Manténlos lejos de ellos, no dejes que dos imanes se golpeen y nunca te los lleves a la boca: si se tragan dos, pueden perforar el intestino.",
+  "seguridad": "El docente maneja el imán de neodimio: lo entrega para cada caída y lo recoge al terminar. Los imanes de neodimio son muy fuertes: pueden pellizcar los dedos, astillarse al chocar y dañar celulares, tarjetas y marcapasos. Manténlos lejos de ellos, no dejes que dos imanes se golpeen y nunca te los lleves a la boca: si se tragan dos, pueden perforar el intestino.",
   "adulto": true,
   "que_pasa": "El imán en movimiento hace cambiar el campo magnético en las paredes del cobre, que es buen conductor, y allí se inducen corrientes eléctricas en forma de remolino. Esas corrientes generan su propio campo magnético, que se opone al movimiento que las produjo (ley de Lenz), y frena el imán. En el PVC, que no conduce, no hay corrientes y el imán cae libre.",
   "concepto": "Inducción electromagnética y ley de Lenz",
@@ -827,7 +827,7 @@
    "Mueve el imán despacio y luego rápido; anota el voltaje máximo en cada caso.",
    "Registra en una tabla la rapidez del movimiento y el voltaje máximo."
   ],
-  "seguridad": "Con el docente presente. Imanes de neodimio: pueden pellizcar los dedos y astillarse; aléjalos de celulares, tarjetas y marcapasos y nunca te los lleves a la boca. Este montaje no necesita pilas ni red eléctrica.",
+  "seguridad": "El docente maneja el imán de neodimio: lo entrega para el ensayo y lo recoge al terminar. Imanes de neodimio: pueden pellizcar los dedos y astillarse; aléjalos de celulares, tarjetas y marcapasos y nunca te los lleves a la boca. Este montaje no necesita pilas ni red eléctrica.",
   "adulto": true,
   "que_pasa": "Cuando el campo magnético que atraviesa una bobina cambia, se induce un voltaje en ella (ley de Faraday). Si el imán está quieto no hay cambio y el voltaje es cero; al entrar y salir el voltaje cambia de signo. Cuanto más rápido cambie el campo y más vueltas tenga la bobina, mayor es el voltaje. Los generadores de las hidroeléctricas transforman la energía del agua en movimiento de rotación y este en energía eléctrica.",
   "concepto": "Ley de Faraday y generadores",
@@ -1736,7 +1736,7 @@
   "dba": "Comprende que la acidez y la basicidad son propiedades químicas de las sustancias, importantes en procesos biológicos y en usos cotidianos e industriales; relaciona cantidades de reactivos y productos (conservación de la masa y estequiometría sencilla) y explica los factores que afectan la velocidad de las reacciones.",
   "prediccion": "Si metes un clavo de hierro limpio en vinagre con sal donde se limpió cobre, ¿qué le pasará al clavo?",
   "materiales": [
-   "trozos de alambre de cobre oscurecido (cable viejo pelado) o 15 monedas de cobre",
+   "trozos de alambre de cobre oscurecido (cable viejo pelado por el docente; las monedas colombianas actuales no son de cobre)",
    "vinagre",
    "sal",
    "vaso de vidrio",
@@ -1820,7 +1820,7 @@
   "eje": "quimica",
   "titulo": "Cromatografía: los colores escondidos de un marcador",
   "gancho": "Un marcador negro parece de un solo color. ¿Estará hecho de una mezcla de tintas? Así investigan también los peritos documentos falsificados.",
-  "dba": "Comprende que la acidez y la basicidad son propiedades químicas de las sustancias, importantes en procesos biológicos y en usos cotidianos e industriales; relaciona cantidades de reactivos y productos (conservación de la masa y estequiometría sencilla) y explica los factores que afectan la velocidad de las reacciones.",
+  "dba": "Analiza la relación entre soluto y solvente y los factores que afectan la formación de soluciones, y explica métodos de separación de mezclas según la solubilidad y la afinidad de sus componentes. Pendiente de verificar la redacción oficial del MEN.",
   "prediccion": "Si pones un punto de marcador negro en papel de filtro y dejas subir agua, ¿qué colores aparecerán?",
   "materiales": [
    "filtros de café blancos cortados en tiras de 2 × 10 cm",
@@ -1840,7 +1840,7 @@
   ],
   "seguridad": "Usa solo marcadores escolares. El marcador permanente se prueba con agua; si se quiere usar alcohol como solvente, lo maneja el docente lejos de llamas.",
   "adulto": false,
-  "que_pasa": "La cromatografía separa los componentes de una mezcla según su afinidad por el solvente que sube (fase móvil) y por el papel (fase fija). Los pigmentos más solubles en agua y menos atraídos por el papel avanzan más. Cada pigmento tiene un Rf característico en las mismas condiciones. El marcador permanente casi no se mueve con agua porque sus pigmentos no son solubles en ella.",
+  "que_pasa": "La cromatografía separa los componentes de una mezcla según su afinidad por el solvente que sube (fase móvil) y por el papel (fase estacionaria). Los pigmentos más solubles en agua y menos atraídos por el papel avanzan más. Cada pigmento tiene un Rf característico en las mismas condiciones. El marcador permanente casi no se mueve con agua porque sus pigmentos no son solubles en ella.",
   "concepto": "Separación de mezclas por cromatografía",
   "vocabulario": [
    "cromatografía",
@@ -2078,7 +2078,7 @@
   "dba": "Usa modelos para explicar la estructura del sistema solar, la relación entre la radiación solar y el clima, y procesos geológicos e hídricos de la Tierra, valorando su importancia para el manejo de recursos como el agua y el suelo.",
   "prediccion": "Si agitas un frasco con grava, arena, tierra y agua, ¿en qué orden se depositarán las partículas?",
   "materiales": [
-   "frasco de vidrio alto con tapa",
+   "frasco alto transparente con tapa (mejor de plástico)",
    "grava pequeña",
    "arena",
    "tierra de jardín",
@@ -2095,7 +2095,7 @@
    "Ilumina el agua con la linterna para comparar la turbidez en cada momento (0 a 4).",
    "Grafica turbidez contra tiempo."
   ],
-  "seguridad": "Sujeta bien el frasco de vidrio al agitar; trabaja sobre la mesa.",
+  "seguridad": "Prefiere un frasco de plástico; si es de vidrio, agítalo sujetándolo con las dos manos sobre la mesa y avisa al docente si se rompe.",
   "adulto": false,
   "que_pasa": "Las partículas más grandes y densas, como la grava, se depositan primero; la arena después, y las partículas finas de arcilla y limo tardan horas o días porque la resistencia del agua frena mucho su caída. Así se forman los estratos en el fondo de ríos y lagos. Las plantas potabilizadoras usan tanques de sedimentación y sustancias que agrupan las partículas finas para que se hundan más rápido; si el río trae demasiado lodo, el proceso no alcanza.",
   "concepto": "Sedimentación y estratificación",
