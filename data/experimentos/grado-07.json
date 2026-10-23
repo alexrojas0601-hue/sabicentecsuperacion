@@ -681,7 +681,7 @@
    "Saca un poco de aire y repite.",
    "Saca más aire y repite.",
    "Calcula el porcentaje de altura recuperada en cada caso.",
-   "Toca el balón después de 20 rebotes y siente si está tibio."
+   "Escucha el sonido de cada rebote y observa (mejor en cámara lenta) cuánto se aplasta el balón con cada presión."
   ],
   "seguridad": "Infla con inflador; no sobrepases la presión indicada.",
   "adulto": false,
@@ -695,7 +695,7 @@
   ],
   "preguntas": [
    "¿Qué porcentaje recuperó con cada presión?",
-   "¿Por qué el balón se calienta un poco tras muchos rebotes?",
+   "¿Por qué el balón desinflado se aplasta más y suena más «sordo» al rebotar?",
    "¿Por qué los ciclistas revisan la presión de las llantas?"
   ],
   "reto": "Usa la misma presión y cambia solo la altura de caída (0,5; 1; 1,5 m).",

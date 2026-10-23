@@ -130,7 +130,7 @@
   "id": "g06-e004",
   "grado": 6,
   "eje": "materia-cambios",
-  "titulo": "¿Por qué el colorante se riega más rápido en el agua del tinto?",
+  "titulo": "¿Por qué el colorante se riega más rápido en el agua tibia?",
   "gancho": "Cuando echas panela en el tinto caliente se disuelve rapidísimo, pero en agua fría tarda más. ¿Qué hacen las partículas?",
   "dba": "Comprende cómo la temperatura y la presión influyen en propiedades de las sustancias como la densidad, la solubilidad y los puntos de fusión y ebullición, y explica los estados de la materia con el modelo de partículas.",
   "prediccion": "Si dejas caer una gota de colorante en agua fría y otra en agua tibia, ¿en cuál se esparcirá más rápido?",
@@ -1519,7 +1519,7 @@
    "¿La harina es homogénea o heterogénea después de 5 minutos?",
    "¿El aire que respiras es una mezcla homogénea o heterogénea?"
   ],
-  "reto": "Cambia solo la cantidad de sal (1, 3, 6 cucharaditas) y observa cuándo deja de disolverse.",
+  "reto": "Cambia solo la cantidad de sal: agrega 1 cucharadita a la vez a 100 mL de agua, revolviendo 30 segundos cada vez, hasta que queden granos sin disolver en el fondo, y cuenta cuántas se disolvieron.",
   "minutos": 20
  },
  {

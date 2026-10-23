@@ -673,7 +673,7 @@
    "Si el agua pasa de un tubo de 4 cm² a uno de 1 cm², ¿cuántas veces aumenta su velocidad? (tipo Saber 11)",
    "¿Por qué las aguas del río Cali son más peligrosas en los tramos estrechos tras un aguacero?"
   ],
-  "reto": "Cambia solo el diámetro de la boquilla (3 tamaños) y grafica velocidad de salida contra 1/área.",
+  "reto": "Cambia solo el diámetro de la boquilla (3 tamaños), mide el caudal con cada una y compara la velocidad calculada con Q/A2 con la obtenida por el alcance del chorro.",
   "minutos": 40
  },
  {
@@ -1582,7 +1582,7 @@
   ],
   "pasos": [
    "Lija los clavos de hierro para limpiarlos.",
-   "Prepara: clavo desnudo; clavo pintado con esmalte; clavo envuelto en aluminio; clavo atado a una arandela de zinc; clavo galvanizado; clavo desnudo en agua dulce (control).",
+   "Prepara: clavo desnudo; clavo pintado con esmalte; clavo envuelto en aluminio; clavo en contacto directo con una arandela galvanizada (enróscala o amárrala con alambre, metal con metal); clavo galvanizado; clavo desnudo en agua dulce (control).",
    "Sumerge cada uno en su frasco con agua salada (el control en agua dulce).",
    "Observa con lupa cada 2 días durante 10 días.",
    "Califica la corrosión en una escala de 0 a 4 y toma fotos.",
@@ -1789,7 +1789,7 @@
   "prediccion": "Si diluyes vinagre 10 veces, ¿su pH subirá en 1 unidad, en 10 unidades o no cambiará?",
   "materiales": [
    "vinagre",
-   "agua",
+   "agua destilada (de droguería) para todas las diluciones",
    "indicador de repollo morado (o papel indicador universal)",
    "6 vasos transparentes",
    "jeringa de 10 mL",
@@ -1797,7 +1797,7 @@
   ],
   "pasos": [
    "Pon 10 mL de vinagre en el vaso 1.",
-   "Toma 1 mL del vaso 1 y complétalo con 9 mL de agua en el vaso 2 (dilución 1:10).",
+   "Toma 1 mL del vaso 1 y complétalo con 9 mL de agua destilada en el vaso 2 (dilución 1:10).",
    "Repite la dilución sucesiva hasta el vaso 6.",
    "Agrega 10 mL de indicador (o mide con papel universal) en cada vaso.",
    "Asigna el pH aproximado a cada vaso con la escala de colores.",

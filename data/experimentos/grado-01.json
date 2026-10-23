@@ -64,7 +64,7 @@
     ],
     "seguridad": "No probar la sal ni el agua. No sostener el hielo con sal en la mano por mucho tiempo: se pone más frío y puede irritar la piel.",
     "adulto": false,
-    "que_pasa": "La sal se mezcla con el agua que hay en la superficie del hielo y hace que esa agua necesite más frío para volver a congelarse. Por eso el hielo con sal se derrite más rápido aunque esté igual de frío.",
+    "que_pasa": "La sal se mezcla con el agua que hay en la superficie del hielo y hace que esa agua necesite más frío para volver a congelarse. Por eso el hielo con sal se derrite más rápido, y hasta se pone más frío mientras se derrite.",
     "concepto": "La sal ayuda a derretir el hielo",
     "vocabulario": [
       "sal",
@@ -609,7 +609,7 @@
     "eje": "fuerza-movimiento",
     "titulo": "El globo que levanta papelitos",
     "gancho": "Cuando nos peinamos en un día seco, a veces el pelo se para y se pega a la peinilla. ¿Qué fuerza invisible es esa?",
-    "dba": "Estándar de 1° a 3°: verifica las fuerzas a distancia generadas por imanes y otros objetos sobre diferentes materiales.",
+    "dba": "Estándar de 1.° a 3.°: verifica las fuerzas a distancia generadas por imanes sobre diferentes objetos (aquí se amplía a la electricidad estática).",
     "prediccion": "Si frotas un globo en tu pelo, ¿podrá levantar papelitos sin tocarlos?",
     "materiales": [
       "1 globo inflado",
@@ -1444,7 +1444,7 @@
     "eje": "seres-vivos-cuerpo",
     "titulo": "El pan de las manos sucias",
     "gancho": "Antes de comer el pandebono del recreo debemos lavarnos las manos. ¿De verdad hay microbios que no vemos?",
-    "dba": "Comprende que su cuerpo experimenta constantes cambios a lo largo del tiempo y reconoce que tiene características similares y diferentes a las de sus padres y compañeros.",
+    "dba": "Estándar de 1.° a 3.°: identifica necesidades de cuidado de su cuerpo y el de otras personas.",
     "prediccion": "Si tocas un pan con las manos sucias y otro con las manos lavadas, ¿cuál se dañará primero?",
     "materiales": [
       "2 tajadas de pan sin conservantes",

@@ -66,7 +66,7 @@
   ],
   "seguridad": "Usa solo jeringas sin aguja. Sostén los libros para que no caigan sobre las manos o los pies.",
   "adulto": false,
-  "que_pasa": "Al aumentar la fuerza sobre el émbolo aumenta la presión sobre el aire encerrado, y sus partículas se acercan: el volumen disminuye. A temperatura constante, presión y volumen de un gas son inversamente proporcionales (ley de Boyle): cuando una sube, la otra baja. Por la fricción del émbolo y la presión del aire de afuera, los datos no serán perfectos, pero la tendencia sí se observa.",
+  "que_pasa": "Al aumentar la fuerza sobre el émbolo aumenta la presión sobre el aire encerrado, y sus partículas se acercan: el volumen disminuye. A temperatura constante, la presión y el volumen de un gas son inversamente proporcionales (ley de Boyle). Ojo: el aire encerrado soporta la presión de la atmósfera más la de los libros; por eso duplicar los libros no reduce el volumen a la mitad. La fricción del émbolo hace que los datos no sean perfectos, pero la tendencia sí se observa.",
   "concepto": "Ley de Boyle (presión y volumen)",
   "vocabulario": [
    "presión",
@@ -1521,7 +1521,7 @@
   "eje": "quimica",
   "titulo": "Escala de pH con repollo morado",
   "gancho": "La salsa de limón del ceviche y el bicarbonato que algunos toman para la acidez son opuestos químicos. ¿Cómo saberlo sin probarlos?",
-  "dba": "Comprende que en una reacción química los átomos de los reactivos se recombinan para formar productos nuevos, que la masa se conserva y que factores como la temperatura, la superficie de contacto y la concentración modifican la rapidez de la reacción.",
+  "dba": "Clasifica sustancias de uso cotidiano como ácidas, básicas o neutras usando indicadores, y reconoce el cambio de color como evidencia de una interacción química (acercamiento; ácidos y bases se formalizan en 9.°). Pendiente de verificar con el docente.",
   "prediccion": "¿Qué color tomará el jugo de repollo morado con limón, con vinagre, con agua y con bicarbonato?",
   "materiales": [
    "1/4 de repollo morado",
@@ -1929,7 +1929,7 @@
   ],
   "seguridad": "No mires directamente la lámpara encendida por mucho tiempo. Cuida los cables y mantenlos fuera del paso.",
   "adulto": false,
-  "que_pasa": "La Luna no produce luz: siempre tiene una mitad iluminada por el Sol. Mientras gira alrededor de la Tierra en unos 29,5 días, vemos desde aquí distintas porciones de esa mitad iluminada; esas son las fases. Las fases no se deben a la sombra de la Tierra; eso solo ocurre en los eclipses lunares.",
+  "que_pasa": "La Luna no produce luz: siempre tiene una mitad iluminada por el Sol. Mientras gira alrededor de la Tierra vemos desde aquí distintas porciones de esa mitad iluminada; esas son las fases, y el ciclo completo dura unos 29,5 días. Las fases no se deben a la sombra de la Tierra; eso solo ocurre en los eclipses lunares.",
   "concepto": "Fases de la Luna",
   "vocabulario": [
    "fase lunar",
@@ -1942,7 +1942,7 @@
    "¿Por qué las fases no son causadas por la sombra de la Tierra?",
    "¿Por qué la Luna llena sale al anochecer y se oculta al amanecer?"
   ],
-  "reto": "Cambia solo la posición de la lámpara (más alta que tu cabeza) y observa si cambian las fases o si aparecen eclipses.",
+  "reto": "Mantén la lámpara fija y cambia solo la altura de la bola: ponla exactamente a la altura de tu cabeza y observa en qué posiciones aparecen eclipses de Luna y de Sol.",
   "minutos": 30
  },
  {

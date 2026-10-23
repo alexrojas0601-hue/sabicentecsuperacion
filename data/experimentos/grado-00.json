@@ -497,7 +497,7 @@
       "1 imán grande (de barra o de herradura, no imanes pequeños)",
       "clips metálicos",
       "1 cuchara de metal",
-      "1 tapa de gaseosa",
+      "1 tapa metálica grande de frasco de mermelada",
       "1 lápiz",
       "1 borrador",
       "1 bloque de plástico",
@@ -890,27 +890,27 @@
     "id": "g00-e023",
     "grado": 0,
     "eje": "luz-sonido-energia",
-    "titulo": "El arroz que baila",
+    "titulo": "Las bolitas que bailan",
     "gancho": "Cuando pasa un camión grande por la calle, tiemblan las ventanas. ¿El sonido puede mover cosas?",
     "dba": "Transición: usa diferentes herramientas y objetos con variadas posibilidades y observa qué ocurre cuando actúa sobre ellos.",
-    "prediccion": "Si golpeas una olla cerca de un tambor con arroz encima, ¿el arroz se moverá?",
+    "prediccion": "Si golpeas una olla cerca de un tambor con bolitas de papel encima, ¿las bolitas se moverán?",
     "materiales": [
       "1 tazón",
       "plástico de cocina (vinipel)",
       "1 caucho",
-      "10 granos de arroz crudo",
+      "10 bolitas de papel de seda del tamaño de una uva (más grandes que una moneda)",
       "1 olla metálica y 1 cuchara de palo"
     ],
     "pasos": [
       "El adulto estira el plástico sobre el tazón y lo asegura con el caucho.",
-      "Pon los granos de arroz encima del plástico.",
+      "Pon las bolitas de papel encima del plástico.",
       "Acerca la olla al tazón sin tocarlo.",
       "Golpea la olla con la cuchara.",
-      "Mira qué hacen los granos de arroz."
+      "Mira qué hacen las bolitas de papel."
     ],
-    "seguridad": "Sin globos: solo plástico de cocina. El adulto pone y retira los granos de arroz; los granos se quedan sobre el tambor, nunca en la boca ni en la nariz. Golpear suave para cuidar los oídos.",
+    "seguridad": "Sin globos: solo plástico de cocina. Las bolitas de papel se quedan sobre el tambor, nunca en la boca ni en la nariz. Golpear suave para cuidar los oídos.",
     "adulto": true,
-    "que_pasa": "El golpe en la olla hace vibrar el aire. Esa vibración viaja hasta el plástico del tazón, el plástico tiembla y hace saltar el arroz. El sonido es aire que vibra aunque no lo veamos.",
+    "que_pasa": "El golpe hace vibrar la olla, y la olla hace vibrar el aire. Esa vibración viaja hasta el plástico del tazón, el plástico tiembla y hace saltar las bolitas. El sonido es una vibración que viaja, aunque no la veamos.",
     "concepto": "El sonido viaja por el aire",
     "vocabulario": [
       "vibración",
@@ -919,8 +919,8 @@
       "aire"
     ],
     "preguntas": [
-      "¿Qué hizo el arroz cuando golpeaste la olla?",
-      "Si no tocaste el tazón, ¿qué movió el arroz?",
+      "¿Qué hicieron las bolitas cuando golpeaste la olla?",
+      "Si no tocaste el tazón, ¿qué movió las bolitas?",
       "¿Por qué tiemblan las ventanas con la música de una fiesta?"
     ],
     "reto": "Golpea la olla igual de fuerte pero más lejos del tazón. Solo cambia la distancia.",

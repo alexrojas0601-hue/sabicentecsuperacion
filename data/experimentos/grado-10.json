@@ -1922,7 +1922,7 @@
    "Conecta a sus terminales, una a la vez, las resistencias de 4,7 kΩ, 1 kΩ, 470 Ω y 100 Ω, y mide el voltaje V en cada caso.",
    "Calcula la corriente en cada caso con I = V / R.",
    "Grafica V contra I: la recta V = ε − r·I da la fem (corte con el eje V) y la resistencia interna r (pendiente con signo negativo).",
-   "Arma 4 celdas en serie y luego 4 en paralelo; mide la fem y el voltaje con la resistencia de 1 kΩ en cada caso.",
+   "Arma 4 celdas en serie y luego 4 en paralelo; mide la fem y el voltaje con la resistencia de 1 kΩ en cada caso, y conecta el LED rojo en serie con la resistencia de 100 Ω a las 4 celdas en serie (pata larga hacia el cobre).",
    "Calcula la potencia entregada P = V·I y explica con tus datos por qué el LED brilla tan poco."
   ],
   "seguridad": "Usa solo limones, metales y resistencias de la lista; nunca baterías de carro ni enchufes (110 V). No comas los limones usados: quedan con metales disueltos. Lávate las manos al terminar.",

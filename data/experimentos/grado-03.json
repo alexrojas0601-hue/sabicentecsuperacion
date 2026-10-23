@@ -657,7 +657,7 @@
   "eje": "fuerza-movimiento",
   "titulo": "Globo que atrae papelitos",
   "gancho": "A veces la ropa saca chispitas y se pega cuando la sacamos de la secadora. ¿Qué fuerza invisible es esa?",
-  "dba": "Verifica las fuerzas a distancia que producen los imanes y la electricidad estática, e identifica máquinas simples y fuerzas como el rozamiento en objetos y situaciones cotidianas (estándares de 1.° a 3.°).",
+  "dba": "Estándar de 1.° a 3.°: verifica las fuerzas a distancia generadas por imanes sobre diferentes objetos (aquí se amplía a la electricidad estática).",
   "prediccion": "Si frotas un globo en tu cabello, ¿podrá levantar papelitos sin tocarlos?",
   "materiales": [
    "globo inflado",
@@ -1495,7 +1495,7 @@
   "eje": "quimica",
   "titulo": "Escala de colores con repollo morado",
   "gancho": "En la cocina hay sustancias ácidas y otras que no. ¿Podemos ordenarlas sin probarlas?",
-  "dba": "Describe y compara mezclas de materiales cotidianos, propone formas sencillas de separarlas y distingue cambios que se pueden devolver de los que no (acercamiento a las mezclas y a los cambios químicos que se profundizan en 4.° y 5.°).",
+  "dba": "Sin DBA específico en 3.°: acercamiento a las propiedades de las sustancias (ácidos, bases e indicadores) que se profundiza en grados superiores. Pendiente de verificar con el docente.",
   "prediccion": "Ordena antes: ¿cuáles sustancias crees que pondrán rosado el jugo y cuáles verde?",
   "materiales": [
    "jugo de repollo morado (lo prepara el adulto licuando repollo con agua y colando)",

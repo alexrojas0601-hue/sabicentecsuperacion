@@ -405,7 +405,7 @@
   ],
   "seguridad": "Sin riesgos especiales; recoge las canicas para evitar caídas.",
   "adulto": false,
-  "que_pasa": "En un choque, la cantidad de movimiento total (masa por velocidad) se conserva si no actúan fuerzas externas importantes. Cuando dos canicas iguales chocan de frente casi elásticamente, la que llega transfiere casi toda su velocidad a la otra y se detiene. Si la que llega es más masiva, sigue avanzando; si es más liviana, rebota.",
+  "que_pasa": "En un choque, la cantidad de movimiento total (masa por velocidad) se conserva si no actúan fuerzas externas importantes. Cuando dos canicas iguales chocan de frente casi elásticamente, la que llega transfiere casi toda su velocidad a la otra y se detiene. Si la que llega es más masiva, sigue avanzando; si es más liviana, rebota. Como las canicas ruedan, la que llega puede seguir avanzando despacio tras el choque por su giro; en el billar la bola se queda quieta solo si se golpea sin efecto.",
   "concepto": "Conservación de la cantidad de movimiento",
   "vocabulario": [
    "cantidad de movimiento",
@@ -1820,7 +1820,7 @@
   "eje": "quimica",
   "titulo": "Cromatografía: los colores escondidos de un marcador",
   "gancho": "Un marcador negro parece de un solo color. ¿Estará hecho de una mezcla de tintas? Así investigan también los peritos documentos falsificados.",
-  "dba": "Comprende que la acidez y la basicidad son propiedades químicas de las sustancias, importantes en procesos biológicos y en usos cotidianos e industriales; relaciona cantidades de reactivos y productos (conservación de la masa y estequiometría sencilla) y explica los factores que afectan la velocidad de las reacciones.",
+  "dba": "Analiza la relación entre soluto y solvente y los factores que afectan la formación de soluciones, y explica métodos de separación de mezclas según la solubilidad y la afinidad de sus componentes. Pendiente de verificar la redacción oficial del MEN.",
   "prediccion": "Si pones un punto de marcador negro en papel de filtro y dejas subir agua, ¿qué colores aparecerán?",
   "materiales": [
    "filtros de café blancos cortados en tiras de 2 × 10 cm",
@@ -1840,7 +1840,7 @@
   ],
   "seguridad": "Usa solo marcadores escolares. El marcador permanente se prueba con agua; si se quiere usar alcohol como solvente, lo maneja el docente lejos de llamas.",
   "adulto": false,
-  "que_pasa": "La cromatografía separa los componentes de una mezcla según su afinidad por el solvente que sube (fase móvil) y por el papel (fase fija). Los pigmentos más solubles en agua y menos atraídos por el papel avanzan más. Cada pigmento tiene un Rf característico en las mismas condiciones. El marcador permanente casi no se mueve con agua porque sus pigmentos no son solubles en ella.",
+  "que_pasa": "La cromatografía separa los componentes de una mezcla según su afinidad por el solvente que sube (fase móvil) y por el papel (fase estacionaria). Los pigmentos más solubles en agua y menos atraídos por el papel avanzan más. Cada pigmento tiene un Rf característico en las mismas condiciones. El marcador permanente casi no se mueve con agua porque sus pigmentos no son solubles en ella.",
   "concepto": "Separación de mezclas por cromatografía",
   "vocabulario": [
    "cromatografía",

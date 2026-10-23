@@ -367,25 +367,25 @@
     "id": "g04-e010",
     "grado": 4,
     "eje": "fuerza-movimiento",
-    "titulo": "La palanca que levanta el libro gordo",
+    "titulo": "La palanca que levanta el borrador",
     "gancho": "En las obras de construcción del barrio los obreros levantan piedras pesadas con una barra larga de metal. ¿Cómo lo logran con tan poca fuerza?",
     "dba": "Comprende los efectos y las ventajas de utilizar máquinas simples (palanca, polea, plano inclinado, rueda y eje) para facilitar tareas cotidianas.",
-    "prediccion": "¿Dónde debes poner el lápiz (el punto de apoyo) para levantar el libro con menos esfuerzo: cerca del libro o lejos de él?",
+    "prediccion": "¿Dónde debes poner el lápiz (el punto de apoyo) para levantar el borrador con menos esfuerzo: cerca del borrador o lejos de él?",
     "materiales": [
       "regla de 30 cm rígida",
       "lápiz hexagonal o marcador grueso",
-      "libro pequeño",
+      "1 borrador grande o una cartuchera pequeña casi vacía",
       "monedas iguales"
     ],
     "pasos": [
       "Pon el lápiz sobre la mesa como punto de apoyo y la regla encima, formando un balancín.",
-      "Coloca el libro en un extremo de la regla.",
-      "Pon el lápiz cerca del libro (marca 5 cm).",
-      "Pon monedas, una por una, en el otro extremo hasta levantar el libro. Cuéntalas.",
+      "Coloca el borrador en un extremo de la regla.",
+      "Pon el lápiz cerca del borrador (marca 5 cm).",
+      "Pon monedas, una por una, en el otro extremo hasta levantar el borrador. Cuéntalas.",
       "Mueve el lápiz al centro (15 cm) y repite.",
-      "Mueve el lápiz cerca de las monedas (25 cm) y repite."
+      "Mueve el lápiz a 20 cm y repite."
     ],
-    "seguridad": "Mantén los dedos lejos del punto de apoyo al levantar. Usa un libro liviano para que la regla no se quiebre.",
+    "seguridad": "Mantén los dedos lejos del punto de apoyo al levantar. Usa un objeto liviano para que la regla no se quiebre.",
     "adulto": false,
     "que_pasa": "La palanca es una máquina simple. Cuanto más cerca está el punto de apoyo del objeto que quieres levantar, más largo es el brazo donde empujas y menos fuerza necesitas. Por eso la barra larga ayuda a los obreros: cambian distancia por fuerza.",
     "concepto": "Palanca y punto de apoyo",
@@ -396,11 +396,11 @@
       "máquina simple"
     ],
     "preguntas": [
-      "¿Con cuántas monedas levantaste el libro en cada posición?",
-      "¿Por qué se necesitaron menos monedas cuando el apoyo estaba cerca del libro?",
+      "¿Con cuántas monedas levantaste el borrador en cada posición?",
+      "¿Por qué se necesitaron menos monedas cuando el apoyo estaba cerca del borrador?",
       "¿Dónde debes agarrar una puerta para abrirla con menos fuerza: cerca de las bisagras o lejos?"
     ],
-    "reto": "Deja el apoyo en el centro y cambia solo el objeto: un libro más pesado. Cuenta cuántas monedas se necesitan.",
+    "reto": "Deja el apoyo en el centro y cambia solo el objeto: pon dos borradores en vez de uno. Cuenta cuántas monedas se necesitan.",
     "minutos": 25
   },
   {
@@ -1478,7 +1478,7 @@
     "dba": "Comprende que existen distintos tipos de ecosistemas y que sus características físicas permiten que en ellos habiten diferentes seres vivos con adaptaciones particulares.",
     "prediccion": "Si cierras un frasco con tierra, plantas y un poco de agua, ¿las plantas sobrevivirán sin regarlas durante tres semanas?",
     "materiales": [
-      "frasco grande de vidrio o plástico transparente con tapa",
+      "frasco grande de plástico transparente con tapa",
       "piedritas",
       "tierra de jardín o abono",
       "plantas pequeñas como helechos o musgo",
@@ -1493,7 +1493,7 @@
       "Tapa el frasco y ponlo donde reciba luz pero no sol directo.",
       "Observa y dibuja cada 3 días durante 3 semanas, sin abrirlo."
     ],
-    "seguridad": "Usa guantes o lávate las manos después de tocar la tierra. Un adulto ayuda si el frasco es de vidrio.",
+    "seguridad": "Usa guantes o lávate las manos después de tocar la tierra.",
     "adulto": false,
     "que_pasa": "Dentro del frasco el agua se evapora de la tierra, las plantas transpiran, el vapor se condensa en las paredes y vuelve a caer: es un ciclo del agua en miniatura. Las plantas usan la luz para fabricar su alimento. Así, el frasco funciona como un pequeño ecosistema con factores vivos y no vivos.",
     "concepto": "Ecosistema y ciclo del agua",
