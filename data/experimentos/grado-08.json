@@ -861,7 +861,7 @@
    "Mide el voltaje con 2, 3 y 4 limones y registra en una tabla.",
    "Conecta el LED (pata larga al cobre libre) y observa en una habitación oscura."
   ],
-  "seguridad": "No comas los limones usados: quedan con metales disueltos. Lávate las manos al terminar.",
+  "seguridad": "No comas los limones usados: quedan con metales disueltos. Lávate las manos al terminar. Con limones el LED no necesita resistencia porque la corriente es muy pequeña; si lo conectas a pilas comerciales, ponle siempre su resistencia.",
   "adulto": false,
   "que_pasa": "La energía no sale del limón sino de una reacción química: el zinc se oxida y cede electrones, que viajan por el cable hacia el cobre; allí los iones de hidrógeno del ácido los toman y forman burbujitas de hidrógeno. El jugo actúa como electrolito, permitiendo que los iones se muevan y cierren el circuito. Cada celda da cerca de 0,9 V; en serie los voltajes se suman, aunque la corriente sigue siendo muy pequeña y el LED brilla débil.",
   "concepto": "Pila electroquímica",
@@ -1267,7 +1267,7 @@
   "prediccion": "Si filtras una mezcla de agua, arena, sal y colorante por papel de café, ¿qué pasará y qué quedará en el filtro?",
   "materiales": [
    "filtro de papel para café",
-   "embudo o botella cortada",
+   "embudo plástico (o botella cortada por un adulto antes de la clase)",
    "2 vasos transparentes",
    "arena fina",
    "sal",
@@ -2037,7 +2037,7 @@
   "dba": "Relaciona fenómenos de la Tierra y del sistema Sol-Tierra-Luna con modelos científicos, y explica cómo la acción humana afecta el suelo, el clima y los ecosistemas.",
   "prediccion": "Al echar la misma cantidad de agua, ¿de qué bandeja saldrá el agua más turbia: tierra desnuda, con hojarasca o con pasto?",
   "materiales": [
-   "3 bandejas o cajas de leche cortadas a lo largo",
+   "3 bandejas plásticas (o cajas de leche cortadas a lo largo por un adulto antes de la clase)",
    "tierra",
    "hojas secas",
    "trozo de pasto con raíces",
@@ -2054,7 +2054,7 @@
    "Mide el volumen de agua recogido y compara su turbidez (0 = clara, 4 = muy turbia).",
    "Deja reposar los vasos 1 hora y mide la altura del sedimento."
   ],
-  "seguridad": "Sin riesgos especiales; lávate las manos después de manipular tierra.",
+  "seguridad": "Si usas cajas de leche, las corta un adulto antes de la clase. Lávate las manos después de manipular tierra.",
   "adulto": false,
   "que_pasa": "La lluvia que golpea el suelo desnudo suelta partículas que el agua arrastra ladera abajo: es la erosión. Las hojas amortiguan el golpe de las gotas y las raíces sujetan el suelo y ayudan a que el agua se infiltre. Por eso los bosques de los Farallones protegen las cuencas de los ríos de Cali y reducen el riesgo de deslizamientos.",
   "concepto": "Erosión y cobertura vegetal",

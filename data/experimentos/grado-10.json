@@ -1927,7 +1927,7 @@
   ],
   "seguridad": "Usa solo limones, metales y resistencias de la lista; nunca baterías de carro ni enchufes (110 V). No comas los limones usados: quedan con metales disueltos. Lávate las manos al terminar.",
   "adulto": false,
-  "que_pasa": "En cada celda el cinc se oxida (Zn → Zn²⁺ + 2e⁻) y en el cobre se reducen iones H⁺ a hidrógeno, con una fem de casi 0,9 V. Pero el jugo y los electrodos tienen una resistencia interna r grande, del orden de miles de ohmios, así que al pedir corriente el voltaje en los terminales cae: V = ε − r·I. En serie se suman las fem y también las resistencias internas; en paralelo la fem es la misma, pero la resistencia interna total disminuye y se puede entregar más corriente. La potencia útil es de microvatios: alcanza para un LED tenue, no para un celular.",
+  "que_pasa": "En cada celda el cinc se oxida (Zn → Zn²⁺ + 2e⁻) y en el cobre se reducen iones H⁺ a hidrógeno, con una fem de casi 0,9 V. Pero el jugo y los electrodos tienen una resistencia interna r grande, de cientos a miles de ohmios, así que al pedir corriente el voltaje en los terminales cae: V = ε − r·I. En serie se suman las fem y también las resistencias internas; en paralelo la fem es la misma, pero la resistencia interna total disminuye y se puede entregar más corriente. La potencia útil es menor que un milivatio: alcanza para un LED tenue, no para un celular.",
   "concepto": "Fuerza electromotriz y resistencia interna",
   "vocabulario": [
    "fuerza electromotriz",

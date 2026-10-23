@@ -849,7 +849,7 @@
     "materiales": [
       "1 portapilas para 2 pilas AA",
       "2 pilas AA de 1,5 V",
-      "1 LED de 3 V con patitas o bombillo de linterna con portabombillo",
+      "1 LED con su resistencia de 100 Ω ya unida a una patita (la prepara el adulto) o 1 bombillo de linterna de 2,5 V con portabombillo",
       "2 cables con caimanes"
     ],
     "pasos": [
@@ -859,7 +859,7 @@
       "Si es un LED y no prende, el adulto lo da la vuelta.",
       "Suelta un caimán y mira qué pasa."
     ],
-    "seguridad": "Solo pilas AA de 1,5 V. Nunca usar enchufes ni cables de la pared. Si la pila se calienta, el adulto la desconecta. Nunca pilas de botón. No unir los dos cables del portapilas sin el bombillo en medio.",
+    "seguridad": "Solo pilas AA de 1,5 V. Nunca usar enchufes ni cables de la pared. Si la pila se calienta, el adulto la desconecta. Nunca pilas de botón. El LED siempre va con su resistencia. No unir los dos cables del portapilas sin el bombillo en medio.",
     "adulto": true,
     "que_pasa": "La corriente eléctrica necesita un camino cerrado: sale de la pila, pasa por un cable, atraviesa el bombillo y regresa a la pila por el otro cable. Ese camino se llama circuito y lleva la energía de la pila al bombillo. Si el camino se abre, la corriente se detiene y el bombillo se apaga.",
     "concepto": "Circuito eléctrico cerrado",
@@ -875,7 +875,7 @@
       "¿Qué pasó al soltar un caimán?",
       "¿Qué hace el botón de la linterna para prenderla y apagarla?"
     ],
-    "reto": "Cambia el portapilas de 2 pilas por uno de 1 pila. Solo cambia el número de pilas y compara el brillo.",
+    "reto": "Usa el bombillo de linterna y cambia el portapilas de 2 pilas por uno de 1 pila. Solo cambia el número de pilas y compara el brillo (con el LED, 1 pila no alcanza para prenderlo).",
     "minutos": 20
   },
   {
@@ -887,7 +887,7 @@
     "dba": "Estándar de 1° a 3°: construye circuitos eléctricos simples con pilas y reconoce materiales que dejan o no pasar la corriente.",
     "prediccion": "Si pones un clip, un palito, una cuchara y un borrador en el circuito, ¿con cuáles prenderá el bombillo?",
     "materiales": [
-      "el circuito de pilas AA y LED con 3 cables con caimanes (dejando un espacio abierto)",
+      "el circuito de 2 pilas AA y LED con su resistencia de 100 Ω, con 3 cables con caimanes (dejando un espacio abierto)",
       "1 clip",
       "1 palito de paleta",
       "1 cuchara de metal",

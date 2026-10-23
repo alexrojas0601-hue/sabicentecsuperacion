@@ -66,9 +66,9 @@
    "Grafica altura contra 1/separación.",
    "Compara con tiras de papel absorbente: mide la altura que alcanza el agua en 10 minutos."
   ],
-  "seguridad": "Protege los bordes del vidrio con cinta y manipúlalo con cuidado. Si se rompe, avisa a un adulto.",
-  "adulto": false,
-  "que_pasa": "La capilaridad es la subida de un líquido por espacios muy estrechos debido a la adhesión entre el líquido y las paredes, que vence el peso de la columna. La altura es inversamente proporcional al radio del tubo: h = 2 γ cos θ / (ρ g r). Por eso el agua sube más donde las láminas están más juntas y la curva tiene forma de hipérbola. En los árboles actúan también la transpiración y la cohesión del agua.",
+  "seguridad": "Un adulto prepara las láminas de vidrio y les protege los bordes con cinta; manipúlalas con cuidado. Si una se rompe, no recojas los pedazos: avisa al adulto.",
+  "adulto": true,
+  "que_pasa": "La capilaridad es la subida de un líquido por espacios muy estrechos debido a la adhesión entre el líquido y las paredes, que vence el peso de la columna. En un tubo la altura es inversamente proporcional al radio, h = 2 γ cos θ / (ρ g r); entre dos láminas separadas una distancia d, h = 2 γ cos θ / (ρ g d). Por eso el agua sube más donde las láminas están más juntas y la curva tiene forma de hipérbola. En los árboles actúan también la transpiración y la cohesión del agua.",
   "concepto": "Capilaridad",
   "vocabulario": [
    "capilaridad",
@@ -655,12 +655,12 @@
    "Mide el diámetro interno de la manguera y calcula su área A1.",
    "Calcula la velocidad del agua dentro de la manguera v1 = Q / A1.",
    "Pon una boquilla de diámetro menor sin cambiar la apertura de la llave; mide de nuevo el caudal.",
-   "Calcula la velocidad de salida v2 = Q / A2 y verifica A1 · v1 = A2 · v2.",
-   "Lanza el chorro horizontal desde 1 m y compara el alcance."
+   "Con el nuevo caudal calcula v1 = Q / A1 dentro de la manguera y v2 = Q / A2 a la salida; comprueba que v2 / v1 = A1 / A2.",
+   "Lanza el chorro horizontal desde 1 m de altura, mide el alcance x y calcula la velocidad real de salida v = x / raíz(2 · 1 m / g); compárala con Q / A2."
   ],
   "seguridad": "Trabaja al aire libre y reutiliza el agua del balde para regar plantas. Evita mojar equipos eléctricos.",
   "adulto": false,
-  "que_pasa": "En un fluido incompresible que fluye por un tubo, el caudal es constante: Q = A · v. Por eso, si el área disminuye, la velocidad aumenta en la misma proporción (ecuación de continuidad: A1 · v1 = A2 · v2). Es la conservación de la masa aplicada a fluidos en movimiento.",
+  "que_pasa": "En un fluido incompresible que fluye por un tubo, el caudal es constante: Q = A · v. Por eso, si el área disminuye, la velocidad aumenta en la misma proporción (ecuación de continuidad: A1 · v1 = A2 · v2). Es la conservación de la masa aplicada a fluidos en movimiento. Con una llave real el caudal baja un poco al poner la boquilla; por eso se mide de nuevo.",
   "concepto": "Ecuación de continuidad",
   "vocabulario": [
    "caudal",
@@ -906,7 +906,7 @@
    "Calcula la velocidad media en cada caso.",
    "Explica con un dibujo las corrientes inducidas y el campo que generan."
   ],
-  "seguridad": "Los imanes de neodimio son muy fuertes: pueden pellizcar los dedos y se rompen al chocar. Mantenlos lejos de celulares, tarjetas y marcapasos. Nunca los ingieras.",
+  "seguridad": "El docente maneja el imán de neodimio: lo entrega para cada caída y lo recoge al terminar. Los imanes de neodimio son muy fuertes: pueden pellizcar los dedos y se rompen al chocar. Mantenlos lejos de celulares, tarjetas y marcapasos. Nunca los ingieras.",
   "adulto": true,
   "que_pasa": "Al caer, el imán cambia el flujo magnético a través del tubo y, según la ley de Faraday, induce corrientes en el cobre (corrientes de Foucault). Por la ley de Lenz, esas corrientes generan un campo magnético que se opone al movimiento que las produce, y frenan el imán. La energía mecánica se transforma en energía eléctrica y luego en calor; el PVC no conduce, por eso allí no hay freno.",
   "concepto": "Inducción electromagnética",
@@ -948,7 +948,7 @@
    "Voltea el imán y observa si cambia el sentido.",
    "Explica con la regla de la mano derecha la dirección de la fuerza."
   ],
-  "seguridad": "Es un cortocircuito: el alambre y la pila se calientan. Haz contactos de pocos segundos y no toques el alambre después de girar. Cuidado con los dedos y el imán de neodimio.",
+  "seguridad": "Es un cortocircuito: el alambre y la pila se calientan. Haz contactos de pocos segundos y no toques el alambre después de girar. El docente maneja el imán de neodimio (lo coloca bajo la pila y lo recoge); cuidado con los dedos.",
   "adulto": true,
   "que_pasa": "Un conductor con corriente dentro de un campo magnético recibe una fuerza (fuerza de Lorentz): F = B · I · L. En este motor homopolar la corriente va de la pila por el alambre hasta el imán, y la fuerza magnética sobre el alambre lo hace girar. Si se invierte el campo o la corriente, el sentido de giro cambia.",
   "concepto": "Fuerza magnética sobre una corriente",
@@ -1029,7 +1029,7 @@
    "En un espacio abierto, un estudiante lo gira sobre su cabeza; los demás escuchan a 3 m de distancia.",
    "Graba el sonido con la app y anota la frecuencia máxima y mínima.",
    "Mide el periodo de giro para calcular la velocidad del zumbador.",
-   "Compara con f' = f · v / (v ± vs), donde v ≈ 343 m/s."
+   "Compara con f' = f · v / (v − vs) cuando se acerca y f' = f · v / (v + vs) cuando se aleja, donde v ≈ 343 m/s y vs es la velocidad del zumbador."
   ],
   "seguridad": "Gira solo en un área despejada, con la media bien atada; los observadores se ubican fuera del alcance de la pita. Usa pilas de 9 V como máximo.",
   "adulto": false,

@@ -1010,7 +1010,7 @@
    "Conecta el LED a los extremos (pata larga al cobre) y obsérvalo en un lugar oscuro: brilla muy débil.",
    "Anota con cuántos limones encendió."
   ],
-  "seguridad": "Lava tus manos al terminar. No comas los limones usados: los metales los contaminan.",
+  "seguridad": "Lava tus manos al terminar. No comas los limones usados: los metales los contaminan. Con limones el LED no necesita resistencia porque la corriente es muy pequeña; si lo conectas a pilas comerciales, ponle siempre su resistencia.",
   "adulto": false,
   "que_pasa": "Dos metales distintos en un líquido ácido forman una pila: el cinc se oxida y cede electrones que viajan por el cable hasta el cobre, donde los toma el ácido del jugo. Un limón produce menos de 1 voltio y muy poca corriente; al conectar varios en serie los voltajes se suman y pueden encender débilmente un LED. La energía viene de la reacción química del cinc, no del limón.",
   "concepto": "Pila electroquímica",
@@ -1902,7 +1902,7 @@
   "dba": "Explica fenómenos de la dinámica terrestre (erosión, sismos, vulcanismo, ciclo del agua, efecto invernadero) y su relación con los riesgos naturales y el cuidado del ambiente.",
   "prediccion": "Si riegas igual una bandeja con tierra desnuda y otra con pasto o hojarasca, ¿cuál soltará más tierra?",
   "materiales": [
-   "3 bandejas o botellas cortadas a lo largo",
+   "3 bandejas plásticas (o botellas cortadas a lo largo por un adulto antes de la clase)",
    "tierra",
    "pasto o germinado (sembrado 2 semanas antes)",
    "hojas secas",
@@ -1918,7 +1918,7 @@
    "Compara el color y la cantidad de agua de cada vaso.",
    "Deja reposar los vasos y mide el sedimento."
   ],
-  "seguridad": "Lávate las manos después de manipular la tierra. Seca el agua derramada.",
+  "seguridad": "Lávate las manos después de manipular la tierra. Seca el agua derramada. Si usas botellas, las corta un adulto antes de la clase.",
   "adulto": false,
   "que_pasa": "La erosión es el desgaste y arrastre del suelo por agua o viento. Las raíces sujetan las partículas y la hojarasca frena las gotas de lluvia, por eso hay menos arrastre. Sin cobertura, la lluvia golpea el suelo desnudo y se lleva la capa fértil, lo que aumenta el riesgo de deslizamientos.",
   "concepto": "Erosión hídrica",

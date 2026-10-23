@@ -844,7 +844,7 @@
     ],
     "seguridad": "Usa un bombillo de 3 V para no quemarlo. Máximo dos pilas de 1,5 V. Nunca la red eléctrica.",
     "adulto": false,
-    "que_pasa": "Cada pila de 1,5 V empuja la corriente con cierta fuerza llamada voltaje. Al conectar dos pilas en serie (+ con -), sus voltajes se suman (3 V) y el bombillo brilla más. Si una pila está al revés, sus empujes se oponen y el bombillo casi no prende.",
+    "que_pasa": "Cada pila de 1,5 V empuja la corriente con cierta fuerza llamada voltaje. Al conectar dos pilas en serie (+ con -), sus voltajes se suman (3 V) y el bombillo brilla más. Si una pila está al revés, sus empujes se cancelan y el bombillo no prende.",
     "concepto": "Voltaje y pilas en serie",
     "vocabulario": [
       "voltaje",
