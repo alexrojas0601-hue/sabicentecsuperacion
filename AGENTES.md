@@ -105,3 +105,12 @@ SABICENTEC y la Instrucción Maestra de educación visual. Detalle completo en e
 Archivos: `scripts/dots-didacticos.mjs`, `.github/workflows/sabi-dots-didacticos.yml`,
 `data/herramientas-pedagogicas.json`, `data/experimentos/`, `PROMPT_MAESTRO_SABI.md`.
 Correr a mano: GitHub → Actions → «SABI · Dots didácticos» → Run workflow (modo y área).
+
+## Lecturas (`lecturas.html`) · octubre de 2026
+
+Complementa `fichas.html` (fichas de matemáticas), los comandos del tutor y el banco de experimentos.
+
+| Pieza | Qué hace |
+|---|---|
+| Lecturas (`data/lecturas/*.json`) | 36 lecturas originales (3 por grado) en siete pasos: lo que dice el texto (4 preguntas literales; el estudiante toca la oración y la página le dice si es la correcta), entre líneas, palabras en contexto, ¿dónde lo pone?, orden y causas, piensa y argumenta, valor. Cada evidencia literal está verificada por código. "Crear lectura con SABI" abre el tutor con `/lectura`. |
+| Dot de lectura (`scripts/dot-lecturas.mjs`, `.github/workflows/sabi-dot-lecturas.yml`) | Cada miércoles escribe una lectura para cada uno de los 3 grados con menos; solo pasa si cada evidencia literal está copiada del texto. Llega como Pull Request: aprobar = publicar. |

@@ -1,0 +1,48 @@
+# Dot de lectura: cada miércoles escribe lecturas nuevas (siete pasos) para los grados con menos.
+# El auditor de código exige que cada respuesta literal esté copiada del texto. Nada se publica sin
+# "Merge" de coordinación académica.
+name: SABI · Dot de lectura
+
+on:
+  schedule:
+    - cron: "0 11 * * 3"   # miércoles 6:00 a. m. hora Colombia
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "lecturas | cobertura"
+        default: "lecturas"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  lecturas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Dot de lectura y auditor de evidencias
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MAX_NUEVOS: "3"
+        run: node scripts/dot-lecturas.mjs ${{ inputs.modo == 'cobertura' && 'cobertura' || '' }}
+      - name: Validar datos
+        run: |
+          for f in data/lecturas/*.json; do node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" || exit 1; done
+      - name: Abrir Pull Request para aprobación humana
+        if: inputs.modo != 'cobertura'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: sabi-dot-lecturas
+          delete-branch: true
+          commit-message: "SABI Dot de lectura: lecturas nuevas"
+          title: "Lecturas nuevas · revisión de coordinación"
+          body: |
+            El Dot de lectura propone lecturas nuevas. Informe en `data/informes/`.
+            Cada respuesta literal fue verificada por código contra el texto.
+            **Aprobar = publicar en lecturas.html.** Si algo no convence, cierra el PR.
+          labels: lecturas

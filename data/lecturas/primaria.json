@@ -1,0 +1,2238 @@
+[
+  {
+    "id": "L0-01",
+    "grado": 0,
+    "tipologia": "cuento",
+    "titulo": "La tortuga Paz y el río",
+    "parrafos": [
+      "Paz es una tortuga pequeña que vive junto al río Cauca. Cada mañana sale a pasear con su amiga la garza.",
+      "Un día, Paz vio una botella en el agua. La botella estaba sucia y cerca de los peces. Paz la empujó con su cabeza hasta la orilla.",
+      "La garza la ayudó con su pico. Juntas pusieron la botella en la caneca verde. El río quedó limpio y los peces nadaron felices."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Quién es Paz?",
+        "evidencia": "Paz es una tortuga pequeña que vive junto al río Cauca.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Con quién sale a pasear Paz cada mañana?",
+        "evidencia": "Cada mañana sale a pasear con su amiga la garza.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Qué vio Paz en el agua?",
+        "evidencia": "Un día, Paz vio una botella en el agua.",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Dónde pusieron la botella?",
+        "evidencia": "Juntas pusieron la botella en la caneca verde.",
+        "parrafo": 3
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué Paz empujó la botella hasta la orilla?",
+        "pista": "La botella estaba sucia y cerca de los peces.",
+        "respuesta_modelo": "Porque la botella sucia podía hacerles daño a los peces y ensuciar el río; Paz quería cuidarlos."
+      },
+      {
+        "pregunta": "¿Cómo crees que se sintió Paz al final?",
+        "pista": "El río quedó limpio y los peces nadaron felices.",
+        "respuesta_modelo": "Se sintió contenta y orgullosa, porque su ayuda y la de su amiga dejaron el río limpio."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "orilla",
+        "pregunta": "¿Qué significa «orilla» en este texto?",
+        "opciones": [
+          "el fondo del río",
+          "el borde del río, donde el agua toca la tierra",
+          "una casa de la tortuga"
+        ],
+        "correcta": 1,
+        "explicacion": "Paz empuja la botella desde el agua hasta la orilla para sacarla; por eso es el borde del río."
+      },
+      {
+        "palabra": "caneca",
+        "pregunta": "¿Qué significa «caneca» en este texto?",
+        "opciones": [
+          "una cama para dormir",
+          "un juguete para el agua",
+          "un recipiente para echar la basura"
+        ],
+        "correcta": 2,
+        "explicacion": "Ponen la botella sucia en la caneca verde y el río queda limpio: es donde se bota la basura."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo se dice que la botella estaba sucia?",
+        "parrafo": 2,
+        "explicacion": "En el párrafo 2 se cuenta que la botella estaba sucia y cerca de los peces."
+      },
+      {
+        "pregunta": "¿En qué párrafo ayuda la garza?",
+        "parrafo": 3,
+        "explicacion": "En el párrafo 3 la garza ayuda con su pico."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "Paz sale a pasear con la garza",
+        "Paz ve una botella sucia en el agua",
+        "Paz empuja la botella hasta la orilla",
+        "Paz y la garza ponen la botella en la caneca"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "Paz y la garza sacaron la botella del agua",
+          "efecto": "El río quedó limpio y los peces nadaron felices"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Qué haces tú con la basura para cuidar los ríos y las calles?",
+        "criterios": "Cuenta algo que hace o podría hacer, con una razón sencilla."
+      },
+      {
+        "pregunta": "¿Por qué es bueno ayudar a un amigo?",
+        "criterios": "Da una razón, por ejemplo que juntos es más fácil o que da alegría."
+      }
+    ],
+    "valor": "Cuidar la naturaleza y trabajar en equipo con los amigos."
+  },
+  {
+    "id": "L0-02",
+    "grado": 0,
+    "tipologia": "poema",
+    "titulo": "Mi colegio",
+    "parrafos": [
+      "Mi colegio es una casa\ndonde aprendo cada día.\nLa profe me da la mano\ny me enseña con alegría.",
+      "En el patio hay un árbol\nque me regala su sombra.\nMis amigos y yo jugamos\ny la hierba es una alfombra.",
+      "Cuando suena la campana\nguardo mi lápiz y mi color.\nMe voy a casa cantando\ny le doy a mamá mi amor."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Qué es el colegio en el poema?",
+        "evidencia": "Mi colegio es una casa",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Qué le regala el árbol al niño?",
+        "evidencia": "que me regala su sombra.",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Qué es la hierba del patio?",
+        "evidencia": "y la hierba es una alfombra.",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Qué guarda el niño cuando suena la campana?",
+        "evidencia": "guardo mi lápiz y mi color.",
+        "parrafo": 3
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Cómo se siente el niño en su colegio?",
+        "pista": "La profe lo enseña con alegría y él regresa cantando.",
+        "respuesta_modelo": "Se siente feliz y querido, por eso habla de su colegio como si fuera una casa."
+      },
+      {
+        "pregunta": "¿Por qué el niño le da su amor a mamá al llegar?",
+        "pista": "Me voy a casa cantando y le doy a mamá mi amor.",
+        "respuesta_modelo": "Porque vuelve contento y quiere compartir esa alegría con su mamá."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "alfombra",
+        "pregunta": "¿Qué significa «alfombra» en este texto?",
+        "opciones": [
+          "un animal pequeño",
+          "una canción",
+          "algo suave que cubre el piso"
+        ],
+        "correcta": 2,
+        "explicacion": "La hierba cubre el patio como algo suave donde juegan los niños; por eso se compara con una alfombra."
+      },
+      {
+        "palabra": "campana",
+        "pregunta": "¿Qué significa «campana» en este texto?",
+        "opciones": [
+          "un objeto que suena para avisar",
+          "una fruta dulce",
+          "un salón de clase"
+        ],
+        "correcta": 0,
+        "explicacion": "Cuando suena la campana el niño guarda sus útiles: la campana avisa que termina la clase."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué estrofa se habla del árbol y la sombra?",
+        "parrafo": 2,
+        "explicacion": "La estrofa 2 habla del patio, el árbol y la sombra."
+      },
+      {
+        "pregunta": "¿En qué estrofa vuelve el niño a casa?",
+        "parrafo": 3,
+        "explicacion": "En la estrofa 3 el niño se va a casa cantando."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "El niño aprende con la profe",
+        "El niño juega en el patio con sus amigos",
+        "Suena la campana",
+        "El niño se va a casa cantando"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "Suena la campana",
+          "efecto": "El niño guarda su lápiz y su color"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Qué es lo que más te gusta de tu colegio?",
+        "criterios": "Nombra algo y di por qué le gusta."
+      },
+      {
+        "pregunta": "¿Por qué crees que el niño le da las gracias a mamá con un abrazo de amor?",
+        "criterios": "Relaciona con su propia familia y da una razón."
+      }
+    ],
+    "valor": "Agradecer y disfrutar el colegio y la familia."
+  },
+  {
+    "id": "L0-03",
+    "grado": 0,
+    "tipologia": "instructivo",
+    "titulo": "Cómo sembrar un frijol",
+    "parrafos": [
+      "Hoy vamos a sembrar un frijol en la clase. Necesitamos un vaso, algodón, agua y un frijol.",
+      "Primero, pon el algodón dentro del vaso. Luego, echa un poco de agua. Después, pon el frijol sobre el algodón.",
+      "Por último, deja el vaso cerca de la ventana para que le llegue el sol. En pocos días, el frijol tendrá una raíz y una hojita verde."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Qué necesitamos para sembrar el frijol?",
+        "evidencia": "Necesitamos un vaso, algodón, agua y un frijol.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Qué se pone primero dentro del vaso?",
+        "evidencia": "Primero, pon el algodón dentro del vaso.",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Dónde se deja el vaso?",
+        "evidencia": "Por último, deja el vaso cerca de la ventana para que le llegue el sol.",
+        "parrafo": 3
+      },
+      {
+        "pregunta": "¿Qué tendrá el frijol en pocos días?",
+        "evidencia": "En pocos días, el frijol tendrá una raíz y una hojita verde.",
+        "parrafo": 3
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué se deja el vaso cerca de la ventana?",
+        "pista": "Para que le llegue el sol.",
+        "respuesta_modelo": "Porque la planta necesita luz del sol para crecer."
+      },
+      {
+        "pregunta": "¿Por qué se echa agua en el algodón?",
+        "pista": "Luego, echa un poco de agua.",
+        "respuesta_modelo": "Porque el frijol necesita agua para despertar y crecer."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "raíz",
+        "pregunta": "¿Qué significa «raíz» en este texto?",
+        "opciones": [
+          "la parte de la planta que crece hacia abajo",
+          "una flor roja",
+          "un insecto"
+        ],
+        "correcta": 0,
+        "explicacion": "El frijol crece en el algodón con agua; la raíz es la parte que se forma para tomar el agua."
+      },
+      {
+        "palabra": "algodón",
+        "pregunta": "¿Qué significa «algodón» en este texto?",
+        "opciones": [
+          "una fruta",
+          "un material blando y suave",
+          "una herramienta de metal"
+        ],
+        "correcta": 1,
+        "explicacion": "Se pone dentro del vaso y se moja con agua; es un material blando donde descansa el frijol."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo se dice lo que necesitamos?",
+        "parrafo": 1,
+        "explicacion": "El párrafo 1 enumera los materiales."
+      },
+      {
+        "pregunta": "¿En qué párrafo se dice qué pasa en pocos días?",
+        "parrafo": 3,
+        "explicacion": "El párrafo 3 dice que saldrán la raíz y la hojita."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "Poner el algodón en el vaso",
+        "Echar un poco de agua",
+        "Poner el frijol sobre el algodón",
+        "Dejar el vaso cerca de la ventana"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "El vaso está cerca de la ventana",
+          "efecto": "Le llega el sol al frijol"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Qué planta te gustaría sembrar y por qué?",
+        "criterios": "Nombra una planta y da una razón."
+      },
+      {
+        "pregunta": "¿Qué pasaría si nadie le echa agua al frijol?",
+        "criterios": "Anticipa que se secaría o no crecería, con una razón."
+      }
+    ],
+    "valor": "Paciencia y cuidado de la vida."
+  },
+  {
+    "id": "L1-01",
+    "grado": 1,
+    "tipologia": "carta",
+    "titulo": "Una mariposa para la abuela",
+    "parrafos": [
+      "Querida abuela Rosa:",
+      "Hoy fui al colegio CENTEC y aprendí a leer una palabra nueva: mariposa. Mi profesora dice que las mariposas ayudan a las flores a dar frutos.",
+      "En el recreo vi una mariposa amarilla en el jardín. No la toqué, porque sus alas son muy delicadas. Esta tarde la dibujé para ti.",
+      "Me gustaría que vinieras a verla. Te quiero mucho. Tu nieto, Mateo."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿A quién le escribe Mateo?",
+        "evidencia": "Querida abuela Rosa:",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Qué palabra nueva aprendió Mateo?",
+        "evidencia": "aprendí a leer una palabra nueva: mariposa",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿De qué color era la mariposa?",
+        "evidencia": "En el recreo vi una mariposa amarilla en el jardín.",
+        "parrafo": 3
+      },
+      {
+        "pregunta": "¿Por qué Mateo no tocó la mariposa?",
+        "evidencia": "No la toqué, porque sus alas son muy delicadas.",
+        "parrafo": 3
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Qué siente Mateo por su abuela?",
+        "pista": "Te quiero mucho.",
+        "respuesta_modelo": "Siente mucho cariño por ella y por eso quiere compartirle lo que vio y aprendió."
+      },
+      {
+        "pregunta": "¿Por qué crees que Mateo dibujó la mariposa para su abuela?",
+        "pista": "Esta tarde la dibujé para ti.",
+        "respuesta_modelo": "Porque quiere que ella vea la mariposa aunque no esté con él."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "delicadas",
+        "pregunta": "¿Qué significa «delicadas» en este texto?",
+        "opciones": [
+          "muy fuertes",
+          "frágiles, que se dañan fácil",
+          "muy pesadas"
+        ],
+        "correcta": 1,
+        "explicacion": "Mateo no toca la mariposa porque sus alas se pueden dañar; delicadas quiere decir frágiles."
+      },
+      {
+        "palabra": "recreo",
+        "pregunta": "¿Qué significa «recreo» en este texto?",
+        "opciones": [
+          "una clase de dibujo",
+          "la hora de dormir",
+          "el rato para jugar entre clases"
+        ],
+        "correcta": 2,
+        "explicacion": "Mateo ve la mariposa en el jardín del colegio mientras juega; es el descanso entre clases."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo se despide Mateo?",
+        "parrafo": 4,
+        "explicacion": "En el párrafo 4 dice Te quiero mucho y firma."
+      },
+      {
+        "pregunta": "¿En qué párrafo cuenta dónde vio la mariposa?",
+        "parrafo": 3,
+        "explicacion": "En el párrafo 3 dice que la vio en el jardín, en el recreo."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "Mateo va al colegio y aprende la palabra mariposa",
+        "Mateo ve una mariposa amarilla en el recreo",
+        "Mateo dibuja la mariposa",
+        "Mateo invita a su abuela a verla"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "Las alas de la mariposa son delicadas",
+          "efecto": "Mateo no la tocó"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿A quién le escribirías tú una carta y qué le contarías?",
+        "criterios": "Nombra a una persona y cuenta algo sencillo."
+      },
+      {
+        "pregunta": "¿Por qué hay que cuidar a los insectos como las mariposas?",
+        "criterios": "Da una razón, por ejemplo que ayudan a las flores."
+      }
+    ],
+    "valor": "Querer a la familia y cuidar a los seres vivos."
+  },
+  {
+    "id": "L1-02",
+    "grado": 1,
+    "tipologia": "fábula",
+    "titulo": "La hormiga Lola y su alcancía",
+    "parrafos": [
+      "Una hormiga llamada Lola quería comprar un libro de cuentos. Cada día guardaba una moneda en su alcancía.",
+      "Su amigo el grillo le dijo que gastara las monedas en dulces.",
+      "Lola sonrió y siguió ahorrando. Al cabo de un mes, abrió la alcancía y tuvo monedas para el libro. El grillo, que ya no tenía nada, la miró con envidia.",
+      "Entonces Lola le prestó el libro y leyeron juntos. Aprendieron que ahorrar un poco cada día sirve mucho."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Qué quería comprar Lola?",
+        "evidencia": "Una hormiga llamada Lola quería comprar un libro de cuentos.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Dónde guardaba Lola las monedas?",
+        "evidencia": "Cada día guardaba una moneda en su alcancía.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Qué le dijo el grillo a Lola?",
+        "evidencia": "Su amigo el grillo le dijo que gastara las monedas en dulces.",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Qué hizo Lola al cabo de un mes?",
+        "evidencia": "Al cabo de un mes, abrió la alcancía y tuvo monedas para el libro.",
+        "parrafo": 3
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué el grillo miró a Lola con envidia?",
+        "pista": "El grillo, que ya no tenía nada, la miró con envidia.",
+        "respuesta_modelo": "Porque él gastó todo y ya no tenía nada, mientras que Lola tenía su libro."
+      },
+      {
+        "pregunta": "¿Cómo es Lola con su amigo al final?",
+        "pista": "Entonces Lola le prestó el libro y leyeron juntos.",
+        "respuesta_modelo": "Es generosa: comparte el libro aunque el grillo no ahorró."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "alcancía",
+        "pregunta": "¿Qué significa «alcancía» en este texto?",
+        "opciones": [
+          "un libro de cuentos",
+          "una cama pequeña",
+          "una cajita para guardar monedas"
+        ],
+        "correcta": 2,
+        "explicacion": "Lola guarda una moneda cada día en ella y luego la abre para sacar el dinero."
+      },
+      {
+        "palabra": "ahorrando",
+        "pregunta": "¿Qué significa «ahorrando» en este texto?",
+        "opciones": [
+          "guardando dinero para usarlo después",
+          "gastando todo en dulces",
+          "perdiendo las monedas"
+        ],
+        "correcta": 0,
+        "explicacion": "Lola sigue guardando monedas para comprar el libro; eso es ahorrar."
+      },
+      {
+        "palabra": "envidia",
+        "pregunta": "¿Qué significa «envidia» en este texto?",
+        "opciones": [
+          "mucho sueño",
+          "tristeza al ver lo que otro tiene y uno no",
+          "alegría por un regalo"
+        ],
+        "correcta": 1,
+        "explicacion": "El grillo ya no tenía nada y Lola sí tenía su libro; por eso sentía esa tristeza."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo da el grillo su consejo?",
+        "parrafo": 2,
+        "explicacion": "En el párrafo 2 el grillo le dice que gaste en dulces."
+      },
+      {
+        "pregunta": "¿En qué párrafo presta Lola el libro?",
+        "parrafo": 4,
+        "explicacion": "En el párrafo 4 Lola presta el libro y leen juntos."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "Lola guarda una moneda cada día",
+        "El grillo le dice que gaste en dulces",
+        "Lola sigue ahorrando durante un mes",
+        "Lola abre la alcancía y tiene monedas para el libro",
+        "Lola le presta el libro al grillo"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "Lola guardó una moneda cada día",
+          "efecto": "Tuvo monedas para comprar el libro"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Qué te gustaría ahorrar para comprar?",
+        "criterios": "Nombra algo y explica por qué lo quiere."
+      },
+      {
+        "pregunta": "¿Hizo bien Lola en prestarle el libro al grillo?",
+        "criterios": "Opina con una razón, por ejemplo compartir con los amigos."
+      }
+    ],
+    "valor": "Ahorrar con constancia y compartir con generosidad."
+  },
+  {
+    "id": "L1-03",
+    "grado": 1,
+    "tipologia": "texto expositivo",
+    "titulo": "El río Cauca",
+    "parrafos": [
+      "El río Cauca pasa cerca de Cali. Es uno de los ríos más importantes de Colombia. Nace en las montañas del sur del país.",
+      "En sus aguas viven peces como el bocachico. También llegan aves a beber de sus orillas. Muchas familias usan su agua para regar los cultivos.",
+      "Para cuidar el río, no debemos tirar basura en él. Así los animales y las plantas viven sanos."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Cerca de qué ciudad pasa el río Cauca?",
+        "evidencia": "El río Cauca pasa cerca de Cali.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Dónde nace el río Cauca?",
+        "evidencia": "Nace en las montañas del sur del país.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Qué pez vive en sus aguas?",
+        "evidencia": "En sus aguas viven peces como el bocachico.",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Qué no debemos hacer para cuidar el río?",
+        "evidencia": "Para cuidar el río, no debemos tirar basura en él.",
+        "parrafo": 3
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué el río es importante para el campo?",
+        "pista": "Muchas familias usan su agua para regar los cultivos.",
+        "respuesta_modelo": "Porque los agricultores necesitan su agua para que las plantas crezcan."
+      },
+      {
+        "pregunta": "¿Qué pasaría con los peces si tiramos basura al río?",
+        "pista": "Así los animales y las plantas viven sanos.",
+        "respuesta_modelo": "Se enfermarían o no podrían vivir, porque el agua se ensuciaría."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "cultivos",
+        "pregunta": "¿Qué significa «cultivos» en este texto?",
+        "opciones": [
+          "plantas que se siembran para comer o vender",
+          "peces del río",
+          "montañas altas"
+        ],
+        "correcta": 0,
+        "explicacion": "Las familias usan el agua para regar los cultivos: son las plantas que siembran."
+      },
+      {
+        "palabra": "regar",
+        "pregunta": "¿Qué significa «regar» en este texto?",
+        "opciones": [
+          "cortar las plantas",
+          "echarle agua a las plantas",
+          "pintar las plantas"
+        ],
+        "correcta": 1,
+        "explicacion": "Las familias usan el agua del río para que las plantas crezcan; eso es regar."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo se dice qué peces viven en el río?",
+        "parrafo": 2,
+        "explicacion": "El párrafo 2 habla de los peces y de los cultivos."
+      },
+      {
+        "pregunta": "¿En qué párrafo se dice cómo cuidar el río?",
+        "parrafo": 3,
+        "explicacion": "El párrafo 3 explica no tirar basura."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "El río Cauca pasa cerca de Cali",
+        "Nace en las montañas del sur del país",
+        "En sus aguas viven peces",
+        "Las familias usan su agua para los cultivos",
+        "Debemos cuidarlo sin tirar basura"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "No tiramos basura al río",
+          "efecto": "Los animales y las plantas viven sanos"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Qué puedes hacer tú para cuidar un río o una quebrada?",
+        "criterios": "Propone una acción concreta y sencilla."
+      },
+      {
+        "pregunta": "¿Por qué un río es importante para una ciudad?",
+        "criterios": "Da una razón relacionada con el agua, los animales o el campo."
+      }
+    ],
+    "valor": "Cuidar el agua y el medio ambiente."
+  },
+  {
+    "id": "L2-01",
+    "grado": 2,
+    "tipologia": "cuento",
+    "titulo": "El paso de Sofía",
+    "parrafos": [
+      "En el barrio Ciudad Córdoba vivía Sofía, una niña tímida que soñaba con bailar salsa. Cada tarde miraba por la ventana cómo los vecinos ensayaban en la cancha.",
+      "Un sábado, el profesor Jairo la invitó a entrar. Sofía sintió que las piernas le temblaban y casi se devuelve a su casa.",
+      "Jairo le dijo que empezara con un paso sencillo y que contara con calma: uno, dos, tres, pausa. Sofía lo miró a los ojos y sintió algo de confianza.",
+      "Sofía respiró hondo y lo intentó. Se equivocó dos veces, pero no se rindió. A la tercera, el paso le salió tan suave que todos aplaudieron.",
+      "Esa noche, Sofía comprendió que el miedo se achica cuando uno practica. Desde entonces, no faltó a ningún ensayo."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Dónde vivía Sofía y qué soñaba?",
+        "evidencia": "En el barrio Ciudad Córdoba vivía Sofía, una niña tímida que soñaba con bailar salsa.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Quién invitó a Sofía a entrar a la cancha?",
+        "evidencia": "Un sábado, el profesor Jairo la invitó a entrar.",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Cuántas veces se equivocó Sofía?",
+        "evidencia": "Se equivocó dos veces, pero no se rindió.",
+        "parrafo": 4
+      },
+      {
+        "pregunta": "¿Qué comprendió Sofía esa noche?",
+        "evidencia": "Esa noche, Sofía comprendió que el miedo se achica cuando uno practica.",
+        "parrafo": 5
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué Sofía casi se devuelve a su casa?",
+        "pista": "Sofía sintió que las piernas le temblaban.",
+        "respuesta_modelo": "Porque sentía miedo y pena de bailar frente a los demás."
+      },
+      {
+        "pregunta": "¿Por qué crees que Jairo le pidió un paso sencillo?",
+        "pista": "Jairo le dijo que empezara con un paso sencillo.",
+        "respuesta_modelo": "Porque empezar con algo fácil le daba confianza para avanzar poco a poco."
+      },
+      {
+        "pregunta": "¿Qué cambió en Sofía al final?",
+        "pista": "Desde entonces, no faltó a ningún ensayo.",
+        "respuesta_modelo": "Perdió buena parte del miedo y ganó confianza; ahora quiere practicar siempre."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "tímida",
+        "pregunta": "¿Qué significa «tímida» en este texto?",
+        "opciones": [
+          "que corre muy rápido",
+          "que siente pena de mostrarse ante otros",
+          "que es muy fuerte"
+        ],
+        "correcta": 1,
+        "explicacion": "Sofía solo miraba por la ventana y le temblaban las piernas al entrar; por eso es tímida."
+      },
+      {
+        "palabra": "ensayaban",
+        "pregunta": "¿Qué significa «ensayaban» en este texto?",
+        "opciones": [
+          "dormían en la cancha",
+          "vendían comida",
+          "practicaban para mejorar"
+        ],
+        "correcta": 2,
+        "explicacion": "Los vecinos estaban en la cancha preparando el baile; ensayar es practicar."
+      },
+      {
+        "palabra": "se achica",
+        "pregunta": "¿Qué significa «se achica» en este texto?",
+        "opciones": [
+          "se hace más pequeño",
+          "se hace más grande",
+          "se vuelve rojo"
+        ],
+        "correcta": 0,
+        "explicacion": "Sofía practica y su miedo disminuye; achicarse es hacerse más pequeño."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo se presenta a Sofía?",
+        "parrafo": 1,
+        "explicacion": "El párrafo 1 cuenta quién es y qué soñaba."
+      },
+      {
+        "pregunta": "¿En qué párrafo sienten miedo las piernas de Sofía?",
+        "parrafo": 2,
+        "explicacion": "En el párrafo 2 le temblaban las piernas."
+      },
+      {
+        "pregunta": "¿En qué párrafo aplauden todos?",
+        "parrafo": 4,
+        "explicacion": "En el párrafo 4, cuando el paso le salió suave."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "Sofía miraba los ensayos desde la ventana",
+        "El profesor Jairo la invitó a entrar",
+        "Jairo le enseñó un paso sencillo",
+        "Sofía se equivocó dos veces y siguió",
+        "Todos aplaudieron su paso"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "Sofía practicó y no se rindió",
+          "efecto": "El paso le salió suave y todos aplaudieron"
+        },
+        {
+          "causa": "Sofía sintió miedo",
+          "efecto": "Casi se devuelve a su casa"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Alguna vez sentiste miedo de empezar algo nuevo? ¿Qué hiciste?",
+        "criterios": "Cuenta una experiencia y qué hizo para superarla."
+      },
+      {
+        "pregunta": "¿Fue bueno el consejo de Jairo? ¿Por qué?",
+        "criterios": "Opina con razones: ayuda a avanzar con calma."
+      }
+    ],
+    "valor": "Perseverar y perder el miedo practicando."
+  },
+  {
+    "id": "L2-02",
+    "grado": 2,
+    "tipologia": "texto expositivo",
+    "titulo": "El viaje del agua",
+    "parrafos": [
+      "El agua de la Tierra se mueve siempre en un ciclo. Este viaje tiene cuatro pasos.",
+      "Primero, el sol calienta el agua de los ríos y del mar, y esta se convierte en vapor. También se evapora el agua de los charcos de la calle. A este paso se le llama evaporación.",
+      "Después, el vapor sube y se enfría en el cielo. Allí forma las nubes. Este paso se llama condensación.",
+      "Cuando las nubes pesan demasiado, el agua cae en forma de lluvia. Esto es la precipitación. En el Pacífico colombiano llueve muchísimo.",
+      "Por último, el agua de la lluvia corre por el suelo y vuelve a los ríos y al mar. Así el ciclo empieza otra vez. Este viaje nunca se detiene: ocurre todos los días, aunque no lo veamos."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Cuántos pasos tiene el viaje del agua?",
+        "evidencia": "Este viaje tiene cuatro pasos.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Qué hace el sol en el primer paso?",
+        "evidencia": "Primero, el sol calienta el agua de los ríos y del mar, y esta se convierte en vapor.",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Cómo se llama el paso en que se forman las nubes?",
+        "evidencia": "Este paso se llama condensación.",
+        "parrafo": 3
+      },
+      {
+        "pregunta": "¿Dónde llueve muchísimo?",
+        "evidencia": "En el Pacífico colombiano llueve muchísimo.",
+        "parrafo": 4
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué se forman nubes cuando el vapor sube?",
+        "pista": "el vapor sube y se enfría en el cielo.",
+        "respuesta_modelo": "Porque arriba hace frío y el vapor se enfría y se junta formando nubes."
+      },
+      {
+        "pregunta": "¿Qué pasaría con el ciclo si no hubiera sol?",
+        "pista": "el sol calienta el agua de los ríos y del mar.",
+        "respuesta_modelo": "No se evaporaría el agua y el ciclo no empezaría, porque el sol calienta el agua."
+      },
+      {
+        "pregunta": "¿Por qué dice el texto que el ciclo empieza otra vez?",
+        "pista": "el agua de la lluvia corre por el suelo y vuelve a los ríos y al mar.",
+        "respuesta_modelo": "Porque el agua regresa a los ríos y al mar, donde el sol la vuelve a calentar."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "vapor",
+        "pregunta": "¿Qué significa «vapor» en este texto?",
+        "opciones": [
+          "una piedra del río",
+          "una nube negra de tormenta",
+          "agua convertida en gas que sube"
+        ],
+        "correcta": 2,
+        "explicacion": "El sol calienta el agua y ésta sube hacia el cielo: es el agua en forma de gas."
+      },
+      {
+        "palabra": "precipitación",
+        "pregunta": "¿Qué significa «precipitación» en este texto?",
+        "opciones": [
+          "la caída del agua de las nubes a la tierra",
+          "el calor del sol",
+          "el viaje del vapor hacia arriba"
+        ],
+        "correcta": 0,
+        "explicacion": "El texto la explica: cuando las nubes pesan, el agua cae en forma de lluvia."
+      },
+      {
+        "palabra": "ciclo",
+        "pregunta": "¿Qué significa «ciclo» en este texto?",
+        "opciones": [
+          "un solo paso",
+          "una serie de pasos que se repite",
+          "una bicicleta"
+        ],
+        "correcta": 1,
+        "explicacion": "El agua pasa por cuatro pasos y luego empieza otra vez; eso es un ciclo."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo se habla del Pacífico?",
+        "parrafo": 4,
+        "explicacion": "El párrafo 4 dice que en el Pacífico llueve muchísimo."
+      },
+      {
+        "pregunta": "¿En qué párrafo se explica cómo se forman las nubes?",
+        "parrafo": 3,
+        "explicacion": "El párrafo 3 explica la condensación."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "El sol calienta el agua",
+        "El agua se convierte en vapor y sube",
+        "El vapor se enfría y forma las nubes",
+        "El agua cae como lluvia",
+        "El agua vuelve a los ríos y al mar"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "Las nubes pesan demasiado",
+          "efecto": "El agua cae en forma de lluvia"
+        },
+        {
+          "causa": "El vapor se enfría en el cielo",
+          "efecto": "Se forman las nubes"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿En qué momento has visto tú alguno de los pasos del ciclo del agua?",
+        "criterios": "Describe una situación real, como la lluvia o un charco que se seca."
+      },
+      {
+        "pregunta": "¿Por qué es importante cuidar el agua aunque viaje en un ciclo?",
+        "criterios": "Da una razón, por ejemplo que puede ensuciarse y no servir para beber."
+      }
+    ],
+    "valor": "Cuidar el agua, un bien de todos."
+  },
+  {
+    "id": "L2-03",
+    "grado": 2,
+    "tipologia": "noticia escolar",
+    "titulo": "Feria del Ahorro en CENTEC",
+    "parrafos": [
+      "El viernes pasado, el colegio CENTEC celebró la primera Feria del Ahorro en el patio principal. Participaron los estudiantes de segundo y tercer grado. Estuvieron presentes también varios padres de familia.",
+      "Cada niño llevó una alcancía decorada por él mismo. Algunas eran de cartón y otras de frascos reciclados. En los puestos, los estudiantes aprendieron a diferenciar entre lo que necesitan y lo que solo desean.",
+      "La profesora Marcela explicó: «Si ahorramos mil pesos cada día, en un mes tendremos treinta mil pesos». Los niños hicieron cuentas con billetes de juguete.",
+      "Al final, la rectoría entregó un diploma a los ahorradores del mes. Los organizadores esperan repetir la feria en el segundo semestre. Los estudiantes se mostraron muy contentos y prometieron seguir guardando sus monedas."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Cuándo y dónde se celebró la feria?",
+        "evidencia": "El viernes pasado, el colegio CENTEC celebró la primera Feria del Ahorro en el patio principal.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Qué llevó cada niño a la feria?",
+        "evidencia": "Cada niño llevó una alcancía decorada por él mismo.",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Cuánto dinero se tiene en un mes si se ahorran mil pesos cada día?",
+        "evidencia": "Si ahorramos mil pesos cada día, en un mes tendremos treinta mil pesos",
+        "parrafo": 3
+      },
+      {
+        "pregunta": "¿Qué entregó la rectoría al final?",
+        "evidencia": "Al final, la rectoría entregó un diploma a los ahorradores del mes.",
+        "parrafo": 4
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué los niños hicieron cuentas con billetes de juguete?",
+        "pista": "Los niños hicieron cuentas con billetes de juguete.",
+        "respuesta_modelo": "Para practicar los cálculos del ahorro sin usar dinero de verdad."
+      },
+      {
+        "pregunta": "¿Cómo ayuda diferenciar entre necesidad y deseo a ahorrar?",
+        "pista": "aprendieron a diferenciar entre lo que necesitan y lo que solo desean.",
+        "respuesta_modelo": "Quien sabe qué necesita de verdad evita gastar en cosas que no hacen falta y le queda dinero para guardar."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "diferenciar",
+        "pregunta": "¿Qué significa «diferenciar» en este texto?",
+        "opciones": [
+          "notar lo que hace distinta una cosa de otra",
+          "pintar de colores",
+          "guardar en una caja"
+        ],
+        "correcta": 0,
+        "explicacion": "Los estudiantes aprendieron a separar lo que necesitan de lo que solo desean: ver la diferencia."
+      },
+      {
+        "palabra": "organizadores",
+        "pregunta": "¿Qué significa «organizadores» en este texto?",
+        "opciones": [
+          "los premios de la feria",
+          "las personas que preparan un evento",
+          "los puestos de comida"
+        ],
+        "correcta": 1,
+        "explicacion": "Son quienes hicieron la feria y esperan repetirla."
+      },
+      {
+        "palabra": "ahorramos",
+        "pregunta": "¿Qué significa «ahorramos» en este texto?",
+        "opciones": [
+          "gastamos todo hoy",
+          "perdemos monedas",
+          "guardamos dinero para después"
+        ],
+        "correcta": 2,
+        "explicacion": "Si guardamos mil pesos cada día, en un mes tenemos más dinero: eso es ahorrar."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo se cuenta lo que explicó la profesora Marcela?",
+        "parrafo": 3,
+        "explicacion": "El párrafo 3 trae su explicación entre comillas."
+      },
+      {
+        "pregunta": "¿En qué párrafo se habla de repetir la feria?",
+        "parrafo": 4,
+        "explicacion": "El párrafo 4 dice que los organizadores esperan repetirla en el segundo semestre."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "Se celebró la feria en el patio",
+        "Cada niño llevó su alcancía",
+        "Aprendieron a diferenciar necesidad y deseo",
+        "Hicieron cuentas con billetes de juguete",
+        "La rectoría entregó diplomas"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "Se ahorran mil pesos cada día",
+          "efecto": "En un mes se tienen treinta mil pesos"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Qué necesitas y qué solo deseas en tu vida diaria? Da un ejemplo de cada uno.",
+        "criterios": "Da dos ejemplos distintos y explica la diferencia."
+      },
+      {
+        "pregunta": "¿Crees que es buena idea una feria del ahorro en el colegio? ¿Por qué?",
+        "criterios": "Opina con razones relacionadas con aprender a cuidar el dinero."
+      }
+    ],
+    "valor": "Aprender a ahorrar desde pequeños."
+  },
+  {
+    "id": "L3-01",
+    "grado": 3,
+    "tipologia": "fábula",
+    "titulo": "El jaguar y el colibrí",
+    "parrafos": [
+      "En una selva del Pacífico vivía un jaguar muy orgulloso. Presumía de ser fuerte y se burlaba de los animales pequeños. Todas las mañanas recorría el río, rugiendo para que lo admiraran.",
+      "Un día se lastimó una pata con una espina enorme. Por más que rugía, no lograba sacársela, y nadie quería acercarse. El dolor era tan fuerte que no pudo cazar ni dormir en toda la noche.",
+      "Un colibrí, que había escuchado sus burlas, aun así se posó cerca. «Puedo ayudarte», le dijo. Con su pico fino sacó la espina con mucho cuidado.",
+      "El jaguar quedó en silencio. Sus orejas se agacharon y sus ojos buscaron el suelo. Sentía vergüenza por haberse reído de quien ahora lo había salvado del dolor.",
+      "Desde ese día, el jaguar saludaba a todos con respeto. Comprendió que la fuerza sirve más cuando se usa para ayudar, y que cada animal, sin importar su tamaño, tiene un talento valioso."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿De qué presumía el jaguar?",
+        "evidencia": "Presumía de ser fuerte y se burlaba de los animales pequeños.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Con qué se lastimó el jaguar?",
+        "evidencia": "Un día se lastimó una pata con una espina enorme.",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Cómo sacó el colibrí la espina?",
+        "evidencia": "Con su pico fino sacó la espina con mucho cuidado.",
+        "parrafo": 3
+      },
+      {
+        "pregunta": "¿Cómo saludaba el jaguar después de lo ocurrido?",
+        "evidencia": "Desde ese día, el jaguar saludaba a todos con respeto.",
+        "parrafo": 5
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué nadie quería acercarse al jaguar?",
+        "pista": "Presumía de ser fuerte y se burlaba de los animales pequeños.",
+        "respuesta_modelo": "Porque era grande y se burlaba de los demás; los animales le tenían miedo o estaban molestos con él."
+      },
+      {
+        "pregunta": "¿Por qué sintió vergüenza el jaguar?",
+        "pista": "Sentía vergüenza por haberse reído de quien ahora lo había salvado del dolor.",
+        "respuesta_modelo": "Porque se había burlado del colibrí y fue justo el colibrí quien lo ayudó."
+      },
+      {
+        "pregunta": "¿Qué enseñanza deja la fábula?",
+        "pista": "cada animal, sin importar su tamaño, tiene un talento valioso.",
+        "respuesta_modelo": "Que nadie es poco importante por su tamaño y que la fuerza debe usarse para ayudar."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "orgulloso",
+        "pregunta": "¿Qué significa «orgulloso» en este texto?",
+        "opciones": [
+          "que tiene mucho sueño",
+          "que se cree mejor que los demás",
+          "que es muy generoso"
+        ],
+        "correcta": 1,
+        "explicacion": "El jaguar presumía de su fuerza y se burlaba de los pequeños; eso muestra orgullo excesivo."
+      },
+      {
+        "palabra": "se posó",
+        "pregunta": "¿Qué significa «se posó» en este texto?",
+        "opciones": [
+          "se escondió en la selva",
+          "se fue volando lejos",
+          "se paró suavemente sobre algo"
+        ],
+        "correcta": 2,
+        "explicacion": "El colibrí quedó cerca del jaguar para ayudarlo; se posó es detenerse al volar."
+      },
+      {
+        "palabra": "vergüenza",
+        "pregunta": "¿Qué significa «vergüenza» en este texto?",
+        "opciones": [
+          "sentimiento incómodo por haber actuado mal",
+          "mucha alegría",
+          "ganas de comer"
+        ],
+        "correcta": 0,
+        "explicacion": "El jaguar quedó en silencio porque se había burlado de quien lo salvó."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo se dice que nadie quería acercarse?",
+        "parrafo": 2,
+        "explicacion": "En el párrafo 2, cuando el jaguar está lastimado."
+      },
+      {
+        "pregunta": "¿En qué párrafo ofrece el colibrí su ayuda?",
+        "parrafo": 3,
+        "explicacion": "En el párrafo 3 dice Puedo ayudarte."
+      },
+      {
+        "pregunta": "¿En qué párrafo cambia el jaguar su manera de actuar?",
+        "parrafo": 5,
+        "explicacion": "En el párrafo 5 saluda a todos con respeto."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "El jaguar se burlaba de los animales pequeños",
+        "El jaguar se lastimó una pata con una espina",
+        "El colibrí le sacó la espina",
+        "El jaguar sintió vergüenza",
+        "El jaguar empezó a saludar con respeto"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "El colibrí sacó la espina con su pico fino",
+          "efecto": "El jaguar se salvó del dolor"
+        },
+        {
+          "causa": "El jaguar comprendió que cada animal tiene un talento valioso",
+          "efecto": "Saludó a todos con respeto"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Por qué crees que el colibrí ayudó al jaguar aunque este se había burlado de él?",
+        "criterios": "Opina con razones sobre bondad o perdón."
+      },
+      {
+        "pregunta": "¿Has visto que alguien se burle de otro por ser distinto? ¿Qué harías tú?",
+        "criterios": "Relaciona con su vida y propone una acción respetuosa."
+      }
+    ],
+    "valor": "Respeto y humildad ante los demás."
+  },
+  {
+    "id": "L3-02",
+    "grado": 3,
+    "tipologia": "crónica de Cali",
+    "titulo": "Domingo de ciclovía",
+    "parrafos": [
+      "Los domingos, desde muy temprano, varias calles de Cali se llenan de bicicletas, patines y risas. Es la ciclovía, y mi familia no se la pierde.",
+      "Salimos a las siete de la mañana. Mi papá lleva el termo de aguapanela y mi mamá, las gorras para el sol. Mi hermano menor va adelante, tocando el timbre de su bicicleta.",
+      "Por el camino vimos a un grupo de señores bailando salsa al ritmo de un parlante. Nos detuvimos un momento y mi mamá, que baila muy bien, se unió al baile.",
+      "A las diez descansamos bajo un samán. Compartimos el aguapanela con una pareja de abuelitos que nos contaron que llevan veinte años pedaleando cada domingo.",
+      "Volvimos a casa cansados, pero contentos. Para mí, la ciclovía no es solo deporte: es la manera en que mi ciudad nos invita a encontrarnos."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Qué llena las calles de Cali los domingos?",
+        "evidencia": "Los domingos, desde muy temprano, varias calles de Cali se llenan de bicicletas, patines y risas.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿A qué hora salió la familia?",
+        "evidencia": "Salimos a las siete de la mañana.",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Qué lleva el papá y qué lleva la mamá?",
+        "evidencia": "Mi papá lleva el termo de aguapanela y mi mamá, las gorras para el sol.",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Cuánto tiempo llevan pedaleando los abuelitos?",
+        "evidencia": "llevan veinte años pedaleando cada domingo",
+        "parrafo": 4
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué la mamá se unió al baile?",
+        "pista": "mi mamá, que baila muy bien, se unió al baile.",
+        "respuesta_modelo": "Porque le gusta bailar y lo hace muy bien; la música la animó."
+      },
+      {
+        "pregunta": "¿Qué quiere decir el narrador con que la ciclovía es la manera en que su ciudad nos invita a encontrarnos?",
+        "pista": "la ciclovía no es solo deporte",
+        "respuesta_modelo": "Que además del ejercicio, la ciclovía reúne a las personas: familias, bailarines y abuelitos comparten el espacio."
+      },
+      {
+        "pregunta": "¿Cómo se sintió la familia al regresar a casa?",
+        "pista": "Volvimos a casa cansados, pero contentos.",
+        "respuesta_modelo": "Estaban cansados por el ejercicio, pero felices por el paseo."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "parlante",
+        "pregunta": "¿Qué significa «parlante» en este texto?",
+        "opciones": [
+          "un tipo de bicicleta",
+          "una bebida caliente",
+          "aparato que hace sonar la música"
+        ],
+        "correcta": 2,
+        "explicacion": "Los señores bailaban salsa al ritmo de un parlante: el aparato que suelta el sonido."
+      },
+      {
+        "palabra": "samán",
+        "pregunta": "¿Qué significa «samán» en este texto?",
+        "opciones": [
+          "un árbol grande que da sombra",
+          "una clase de patín",
+          "una canción de salsa"
+        ],
+        "correcta": 0,
+        "explicacion": "Descansaron bajo él, es decir, en un lugar con sombra donde se pudo descansar."
+      },
+      {
+        "palabra": "pedaleando",
+        "pregunta": "¿Qué significa «pedaleando» en este texto?",
+        "opciones": [
+          "corriendo a pie",
+          "moviendo los pedales de una bicicleta",
+          "bailando salsa"
+        ],
+        "correcta": 1,
+        "explicacion": "Los abuelitos van cada domingo a la ciclovía en bicicleta."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo se habla de bailar salsa?",
+        "parrafo": 3,
+        "explicacion": "El párrafo 3 cuenta de los señores bailando salsa."
+      },
+      {
+        "pregunta": "¿En qué párrafo está la reflexión final del narrador?",
+        "parrafo": 5,
+        "explicacion": "El párrafo 5 dice lo que la ciclovía significa para él."
+      },
+      {
+        "pregunta": "¿En qué párrafo se comparte el aguapanela?",
+        "parrafo": 4,
+        "explicacion": "El párrafo 4 cuenta que la compartieron con los abuelitos."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "La familia sale a las siete de la mañana",
+        "Ven a unos señores bailando salsa",
+        "La mamá se une al baile",
+        "Descansan bajo un samán y comparten aguapanela",
+        "Vuelven a casa cansados y contentos"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "La mamá baila muy bien",
+          "efecto": "Se unió al baile de los señores"
+        },
+        {
+          "causa": "La familia pedalea y comparte con otros",
+          "efecto": "Vuelven a casa cansados pero contentos"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Cómo es un domingo en tu familia y qué lo hace especial?",
+        "criterios": "Describe con detalles y explica por qué le gusta."
+      },
+      {
+        "pregunta": "¿Estás de acuerdo con que la ciclovía es más que deporte? ¿Por qué?",
+        "criterios": "Opina con razones basadas en el texto o en su experiencia."
+      }
+    ],
+    "valor": "Convivir en familia y con los vecinos de la ciudad."
+  },
+  {
+    "id": "L3-03",
+    "grado": 3,
+    "tipologia": "instructivo",
+    "titulo": "Cómo armar tu presupuesto semanal",
+    "parrafos": [
+      "Un presupuesto es un plan para usar el dinero con inteligencia. Con él sabes cuánto tienes, en qué lo gastarás y cuánto guardarás. Sigue estos pasos.",
+      "Paso 1: anota cuánto dinero recibes en la semana, por ejemplo, la mesada que te dan en casa.",
+      "Paso 2: escribe tus gastos necesarios, como el pasaje o el refrigerio del colegio. Esos gastos van primero. Si los olvidas, quizá no te alcance para lo importante.",
+      "Paso 3: separa una parte para ahorrar antes de gastar en gustos. Una regla fácil es guardar al menos una de cada diez monedas.",
+      "Paso 4: el dinero que sobra es para tus gustos, como un helado o un juguete. Si se acaba, espera hasta la próxima semana.",
+      "Al final, revisa tu plan. Si lograste guardar, ¡felicítate! Recuerda que un presupuesto no es para sufrir, sino para decidir con tranquilidad en qué usar cada moneda."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Qué es un presupuesto?",
+        "evidencia": "Un presupuesto es un plan para usar el dinero con inteligencia.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Qué se anota en el paso 1?",
+        "evidencia": "anota cuánto dinero recibes en la semana",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Qué gastos van primero?",
+        "evidencia": "Esos gastos van primero.",
+        "parrafo": 3
+      },
+      {
+        "pregunta": "¿Cuánto se recomienda guardar según la regla fácil?",
+        "evidencia": "Una regla fácil es guardar al menos una de cada diez monedas.",
+        "parrafo": 4
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué se separa el ahorro antes de gastar en gustos?",
+        "pista": "separa una parte para ahorrar antes de gastar en gustos.",
+        "respuesta_modelo": "Porque si se gasta primero en gustos, puede que no quede nada para ahorrar."
+      },
+      {
+        "pregunta": "¿Qué pasa si se gasta todo el dinero de la semana el primer día en helados?",
+        "pista": "Si se acaba, espera hasta la próxima semana.",
+        "respuesta_modelo": "Tendrías que esperar hasta la próxima semana y podrías quedarte sin dinero para necesidades como el pasaje."
+      },
+      {
+        "pregunta": "¿En qué se diferencia un gasto necesario de un gusto?",
+        "pista": "gastos necesarios, como el pasaje o el refrigerio del colegio",
+        "respuesta_modelo": "Lo necesario es lo que hace falta para el día a día; un gusto es algo que se quiere pero no es indispensable."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "mesada",
+        "pregunta": "¿Qué significa «mesada» en este texto?",
+        "opciones": [
+          "dinero que la familia da cada semana o mes a un hijo",
+          "una mesa de madera",
+          "un tipo de helado"
+        ],
+        "correcta": 0,
+        "explicacion": "El ejemplo dice que es lo que te dan en casa y se anota como dinero que recibes."
+      },
+      {
+        "palabra": "refrigerio",
+        "pregunta": "¿Qué significa «refrigerio» en este texto?",
+        "opciones": [
+          "un aparato para enfriar",
+          "comida ligera del descanso del colegio",
+          "un cuaderno de cuentas"
+        ],
+        "correcta": 1,
+        "explicacion": "Se menciona como un gasto necesario del colegio."
+      },
+      {
+        "palabra": "sobra",
+        "pregunta": "¿Qué significa «sobra» en este texto?",
+        "opciones": [
+          "se pierde en la calle",
+          "se pide prestado",
+          "queda después de pagar lo necesario y ahorrar"
+        ],
+        "correcta": 2,
+        "explicacion": "Después de los gastos necesarios y del ahorro, lo que queda es para los gustos."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo se dice qué hacer con el dinero que sobra?",
+        "parrafo": 5,
+        "explicacion": "El paso 4, en el párrafo 5, habla de gustos."
+      },
+      {
+        "pregunta": "¿En qué párrafo se dan ejemplos de gastos necesarios?",
+        "parrafo": 3,
+        "explicacion": "En el párrafo 3 están el pasaje y el refrigerio."
+      },
+      {
+        "pregunta": "¿En qué párrafo está la definición de presupuesto?",
+        "parrafo": 1,
+        "explicacion": "El párrafo 1 define qué es un presupuesto."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "Anotar cuánto dinero recibes",
+        "Escribir los gastos necesarios",
+        "Separar una parte para ahorrar",
+        "Usar lo que sobra en gustos",
+        "Revisar el plan al final"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "El dinero para gustos se acaba",
+          "efecto": "Hay que esperar hasta la próxima semana"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "Piensa en tu semana: ¿cuál sería un gasto necesario y cuál un gusto para ti?",
+        "criterios": "Da un ejemplo de cada uno y explica la diferencia."
+      },
+      {
+        "pregunta": "¿Crees que un niño necesita un presupuesto? ¿Por qué?",
+        "criterios": "Opina con razones sobre aprender a usar bien el dinero."
+      }
+    ],
+    "valor": "Responsabilidad al usar el dinero."
+  },
+  {
+    "id": "L4-01",
+    "grado": 4,
+    "tipologia": "texto expositivo científico",
+    "titulo": "La cocina de las plantas",
+    "parrafos": [
+      "Las plantas no compran su comida en una tienda: la fabrican ellas mismas. Este proceso se llama fotosíntesis, una palabra que viene del griego y significa «composición con luz».",
+      "Para realizar la fotosíntesis, la planta necesita tres ingredientes. El primero es el agua, que sus raíces absorben del suelo. El segundo es el dióxido de carbono, un gas del aire que entra por unos poros diminutos de las hojas llamados estomas. El tercero es la luz del sol.",
+      "La clorofila, el pigmento verde que hay dentro de las hojas, captura la energía de la luz. Con esa energía, la planta transforma el agua y el dióxido de carbono en glucosa, un azúcar que le sirve de alimento. Este proceso ocurre principalmente de día, mientras hay sol.",
+      "Además, la fotosíntesis produce oxígeno, que la planta libera al aire. Gracias a ello, las personas y los animales podemos respirar. Por eso, los bosques del Valle del Cauca y las selvas del Pacífico son tan importantes para todos.",
+      "Sin luz, la fotosíntesis se detiene. Por eso, una planta que se deja muchos días en un lugar oscuro se pone amarillenta y débil, porque pierde su clorofila. Por eso las plantas de interior se ponen cerca de las ventanas."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Cómo se llama el proceso con el que las plantas fabrican su comida?",
+        "evidencia": "Este proceso se llama fotosíntesis",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Cuántos ingredientes necesita la planta para la fotosíntesis?",
+        "evidencia": "Para realizar la fotosíntesis, la planta necesita tres ingredientes.",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Qué hace la clorofila?",
+        "evidencia": "La clorofila, el pigmento verde que hay dentro de las hojas, captura la energía de la luz.",
+        "parrafo": 3
+      },
+      {
+        "pregunta": "¿Qué libera la planta al aire?",
+        "evidencia": "Además, la fotosíntesis produce oxígeno, que la planta libera al aire.",
+        "parrafo": 4
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué se dice que las plantas fabrican su propia comida?",
+        "pista": "la planta transforma el agua y el dióxido de carbono en glucosa, un azúcar que le sirve de alimento.",
+        "respuesta_modelo": "Porque ellas mismas producen glucosa a partir de agua, dióxido de carbono y luz; no necesitan comprar ni buscar alimento."
+      },
+      {
+        "pregunta": "¿Por qué una planta en un lugar oscuro se pone amarillenta y débil?",
+        "pista": "Sin luz, la fotosíntesis se detiene.",
+        "respuesta_modelo": "Porque sin luz no puede hacer fotosíntesis, no produce alimento y pierde su clorofila verde."
+      },
+      {
+        "pregunta": "¿Qué relación hay entre los bosques y la respiración de las personas?",
+        "pista": "Gracias a ello, las personas y los animales podemos respirar.",
+        "respuesta_modelo": "Los bosques producen oxígeno con la fotosíntesis, y ese oxígeno es el que respiramos."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "pigmento",
+        "pregunta": "¿Qué significa «pigmento» en este texto?",
+        "opciones": [
+          "parte de la raíz",
+          "sustancia que da color",
+          "gas del aire"
+        ],
+        "correcta": 1,
+        "explicacion": "La clorofila es el pigmento verde de las hojas: lo que les da su color."
+      },
+      {
+        "palabra": "absorben",
+        "pregunta": "¿Qué significa «absorben» en este texto?",
+        "opciones": [
+          "botan al suelo",
+          "cortan",
+          "toman algo hacia el interior"
+        ],
+        "correcta": 2,
+        "explicacion": "Las raíces toman el agua del suelo hacia la planta."
+      },
+      {
+        "palabra": "libera",
+        "pregunta": "¿Qué significa «libera» en este texto?",
+        "opciones": [
+          "deja salir",
+          "guarda",
+          "compra"
+        ],
+        "correcta": 0,
+        "explicacion": "La planta produce oxígeno y lo suelta al aire, para que lo respiremos."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo se mencionan los tres ingredientes de la fotosíntesis?",
+        "parrafo": 2,
+        "explicacion": "En el párrafo 2 se explican agua, dióxido de carbono y luz."
+      },
+      {
+        "pregunta": "¿En qué párrafo se dice por qué son importantes los bosques?",
+        "parrafo": 4,
+        "explicacion": "En el párrafo 4, por el oxígeno que producen."
+      },
+      {
+        "pregunta": "¿En qué párrafo se explica qué pasa sin luz?",
+        "parrafo": 5,
+        "explicacion": "En el párrafo 5 se dice que la fotosíntesis se detiene."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "La planta recibe agua, dióxido de carbono y luz",
+        "La clorofila captura la energía de la luz",
+        "El agua y el dióxido de carbono se transforman en glucosa",
+        "La planta libera oxígeno al aire"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "Una planta pasa muchos días sin luz",
+          "efecto": "Se pone amarillenta y débil"
+        },
+        {
+          "causa": "La planta libera oxígeno",
+          "efecto": "Las personas y los animales pueden respirar"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Por qué deberíamos proteger los árboles de nuestro barrio? Da dos razones del texto.",
+        "criterios": "Debe mencionar oxígeno y alimento/ respiración, con ejemplos del barrio."
+      },
+      {
+        "pregunta": "¿Cómo podrías comprobar con un experimento sencillo que las plantas necesitan luz?",
+        "criterios": "Propone comparar dos plantas, una con luz y otra sin ella, y observar los cambios."
+      }
+    ],
+    "valor": "Cuidar la naturaleza que nos da la vida."
+  },
+  {
+    "id": "L4-02",
+    "grado": 4,
+    "tipologia": "texto argumentativo",
+    "titulo": "Un recreo para jugar",
+    "parrafos": [
+      "En muchos colegios, a la hora del recreo, algunos estudiantes se sientan a mirar el celular en vez de jugar. Yo pienso que el recreo debe ser un tiempo sin pantallas, y quiero explicar por qué.",
+      "En primer lugar, el cuerpo necesita moverse. Correr, saltar y jugar fútbol fortalece los músculos y ayuda a que los niños duerman mejor por la noche. Quien pasa todo el descanso sentado no gasta energía. Además, el movimiento mejora el ánimo y despeja la mente para volver a clase.",
+      "En segundo lugar, jugar con otros enseña a convivir. Cuando organizamos un partido, aprendemos a esperar turnos, a ponernos de acuerdo y a aceptar que a veces se pierde. Con una pantalla en la mano, esas lecciones se pierden.",
+      "Algunas personas dicen que el celular también sirve para aprender, y tienen razón. Pero para eso están las clases, donde el profesor guía su uso. El recreo, en cambio, es el único momento del día pensado para descansar la mente y compartir.",
+      "Por todo lo anterior, propongo que cada curso tenga una caja de juegos: cuerdas, balones y ajedrez. Así, el recreo será un espacio donde todos se muevan, rían y construyan amistades. Estoy seguro de que, con un poco de práctica, hasta los más tímidos se animarán a participar."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Qué piensa el autor sobre el recreo?",
+        "evidencia": "Yo pienso que el recreo debe ser un tiempo sin pantallas",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Cuál es la primera razón del autor?",
+        "evidencia": "En primer lugar, el cuerpo necesita moverse.",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Qué se aprende al organizar un partido?",
+        "evidencia": "aprendemos a esperar turnos, a ponernos de acuerdo y a aceptar que a veces se pierde",
+        "parrafo": 3
+      },
+      {
+        "pregunta": "¿Qué propone el autor al final?",
+        "evidencia": "propongo que cada curso tenga una caja de juegos: cuerdas, balones y ajedrez",
+        "parrafo": 5
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué el autor reconoce que el celular sirve para aprender?",
+        "pista": "Algunas personas dicen que el celular también sirve para aprender, y tienen razón.",
+        "respuesta_modelo": "Para ser justo con la otra opinión y luego mostrar que su propuesta sigue siendo válida; así su argumento es más sólido."
+      },
+      {
+        "pregunta": "¿Qué diferencia hace el autor entre las clases y el recreo?",
+        "pista": "Pero para eso están las clases, donde el profesor guía su uso.",
+        "respuesta_modelo": "Que en clase el celular puede servir para aprender con guía del profesor, mientras que el recreo es para descansar y compartir."
+      },
+      {
+        "pregunta": "¿Cuál es el propósito de proponer una caja de juegos?",
+        "pista": "propongo que cada curso tenga una caja de juegos",
+        "respuesta_modelo": "Ofrecer una solución práctica para que los estudiantes tengan con qué jugar en lugar de usar el celular."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "convivir",
+        "pregunta": "¿Qué significa «convivir» en este texto?",
+        "opciones": [
+          "comer en el restaurante",
+          "jugar solo",
+          "vivir en armonía con otras personas"
+        ],
+        "correcta": 2,
+        "explicacion": "Al jugar con otros se aprende a esperar turnos y a ponerse de acuerdo."
+      },
+      {
+        "palabra": "fortalece",
+        "pregunta": "¿Qué significa «fortalece» en este texto?",
+        "opciones": [
+          "hace más fuerte",
+          "hace más lento",
+          "hace más pequeño"
+        ],
+        "correcta": 0,
+        "explicacion": "Correr y saltar ayudan a los músculos, es decir, los hacen más fuertes."
+      },
+      {
+        "palabra": "propongo",
+        "pregunta": "¿Qué significa «propongo» en este texto?",
+        "opciones": [
+          "niego una idea",
+          "sugiero una idea o plan",
+          "olvido una idea"
+        ],
+        "correcta": 1,
+        "explicacion": "Después de dar razones, el autor presenta su idea de la caja de juegos."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo presenta el autor su opinión?",
+        "parrafo": 1,
+        "explicacion": "En el párrafo 1 está la tesis."
+      },
+      {
+        "pregunta": "¿En qué párrafo se menciona una opinión contraria?",
+        "parrafo": 4,
+        "explicacion": "En el párrafo 4 habla de quienes dicen que el celular sirve para aprender."
+      },
+      {
+        "pregunta": "¿En qué párrafo hace su propuesta?",
+        "parrafo": 5,
+        "explicacion": "En el párrafo 5 propone la caja de juegos."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "El autor presenta su opinión",
+        "Explica que el cuerpo necesita moverse",
+        "Explica que jugar enseña a convivir",
+        "Reconoce que el celular sirve para aprender",
+        "Propone una caja de juegos"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "Los niños corren, saltan y juegan fútbol",
+          "efecto": "Fortalecen los músculos y duermen mejor"
+        },
+        {
+          "causa": "Se organiza un partido entre varios",
+          "efecto": "Se aprende a esperar turnos y a ponerse de acuerdo"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Estás de acuerdo con el autor? Explica con dos razones.",
+        "criterios": "Toma una posición y la sostiene con razones claras, de tipo personal o del texto."
+      },
+      {
+        "pregunta": "¿Qué otro argumento agregarías para defender o rebatir la idea del autor?",
+        "criterios": "Propone una razón nueva, coherente y respetuosa."
+      }
+    ],
+    "valor": "Convivencia y vida sana."
+  },
+  {
+    "id": "L4-03",
+    "grado": 4,
+    "tipologia": "cuento",
+    "titulo": "Los tamales de doña Luz",
+    "parrafos": [
+      "En la casa de los Mina, en el barrio Ciudad Córdoba, diciembre olía a hojas de plátano y a laurel. Afuera, los vecinos ya cantaban villancicos. Doña Luz, la abuela, había reunido a toda la familia para hacer los tamales de la novena.",
+      "Camila, de nueve años, estaba emocionada. Pero cuando le entregaron una hoja para envolver, la masa se le salió por todos lados y quedó un desastre. «Yo no sirvo para esto», murmuró, y se sentó lejos de la mesa.",
+      "La abuela se acercó sin regañarla. Tomó otra hoja y le dijo: «Mira mis manos. Yo también hice muchos tamales feos antes de aprender. Lo importante es el cariño con que se amarra el cordel».",
+      "Camila volvió a intentarlo. Puso menos masa, dobló los bordes con paciencia y amarró el paquete. Su abuela la miraba en silencio, con una sonrisa. No quedó perfecto, pero se mantuvo cerrado mientras hervía en la olla.",
+      "Esa noche, cuando la familia cenó, Camila sirvió el tamal en el plato de su abuelo, sin decirle cuál era el suyo. El abuelo lo probó y sonrió. «Este es el mejor», dijo. Camila se sonrojó, porque supo que no lo decía por su forma, sino por todo el esfuerzo que había detrás. Todos los demás comían y reían."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Dónde ocurre la historia y a qué olía diciembre en esa casa?",
+        "evidencia": "En la casa de los Mina, en el barrio Ciudad Córdoba, diciembre olía a hojas de plátano y a laurel.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Qué le pasó a Camila con la masa?",
+        "evidencia": "la masa se le salió por todos lados y quedó un desastre",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Qué dijo la abuela que era lo importante?",
+        "evidencia": "Lo importante es el cariño con que se amarra el cordel",
+        "parrafo": 3
+      },
+      {
+        "pregunta": "¿Qué hizo Camila con el tamal en la cena?",
+        "evidencia": "Camila sirvió el tamal en el plato de su abuelo, sin decirle cuál era el suyo.",
+        "parrafo": 5
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué Camila se sentó lejos de la mesa?",
+        "pista": "«Yo no sirvo para esto», murmuró",
+        "respuesta_modelo": "Porque se sintió frustrada y avergonzada por su error y pensó que no era capaz."
+      },
+      {
+        "pregunta": "¿Por qué el abuelo dijo que era el mejor tamal?",
+        "pista": "no lo decía por su forma, sino por todo el esfuerzo que había detrás",
+        "respuesta_modelo": "Porque valoró el esfuerzo y el cariño de Camila, aunque el tamal no fuera perfecto."
+      },
+      {
+        "pregunta": "¿Qué quiso enseñar la abuela con sus palabras?",
+        "pista": "Yo también hice muchos tamales feos antes de aprender.",
+        "respuesta_modelo": "Que equivocarse es parte de aprender y que el cariño y la práctica importan más que la perfección."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "regañarla",
+        "pregunta": "¿Qué significa «regañarla» en este texto?",
+        "opciones": [
+          "reprenderla con enojo",
+          "abrazarla con cariño",
+          "alimentarla"
+        ],
+        "correcta": 0,
+        "explicacion": "La abuela se acerca sin regañarla y la anima; por eso no la reprende."
+      },
+      {
+        "palabra": "murmuró",
+        "pregunta": "¿Qué significa «murmuró» en este texto?",
+        "opciones": [
+          "gritó con fuerza",
+          "dijo en voz muy baja",
+          "cantó una canción"
+        ],
+        "correcta": 1,
+        "explicacion": "Camila se sentó lejos, desanimada; murmurar es hablar bajito."
+      },
+      {
+        "palabra": "se sonrojó",
+        "pregunta": "¿Qué significa «se sonrojó» en este texto?",
+        "opciones": [
+          "se puso triste",
+          "se quedó dormida",
+          "se puso roja de pena o emoción"
+        ],
+        "correcta": 2,
+        "explicacion": "Al escuchar al abuelo, Camila sintió emoción y pena; por eso se sonrojó."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo ocurre el problema de Camila?",
+        "parrafo": 2,
+        "explicacion": "En el párrafo 2 se le sale la masa."
+      },
+      {
+        "pregunta": "¿En qué párrafo da la abuela su consejo?",
+        "parrafo": 3,
+        "explicacion": "En el párrafo 3 le habla de equivocarse y del cariño."
+      },
+      {
+        "pregunta": "¿En qué párrafo termina la historia con el abuelo?",
+        "parrafo": 5,
+        "explicacion": "En el párrafo 5 el abuelo prueba el tamal."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "La familia se reúne para hacer tamales",
+        "A Camila se le sale la masa",
+        "La abuela le comparte un consejo",
+        "Camila lo intenta con paciencia",
+        "El abuelo prueba el tamal y sonríe"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "A Camila se le salió la masa",
+          "efecto": "Se sentó lejos de la mesa"
+        },
+        {
+          "causa": "Camila puso menos masa y dobló los bordes con paciencia",
+          "efecto": "El tamal se mantuvo cerrado mientras hervía"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Por qué no es necesario ser perfecto para hacer algo bien? Usa el cuento y tu experiencia.",
+        "criterios": "Relaciona el consejo de la abuela con un ejemplo propio y da razones."
+      },
+      {
+        "pregunta": "¿Fue honesto el abuelo al decir que era el mejor tamal? ¿Por qué?",
+        "criterios": "Opina con razones; puede distinguir entre mejor por esfuerzo y mejor por sabor."
+      }
+    ],
+    "valor": "Perseverancia y cariño en la familia."
+  },
+  {
+    "id": "L5-01",
+    "grado": 5,
+    "tipologia": "cuento",
+    "titulo": "El filtro de Tomás",
+    "parrafos": [
+      "Tomás Ocampo, estudiante de quinto grado de Cali, tenía una pregunta que no lo dejaba dormir: ¿por qué el agua de la quebrada cerca de su colegio se veía turbia después de las lluvias? Decidió convertir esa duda en su proyecto para la feria de ciencias.",
+      "Con ayuda de su profesora Paula, consiguió una botella plástica, arena, grava, carbón vegetal y algodón. Los colocó en capas dentro de la botella, con el algodón en el fondo y la grava arriba, y vertió el agua turbia por la parte superior.",
+      "El primer intento fracasó: el agua salió casi igual de sucia. Tomás revisó sus notas y descubrió que había mezclado las capas. Entonces las ordenó de nuevo y repitió la prueba con paciencia.",
+      "Esta vez el agua salió mucho más clara. Pero la profesora le hizo una advertencia importante: «Se ve limpia, pero un filtro casero no elimina todos los microbios. No la bebas; para eso hay que hervirla o usar un tratamiento adecuado».",
+      "En la feria, Tomás explicó con honestidad lo que su filtro lograba y lo que no. Los jurados valoraron más su sinceridad que el brillo del experimento. Tomás aprendió que un buen científico no esconde los límites de su invento."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Qué pregunta tenía Tomás?",
+        "evidencia": "¿por qué el agua de la quebrada cerca de su colegio se veía turbia después de las lluvias?",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Qué materiales consiguió Tomás?",
+        "evidencia": "consiguió una botella plástica, arena, grava, carbón vegetal y algodón",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Por qué falló el primer intento?",
+        "evidencia": "Tomás revisó sus notas y descubrió que había mezclado las capas.",
+        "parrafo": 3
+      },
+      {
+        "pregunta": "¿Qué advirtió la profesora sobre el filtro?",
+        "evidencia": "un filtro casero no elimina todos los microbios",
+        "parrafo": 4
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué los jurados valoraron más la sinceridad de Tomás que el brillo del experimento?",
+        "pista": "Los jurados valoraron más su sinceridad que el brillo del experimento.",
+        "respuesta_modelo": "Porque en ciencia es más importante ser honesto sobre los resultados y límites que impresionar; la sinceridad da confianza."
+      },
+      {
+        "pregunta": "¿Qué revela del carácter de Tomás la forma en que reaccionó al fracaso?",
+        "pista": "Entonces las ordenó de nuevo y repitió la prueba con paciencia.",
+        "respuesta_modelo": "Que es perseverante y cuidadoso: revisa sus notas, corrige y vuelve a intentar sin rendirse."
+      },
+      {
+        "pregunta": "¿Por qué advierte la profesora que no se debe beber el agua aunque se vea limpia?",
+        "pista": "Se ve limpia, pero un filtro casero no elimina todos los microbios.",
+        "respuesta_modelo": "Porque que el agua se vea clara no significa que esté libre de microbios que enferman."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "turbia",
+        "pregunta": "¿Qué significa «turbia» en este texto?",
+        "opciones": [
+          "muy fría",
+          "con partículas que la hacen poco clara",
+          "muy dulce"
+        ],
+        "correcta": 1,
+        "explicacion": "Después de las lluvias el agua se veía sucia; el filtro luego la deja más clara."
+      },
+      {
+        "palabra": "advertencia",
+        "pregunta": "¿Qué significa «advertencia» en este texto?",
+        "opciones": [
+          "felicitación por un logro",
+          "pregunta de examen",
+          "aviso sobre un riesgo"
+        ],
+        "correcta": 2,
+        "explicacion": "La profesora le avisa que el agua no se puede beber todavía."
+      },
+      {
+        "palabra": "vertió",
+        "pregunta": "¿Qué significa «vertió» en este texto?",
+        "opciones": [
+          "echó un líquido",
+          "rompió un vaso",
+          "dibujó una línea"
+        ],
+        "correcta": 0,
+        "explicacion": "Tomás vertió el agua turbia por la parte superior del filtro para que pasara por las capas."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo se cuenta el primer fracaso?",
+        "parrafo": 3,
+        "explicacion": "En el párrafo 3 el agua sale casi igual de sucia."
+      },
+      {
+        "pregunta": "¿En qué párrafo hace la profesora su advertencia?",
+        "parrafo": 4,
+        "explicacion": "En el párrafo 4 le dice que no la beba."
+      },
+      {
+        "pregunta": "¿En qué párrafo aprende Tomás su lección final?",
+        "parrafo": 5,
+        "explicacion": "En el párrafo 5, tras la feria."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "Tomás se pregunta por qué el agua se ve turbia",
+        "Arma el filtro con capas de materiales",
+        "El primer intento fracasa",
+        "Ordena las capas y repite la prueba",
+        "Explica con honestidad los límites de su filtro"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "Tomás había mezclado las capas",
+          "efecto": "El agua salió casi igual de sucia"
+        },
+        {
+          "causa": "Un filtro casero no elimina todos los microbios",
+          "efecto": "El agua no se debe beber sin hervirla"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Es más importante que un invento funcione o que su creador diga con sinceridad sus límites? Argumenta.",
+        "criterios": "Toma una posición, la sostiene con razones y puede apoyarse en el cuento."
+      },
+      {
+        "pregunta": "¿Qué problema de tu barrio o de tu colegio investigarías como Tomás? ¿Cómo empezarías?",
+        "criterios": "Plantea una pregunta investigable y un primer paso concreto."
+      }
+    ],
+    "valor": "Honestidad científica y perseverancia ante el error."
+  },
+  {
+    "id": "L5-02",
+    "grado": 5,
+    "tipologia": "crónica de Cali",
+    "titulo": "Una tarde de salsa en la cancha",
+    "parrafos": [
+      "A las cinco de la tarde, la cancha del barrio ya tenía más gente de la que cabía. Había abuelos con sillas plásticas, niños con banderines y jóvenes que acomodaban los parlantes. Era la tarde de salsa que el barrio organiza cada año para recoger fondos para una biblioteca comunitaria.",
+      "Cali es conocida como la capital de la salsa, y esa tarde se notaba por qué. Cuando el primer grupo empezó con los timbales y las congas, los pies de todos comenzaron a moverse solos, incluso los de quienes juraban que no sabían bailar.",
+      "Entre los asistentes estaba doña Gloria, de setenta y dos años, que llegó con un vestido rojo y unos zapatos brillantes. «Yo aprendí a bailar en este mismo barrio, cuando todavía no había ni pavimento», contó mientras esperaba su turno en la pista.",
+      "A las siete, los organizadores anunciaron la cifra: se habían recogido cuatro millones de pesos entre las boletas y la venta de empanadas. Con ese dinero, podrían comprar los primeros doscientos libros. La gente aplaudió como si hubieran anunciado un gol.",
+      "Al final de la noche, me quedé pensando que esa cancha no solo sirvió para bailar. Sirvió para que vecinos que casi no se saludaban terminaran compartiendo un baile, una empanada y un sueño común: una biblioteca para sus hijos."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Para qué se organiza cada año la tarde de salsa?",
+        "evidencia": "Era la tarde de salsa que el barrio organiza cada año para recoger fondos para una biblioteca comunitaria.",
+        "parrafo": 1
+      },
+      {
+        "pregunta": "¿Con qué instrumentos empezó el primer grupo?",
+        "evidencia": "Cuando el primer grupo empezó con los timbales y las congas",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Cuántos años tenía doña Gloria?",
+        "evidencia": "doña Gloria, de setenta y dos años",
+        "parrafo": 3
+      },
+      {
+        "pregunta": "¿Cuánto dinero se recogió y de dónde salió?",
+        "evidencia": "se habían recogido cuatro millones de pesos entre las boletas y la venta de empanadas",
+        "parrafo": 4
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué el cronista dice que la cancha no solo sirvió para bailar?",
+        "pista": "Sirvió para que vecinos que casi no se saludaban terminaran compartiendo un baile, una empanada y un sueño común",
+        "respuesta_modelo": "Porque el evento unió a los vecinos y los hizo compartir un propósito, más allá de la música."
+      },
+      {
+        "pregunta": "¿Qué quiere mostrar la comparación con un gol?",
+        "pista": "La gente aplaudió como si hubieran anunciado un gol.",
+        "respuesta_modelo": "Que la alegría fue enorme y colectiva, como cuando todo un estadio celebra."
+      },
+      {
+        "pregunta": "¿Qué sugiere doña Gloria cuando dice que aprendió a bailar cuando no había ni pavimento?",
+        "pista": "cuando todavía no había ni pavimento",
+        "respuesta_modelo": "Que lleva muchísimos años en el barrio, que este ha cambiado mucho y que siente cariño por él."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "fondos",
+        "pregunta": "¿Qué significa «fondos» en este texto?",
+        "opciones": [
+          "canciones de salsa",
+          "lugares profundos",
+          "dinero reunido para un fin"
+        ],
+        "correcta": 2,
+        "explicacion": "La tarde se organiza para recoger dinero para la biblioteca; luego informan cuánto se recogió."
+      },
+      {
+        "palabra": "boletas",
+        "pregunta": "¿Qué significa «boletas» en este texto?",
+        "opciones": [
+          "entradas para un evento",
+          "bolsas de basura",
+          "pelotas de fútbol"
+        ],
+        "correcta": 0,
+        "explicacion": "Junto con las empanadas, son una forma de recoger dinero para la biblioteca."
+      },
+      {
+        "palabra": "juraban",
+        "pregunta": "¿Qué significa «juraban» en este texto?",
+        "opciones": [
+          "cantaban muy bajo",
+          "aseguraban con firmeza",
+          "dudaban"
+        ],
+        "correcta": 1,
+        "explicacion": "Algunos decían estar seguros de que no sabían bailar, pero sus pies se movían."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo se recuerda cómo era el barrio antes?",
+        "parrafo": 3,
+        "explicacion": "En el párrafo 3 doña Gloria habla del pavimento."
+      },
+      {
+        "pregunta": "¿En qué párrafo se informa cuánto dinero se recogió?",
+        "parrafo": 4,
+        "explicacion": "En el párrafo 4 se anuncia la cifra."
+      },
+      {
+        "pregunta": "¿En qué párrafo está la reflexión final del cronista?",
+        "parrafo": 5,
+        "explicacion": "El párrafo 5 cuenta lo que pensó al final de la noche."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "La gente llena la cancha",
+        "El primer grupo empieza a tocar",
+        "Doña Gloria espera su turno para bailar",
+        "Los organizadores anuncian el dinero recogido",
+        "El cronista reflexiona sobre la unión del barrio"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "Se recogieron cuatro millones de pesos",
+          "efecto": "Podrán comprar los primeros doscientos libros"
+        },
+        {
+          "causa": "Sonaron los timbales y las congas",
+          "efecto": "Los pies de todos comenzaron a moverse"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Qué eventos de tu barrio reúnen a los vecinos? ¿Para qué sirven?",
+        "criterios": "Describe un evento real o posible y explica su valor para la comunidad."
+      },
+      {
+        "pregunta": "¿Por qué crees que la música puede unir a personas que casi no se conocen?",
+        "criterios": "Da razones propias, apoyándose en el texto si quiere."
+      }
+    ],
+    "valor": "Solidaridad y vida en comunidad."
+  },
+  {
+    "id": "L5-03",
+    "grado": 5,
+    "tipologia": "infografía en prosa",
+    "titulo": "El ahorro paso a paso",
+    "parrafos": [
+      "DATO CLAVE: ahorrar es guardar hoy una parte del dinero para usarla después. No importa si la cantidad es pequeña; lo que cuenta es la constancia.",
+      "CÓMO CRECE UN AHORRO CONSTANTE: si un estudiante guarda 5.000 pesos cada semana, en un mes (cuatro semanas) habrá reunido 20.000 pesos. En un año de cincuenta y dos semanas, reunirá 260.000 pesos.",
+      "EL PAPEL DEL INTERÉS: cuando el dinero se guarda en una entidad financiera, esta puede pagar un interés, que es un premio por prestarle ese dinero. Por ejemplo, con un interés simple del 10 % anual, 100.000 pesos ganan 10.000 pesos en un año.",
+      "NECESIDAD O DESEO: antes de gastar, conviene preguntarse si lo que se quiere comprar es una necesidad, como un cuaderno, o un deseo, como un juguete nuevo. Los deseos no son malos, pero deben esperar hasta que las necesidades y el ahorro estén cubiertos.",
+      "ERRORES FRECUENTES: guardar solo lo que sobra al final del mes, pues casi nunca sobra nada; mezclar el dinero del ahorro con el del gasto diario; y dejarse llevar por compras impulsivas. Una buena estrategia es separar el ahorro primero.",
+      "META DEL MES: define un objetivo concreto, como comprar una bicicleta usada, y calcula cuántas semanas necesitas para lograrlo."
+    ],
+    "literal": [
+      {
+        "pregunta": "¿Cuánto reúne en un mes un estudiante que guarda 5.000 pesos cada semana?",
+        "evidencia": "en un mes (cuatro semanas) habrá reunido 20.000 pesos",
+        "parrafo": 2
+      },
+      {
+        "pregunta": "¿Qué es un interés según el texto?",
+        "evidencia": "un interés, que es un premio por prestarle ese dinero",
+        "parrafo": 3
+      },
+      {
+        "pregunta": "¿Qué ejemplo de necesidad da el texto?",
+        "evidencia": "una necesidad, como un cuaderno",
+        "parrafo": 4
+      },
+      {
+        "pregunta": "¿Qué estrategia recomienda para ahorrar?",
+        "evidencia": "Una buena estrategia es separar el ahorro primero.",
+        "parrafo": 5
+      }
+    ],
+    "entre_lineas": [
+      {
+        "pregunta": "¿Por qué el texto recomienda separar el ahorro primero y no guardar lo que sobra al final?",
+        "pista": "guardar solo lo que sobra al final del mes, pues casi nunca sobra nada",
+        "respuesta_modelo": "Porque si se espera a que sobre, casi nunca queda nada; separar primero asegura que el ahorro ocurra."
+      },
+      {
+        "pregunta": "¿Qué quiere decir que los deseos no son malos, pero deben esperar?",
+        "pista": "Los deseos no son malos, pero deben esperar hasta que las necesidades y el ahorro estén cubiertos.",
+        "respuesta_modelo": "Que está bien querer cosas, pero primero hay que cubrir lo necesario y ahorrar; los gustos se compran después."
+      },
+      {
+        "pregunta": "¿Por qué es útil fijar una meta concreta?",
+        "pista": "define un objetivo concreto, como comprar una bicicleta usada",
+        "respuesta_modelo": "Porque da un propósito y permite calcular cuánto ahorrar y en cuánto tiempo, lo que motiva a ser constante."
+      }
+    ],
+    "palabras_contexto": [
+      {
+        "palabra": "constancia",
+        "pregunta": "¿Qué significa «constancia» en este texto?",
+        "opciones": [
+          "hacer algo de manera continua sin abandonarlo",
+          "gastar mucho dinero",
+          "cambiar de idea cada día"
+        ],
+        "correcta": 0,
+        "explicacion": "El texto dice que no importa lo pequeño del ahorro, sino mantenerlo; eso es constancia."
+      },
+      {
+        "palabra": "impulsivas",
+        "pregunta": "¿Qué significa «impulsivas» en este texto?",
+        "opciones": [
+          "hechas con un plan",
+          "hechas sin pensar, por un antojo",
+          "hechas con muy poco dinero"
+        ],
+        "correcta": 1,
+        "explicacion": "Se presentan como un error frecuente, opuesto a planear el ahorro."
+      },
+      {
+        "palabra": "estrategia",
+        "pregunta": "¿Qué significa «estrategia» en este texto?",
+        "opciones": [
+          "una deuda",
+          "un tipo de moneda",
+          "plan para lograr un objetivo"
+        ],
+        "correcta": 2,
+        "explicacion": "El texto sugiere separar el ahorro primero como forma de lograrlo."
+      }
+    ],
+    "donde_lo_pone": [
+      {
+        "pregunta": "¿En qué párrafo se explica el interés?",
+        "parrafo": 3,
+        "explicacion": "El párrafo 3 define el interés y da un ejemplo."
+      },
+      {
+        "pregunta": "¿En qué párrafo se pide fijar una meta?",
+        "parrafo": 6,
+        "explicacion": "El párrafo 6 habla de la meta del mes."
+      },
+      {
+        "pregunta": "¿En qué párrafo se mencionan los errores frecuentes?",
+        "parrafo": 5,
+        "explicacion": "El párrafo 5 enumera los errores frecuentes."
+      }
+    ],
+    "orden_causas": {
+      "secuencia": [
+        "Entender que ahorrar requiere constancia",
+        "Calcular cuánto reúne un ahorro semanal",
+        "Conocer cómo el interés hace crecer el dinero",
+        "Distinguir entre necesidad y deseo",
+        "Separar el ahorro primero y fijar una meta"
+      ],
+      "causa_efecto": [
+        {
+          "causa": "Un estudiante guarda 5.000 pesos cada semana",
+          "efecto": "En un año reúne 260.000 pesos"
+        },
+        {
+          "causa": "Se guarda solo lo que sobra al final del mes",
+          "efecto": "Casi nunca se logra ahorrar"
+        }
+      ]
+    },
+    "piensa_argumenta": [
+      {
+        "pregunta": "¿Estás de acuerdo en que los deseos deben esperar hasta cubrir las necesidades y el ahorro? Argumenta.",
+        "criterios": "Toma una posición con razones y un ejemplo cercano."
+      },
+      {
+        "pregunta": "Piensa en una meta de ahorro propia: ¿cuánto necesitarías guardar por semana y en cuántas semanas la lograrías?",
+        "criterios": "Incluye una meta, un valor y un cálculo sencillo coherente con el texto."
+      }
+    ],
+    "valor": "Constancia y responsabilidad con el dinero."
+  }
+]
