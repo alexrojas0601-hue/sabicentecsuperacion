@@ -1095,6 +1095,52 @@
     "nota": "Para CENTEC: 1) Proporcionar matrices de decisión imprimibles para registro manual (cuaderno-lápiz es fortaleza, mantener). 2) Crear guía docente con preguntas de retroalimentación estructurada (¿Por qué Núñez no pudo elegir X? ¿Qué restricciones enfrentó?). 3) Diseñar tabla comparativa 'Decisión simulada vs. histórica' para anclar en fuentes primarias (Constitución 1886, documentos Asamblea Rionegro). 4) Integrar análisis de consecuencias no intencionadas (ej: impuesto → guerra → migración) para complejidad sistémica. 5) Validar que la simulación respete cronología y restricciones históricas reales (no permitir anacrónismos). Excelente para CENTEC: costo cero, alta eficacia pedagógica, seguridad completa."
    },
    "fecha": "2026-10-23"
+  },
+  {
+   "nombre": "Juegos de rol estructurados con feedback (Role-Play + Scripts)",
+   "tipo": "estrategia",
+   "grados": "6° a 11°",
+   "para_que": "Mejorar fluidez, pronunciación y confianza en conversación auténtica usando simulaciones de vida real.",
+   "como_usarla": "1) Presentar escenario (entrevista laboral, negociación, conflicto). 2) Proporcionar vocabulario clave y expresiones. 3) Estudiantes improvisan diálogos en parejas. 4) Grabar audio o video. 5) Docente da retroalimentación estructurada sobre pronunciación y gramática emergente.",
+   "comando_sabi": "/escape o docente",
+   "evidencia": "Meta-análisis 2025 mostró role-play efectivo en vocabulario y confianza (Duc & Nguyen, 2024). Mejora comprobada: +25% en motivación y -40% en ansiedad de habla. Implementación óptima: sesiones largas y bien estructuradas dentro del currículo.",
+   "fuente": "https://www.tandfonline.com/doi/full/10.1080/0305764X.2025.2480579",
+   "url": "",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin riesgos si se limita a roles clase-docente; evitar chat con desconocidos.",
+   "area": "Inglés (hacia B2/C1)",
+   "dot": "Dot_Bilinguismo_Ingles",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "1) Protocolo CENTEC: confirmar que docente SIEMPRE modera grabaciones (audio/video) y gestiona archivos sin compartir públicamente. 2) Definir roles previamente por escenarios (entrevista, negociación, servicio al cliente) para evitar improvisación sin límites. 3) Rúbrica explícita de evaluación: pronunciación, fluidez, precisión gramatical, confianza (observable, no subjetiva). 4) Para grados 6°-7°, limitar a diálogos guionados 70%; para 10°-11°, permitir 60% improvisación. 5) Grabar intra-aula únicamente; no compartir en redes. 6) Sesiones máximo 45 min (óptimo según meta-análisis: sesiones largas dentro currículo, no extendidas sin estructura)."
+   },
+   "fecha": "2026-10-23"
+  },
+  {
+   "nombre": "Repetición espaciada + Contextualización (Spaced Vocab + Graded Readers)",
+   "tipo": "estrategia",
+   "grados": "6° a 11°",
+   "para_que": "Maximizar retención de vocabulario B2/C1 combinando lectura graduada (contexto natural) y repaso algorítmico (timing óptimo).",
+   "como_usarla": "1) Leer capítulo de graded reader (B1-B2: 1000-4000 palabras). 2) Extraer 10-15 palabras blanco. 3) Día 1: post-lectura, prueba de reconocimiento. 4) Anki/SuperMemo: reviews automáticos (1d, 3d, 7d, 14d...). 5) Repaso semanal en contextos nuevos (podcasts, diálogos).",
+   "comando_sabi": "/lectura o [[spacedvocab]]",
+   "evidencia": "Graded readers → +2-3x ganancia léxica vs. métodos tradicionales (Nation, 2015). Spaced + retrieval practice: meta-análisis 2022 (Kim & Webb) con 3,411 aprendices mostró efecto medio-grande en retención L2. Frecuencia de palabra en texto predice adquisición (Pigada & Schmitt, 2006).",
+   "fuente": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1210187/full; https://tortolingua.com/blog/how-much-reading-to-reach-b1/",
+   "url": "https://www.oxfordbookworms.com/ (graded readers); https://apps.ankiweb.net/ (Anki desktop gratis)",
+   "costo": "bajo|gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin datos; offline posible con descargas; Anki local sin sincronización forzada.",
+   "area": "Inglés (hacia B2/C1)",
+   "dot": "Dot_Bilinguismo_Ingles",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 5,
+    "nota": "Para CENTEC: (a) Proporcionar lista curada de Graded Readers (Oxford Bookworms niveles 1-4) alineados con currículum 6°-11° antes de usar. (b) Crear 'banco local' en Anki dentro de CENTEC (sin sincronización Ankiweb) para datos solo en dispositivo institucional. (c) Incluir guía docente: 'Cómo extraer 10-15 palabras blanco sin sesgo' (usar high-utility Academic Word List). (d) Monitoreo: registrar avance en retención (% recall en reviews) sin PII del estudiante. (e) Comunicar a padres/tutores: estrategia no requiere datos personales del menor."
+   },
+   "fecha": "2026-10-23"
   }
  ]
 }
