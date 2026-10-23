@@ -1,5 +1,5 @@
 {
- "version": "2026-10-22",
+ "version": "2026-10-23",
  "nota": "Herramientas pedagógicas encontradas por los Dots investigadores por área y filtradas por el Dot Auditor Riguroso. El tutor (chat.js) las usa según la asignatura. Solo entran con Pull Request aprobado por coordinación académica.",
  "herramientas": [
   {
@@ -911,6 +911,98 @@
     "nota": "En CENTEC implementar así: (a) Crear secuencias didácticas por grado donde docentes seleccionen textos según nivel (ej: cuentos cortos para 1°-3°, novelas adaptadas para 4°-6°, clásicos completos para 7°-11°). (b) Acompañar con guías de preguntas en espiral cognitiva (comprensión → análisis → crítica). (c) Descargar PDF offline para estudiantes sin conectividad continua. (d) Vincular con escritura creativa: leer → analizar técnica literaria → producir textos similares. (e) Aprovechar estudios críticos incluidos para fortalecer argumentación en secundaria. (f) Usar como fuente verificada para trabajos de investigación en literatura."
    },
    "fecha": "2026-10-22"
+  },
+  {
+   "nombre": "Ciensación: Investigaciones Breves de Bajo Costo",
+   "tipo": "banco de actividades",
+   "grados": "3° a 11°",
+   "para_que": "Mejorar la indagación científica con actividades <10min seguras, sin riesgos, usando materiales caseros que enseñan conceptos de física, química y biología",
+   "como_usarla": "1) Docente selecciona una investigación breve del banco Ciensación según el concepto (densidad, fuerzas, reacciones, etc.). 2) Estudiantes realizan la actividad en grupos (5-10 min) con materiales cotidianos. 3) Completan hipótesis → observación → reflexión en bitácora. 4) Socialización de resultados. Funciona sin conectividad si se descarga el PDF.",
+   "comando_sabi": "/bitacora_investigacion o [[cuaderno_ciencia]]",
+   "evidencia": "Esparza et al. (2020) en Journal of Science Communication demuestran que talleres de indagación corta generan participación física, intelectual y emocional; retroalimentación acción-reflexión mejora retención conceptual (hands-on + minds-on)",
+   "fuente": "https://jcomal.sissa.it/article/pubid/JCOMAL_0301_2020_N02/",
+   "url": "https://www.ciensacion.org/index.html",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin fuego, sin químicos peligrosos, sin riesgos. Actividades supervisadas. Sin datos personales, sin chat, sin publicidad, sin compras.",
+   "area": "Ciencias Naturales, Química, Física y STEAM",
+   "dot": "Dot_CienciasNaturales_STEAM",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para CENTEC: 1) Integrar con /bitacora_investigacion para documentar progresión conceptual entre grados (3°-5° física básica, 6°-8° química, 9°-11° integración STEAM). 2) Crear banco local adaptado a recursos CENTEC (materiales andinos: papa/sal/agua en lugar de importados). 3) Diseñar rúbrica de observación para docente: ¿el menor pasó de acción mecánica a explicación causal? 4) Usar [[cuaderno_ciencia]] como portafolio de indagaciones para seguimiento formativo. 5) Capacitar docentes en: silencio productivo (observación sin corrección inmediata) y preguntas generativas ('¿qué ves?' antes que '¿por qué?'). 6) Validar seguridad de materiales con contexto local (ej: si usan sal de mina, verificar pureza)."
+   },
+   "fecha": "2026-10-23"
+  },
+  {
+   "nombre": "Protocolo de Indagación Estructurada con Ciclos de Investigación",
+   "tipo": "estrategia",
+   "grados": "4° a 11°",
+   "para_que": "Desarrollar pensamiento científico riguroso mediante ciclos sistemáticos: observación → hipótesis → diseño → experimentación → análisis → conclusiones",
+   "como_usarla": "1) Docente plantea fenómeno o problema (ej: ¿por qué algunos objetos flotan?). 2) Estudiantes formulan preguntas y predicciones. 3) Diseñan protocolo (sin receta dada). 4) Experimentan con botellas, agua, sal, objetos variados. 5) Registran datos en tabla. 6) Argumentan conclusiones con evidencia. 7) Comparten proceso (no solo resultado).",
+   "comando_sabi": "/escape (como reto investigativo) o /worksheet (protocolo científico)",
+   "evidencia": "Rosa & Ramayón (2023) en Redalyc muestran que cuadernillos de indagación estructurada con espacios para registrar hipótesis y reflexión favorecen habilidades de investigación. Materiales simples + guía docente multigrafo = mejora en competencias científicas primaria/secundaria",
+   "fuente": "https://www.redalyc.org/journal/920/92074779010/html/",
+   "url": "",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Actividades de laboratorio escolar supervisadas. Sin exposición a químicos tóxicos. Sin dispositivos, sin internet requerido, sin datos sensibles.",
+   "area": "Ciencias Naturales, Química, Física y STEAM",
+   "dot": "Dot_CienciasNaturales_STEAM",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "En CENTEC: 1) Proporcionar plantillas impresas de protocolo con secciones explícitas (Predicción | Diseño | Datos | Análisis de Errores | Conclusión Argumentada) para grados 4-7. 2) Entrenar docentes en preguntas de andamiaje que eviten dar respuestas (ej: '¿qué variables cambiaron?' en vez de 'la densidad cambió'). 3) Documentar 2-3 ciclos completos por período académico; exigir reflexión sobre qué salió diferente a la predicción. 4) Crear banco de fenómenos contextualizados (flotación de semillas nativas, cambios de estado de agua en regiones tropicales). 5) Validar que cada estudiante escriba su propio argumento sin copiar conclusiones del docente."
+   },
+   "fecha": "2026-10-23"
+  },
+  {
+   "nombre": "Taller de Ciencia Recreativa con Demostración + Reflexión",
+   "tipo": "estrategia",
+   "grados": "3° a 8°",
+   "para_que": "Captar atención y curiosidad mediante fenómenos visibles (tensión superficial, presión, densidad) combinando demo fascinate + preguntas reflexivas para conceptualización profunda",
+   "como_usarla": "1) Facilitador realiza experimento cautivador ante grupo (ej: leche + jabón + colorante = movimiento de colores). 2) Estudiantes predicen qué sucederá. 3) Observan con asombro. 4) Preguntas dirigidas: ¿por qué se mueven? ¿Qué cambió? ¿Dónde ves esto en la vida? 5) Registro en cuaderno de fenómeno + explicación científica sencilla.",
+   "comando_sabi": "docente (facilitador/mediador)",
+   "evidencia": "Esparza et al. (2020) demuestran que talleres con retroalimentación acción-reflexión generan tres niveles: física (manipulación), intelectual (formulación) y emocional (curiosidad inspirada). Falk & Dierking (2000): ambientes cómodos para explorar = motivación intrínseca duradera",
+   "fuente": "https://jcomal.sissa.it/article/pubid/JCOMAL_0301_2020_N02/",
+   "url": "",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Experimentos seguros (sin fuego activo, sin tóxicos). Facilitador responsable. No requiere dispositivos. Ambiente grupal controlado.",
+   "area": "Ciencias Naturales, Química, Física y STEAM",
+   "dot": "Dot_CienciasNaturales_STEAM",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "En CENTEC: (1) Crear banco visual de demostraciones seguidas del script de preguntas reflexivas para cada tema (tensión superficial→inyección de antibióticos, densidad→farmacocinética). (2) Entrenar facilitadores en timing (asombro controlado: 30-40 seg demo, 2-3 min predicción, 5-7 min reflexión guiada). (3) Exigir registro foto/video del fenómeno + explicación en cuaderno del estudiante (evidencia de aprendizaje procesable). (4) Validar seguridad: lista de verificación previa (materiales no tóxicos, ventilación, ausencia de reacciones exotérmicas). (5) Opcional: vincular a estándares DBA correspondientes en cada formato de sesión."
+   },
+   "fecha": "2026-10-23"
+  },
+  {
+   "nombre": "Crea - Portal Siemens: Recursos Abiertos (REA) de Experimentos con Guía Docente",
+   "tipo": "recurso digital",
+   "grados": "3° a 11°",
+   "para_que": "Acceder a paquetes didácticos gratuitos descargables con guía docente, instrucciones de seguridad, gráficos y videos para experimentación segura en química, física y biología sin requerimiento de internet después de descarga",
+   "como_usarla": "1) Docente descarga paquete completo (PDF + recursos) desde Crea-Siemens. 2) Revisa guía docente que incluye procedimiento seguro, conceptos clave, preguntas de reflexión. 3) Prepara materiales caseros indicados. 4) Conduce experimento con instrucciones de seguridad claras. 5) Estudiantes completan worksheet incluido. 6) Descarga offline posible en computador de escuela.",
+   "comando_sabi": "/worksheet o [[material_seguro_experimento]]",
+   "evidencia": "Siemens Stiftung (2023) en CREA: aprendizaje por indagación mejora cuando alumnos construyen conocimiento a través de experimentos científicos con guías estructuradas. Recursos Educativos Abiertos (REA) adaptables mejoran equidad y acceso. Descargables: funciona sin wifi continua",
+   "fuente": "https://crea-portaldemedios.siemens-stiftung.org/experimentos-cientificos",
+   "url": "https://crea-portaldemedios.siemens-stiftung.org/experimentos-cientificos",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Recursos con instrucciones de seguridad explícitas. No requiere cuenta. Descargable sin conexión continua. Sin datos personales, sin publicidad, sin compras integradas.",
+   "area": "Ciencias Naturales, Química, Física y STEAM",
+   "dot": "Dot_CienciasNaturales_STEAM",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "CENTEC: (1) Descarga masiva en servidor local para garantizar acceso sin dependencia de plataforma externa. (2) Docentes: validen materiales caseros disponibles en región antes de usar. (3) Comando SABI: `/worksheet` para acceso directo a hojas de reflexión. (4) Documentar experimentos realizados en bitácora local (sin subir datos a nube). (5) Para grados 3-5°: supervisión directa adulto 1:1 en experimentos con calor o químicos. (6) Considerar traducción si recursos están en inglés."
+   },
+   "fecha": "2026-10-23"
   }
  ]
 }
