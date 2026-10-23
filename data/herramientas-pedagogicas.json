@@ -1003,6 +1003,98 @@
     "nota": "CENTEC: (1) Descarga masiva en servidor local para garantizar acceso sin dependencia de plataforma externa. (2) Docentes: validen materiales caseros disponibles en región antes de usar. (3) Comando SABI: `/worksheet` para acceso directo a hojas de reflexión. (4) Documentar experimentos realizados en bitácora local (sin subir datos a nube). (5) Para grados 3-5°: supervisión directa adulto 1:1 en experimentos con calor o químicos. (6) Considerar traducción si recursos están en inglés."
    },
    "fecha": "2026-10-23"
+  },
+  {
+   "nombre": "Archivos Históricos Digitales + Análisis de Fuentes Primarias (SABI Labs)",
+   "tipo": "banco de actividades",
+   "grados": "5° a 11°",
+   "para_que": "Desarrollar habilidades de análisis crítico y pensamiento histórico interpretando documentos auténticos",
+   "como_usarla": "1) Docente descarga documentos históricos de archivos (Archivo General de la Nación, hemerotecas digitales). 2) SABI integra worksheet con preguntas guiadas: ¿Quién escribió? ¿Cuándo? ¿Por qué? ¿Qué perspectiva falta? 3) Estudiantes comparan 2-3 fuentes del mismo evento (ej: Independencia desde periódicos españoles vs criollos). 4) Debate: ¿Por qué la historia cambia según quién la cuenta?",
+   "comando_sabi": "/worksheet (análisis de fuentes) + [[manipulativo documento escaneado]]",
+   "evidencia": "Guerrero Elecalde (2024) evidencia que trabajar con archivos históricos y fuentes documentales desarrolla pensamiento crítico y formación ciudadana, especialmente cuando se cuestiona la perspectiva de quién produce la fuente",
+   "fuente": "https://epsir.net/index.php/epsir/article/download/1396/288/4601",
+   "url": "",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin contacto online, solo lectura de archivos. Sin compras ni datos personales. Documentos públicos del patrimonio nacional",
+   "area": "Ciencias Sociales y Competencias Ciudadanas",
+   "dot": "Dot_CienciasSociales_Ciudadanas",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para CENTEC: 1) Crear biblioteca curada de 5-10 documentos por tema (Independencia, Constituciones, derechos civiles) con metadata clara (fuente, archivo, año). 2) Adaptador pedagógico: pre-worksheet con vocabulario histórico para grados 5-6; post-análisis con matriz de perspectivas (autor, contexto, intención, audiencia). 3) Evaluación: rúbrica de pensamiento crítico que mida identificación de sesgos, no memorización. 4) Inclusión: ofrecer transcripciones de documentos escaneados ilegibles para accesibilidad."
+   },
+   "fecha": "2026-10-23"
+  },
+  {
+   "nombre": "Tribunal Histórico Simulado (Juicio a Personajes/Eventos)",
+   "tipo": "juego",
+   "grados": "6° a 11°",
+   "para_que": "Desarrollar empatía histórica, argumentación y comprensión de causalidad multicausal mediante juicio de rol",
+   "como_usarla": "1) Docente elige evento (Conquista, Esclavitud, Golpe de Estado). 2) Estudiantes se distribuyen roles: fiscal (acusa), defensa (justifica), testigos, juez. 3) Cada role investiga la época con fuentes para argumentar. 4) Sesión 1: juicio oral con argumentos. Sesión 2: reflexión: ¿es posible juzgar con mentalidad moderna? ¿qué nos enseña?",
+   "comando_sabi": "/escape (rol simulado) + /debate (deliberación final)",
+   "evidencia": "Palacio et al. (2020) encontraron que juegos de negociación desarrollan multiperspectivismo y pensamiento sistémico en formación ciudadana; los estudiantes entienden múltiples causas de un evento",
+   "fuente": "https://dialnet.unirioja.es/descarga/articulo/8289125.pdf",
+   "url": "",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Juego guiado presencialmente. Sin contacto online. Dinámicas de grupo controladas",
+   "area": "Ciencias Sociales y Competencias Ciudadanas",
+   "dot": "Dot_CienciasSociales_Ciudadanas",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "En CENTEC: 1) Proporciona banco de 5-8 eventos históricamente complejos (Conquista, Esclavitud, Golpe 1953, Violencia Bipartidista, Desplazamiento Forzado) con cronología y fuentes primarias organizadas por rol. 2) Docente facilita sesión 1 (juicio) + sesión 2 (metacognición explícita: '¿Qué prejuicios modernos llevaste al juicio? ¿Qué contextos faltaron?'). 3) Registra calidad de argumentos (no cantidad) para evaluar comprensión causal. 4) Opcional: videograbación de reflexión final (consentimiento de padres) como evidencia de pensamiento crítico. Evita que estudiantes investiguen solos sin mediación docente."
+   },
+   "fecha": "2026-10-23"
+  },
+  {
+   "nombre": "Proyectos de Aprendizaje-Servicio Histórico Comunitario (ApS+)",
+   "tipo": "estrategia",
+   "grados": "7° a 11°",
+   "para_que": "Conectar aprendizaje histórico con acción cívica real; fortalecer identidad local y compromiso democrático",
+   "como_usarla": "1) Identificar problema histórico-social local (patrimonio descuidado, historia ignorada de comunidad, conflicto sin resolución). 2) Investigación: Estudiantes buscan fuentes históricas locales (entrevistas a abuelos, archivos municipales, periódicos viejos). 3) Acción: Restaurar monumento, crear documental, organizar marcha conmemorativa, hacer propuesta de política pública. 4) Reflexión: Diario reflexivo y presentación de impacto. SABI integra: /escape (investigación) + ApS guiado + reflexión final",
+   "comando_sabi": "docente (Comisión Histórica Escolar) con protocolo de ApS",
+   "evidencia": "Tapia (2010) y Halsted (1998) demuestran que ApS vincula aprendizaje y servicio solidario, permitiendo aplicar conocimientos al contexto comunitario; desarrolla empatía, identidad cívica y capacidad de transformación social",
+   "fuente": "https://www.researchgate.net/publication/365665748",
+   "url": "",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Actividades comunitarias supervisadas. Contacto solo con instituciones locales (municipio, archivos públicos). No datos online",
+   "area": "Ciencias Sociales y Competencias Ciudadanas",
+   "dot": "Dot_CienciasSociales_Ciudadanas",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 4,
+    "evidencia": 4,
+    "nota": ""
+   },
+   "fecha": "2026-10-23"
+  },
+  {
+   "nombre": "Simuladores Históricos de Decisión Política (Gobierno Simulado)",
+   "tipo": "simulador",
+   "grados": "8° a 11°",
+   "para_que": "Comprender causalidad histórica, consecuencias de decisiones políticas y sistemas complejos mediante simulación dinámica",
+   "como_usarla": "1) Escenario: Estudiantes son 'Congreso de 1886' o 'Asamblea de Rionegro'. 2) Deciden sobre: impuestos, educación, guerra, alianzas. 3) Cada decisión genera consecuencias que aparecen en 'años' siguientes (empobrecimiento, guerra, estabilidad). 4) Después reflexionan: ¿Cómo influyó nuestra decisión? ¿Qué hubiera pasado con otro camino? 5) Conexión: Comparar decisiones simuladas vs históricas reales. ¿Por qué Núñez eligió lo que eligió?",
+   "comando_sabi": "/escape (simulación política) con retroalimentación visual de consecuencias",
+   "evidencia": "Anson (2025, ERIC/WWC) muestra que simulaciones de diseño constitucional en aula desarrollan pensamiento sistémico y empatía política. Estudiantes comprenden restricciones históricas. Clark & Madson (2019) confirman que political simulations promueven conocimiento, habilidades cívicas y empatía",
+   "fuente": "https://eric.ed.gov/?ff1=subSimulation&q=source%3A%22Journal+of+Political+Science+Education%22",
+   "url": "Herramienta tipo software educativo o papel-lápiz diseñable",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Simulación cerrada en aula con docente facilitador. Sin conexión a internet. Registro solo en cuadernos",
+   "area": "Ciencias Sociales y Competencias Ciudadanas",
+   "dot": "Dot_CienciasSociales_Ciudadanas",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para CENTEC: 1) Proporcionar matrices de decisión imprimibles para registro manual (cuaderno-lápiz es fortaleza, mantener). 2) Crear guía docente con preguntas de retroalimentación estructurada (¿Por qué Núñez no pudo elegir X? ¿Qué restricciones enfrentó?). 3) Diseñar tabla comparativa 'Decisión simulada vs. histórica' para anclar en fuentes primarias (Constitución 1886, documentos Asamblea Rionegro). 4) Integrar análisis de consecuencias no intencionadas (ej: impuesto → guerra → migración) para complejidad sistémica. 5) Validar que la simulación respete cronología y restricciones históricas reales (no permitir anacrónismos). Excelente para CENTEC: costo cero, alta eficacia pedagógica, seguridad completa."
+   },
+   "fecha": "2026-10-23"
   }
  ]
 }
