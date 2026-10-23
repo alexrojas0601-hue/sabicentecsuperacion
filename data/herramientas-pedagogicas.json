@@ -1141,6 +1141,75 @@
     "nota": "Para CENTEC: (a) Proporcionar lista curada de Graded Readers (Oxford Bookworms niveles 1-4) alineados con currículum 6°-11° antes de usar. (b) Crear 'banco local' en Anki dentro de CENTEC (sin sincronización Ankiweb) para datos solo en dispositivo institucional. (c) Incluir guía docente: 'Cómo extraer 10-15 palabras blanco sin sesgo' (usar high-utility Academic Word List). (d) Monitoreo: registrar avance en retención (% recall en reviews) sin PII del estudiante. (e) Comunicar a padres/tutores: estrategia no requiere datos personales del menor."
    },
    "fecha": "2026-10-23"
+  },
+  {
+   "nombre": "Teatro de Dilemas Éticos + Role-Playing Estructurado",
+   "tipo": "estrategia",
+   "grados": "4° a 11°",
+   "para_que": "Desarrolla razonamiento ético y empatía a través de la representación de conflictos morales donde el estudiante asume múltiples perspectivas y descubre argumentos válidos en cada posición.",
+   "como_usarla": "1) Presentar un dilema moral claro (ej: 'Tu mejor amigo copió en el examen, ¿qué haces?'). 2) Dividir la clase en pequeños grupos: cada uno representa un rol (amigo, profesor, otro estudiante afectado). 3) Escenificación: 3-5 min de representación. 4) Reflexión guiada: docente hace preguntas metacognitivas ('¿Qué emoción tuviste en ese rol? ¿Qué hubiera hecho tú realmente?'). 5) Escritura reflexiva individual (2-3 párrafos sobre cómo el role-play cambió su perspectiva).",
+   "comando_sabi": "[[escenario dilema ético N]] o /worksheet",
+   "evidencia": "<cite index=\"29-4,29-5\">Moreno propuso que no es posible comprender genuinamente a otra persona sin haber ocupado su lugar; la empatía se construye a través de la experiencia vivida de adoptar una perspectiva ajena</cite>. <cite index=\"30-9\">La práctica continuada del role-playing permite que los alumnos exploren sentimientos, actitudes, valores y percepciones que influyen en su conducta, a la vez que se sienten forzados a descubrir y aceptar el rol de los demás</cite>.",
+   "fuente": "https://www.appf.edu.es/consiste-role-playing/ | https://dialnet.unirioja.es/descarga/articulo/126264.pdf",
+   "url": "",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin riesgos identificados si el docente establece protocolo de seguridad emocional y gestiona escenarios sensibles (exclusión, vulnerabilidad) con cuidado.",
+   "area": "Inteligencia emocional, ética y valores",
+   "dot": "Dot_InteligenciaEmocional_Valores",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 4,
+    "evidencia": 4,
+    "nota": ""
+   },
+   "fecha": "2026-10-23"
+  },
+  {
+   "nombre": "Rincón de la Autorregulación Emocional con Técnica de la Tortuga + Metacognición",
+   "tipo": "material concreto",
+   "grados": "3° a 8°",
+   "para_que": "Enseña al estudiante a reconocer, pausar y regular emociones intensas (enojo, ansiedad) antes de reaccionar impulsivamente, usando estrategias corporales y metacognitivas estructuradas.",
+   "como_usarla": "1) Crear espacio físico en el aula ('Rincón Tortuga'): almohadas, tarjetas de emociones, cartel con 4 pasos. 2) Cuando estudiante siente emoción intensa: 1 'Alto' (verbalizan alto la emoción), 2 'Caparazón' (se acurrucan, respiran contando 1-2-3), 3 'Salir' (salen cuando respiran 3 veces), 4 'Solución' (con apoyo docente, nombran qué necesitan). 3) Diario de regulación: registran emoción + qué la causó + qué funcionó. 4) Modelado docente: profesor muestra la técnica en situaciones reales.",
+   "comando_sabi": "[[manipulativo emociones regulación]] o docente",
+   "evidencia": "<cite index=\"53-5,53-6,53-7\">La técnica de la tortuga consiste en 4 pasos para ayudar a los niños a controlar el enojo y la impulsividad: pensar 'Alto', meterse en el 'caparazón' respirando y contando hasta tres, lo que permite dar respuestas más sólidas y mostrar mayor motivación</cite>. <cite index=\"51-7\">El impacto promedio de estrategias de metacognición y autorregulación equivale a ocho meses adicionales de progreso a lo largo de un año</cite>.",
+   "fuente": "https://www.psicologia.unam.mx/documentos/pdf/publicaciones/Creciendo_juntos_Estrategias_de_autorregulacion_en_ninos_de_preescolar._Villanueva_Vega_y_Poncelis.pdf | https://practicasefectivas.summaedu.org/public/strand.php?slug=metacognition-and-self-regulation",
+   "url": "",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Seguro: sin conectividad, sin datos personales, sin interacción externa. Solo requiere vigilancia docente para que el espacio sea refugio, no castigo.",
+   "area": "Inteligencia emocional, ética y valores",
+   "dot": "Dot_InteligenciaEmocional_Valores",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para CENTEC: 1) Capacitar docentes en distinguir 'Rincón de Autorregulación' de 'castigo/aislamiento' (psicoeducación obligatoria). 2) Estandarizar tarjetas de emociones con iconografía culturalmente sensible (no solo caras occidentales). 3) Protocolo: antes de usar, estudiante y docente acuerdan conjuntamente cuándo activarlo (consentimiento participativo). 4) Diario de regulación debe ser privado del estudiante, no revisión punitiva docente. 5) Evaluar cada trimestre si el rincón está normalizando la autorregulación o generando ansiedad. Recomendación: vincular con familia mediante comunicación sobre avances (sin compartir diario), no con datos sino con narrativas ('Tu hijo/a está fortaleciendo calma')."
+   },
+   "fecha": "2026-10-23"
+  },
+  {
+   "nombre": "Entreno de Mindfulness Escolar Avanzado: Atención Plena + Autorregulación (Programa Estructurado 8 Semanas)",
+   "tipo": "estrategia",
+   "grados": "5° a 11°",
+   "para_que": "Mejora concentración, reduce impulsividad y estrés, y desarrolla autorregulación emocional mediante prácticas respiratorias y meditativas con evidencia en attention sostenida, atención selectiva y control emocional.",
+   "como_usarla": "Implementar 12-15 min, 3-4 veces por semana durante 8 semanas (permite consistencia sin abrumar): Sem 1-2: Respiración consciente (3-5 min). Sem 3-4: Atención a sonidos + escaneo corporal. Sem 5-6: Meditación caminante + escucha activa. Sem 7-8: Integración (mindfulness en actividades cotidianas). Estructura: 2 min calentamiento, 10 min práctica guiada, 1-2 min cierre con pregunta reflexiva ('¿Qué notaste en tu cuerpo/mente?'). Docente usa app gratuita o audio pre-grabado.",
+   "comando_sabi": "[[mindfulness sesión 15 min]] o /meditación",
+   "evidencia": "<cite index=\"10-2,10-3\">Intervenciones basadas en mindfulness muestran efecto positivo en la atención de niños y adolescentes, observándose mejora en atención sostenida, selectiva e inhibitoria, así como reducción en problemas de atención</cite>. <cite index=\"16-13,16-14\">El programa Mindkinder mostró mejora significativa en ajuste escolar, problemas conductuales y rendimiento académico, sugiriendo que mindfulness puede ser efectivo en promover ajuste escolar y mejorar resultados</cite>.",
+   "fuente": "https://addi.ehu.es/bitstream/handle/10810/61882/TFM_Amaia_Olano.pdf?sequence=1 | https://www.elsevier.es/doi-resolver-10.1016/j.psicoe.2019.12.001",
+   "url": "https://youtube.com/results?search_query=meditación+mindfulness+niños+español+10+minutos (buscar audios gratuitos sin cuenta) | https://www.zenhabits.net/meditation-for-beginners/ (guías en español)",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Seguro: práctica sin conectividad. Docente debe validar emociones que surjan (algunos niños pueden sentir incomodidad inicial). Nunca forzar participación.",
+   "area": "Inteligencia emocional, ética y valores",
+   "dot": "Dot_InteligenciaEmocional_Valores",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para CENTEC: (1) Entrena docentes con demostración vivencial (10 min) antes de guiar estudiantes (reduce resistencia). (2) Crea repositorio SABI de 5-8 audios pre-grabados de 10 min por semana en español neutro/colombiano para garantizar calidad y acceso sin búsqueda externa. (3) Diseña 'tarjeta de sensaciones' impresa (emojis + palabras) para cierre reflexivo en grados 5-7 (andamiaje de introspección verbal). (4) Protocolo: docente registra si algún estudiante reporta ansiedad/incomodidad y contacta orientador(a) (detección temprana). (5) Incluye sesión para padres (2 pág.) sobre qué esperar y cómo soportar en casa. Esto maximiza adherencia y seguridad emocional en entornos escolares vulnerables."
+   },
+   "fecha": "2026-10-23"
   }
  ]
 }
