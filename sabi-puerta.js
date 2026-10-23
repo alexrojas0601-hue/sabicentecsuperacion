@@ -9,6 +9,7 @@
     data-mision="DETECTIVE|INVENTOR|CALI 2040|ENSÉÑALE A SABI|MI TAREA"
     data-texto="Aprender con SABI"        texto del botón
     data-lado="izquierda"                 si la app ya tiene algo en la esquina derecha
+    data-abajo="96"                       distancia al borde inferior en px (si la app usa esa franja)
     data-boton="no"                       sin botón: solo la función SABI.abrir()
   Desde el código de un simulador (por ejemplo, al fallar una pregunta):
     SABI.abrir({ materia: 'Matemáticas', tema: 'No entendí la pregunta 12', cmd: '/paso_a_paso' });
@@ -57,10 +58,10 @@
   if (cfg.boton === 'no') return;
 
   var CSS = ':host{all:initial}*{box-sizing:border-box;margin:0;padding:0;font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif}' +
-    '.fab{position:fixed;bottom:18px;LADO:18px;z-index:2147483000;display:flex;align-items:center;gap:10px;background:#0B1F3F;color:#FBF8F1;border:2px solid #F5A623;border-radius:999px;padding:6px 18px 6px 6px;cursor:pointer;box-shadow:0 8px 24px rgba(11,31,63,.35);font-weight:700;font-size:15px;transition:transform .15s}' +
+    '.fab{position:fixed;bottom:ABAJOpx;LADO:18px;z-index:2147483000;display:flex;align-items:center;gap:10px;background:#0B1F3F;color:#FBF8F1;border:2px solid #F5A623;border-radius:999px;padding:6px 18px 6px 6px;cursor:pointer;box-shadow:0 8px 24px rgba(11,31,63,.35);font-weight:700;font-size:15px;transition:transform .15s}' +
     '.fab:hover{transform:translateY(-2px)}.fab img{width:42px;height:42px;border-radius:50%;object-fit:cover;object-position:top;background:#fff}' +
     '.fab .pulso{position:absolute;inset:-4px;border-radius:999px;border:2px solid #F5A623;animation:p 2.4s ease-out 3;pointer-events:none}@keyframes p{from{opacity:.9;transform:scale(1)}to{opacity:0;transform:scale(1.15)}}' +
-    '.panel{position:fixed;bottom:80px;LADO:18px;z-index:2147483001;width:min(380px,calc(100vw - 24px));max-height:calc(100vh - 100px);overflow:auto;background:#F7F3E9;color:#1F1D1A;border-radius:18px;box-shadow:0 18px 50px rgba(11,31,63,.35);border:1px solid #D9D2C3}' +
+    '.panel{position:fixed;bottom:PANELpx;LADO:18px;z-index:2147483001;width:min(380px,calc(100vw - 24px));max-height:calc(100vh - MAXpx);overflow:auto;background:#F7F3E9;color:#1F1D1A;border-radius:18px;box-shadow:0 18px 50px rgba(11,31,63,.35);border:1px solid #D9D2C3}' +
     '.cab{display:flex;gap:12px;align-items:center;background:#0B1F3F;color:#FBF8F1;padding:14px 16px;border-radius:18px 18px 0 0}.cab img{width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:top;background:#fff;border:2px solid #F5A623}' +
     '.cab b{display:block;font-size:16px}.cab small{color:#E9D9B4;font-size:12.5px}.x{margin-left:auto;background:none;border:none;color:#FBF8F1;font-size:22px;cursor:pointer;line-height:1;padding:4px 8px}' +
     '.cuerpo{padding:14px 16px 16px;display:flex;flex-direction:column;gap:12px}.lbl{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#B8862B}' +
@@ -80,11 +81,12 @@
     document.body.appendChild(host);
     var root = host.attachShadow ? host.attachShadow({ mode: 'open' }) : host;
     var lado = cfg.lado === 'izquierda' ? 'left' : 'right';
+    var abajo = Math.max(8, Math.min(400, parseInt(cfg.abajo, 10) || 18));
     var estado = { rol: cfg.rol || leer('rol', 'estudiante'), materia: cfg.materia || leer('materia', ''), accion: 0 };
     var esc = function (t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
     var mats = MATERIAS.slice(); if (estado.materia && mats.indexOf(estado.materia) < 0) mats.unshift(estado.materia);
     var aqui = location.hostname;
-    root.innerHTML = '<style>' + CSS.replace(/LADO/g, lado) + '</style>' +
+    root.innerHTML = '<style>' + CSS.replace(/LADO/g, lado).replace('ABAJOpx', abajo + 'px').replace('PANELpx', (abajo + 62) + 'px').replace('MAXpx', (abajo + 82) + 'px') + '</style>' +
       '<button class="fab" type="button" aria-haspopup="dialog" aria-expanded="false"><i class="pulso"></i><img src="' + BASE + 'sabi-avatar-mini.png" alt="" loading="lazy"><span>' + esc(cfg.texto || 'Aprender con SABI') + '</span></button>' +
       '<section class="panel" role="dialog" aria-label="SABI, tu tutor" hidden>' +
       '<div class="cab"><img src="' + BASE + 'sabi-avatar-mini.png" alt="SABI"><div><b>Hola, soy SABI</b><small>Tu tutor de CENTEC. ¿Qué quieres aprender hoy?</small></div><button class="x" type="button" aria-label="Cerrar">×</button></div>' +
