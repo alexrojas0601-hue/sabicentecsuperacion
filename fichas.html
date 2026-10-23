@@ -1,405 +1,1258 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fichas y lecturas — SABICENTEC SUPERACIÓN</title>
-<meta name="description" content="Fichas de matemáticas infinitas con respuestas verificadas y lecturas en siete pasos. Colegio CENTEC, Cali.">
+<title>Fichas de matemáticas a la medida — SABI · Colegio CENTEC</title>
+<meta name="description" content="Generador infinito de fichas de matemáticas imprimibles, de Transición a grado 11, con historias de Cali y clave de respuestas calculada paso a paso.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,680&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,680&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --noche:#0B1F3F; --noche-2:#14315C; --alba:#F5A623; --barro:#E8792B;
-    --brote:#4C7A5E; --papel:#F7F3E9; --tinta:#1B1B18; --tinta-suave:#5B584E;
-    --linea:rgba(27,27,24,.14); --navy:#1A2D7A; --naranja:#F47C20; --oro:#F5C518;
+    --noche:#0B1F3F; --papel:#FBF8F1; --tinta:#1F1D1A; --oro:#B8862B; --oro-osc:#8A6418;
+    --linea:#D9D2C3; --suave:#5B574F; --blanco:#FFFFFF;
   }
-  *{box-sizing:border-box;margin:0;padding:0}
-  [hidden]{display:none!important}
-  body{background:var(--papel);color:var(--tinta);font-family:'Public Sans',sans-serif;font-size:18px;line-height:1.6}
-  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:560;letter-spacing:-.01em;line-height:1.2}
-  a{color:inherit}
-  button{font:inherit;cursor:pointer}
-  :focus-visible{outline:3px solid var(--alba);outline-offset:2px}
-  .wrap{max-width:1180px;margin:0 auto;padding:0 32px}
-  @media(max-width:640px){.wrap{padding:0 16px}}
-  header.top{border-bottom:1px solid var(--linea)}
-  .top-inner{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:16px;flex-wrap:wrap}
-  .brand{font-weight:600;text-decoration:none}
-  .enlaces{display:flex;gap:8px;flex-wrap:wrap}
-  .cta{background:var(--noche);color:var(--papel);text-decoration:none;padding:9px 16px;border-radius:2px;font-weight:600;font-size:.92rem;border:1px solid var(--noche)}
-  .cta.claro{background:#fff;color:var(--noche)}
-  .intro{background:var(--noche);color:var(--papel);padding:56px 0 40px}
-  .intro h1{font-size:clamp(2rem,5vw,3.3rem);font-weight:450;max-width:20ch}
-  .intro p{max-width:62ch;margin-top:14px;color:rgba(247,243,233,.84)}
-  .barra{position:sticky;top:0;z-index:10;background:rgba(247,243,233,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
-  .barra-inner{display:flex;gap:14px;align-items:center;flex-wrap:wrap;padding:10px 0}
-  .tabs{display:flex;gap:4px;flex-wrap:wrap}
-  .tab{border:1px solid var(--linea);background:#fff;padding:8px 14px;border-radius:2px;font-weight:600;font-size:.95rem;color:var(--tinta)}
-  .tab[aria-selected="true"]{background:var(--noche);color:var(--papel);border-color:var(--noche)}
-  .campo{display:flex;flex-direction:column;gap:4px;font-size:.85rem;color:var(--tinta-suave)}
-  .campo.linea{flex-direction:row;align-items:center;gap:8px}
-  select,input[type=text],input[type=number],textarea{font:inherit;font-size:.98rem;color:var(--tinta);background:#fff;border:1px solid var(--linea);padding:8px 10px;border-radius:2px}
-  textarea{width:100%;min-height:110px;resize:vertical}
-  .chips{display:flex;flex-wrap:wrap;gap:6px}
-  .chip{border:1px solid var(--linea);background:#fff;padding:6px 12px;border-radius:999px;font-size:.9rem;color:var(--tinta)}
-  .chip[aria-pressed="true"]{background:var(--noche);color:var(--papel);border-color:var(--noche)}
-  .btn{background:var(--naranja);color:#fff;border:0;padding:10px 18px;border-radius:2px;font-weight:700}
-  .btn.sec{background:#fff;color:var(--noche);border:1px solid var(--noche)}
-  .btn:disabled{opacity:.6;cursor:wait}
-  .acciones{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
-  main{padding:28px 0 90px}
-  .panel[hidden]{display:none}
-  .panel h2{font-size:1.9rem;margin-bottom:6px}
-  .lead{color:var(--tinta-suave);max-width:70ch;margin-bottom:18px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
-  .tarjeta{background:#fff;border:1px solid var(--linea);border-radius:2px;padding:16px;text-align:left;color:var(--tinta);display:flex;flex-direction:column;gap:6px}
-  button.tarjeta:hover{border-color:var(--noche)}
-  .tarjeta h3{font-size:1.12rem}
-  .tarjeta .meta{font-size:.82rem;color:var(--tinta-suave)}
-  .etq{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:2px;background:var(--papel);color:var(--noche)}
-  .eje-materia{background:#E3ECF7}.eje-fuerza{background:#FCE5D3}.eje-energia{background:#FFF3C4}.eje-vida{background:#DCEBDF}.eje-quimica{background:#EFE0F5}
-  .hoja{background:#fff;border:1px solid var(--linea);padding:36px 40px;border-radius:2px;margin-top:10px}
-  @media(max-width:640px){.hoja{padding:20px 16px}}
-  .hoja h2{font-size:1.75rem}
-  .hoja h3{font-size:1.2rem;margin:22px 0 8px;color:var(--navy)}
-  .hoja p,.hoja li{max-width:75ch}
-  .hoja ol,.hoja ul{margin-left:1.4em}
-  .hoja li{margin:4px 0}
-  .cabecera-ficha{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--navy);padding-bottom:10px;margin-bottom:14px;font-size:.9rem;color:var(--tinta-suave)}
-  .nombre-linea{display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem;margin:6px 0 14px}
-  .nombre-linea span{flex:1;min-width:180px;border-bottom:1px solid var(--tinta);padding-bottom:2px}
-  .caja{border-left:4px solid var(--naranja);background:#FFF8EF;padding:12px 16px;margin:12px 0;border-radius:2px}
-  .caja.azul{border-color:var(--navy);background:#EEF2FB}
-  .caja.verde{border-color:var(--brote);background:#EEF5F0}
-  .caja b{font-weight:700}
-  .resp{display:none;color:var(--brote);font-weight:600}
-  body.ver-resp .resp{display:block}
-  body.ver-resp span.resp{display:inline}
-  .tabla-reg{border-collapse:collapse;width:100%;margin-top:8px}
-  .tabla-reg td,.tabla-reg th{border:1px solid #999;padding:10px;height:38px;font-size:.9rem;text-align:left}
-  .items{display:grid;gap:14px;counter-reset:it}
-  .item{border:1px solid var(--linea);border-radius:2px;padding:14px 16px;break-inside:avoid}
-  .item .num{font-weight:700;color:var(--navy);margin-right:6px}
-  .item svg{max-width:100%;height:auto;display:block;margin:8px 0}
-  .espacio{border-bottom:1px dashed #aaa;height:30px;margin-top:6px}
-  .cols2{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px}
-  @media(max-width:640px){.cols2{grid-template-columns:1fr}}
-  .oracion{cursor:pointer;border-radius:2px;padding:1px 2px;transition:background .15s}
-  .oracion:hover{background:#FFF1D6}
-  .oracion.sel{background:var(--oro)}
-  .oracion.bien{background:#BFE3C8}
-  .oracion.mal{background:#F6C9C3}
-  .parrafo{display:flex;gap:10px;margin:10px 0}
-  .parrafo .pn{flex:0 0 auto;font-weight:700;color:var(--navy);font-size:.85rem;padding-top:4px;min-width:22px}
-  .pregunta-l{border:1px solid var(--linea);padding:10px 14px;border-radius:2px;margin:8px 0;background:#fff}
-  .pregunta-l.activa{border-color:var(--naranja);box-shadow:0 0 0 2px #FCE5D3}
-  .fb{font-size:.92rem;margin-top:6px}
-  .fb.ok{color:var(--brote)} .fb.no{color:#B3261E}
-  .opciones{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
-  .opciones button{border:1px solid var(--linea);background:#fff;padding:6px 12px;border-radius:2px}
-  .opciones button.bien{background:#BFE3C8;border-color:var(--brote)}
-  .opciones button.mal{background:#F6C9C3}
-  .orden-lista{list-style:none;margin:0!important}
-  .orden-lista li{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--linea);padding:8px 10px;margin:6px 0;border-radius:2px}
-  .orden-lista li button{border:1px solid var(--linea);background:var(--papel);padding:2px 8px}
-  .vineta-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
-  .vineta{border:3px solid var(--tinta);border-radius:4px;padding:10px;min-height:220px;background:#fff;break-inside:avoid;display:flex;flex-direction:column;gap:8px}
-  .vineta .escena{font-size:.82rem;color:var(--tinta-suave);font-style:italic;border-bottom:1px dashed #bbb;padding-bottom:6px;min-height:60px}
-  .globo{background:#fff;border:2px solid var(--tinta);border-radius:16px;padding:6px 10px;font-size:.9rem;position:relative}
-  .globo b{display:block;font-size:.75rem;color:var(--navy)}
-  .sopa{border-collapse:collapse;margin:10px 0;font-family:'IBM Plex Mono',monospace}
-  .sopa td{width:32px;height:32px;text-align:center;border:1px solid #ccc;font-weight:600;font-size:1rem}
-  .sopa td.es{background:var(--oro)}
-  .cripto{display:flex;flex-wrap:wrap;gap:6px 4px;margin:10px 0}
-  .cripto .c{display:flex;flex-direction:column;align-items:center;min-width:26px}
-  .cripto .c .l{border-bottom:2px solid var(--tinta);width:24px;height:28px;text-align:center;font-weight:700}
-  .cripto .c .n{font-size:.75rem;color:var(--tinta-suave)}
-  .cripto .esp{width:16px}
-  .cortar{border:2px dashed #888;padding:10px;border-radius:2px;break-inside:avoid;font-size:.92rem}
-  .tarjetas-corte{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-  @media(max-width:640px){.tarjetas-corte{grid-template-columns:1fr 1fr}}
-  .lap{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
-  .pieza{border:2px solid var(--navy);border-radius:2px;background:#fff;break-inside:avoid}
-  .pieza .frente{padding:10px;border-bottom:2px dashed var(--navy);font-weight:600;min-height:70px}
-  .pieza .dentro{padding:10px;font-size:.9rem;min-height:90px}
-  .pieza .tipo{font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--naranja);font-weight:700}
-  .zine{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;border:1px solid #999;aspect-ratio:1.414/1;width:100%}
-  .zine .pag{border:1px dashed #999;padding:8px;font-size:.72rem;display:flex;flex-direction:column;gap:4px;overflow:hidden}
-  .zine .pag.inv{transform:rotate(180deg)}
-  .zine .pag h4{font-size:.85rem}
-  .zine .pag .dib{flex:1;border:1px solid #ddd;border-radius:2px;color:#999;font-size:.65rem;padding:4px;min-height:40px}
-  .zine .pn{font-size:.6rem;color:#888;margin-top:auto}
-  .cargando{padding:24px;color:var(--tinta-suave)}
-  .aviso{font-size:.88rem;color:var(--tinta-suave);margin-top:8px}
-  .md table{border-collapse:collapse;margin:10px 0}
-  .md td,.md th{border:1px solid #bbb;padding:6px 10px;font-size:.92rem;vertical-align:top}
-  .md h3,.md h4{margin:18px 0 6px;color:var(--navy)}
-  .md p{margin:8px 0}
-  .grupo-pensar{margin:12px 0}
-  .grupo-pensar h4{font-size:1rem;margin-bottom:6px;color:var(--navy)}
-  .volver{background:none;border:0;color:var(--navy);font-weight:600;text-decoration:underline;padding:0}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{background:var(--papel); color:var(--tinta); font-family:'Public Sans', system-ui, sans-serif; line-height:1.45; overflow-x:hidden;}
+  h1,h2,h3{font-family:'Fraunces', Georgia, serif; font-weight:560;}
+  button, select, input{font:inherit;}
+  :focus-visible{outline:3px solid var(--oro); outline-offset:2px;}
+
+  header.barra{display:flex; align-items:center; gap:12px; padding:14px clamp(16px,4vw,32px); background:var(--noche); color:#F7F3E9;}
+  header.barra .titulos{display:flex; flex-direction:column; min-width:0;}
+  header.barra h1{font-size:clamp(1.02rem, .9rem + .6vw, 1.3rem); line-height:1.2;}
+  header.barra .sub{font-size:.82rem; color:#E9D9B4;}
+  header.barra a{margin-left:auto; color:rgba(247,243,233,.75); font-size:.85rem; text-decoration:none; white-space:nowrap;}
+  header.barra a:hover{color:#fff; text-decoration:underline;}
+
+  .app{max-width:1100px; margin:0 auto; padding:18px 16px 64px;}
+  .controles{background:var(--blanco); border:1px solid var(--linea); border-radius:12px; padding:16px; display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%,150px), 1fr)); gap:12px 14px;}
+  .controles .intro-ctl{grid-column:1/-1; font-family:'Literata', Georgia, serif; font-size:.98rem; color:#3D3A34;}
+  .controles label{display:flex; flex-direction:column; gap:4px; font-size:.78rem; font-weight:600; color:var(--noche); min-width:0;}
+  .controles select, .controles input[type=number]{width:100%; min-width:0; padding:8px 9px; border:1px solid var(--linea); border-radius:7px; background:var(--papel); color:var(--tinta); font-size:.95rem;}
+  .controles .grupo-calc{grid-column:1/-1; display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%,130px), 1fr)); gap:12px 14px; padding-top:10px; border-top:1px dashed var(--linea);}
+  .controles .grupo-calc[hidden]{display:none;}
+  .acciones{grid-column:1/-1; display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding-top:4px;}
+  .btn{background:var(--noche); color:#FBF8F1; border:1.5px solid var(--noche); border-radius:999px; padding:9px 16px; font-weight:600; font-size:.9rem; cursor:pointer;}
+  .btn.sec{background:var(--blanco); color:var(--noche);}
+  .btn:hover{filter:brightness(1.12);}
+  .chk{display:inline-flex !important; flex-direction:row !important; align-items:center; gap:6px; font-size:.85rem !important; font-weight:500 !important; color:var(--tinta) !important;}
+  .semilla-info{font-size:.78rem; color:var(--suave); margin-left:auto;}
+  .aviso{position:fixed; left:50%; bottom:24px; transform:translateX(-50%); background:var(--noche); color:#fff; padding:10px 18px; border-radius:999px; font-size:.9rem; opacity:0; pointer-events:none; transition:opacity .2s; z-index:30; max-width:90vw;}
+  .aviso.ver{opacity:1;}
+
+  /* ---------- Hoja ---------- */
+  .hoja{background:var(--blanco); border:1px solid var(--linea); border-radius:4px; margin-top:18px; padding:clamp(16px, 4vw, 44px); box-shadow:0 2px 0 rgba(31,29,26,.04);}
+  .ficha-cab .marca{display:flex; flex-wrap:wrap; justify-content:space-between; gap:4px 12px; font-size:.78rem; letter-spacing:.03em; text-transform:uppercase; color:var(--noche); font-weight:700; border-bottom:2px solid var(--noche); padding-bottom:6px;}
+  .ficha-cab .marca span{font-weight:500; color:var(--suave); text-transform:none; letter-spacing:0;}
+  .datos-est{display:grid; grid-template-columns:2.2fr 1fr 1.2fr; gap:10px 16px; margin:14px 0 6px; font-size:.92rem;}
+  .datos-est div{display:flex; align-items:flex-end; gap:6px; min-width:0;}
+  .datos-est .campo{flex:1; border-bottom:1.5px solid var(--tinta); min-height:1.3em; min-width:2em;}
+  .ficha-titulo{font-size:clamp(1.45rem, 1.1rem + 1.4vw, 2.1rem); color:var(--noche); margin:16px 0 6px; line-height:1.15;}
+  .gancho{font-family:'Literata', Georgia, serif; font-size:clamp(1rem, .95rem + .25vw, 1.12rem); color:#3D3A34; border-left:3px solid var(--oro); padding:2px 0 2px 12px; margin-bottom:12px;}
+  .consigna{font-size:.95rem; margin:10px 0 14px;}
+  .lista-precios{border:1.5px solid var(--tinta); border-radius:6px; padding:10px 12px; margin:6px 0 14px; max-width:460px;}
+  .lista-precios h3{font-size:1rem; margin-bottom:4px; color:var(--noche);}
+  .lista-precios table{width:100%; border-collapse:collapse; font-size:.92rem;}
+  .lista-precios td{padding:3px 4px; border-bottom:1px dotted #9C968A;}
+  .lista-precios td:last-child{text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; font-weight:600;}
+
+  ol.items{list-style:none; counter-reset:it; display:grid; gap:18px 22px; padding:0;}
+  ol.items.cols{grid-template-columns:repeat(auto-fill, minmax(min(100%, 210px), 1fr));}
+  ol.items > li.item{counter-increment:it; position:relative; padding-left:2.3em; min-width:0; break-inside:avoid; page-break-inside:avoid;}
+  ol.items > li.item::before{content:counter(it); position:absolute; left:0; top:.05em; width:1.65em; height:1.65em; border-radius:50%; border:1.5px solid var(--noche); color:var(--noche); font-weight:700; font-size:.88rem; display:flex; align-items:center; justify-content:center;}
+  .item p{margin-bottom:6px; overflow-wrap:anywhere;}
+  .enun{font-size:1rem;}
+  .eq{font-size:1.12rem; font-variant-numeric:tabular-nums; line-height:2; overflow-wrap:anywhere;}
+  .rl{display:inline-block; min-width:var(--w,4em); border-bottom:1.5px solid var(--tinta); height:1.1em; vertical-align:-0.2em; margin:0 .15em;}
+  .nota{font-size:.86em; color:var(--suave);}
+  .fila-dib{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:4px 0 6px;}
+  .signo{font-size:1.6rem; font-weight:700; color:var(--noche);}
+  svg.fig{display:block; max-width:100%; height:auto; overflow:visible;}
+  .fila-dib svg.fig{display:inline-block;}
+  .fig text{font-family:'Public Sans', sans-serif; fill:var(--tinta);}
+  .fr{display:inline-flex; flex-direction:column; align-items:center; vertical-align:middle; line-height:1.15; font-size:.92em; margin:0 .12em;}
+  .fr > span:first-child{border-bottom:1.5px solid currentColor; padding:0 .2em;}
+  .fr > span{padding:0 .2em;}
+  sup{font-size:.7em; line-height:0;}
+  table.vert{border-collapse:collapse; font-family:'IBM Plex Mono', monospace; font-size:1.25rem; margin:2px 0;}
+  table.vert td{width:1.25em; height:1.45em; text-align:center; padding:0;}
+  table.vert tr.lleva td{height:1em; font-size:.7em;}
+  table.vert tr.lleva td::after{content:''; display:inline-block; width:.7em; height:.7em; border:1px dashed #9C968A; border-radius:2px;}
+  table.vert tr.lleva td.sin::after{display:none;}
+  table.vert tr.raya td{border-top:2px solid var(--tinta);}
+  table.vert td.sg{font-weight:700;}
+  .sistema{display:inline-flex; flex-direction:column; border-left:2px solid var(--tinta); padding:2px 0 2px 10px; font-size:1.1rem; line-height:1.8; margin:4px 0;}
+  .serie{display:flex; flex-wrap:wrap; gap:6px 4px; align-items:center; font-size:1.15rem; font-variant-numeric:tabular-nums; margin:6px 0;}
+  .serie .t{padding:2px 4px;}
+  .serie .hueco{display:inline-block; width:3.2em; height:1.7em; border:1.5px solid var(--tinta); border-radius:4px; background:#fff;}
+  .serie .sep{color:var(--suave);}
+  .serie .par{display:inline-flex; align-items:center; gap:3px; white-space:nowrap;}
+  table.tabla{border-collapse:collapse; font-size:.95rem; margin:6px 0; max-width:100%;}
+  table.tabla th, table.tabla td{border:1.2px solid var(--tinta); padding:4px 8px; text-align:center; min-width:2.4em; height:1.9em;}
+  table.tabla th{background:#F3EEE3; font-weight:600;}
+  .tabla-marco{max-width:100%; overflow-x:auto;}
+  .andamio{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:8px;}
+  .andamio.uno{grid-template-columns:1fr;}
+  .caja{border:1.2px solid var(--tinta); border-radius:5px; min-height:3.6em; padding:3px 7px; font-size:.75rem; color:var(--suave); font-weight:600;}
+  .caja.alta{min-height:7em;}
+  .caja.ancha{grid-column:1/-1;}
+  ol.pasos{margin:6px 0 8px; padding-left:0; list-style:none; counter-reset:pa;}
+  ol.pasos li{counter-increment:pa; position:relative; padding:4px 6px 4px 3.9em; border:1px solid var(--linea); border-radius:5px; margin-bottom:5px; font-variant-numeric:tabular-nums; overflow-wrap:anywhere;}
+  ol.pasos li::before{content:'Paso ' counter(pa); position:absolute; left:6px; top:6px; font-size:.72rem; font-weight:700; color:var(--noche); white-space:nowrap;}
+  .respuestas-error{display:grid; grid-template-columns:1fr; gap:6px; font-size:.9rem;}
+  .respuestas-error div{display:flex; gap:6px; align-items:flex-end;}
+  .respuestas-error .campo{flex:1; border-bottom:1.2px solid var(--tinta); min-height:1.4em;}
+
+  .autoeval{margin-top:26px; border:1.5px solid var(--tinta); border-radius:8px; padding:12px 14px; break-inside:avoid; page-break-inside:avoid;}
+  .autoeval h3{font-size:1.05rem; margin-bottom:8px; color:var(--noche);}
+  .autoeval .ops{display:flex; flex-wrap:wrap; gap:10px 22px; font-size:.95rem;}
+  .autoeval .ops span{display:inline-flex; align-items:center; gap:7px;}
+  .autoeval .ops span::before{content:''; width:1.05em; height:1.05em; border:1.5px solid var(--tinta); border-radius:3px; display:inline-block;}
+  .autoeval .costo{display:flex; gap:6px; align-items:flex-end; margin-top:10px; font-size:.92rem;}
+  .autoeval .costo span.campo{flex:1; border-bottom:1.2px solid var(--tinta); min-height:1.3em;}
+  .pie{margin-top:16px; padding-top:8px; border-top:1px solid var(--linea); display:flex; flex-wrap:wrap; justify-content:space-between; gap:4px 12px; font-size:.75rem; color:var(--suave);}
+
+  /* ---------- Clave ---------- */
+  #clave[hidden]{display:none;}
+  #clave h2{font-size:1.4rem; color:var(--noche);}
+  #clave .sub{font-size:.85rem; color:var(--suave); margin-bottom:12px;}
+  ol.clave-lista{padding-left:1.6em; display:grid; gap:10px;}
+  ol.clave-lista > li{padding-left:.3em; break-inside:avoid; page-break-inside:avoid; overflow-wrap:anywhere;}
+  ol.clave-lista > li::marker{font-weight:700; color:var(--noche);}
+  .clave-item ol.pasos-clave{padding-left:1.3em; margin:3px 0;}
+  .clave-item .etq{font-weight:700; color:var(--noche);}
+  .clave-item b{font-weight:700;}
+  .clave-item svg.fig{margin:4px 0;}
+
+  /* ---------- Figuras SVG ---------- */
+  .f-lleno{fill:var(--noche); stroke:var(--tinta); stroke-width:1.5;}
+  .f-vacio{fill:#fff; stroke:var(--tinta); stroke-width:2;}
+  .f-raya{fill:url(#pat-raya); stroke:var(--tinta); stroke-width:1.5;}
+  .f-punto{fill:url(#pat-punto); stroke:var(--tinta); stroke-width:1.5;}
+  .f-hueco{fill:#fff; stroke:var(--tinta); stroke-width:1.5; stroke-dasharray:4 3;}
+  .tacha{stroke:var(--tinta); stroke-width:3; stroke-linecap:round;}
+  .g-fig{fill:#F3EEE3; stroke:var(--tinta); stroke-width:2; stroke-linejoin:round;}
+  .g-fig2{fill:#E4D9BF; stroke:var(--tinta); stroke-width:2;}
+  .g-linea{stroke:var(--tinta); stroke-width:2; fill:none;}
+  .g-fina{stroke:var(--tinta); stroke-width:1; fill:none;}
+  .g-guia{stroke:var(--tinta); stroke-width:1.3; stroke-dasharray:5 4; fill:none;}
+  .g-cuad{stroke:#B9B09C; stroke-width:.8; fill:none;}
+  .g-eje{stroke:var(--tinta); stroke-width:1.6;}
+  .g-borde{stroke:var(--tinta); stroke-width:3; stroke-linecap:square;}
+  .g-celda{fill:#D9CDB0;}
+  .g-celda2{fill:url(#pat-raya);}
+  .g-punto{fill:var(--tinta);}
+  .t-et{font-size:13px; font-weight:600;}
+  .t-chico{font-size:10px;}
+  .moneda{fill:#F1E7CF; stroke:var(--tinta); stroke-width:1.6;}
+  .moneda-in{fill:none; stroke:var(--tinta); stroke-width:.8;}
+  .moneda-bi{fill:#DCCBA2; stroke:var(--tinta); stroke-width:.8;}
+  .billete{fill:#FFFFFF; stroke:var(--tinta); stroke-width:1.6;}
+  .billete-in{fill:none; stroke:var(--tinta); stroke-width:.7; stroke-dasharray:3 2;}
+  .etiqueta-precio{fill:#fff; stroke:var(--tinta); stroke-width:1.4;}
+
+  @media (max-width:560px){
+    .datos-est{grid-template-columns:1fr 1fr;}
+    .datos-est div:first-child{grid-column:1/-1;}
+    .andamio{grid-template-columns:1fr;}
+    .semilla-info{margin-left:0; width:100%;}
+    header.barra a{font-size:.78rem;}
+  }
+
   @media print{
-    header.top,.intro,.barra,.no-imprimir,.acciones,.volver,.lead,.panel>h2{display:none!important}
-    body{background:#fff;font-size:12pt}
-    main{padding:0}
-    .wrap{max-width:none;padding:0}
-    .hoja{border:0;padding:0;margin:0}
-    .salto{break-before:page}
-    .item,.vineta,.pieza,.cortar{break-inside:avoid}
-    .zine{width:27cm;height:19cm;aspect-ratio:auto}
-    @page{margin:1.2cm}
+    @page{margin:13mm 12mm;}
+    html, body{background:#fff !important;}
+    body{font-size:11pt;}
+    header.barra, .controles, .aviso, .no-print{display:none !important;}
+    .app{max-width:none; padding:0; margin:0;}
+    .hoja{border:none; box-shadow:none; margin:0; padding:0; border-radius:0;}
+    #clave, #clave[hidden]{display:none !important;}
+    body.imprimir-clave #clave{display:block !important; break-before:page; page-break-before:always;}
+    ol.items{gap:12px 18px;}
+    ol.items.cols{grid-template-columns:repeat(3, minmax(0,1fr));}
+    .item, .autoeval, ol.clave-lista > li{break-inside:avoid; page-break-inside:avoid;}
+    .gancho{border-left-color:#000;}
+    * {-webkit-print-color-adjust:exact; print-color-adjust:exact;}
   }
 </style>
 </head>
 <body>
-<header class="top">
-  <div class="wrap top-inner">
-    <a class="brand" href="index.html">SABICENTEC SUPERACIÓN</a>
-    <nav class="enlaces">
-      <a class="cta claro" href="recursos.html">Laboratorio</a>
-      <a class="cta claro" href="proyectos.html">Proyectos por área</a>
-      <a class="cta" href="tutor.html">Hablar con SABI</a>
-    </nav>
+<!-- Patrones compartidos por todas las figuras (no se ocultan con display:none para que funcionen al imprimir) -->
+<svg width="0" height="0" style="position:absolute; width:0; height:0;" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="pat-raya" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#FFFFFF"/><rect width="2.6" height="6" fill="#6E5214"/>
+    </pattern>
+    <pattern id="pat-punto" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#FFFFFF"/><circle cx="3" cy="3" r="1.4" fill="#1F1D1A"/>
+    </pattern>
+  </defs>
+</svg>
+
+<header class="barra">
+  <div class="titulos">
+    <h1>Fichas de matemáticas a la medida</h1>
+    <span class="sub">SABI · Colegio CENTEC · de Transición a 11°</span>
   </div>
+  <a href="index.html">Volver al sitio</a>
 </header>
 
-<section class="intro">
-  <div class="wrap">
-    <h1>Fichas y lecturas para imprimir o resolver en pantalla</h1>
-    <p>Fichas de matemáticas que nunca se repiten, con cada respuesta calculada por el programa y no escrita a mano, y lecturas que enseñan a comprender, relacionar y pensar en siete pasos. Para experimentos, juegos y las demás ayudas didácticas, usa los botones de arriba.</p>
-  </div>
-</section>
-
-<div class="barra">
-  <div class="wrap barra-inner">
-    <div class="tabs" role="tablist">
-      <button class="tab" role="tab" data-panel="mate">Fichas de matemáticas</button>
-      <button class="tab" role="tab" data-panel="lectura">Lecturas</button>
-      <a class="tab" style="text-decoration:none" id="ir-exp" href="experimentos.html">Experimentos</a>
-      <a class="tab" style="text-decoration:none" href="tutor.html?rol=estudiante">Juegos y didácticas en SABI</a>
-    </div>
-    <label class="campo linea" style="margin-left:auto">Grado
-      <select id="grado">
-        <option value="0">Transición</option><option value="1">1°</option><option value="2">2°</option><option value="3">3°</option>
-        <option value="4">4°</option><option value="5">5°</option><option value="6">6°</option><option value="7">7°</option>
-        <option value="8">8°</option><option value="9">9°</option><option value="10">10°</option><option value="11">11°</option>
+<main class="app">
+  <form class="controles no-print" id="controles" aria-label="Configura tu ficha" onsubmit="return false;">
+    <p class="intro-ctl">Una buena ficha empieza con una buena idea. Elige el tipo, el grado y la dificultad: cada ficha trae una historia de Cali y su clave de respuestas calculada paso a paso.</p>
+    <label>Tipo de ficha
+      <select id="c-tipo"></select>
+    </label>
+    <label>Grado
+      <select id="c-grado"></select>
+    </label>
+    <label>Dificultad
+      <select id="c-dif">
+        <option value="facil">Fácil</option>
+        <option value="media">Media</option>
+        <option value="reto">Reto</option>
       </select>
     </label>
-    <label class="campo linea"><input type="checkbox" id="ver-resp"> Ver respuestas (docente)</label>
-  </div>
-</div>
-
-<main class="wrap">
-
-  <!-- ============ MATEMÁTICAS ============ -->
-  <section class="panel" id="p-mate">
-    <h2>Fichas de matemáticas a medida</h2>
-    <p class="lead">Una buena ficha empieza con una buena idea. Elige el tipo, ajusta el nivel y genera cuantas quieras: cada ficha es distinta, trae su situación motivadora, la clave de respuestas con el porqué y un reto final.</p>
-    <div class="no-imprimir">
-      <div class="chips" id="m-tipos"></div>
-      <div class="acciones" id="m-opciones"></div>
-      <div class="acciones">
-        <button class="btn" id="m-generar">Nueva ficha</button>
-        <button class="btn sec" onclick="window.print()">Imprimir</button>
-        <button class="btn sec" id="m-sabi">Practicar con SABI</button>
-      </div>
+    <label>Cantidad de ejercicios
+      <input type="number" id="c-n" min="4" max="20" step="1" inputmode="numeric">
+    </label>
+    <label>Historia (tema)
+      <select id="c-tema"></select>
+    </label>
+    <label id="l-sub">Enfoque
+      <select id="c-sub"></select>
+    </label>
+    <div class="grupo-calc" id="g-calc" hidden>
+      <label>Desde (mínimo)
+        <input type="number" id="c-rmin" min="0" max="9999999" step="1" inputmode="numeric" placeholder="automático">
+      </label>
+      <label>Hasta (máximo)
+        <input type="number" id="c-rmax" min="1" max="9999999" step="1" inputmode="numeric" placeholder="automático">
+      </label>
+      <label>Con llevada / préstamo
+        <select id="c-llevada">
+          <option value="auto">Automático</option>
+          <option value="si">Sí, siempre</option>
+          <option value="no">No, nunca</option>
+        </select>
+      </label>
     </div>
-    <div id="m-ficha"></div>
-  </section>
-
-  <!-- ============ LECTURA ============ -->
-  <section class="panel" id="p-lectura" hidden>
-    <h2>Leer es comprender, relacionar y pensar</h2>
-    <p class="lead">Siete pasos: lo que dice el texto (toca la oración que responde cada pregunta), leer entre líneas, palabras en contexto, ¿dónde lo pone?, orden y causas, piensa y argumenta, y un valor para conversar.</p>
-    <div class="no-imprimir" id="l-inicio">
-      <div id="l-lista" class="grid"></div>
-      <div class="hoja" style="margin-top:22px">
-        <h3 style="margin-top:0">Crear una lectura nueva con SABI</h3>
-        <p class="aviso">Escribe un tema o pega un texto propio: SABI abre la lectura comprensiva en siete pasos dentro del tutor.</p>
-        <div class="acciones"><input type="text" id="l-tema" placeholder="Tema: el río Cauca, las abejas, el ahorro..." style="flex:1;min-width:240px"></div>
-        <textarea id="l-texto" placeholder="O pega aquí un texto (opcional)"></textarea>
-        <div class="acciones"><button class="btn" id="l-crear">Crear lectura con SABI</button></div>
-        <div id="l-estado" class="aviso"></div>
-      </div>
+    <div class="acciones">
+      <button type="button" class="btn" id="b-nueva">Nueva ficha</button>
+      <button type="button" class="btn sec" id="b-clave" aria-pressed="false">Mostrar clave</button>
+      <button type="button" class="btn sec" id="b-copiar">Copiar enlace</button>
+      <button type="button" class="btn sec" id="b-imprimir">Imprimir</button>
+      <label class="chk"><input type="checkbox" id="c-imp-clave"> Incluir la clave al imprimir (en hoja aparte)</label>
+      <span class="semilla-info" id="semilla-info"></span>
     </div>
-    <div id="l-leccion"></div>
-  </section>
+  </form>
 
+  <article class="hoja" id="ficha" aria-live="polite"></article>
+  <section class="hoja" id="clave" hidden aria-label="Clave de respuestas"></section>
 </main>
-
-<script src="taller-mate.js"></script>
+<div class="aviso" id="aviso" role="status"></div>
 <script>
-(() => {
-  'use strict';
-  const $ = (id) => document.getElementById(id);
-  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const LS = { get(k, d) { try { const v = localStorage.getItem('taller.' + k); return v === null ? d : v; } catch { return d; } }, set(k, v) { try { localStorage.setItem('taller.' + k, v); } catch {} } };
-  const PARAMS = new URLSearchParams(location.search);
-  const gradoTxt = (g) => (Number(g) === 0 ? 'Transición' : g + '°');
-  const grado = () => Number($('grado').value);
-  function rng(seed) { let a = seed >>> 0; return () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
-  const barajar = (arr, r) => { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
-  const cabecera = (titulo, area) => `<div class="cabecera-ficha"><span>Colegio CENTEC · Taller SABI · ${esc(area)}</span><span>Grado ${esc(gradoTxt(grado()))}</span></div><h2>${esc(titulo)}</h2><div class="nombre-linea"><span>Nombre:</span><span style="max-width:200px">Fecha:</span></div>`;
-  const tutorURL = (materia, tema) => 'tutor.html?' + new URLSearchParams({ rol: 'estudiante', materia, tema: tema.slice(0, 480) });
+(function(){
+'use strict';
+/* =====================================================================
+   SABI · Fichas de matemáticas a la medida — Colegio CENTEC (Cali)
+   Motor determinista: la misma URL produce siempre la misma ficha.
+   Todas las respuestas se CALCULAN por código (nunca se escriben a mano).
+   ===================================================================== */
 
-  // ---------- grado, pestañas y respuestas ----------
-  $('grado').value = PARAMS.get('grado') ?? LS.get('grado', '3');
-  $('grado').addEventListener('change', () => { LS.set('grado', $('grado').value); refrescar(); });
-  $('ver-resp').addEventListener('change', (e) => document.body.classList.toggle('ver-resp', e.target.checked));
-  let panel = PARAMS.get('panel') || LS.get('panel', 'mate');
-  if (!['mate', 'lectura'].includes(panel)) panel = 'mate';
-  function abrirPanel(p) {
-    panel = p; LS.set('panel', p);
-    document.querySelectorAll('.tab[data-panel]').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.panel === p)));
-    $('ir-exp').href = 'experimentos.html?grado=' + grado();
-    document.querySelectorAll('.panel').forEach((s) => (s.hidden = s.id !== 'p-' + p));
-    refrescar();
-  }
-  document.querySelectorAll('.tab[data-panel]').forEach((t) => t.addEventListener('click', () => abrirPanel(t.dataset.panel)));
-  function refrescar() {
-    if (panel === 'mate') pintarMateControles();
-    if (panel === 'lectura') cargarLecturas();
-  }
+// ---------- Azar con semilla ----------
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+function hashStr(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return h>>>0;}
+function Rng(seed){
+  const f=mulberry32(seed>>>0);
+  const R={
+    r:f,
+    int(a,b){a=Math.ceil(a);b=Math.floor(b);if(b<a)b=a;return a+Math.floor(f()*(b-a+1));},
+    pick(a){return a[Math.floor(f()*a.length)];},
+    shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(f()*(i+1));const t=a[i];a[i]=a[j];a[j]=t;}return a;},
+    sample(a,k){return R.shuffle(a).slice(0,k);},
+    bool(p){return f()<(p==null?0.5:p);},
+    nz(a,b){let x,t=0;do{x=R.int(a,b);t++;}while(x===0&&t<100);return x===0?1:x;}
+  };
+  return R;
+}
 
+// ---------- Formato numérico es-CO ----------
+function fmt(n,dec){
+  if(typeof n!=='number'||!isFinite(n)) throw new Error('Número inválido en la ficha: '+n);
+  const x=Math.abs(n);
+  let s=dec==null?String(Math.round(x*1e6)/1e6):x.toFixed(dec);
+  if(s.indexOf('e')>=0) s=x.toFixed(dec==null?0:dec);
+  let parts=s.split('.'); let i=parts[0], fr=parts[1];
+  i=i.replace(/\B(?=(\d{3})+(?!\d))/g,'.');
+  const out=i+(fr?','+fr:'');
+  const esCero=out.replace(/[0.,]/g,'')==='';
+  return (n<0&&!esCero?'−':'')+out;
+}
+const money=n=>'$ '+fmt(n);
+const par=n=>n<0?'('+fmt(n)+')':fmt(n);
+const dec2=x=>fmt(Math.round(x*100)/100);
+function decS(v,e){ // entero v con e decimales -> texto es-CO sin ceros sobrantes
+  const neg=v<0; let s=String(Math.abs(v)); while(s.length<e+1) s='0'+s;
+  let i=s.slice(0,s.length-e), f=e?s.slice(s.length-e):''; f=f.replace(/0+$/,'');
+  i=i.replace(/\B(?=(\d{3})+(?!\d))/g,'.');
+  const out=i+(f?','+f:''); return (neg&&out.replace(/[0.,]/g,'')!==''?'−':'')+out;
+}
+function gcd(a,b){a=Math.abs(a);b=Math.abs(b);while(b){const t=a%b;a=b;b=t;}return a||1;}
+function lcm(a,b){return a/gcd(a,b)*b;}
+function simp(n,d){if(d<0){n=-n;d=-d;}const g=gcd(n,d);return [n/g,d/g];}
+function frH(n,d){ if(d===1) return fmt(n); return (n<0?'−':'')+'<span class="fr" role="math" aria-label="'+Math.abs(n)+' sobre '+d+'"><span>'+fmt(Math.abs(n))+'</span><span>'+fmt(d)+'</span></span>'; }
+function frT(n,d){ return d===1?fmt(n):fmt(n)+'/'+fmt(d); }
+function frClave(n,d){ const s=simp(n,d); let t='<b>'+frT(s[0],s[1])+'</b>'; if(Math.abs(s[0])>s[1]&&s[1]!==1){const w=Math.trunc(s[0]/s[1]), r=Math.abs(s[0]%s[1]); t+=' (= '+fmt(w)+' y '+r+'/'+s[1]+')';} return t; }
+const rl=w=>'<span class="rl" style="--w:'+(w||4)+'em"></span>';
+const r1=x=>Math.round(x*10)/10;
+function cap(s){return s.charAt(0).toUpperCase()+s.slice(1);}
+function pl(w,k){return k===1?w[0]:w[1];}
+function cuantos(w){return w[2]==='f'?'Cuántas':'Cuántos';}
+function svgW(w,h,body,label){return '<svg class="fig" viewBox="0 0 '+r1(w)+' '+r1(h)+'" width="'+r1(w)+'" height="'+r1(h)+'" role="img" aria-label="'+(label||'figura')+'">'+body+'</svg>';}
+function txt(x,y,s,cls,anchor){return '<text x="'+r1(x)+'" y="'+r1(y)+'" class="'+(cls||'t-et')+'" text-anchor="'+(anchor||'middle')+'" dominant-baseline="middle">'+s+'</text>';}
+// polinomio a partir de coeficientes (grado mayor primero)
+function poly(co,v){ v=v||'x'; const deg=co.length-1; let s='';
+  co.forEach((c,i)=>{ const p=deg-i; if(c===0) return; const a=Math.abs(c);
+    const body=p===0?fmt(a):(a===1?'':fmt(a))+v+(p>1?'<sup>'+p+'</sup>':'');
+    s+= s===''?(c<0?'−':'')+body:(c<0?' − ':' + ')+body; });
+  return s||'0'; }
+function lin(terms){ let s=''; terms.forEach(t=>{const c=t[0],v=t[1]; if(c===0) return; const a=Math.abs(c); const body=(a===1&&v?'':fmt(a))+v; s+= s===''?(c<0?'−':'')+body:(c<0?' − ':' + ')+body;}); return s||'0'; }
+function factor(r){ return r===0?'x':'(x '+(r>0?'−':'+')+' '+fmt(Math.abs(r))+')'; }
 
-  // =====================================================================
-  // MATEMÁTICAS (generador procedural: taller-mate.js)
-  // =====================================================================
-  let mTipo = LS.get('mtipo', 'calculo'), mSemilla = Date.now() % 1e9, mFicha = null;
-  function pintarMateControles() {
-    const TM = window.TallerMate;
-    if (!TM) { $('m-ficha').innerHTML = '<p class="cargando">El generador no cargó. Recarga la página.</p>'; return; }
-    $('m-tipos').innerHTML = TM.tipos.map((t) => `<button class="chip" aria-pressed="${t.id === mTipo}" data-t="${t.id}" title="${esc(t.descripcion)}">${esc(t.nombre)}</button>`).join('');
-    $('m-tipos').querySelectorAll('.chip').forEach((b) => b.addEventListener('click', () => { mTipo = b.dataset.t; LS.set('mtipo', mTipo); pintarMateControles(); }));
-    const ops = TM.opciones(mTipo, grado()) || [];
-    $('m-opciones').innerHTML = (Array.isArray(ops) ? ops : Object.entries(ops).map(([id, o]) => ({ id, ...o }))).map(controlHTML).join('');
-    generarFicha();
-  }
-  function controlHTML(o) {
-    const id = 'mo-' + o.id, et = esc(o.etiqueta || o.label || o.nombre || o.id);
-    const valores = o.valores || o.opciones || o.options;
-    if (Array.isArray(valores)) {
-      return `<label class="campo">${et}<select id="${id}" data-op="${esc(o.id)}">${valores.map((v) => { const val = typeof v === 'object' ? v.valor ?? v.value ?? v.id : v; const tx = typeof v === 'object' ? v.etiqueta ?? v.label ?? v.nombre ?? val : v; return `<option value="${esc(val)}" ${String(val) === String(o.valor ?? o.defecto ?? o.default) ? 'selected' : ''}>${esc(tx)}</option>`; }).join('')}</select></label>`;
-    }
-    if (o.tipo === 'checkbox' || o.tipo === 'booleano' || typeof (o.valor ?? o.defecto ?? o.default) === 'boolean') {
-      return `<label class="campo linea"><input type="checkbox" id="${id}" data-op="${esc(o.id)}" data-bool="1" ${(o.valor ?? o.defecto ?? o.default) ? 'checked' : ''}> ${et}</label>`;
-    }
-    return `<label class="campo">${et}<input type="number" id="${id}" data-op="${esc(o.id)}" value="${esc(o.valor ?? o.defecto ?? o.default ?? '')}" ${o.min != null ? `min="${o.min}"` : ''} ${o.max != null ? `max="${o.max}"` : ''} style="width:110px"></label>`;
-  }
-  function leerOpciones() {
-    const r = {};
-    $('m-opciones').querySelectorAll('[data-op]').forEach((el) => { const v = el.dataset.bool ? el.checked : el.value; r[el.dataset.op] = (typeof v === 'string' && v !== '' && !isNaN(v)) ? Number(v) : v; });
-    return r;
-  }
-  $('m-opciones').addEventListener('change', () => generarFicha());
-  $('m-generar').addEventListener('click', () => { mSemilla = Math.floor(Math.random() * 1e9); generarFicha(); });
-  function generarFicha() {
-    const TM = window.TallerMate; if (!TM) return;
-    try {
-      const op = leerOpciones(); mFicha = TM.generar({ ...op, tipo: mTipo, grado: grado(), cantidad: Number(op.cantidad) || 10, semilla: mSemilla });
-    } catch (e) { $('m-ficha').innerHTML = `<p class="cargando">No se pudo generar con esas opciones (${esc(e.message)}). Prueba otras.</p>`; return; }
-    const f = mFicha;
-    const item = (it) => `<div class="item"><span class="num">${esc(it.n)}.</span><span style="white-space:pre-line">${esc(it.enunciado)}</span>${it.svg && /^\s*<svg[\s>]/i.test(it.svg) && !/<script|on\w+=/i.test(it.svg) ? it.svg : ''}<div class="espacio"></div><div class="resp">Respuesta: ${esc(it.respuesta)}${it.explicacion ? ` <span style="font-weight:400;color:var(--tinta-suave)">· ${esc(it.explicacion)}</span>` : ''}</div></div>`;
-    const reto = f.reto_final ? (typeof f.reto_final === 'string' ? `<div class="caja azul"><b>Reto final:</b> ${esc(f.reto_final)}</div>` : `<div class="caja azul"><b>Reto final:</b> <span style="white-space:pre-line">${esc(f.reto_final.enunciado)}</span>${f.reto_final.svg && /^\s*<svg[\s>]/i.test(f.reto_final.svg) && !/<script|on\w+=/i.test(f.reto_final.svg) ? f.reto_final.svg : ''}<div class="resp">${esc(f.reto_final.respuesta || '')}${f.reto_final.explicacion ? ' · ' + esc(f.reto_final.explicacion) : ''}</div></div>`) : '';
-    $('m-ficha').innerHTML = `<article class="hoja">${cabecera(f.titulo, 'Matemáticas')}
-      ${f.idea ? `<div class="caja"><b>La idea:</b> ${esc(f.idea)}</div>` : ''}
-      <p><b>Instrucción:</b> ${esc(f.instruccion)}</p>
-      <div class="items cols2" style="margin-top:12px">${(f.items || []).map(item).join('')}</div>${reto}
-      <p class="aviso">Ficha número ${mSemilla} · la misma ficha se puede volver a generar con este número.</p></article>`;
-  }
-  $('m-sabi').addEventListener('click', () => {
-    const t = (window.TallerMate?.tipos || []).find((x) => x.id === mTipo);
-    location.href = tutorURL('Matemáticas', `Quiero practicar ${t ? t.nombre.toLowerCase() : 'matemáticas'} de ${gradoTxt(grado())}. Ponme un ejercicio a la vez, deja que yo lo intente y explícame el porqué de cada paso.`);
-  });
+// ---------- Nombres y temas (historias de Cali y Colombia) ----------
+const NOMBRES=['Valentina','Santiago','Mariana','Samuel','Isabella','Jerónimo','Salomé','Emmanuel','Luciana','Matías','Antonella','Tomás','Sara','Juan José','Gabriela','Maximiliano','Daniela','Sebastián','Yuliana','Esteban','Camila','Andrés','Manuela','Kevin','Sofía','Alejandro','María José','Johan','Valeria','Nicolás','Ximena','Darwin'];
+const TEMAS=[
+ {id:'tienda',titulo:'La tienda del barrio',intro:'En Ciudad Córdoba, la tienda de don Chucho abre desde las seis de la mañana. Hoy {N} y {M} le ayudan a atender a los vecinos.',lugar:'la tienda de don Chucho',obj:['huevo','huevos','m'],gente:['cliente','clientes','m'],grupo:['cubeta','cubetas','f'],espacio:'la bodega de la tienda',precios:[['litro de leche','litros de leche',5200],['libra de arroz','libras de arroz',2900],['panela','panelas',3600],['huevo','huevos',700],['pan','panes',500],['bolsa de agua','bolsas de agua',1000]]},
+ {id:'mio',titulo:'Un viaje en el MIO',intro:'Por las mañanas, {N} toma el MIO en la estación más cercana al colegio. En el recorrido cuenta pasajeros, paradas y minutos.',lugar:'la estación del MIO',obj:['tarjeta MIO','tarjetas MIO','f'],gente:['pasajero','pasajeros','m'],grupo:['bus','buses','m'],espacio:'el andén de la estación',precios:[['pasaje','pasajes',3400],['tarjeta MIO','tarjetas MIO',8000],['botella de agua','botellas de agua',2500],['paquete de maní','paquetes de maní',2000],['empanada','empanadas',2500]]},
+ {id:'galeria',titulo:'Mercado en la Galería Alameda',intro:'El sábado, {N} acompaña a su abuela a la Galería Alameda. Entre puestos de frutas, hierbas y verduras, hay mucho que contar y pagar.',lugar:'la Galería Alameda',obj:['lulo','lulos','m'],gente:['comprador','compradores','m'],grupo:['canasta','canastas','f'],espacio:'el puesto de frutas',precios:[['libra de lulo','libras de lulo',4500],['mango','mangos',2500],['aguacate','aguacates',4000],['piña','piñas',6000],['libra de tomate','libras de tomate',3000],['mazorca','mazorcas',1500]]},
+ {id:'frutas',titulo:'El carrito de frutas de doña Rosa',intro:'A la salida del colegio, doña Rosa vende mango biche, chontaduro y salpicón. {N} le ayuda a llevar las cuentas.',lugar:'el carrito de doña Rosa',obj:['mango','mangos','m'],gente:['cliente','clientes','m'],grupo:['bandeja','bandejas','f'],espacio:'el toldo del carrito',precios:[['vaso de mango biche','vasos de mango biche',4000],['porción de chontaduro','porciones de chontaduro',3000],['salpicón','salpicones',6000],['vaso de lulada','vasos de lulada',7000],['bolsa de mamoncillos','bolsas de mamoncillos',3000]]},
+ {id:'panaderia',titulo:'Pandebonos y buñuelos',intro:'En la panadería del barrio salen bandejas de pandebonos y buñuelos recién horneados. {N} y {M} ayudan a empacarlos.',lugar:'la panadería',obj:['pandebono','pandebonos','m'],gente:['cliente','clientes','m'],grupo:['bandeja','bandejas','f'],espacio:'la mesa de la panadería',precios:[['pandebono','pandebonos',2500],['buñuelo','buñuelos',2200],['pandeyuca','pandeyucas',2300],['vaso de avena','vasos de avena',3500],['café con leche','cafés con leche',2800],['empanada','empanadas',2500]]},
+ {id:'feria',titulo:'La Feria de Cali',intro:'Llega diciembre y Cali se prepara para la Feria. {N} y su familia van al Salsódromo a ver las escuelas de salsa.',lugar:'el Salsódromo',obj:['boleta','boletas','f'],gente:['bailarín','bailarines','m'],grupo:['comparsa','comparsas','f'],espacio:'la tarima de la Feria',precios:[['boleta de tribuna','boletas de tribuna',95000],['sombrero','sombreros',25000],['botella de agua','botellas de agua',3000],['empanada','empanadas',3000],['camiseta de la Feria','camisetas de la Feria',40000]]},
+ {id:'salsa',titulo:'Escuela de salsa caleña',intro:'Cali es la capital mundial de la salsa. En la escuela del barrio, {N} ensaya pasos y cuenta tiempos con la música.',lugar:'la escuela de salsa',obj:['disco de salsa','discos de salsa','m'],gente:['bailarín','bailarines','m'],grupo:['fila','filas','f'],espacio:'la pista de baile',precios:[['clase','clases',20000],['par de zapatos de baile','pares de zapatos de baile',90000],['camiseta','camisetas',35000],['botella de agua','botellas de agua',2500]]},
+ {id:'ciclovia',titulo:'Domingo de ciclovía',intro:'Los domingos, la ciclovía de Cali se llena de bicicletas, patines y caminantes. {N} y {M} salen temprano a recorrerla.',lugar:'la ciclovía',obj:['botella de agua','botellas de agua','f'],gente:['ciclista','ciclistas','m'],grupo:['grupo','grupos','m'],espacio:'el parqueadero de bicicletas',precios:[['hora de alquiler de bicicleta','horas de alquiler de bicicleta',8000],['botella de agua','botellas de agua',2500],['jugo de naranja','jugos de naranja',4000],['raspado','raspados',4000],['casco','cascos',65000]]},
+ {id:'pance',titulo:'Paseo al río Pance',intro:'El paseo de olla al río Pance es una tradición caleña. {N} y su familia preparan todo para pasar el día junto al agua.',lugar:'el río Pance',obj:['arepa','arepas','f'],gente:['bañista','bañistas','m'],grupo:['bolsa','bolsas','f'],espacio:'el lote junto al río',precios:[['arepa','arepas',2500],['gaseosa','gaseosas',3500],['pasaje de bus','pasajes de bus',3400],['raspado','raspados',4000],['plátano maduro','plátanos maduros',1500]]},
+ {id:'zoo',titulo:'Visita al Zoológico de Cali',intro:'El curso de {N} visita el Zoológico de Cali, a orillas del río Cali. Allí viven cóndores, jaguares y osos de anteojos.',lugar:'el Zoológico de Cali',obj:['foto','fotos','f'],gente:['visitante','visitantes','m'],grupo:['recinto','recintos','m'],espacio:'el recinto de los flamencos',precios:[['entrada de niño','entradas de niño',23000],['entrada de adulto','entradas de adulto',30000],['helado','helados',6000],['peluche','peluches',25000],['botella de agua','botellas de agua',3000]]},
+ {id:'cerro',titulo:'Caminata al Cerro de las Tres Cruces',intro:'Muy temprano, {N} y {M} suben al Cerro de las Tres Cruces. Desde arriba se ve todo Cali.',lugar:'el Cerro de las Tres Cruces',obj:['naranja','naranjas','f'],gente:['caminante','caminantes','m'],grupo:['bolsa','bolsas','f'],espacio:'el mirador del cerro',precios:[['jugo de naranja','jugos de naranja',4000],['botella de agua','botellas de agua',2000],['vaso de champús','vasos de champús',4000],['gorra','gorras',15000]]},
+ {id:'huerta',titulo:'La huerta escolar CENTEC',intro:'En la huerta del colegio sembramos cilantro, tomate y cebolla. {N} y {M} están a cargo esta semana.',lugar:'la huerta escolar',obj:['semilla','semillas','f'],gente:['estudiante','estudiantes','m'],grupo:['surco','surcos','m'],espacio:'la huerta',precios:[['sobre de semillas','sobres de semillas',3500],['bulto de abono','bultos de abono',18000],['regadera','regaderas',15000],['plántula','plántulas',1500]]},
+ {id:'petronio',titulo:'Festival Petronio Álvarez',intro:'En agosto, el Petronio Álvarez llena Cali de marimba, cununos y cantos del Pacífico. {N} va con su familia por primera vez.',lugar:'el festival',obj:['cocada','cocadas','f'],gente:['músico','músicos','m'],grupo:['agrupación','agrupaciones','f'],espacio:'la tarima del festival',precios:[['cocada','cocadas',3000],['jugo de borojó','jugos de borojó',6000],['plato de pescado','platos de pescado',28000],['pulsera artesanal','pulseras artesanales',10000],['sombrero','sombreros',30000]]},
+ {id:'futbol',titulo:'Torneo de fútbol intercursos',intro:'Empezó el torneo de fútbol del colegio. {N} juega en su equipo y {M} lleva las estadísticas de cada partido.',lugar:'la cancha del colegio',obj:['balón','balones','m'],gente:['jugador','jugadores','m'],grupo:['equipo','equipos','m'],espacio:'la cancha',precios:[['balón','balones',60000],['camiseta','camisetas',45000],['par de medias','pares de medias',12000],['bebida hidratante','bebidas hidratantes',4000]]},
+ {id:'reciclaje',titulo:'Campaña de reciclaje',intro:'El colegio organiza una campaña para recoger botellas, cartón y papel. Lo que se recoge se vende y el dinero va para la huerta.',lugar:'el punto de reciclaje',obj:['botella','botellas','f'],gente:['voluntario','voluntarios','m'],grupo:['bolsa','bolsas','f'],espacio:'el centro de acopio',precios:[['kilo de cartón','kilos de cartón',500],['kilo de papel','kilos de papel',600],['kilo de botellas plásticas','kilos de botellas plásticas',900],['kilo de aluminio','kilos de aluminio',4000]]},
+ {id:'cristorey',titulo:'Mirador de Cristo Rey',intro:'Desde el mirador de Cristo Rey se ven los ríos y los barrios de Cali. {N} sube con su familia en una chiva.',lugar:'el mirador de Cristo Rey',obj:['postal','postales','f'],gente:['turista','turistas','m'],grupo:['chiva','chivas','f'],espacio:'la plazoleta del mirador',precios:[['viaje en chiva','viajes en chiva',25000],['postal','postales',5000],['vaso de cholado','vasos de cholado',9000],['mango','mangos',3000]]},
+ {id:'bulevar',titulo:'Tarde en el Bulevar del Río',intro:'Al atardecer, el Bulevar del Río se llena de familias. {N} y {M} caminan junto al río Cali.',lugar:'el Bulevar del Río',obj:['helado','helados','m'],gente:['visitante','visitantes','m'],grupo:['banca','bancas','f'],espacio:'la plazoleta del bulevar',precios:[['helado','helados',5000],['raspado','raspados',4000],['paquete de crispetas','paquetes de crispetas',4000],['globo','globos',5000]]},
+ {id:'mariposario',titulo:'Mariposario Andoke',intro:'En el mariposario Andoke vuelan cientos de mariposas. {N} lleva una libreta para anotar todo lo que observa.',lugar:'el mariposario',obj:['lámina','láminas','f'],gente:['visitante','visitantes','m'],grupo:['jardín','jardines','m'],espacio:'el jardín de mariposas',precios:[['entrada','entradas',18000],['lámina de mariposas','láminas de mariposas',5000],['libreta','libretas',8000],['botella de agua','botellas de agua',3000]]},
+ {id:'biblioteca',titulo:'Club de lectura',intro:'Los viernes, el club de lectura se reúne en la biblioteca. {N} organiza los libros y {M} anota los préstamos.',lugar:'la biblioteca',obj:['libro','libros','m'],gente:['lector','lectores','m'],grupo:['estante','estantes','m'],espacio:'la sala de lectura',precios:[['cuaderno','cuadernos',4500],['lápiz','lápices',1000],['libro','libros',35000],['caja de colores','cajas de colores',9000],['borrador','borradores',800]]},
+ {id:'sanantonio',titulo:'Cholado en San Antonio',intro:'Después de caminar por el barrio San Antonio, {N} y {M} se toman un cholado bien frío.',lugar:'el barrio San Antonio',obj:['cholado','cholados','m'],gente:['turista','turistas','m'],grupo:['bandeja','bandejas','f'],espacio:'el parque de San Antonio',precios:[['cholado','cholados',9000],['vaso de lulada','vasos de lulada',8000],['vaso de champús','vasos de champús',5000],['salpicón','salpicones',6000],['empanada','empanadas',2500]]},
+ {id:'cometas',titulo:'Cometas en agosto',intro:'En agosto soplan los vientos y el cielo de Cali se llena de cometas. {N} y {M} construyen las suyas.',lugar:'el parque del barrio',obj:['cometa','cometas','f'],gente:['niño','niños','m'],grupo:['paquete','paquetes','m'],espacio:'el parque',precios:[['cometa','cometas',12000],['rollo de pita','rollos de pita',5000],['pliego de papel seda','pliegos de papel seda',1000],['paquete de palitos','paquetes de palitos',2000]]},
+ {id:'farallones',titulo:'Aves de los Farallones',intro:'Colombia es el país con más especies de aves del mundo. En los Farallones de Cali, {N} participa en un conteo de aves.',lugar:'los Farallones',obj:['foto de ave','fotos de aves','f'],gente:['observador','observadores','m'],grupo:['bandada','bandadas','f'],espacio:'el sendero',precios:[['guía de aves','guías de aves',45000],['refrigerio','refrigerios',8000],['transporte','transportes',15000],['botella de agua','botellas de agua',3000]]},
+ {id:'tiendaescolar',titulo:'La tienda escolar',intro:'En el descanso, la tienda escolar del CENTEC se llena. Hoy {N} y {M} ayudan a organizar los refrigerios.',lugar:'la tienda escolar',obj:['refrigerio','refrigerios','m'],gente:['estudiante','estudiantes','m'],grupo:['caja','cajas','f'],espacio:'el patio del colegio',precios:[['jugo en caja','jugos en caja',2000],['paquete de galletas','paquetes de galletas',1500],['vaso de fruta picada','vasos de fruta picada',3000],['sándwich','sándwiches',5000],['vaso de avena','vasos de avena',2500]]},
+ {id:'cumple',titulo:'Cumpleaños en la cuadra',intro:'Es el cumpleaños de {M} y toda la cuadra está invitada. {N} ayuda a organizar la fiesta.',lugar:'la fiesta',obj:['globo','globos','m'],gente:['invitado','invitados','m'],grupo:['paquete','paquetes','m'],espacio:'el salón comunal',precios:[['paquete de globos','paquetes de globos',6000],['torta','tortas',45000],['gaseosa de 2 litros','gaseosas de 2 litros',6000],['bolsa de dulces','bolsas de dulces',12000],['piñata','piñatas',35000]]},
+ {id:'natacion',titulo:'Natación en las piscinas Panamericanas',intro:'En las piscinas de la Unidad Deportiva Panamericana entrenan los nadadores de Cali. {N} va a su clase de natación.',lugar:'las piscinas',obj:['gorro','gorros','m'],gente:['nadador','nadadores','m'],grupo:['carril','carriles','m'],espacio:'la piscina',precios:[['entrada a la piscina','entradas a la piscina',6000],['gorro','gorros',15000],['par de gafas','pares de gafas',25000],['toalla','toallas',30000]]},
+ {id:'campesino',titulo:'Mercado campesino',intro:'Cada mes llega al parque el mercado campesino con productos frescos del campo vallecaucano. {N} hace la lista de compras.',lugar:'el mercado campesino',obj:['mazorca','mazorcas','f'],gente:['campesino','campesinos','m'],grupo:['canasto','canastos','m'],espacio:'el parque del mercado',precios:[['mazorca','mazorcas',1500],['libra de fríjol','libras de fríjol',6500],['cubeta de huevos','cubetas de huevos',15000],['libra de queso campesino','libras de queso campesino',12000],['panela','panelas',3600]]}
+];
+const BARATOS=[['chicle','chicles',200],['colombina','colombinas',300],['bombón','bombones',400],['banano','bananos',500],['galleta','galletas',600],['mandarina','mandarinas',700],['bolsa de agua','bolsas de agua',1000]];
+const GRADOS=['Transición','1.°','2.°','3.°','4.°','5.°','6.°','7.°','8.°','9.°','10.°','11.°'];
+const BILLETES=[2000,5000,10000,20000,50000,100000];
+const DENOMS=[100000,50000,20000,10000,5000,2000,1000,500,200,100,50];
 
-  // =====================================================================
-  // LECTURA
-  // =====================================================================
-  let lecturasBanco = null;
-  async function cargarLecturas() {
-    $('l-leccion').innerHTML = ''; $('l-inicio').hidden = false;
-    if (!lecturasBanco) {
-      lecturasBanco = [];
-      for (const f of ['primaria', 'bachillerato']) { try { const r = await fetch(`data/lecturas/${f}.json`); if (r.ok) lecturasBanco.push(...(await r.json())); } catch {} }
-    }
-    const g = grado();
-    const lista = lecturasBanco.filter((l) => Number(l.grado) === g);
-    const cerca = lista.length ? lista : lecturasBanco.filter((l) => Math.abs(Number(l.grado) - g) <= 1);
-    $('l-lista').innerHTML = cerca.map((l) => `<button class="tarjeta" data-id="${esc(l.id)}"><span class="etq">${esc(l.tipologia)}</span><h3>${esc(l.titulo)}</h3><span class="meta">${esc(gradoTxt(l.grado))} · ${l.parrafos.join(' ').split(/\s+/).length} palabras</span></button>`).join('') || '<p class="cargando">Aún no hay lecturas guardadas para este grado: crea una con SABI.</p>';
-    $('l-lista').querySelectorAll('.tarjeta').forEach((b) => b.addEventListener('click', () => verLectura(lecturasBanco.find((l) => l.id === b.dataset.id))));
-  }
-  $('l-crear').addEventListener('click', () => {
-    const tema = $('l-tema').value.trim(), texto = $('l-texto').value.trim();
-    if (tema.length < 3 && texto.length < 60) { $('l-estado').textContent = 'Escribe un tema o pega un texto de al menos un párrafo.'; return; }
-    const pedido = texto ? `Lectura comprensiva para ${gradoTxt(grado())} con este texto: ${texto}` : `Lectura comprensiva para ${gradoTxt(grado())} sobre: ${tema}`;
-    location.href = 'tutor.html?' + new URLSearchParams({ rol: 'estudiante', materia: 'Lenguaje', cmd: '/lectura', tema: pedido.slice(0, 480) });
-  });
-  function oraciones(p) { return (p.match(/[^.!?¿¡]*[¡¿]?[^.!?]*[.!?]+["»”)]*\s*|[^.!?]+$/g) || [p]).filter((s) => s.trim()); }
-  const norm = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ ]/g, ' ').replace(/\s+/g, ' ').trim();
-  function verLectura(l) {
-    if (!l) return;
-    $('l-inicio').hidden = true;
-    let activa = 0;
-    const lit = l.literal || [];
-    const texto = l.parrafos.map((p, i) => `<div class="parrafo"><span class="pn">${i + 1}</span><p>${oraciones(p).map((o) => `<span class="oracion" data-p="${i}">${esc(o)}</span>`).join('')}</p></div>`).join('');
-    const r = rng(7);
-    const secuenciaBarajada = barajar((l.orden_causas?.secuencia || []).map((s, i) => ({ s, i })), r);
-    $('l-leccion').innerHTML = `<div class="acciones no-imprimir"><button class="volver" id="l-volver">Volver a las lecturas</button><button class="btn sec" onclick="window.print()">Imprimir</button>
-        <a class="btn" style="text-decoration:none" href="${esc(tutorURL('Lenguaje', `Leí "${l.titulo}". Ayúdame a comprenderlo mejor con preguntas, sin darme las respuestas. Texto: ${l.parrafos.join(' ').slice(0, 300)}`))}">Conversar con SABI</a></div>
-      <article class="hoja">${cabecera(l.titulo, 'Lenguaje · ' + (l.tipologia || 'lectura'))}
-      <div id="l-texto-v">${texto}</div>
-      <h3>1. Lo que dice el texto</h3><p class="aviso">Elige una pregunta y toca en el texto la oración o frase que la responde.</p>
-      ${lit.map((q, i) => `<div class="pregunta-l ${i === 0 ? 'activa' : ''}" data-q="${i}"><b>${i + 1}.</b> ${esc(q.pregunta)}<div class="fb" id="fb-${i}"></div><div class="resp">Está en el párrafo ${esc(q.parrafo)}: «${esc(q.evidencia)}»</div></div>`).join('')}
-      <h3>2. Leer entre líneas</h3>${(l.entre_lineas || []).map((q) => `<div class="pregunta-l">${esc(q.pregunta)}<p class="aviso">Pista: ${esc(q.pista)}</p><div class="espacio"></div><div class="resp">Respuesta posible: ${esc(q.respuesta_modelo)}</div></div>`).join('')}
-      <h3>3. Palabras en contexto</h3>${(l.palabras_contexto || []).map((w, i) => `<div class="pregunta-l">${esc(w.pregunta)}<div class="opciones" data-w="${i}">${(w.opciones || []).map((o, j) => `<button data-j="${j}">${String.fromCharCode(65 + j)}. ${esc(o)}</button>`).join('')}</div><div class="fb" id="fw-${i}"></div><div class="resp">${esc(w.explicacion)}</div></div>`).join('')}
-      <h3>4. ¿Dónde lo pone?</h3>${(l.donde_lo_pone || []).map((d, i) => `<div class="pregunta-l">${esc(d.pregunta)}<div class="opciones" data-d="${i}">${l.parrafos.map((_, j) => `<button data-j="${j + 1}">Párrafo ${j + 1}</button>`).join('')}</div><div class="fb" id="fd-${i}"></div><div class="resp">Párrafo ${esc(d.parrafo)}. ${esc(d.explicacion)}</div></div>`).join('')}
-      <h3>5. Orden y causas</h3><p>Ordena los hechos como ocurren en el texto.</p>
-      <ol class="orden-lista" id="l-orden">${secuenciaBarajada.map((x) => `<li data-i="${x.i}"><button aria-label="Subir">↑</button><button aria-label="Bajar">↓</button><span>${esc(x.s)}</span></li>`).join('')}</ol>
-      <div class="acciones no-imprimir"><button class="btn sec" id="l-revisar-orden">Revisar el orden</button><span class="fb" id="fo"></span></div>
-      ${(l.orden_causas?.causa_efecto || []).map((c) => `<div class="pregunta-l"><b>Causa:</b> ${esc(c.causa)}<br><b>¿Qué efecto produjo?</b><div class="espacio"></div><div class="resp">${esc(c.efecto)}</div></div>`).join('')}
-      <h3>6. Piensa y argumenta</h3>${(l.piensa_argumenta || []).map((q) => `<div class="pregunta-l">${esc(q.pregunta)}<div class="espacio"></div><div class="espacio"></div><div class="resp">Una buena respuesta: ${esc(q.criterios)}</div></div>`).join('')}
-      ${l.valor ? `<h3>7. Para conversar</h3><div class="caja verde">${esc(l.valor)}</div>` : ''}
-      <p class="aviso">Leer es comprender (lo que dice), relacionar (lo que significa y cómo se conecta) y pensar (lo que opino con razones).</p></article>`;
-    const preguntas = [...document.querySelectorAll('.pregunta-l[data-q]')];
-    preguntas.forEach((el) => el.addEventListener('click', () => { activa = Number(el.dataset.q); preguntas.forEach((p) => p.classList.toggle('activa', p === el)); }));
-    document.querySelectorAll('#l-texto-v .oracion').forEach((o) => o.addEventListener('click', () => {
-      const q = lit[activa]; if (!q) return;
-      const so = norm(o.textContent), ev = norm(q.evidencia);
-      const ok = so.includes(ev) || (ev.includes(so) && so.length > 12);
-      o.classList.remove('bien', 'mal'); o.classList.add(ok ? 'bien' : 'mal');
-      const fb = $('fb-' + activa);
-      fb.className = 'fb ' + (ok ? 'ok' : 'no');
-      fb.textContent = ok ? 'Muy bien: esa oración responde la pregunta. Lo encontraste en el texto.' : 'Esa oración no responde esta pregunta. Vuelve a leer la pregunta y busca las palabras clave en el texto.';
-      if (!ok) setTimeout(() => o.classList.remove('mal'), 1600);
-      if (ok && activa < lit.length - 1) { activa++; preguntas.forEach((p) => p.classList.toggle('activa', Number(p.dataset.q) === activa)); }
-    }));
-    document.querySelectorAll('.opciones[data-w]').forEach((box) => box.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
-      const w = l.palabras_contexto[box.dataset.w], ok = Number(b.dataset.j) === Number(w.correcta);
-      b.classList.add(ok ? 'bien' : 'mal'); const fb = $('fw-' + box.dataset.w);
-      fb.className = 'fb ' + (ok ? 'ok' : 'no'); fb.textContent = ok ? 'Correcto. ' + (w.explicacion || '') : 'Lee de nuevo la oración donde aparece la palabra: ¿qué palabra podría reemplazarla sin cambiar el sentido?';
-    })));
-    document.querySelectorAll('.opciones[data-d]').forEach((box) => box.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
-      const d = l.donde_lo_pone[box.dataset.d], ok = Number(b.dataset.j) === Number(d.parrafo);
-      b.classList.add(ok ? 'bien' : 'mal'); const fb = $('fd-' + box.dataset.d);
-      fb.className = 'fb ' + (ok ? 'ok' : 'no'); fb.textContent = ok ? 'Exacto, ahí lo pone.' : 'No es ese párrafo. Mira los números al lado del texto y busca la idea.';
-    })));
-    const lista = $('l-orden');
-    lista.addEventListener('click', (e) => {
-      const b = e.target.closest('button'); if (!b) return; const li = b.parentElement;
-      if (b.textContent === '↑' && li.previousElementSibling) lista.insertBefore(li, li.previousElementSibling);
-      if (b.textContent === '↓' && li.nextElementSibling) lista.insertBefore(li.nextElementSibling, li);
-    });
-    $('l-revisar-orden').addEventListener('click', () => {
-      const orden = [...lista.children].map((li) => Number(li.dataset.i)); const ok = orden.every((v, i) => v === i);
-      $('fo').className = 'fb ' + (ok ? 'ok' : 'no'); $('fo').textContent = ok ? 'Perfecto: así ocurre en el texto.' : 'Todavía no. Busca palabras que indican tiempo: primero, luego, después, al final.';
-    });
-    $('l-volver').addEventListener('click', () => cargarLecturas());
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+// Lista de precios ajustada al grado (precios 2026 redondeados a 50/100)
+function listaPrecios(c){
+  if(c.g<=1) return c.R.sample(BARATOS.filter(x=>x[2]<=(c.g===0?700:1000)),5).sort((a,b)=>a[2]-b[2]);
+  if(c.g===2){ let l=c.T.precios.filter(x=>x[2]<=5000); if(l.length<4) l=l.concat(c.R.sample(BARATOS.filter(x=>x[2]>=300),4-l.length)); return l.slice(0,6); }
+  return c.T.precios.slice();
+}
 
-  abrirPanel(panel);
+// =====================================================================
+// Dibujo (SVG) — legible en blanco y negro: forma + relleno, nunca solo color
+// =====================================================================
+const RELLENOS={lleno:['f-lleno','oscuro'],raya:['f-raya','rayado'],vacio:['f-vacio','blanco'],punto:['f-punto','punteado']};
+const FORMAS={circulo:'círculo',triangulo:'triángulo',cuadrado:'cuadrado',estrella:'estrella',rombo:'rombo'};
+function formaSVG(tipo,cx,cy,r,cls,extra){
+  extra=extra||'';
+  if(tipo==='circulo') return '<circle cx="'+r1(cx)+'" cy="'+r1(cy)+'" r="'+r1(r*0.9)+'" class="'+cls+'"'+extra+'/>';
+  if(tipo==='cuadrado') return '<rect x="'+r1(cx-r*0.82)+'" y="'+r1(cy-r*0.82)+'" width="'+r1(r*1.64)+'" height="'+r1(r*1.64)+'" class="'+cls+'"'+extra+'/>';
+  let pts=[];
+  if(tipo==='triangulo') pts=[[cx,cy-r],[cx+r*0.95,cy+r*0.8],[cx-r*0.95,cy+r*0.8]];
+  else if(tipo==='rombo') pts=[[cx,cy-r],[cx+r*0.8,cy],[cx,cy+r],[cx-r*0.8,cy]];
+  else { for(let i=0;i<10;i++){const a=-Math.PI/2+i*Math.PI/5, rr=i%2?r*0.45:r; pts.push([cx+rr*Math.cos(a),cy+rr*Math.sin(a)]);} }
+  return '<polygon points="'+pts.map(p=>r1(p[0])+','+r1(p[1])).join(' ')+'" class="'+cls+'"'+extra+'/>';
+}
+// k objetos en filas de 5 (marco de diez); los últimos "tach" aparecen tachados; "vacios" se dibujan punteados
+function grupoFiguras(k,forma,tach,vacios){
+  tach=tach||0; vacios=vacios||0; const tot=k+vacios, s=28;
+  const cols=Math.min(Math.max(tot,1),5), rows=Math.max(1,Math.ceil(tot/5));
+  let g='';
+  for(let i=0;i<tot;i++){
+    const x=4+(i%5)*s+s/2, y=4+Math.floor(i/5)*s+s/2;
+    g+=formaSVG(forma,x,y,11,i<k?'f-lleno obj':'f-hueco');
+    if(i<k&&i>=k-tach) g+='<path d="M'+(x-11)+' '+(y-11)+'L'+(x+11)+' '+(y+11)+'M'+(x+11)+' '+(y-11)+'L'+(x-11)+' '+(y+11)+'" class="tacha"/>';
+  }
+  return svgW(cols*s+8,rows*s+8,g,'grupo de figuras para contar');
+}
+// Operación en columna (suma, resta, multiplicación)
+function vertical(a,b,signo){
+  const A=String(a),B=String(b);
+  const w=signo==='×'?A.length+B.length+1:Math.max(A.length,B.length)+1;
+  const fila=(s,sg)=>{let c='';const pad=w-s.length-(sg?1:0); if(sg) c+='<td class="sg">'+sg+'</td>'; for(let i=0;i<pad;i++) c+='<td></td>'; for(const ch of s) c+='<td>'+ch+'</td>'; return c;};
+  let h='<table class="vert" aria-label="'+a+' '+signo+' '+b+' en columna"><tr class="lleva">'+'<td class="sin"></td>'+'<td></td>'.repeat(w-1)+'</tr>';
+  h+='<tr>'+fila(A,'')+'</tr><tr>'+fila(B,signo)+'</tr>';
+  const extra=(signo==='×'&&B.length>1)?B.length+1:1;
+  for(let i=0;i<extra;i++) h+='<tr class="'+(i===0||i===extra-1&&extra>1?'raya':'')+'">'+'<td></td>'.repeat(w)+'</tr>';
+  return h+'</table>';
+}
+// Ajusta puntos (coordenadas matemáticas, y hacia arriba) a una caja SVG
+function ajustar(pts,maxW,maxH,m){
+  const xs=pts.map(p=>p[0]), ys=pts.map(p=>p[1]);
+  const x0=Math.min(...xs), x1=Math.max(...xs), y0=Math.min(...ys), y1=Math.max(...ys);
+  const s=Math.min((maxW-2*m)/Math.max(x1-x0,1e-9),(maxH-2*m)/Math.max(y1-y0,1e-9));
+  const map=p=>[m+(p[0]-x0)*s, m+(y1-p[1])*s];
+  return {map, s, W:(x1-x0)*s+2*m, H:(y1-y0)*s+2*m};
+}
+function poligono(P,cls){return '<polygon points="'+P.map(p=>r1(p[0])+','+r1(p[1])).join(' ')+'" class="'+(cls||'g-fig')+'"/>';}
+function etiquetaLado(p,q,centro,s,off){
+  off=off||15; const mx=(p[0]+q[0])/2, my=(p[1]+q[1])/2; let nx=-(q[1]-p[1]), ny=q[0]-p[0]; const L=Math.hypot(nx,ny)||1; nx/=L; ny/=L;
+  if((mx-centro[0])*nx+(my-centro[1])*ny<0){nx=-nx;ny=-ny;}
+  return txt(mx+nx*off,my+ny*off,s);
+}
+function centroide(P){return [P.reduce((a,p)=>a+p[0],0)/P.length,P.reduce((a,p)=>a+p[1],0)/P.length];}
+// Triángulo rectángulo: base a (horizontal), altura b; etiquetas {base, alt, hip}; theta=true marca el ángulo θ en el vértice izquierdo
+function triRect(a,b,et,theta){
+  const A=ajustar([[0,0],[a,0],[a,b]],300,190,38); const L=A.map([0,0]), Rv=A.map([a,0]), T=A.map([a,b]);
+  const P=[L,Rv,T], c=centroide(P); let g=poligono(P);
+  g+='<path d="M'+r1(Rv[0]-11)+' '+r1(Rv[1])+'V'+r1(Rv[1]-11)+'H'+r1(Rv[0])+'" class="g-fina"/>';
+  g+=etiquetaLado(L,Rv,c,et.base,16)+etiquetaLado(Rv,T,c,et.alt,22)+etiquetaLado(L,T,c,et.hip,18);
+  if(theta){ const ang=Math.atan2(b,a), rr=30; g+='<path d="M'+r1(L[0]+rr)+' '+r1(L[1])+' A'+rr+' '+rr+' 0 0 0 '+r1(L[0]+rr*Math.cos(ang))+' '+r1(L[1]-rr*Math.sin(ang))+'" class="g-linea"/>'+txt(L[0]+44*Math.cos(ang/2),L[1]-44*Math.sin(ang/2),'θ'); }
+  return svgW(A.W,A.H,g,'triángulo rectángulo');
+}
+
+// =====================================================================
+// 1. CÁLCULO A MEDIDA
+// =====================================================================
+const OPS=[['auto','Según el grado'],['conteo','Conteo (Transición)'],['suma','Suma'],['resta','Resta'],['multiplicacion','Multiplicación'],['division','División'],['mixtas','Operaciones mixtas'],['fracciones','Fracciones'],['decimales','Decimales'],['enteros','Números enteros'],['potencias','Potencias y raíces'],['ecuaciones','Ecuaciones de primer grado'],['sistemas','Sistemas de ecuaciones 2×2'],['cuadraticas','Ecuaciones cuadráticas'],['porcentajes','Porcentajes'],['interes','Interés simple y compuesto'],['logaritmos','Logaritmos'],['trigonometria','Razones trigonométricas']];
+const OPS_GRADO={0:['conteo','suma','resta'],1:['suma','resta'],2:['suma','resta'],3:['multiplicacion','division','suma','resta'],4:['multiplicacion','division','mixtas'],5:['fracciones','decimales','multiplicacion','division'],6:['fracciones','decimales','porcentajes','mixtas'],7:['enteros','potencias','ecuaciones'],8:['enteros','potencias','ecuaciones'],9:['sistemas','cuadraticas','ecuaciones'],10:['porcentajes','interes','logaritmos','trigonometria'],11:['interes','logaritmos','trigonometria','porcentajes']};
+const RSUMA=[[[0,5],[0,9],[1,9]],[[1,20],[10,60],[10,99]],[[10,99],[100,499],[100,999]],[[100,999],[100,4999],[1000,9999]],[[1000,9999],[1000,49999],[10000,99999]],[[1000,99999],[10000,499999],[10000,999999]]];
+function hayLlevada(a,b){while(a>0||b>0){if(a%10+b%10>9)return true;a=Math.floor(a/10);b=Math.floor(b/10);}return false;}
+function hayPrestamo(a,b){while(b>0){if(a%10<b%10)return true;a=Math.floor(a/10);b=Math.floor(b/10);}return false;}
+function rango(c,base){const p=c.p; if(p.rmin!=null&&p.rmax!=null&&p.rmax>p.rmin) return [p.rmin,p.rmax,true]; return [base[0],base[1],false];}
+const ex=(expr,vars,r,mostrar,extra)=>Object.assign({f:'expr',expr,vars,r,mostrar},extra||{});
+const CALC={};
+
+CALC.conteo=c=>{const {R,d}=c; const k=R.int(d===0?1:d===1?3:6,d===0?6:d===1?10:15); const forma=R.pick(['circulo','estrella','triangulo','cuadrado']);
+  return {html:'<p class="enun">¿Cuántos hay? Cuenta y escribe el número.</p><div class="fila-dib">'+grupoFiguras(k,forma)+'</div><p class="eq">Hay '+rl(2)+'</p>',
+    clave:'Hay <b>'+k+'</b> '+FORMAS[forma]+(k===1?'':'s')+'.', chk:{f:'conteo',k,mostrar:fmt(k)}, uid:'c'+k+forma};};
+
+CALC.suma=c=>{const {R,g,d,p}=c; const rg=rango(c,RSUMA[Math.min(g,5)][d]);
+  if(g===0&&!rg[2]){const tot=R.int(d===0?2:3,d===0?6:10), a=R.int(1,tot-1), b=tot-a;
+    return {html:'<div class="fila-dib">'+grupoFiguras(a,'circulo')+'<span class="signo">+</span>'+grupoFiguras(b,'circulo')+'</div><p class="eq">'+a+' + '+b+' = '+rl(2)+'</p>',clave:a+' + '+b+' = <b>'+tot+'</b>',chk:ex('a+b',{a,b},tot,fmt(tot)),uid:'s'+a+'+'+b};}
+  const lim=rg[2]?Infinity:(g<=2?[10,99,999][g]:Infinity);
+  let want=p.llevada; if(want==='auto') want=(g<=1&&d===0)?'no':'';
+  let a,b,t=0; do{a=R.int(rg[0],rg[1]);b=R.int(rg[0],rg[1]);t++;}while(t<600&&(a+b>lim||(want==='si'&&!hayLlevada(a,b))||(want==='no'&&hayLlevada(a,b))));
+  if(a+b>lim){a=Math.min(a,lim);b=R.int(0,lim-a);}
+  const r=a+b, vert=g>=1&&g<=4&&r<1e6;
+  return {html:vert?vertical(a,b,'+'):'<p class="eq">'+fmt(a)+' + '+fmt(b)+' = '+rl(5)+'</p>',clave:fmt(a)+' + '+fmt(b)+' = <b>'+fmt(r)+'</b>'+(hayLlevada(a,b)?' <span class="nota">(con llevada)</span>':''),chk:ex('a+b',{a,b},r,fmt(r)),uid:'s'+a+'+'+b};};
+
+CALC.resta=c=>{const {R,g,d,p}=c; const rg=rango(c,RSUMA[Math.min(g,5)][d]);
+  if(g===0&&!rg[2]){const a=R.int(3,d===0?6:10), b=R.int(1,a-1);
+    return {html:'<p class="enun">Había '+a+'. Se fueron los tachados.</p><div class="fila-dib">'+grupoFiguras(a,'circulo',b)+'</div><p class="eq">'+a+' − '+b+' = '+rl(2)+'</p>',clave:a+' − '+b+' = <b>'+(a-b)+'</b>',chk:ex('a-b',{a,b},a-b,fmt(a-b)),uid:'r'+a+'-'+b};}
+  let want=p.llevada; if(want==='auto') want=(g<=1&&d===0)?'no':'';
+  let a,b,t=0; do{a=R.int(rg[0],rg[1]);b=R.int(rg[0],rg[1]);if(b>a){const x=a;a=b;b=x;}t++;}while(t<600&&(a===b||(want==='si'&&!hayPrestamo(a,b))||(want==='no'&&hayPrestamo(a,b))));
+  const r=a-b, vert=g>=1&&g<=4&&a<1e6;
+  return {html:vert?vertical(a,b,'−'):'<p class="eq">'+fmt(a)+' − '+fmt(b)+' = '+rl(5)+'</p>',clave:fmt(a)+' − '+fmt(b)+' = <b>'+fmt(r)+'</b>'+(hayPrestamo(a,b)?' <span class="nota">(con préstamo)</span>':''),chk:ex('a-b',{a,b},r,fmt(r)),uid:'r'+a+'-'+b};};
+
+CALC.multiplicacion=c=>{const {R,g,d}=c; let a,b; const rg=rango(c,[0,0]);
+  if(rg[2]){a=R.int(rg[0],rg[1]); b=rg[1]<=12?R.int(rg[0],rg[1]):R.int(2,d===2?99:9);}
+  else if(g<=3){const tablas=d===0?[2,3,4,5,10]:d===1?[2,3,4,5,6,7,8,9]:[6,7,8,9]; a=R.pick(tablas); b=R.int(d===2?3:1,10); if(R.bool()){const x=a;a=b;b=x;}}
+  else if(g===4){a=d===0?R.int(11,49):d===1?R.int(12,99):R.int(102,999); b=d===2?R.int(11,49):R.int(2,9);}
+  else {a=d===0?R.int(12,99):d===1?R.int(102,999):R.int(1002,9999); b=d===0?R.int(3,9):R.int(11,99);}
+  const r=a*b, vert=g>=4&&g<=7&&(a>=10||b>=10)&&a<1e5&&b<100;
+  let cl=fmt(a)+' × '+fmt(b)+' = <b>'+fmt(r)+'</b>';
+  if(b>=10&&b<100&&b%10!==0) cl+=' <span class="nota">('+fmt(a)+' × '+(b%10)+' = '+fmt(a*(b%10))+'; '+fmt(a)+' × '+(b-b%10)+' = '+fmt(a*(b-b%10))+')</span>';
+  return {html:vert?vertical(a,b,'×'):'<p class="eq">'+fmt(a)+' × '+fmt(b)+' = '+rl(4)+'</p>',clave:cl,chk:ex('a*b',{a,b},r,fmt(r)),uid:'m'+a+'x'+b};};
+
+CALC.division=c=>{const {R,g,d}=c; let D,v,q,r; const rg=rango(c,[0,0]); const conRes=g>=4;
+  if(rg[2]){v=R.int(2,d===2?25:9); D=Math.max(v,R.int(Math.max(rg[0],1),rg[1])); if(g<=3) D-=D%v; q=Math.floor(D/v); r=D%v;}
+  else if(g<=3){const tablas=d===0?[2,3,4,5,10]:[2,3,4,5,6,7,8,9]; v=R.pick(tablas); q=R.int(d===2?4:1,10); r=0; D=v*q;}
+  else { if(g===4){v=R.int(2,9); q=d===0?R.int(11,30):d===1?R.int(12,120):R.int(102,999);} else {v=d===0?R.int(2,9):d===1?R.pick([R.int(2,9),R.int(11,25)]):R.int(12,48); q=d===0?R.int(12,250):R.int(101,999);}
+    r=(d>0&&R.bool(d===1?0.5:0.7))?R.int(1,v-1):0; D=v*q+r; }
+  const html=conRes?'<p class="eq">'+fmt(D)+' ÷ '+fmt(v)+'</p><p class="eq">Cociente: '+rl(3)+' Residuo: '+rl(2)+'</p>':'<p class="eq">'+fmt(D)+' ÷ '+fmt(v)+' = '+rl(3)+'</p>';
+  const clave=conRes?fmt(D)+' ÷ '+fmt(v)+': cociente <b>'+fmt(q)+'</b>, residuo <b>'+fmt(r)+'</b> <span class="nota">(comprobación: '+fmt(v)+' × '+fmt(q)+' + '+fmt(r)+' = '+fmt(D)+')</span>':fmt(D)+' ÷ '+fmt(v)+' = <b>'+fmt(q)+'</b> <span class="nota">(porque '+fmt(v)+' × '+fmt(q)+' = '+fmt(D)+')</span>';
+  const chk=[ex('Math.floor(D/v)',{D,v},q,fmt(q))]; if(conRes) chk.push(ex('D%v',{D,v},r,fmt(r)));
+  return {html,clave,chk,uid:'d'+D+'/'+v};};
+
+function exprTxt(f,v){let s='';for(const ch of f){ if(v[ch]!=null) s+=fmt(v[ch]); else if(ch==='*') s+=' × '; else if(ch==='/') s+=' ÷ '; else if(ch==='-') s+=' − '; else if(ch==='+') s+=' + '; else s+=ch;} return s;}
+CALC.mixtas=c=>{const {R,g,d}=c;
+  if(g<=3){const op=R.pick(g<=1?['suma','resta']:['suma','resta','multiplicacion','division']); return CALC[op](c);}
+  const big=d===2?25:d===1?12:9;
+  const forms=g>=6?['a+b*c','a*b-c','(a+b)*c','a-b/c','a*(b-c)+d','a+b*c-d']:['a+b*c','a*b-c','(a+b)*c','a-b/c'];
+  const f=R.pick(forms); let v, pasos, r;
+  if(f==='a+b*c'){v={a:R.int(2,big*3),b:R.int(2,big),c:R.int(2,9)}; const p=v.b*v.c; r=v.a+p; pasos=[fmt(v.b)+' × '+fmt(v.c)+' = '+fmt(p),fmt(v.a)+' + '+fmt(p)+' = '+fmt(r)];}
+  else if(f==='a*b-c'){v={a:R.int(2,big),b:R.int(2,9)}; v.c=R.int(1,v.a*v.b-1); const p=v.a*v.b; r=p-v.c; pasos=[fmt(v.a)+' × '+fmt(v.b)+' = '+fmt(p),fmt(p)+' − '+fmt(v.c)+' = '+fmt(r)];}
+  else if(f==='(a+b)*c'){v={a:R.int(2,big*2),b:R.int(2,big*2),c:R.int(2,9)}; const s=v.a+v.b; r=s*v.c; pasos=['Primero el paréntesis: '+fmt(v.a)+' + '+fmt(v.b)+' = '+fmt(s),fmt(s)+' × '+fmt(v.c)+' = '+fmt(r)];}
+  else if(f==='a-b/c'){const cc=R.int(2,9),k=R.int(2,big); v={a:R.int(k+1,k+big*3),b:cc*k,c:cc}; r=v.a-k; pasos=[fmt(v.b)+' ÷ '+fmt(cc)+' = '+fmt(k),fmt(v.a)+' − '+fmt(k)+' = '+fmt(r)];}
+  else if(f==='a*(b-c)+d'){const b=R.int(5,big+10),cc=R.int(1,b-1); v={a:R.int(2,9),b,c:cc,d:R.int(1,big*3)}; const s=b-cc,p=v.a*s; r=p+v.d; pasos=['Primero el paréntesis: '+fmt(b)+' − '+fmt(cc)+' = '+fmt(s),fmt(v.a)+' × '+fmt(s)+' = '+fmt(p),fmt(p)+' + '+fmt(v.d)+' = '+fmt(r)];}
+  else {v={a:R.int(2,big*3),b:R.int(2,big),c:R.int(2,9)}; const p=v.b*v.c, s=v.a+p; v.d=R.int(1,s-1); r=s-v.d; pasos=[fmt(v.b)+' × '+fmt(v.c)+' = '+fmt(p),fmt(v.a)+' + '+fmt(p)+' = '+fmt(s),fmt(s)+' − '+fmt(v.d)+' = '+fmt(r)];}
+  return {html:'<p class="eq">'+exprTxt(f,v)+' = '+rl(4)+'</p>',clave:exprTxt(f,v)+' → '+pasos.join(' → ')+' · Resultado: <b>'+fmt(r)+'</b>',chk:ex(f,v,r,fmt(r)),uid:'x'+f+JSON.stringify(v)};};
+
+CALC.fracciones=c=>{const {R,g,d}=c; const kinds=g<=4?['misma','de','simplificar']:g===5?['misma','distinta','de','simplificar']:['distinta','mult','div','de','distinta'];
+  const k=R.pick(kinds), maxD=d===0?6:d===1?10:12;
+  if(k==='misma'){const den=R.int(3,maxD); let a=R.int(1,den-1),b=R.int(1,den-1); let op=(g>=5&&R.bool())?'−':'+'; if(op==='−'&&a<b){const x=a;a=b;b=x;} if(a===b) op='+';
+    const n=op==='+'?a+b:a-b, s=simp(n,den);
+    return {html:'<p class="eq">'+frH(a,den)+' '+op+' '+frH(b,den)+' = '+rl(3)+'</p>',clave:frT(a,den)+' '+op+' '+frT(b,den)+' = '+frT(n,den)+(s[1]!==den?' = ':' → ')+frClave(n,den),chk:{f:'frac',op:op==='+'?'+':'-',a:[a,den],b:[b,den],r:s,mostrar:frT(s[0],s[1])},uid:'fm'+a+op+b+'/'+den};}
+  if(k==='distinta'||k==='mult'||k==='div'){let b1,b2,a1,a2; do{b1=R.int(2,maxD);b2=R.int(2,maxD);}while(b1===b2); a1=R.int(1,b1-1); a2=R.int(1,b2-1);
+    let op=k==='mult'?'×':k==='div'?'÷':(g>=5&&R.bool()?'−':'+');
+    if(op==='−'&&a1*b2<a2*b1){[a1,b1,a2,b2]=[a2,b2,a1,b1];} if(op==='−'&&a1*b2===a2*b1) op='+';
+    let n,dd,clave;
+    if(op==='+'||op==='−'){const L=lcm(b1,b2), x1=a1*L/b1, x2=a2*L/b2; n=op==='+'?x1+x2:x1-x2; dd=L;
+      clave='m.c.m.('+b1+', '+b2+') = '+L+' → '+frT(a1,b1)+' = '+frT(x1,L)+' y '+frT(a2,b2)+' = '+frT(x2,L)+' → '+frT(x1,L)+' '+op+' '+frT(x2,L)+' = '+frT(n,L)+' → '+frClave(n,L);}
+    else if(op==='×'){n=a1*a2; dd=b1*b2; clave='Numerador por numerador y denominador por denominador: '+frT(n,dd)+' → '+frClave(n,dd);}
+    else {n=a1*b2; dd=b1*a2; clave='Multiplico por el inverso: '+frT(a1,b1)+' × '+frT(b2,a2)+' = '+frT(n,dd)+' → '+frClave(n,dd);}
+    const s=simp(n,dd);
+    return {html:'<p class="eq">'+frH(a1,b1)+' '+op+' '+frH(a2,b2)+' = '+rl(3)+'</p>',clave,chk:{f:'frac',op:{'+':'+','−':'-','×':'*','÷':'/'}[op],a:[a1,b1],b:[a2,b2],r:s,mostrar:frT(s[0],s[1])},uid:'fd'+a1+'/'+b1+op+a2+'/'+b2};}
+  if(k==='de'){const b=R.int(2,maxD), a=R.int(1,b-1), kk=R.int(2,d===2?15:9), N=b*kk, r=a*kk;
+    return {html:'<p class="eq">'+frH(a,b)+' de '+fmt(N)+' = '+rl(3)+'</p>',clave:fmt(N)+' ÷ '+b+' = '+kk+'; '+kk+' × '+a+' = <b>'+fmt(r)+'</b>',chk:{f:'frac',op:'de',a:[a,b],N,r:[r,1],mostrar:fmt(r)},uid:'fo'+a+'/'+b+'de'+N};}
+  let a,b; do{b=R.int(2,maxD);a=R.int(1,b-1);}while(gcd(a,b)!==1); const m=R.int(2,d===2?9:5);
+  return {html:'<p class="eq">Simplifica: '+frH(a*m,b*m)+' = '+rl(3)+'</p>',clave:'Divido arriba y abajo entre '+m+': '+frT(a*m,b*m)+' = <b>'+frT(a,b)+'</b>',chk:{f:'frac',op:'simp',a:[a*m,b*m],r:[a,b],mostrar:frT(a,b)},uid:'fs'+a*m+'/'+b*m};};
+
+function decAleat(R,maxInt,e){let v=R.int(Math.pow(10,e),maxInt*Math.pow(10,e)); if(v%10===0) v+=R.int(1,9); return v;}
+CALC.decimales=c=>{const {R,g,d}=c; const kinds=g<=5?['suma','resta','multEnt','pot10']:['suma','resta','multEnt','multDec','divEnt','pot10'];
+  const k=R.pick(kinds), maxI=d===0?20:d===1?100:1000; const P=Math.pow;
+  if(k==='suma'||k==='resta'){let e1=R.int(1,d===2?3:2), e2=R.int(1,2); if(e1===e2&&R.bool(0.7)) e2=e1===1?2:1; let v1=decAleat(R,maxI,e1), v2=decAleat(R,maxI,e2);
+    const E=Math.max(e1,e2); let s1=v1*P(10,E-e1), s2=v2*P(10,E-e2);
+    if(k==='resta'&&s1<s2){[v1,v2,e1,e2,s1,s2]=[v2,v1,e2,e1,s2,s1];}
+    const op=k==='suma'?'+':'−', s=k==='suma'?s1+s2:s1-s2;
+    return {html:'<p class="eq">'+decS(v1,e1)+' '+op+' '+decS(v2,e2)+' = '+rl(4)+'</p>',clave:decS(v1,e1)+' '+op+' '+decS(v2,e2)+' = <b>'+decS(s,E)+'</b> <span class="nota">(coma debajo de coma)</span>',chk:ex(k==='suma'?'a+b':'a-b',{a:v1/P(10,e1),b:v2/P(10,e2)},s/P(10,E),decS(s,E),{tol:1e-9}),uid:'ds'+v1+op+v2};}
+  if(k==='multEnt'){const e=R.int(1,2), v=decAleat(R,d===2?100:20,e), m=d===2?R.int(11,25):R.int(2,9);
+    return {html:'<p class="eq">'+decS(v,e)+' × '+m+' = '+rl(4)+'</p>',clave:decS(v,e)+' × '+m+' = <b>'+decS(v*m,e)+'</b> <span class="nota">('+v+' × '+m+' = '+fmt(v*m)+', con '+e+' decimal'+(e>1?'es':'')+')</span>',chk:ex('a*b',{a:v/P(10,e),b:m},v*m/P(10,e),decS(v*m,e),{tol:1e-9}),uid:'dm'+v+'x'+m};}
+  if(k==='multDec'){const v1=decAleat(R,d===2?50:12,1), v2=decAleat(R,9,1);
+    return {html:'<p class="eq">'+decS(v1,1)+' × '+decS(v2,1)+' = '+rl(4)+'</p>',clave:decS(v1,1)+' × '+decS(v2,1)+' = <b>'+decS(v1*v2,2)+'</b> <span class="nota">('+v1+' × '+v2+' = '+fmt(v1*v2)+', con 2 decimales)</span>',chk:ex('a*b',{a:v1/10,b:v2/10},v1*v2/100,decS(v1*v2,2),{tol:1e-9}),uid:'dd'+v1+'x'+v2};}
+  if(k==='divEnt'){const e=R.int(1,2), q=decAleat(R,d===2?60:15,e), m=R.int(2,9), D=q*m;
+    return {html:'<p class="eq">'+decS(D,e)+' ÷ '+m+' = '+rl(4)+'</p>',clave:decS(D,e)+' ÷ '+m+' = <b>'+decS(q,e)+'</b> <span class="nota">(comprobación: '+decS(q,e)+' × '+m+' = '+decS(D,e)+')</span>',chk:ex('a/b',{a:D/P(10,e),b:m},q/P(10,e),decS(q,e),{tol:1e-9}),uid:'dv'+D+'/'+m};}
+  const e=R.int(1,3), v=decAleat(R,d===2?999:99,e), kk=R.int(1,3), por=R.bool(), f=P(10,kk);
+  const res=por?(e>=kk?decS(v,e-kk):decS(v*P(10,kk-e),0)):decS(v,e+kk); const val=por?v/P(10,e)*f:v/P(10,e)/f;
+  return {html:'<p class="eq">'+decS(v,e)+' '+(por?'×':'÷')+' '+fmt(f)+' = '+rl(4)+'</p>',clave:decS(v,e)+' '+(por?'×':'÷')+' '+fmt(f)+' = <b>'+res+'</b> <span class="nota">(la coma se corre '+kk+' lugar'+(kk>1?'es':'')+' a la '+(por?'derecha':'izquierda')+')</span>',chk:ex(por?'a*b':'a/b',{a:v/P(10,e),b:f},val,res,{tol:1e-9}),uid:'dp'+v+por+kk};};
+
+CALC.enteros=c=>{const {R,d}=c; const M=d===0?10:d===1?20:50;
+  if(d===2&&R.bool(0.4)){const a=R.nz(-12,12),b=R.nz(-12,12),cc=R.nz(-30,30); const f=R.pick(['a*b+c','a-b*c']); let r,pasos;
+    if(f==='a*b+c'){const p=a*b; r=p+cc; pasos=[par(a)+' × '+par(b)+' = '+fmt(p),fmt(p)+' + '+par(cc)+' = '+fmt(r)];}
+    else {const p=b*cc; r=a-p; pasos=[par(b)+' × '+par(cc)+' = '+fmt(p),fmt(a)+' − '+par(p)+' = '+fmt(r)];}
+    const disp=f==='a*b+c'?fmt(a)+' × '+par(b)+' + '+par(cc):fmt(a)+' − '+par(b)+' × '+par(cc);
+    return {html:'<p class="eq">'+disp+' = '+rl(3)+'</p>',clave:pasos.join(' → ')+' · <b>'+fmt(r)+'</b>',chk:ex(f,{a,b,c:cc},r,fmt(r)),uid:'e'+f+a+b+cc};}
+  const op=R.pick(['+','−','×','÷']); let a,b,r,regla;
+  if(op==='÷'){b=R.nz(-12,12); if(Math.abs(b)===1) b=b*R.int(2,9); const q=R.nz(-Math.min(M,15),Math.min(M,15)); a=b*q; r=q; regla='signos iguales dan +, diferentes dan −';}
+  else if(op==='×'){const L=d===2?20:12; a=R.nz(-L,L); b=R.nz(-L,L); r=a*b; regla='signos iguales dan +, diferentes dan −';}
+  else {a=R.nz(-M,M); b=R.nz(-M,M); r=op==='+'?a+b:a-b; regla=op==='−'?'restar es sumar el opuesto: '+fmt(a)+' + '+par(-b):(Math.sign(a)===Math.sign(b)?'signos iguales: se suman y se deja el signo':'signos diferentes: se restan y se deja el signo del mayor');}
+  if(a>0&&b>0){a=-a; r=op==='+'?a+b:op==='−'?a-b:op==='×'?a*b:a/b;}
+  if(op==='+') regla=Math.sign(a)===Math.sign(b)?'signos iguales: se suman y se deja el signo':'signos diferentes: se restan y se deja el signo del mayor';
+  if(op==='−') regla='restar es sumar el opuesto: '+fmt(a)+' + '+par(-b);
+  return {html:'<p class="eq">'+fmt(a)+' '+op+' '+par(b)+' = '+rl(3)+'</p>',clave:fmt(a)+' '+op+' '+par(b)+' = <b>'+fmt(r)+'</b> <span class="nota">('+regla+')</span>',chk:ex({'+':'a+b','−':'a-b','×':'a*b','÷':'a/b'}[op],{a,b},r,fmt(r)),uid:'e'+a+op+b};};
+
+CALC.potencias=c=>{const {R,g,d}=c; const kinds=['valor','producto','cociente','potpot','raiz'].concat(g>=7?['cero','negativa']:[]); const k=R.pick(kinds); const P=Math.pow; const lim=d===0?1000:d===1?10000:1e6;
+  if(k==='valor'){let a,n; do{a=R.int(2,d===2?12:9); n=R.int(2,d===0?3:5);}while(P(a,n)>lim); const r=P(a,n);
+    return {html:'<p class="eq">'+a+'<sup>'+n+'</sup> = '+rl(4)+'</p>',clave:a+'<sup>'+n+'</sup> = '+Array(n).fill(a).join(' × ')+' = <b>'+fmt(r)+'</b>',chk:ex('Math.pow(a,n)',{a,n},r,fmt(r)),uid:'pv'+a+'^'+n};}
+  if(k==='producto'||k==='cociente'){let a,m,n; do{a=R.int(2,d===0?3:6); m=R.int(2,6); n=R.int(1,5);}while((k==='producto'?P(a,m+n):P(a,m))>Math.max(lim,4096)||(k==='cociente'&&m<=n));
+    const e=k==='producto'?m+n:m-n, r=P(a,e), op=k==='producto'?'×':'÷';
+    return {html:'<p class="enun">Escribe como una sola potencia y calcula su valor:</p><p class="eq">'+a+'<sup>'+m+'</sup> '+op+' '+a+'<sup>'+n+'</sup> = '+rl(3)+' = '+rl(3)+'</p>',clave:a+'<sup>'+m+'</sup> '+op+' '+a+'<sup>'+n+'</sup> = '+a+'<sup>'+m+' '+(k==='producto'?'+':'−')+' '+n+'</sup> = '+a+'<sup>'+e+'</sup> = <b>'+fmt(r)+'</b>',chk:ex(k==='producto'?'Math.pow(a,m)*Math.pow(a,n)':'Math.pow(a,m)/Math.pow(a,n)',{a,m,n},r,fmt(r)),uid:'pp'+k+a+m+n};}
+  if(k==='potpot'){const a=R.int(2,3); let m,n; do{m=R.int(2,4);n=R.int(2,3);}while(m*n>(a===2?12:8)); const r=P(a,m*n);
+    return {html:'<p class="eq">('+a+'<sup>'+m+'</sup>)<sup>'+n+'</sup> = '+rl(3)+' = '+rl(3)+'</p>',clave:'('+a+'<sup>'+m+'</sup>)<sup>'+n+'</sup> = '+a+'<sup>'+m+' × '+n+'</sup> = '+a+'<sup>'+(m*n)+'</sup> = <b>'+fmt(r)+'</b>',chk:ex('Math.pow(Math.pow(a,m),n)',{a,m,n},r,fmt(r)),uid:'pq'+a+m+n};}
+  if(k==='cero'){const a=R.int(2,99), b=R.int(2,12), r=1+b*b;
+    return {html:'<p class="eq">'+a+'<sup>0</sup> + '+b+'<sup>2</sup> = '+rl(3)+'</p>',clave:a+'<sup>0</sup> = 1 (todo número distinto de 0 elevado a 0 da 1); '+b+'<sup>2</sup> = '+(b*b)+'; 1 + '+(b*b)+' = <b>'+fmt(r)+'</b>',chk:ex('Math.pow(a,0)+b*b',{a,b},r,fmt(r)),uid:'pc'+a+b};}
+  if(k==='negativa'){let a,n; do{a=R.int(2,d===2?6:4); n=R.int(2,5);}while(P(a,n)>lim); const r=P(-a,n);
+    return {html:'<p class="eq">(−'+a+')<sup>'+n+'</sup> = '+rl(3)+'</p>',clave:'(−'+a+')<sup>'+n+'</sup> = <b>'+fmt(r)+'</b> <span class="nota">(exponente '+(n%2?'impar: el resultado es negativo':'par: el resultado es positivo')+')</span>',chk:ex('Math.pow(-a,n)',{a,n},r,fmt(r)),uid:'pn'+a+n};}
+  const cubo=d===2&&R.bool(0.4); const kk=cubo?R.int(2,10):R.int(2,d===0?10:d===1?15:25); const x=cubo?kk*kk*kk:kk*kk;
+  return {html:'<p class="eq">'+(cubo?'∛':'√')+'<span style="text-decoration:overline">'+fmt(x)+'</span> = '+rl(3)+'</p>',clave:(cubo?'∛':'√')+fmt(x)+' = <b>'+kk+'</b> <span class="nota">(porque '+kk+(cubo?'³':'²')+' = '+fmt(x)+')</span>',chk:ex(cubo?'Math.cbrt(x)':'Math.sqrt(x)',{x},kk,fmt(kk),{tol:1e-9}),uid:'pr'+x+cubo};};
+
+CALC.ecuaciones=c=>{const {R,d}=c;
+  if(d===2&&R.bool(0.6)){let a,cc; do{a=R.nz(-9,9);cc=R.nz(-9,9);}while(a===cc||Math.abs(a)===1&&Math.abs(cc)===1);
+    const x=R.nz(-10,10), b=R.int(-20,20), e=(a-cc)*x+b;
+    const pasos=['Agrupo las x a la izquierda y los números a la derecha: '+fmt(a)+'x − '+par(cc)+'x = '+fmt(e)+' − '+par(b),fmt(a-cc)+'x = '+fmt(e-b),'x = '+fmt(e-b)+' ÷ '+par(a-cc)];
+    return {html:'<p class="eq">'+poly([a,b])+' = '+poly([cc,e])+'</p><p class="eq">x = '+rl(3)+'</p>',clave:pasos.join(' → ')+' → <b>x = '+fmt(x)+'</b>',chk:{f:'ecu',a,b,c:cc,d:e,x,mostrar:'x = '+fmt(x)},uid:'q'+a+b+cc+e};}
+  let a=d===0?R.int(2,6):R.int(2,9); if(d===2&&R.bool(0.3)) a=-a; const x=d===0?R.int(1,10):R.nz(-10,10), b=d===0?R.int(1,20):R.nz(-25,25), cc=a*x+b;
+  const pasos=['Paso '+(b>0?'el +'+fmt(b)+' a restar':'el −'+fmt(-b)+' a sumar')+': '+fmt(a)+'x = '+fmt(cc)+(b>0?' − ':' + ')+fmt(Math.abs(b))+' = '+fmt(cc-b),'x = '+fmt(cc-b)+' ÷ '+par(a)];
+  return {html:'<p class="eq">'+poly([a,b])+' = '+fmt(cc)+'</p><p class="eq">x = '+rl(3)+'</p>',clave:pasos.join(' → ')+' → <b>x = '+fmt(x)+'</b> <span class="nota">(comprobación: '+fmt(a)+' × '+par(x)+(b>0?' + ':' − ')+fmt(Math.abs(b))+' = '+fmt(cc)+')</span>',chk:{f:'ecu',a,b,c:0,d:cc,x,mostrar:'x = '+fmt(x)},uid:'q'+a+b+cc};};
+
+CALC.sistemas=c=>{const {R,d}=c; let a1,b1,a2,b2,x,y;
+  if(d===0){x=R.int(2,12); y=R.int(1,x-1); a1=1;b1=1;a2=1;b2=-1;}
+  else { x=R.nz(-8,8); y=R.nz(-8,8); do{a1=R.nz(-5,5);b1=R.nz(-5,5);a2=R.nz(-5,5);b2=R.nz(-5,5);}while(a1*b2-a2*b1===0); }
+  const c1=a1*x+b1*y, c2=a2*x+b2*y; const ky=b1*a2-b2*a1, rh=c1*a2-c2*a1;
+  const clave='Multiplico la 1.ª ecuación por '+par(a2)+' y la 2.ª por '+par(a1)+' y las resto: '+fmt(ky)+'y = '+fmt(rh)+' → y = '+fmt(y)+'. Sustituyo en la 1.ª: '+fmt(a1)+'x = '+fmt(c1)+' − '+par(b1*y)+' → x = '+fmt(x)+'. <b>x = '+fmt(x)+', y = '+fmt(y)+'</b>';
+  return {html:'<div class="sistema"><span>'+lin([[a1,'x'],[b1,'y']])+' = '+fmt(c1)+'</span><span>'+lin([[a2,'x'],[b2,'y']])+' = '+fmt(c2)+'</span></div><p class="eq">x = '+rl(2)+' y = '+rl(2)+'</p>',clave,chk:{f:'sis',eqs:[[a1,b1,c1],[a2,b2,c2]],x,y,mostrar:'x = '+fmt(x)+', y = '+fmt(y)},uid:'si'+[a1,b1,c1,a2,b2,c2].join(',')};};
+
+CALC.cuadraticas=c=>{const {R,d}=c; let r1_,r2_; do{ if(d===0){r1_=R.int(1,6);r2_=R.int(1,7);} else {r1_=R.nz(-9,9);r2_=R.nz(-9,9);} }while(r1_===r2_&&R.bool(0.8));
+  const A=d===2?R.pick([1,2,3,-1]):1, B=-A*(r1_+r2_), C=A*r1_*r2_; const lo=Math.min(r1_,r2_), hi=Math.max(r1_,r2_);
+  let clave;
+  if(A===1) clave='Busco dos números que multiplicados den '+fmt(C)+' y sumados den '+fmt(-B)+': '+fmt(r1_)+' y '+fmt(r2_)+'. Factorizo: '+factor(r1_)+factor(r2_)+' = 0';
+  else {const D=B*B-4*A*C; clave='Δ = b² − 4ac = '+par(B)+'² − 4·'+par(A)+'·'+par(C)+' = '+fmt(D)+'; √Δ = '+fmt(Math.sqrt(D))+'; x = ('+fmt(-B)+' ± '+fmt(Math.sqrt(D))+') ÷ '+par(2*A);}
+  clave+=' → '+(lo===hi?'<b>x = '+fmt(lo)+'</b> (raíz doble)':'<b>x = '+fmt(lo)+'</b> o <b>x = '+fmt(hi)+'</b>');
+  return {html:'<p class="eq">'+poly([A,B,C])+' = 0</p><p class="eq">x = '+rl(2)+' o x = '+rl(2)+'</p>',clave,chk:{f:'cuad',a:A,b:B,c:C,raices:[lo,hi],mostrar:'x = '+fmt(lo)},uid:'cu'+A+B+C};};
+
+CALC.porcentajes=c=>{const {R,g,d}=c; const kinds=['de','que','aumento','descuento'].concat(g>=10?['inverso']:[]); const k=R.pick(kinds);
+  const ps=d===0?[10,20,25,50]:d===1?[5,10,15,20,25,30,40,75]:[6,8,12,15,35,45];
+  const p=R.pick(ps), u=100/gcd(p,100);
+  if(k==='de'){const N=u*R.int(1,d===0?20:200)*(R.bool()?10:1), r=N*p/100;
+    return {html:'<p class="eq">'+p+' % de '+fmt(N)+' = '+rl(3)+'</p>',clave:fmt(N)+' × '+p+' ÷ 100 = <b>'+fmt(r)+'</b>',chk:ex('N*p/100',{N,p},r,fmt(r)),uid:'%d'+p+N};}
+  if(k==='que'){const b=u*R.int(1,d===0?10:40), a=b*p/100;
+    return {html:'<p class="eq">¿Qué porcentaje de '+fmt(b)+' es '+fmt(a)+'?</p><p class="eq">'+rl(3)+' %</p>',clave:fmt(a)+' ÷ '+fmt(b)+' × 100 = <b>'+p+' %</b>',chk:ex('a/b*100',{a,b},p,p+' %',{tol:1e-9}),uid:'%q'+a+'/'+b};}
+  const N=u*R.int(1,d===0?50:500)*100;
+  if(k==='inverso'){const F=N*(100+p)/100; return {html:'<p class="enun">Después de un aumento del '+p+' %, un precio quedó en '+money(F)+'. ¿Cuál era el precio original?</p><p class="eq">'+rl(5)+'</p>',clave:'El precio nuevo es el '+(100+p)+' % del original: '+money(F)+' ÷ '+fmt((100+p)/100)+' = <b>'+money(N)+'</b> <span class="nota">(no se resta el '+p+' % del precio nuevo)</span>',chk:ex('F*100/(100+p)',{F,p},N,money(N),{tol:1e-6}),uid:'%i'+F+p};}
+  const sube=k==='aumento', r=N*(100+(sube?p:-p))/100, cambio=N*p/100;
+  return {html:'<p class="enun">Un precio de '+money(N)+(sube?' sube':' baja')+' un '+p+' %. ¿Cuál es el nuevo precio?</p><p class="eq">'+rl(5)+'</p>',clave:p+' % de '+money(N)+' = '+money(cambio)+'; '+money(N)+(sube?' + ':' − ')+money(cambio)+' = <b>'+money(r)+'</b>',chk:ex(sube?'N*(100+p)/100':'N*(100-p)/100',{N,p},r,money(r),{tol:1e-6}),uid:'%'+k+N+p};};
+
+function interesCompuesto(C,r,t){ // devuelve pasos año a año (enteros exactos)
+  const pasos=[]; let M=C; for(let i=1;i<=t;i++){const nuevo=M*(100+r)/100; pasos.push('Año '+i+': '+money(M)+' × '+fmt((100+r)/100)+' = '+money(nuevo)); M=nuevo;} return {M,pasos};}
+CALC.interes=c=>{const {R,d}=c;
+  if(d===0||R.bool(0.45)){const C=R.int(1,d===2?200:50)*100000, r=R.pick([2,3,4,5,6,8,10,12]), t=R.int(1,5), I=C*r*t/100, M=C+I;
+    return {html:'<p class="enun">Capital de '+money(C)+' al '+r+' % anual de <b>interés simple</b> durante '+t+' año'+(t>1?'s':'')+'. ¿Cuánto interés gana y cuál es el monto final?</p><p class="eq">Interés: '+rl(5)+' Monto: '+rl(5)+'</p>',
+      clave:'I = C × r × t = '+money(C)+' × '+fmt(r/100)+' × '+t+' = <b>'+money(I)+'</b>; M = C + I = <b>'+money(M)+'</b>',chk:[ex('C*r*t/100',{C,r,t},I,money(I)),ex('C+C*r*t/100',{C,r,t},M,money(M))],uid:'is'+C+r+t};}
+  const C=R.int(1,20)*1000000, r=R.pick(d===1?[10,20]:[5,10,20]), t=R.int(2,3); const ic=interesCompuesto(C,r,t);
+  return {html:'<p class="enun">Capital de '+money(C)+' al '+r+' % anual de <b>interés compuesto</b> durante '+t+' años. ¿Cuál es el monto final?</p><p class="eq">Monto: '+rl(6)+'</p>',
+    clave:'M = C × (1 + r)<sup>t</sup> = '+money(C)+' × '+fmt((100+r)/100)+'<sup>'+t+'</sup>. '+ic.pasos.join('; ')+' → <b>'+money(ic.M)+'</b>',chk:ex('C*Math.pow(1+r/100,t)',{C,r,t},ic.M,money(ic.M),{tol:0.5}),uid:'ic'+C+r+t};};
+
+function argLog(b,k){ if(k>=0) return fmt(Math.pow(b,k)); if(b===10) return decS(1,-k); return frH(1,Math.pow(b,-k)); }
+CALC.logaritmos=c=>{const {R,g,d}=c; const b=R.pick([2,3,5,10]); const maxK=b===2?7:b===3?5:b===5?4:6; const k=R.pick(['directo','directo','suma','exponencial','inverso']);
+  if(k==='directo'){const e=R.int(d===2&&g>=10?-3:(d===0?1:0),d===0?Math.min(maxK,4):maxK), x=Math.pow(b,e);
+    return {html:'<p class="eq">log<sub>'+b+'</sub> '+argLog(b,e)+' = '+rl(2)+'</p>',clave:'Porque '+b+'<sup>'+e+'</sup> = '+argLog(b,e)+' → <b>'+fmt(e)+'</b>',chk:ex('Math.log(x)/Math.log(b)',{x,b},e,fmt(e),{tol:1e-9}),uid:'ld'+b+e};}
+  if(k==='suma'){const m=R.int(1,Math.max(1,maxK-2)), n=R.int(1,Math.max(1,maxK-m));
+    return {html:'<p class="eq">log<sub>'+b+'</sub> '+fmt(Math.pow(b,m))+' + log<sub>'+b+'</sub> '+fmt(Math.pow(b,n))+' = '+rl(2)+'</p>',clave:m+' + '+n+' = <b>'+(m+n)+'</b> <span class="nota">(también: log<sub>'+b+'</sub> '+fmt(Math.pow(b,m+n))+' = '+(m+n)+')</span>',chk:ex('Math.log(x)/Math.log(b)+Math.log(y)/Math.log(b)',{x:Math.pow(b,m),y:Math.pow(b,n),b},m+n,fmt(m+n),{tol:1e-9}),uid:'ls'+b+m+n};}
+  if(k==='exponencial'){const e=R.int(2,maxK), x=Math.pow(b,e);
+    return {html:'<p class="eq">'+b+'<sup>x</sup> = '+fmt(x)+' → x = '+rl(2)+'</p>',clave:fmt(x)+' = '+b+'<sup>'+e+'</sup> → <b>x = '+e+'</b>',chk:ex('Math.log(y)/Math.log(b)',{y:x,b},e,'x = '+e,{tol:1e-9}),uid:'le'+b+e};}
+  const e=R.int(1,maxK-1), x=Math.pow(b,e);
+  return {html:'<p class="eq">log<sub>'+b+'</sub> x = '+e+' → x = '+rl(3)+'</p>',clave:'x = '+b+'<sup>'+e+'</sup> = <b>'+fmt(x)+'</b>',chk:ex('Math.pow(b,e)',{b,e},x,fmt(x)),uid:'li'+b+e};};
+
+const TRIPLES=[[3,4,5],[5,12,13],[8,15,17],[7,24,25],[20,21,29],[9,40,41]];
+function razonChk(num,den){const s=simp(num,den); return {f:'razon',num,den,r:s,mostrar:frT(s[0],s[1])};}
+CALC.trigonometria=c=>{const {R,d}=c;
+  if(R.bool(0.35)){const T=[['sen',30,[1,2]],['cos',60,[1,2]],['tan',45,[1,1]],['sen',90,[1,1]],['cos',0,[1,1]],['sen',0,[0,1]],['cos',90,[0,1]],['tan',0,[0,1]]]; const e=R.pick(T);
+    return {html:'<p class="eq">'+e[0]+' '+e[1]+'° = '+rl(3)+'</p>',clave:e[0]+' '+e[1]+'° = <b>'+frT(e[2][0],e[2][1])+'</b>',chk:{f:'trigesp',fn:e[0],ang:e[1],r:e[2],mostrar:frT(e[2][0],e[2][1])},uid:'te'+e[0]+e[1]};}
+  const t=R.pick(d===0?TRIPLES.slice(0,2):TRIPLES), k=R.int(1,d===2?4:2); let o=t[0]*k, a=t[1]*k; const h=t[2]*k; if(R.bool()){const x=o;o=a;a=x;}
+  const chk=[razonChk(o,h),razonChk(a,h),razonChk(o,a)];
+  return {html:'<p class="enun">Con los lados del triángulo, calcula las razones del ángulo θ:</p>'+triRect(a,o,{base:fmt(a),alt:fmt(o),hip:fmt(h)},true)+'<p class="eq">sen θ = '+rl(3)+' cos θ = '+rl(3)+' tan θ = '+rl(3)+'</p>',
+    clave:'Opuesto = '+o+', adyacente = '+a+', hipotenusa = '+h+'. sen θ = '+o+'/'+h+' = <b>'+chk[0].mostrar+'</b>; cos θ = '+a+'/'+h+' = <b>'+chk[1].mostrar+'</b>; tan θ = '+o+'/'+a+' = <b>'+chk[2].mostrar+'</b>',chk,uid:'tt'+o+a};};
+
+const TIPO_CALCULO={nombre:'Cálculo a medida',param:'op',subs:g=>OPS.filter(o=>o[0]!=='auto').map(o=>o[0]),porDefecto:g=>OPS_GRADO[g],
+  instr:c=>'Resuelve cada operación. Escribe tu respuesta en la línea o en las casillas.',
+  puente:c=>'Antes de empezar, '+c.N+' calienta motores con estos cálculos. ¡Ayúdale a resolverlos con calma y cuidado!',
+  gen:(c,sub)=>CALC[sub](c), cols:true};
+
+// =====================================================================
+// 2. PROBLEMAS COTIDIANOS (plantillas con la historia de la ficha)
+// =====================================================================
+function billeteMin(t){for(const b of BILLETES) if(b>=t) return b; return Math.ceil(t/10000)*10000;}
+const PLANT={};
+function P_(id,g0,g1,fn){PLANT[id]={g:[g0,g1],fn};}
+P_('juntar',0,2,c=>{const {R,g,N,M,T}=c, o=T.obj; let a,b;
+  if(g===0){a=R.int(1,5);b=R.int(1,Math.min(5,10-a));} else if(g===1){a=R.int(10,50);b=R.int(5,40);} else {a=R.int(100,500);b=R.int(50,400);}
+  const r=a+b;
+  return {texto:N+' tiene '+fmt(a)+' '+pl(o,a)+' y '+M+' le da '+fmt(b)+' más. ¿'+cuantos(o)+' '+o[1]+' tiene ahora '+N+'?',dib:g===0?'<div class="fila-dib">'+grupoFiguras(a,'circulo')+'<span class="signo">+</span>'+grupoFiguras(b,'circulo')+'</div>':'',
+    pasos:['Juntamos las dos cantidades: '+fmt(a)+' + '+fmt(b)+' = '+fmt(r)+'.'],resp:N+' tiene ahora '+fmt(r)+' '+pl(o,r)+'.',chk:ex('a+b',{a,b},r,fmt(r),{vis:['a','b']})};});
+P_('quitar',0,2,c=>{const {R,g,T}=c, o=T.obj; let a,b;
+  if(g===0){a=R.int(3,9);b=R.int(1,a-1);} else if(g===1){a=R.int(20,99);b=R.int(5,a-1);} else {a=R.int(200,999);b=R.int(50,a-1);}
+  const r=a-b;
+  return {texto:'En '+T.lugar+' había '+fmt(a)+' '+pl(o,a)+'. Se llevaron '+fmt(b)+'. ¿'+cuantos(o)+' quedan?',dib:g===0?'<div class="fila-dib">'+grupoFiguras(a,'circulo',b)+'</div>':'',
+    pasos:['Quitamos los que se llevaron: '+fmt(a)+' − '+fmt(b)+' = '+fmt(r)+'.'],resp:'Quedan '+fmt(r)+' '+pl(o,r)+'.',chk:ex('a-b',{a,b},r,fmt(r),{vis:['a','b']})};});
+P_('comparar',1,3,c=>{const {R,g,N,M,T}=c, o=T.obj; const top=g===1?60:g===2?600:3000; const a=R.int(Math.floor(top/3),top), b=R.int(Math.max(1,Math.floor(top/10)),a-1), r=a-b;
+  return {texto:N+' tiene '+fmt(a)+' '+o[1]+' y '+M+' tiene '+fmt(b)+'. ¿'+cuantos(o)+' '+o[1]+' más tiene '+N+' que '+M+'?',pasos:['Comparamos restando: '+fmt(a)+' − '+fmt(b)+' = '+fmt(r)+'.'],resp:N+' tiene '+fmt(r)+' '+pl(o,r)+' más que '+M+'.',chk:ex('a-b',{a,b},r,fmt(r),{vis:['a','b']})};});
+P_('faltan',0,3,c=>{const {R,g,N,T}=c, o=T.obj; let a,b;
+  if(g===0){a=R.int(4,10);b=R.int(1,a-1);} else {const top=g===1?90:g===2?800:5000; a=R.int(Math.floor(top/4),top); b=R.int(1,a-1);}
+  const r=a-b;
+  return {texto:N+' quiere reunir '+fmt(a)+' '+o[1]+'. Ya tiene '+fmt(b)+'. ¿'+cuantos(o)+' le faltan?',dib:g===0?'<div class="fila-dib">'+grupoFiguras(b,'circulo',0,r)+'</div><p class="nota">Los punteados son los que faltan.</p>':'',
+    pasos:['Lo que falta es la diferencia: '+fmt(a)+' − '+fmt(b)+' = '+fmt(r)+'.'],resp:'Le faltan '+fmt(r)+' '+pl(o,r)+'.',chk:ex('a-b',{a,b},r,fmt(r),{vis:['a','b']})};});
+P_('grupos',2,4,c=>{const {R,g,T}=c, o=T.obj, gr=T.grupo; const k=g===2?R.int(2,5):g===3?R.int(2,9):R.int(3,12), m=g===2?R.int(2,5):g===3?R.int(2,10):R.int(6,25), r=k*m;
+  return {texto:'En '+T.lugar+' hay '+k+' '+gr[1]+' con '+m+' '+o[1]+' en cada '+gr[0]+'. ¿'+cuantos(o)+' '+o[1]+' hay en total?',pasos:['Son '+k+' grupos iguales de '+m+': '+k+' × '+m+' = '+fmt(r)+'.'],resp:'Hay '+fmt(r)+' '+o[1]+' en total.',chk:ex('k*m',{k,m},r,fmt(r),{vis:['k','m']})};});
+P_('reparto',3,5,c=>{const {R,g,N,T}=c, o=T.obj, gr=T.grupo; const k=R.int(2,g===3?6:9), q=R.int(3,g===3?12:40), rr=R.int(0,k-1), tot=k*q+rr;
+  return {texto:N+' reparte '+fmt(tot)+' '+o[1]+' en '+k+' '+gr[1]+', con la misma cantidad en cada '+gr[0]+'. ¿'+cuantos(o)+' van en cada '+gr[0]+' y '+cuantos(o).toLowerCase()+' sobran?',
+    pasos:['Dividimos: '+fmt(tot)+' ÷ '+k+' = '+q+' y sobran '+rr+'.','Comprobación: '+k+' × '+q+' + '+rr+' = '+fmt(tot)+'.'],resp:'Van '+q+' en cada '+gr[0]+' y sobran '+rr+'.',chk:[ex('Math.floor(t/k)',{t:tot,k},q,String(q),{vis:['t','k']}),ex('t%k',{t:tot,k},rr,String(rr))]};});
+P_('compra',3,6,c=>{const {R,d,N,T}=c; const lista=c.lista.filter(x=>x[2]<=50000); const it=R.pick(lista.length?lista:c.lista); const p=it[2]; const maxK=Math.max(1,Math.floor(100000/p));
+  const k=R.int(Math.min(2,maxK),Math.min(maxK,d===2?9:5)), tot=k*p; let B=billeteMin(tot); if(B===tot&&B<100000) B=billeteMin(tot+1); const v=B-tot;
+  return {texto:'En '+T.lugar+', '+N+' compra '+k+' '+pl(it,k)+' a '+money(p)+' cada unidad y paga con un billete de '+money(B)+'. ¿Cuánto le devuelven?',
+    pasos:['Total de la compra: '+k+' × '+money(p)+' = '+money(tot)+'.','Vueltas: '+money(B)+' − '+money(tot)+' = '+money(v)+'.'],resp:'Le devuelven '+money(v)+'.',chk:ex('B-k*p',{B,k,p},v,money(v),{vis:['B','p']})};});
+P_('subenbajan',3,5,c=>{const {R,g,T}=c, ge=T.gente; const a=g===3?R.int(20,90):R.int(100,500), b=R.int(5,Math.floor(a*0.8)), cc=R.int(5,g===3?40:200), r=a-b+cc;
+  return {texto:'En '+T.lugar+' había '+fmt(a)+' '+ge[1]+'. Luego se fueron '+fmt(b)+' y llegaron '+fmt(cc)+'. ¿'+cuantos(ge)+' '+ge[1]+' hay ahora?',
+    pasos:['Después de que se fueron: '+fmt(a)+' − '+fmt(b)+' = '+fmt(a-b)+'.','Después de que llegaron: '+fmt(a-b)+' + '+fmt(cc)+' = '+fmt(r)+'.'],resp:'Ahora hay '+fmt(r)+' '+ge[1]+'.',chk:ex('a-b+c',{a,b,c:cc},r,fmt(r),{vis:['a','b','c']})};});
+P_('doscompras',4,7,c=>{const {R,N,T}=c; const l=c.lista.filter(x=>x[2]<=40000); const its=R.sample(l.length>=2?l:c.lista,2); const p1=its[0][2], p2=its[1][2]; const k1=R.int(1,4), k2=R.int(2,5);
+  const s1=k1*p1, s2=k2*p2, tot=s1+s2; let B=billeteMin(tot); if(B===tot) B+=tot<100000?(billeteMin(tot+1)-tot):10000; const v=B-tot;
+  return {texto:N+' compra '+k1+' '+pl(its[0],k1)+' a '+money(p1)+' y '+k2+' '+pl(its[1],k2)+' a '+money(p2)+'. Paga con '+money(B)+'. ¿Cuánto le sobra?',
+    pasos:[k1+' × '+money(p1)+' = '+money(s1)+'.',k2+' × '+money(p2)+' = '+money(s2)+'.','Total: '+money(s1)+' + '+money(s2)+' = '+money(tot)+'.','Le sobra: '+money(B)+' − '+money(tot)+' = '+money(v)+'.'],resp:'Le sobran '+money(v)+'.',chk:ex('B-(a*p+b*q)',{B,a:k1,p:p1,b:k2,q:p2},v,money(v),{vis:['B','p','q']})};});
+P_('veces',3,5,c=>{const {R,g,N,M,T}=c, o=T.obj; const a=R.int(3,g===3?20:120), k=R.int(2,g===3?5:9), r=a+k*a;
+  return {texto:N+' tiene '+fmt(a)+' '+o[1]+'. '+M+' tiene '+k+' veces esa cantidad. ¿'+cuantos(o)+' '+o[1]+' tienen entre los dos?',pasos:[M+' tiene '+k+' × '+fmt(a)+' = '+fmt(k*a)+'.','Entre los dos: '+fmt(a)+' + '+fmt(k*a)+' = '+fmt(r)+'.'],resp:'Entre los dos tienen '+fmt(r)+' '+o[1]+'.',chk:ex('a+k*a',{a,k},r,fmt(r),{vis:['a']})};});
+P_('fraccion',5,8,c=>{const {R,T}=c, o=T.obj; const b=R.int(2,5), a=R.int(1,b-1), dd=R.int(2,4), cc=R.int(1,dd-1); let m=R.int(2,8); while(b*dd*m>600&&m>1) m--; const tot=b*dd*m;
+  const g1=tot/b*a, rest=tot-g1, g2=rest/dd*cc, r=rest-g2; const ell=o[2]==='f'?'ellas':'ellos', lq=o[2]==='f'?'las':'los';
+  return {texto:'En '+T.lugar+' hay '+fmt(tot)+' '+o[1]+'. '+frH(a,b)+' de '+ell+' se regalan y '+frH(cc,dd)+' de '+lq+' que quedan se venden. ¿'+cuantos(o)+' '+o[1]+' quedan?',
+    pasos:['Se regalan '+a+'/'+b+' de '+fmt(tot)+': '+fmt(tot)+' ÷ '+b+' × '+a+' = '+fmt(g1)+'.','Quedan '+fmt(tot)+' − '+fmt(g1)+' = '+fmt(rest)+'.','Se venden '+cc+'/'+dd+' de '+fmt(rest)+': '+fmt(rest)+' ÷ '+dd+' × '+cc+' = '+fmt(g2)+'.','Quedan '+fmt(rest)+' − '+fmt(g2)+' = '+fmt(r)+'.'],
+    resp:'Quedan '+fmt(r)+' '+pl(o,r)+'.',chk:ex('t-t*a/b-(t-t*a/b)*c/e',{t:tot,a,b,c:cc,e:dd},r,fmt(r),{vis:['t']})};});
+P_('reglatres',6,9,c=>{const {R,T}=c; const it=R.pick(c.lista), p=it[2], u=R.int(2,6), v=R.int(u+1,12), P=u*p, r=v*p;
+  return {texto:'En '+T.lugar+', '+u+' '+pl(it,u)+' cuestan '+money(P)+'. ¿Cuánto cuestan '+v+' '+pl(it,v)+'?',pasos:['Precio de una unidad: '+money(P)+' ÷ '+u+' = '+money(p)+'.',v+' × '+money(p)+' = '+money(r)+'.'],resp:v+' '+pl(it,v)+' cuestan '+money(r)+'.',chk:ex('P/u*v',{P,u,v},r,money(r),{vis:['P','u','v']})};});
+P_('descuento',6,9,c=>{const {R,N,T}=c; const it=R.pick(c.lista), p=it[2], q=R.pick([10,20,25,30,40,50]), k=R.int(2,6); const de=p*q/100, p1=p-de, r=k*p1;
+  return {texto:'En '+T.lugar+' hay '+q+' % de descuento en '+it[1]+', que cuestan '+money(p)+' cada unidad. '+N+' compra '+k+'. ¿Cuánto paga?',
+    pasos:['Descuento por unidad: '+q+' % de '+money(p)+' = '+money(de)+'.','Precio con descuento: '+money(p)+' − '+money(de)+' = '+money(p1)+'.','Total: '+k+' × '+money(p1)+' = '+money(r)+'.'],resp:N+' paga '+money(r)+'.',chk:ex('k*p*(100-q)/100',{k,p,q},r,money(r),{tol:1e-6,vis:['p','q','k']})};});
+P_('promedio',6,9,c=>{const {R,N,T}=c, o=T.obj; let v,t=0; do{v=[];for(let i=0;i<4;i++) v.push(R.int(12,60)); const A=R.int(20,50); v.push(5*A-v.reduce((a,b)=>a+b,0)); t++;}while((v[4]<5||v[4]>80)&&t<200);
+  if(v[4]<5||v[4]>80){v=[20,30,40,50,60];}
+  const s=v.reduce((a,b)=>a+b,0), r=s/5;
+  return {texto:'Durante cinco días, '+N+' contó '+o[1]+' en '+T.lugar+': '+v.slice(0,4).join(', ')+' y '+v[4]+'. ¿Cuál fue el promedio por día?',pasos:['Sumo: '+v.join(' + ')+' = '+s+'.','Divido entre 5 días: '+s+' ÷ 5 = '+fmt(r)+'.'],resp:'El promedio fue '+fmt(r)+' '+o[1]+' por día.',chk:ex('(a+b+c+d+e)/5',{a:v[0],b:v[1],c:v[2],d:v[3],e:v[4]},r,fmt(r),{tol:1e-9,vis:['a','b','c','d','e']})};});
+P_('velocidad',6,9,c=>{const {R,N,T}=c; const v=R.int(8,20), t=R.int(2,4), dist=v*t, h=R.int(t+1,6);
+  return {texto:'Camino a '+T.lugar+', por la ciclovía, '+N+' recorrió '+dist+' km en '+t+' horas a ritmo constante. ¿A qué velocidad iba? A ese ritmo, ¿cuántos kilómetros recorrería en '+h+' horas?',
+    pasos:['Velocidad = distancia ÷ tiempo = '+dist+' km ÷ '+t+' h = '+v+' km/h.','En '+h+' horas: '+v+' × '+h+' = '+(v*h)+' km.'],resp:'Iba a '+v+' km/h y en '+h+' horas recorrería '+(v*h)+' km.',chk:[ex('d/t',{d:dist,t},v,v+' km/h',{vis:['d','t']}),ex('d/t*h',{d:dist,t,h},v*h,(v*h)+' km')]};});
+P_('malla',5,8,c=>{const {R,T}=c; const w=R.int(6,20), h=R.int(4,w-1), p=R.int(7,18)*500, P=2*(w+h), r=P*p;
+  return {texto:cap(T.espacio)+' tiene forma de rectángulo de '+w+' m de largo y '+h+' m de ancho. Se quiere cercar con malla que cuesta '+money(p)+' el metro. ¿Cuántos metros de malla se necesitan y cuánto cuestan?',
+    pasos:['Perímetro: '+w+' + '+h+' + '+w+' + '+h+' = '+P+' m.','Costo: '+P+' × '+money(p)+' = '+money(r)+'.'],resp:'Se necesitan '+P+' m de malla, que cuestan '+money(r)+'.',chk:[ex('2*(w+h)',{w,h},P,P+' m',{vis:['w','h']}),ex('2*(w+h)*p',{w,h,p},r,money(r))]};});
+P_('sistema',9,11,c=>{const {R,T}=c; const A=R.int(10,40)*1000, C=R.int(5,A/1000-1)*1000; let a1,c1,a2,c2; do{a1=R.int(1,5);c1=R.int(1,5);a2=R.int(1,5);c2=R.int(1,5);}while(a1*c2-a2*c1===0);
+  const T1=a1*A+c1*C, T2=a2*A+c2*C, ky=c1*a2-c2*a1, rh=T1*a2-T2*a1;
+  const ad=k=>k+' '+(k===1?'adulto':'adultos'), ni=k=>k+' '+(k===1?'niño':'niños');
+  return {texto:'En '+T.lugar+', un grupo de '+ad(a1)+' y '+ni(c1)+' pagó '+money(T1)+' por las entradas. Otro grupo, de '+ad(a2)+' y '+ni(c2)+', pagó '+money(T2)+'. ¿Cuánto cuesta la entrada de adulto y la de niño?',
+    pasos:['Planteo (x: adulto, y: niño): '+a1+'x + '+c1+'y = '+fmt(T1)+' y '+a2+'x + '+c2+'y = '+fmt(T2)+'.','Multiplico la 1.ª por '+a2+' y la 2.ª por '+a1+' y resto: '+fmt(ky)+'y = '+fmt(rh)+' → y = '+fmt(C)+'.','Sustituyo en la 1.ª: '+a1+'x = '+fmt(T1)+' − '+c1+' × '+fmt(C)+' = '+fmt(T1-c1*C)+' → x = '+fmt(A)+'.'],
+    resp:'La entrada de adulto cuesta '+money(A)+' y la de niño '+money(C)+'.',chk:[{f:'sis',eqs:[[a1,c1,T1],[a2,c2,T2]],x:A,y:C,mostrar:money(A)}]};});
+P_('ahorro',10,11,c=>{const {R,N}=c; const C=R.int(1,10)*1000000, r=R.pick([5,10,20]), t=R.int(2,3), ic=interesCompuesto(C,r,t);
+  return {texto:N+' deposita '+money(C)+' en un CDT que paga '+r+' % de interés compuesto anual. ¿Cuánto tendrá al cabo de '+t+' años?',pasos:ic.pasos.map(x=>x+'.'),resp:'Tendrá '+money(ic.M)+'.',chk:ex('C*Math.pow(1+r/100,t)',{C,r,t},ic.M,money(ic.M),{tol:0.5,vis:['C']})};});
+P_('areacuad',9,11,c=>{const {R,T}=c; const x=R.int(3,15), k=R.int(1,8), A=x*(x+k);
+  return {texto:cap(T.espacio)+' es rectangular: su largo mide '+k+' m más que su ancho y su área es '+A+' m². ¿Cuánto miden el ancho y el largo?',
+    pasos:['Si el ancho es x, el largo es x + '+k+': x(x + '+k+') = '+A+'.','x² + '+k+'x − '+A+' = 0.','Factorizo: (x − '+x+')(x + '+(x+k)+') = 0.','x = '+x+' (la medida negativa no sirve).','Largo: '+x+' + '+k+' = '+(x+k)+' m.'],resp:'El ancho mide '+x+' m y el largo '+(x+k)+' m.',chk:[ex('(-k+Math.sqrt(k*k+4*A))/2',{k,A},x,x+' m',{tol:1e-9,vis:['k','A']})]};});
+P_('iva',9,11,c=>{const {R}=c; const it=R.pick(['un parlante','una tablet','una bicicleta','un uniforme completo','una impresora']), B=R.int(5,50)*10000, q=R.pick([10,15,20,25]);
+  const iva=B*19/100, conIva=B+iva, de=conIva*q/100, r=conIva-de;
+  return {texto:'En una tienda de Cali, '+it+' cuesta '+money(B)+' antes de IVA. Se le suma el IVA del 19 % y luego se aplica un descuento del '+q+' %. ¿Cuál es el precio final?',
+    pasos:['IVA: 19 % de '+money(B)+' = '+money(iva)+'.','Precio con IVA: '+money(B)+' + '+money(iva)+' = '+money(conIva)+'.','Descuento: '+q+' % de '+money(conIva)+' = '+money(de)+'.','Precio final: '+money(conIva)+' − '+money(de)+' = '+money(r)+'.'],resp:'El precio final es '+money(r)+'.',chk:ex('B*1.19*(100-q)/100',{B,q},r,money(r),{tol:0.01,vis:['B','q']})};});
+P_('cometa',10,11,c=>{const {R,N,T}=c; const L=R.int(10,40)*2, h=L/2;
+  return {texto:N+' eleva una cometa en '+T.lugar+'. La cuerda, bien tensa, mide '+L+' m y forma un ángulo de 30° con la horizontal. Si '+N+' sostiene la cuerda a 1 m del suelo, ¿a qué altura del suelo está la cometa?',
+    pasos:['sen 30° = altura ÷ cuerda, y sen 30° = 0,5.','Altura sobre la mano: '+L+' × 0,5 = '+h+' m.','Altura sobre el suelo: '+h+' + 1 = '+(h+1)+' m.'],resp:'La cometa está a '+(h+1)+' m del suelo.',chk:ex('L*Math.sin(Math.PI/6)+1',{L},h+1,(h+1)+' m',{tol:1e-9,vis:['L']})};});
+P_('duplica',9,11,c=>{const {R,T}=c; const P0=R.int(5,50)*10, p=R.pick([2,3,5,7]), m=R.int(3,6), t=p*m, r=P0*Math.pow(2,m);
+  return {texto:'Un video sobre '+T.lugar+' tiene '+fmt(P0)+' reproducciones. Cada '+p+' días las reproducciones se duplican. ¿Cuántas tendrá a los '+t+' días?',
+    pasos:['En '+t+' días hay '+t+' ÷ '+p+' = '+m+' periodos de '+p+' días.','Reproducciones: '+fmt(P0)+' × 2<sup>'+m+'</sup> = '+fmt(P0)+' × '+Math.pow(2,m)+' = '+fmt(r)+'.'],resp:'Tendrá '+fmt(r)+' reproducciones.',chk:ex('P*Math.pow(2,t/p)',{P:P0,t,p},r,fmt(r),{tol:1e-6,vis:['P','t','p']})};});
+P_('cambio',8,11,c=>{const {R}=c; const rs=[[5,4],[6,5],[3,2],[11,10],[9,10],[3,4],[4,5]]; const q=R.pick(rs); const it=R.pick(c.lista); const A=q[1]*R.int(2,40)*500, B=A*q[0]/q[1], pct=(B-A)/A*100;
+  const sube=B>A;
+  return {texto:'El precio de «'+it[0]+'» pasó de '+money(A)+' a '+money(B)+'. ¿En qué porcentaje '+(sube?'subió':'bajó')+'?',
+    pasos:['Cambio: '+money(B)+' − '+money(A)+' = '+(sube?'':'−')+money(Math.abs(B-A))+'.','Comparo con el precio inicial: '+fmt(Math.abs(B-A))+' ÷ '+fmt(A)+' = '+fmt(Math.abs(pct)/100)+'.','En porcentaje: '+fmt(Math.abs(pct)/100)+' × 100 = '+fmt(Math.abs(pct))+' %.'],
+    resp:'El precio '+(sube?'subió':'bajó')+' un '+fmt(Math.abs(pct))+' %.',chk:ex('Math.abs(B-A)/A*100',{A,B},Math.abs(pct),fmt(Math.abs(pct))+' %',{tol:1e-9,vis:['A','B']})};});
+
+const TIPO_PROBLEMAS={nombre:'Problemas cotidianos',param:'sub',
+  subs:g=>Object.keys(PLANT).filter(k=>PLANT[k].g[0]<=g&&g<=PLANT[k].g[1]),
+  nombres:{juntar:'Juntar',quitar:'Quitar',comparar:'Comparar',faltan:'¿Cuánto falta?',grupos:'Grupos iguales',reparto:'Repartir',compra:'Comprar y vueltas',subenbajan:'Llegan y se van',doscompras:'Dos compras',veces:'Veces más',fraccion:'Fracción de una cantidad',reglatres:'Regla de tres',descuento:'Descuentos',promedio:'Promedio',velocidad:'Velocidad',malla:'Perímetro y costo',sistema:'Sistema de ecuaciones',ahorro:'Ahorro con interés',areacuad:'Área y ecuación cuadrática',iva:'IVA y descuento',cometa:'Altura con trigonometría',duplica:'Crecimiento que se duplica',cambio:'Porcentaje de cambio'},
+  instr:c=>c.g===0?'Escucha el problema (tu profe te lo lee), dibuja y escribe la respuesta.':'Lee con calma. Usa las casillas: qué te preguntan, qué datos tienes, qué operación haces y la respuesta completa.',
+  puente:c=>'Hoy '+c.N+' se encontró con varias situaciones de la vida real. Para resolverlas hay que pensar paso a paso.',
+  gen:(c,sub)=>{const P=PLANT[sub].fn(c);
+    const anda=c.g===0?'<div class="andamio uno"><div class="caja alta">Dibuja aquí</div><div class="caja">Respuesta</div></div>':'<div class="andamio"><div class="caja">¿Qué me preguntan?</div><div class="caja">Datos</div><div class="caja'+(c.g>=6?' alta':'')+'">Operación</div><div class="caja">Respuesta completa</div></div>';
+    return {html:'<p class="enun">'+P.texto+'</p>'+(P.dib||'')+anda,
+      clave:'<ol class="pasos-clave">'+P.pasos.map(s=>'<li>'+s+'</li>').join('')+'</ol><span class="etq">Respuesta:</span> '+P.resp,
+      chk:P.chk,uid:sub+P.texto};}};
+
+// =====================================================================
+// 5. DINERO Y CAMBIO (pesos colombianos; dibujos genéricos, no réplicas)
+// =====================================================================
+function dineroSVG(vals){
+  const maxW=332; let x=0,y=0,rowH=0,items='',maxR=0;
+  vals.forEach(v=>{const bill=v>=2000, w=bill?108:52, h=bill?54:52; if(x+w>maxW){x=0;y+=rowH+8;rowH=0;}
+    if(bill){items+='<rect x="'+(x+2)+'" y="'+(y+2)+'" width="104" height="50" rx="4" class="billete"/><rect x="'+(x+7)+'" y="'+(y+7)+'" width="94" height="40" rx="2" class="billete-in"/>'+txt(x+54,y+20,'billete','t-chico')+txt(x+54,y+35,'$ '+fmt(v),'t-et');}
+    else {const cx=x+26, cy=y+26; items+='<circle cx="'+cx+'" cy="'+cy+'" r="24" class="moneda"/>'+(v===1000?'<circle cx="'+cx+'" cy="'+cy+'" r="16" class="moneda-bi"/>':'<circle cx="'+cx+'" cy="'+cy+'" r="20" class="moneda-in"/>')+txt(cx,cy-7,'$','t-chico')+txt(cx,cy+6,fmt(v),v>=1000?'t-chico':'t-et');}
+    maxR=Math.max(maxR,x+w); x+=w+6; rowH=Math.max(rowH,h);});
+  return svgW(Math.max(maxR+4,10),y+rowH+4,items,'monedas y billetes');
+}
+function minPiezas(m){ // programación dinámica: mínimo número de monedas/billetes
+  const U=m/50, best=new Array(U+1).fill(Infinity), from=new Array(U+1).fill(0); best[0]=0;
+  for(let i=1;i<=U;i++) for(const dn of DENOMS){const k=dn/50; if(k<=i&&best[i-k]+1<best[i]){best[i]=best[i-k]+1;from[i]=dn;}}
+  const out=[]; let i=U; while(i>0){out.push(from[i]); i-=from[i]/50;} return out.sort((a,b)=>b-a);
+}
+function describePiezas(ps){const cnt={}; ps.forEach(v=>cnt[v]=(cnt[v]||0)+1); return Object.keys(cnt).map(Number).sort((a,b)=>b-a).map(v=>cnt[v]+' '+(v>=2000?(cnt[v]>1?'billetes':'billete'):(cnt[v]>1?'monedas':'moneda'))+' de '+money(v)).join(' + ');}
+const DIN={};
+DIN.contar=c=>{const {R,g,d}=c; let vals;
+  if(g===0){const k=R.int(2,d===0?5:9); vals=Array(k).fill(100);
+    return {html:'<p class="enun">Cuenta las monedas. ¿Cuántas hay? ¿Cuánto dinero es?</p>'+dineroSVG(vals)+'<p class="eq">Monedas: '+rl(2)+' Dinero: $ '+rl(3)+'</p>',clave:'<b>'+k+'</b> monedas de $ 100 = <b>'+money(k*100)+'</b>',chk:[{f:'lista',vals,r:k*100,mostrar:money(k*100)}],uid:'dc'+k};}
+  const pool=g===1?[50,100,200,500]:g===2?[100,200,500,1000,2000,5000]:[500,1000,2000,5000,10000,20000,50000];
+  const lim=g===1?2000:g===2?20000:200000; const n=R.int(3,g===1?6:8);
+  let t=0; do{vals=[];for(let i=0;i<n;i++) vals.push(R.pick(pool)); t++;}while(vals.reduce((a,b)=>a+b,0)>lim&&t<100);
+  if(d===0) vals.sort((a,b)=>b-a); const tot=vals.reduce((a,b)=>a+b,0);
+  return {html:'<p class="enun">¿Cuánto dinero hay en total?</p>'+dineroSVG(vals)+'<p class="eq">Total: '+rl(5)+'</p>',clave:'Ordeno de mayor a menor y sumo: '+vals.slice().sort((a,b)=>b-a).map(fmt).join(' + ')+' = <b>'+money(tot)+'</b>',chk:[{f:'lista',vals,r:tot,mostrar:money(tot)}],uid:'dc'+vals.join(',')};};
+DIN.vueltas=c=>{const {R,g,d,N}=c; const it=R.pick(c.lista), p=it[2]; let k=1,B;
+  if(g===1){B=1000;} else if(g===2){B=p<2000?2000:5000;} else {const maxK=Math.max(1,Math.floor(100000/p)); k=R.int(1,Math.min(maxK,d===2?6:3)); B=billeteMin(k*p); if(B===k*p&&B<100000) B=billeteMin(k*p+1); if(d===2&&B<100000&&R.bool(0.4)) B=billeteMin(B+1);}
+  const tot=k*p, v=B-tot;
+  return {html:'<p class="enun">'+N+' compra '+k+' '+pl(it,k)+' ('+money(p)+' cada '+(k>1?'unidad':'uno')+') y paga con:</p>'+dineroSVG([B])+'<p class="eq">Vueltas: '+rl(5)+'</p>',
+    clave:(k>1?'Total: '+k+' × '+money(p)+' = '+money(tot)+'. ':'')+'Vueltas: '+money(B)+' − '+money(tot)+' = <b>'+money(v)+'</b>',chk:ex('B-k*p',{B,k,p},v,money(v)),uid:'dv'+it[0]+k+B};};
+DIN.menos=c=>{const {R,g,d}=c; const m=g<=2?R.int(3,d===2?100:40)*50:R.int(10,d===0?400:2000)*50; const ps=minPiezas(m);
+  return {html:'<p class="enun">¿Cómo pagas exactamente '+money(m)+' con la <b>menor</b> cantidad de monedas y billetes? Dibuja o escribe cuáles usas.</p><div class="caja alta">Mi forma de pagar</div>',
+    clave:describePiezas(ps)+' → <b>'+ps.length+' piezas</b>',chk:[{f:'menos',m,piezas:ps,k:ps.length,mostrar:ps.length+' piezas'}],uid:'dm'+m};};
+DIN.precios=c=>{const {R,g}=c; const L=c.lista; const k=g===0?R.pick(['caro','barato']):R.pick(g===1?['caro','barato','juntos','diferencia']:['juntos','diferencia','varios','caro']);
+  if(k==='caro'||k==='barato'){const its=R.sample(L,3); const vals=its.map(x=>x[2]); const ext=k==='caro'?Math.max(...vals):Math.min(...vals); const ganador=its.filter(x=>x[2]===ext);
+    return {html:'<p class="enun">Entre '+its.map(x=>x[0]).join(', ')+': ¿cuál es el más '+k+'?</p><p class="eq">'+rl(8)+'</p>',clave:'<b>'+ganador.map(x=>x[0]).join(' o ')+'</b> ('+money(ext)+')',chk:[{f:'extremo',vals,tipo:k,r:ext,mostrar:money(ext)}],uid:'pc'+k+its.map(x=>x[0]).join()};}
+  if(k==='juntos'){const its=R.sample(L,2), s=its[0][2]+its[1][2];
+    return {html:'<p class="enun">¿Cuánto cuestan juntos «'+its[0][0]+'» y «'+its[1][0]+'»?</p><p class="eq">'+rl(5)+'</p>',clave:money(its[0][2])+' + '+money(its[1][2])+' = <b>'+money(s)+'</b>',chk:ex('a+b',{a:its[0][2],b:its[1][2]},s,money(s)),uid:'pj'+its[0][0]+its[1][0]};}
+  if(k==='diferencia'){const its=R.sample(L,2).sort((a,b)=>b[2]-a[2]); if(its[0][2]===its[1][2]) return DIN.precios(Object.assign({},c,{g:0})); const df=its[0][2]-its[1][2];
+    return {html:'<p class="enun">¿Cuánto más cuesta «'+its[0][0]+'» que «'+its[1][0]+'»?</p><p class="eq">'+rl(5)+'</p>',clave:money(its[0][2])+' − '+money(its[1][2])+' = <b>'+money(df)+'</b>',chk:ex('a-b',{a:its[0][2],b:its[1][2]},df,money(df)),uid:'pd'+its[0][0]+its[1][0]};}
+  const it=R.pick(L), q=R.int(2,g<=3?5:9), s=q*it[2];
+  return {html:'<p class="enun">¿Cuánto cuestan '+q+' '+it[1]+'?</p><p class="eq">'+rl(5)+'</p>',clave:q+' × '+money(it[2])+' = <b>'+money(s)+'</b>',chk:ex('q*p',{q,p:it[2]},s,money(s)),uid:'pv'+it[0]+q};};
+DIN.presupuesto=c=>{const {R,N}=c; const its=R.sample(c.lista,2); const k1=R.int(1,3), k2=R.int(1,4), tot=k1*its[0][2]+k2*its[1][2];
+  const B=Math.max(1000,Math.round(tot*(R.bool()?R.int(105,140):R.int(70,95))/100/1000)*1000); const alcanza=B>=tot, df=Math.abs(B-tot);
+  return {html:'<p class="enun">'+N+' tiene '+money(B)+'. Quiere comprar '+k1+' '+pl(its[0],k1)+' y '+k2+' '+pl(its[1],k2)+'. ¿Le alcanza? ¿Cuánto le sobra o le falta?</p><p class="eq">'+rl(4)+' · '+rl(5)+'</p>',
+    clave:k1+' × '+money(its[0][2])+' + '+k2+' × '+money(its[1][2])+' = '+money(tot)+'. '+(alcanza?'<b>Sí le alcanza</b> y le sobran ':'<b>No le alcanza</b>; le faltan ')+'<b>'+money(df)+'</b>',chk:ex('Math.abs(B-(a*p+b*q))',{B,a:k1,p:its[0][2],b:k2,q:its[1][2]},df,money(df)),uid:'pr'+its[0][0]+k1+its[1][0]+k2+B};};
+DIN.descuento=c=>{const {R}=c; const it=R.pick(c.lista); const p=it[2]*(it[2]<20000?R.int(1,4):1), q=R.pick([10,15,20,25,30,40,50]), de=p*q/100, r=p-de;
+  return {html:'<p class="enun">'+cap(it[1])+' de '+money(p)+' tienen '+q+' % de descuento. ¿Cuánto se paga?</p><p class="eq">'+rl(5)+'</p>',clave:q+' % de '+money(p)+' = '+money(de)+'; '+money(p)+' − '+money(de)+' = <b>'+money(r)+'</b>',chk:ex('p*(100-q)/100',{p,q},r,money(r),{tol:1e-6}),uid:'de'+p+q};};
+DIN.iva=c=>{const {R,g}=c; const B=R.int(20,2000)*100;
+  if(g>=9&&R.bool(0.45)){const T=B*119/100; return {html:'<p class="enun">Un artículo cuesta '+money(T)+' con el IVA del 19 % incluido. ¿Cuál es su precio sin IVA?</p><p class="eq">'+rl(5)+'</p>',clave:'El precio con IVA es el 119 % del precio sin IVA: '+money(T)+' ÷ 1,19 = <b>'+money(B)+'</b> <span class="nota">(no se resta el 19 % de '+money(T)+')</span>',chk:ex('T/1.19',{T},B,money(B),{tol:1e-6}),uid:'iv'+T};}
+  const iva=B*19/100, T=B+iva;
+  return {html:'<p class="enun">Un artículo cuesta '+money(B)+' antes de IVA. ¿Cuánto es el IVA del 19 % y cuál es el precio total?</p><p class="eq">IVA: '+rl(4)+' Total: '+rl(5)+'</p>',clave:'IVA: '+money(B)+' × 0,19 = <b>'+money(iva)+'</b>; total: '+money(B)+' + '+money(iva)+' = <b>'+money(T)+'</b>',chk:[ex('B*0.19',{B},iva,money(iva),{tol:1e-6}),ex('B*1.19',{B},T,money(T),{tol:1e-6})],uid:'iv'+B};};
+DIN.unitario=c=>{const {R}=c; const it=R.pick(c.lista); let u1,u2,q1,q2; do{const base=Math.max(100,Math.round(it[2]/50)*50); u1=base+R.int(-4,4)*50; u2=base+R.int(-6,6)*50; q1=R.pick([3,4,5,6]); q2=R.pick([8,10,12]);}while(u1===u2||u1<=0||u2<=0);
+  const P1=u1*q1, P2=u2*q2, mejor=u1<u2?1:2, df=Math.abs(u1-u2);
+  return {html:'<p class="enun">Paquete A: '+q1+' '+it[1]+' por '+money(P1)+'. Paquete B: '+q2+' '+it[1]+' por '+money(P2)+'. ¿Cuál sale más barato por unidad y cuánto se ahorra por unidad?</p><p class="eq">'+rl(4)+' · '+rl(5)+'</p>',
+    clave:'A: '+money(P1)+' ÷ '+q1+' = '+money(u1)+' por unidad; B: '+money(P2)+' ÷ '+q2+' = '+money(u2)+' por unidad. <b>Conviene el paquete '+(mejor===1?'A':'B')+'</b>; se ahorra <b>'+money(df)+'</b> por unidad.',
+    chk:[ex('P/q',{P:P1,q:q1},u1,money(u1)),ex('P/q',{P:P2,q:q2},u2,money(u2)),ex('Math.abs(P/q-Q/r)',{P:P1,q:q1,Q:P2,r:q2},df,money(df))],uid:'un'+P1+P2};};
+DIN.interes=c=>CALC.interes(c);
+const DIN_GRADO={0:['contar','precios'],1:['contar','vueltas','precios'],2:['contar','vueltas','menos','precios'],3:['contar','vueltas','menos','precios','presupuesto'],4:['contar','vueltas','menos','precios','presupuesto'],5:['vueltas','menos','precios','presupuesto','contar'],6:['vueltas','presupuesto','descuento','unitario','menos'],7:['presupuesto','descuento','iva','unitario','vueltas'],8:['descuento','iva','unitario','presupuesto'],9:['descuento','iva','unitario','interes'],10:['descuento','iva','unitario','interes'],11:['descuento','iva','unitario','interes']};
+const TIPO_DINERO={nombre:'Dinero y cambio',param:'sub',subs:g=>DIN_GRADO[g],
+  nombres:{contar:'Contar dinero',vueltas:'Pagar y dar vueltas',menos:'Menos monedas y billetes',precios:'Comparar precios',presupuesto:'Presupuesto',descuento:'Descuentos',iva:'IVA del 19 %',unitario:'Precio por unidad',interes:'Interés'},
+  instr:c=>'Usa la lista de precios cuando la necesites. Las monedas y billetes son dibujos de práctica.',
+  puente:c=>'Hoy '+c.N+' está a cargo de las cuentas. Mira bien la lista de precios antes de empezar.',
+  gen:(c,sub)=>DIN[sub](c)};
+
+// =====================================================================
+// 3. SERIES Y PATRONES
+// =====================================================================
+function terminosSerie(gen,n){const t=[]; const k=gen.k;
+  for(let i=0;i<n;i++){let v;
+    if(k==='arit') v=gen.a0+i*gen.d;
+    else if(k==='geom') v=gen.a0*Math.pow(gen.r,i);
+    else if(k==='alt'||k==='dosreg'){ if(i===0) v=gen.a0; else { const prev=t[i-1]; v= i%2===1 ? prev+gen.p : (k==='alt'?prev-gen.q:prev*gen.m); } }
+    else if(k==='cuad') v=(i+gen.s)*(i+gen.s);
+    else if(k==='tri') v=(i+gen.s)*(i+gen.s+1)/2;
+    else if(k==='fib') v=i===0?gen.a:i===1?gen.b:t[i-1]+t[i-2];
+    else if(k==='cuadseq'){const n1=i+1; v=gen.a*n1*n1+gen.b*n1+gen.c;}
+    t.push(v);} return t;}
+function reglaSerie(gen){const k=gen.k;
+  if(k==='arit') return gen.d>=0?'se suma '+fmt(gen.d)+' cada vez':'se resta '+fmt(-gen.d)+' cada vez';
+  if(k==='geom') return 'se multiplica por '+fmt(gen.r)+' cada vez';
+  if(k==='alt') return 'se suma '+gen.p+' y luego se resta '+gen.q+', alternando';
+  if(k==='dosreg') return 'se suma '+gen.p+' y luego se multiplica por '+gen.m+', alternando';
+  if(k==='cuad') return 'son números cuadrados: '+gen.s+'², '+(gen.s+1)+'², '+(gen.s+2)+'²…';
+  if(k==='tri') return 'números triangulares: se suma 1 más cada vez (+'+(gen.s+1)+', +'+(gen.s+2)+', +'+(gen.s+3)+'…)';
+  if(k==='fib') return 'cada término es la suma de los dos anteriores';
+  if(k==='cuadseq') return 'las segundas diferencias son constantes (iguales a '+(2*gen.a)+')';
+  return '';}
+function genSerieNum(c,kind){const {R,g,d}=c; let gen;
+  if(kind==='contar1') gen={k:'arit',a0:R.int(1,d===2?14:8),d:1};
+  else if(kind==='arit'||kind==='aritgen'){const ds=g<=1?[1,2,5,10]:g===2?[2,3,4,5,10,100]:[3,4,6,7,8,9,11,12,15,25]; let dd=R.pick(ds); if(kind==='aritgen'&&R.bool(0.35)) dd=-dd; gen={k:'arit',a0:dd<0?R.int(60,150):R.int(g<=1?0:1,g<=2?40:120),d:dd};}
+  else if(kind==='desc'){const dd=R.pick(g<=1?[1,2]:[2,3,5,10]); gen={k:'arit',a0:dd*R.int(8,20)+R.int(0,dd-1),d:-dd};}
+  else if(kind==='geom'||kind==='geomgen'){let r=R.pick(g<=4?[2,3]:[2,3,4,5]); if(kind==='geomgen'&&g>=10&&d===2&&R.bool(0.4)) r=-r; const a0=R.int(1,Math.abs(r)>=4?3:5); gen={k:'geom',a0,r};}
+  else if(kind==='alt'){const p=R.int(3,9),q=R.int(1,p-1); gen={k:'alt',a0:R.int(1,20),p,q};}
+  else if(kind==='dosreg'){gen={k:'dosreg',a0:R.int(1,4),p:R.int(1,3),m:2};}
+  else if(kind==='cuad') gen={k:'cuad',s:R.int(1,d===2?6:3)};
+  else if(kind==='tri') gen={k:'tri',s:R.int(1,d===2?5:2)};
+  else if(kind==='fib') gen={k:'fib',a:R.int(1,5),b:R.int(1,7)};
+  else gen={k:'cuadseq',a:R.int(1,3),b:R.int(-3,3),c:R.int(-5,5)};
+  const general=kind==='aritgen'||kind==='geomgen'||(kind==='cuadseq'&&g>=10);
+  const L=general?5:7, terms=terminosSerie(gen,L);
+  let ocultos; const modo=general?'general':R.pick(g<=2?['sigue','huecos']:['sigue','huecos','regla']);
+  if(modo==='huecos'){const i1=R.int(1,L-3); ocultos=[i1,R.int(i1+2,L-1)];} else if(modo==='general') ocultos=[L-1]; else ocultos=modo==='regla'?[L-1]:[L-2,L-1];
+  const serieH='<div class="serie">'+terms.map((v,i)=>'<span class="par">'+(ocultos.includes(i)?'<span class="hueco"></span>':'<span class="t">'+fmt(v)+'</span>')+'<span class="sep">'+(i<terms.length-1?',':'…')+'</span></span>').join(' ')+'</div>';
+  let pide, extra='', formula='', chk={f:'serie',gen,terms,ocultos,resp:ocultos.map(i=>terms[i]),mostrar:fmt(terms[ocultos[0]])};
+  if(general){const n10=gen.k==='geom'?8:10; const tn=terminosSerie(gen,n10)[n10-1];
+    if(gen.k==='arit') formula='a<sub>n</sub> = '+poly([gen.d,gen.a0-gen.d],'n');
+    else if(gen.k==='geom') formula='a<sub>n</sub> = '+(gen.a0===1?'':fmt(gen.a0)+' · ')+par(gen.r)+'<sup>n − 1</sup>';
+    else formula='a<sub>n</sub> = '+poly([gen.a,gen.b,gen.c],'n');
+    pide='Completa el término que falta, escribe el término general a<sub>n</sub> y calcula a<sub>'+n10+'</sub>.'; extra='<p class="eq">a<sub>n</sub> = '+rl(7)+' a<sub>'+n10+'</sub> = '+rl(4)+'</p>';
+    chk.n=n10; chk.tn=tn;
+    return {html:'<p class="enun">'+pide+'</p>'+serieH+extra,clave:'Faltaba <b>'+fmt(terms[L-1])+'</b>; '+reglaSerie(gen)+'. '+formula+'; a<sub>'+n10+'</sub> = <b>'+fmt(tn)+'</b>',chk,uid:'sg'+JSON.stringify(gen)};}
+  pide=modo==='sigue'?'¿Qué números siguen? Escribe la regla.':modo==='huecos'?'Completa los números que faltan.':'Encuentra la regla y escribe el número que sigue.';
+  return {html:'<p class="enun">'+pide+'</p>'+serieH+(modo!=='huecos'||g>=3?'<p class="eq">Regla: '+rl(10)+'</p>':''),clave:'Faltan: <b>'+ocultos.map(i=>fmt(terms[i])).join(', ')+'</b>. Regla: '+reglaSerie(gen)+'.',chk,uid:'sn'+JSON.stringify(gen)+modo};}
+
+function genPatron(c){const {R,d,g}=c; const motivos=d===0?['AB','AAB','ABC']:d===1?['ABB','ABC','AAB','AABB']:['AABB','ABCD','ABCB','ABC'];
+  const mot=R.pick(motivos); const letras=[...new Set(mot.split(''))]; const formas=R.sample(Object.keys(FORMAS),letras.length), rell=R.sample(Object.keys(RELLENOS),letras.length);
+  const el={}; letras.forEach((L,i)=>el[L]=formas[i]+'-'+rell[i]); const motivo=mot.split('').map(L=>el[L]);
+  const total=Math.min(9,Math.max(motivo.length*2+1,8)); const seq=[]; for(let i=0;i<total;i++) seq.push(motivo[i%motivo.length]);
+  let ocultos=d===2?[R.int(motivo.length,total-3),total-1]:[total-1]; if(d===1&&g>=1) ocultos=[total-2,total-1];
+  ocultos=[...new Set(ocultos)].sort((a,b)=>a-b);
+  const s=36; let gfx='';
+  seq.forEach((id,i)=>{const cx=s/2+i*s+2, cy=s/2+2; if(ocultos.includes(i)){gfx+='<rect x="'+(cx-15)+'" y="'+(cy-15)+'" width="30" height="30" rx="3" class="f-hueco"/>'+txt(cx,cy+1,'?');} else {const [f,r]=id.split('-'); gfx+=formaSVG(f,cx,cy,14,RELLENOS[r][0]);}});
+  const nombre=id=>{const [f,r]=id.split('-'); return FORMAS[f]+' '+RELLENOS[r][1];};
+  return {html:'<p class="enun">Mira el patrón. ¿Qué figura va en '+(ocultos.length>1?'cada recuadro marcado con «?»':'el recuadro marcado con «?»')+'? Dibújala'+(g>=1?' y escribe su nombre':'')+'.</p>'+svgW(total*s+4,s+4,gfx,'patrón de figuras'),
+    clave:'Se repite: '+motivo.map(nombre).join(', ')+'. Va'+(ocultos.length>1?'n':'')+': <b>'+ocultos.map(i=>nombre(seq[i])).join('; ')+'</b>.',
+    chk:{f:'patron',motivo,seq:seq.map((x,i)=>ocultos.includes(i)?null:x),ocultos,resp:ocultos.map(i=>seq[i]),mostrar:nombre(seq[ocultos[0]])},uid:'pt'+motivo.join()+ocultos.join()};}
+
+const CREC={lineal:(n,a,b)=>a*n+b, cuadrado:n=>n*n, rect:n=>n*(n+1), triang:n=>n*(n+1)/2};
+function figuraCrec(forma,n,a,b,s){ // devuelve {w,h,svg} con cuadritos
+  const cells=[], extra=[];
+  if(forma==='lineal'){for(let j=0;j<b;j++) extra.push([0,j]); const off=b>0?1:0; for(let r=0;r<a;r++) for(let q=0;q<n;q++) cells.push([q+off,r]);}
+  else if(forma==='cuadrado'){for(let r=0;r<n;r++) for(let q=0;q<n;q++) cells.push([q,r]);}
+  else if(forma==='rect'){for(let r=0;r<n;r++) for(let q=0;q<n+1;q++) cells.push([q,r]);}
+  else {for(let r=0;r<n;r++) for(let q=0;q<=r;q++) cells.push([q,r]);}
+  const all=cells.concat(extra), W=Math.max(...all.map(p=>p[0]))+1, H=Math.max(...all.map(p=>p[1]))+1;
+  let svg=''; const y0=r=>(H-1-r)*s;
+  cells.forEach(p=>svg+='<rect x="'+p[0]*s+'" y="'+y0(p[1])+'" width="'+s+'" height="'+s+'" class="f-lleno" style="stroke:#fff;stroke-width:1.5"/>');
+  extra.forEach(p=>svg+='<rect x="'+p[0]*s+'" y="'+y0(p[1])+'" width="'+s+'" height="'+s+'" class="f-raya"/>');
+  return {w:W*s,h:H*s,svg,count:all.length};}
+function genCreciente(c){const {R,g,d}=c; const formas=g<=4?['lineal']:g<=6?['lineal','cuadrado','rect']:['lineal','cuadrado','rect','triang'];
+  const forma=R.pick(formas); const a=forma==='lineal'?R.int(1,d===0?2:3):0, b=forma==='lineal'?R.int(0,d===0?1:3):0; const f=n=>CREC[forma](n,a,b);
+  const s=13; let x=0, gfx='', H=0; const figs=[1,2,3].map(n=>figuraCrec(forma,n,a,b,s)); H=Math.max(...figs.map(q=>q.h));
+  figs.forEach((q,i)=>{gfx+='<g transform="translate('+x+','+(H-q.h)+')">'+q.svg+'</g>'+txt(x+q.w/2,H+14,'Figura '+(i+1),'t-chico'); x+=q.w+24;});
+  const ns=[1,2,3,4,5,10], vals={}; ns.forEach(n=>vals[n]=f(n));
+  const tabla='<div class="tabla-marco"><table class="tabla"><tr><th>Figura</th>'+ns.map(n=>'<th>'+n+'</th>').join('')+'</tr><tr><th>Cuadritos</th>'+ns.map(n=>n<=3?'<td>'+vals[n]+'</td>':'<td></td>').join('')+'</tr></table></div>';
+  const formTxt=forma==='lineal'?poly([a,b],'n'):forma==='cuadrado'?'n<sup>2</sup>':forma==='rect'?'n(n + 1)':'n(n + 1) ÷ 2';
+  const pideF=g>=7;
+  return {html:'<p class="enun">Observa cómo crece el patrón. Completa la tabla'+(pideF?' y escribe una fórmula para la figura n':'')+'.</p>'+svgW(x-24+2,H+24,gfx,'patrón que crece')+tabla+(pideF?'<p class="eq">Figura n: '+rl(7)+'</p>':''),
+    clave:'Figura 4: <b>'+vals[4]+'</b>, figura 5: <b>'+vals[5]+'</b>, figura 10: <b>'+vals[10]+'</b>. Fórmula: '+formTxt+(forma==='lineal'?' (cada figura agrega '+a+')':''),
+    chk:{f:'crec',forma,a,b,vals,conteos:figs.map(q=>q.count),mostrar:String(vals[10])},uid:'cr'+forma+a+b};}
+const SER_GRADO={0:['figuras','figuras','contar1'],1:['figuras','arit','desc'],2:['figuras','arit','desc','creciente'],3:['arit','desc','alt','geom','creciente'],4:['arit','alt','geom','dosreg','creciente'],5:['geom','alt','dosreg','cuad','creciente'],6:['cuad','tri','fib','dosreg','creciente'],7:['creciente','aritgen','cuad','fib','tri'],8:['creciente','aritgen','geomgen','fib','cuad'],9:['cuadseq','geomgen','creciente','fib','aritgen'],10:['cuadseq','geomgen','aritgen','fib'],11:['cuadseq','geomgen','aritgen','fib']};
+const TIPO_SERIES={nombre:'Series y patrones',param:'sub',subs:g=>[...new Set(SER_GRADO[g])],
+  nombres:{figuras:'Patrones de figuras',contar1:'Contar de 1 en 1',arit:'Sumar siempre lo mismo',desc:'Series que bajan',alt:'Dos reglas alternadas',geom:'Multiplicar',dosreg:'Suma y multiplica',cuad:'Números cuadrados',tri:'Números triangulares',fib:'Suma de los dos anteriores',creciente:'Patrones que crecen',aritgen:'Término general (aritmética)',geomgen:'Término general (geométrica)',cuadseq:'Segundas diferencias'},
+  instr:c=>c.g<=1?'Mira con atención qué se repite. Dibuja o escribe lo que sigue.':'Descubre la regla de cada serie antes de completar. Compruébala con todos los números.',
+  puente:c=>c.N+' descubrió que en '+c.T.lugar+' muchas cosas siguen un patrón. ¿Lo descubres tú también?',
+  gen:(c,sub)=>sub==='figuras'?genPatron(c):sub==='creciente'?genCreciente(c):genSerieNum(c,sub)};
+
+// =====================================================================
+// 4. GEOMETRÍA VISUAL (todo a escala y verificado)
+// =====================================================================
+function polyomino(R,area,W,H){
+  for(let t=0;t<200;t++){const set=new Set(); const k=(x,y)=>x+','+y; let sx=R.int(1,W-2), sy=R.int(1,H-2); set.add(k(sx,sy)); const cells=[[sx,sy]];
+    let guard=0; while(cells.length<area&&guard<2000){guard++; const p=R.pick(cells), dir=R.pick([[1,0],[-1,0],[0,1],[0,-1]]), nx=p[0]+dir[0], ny=p[1]+dir[1]; if(nx<0||ny<0||nx>=W||ny>=H||set.has(k(nx,ny))) continue; set.add(k(nx,ny)); cells.push([nx,ny]);}
+    if(cells.length<area) continue;
+    // sin huecos: inundación desde el borde exterior
+    const vis=new Set(); const st=[[-1,-1]]; vis.add(k(-1,-1));
+    while(st.length){const p=st.pop(); for(const dd of [[1,0],[-1,0],[0,1],[0,-1]]){const nx=p[0]+dd[0], ny=p[1]+dd[1]; if(nx<-1||ny<-1||nx>W||ny>H) continue; const kk=k(nx,ny); if(vis.has(kk)||set.has(kk)) continue; vis.add(kk); st.push([nx,ny]);}}
+    if((W+2)*(H+2)-vis.size-set.size===0) return cells;
+  } return [[0,0],[1,0],[0,1],[1,1]].slice(0,Math.max(1,Math.min(4,area)));
+}
+function perimetroCeldas(cells){const set=new Set(cells.map(p=>p+'')); let P=0; cells.forEach(p=>{[[1,0],[-1,0],[0,1],[0,-1]].forEach(d=>{if(!set.has([p[0]+d[0],p[1]+d[1]]+'')) P++;});}); return P;}
+function cuadricula(W,H,s,cells,cells2,eje){
+  let g=''; for(let x=0;x<=W;x++) g+='<line x1="'+x*s+'" y1="0" x2="'+x*s+'" y2="'+H*s+'" class="g-cuad"/>'; for(let y=0;y<=H;y++) g+='<line x1="0" y1="'+y*s+'" x2="'+W*s+'" y2="'+y*s+'" class="g-cuad"/>';
+  const dib=(cs,cls)=>{const set=new Set(cs.map(p=>p+'')); cs.forEach(p=>{g+='<rect x="'+p[0]*s+'" y="'+p[1]*s+'" width="'+s+'" height="'+s+'" class="'+cls+'"/>';});
+    cs.forEach(p=>{const x=p[0]*s,y=p[1]*s; if(!set.has([p[0],p[1]-1]+'')) g+='<line x1="'+x+'" y1="'+y+'" x2="'+(x+s)+'" y2="'+y+'" class="g-borde"/>'; if(!set.has([p[0],p[1]+1]+'')) g+='<line x1="'+x+'" y1="'+(y+s)+'" x2="'+(x+s)+'" y2="'+(y+s)+'" class="g-borde"/>'; if(!set.has([p[0]-1,p[1]]+'')) g+='<line x1="'+x+'" y1="'+y+'" x2="'+x+'" y2="'+(y+s)+'" class="g-borde"/>'; if(!set.has([p[0]+1,p[1]]+'')) g+='<line x1="'+(x+s)+'" y1="'+y+'" x2="'+(x+s)+'" y2="'+(y+s)+'" class="g-borde"/>';});};
+  dib(cells,'g-celda'); if(cells2) dib(cells2,'g-celda2');
+  if(eje!=null) g+='<line x1="'+eje*s+'" y1="-8" x2="'+eje*s+'" y2="'+(H*s+8)+'" class="g-guia" style="stroke-width:2.2"/>';
+  return svgW(W*s+2,H*s+2+(eje!=null?16:0),'<g transform="translate(1,'+(eje!=null?9:1)+')">'+g+'</g>','figura en cuadrícula');}
+const POLIS=[['triángulo',3],['cuadrado',4],['rectángulo',4],['pentágono',5],['hexágono',6],['octágono',8]];
+function dibPoligono(nombre,lados){let P=[]; const cx=70,cy=62,r=52;
+  if(nombre==='rectángulo') P=[[15,30],[125,30],[125,95],[15,95]];
+  else if(nombre==='cuadrado') P=[[30,22],[110,22],[110,102],[30,102]];
+  else for(let i=0;i<lados;i++){const a=-Math.PI/2+i*2*Math.PI/lados+(lados===8?Math.PI/8:0); P.push([cx+r*Math.cos(a),cy+r*Math.sin(a)+(lados===3?8:0)]);}
+  return svgW(140,124,poligono(P),'polígono');}
+const GEO={};
+GEO.lados=c=>{const {R,g}=c;
+  if(g<=1&&R.bool(0.4)){const n=R.int(6,9); const formas=[]; for(let i=0;i<n;i++) formas.push(R.pick(['circulo','triangulo','cuadrado'])); const obj=R.pick(['circulo','triangulo','cuadrado']); if(!formas.includes(obj)) formas[R.int(0,n-1)]=obj; const k=formas.filter(f=>f===obj).length;
+    let gx=''; formas.forEach((f,i)=>{gx+=formaSVG(f,20+(i%5)*38,20+Math.floor(i/5)*40,15,'f-vacio');});
+    return {html:'<p class="enun">¿Cuántos '+FORMAS[obj]+'s hay?</p>'+svgW(Math.min(n,5)*38+4,Math.ceil(n/5)*40+2,gx,'figuras mezcladas')+'<p class="eq">Hay '+rl(2)+'</p>',clave:'Hay <b>'+k+'</b> '+FORMAS[obj]+(k===1?'':'s')+'.',chk:{f:'contarFormas',formas,obj,k,mostrar:String(k)},uid:'gc'+formas.join()+obj};}
+  const P=R.pick(g===0?POLIS.slice(0,4):POLIS); const nombre=P[0], n=P[1];
+  return {html:'<p class="enun">'+(g===0?'¿Cuántos lados tiene esta figura? ¿Cómo se llama?':'¿Cuántos lados y cuántos vértices tiene? ¿Cómo se llama?')+'</p>'+dibPoligono(nombre,n)+'<p class="eq">Lados: '+rl(2)+(g===0?'':' Vértices: '+rl(2))+' Nombre: '+rl(6)+'</p>',
+    clave:'<b>'+cap(nombre)+'</b>: <b>'+n+' lados</b>'+(g===0?'':' y <b>'+n+' vértices</b>')+'.',chk:{f:'lados',nombre,n,mostrar:n+' lados'},uid:'gl'+nombre+R.int(0,3)};};
+GEO.simetria=c=>{const {R,g,d}=c;
+  if(g>=3&&R.bool(0.4)){const F=R.pick([['triángulo equilátero',3],['cuadrado',4],['rectángulo',2],['pentágono regular',5],['hexágono regular',6],['triángulo isósceles',1]]);
+    let fig; if(F[0]==='rectángulo') fig=dibPoligono('rectángulo',4); else if(F[0]==='cuadrado') fig=dibPoligono('cuadrado',4); else if(F[0]==='triángulo isósceles') fig=svgW(140,124,poligono([[70,10],[110,114],[30,114]]),'triángulo isósceles'); else fig=dibPoligono(F[0],F[0].startsWith('triángulo')?3:F[0].startsWith('pentágono')?5:6);
+    return {html:'<p class="enun">¿Cuántos ejes de simetría tiene este '+F[0]+'? Trázalos con regla.</p>'+fig+'<p class="eq">Ejes: '+rl(2)+'</p>',clave:'El '+F[0]+' tiene <b>'+F[1]+' eje'+(F[1]>1?'s':'')+'</b> de simetría.',chk:{f:'ejes',figura:F[0],n:F[1],mostrar:F[1]+' eje'},uid:'ge'+F[0]};}
+  const area=d===0?R.int(4,6):d===1?R.int(6,9):R.int(8,12); const half=polyomino(R,area,4,6);
+  if(!half.some(p=>p[0]===3)){const maxX=Math.max(...half.map(p=>p[0])); half.forEach(p=>p[0]+=3-maxX);}
+  const espejo=half.map(p=>[7-p[0],p[1]]);
+  return {html:'<p class="enun">Completa la figura para que sea simétrica respecto a la línea punteada (eje).</p>'+cuadricula(8,6,24,half,null,4),
+    clave:'La mitad que se dibuja tiene <b>'+half.length+' cuadritos</b>, reflejados como en un espejo:'+cuadricula(8,6,14,half,espejo,4),chk:{f:'sim',mitad:half,espejo,mostrar:half.length+' cuadritos'},uid:'gs'+JSON.stringify(half)};};
+GEO.perimetro=c=>{const {R,g,d,T}=c;
+  if(R.bool(0.5)){const cells=polyomino(R,d===0?R.int(4,7):d===1?R.int(6,10):R.int(9,14),8,6); const P=perimetroCeldas(cells);
+    return {html:'<p class="enun">Cada cuadrito mide 1 cm de lado. ¿Cuál es el perímetro de la figura?</p>'+cuadricula(8,6,24,cells),clave:'Contando los lados del borde: perímetro = <b>'+P+' cm</b>',chk:{f:'poli',cells,area:cells.length,per:P,pide:'per',mostrar:P+' cm'},uid:'gp'+JSON.stringify(cells)};}
+  const forma=g<=3?R.pick(['rect','cuadrado']):R.pick(['rect','cuadrado','triangulo','L']); const u='m';
+  if(forma==='triangulo'){let a,b,cc; do{a=R.int(3,15);b=R.int(3,15);cc=R.int(3,15);}while(a+b<=cc+2||a+cc<=b+2||b+cc<=a+2); const x=(b*b+cc*cc-a*a)/(2*cc), y=Math.sqrt(b*b-x*x);
+    const A=ajustar([[0,0],[cc,0],[x,y]],280,170,30); const Pp=[[0,0],[cc,0],[x,y]].map(A.map), ce=centroide(Pp); const P=a+b+cc;
+    return {html:'<p class="enun">Este es el plano de una parte de '+T.espacio+'. ¿Cuál es su perímetro?</p>'+svgW(A.W,A.H,poligono(Pp)+etiquetaLado(Pp[0],Pp[1],ce,cc+' '+u)+etiquetaLado(Pp[1],Pp[2],ce,a+' '+u)+etiquetaLado(Pp[2],Pp[0],ce,b+' '+u),'triángulo con lados medidos')+'<p class="eq">Perímetro: '+rl(4)+'</p>',
+      clave:a+' + '+b+' + '+cc+' = <b>'+P+' m</b>',chk:ex('a+b+c',{a,b,c:cc},P,P+' m'),uid:'gpt'+a+b+cc};}
+  if(forma==='L') return GEO.area(c,'L','per');
+  const w=R.int(3,g<=3?12:25), h=forma==='cuadrado'?w:R.int(2,w-1); const P=2*(w+h);
+  const A=ajustar([[0,0],[w,0],[w,h],[0,h]],280,170,30); const Pp=[[0,0],[w,0],[w,h],[0,h]].map(A.map), ce=centroide(Pp);
+  return {html:'<p class="enun">'+cap(T.espacio)+' tiene forma de '+(forma==='cuadrado'?'cuadrado':'rectángulo')+'. ¿Cuál es su perímetro?</p>'+svgW(A.W,A.H,poligono(Pp)+etiquetaLado(Pp[0],Pp[1],ce,w+' m')+etiquetaLado(Pp[1],Pp[2],ce,h+' m'),'rectángulo con medidas')+'<p class="eq">Perímetro: '+rl(4)+'</p>',
+    clave:w+' + '+h+' + '+w+' + '+h+' = <b>'+P+' m</b>',chk:ex('2*(w+h)',{w,h},P,P+' m'),uid:'gpr'+w+'x'+h};};
+GEO.area=(c,forzar,pide)=>{const {R,g,d,T}=c; const forma=forzar||R.pick(g<=4?['cuad','rect']:g<=5?['cuad','rect','L']:['rect','L','tri','cuad']);
+  if(forma==='cuad'){const cells=polyomino(R,d===0?R.int(5,9):d===1?R.int(8,14):R.int(12,18),8,6); const P=perimetroCeldas(cells); const conP=g>=5;
+    return {html:'<p class="enun">Cada cuadrito mide 1 cm². ¿Cuál es el área de la figura?'+(conP?' ¿Y su perímetro?':'')+'</p>'+cuadricula(8,6,24,cells)+'<p class="eq">Área: '+rl(3)+(conP?' Perímetro: '+rl(3):'')+'</p>',
+      clave:'Área = <b>'+cells.length+' cm²</b>'+(conP?'; perímetro = <b>'+P+' cm</b>':''),chk:{f:'poli',cells,area:cells.length,per:P,pide:conP?'ambos':'area',mostrar:cells.length+' cm²'},uid:'ga'+JSON.stringify(cells)};}
+  if(forma==='rect'){const w=R.int(3,d===2?30:15), h=R.int(2,w); const A=w*h, P=2*(w+h);
+    const B=ajustar([[0,0],[w,0],[w,h],[0,h]],280,170,30); const Pp=[[0,0],[w,0],[w,h],[0,h]].map(B.map), ce=centroide(Pp);
+    return {html:'<p class="enun">'+cap(T.espacio)+' mide '+w+' m de largo y '+h+' m de ancho. ¿Cuál es su área y su perímetro?</p>'+svgW(B.W,B.H,poligono(Pp)+etiquetaLado(Pp[0],Pp[1],ce,w+' m')+etiquetaLado(Pp[1],Pp[2],ce,h+' m'),'rectángulo')+'<p class="eq">Área: '+rl(4)+' Perímetro: '+rl(4)+'</p>',
+      clave:'Área = '+w+' × '+h+' = <b>'+A+' m²</b>; perímetro = 2 × ('+w+' + '+h+') = <b>'+P+' m</b>',chk:[ex('w*h',{w,h},A,A+' m²'),ex('2*(w+h)',{w,h},P,P+' m')],uid:'gar'+w+'x'+h};}
+  if(forma==='tri'){let b=R.int(4,20), h=R.int(3,16); if(b*h%2) b++; const A=b*h/2; const x=R.int(1,b-1);
+    const B=ajustar([[0,0],[b,0],[x,h]],280,170,30); const Pp=[[0,0],[b,0],[x,h]].map(B.map), ce=centroide(Pp), F=B.map([x,0]);
+    const g2=poligono(Pp)+'<line x1="'+r1(Pp[2][0])+'" y1="'+r1(Pp[2][1])+'" x2="'+r1(F[0])+'" y2="'+r1(F[1])+'" class="g-guia"/>'+'<path d="M'+r1(F[0]+9)+' '+r1(F[1])+'V'+r1(F[1]-9)+'H'+r1(F[0])+'" class="g-fina"/>'+etiquetaLado(Pp[0],Pp[1],ce,'base '+b+' m')+txt(F[0]+(x<b/2?24:-24),(F[1]+Pp[2][1])/2,h+' m');
+    return {html:'<p class="enun">¿Cuál es el área del triángulo? (la línea punteada es la altura)</p>'+svgW(B.W,B.H,g2,'triángulo con base y altura')+'<p class="eq">Área: '+rl(4)+'</p>',clave:'Área = base × altura ÷ 2 = '+b+' × '+h+' ÷ 2 = <b>'+fmt(A)+' m²</b>',chk:ex('b*h/2',{b,h},A,fmt(A)+' m²'),uid:'gat'+b+'x'+h};}
+  let W=R.int(5,d===2?20:12), H=R.int(4,d===2?16:10), w=R.int(1,W-2), h=R.int(1,H-2);
+  const pts=[[0,0],[W,0],[W,H-h],[W-w,H-h],[W-w,H],[0,H]]; const B=ajustar(pts,290,190,32); const Pp=pts.map(B.map), ce=[B.map([(W-w)/2,H/2])[0],B.map([(W-w)/2,H/2])[1]];
+  let g2=poligono(Pp); const labs=[W,H-h,w,h,W-w,H]; for(let i=0;i<6;i++) g2+=etiquetaLado(Pp[i],Pp[(i+1)%6],ce,labs[i]+' m',i===2||i===3?12:15);
+  const A=W*H-w*h, P=2*(W+H);
+  const preguntaP=pide==='per';
+  return {html:'<p class="enun">Este es el plano de '+T.espacio+'. ¿Cuál es su '+(preguntaP?'perímetro':'área')+'?</p>'+svgW(B.W,B.H,g2,'figura en forma de L')+'<p class="eq">'+(preguntaP?'Perímetro':'Área')+': '+rl(4)+'</p>',
+    clave:preguntaP?'Sumo los seis lados: '+labs.join(' + ')+' = <b>'+P+' m</b>':'Rectángulo grande menos el recorte: '+W+' × '+H+' − '+w+' × '+h+' = '+(W*H)+' − '+(w*h)+' = <b>'+A+' m²</b>',
+    chk:preguntaP?ex('2*(W+H)',{W,H},P,P+' m'):ex('W*H-w*h',{W,H,w,h},A,A+' m²'),uid:'gL'+W+H+w+h+pide};};
+function claseAngulo(m){return m<90?'agudo':m===90?'recto':m<180?'obtuso':'llano';}
+GEO.angulos=c=>{const {R,g,d}=c;
+  if(g>=6&&R.bool(0.45)){const supl=R.bool(); const a=supl?R.int(4,32)*5:R.int(2,16)*5; const x=(supl?180:90)-a;
+    const O=[150,120], L=110; let gx=''; const ray=ang=>[O[0]+L*Math.cos(ang*Math.PI/180),O[1]-L*Math.sin(ang*Math.PI/180)];
+    if(supl){gx+='<line x1="'+(O[0]-L)+'" y1="'+O[1]+'" x2="'+(O[0]+L)+'" y2="'+O[1]+'" class="g-linea"/>';} else {const v=ray(90); gx+='<line x1="'+O[0]+'" y1="'+O[1]+'" x2="'+(O[0]+L)+'" y2="'+O[1]+'" class="g-linea"/><line x1="'+O[0]+'" y1="'+O[1]+'" x2="'+r1(v[0])+'" y2="'+r1(v[1])+'" class="g-linea"/><path d="M'+(O[0]+12)+' '+O[1]+'V'+(O[1]-12)+'H'+O[0]+'" class="g-fina"/>';}
+    const q=ray(a); gx+='<line x1="'+O[0]+'" y1="'+O[1]+'" x2="'+r1(q[0])+'" y2="'+r1(q[1])+'" class="g-linea"/>';
+    const lab=(ang,s)=>txt(O[0]+58*Math.cos(ang*Math.PI/180),O[1]-58*Math.sin(ang*Math.PI/180),s);
+    gx+=lab(a/2,a+'°')+lab(a+x/2,'x');
+    return {html:'<p class="enun">Los dos ángulos juntos forman un ángulo '+(supl?'llano (180°)':'recto (90°)')+'. ¿Cuánto mide x?</p>'+svgW(300,140,gx,'ángulos adyacentes')+'<p class="eq">x = '+rl(3)+'</p>',clave:'x = '+(supl?180:90)+'° − '+a+'° = <b>'+x+'°</b> ('+(supl?'suplementarios':'complementarios')+')',chk:ex(supl?'180-a':'90-a',{a},x,x+'°'),uid:'gs'+supl+a};}
+  const m=d===0?R.pick([30,45,60,90,120,135,150,180]):R.pick([R.int(2,17)*5,90,R.int(19,35)*5,180,R.int(2,35)*5]);
+  const O=[150,120], L=110, rad=m*Math.PI/180, q=[O[0]+L*Math.cos(rad),O[1]-L*Math.sin(rad)]; const mostrarM=d<2;
+  let gx='<line x1="'+O[0]+'" y1="'+O[1]+'" x2="'+(O[0]+L)+'" y2="'+O[1]+'" class="g-linea"/><line x1="'+O[0]+'" y1="'+O[1]+'" x2="'+r1(q[0])+'" y2="'+r1(q[1])+'" class="g-linea"/><circle cx="'+O[0]+'" cy="'+O[1]+'" r="3" class="g-punto"/>';
+  if(m===90) gx+='<path d="M'+(O[0]+14)+' '+O[1]+'V'+(O[1]-14)+'H'+O[0]+'" class="g-fina"/>'; else {const rr=26; gx+='<path d="M'+(O[0]+rr)+' '+O[1]+' A'+rr+' '+rr+' 0 0 0 '+r1(O[0]+rr*Math.cos(rad))+' '+r1(O[1]-rr*Math.sin(rad))+'" class="g-linea"/>';}
+  if(mostrarM) gx+=txt(O[0]+48*Math.cos(rad/2),O[1]-48*Math.sin(rad/2),m+'°');
+  return {html:'<p class="enun">'+(mostrarM?'Clasifica el ángulo: ¿agudo, recto, obtuso o llano?':'Mide el ángulo con tu transportador y clasifícalo.')+'</p>'+svgW(300,140,gx,'ángulo')+'<p class="eq">'+(mostrarM?'':'Mide: '+rl(3)+' ')+'Es '+rl(5)+'</p>',
+    clave:'Mide '+m+'°: es un ángulo <b>'+claseAngulo(m)+'</b>.',chk:{f:'angulo',m,clase:claseAngulo(m),mostrar:claseAngulo(m)},uid:'ga'+m};};
+function claseTriAng(A){const mx=Math.max(...A); return mx<90?'acutángulo':mx===90?'rectángulo':'obtusángulo';}
+function claseTriLados(L){const s=new Set(L).size; return s===1?'equilátero':s===2?'isósceles':'escaleno';}
+GEO.triangulos=c=>{const {R}=c;
+  if(R.bool(0.55)){let A,B; do{A=R.int(3,26)*5;B=R.int(3,26)*5;}while(A+B>=170); const C=180-A-B;
+    const ta=Math.tan(A*Math.PI/180), tb=Math.tan(B*Math.PI/180); const xa=tb/(ta+tb), ya=ta*xa; const pts=[[0,0],[1,0],[xa,ya]];
+    const S=ajustar(pts,280,170,30); const Pp=pts.map(S.map), ce=centroide(Pp); const lab=(p,s)=>{const vx=ce[0]-p[0], vy=ce[1]-p[1], L=Math.hypot(vx,vy)||1; return txt(p[0]+vx/L*26,p[1]+vy/L*26,s,'t-et');};
+    return {html:'<p class="enun">Halla el ángulo que falta y clasifica el triángulo según sus ángulos.</p>'+svgW(S.W,S.H,poligono(Pp)+lab(Pp[0],A+'°')+lab(Pp[1],B+'°')+lab(Pp[2],'?'),'triángulo con dos ángulos')+'<p class="eq">? = '+rl(3)+' Es '+rl(6)+'</p>',
+      clave:'180° − '+A+'° − '+B+'° = <b>'+C+'°</b>; es <b>'+claseTriAng([A,B,C])+'</b>.',chk:[ex('180-a-b',{a:A,b:B},C,C+'°'),{f:'triAng',angulos:[A,B,C],clase:claseTriAng([A,B,C]),mostrar:claseTriAng([A,B,C])}],uid:'gta'+A+B};}
+  const tipo=R.pick(['equilátero','isósceles','escaleno']); let a,b,cc;
+  if(tipo==='equilátero'){a=b=cc=R.int(4,12);} else if(tipo==='isósceles'){a=b=R.int(5,12); do{cc=R.int(3,2*a-2);}while(cc===a);} else {do{a=R.int(4,14);b=R.int(4,14);cc=R.int(4,14);}while(new Set([a,b,cc]).size<3||a+b<=cc+1||a+cc<=b+1||b+cc<=a+1);}
+  const x=(b*b+cc*cc-a*a)/(2*cc), y=Math.sqrt(b*b-x*x); const S=ajustar([[0,0],[cc,0],[x,y]],280,170,30); const Pp=[[0,0],[cc,0],[x,y]].map(S.map), ce=centroide(Pp);
+  return {html:'<p class="enun">Clasifica el triángulo según la medida de sus lados.</p>'+svgW(S.W,S.H,poligono(Pp)+etiquetaLado(Pp[0],Pp[1],ce,cc+' cm')+etiquetaLado(Pp[1],Pp[2],ce,a+' cm')+etiquetaLado(Pp[2],Pp[0],ce,b+' cm'),'triángulo con lados medidos')+'<p class="eq">Es '+rl(6)+'</p>',
+    clave:'Lados '+cc+', '+a+' y '+b+' cm: es <b>'+claseTriLados([a,b,cc])+'</b>.',chk:{f:'triLados',lados:[a,b,cc],clase:claseTriLados([a,b,cc]),mostrar:claseTriLados([a,b,cc])},uid:'gtl'+a+b+cc};};
+function plano(x0,x1,y0,y1,s,puntos,poli){
+  const W=(x1-x0)*s, H=(y1-y0)*s, m=20; const X=x=>m+(x-x0)*s, Y=y=>m+(y1-y)*s; let g='';
+  for(let x=x0;x<=x1;x++) g+='<line x1="'+X(x)+'" y1="'+Y(y0)+'" x2="'+X(x)+'" y2="'+Y(y1)+'" class="g-cuad"/>';
+  for(let y=y0;y<=y1;y++) g+='<line x1="'+X(x0)+'" y1="'+Y(y)+'" x2="'+X(x1)+'" y2="'+Y(y)+'" class="g-cuad"/>';
+  g+='<line x1="'+X(x0)+'" y1="'+Y(0)+'" x2="'+(X(x1)+8)+'" y2="'+Y(0)+'" class="g-eje"/><line x1="'+X(0)+'" y1="'+(Y(y0))+'" x2="'+X(0)+'" y2="'+(Y(y1)-8)+'" class="g-eje"/>';
+  g+=txt(X(x1)+12,Y(0),'x','t-chico')+txt(X(0),Y(y1)-14,'y','t-chico');
+  for(let x=x0;x<=x1;x++) if(x!==0) g+=txt(X(x),Y(0)+10,fmt(x),'t-chico'); for(let y=y0;y<=y1;y++) if(y!==0) g+=txt(X(0)-9,Y(y),fmt(y),'t-chico'); g+=txt(X(0)-7,Y(0)+9,'0','t-chico');
+  if(poli) g+=poligono(poli.map(p=>[X(p[0]),Y(p[1])]),'g-fig2');
+  (puntos||[]).forEach(p=>{g+='<circle cx="'+X(p[0])+'" cy="'+Y(p[1])+'" r="4" class="g-punto"/>'+txt(X(p[0])+9,Y(p[1])-9,p[2],'t-et');});
+  return svgW(W+2*m+10,H+2*m,g,'plano cartesiano');}
+const coord=p=>'('+fmt(p[0])+', '+fmt(p[1])+')';
+function cuadrante(p){return p[0]>0?(p[1]>0?'I':'IV'):(p[1]>0?'II':'III');}
+GEO.plano=c=>{const {R,g}=c; const cuatro=g>=7; const r=cuatro?[-5,5,-5,5]:[0,8,0,6]; const s=cuatro?24:30;
+  if(g>=6&&R.bool(0.4)){let xa,ya,w,h; do{xa=R.int(r[0],r[1]-2);ya=R.int(r[2],r[3]-2);w=R.int(2,r[1]-xa);h=R.int(2,r[3]-ya);}while(xa+w>r[1]||ya+h>r[3]);
+    const V=[[xa,ya,'A'],[xa+w,ya,'B'],[xa+w,ya+h,'C'],[xa,ya+h,'D']];
+    return {html:'<p class="enun">Ubica los puntos A'+coord(V[0])+', B'+coord(V[1])+', C'+coord(V[2])+' y D'+coord(V[3])+', únelos en orden y halla el perímetro y el área del rectángulo (cada cuadro mide 1 unidad).</p>'+plano(r[0],r[1],r[2],r[3],s,[])+'<p class="eq">Perímetro: '+rl(3)+' Área: '+rl(3)+'</p>',
+      clave:V.map(v=>v[2]+' = '+coord(v)).join(', ')+'. Lados de '+w+' y '+h+' unidades. Perímetro = <b>'+(2*(w+h))+' u</b>; área = <b>'+(w*h)+' u²</b>'+plano(r[0],r[1],r[2],r[3],12,V,V),chk:[ex('2*(w+h)',{w,h},2*(w+h),(2*(w+h))+' u'),ex('w*h',{w,h},w*h,(w*h)+' u²'),{f:'rectPlano',V,w,h,mostrar:coord(V[2])}],uid:'gpr'+xa+ya+w+h};}
+  const n=R.int(3,4), pts=[], usados=new Set(); while(pts.length<n){const p=[R.int(r[0],r[1]),R.int(r[2],r[3])]; if(cuatro&&(p[0]===0||p[1]===0)) continue; if(!cuatro&&(p[0]===0&&p[1]===0)) continue; if(usados.has(p+'')) continue; usados.add(p+''); pts.push(p.concat(['ABCD'[pts.length]]));}
+  return {html:'<p class="enun">Escribe las coordenadas de cada punto'+(cuatro?' y el cuadrante donde está':'')+'.</p>'+plano(r[0],r[1],r[2],r[3],s,pts)+'<p class="eq">'+pts.map(p=>p[2]+' = '+rl(3)).join(' ')+'</p>',
+    clave:pts.map(p=>p[2]+' = <b>'+coord(p)+'</b>'+(cuatro?' (cuadrante '+cuadrante(p)+')':'')).join('; '),chk:{f:'puntos',pts,cuatro,mostrar:coord(pts[0])},uid:'gpp'+JSON.stringify(pts)};};
+function prisma(l,w,h,cubos,et){const s=cubos?22:Math.min(26,150/Math.max(l,w,h)); const dx=s*0.55, dy=s*0.45; const ox=10, oy=10+w*dy; let g='';
+  const P=(x,y,z)=>[ox+x*s+z*dx, oy+(h-y)*s-z*dy];
+  const quad=(a,b,cc,d,cls)=>'<polygon points="'+[a,b,cc,d].map(p=>r1(p[0])+','+r1(p[1])).join(' ')+'" class="'+cls+'"/>';
+  g+=quad(P(0,0,0),P(l,0,0),P(l,h,0),P(0,h,0),'g-fig'); g+=quad(P(0,h,0),P(l,h,0),P(l,h,w),P(0,h,w),'g-fig2'); g+=quad(P(l,0,0),P(l,0,w),P(l,h,w),P(l,h,0),'g-celda');
+  if(cubos){const ln=(a,b)=>'<line x1="'+r1(a[0])+'" y1="'+r1(a[1])+'" x2="'+r1(b[0])+'" y2="'+r1(b[1])+'" class="g-fina"/>';
+    for(let i=1;i<l;i++){g+=ln(P(i,0,0),P(i,h,0))+ln(P(i,h,0),P(i,h,w));} for(let j=1;j<h;j++){g+=ln(P(0,j,0),P(l,j,0))+ln(P(l,j,0),P(l,j,w));} for(let k=1;k<w;k++){g+=ln(P(0,h,k),P(l,h,k))+ln(P(l,0,k),P(l,h,k));}}
+  if(et){const a=P(l/2,0,0), b=P(l,0,w/2), cc=P(0,h/2,0); g+=txt(a[0],a[1]+13,et[0])+txt(b[0]+22,b[1]+6,et[1])+txt(cc[0]-6,cc[1],et[2],'t-et','end');}
+  const W=ox+l*s+w*dx+(et?44:12), H=oy+h*s+(et?22:12); return svgW(W+(et?30:0),H,et?'<g transform="translate(30,0)">'+g+'</g>':g,'prisma');}
+GEO.volumen=c=>{const {R,g,d}=c;
+  if(g<=6||R.bool(0.4)){const l=R.int(2,d===0?3:d===1?4:5), w=R.int(2,d===0?2:d===1?3:4), h=R.int(1,d===0?2:3); const V=l*w*h;
+    return {html:'<p class="enun">El prisma está hecho de cubitos de 1 cm³. ¿Cuántos cubitos tiene? ¿Cuál es su volumen?</p>'+prisma(l,w,h,true)+'<p class="eq">Volumen: '+rl(4)+'</p>',clave:l+' × '+w+' × '+h+' = <b>'+V+' cm³</b> <span class="nota">(largo × ancho × alto, contando también los cubitos que no se ven)</span>',chk:ex('l*w*h',{l,w,h},V,V+' cm³'),uid:'gv'+l+w+h};}
+  const l=R.int(3,15), w=R.int(2,10), h=R.int(2,12), V=l*w*h, S=2*(l*w+l*h+w*h); const conS=d===2;
+  return {html:'<p class="enun">Calcula el volumen'+(conS?' y el área total de la superficie':'')+' de la caja.</p>'+prisma(l,w,h,false,[l+' cm',w+' cm',h+' cm'])+'<p class="eq">Volumen: '+rl(4)+(conS?' Área total: '+rl(4):'')+'</p>',
+    clave:'V = '+l+' × '+w+' × '+h+' = <b>'+V+' cm³</b>'+(conS?'; área = 2 × ('+(l*w)+' + '+(l*h)+' + '+(w*h)+') = <b>'+S+' cm²</b>':''),chk:conS?[ex('l*w*h',{l,w,h},V,V+' cm³'),ex('2*(l*w+l*h+w*h)',{l,w,h},S,S+' cm²')]:ex('l*w*h',{l,w,h},V,V+' cm³'),uid:'gvp'+l+w+h};};
+GEO.circulo=c=>{const {R,d}=c; const r=R.int(1,d===0?10:20), conD=R.bool(); const L=Math.round(314*2*r)/100, A=Math.round(314*r*r)/100;
+  let g='<circle cx="80" cy="80" r="62" class="g-fig"/><circle cx="80" cy="80" r="2.5" class="g-punto"/>';
+  g+=conD?'<line x1="18" y1="80" x2="142" y2="80" class="g-linea"/>'+txt(80,68,'d = '+(2*r)+' cm'):'<line x1="80" y1="80" x2="142" y2="80" class="g-linea"/>'+txt(111,68,'r = '+r+' cm');
+  return {html:'<p class="enun">Usa π ≈ 3,14. Calcula la longitud de la circunferencia y el área del círculo.</p>'+svgW(165,162,g,'círculo')+'<p class="eq">Longitud: '+rl(4)+' Área: '+rl(4)+'</p>',
+    clave:(conD?'r = '+(2*r)+' ÷ 2 = '+r+' cm. ':'')+'L = 2 × 3,14 × '+r+' = <b>'+dec2(L)+' cm</b>; A = 3,14 × '+r+'² = <b>'+dec2(A)+' cm²</b>',chk:[ex('2*3.14*r',{r},L,dec2(L)+' cm',{tol:1e-6}),ex('3.14*r*r',{r},A,dec2(A)+' cm²',{tol:1e-6})],uid:'gci'+r+conD};};
+GEO.pitagoras=c=>{const {R,d}=c; const t=R.pick(d===0?TRIPLES.slice(0,2).concat([[6,8,10]]):TRIPLES), k=R.int(1,d===2?3:2); let a=t[0]*k, b=t[1]*k; const h=t[2]*k; if(R.bool()){const x=a;a=b;b=x;}
+  const buscaHip=R.bool(0.55);
+  if(buscaHip) return {html:'<p class="enun">Halla la hipotenusa x del triángulo rectángulo.</p>'+triRect(a,b,{base:a+' cm',alt:b+' cm',hip:'x'})+'<p class="eq">x = '+rl(3)+'</p>',
+    clave:'x² = '+a+'² + '+b+'² = '+(a*a)+' + '+(b*b)+' = '+(h*h)+' → x = √'+(h*h)+' = <b>'+h+' cm</b>',chk:[{f:'pit',a,b,c:h,mostrar:h+' cm'}],uid:'gph'+a+b};
+  return {html:'<p class="enun">Halla el cateto x del triángulo rectángulo.</p>'+triRect(a,b,{base:a+' cm',alt:'x',hip:h+' cm'})+'<p class="eq">x = '+rl(3)+'</p>',
+    clave:'x² = '+h+'² − '+a+'² = '+(h*h)+' − '+(a*a)+' = '+(b*b)+' → x = √'+(b*b)+' = <b>'+b+' cm</b>',chk:[{f:'pit',a,b,c:h,mostrar:b+' cm'}],uid:'gpc'+a+b};};
+GEO.trig=c=>{const {R,d}=c;
+  if(R.bool(0.4)){const H=R.int(3,30)*2; const ang=30; return {html:'<p class="enun">La hipotenusa mide '+H+' m y el ángulo θ = 30°. ¿Cuánto mide el cateto opuesto a θ? (sen 30° = 0,5)</p>'+triRect(Math.sqrt(3),1,{base:'',alt:'x',hip:H+' m'},true)+'<p class="eq">x = '+rl(3)+'</p>',
+    clave:'x = '+H+' × sen 30° = '+H+' × 0,5 = <b>'+(H/2)+' m</b>',chk:ex('h*Math.sin(Math.PI/6)',{h:H},H/2,(H/2)+' m',{tol:1e-9}),uid:'gt30'+H};}
+  return CALC.trigonometria(Object.assign({},c,{R:{...c.R,bool:()=>false}}));};
+const GEO_GRADO={0:['lados'],1:['lados'],2:['lados','simetria'],3:['simetria','perimetro'],4:['simetria','perimetro','area','angulos','triangulos'],5:['simetria','perimetro','area','angulos','triangulos','plano','volumen'],6:['area','angulos','triangulos','plano','volumen'],7:['area','angulos','triangulos','plano','volumen','circulo'],8:['plano','volumen','circulo','pitagoras'],9:['plano','circulo','pitagoras'],10:['pitagoras','trig'],11:['trig','pitagoras']};
+const TIPO_GEOMETRIA={nombre:'Geometría visual',param:'sub',subs:g=>GEO_GRADO[g],
+  nombres:{lados:'Lados y vértices',simetria:'Simetría',perimetro:'Perímetro',area:'Área',angulos:'Ángulos',triangulos:'Triángulos',plano:'Plano cartesiano',volumen:'Volumen',circulo:'Círculo',pitagoras:'Teorema de Pitágoras',trig:'Razones trigonométricas'},
+  instr:c=>c.g<=2?'Observa bien cada figura. Cuenta con el dedo y escribe lo que encuentres.':'Las figuras están dibujadas a escala. Usa regla y transportador cuando lo necesites; escribe siempre las unidades.',
+  puente:c=>c.N+' observa las formas que hay en '+c.T.lugar+'. Mide, cuenta y razona.',
+  gen:(c,sub)=>GEO[sub](c)};
+
+// =====================================================================
+// 6. ENCUENTRA EL ERROR — un solo error típico, plantado por código.
+//    Cada paso guarda v (lo que se escribió) y e (lo correcto a partir
+//    de los pasos anteriores TAL COMO están escritos): solo un paso difiere.
+// =====================================================================
+const COL=['Unidades','Decenas','Centenas','Unidades de mil','Decenas de mil'];
+const digs=n=>String(n).split('').reverse().map(Number);
+const ERR={};
+ERR.conteo=c=>{const {R}=c; const a=R.int(1,5), b=R.int(1,Math.min(5,9-a)), modo=R.pick(['grupo','salto']);
+  const dib='<div class="fila-dib">'+grupoFiguras(a,'circulo')+'<span class="signo">+</span>'+grupoFiguras(b,'circulo')+'</div>';
+  let pasos, final;
+  if(modo==='grupo'){const a2=a+1; final=a2+b; pasos=[{t:'Cuento el primer grupo: hay '+a2+'.',v:a2,e:a},{t:'Cuento el segundo grupo: hay '+b+'.',v:b,e:b},{t:'Junto: '+a2+' y '+b+' son '+final+'.',v:final,e:a2+b}];
+    return {enun:'Así contó '+c.N+' todos los círculos:',dib,pasos,porque:'En el primer grupo hay '+a+', no '+a2+': contó uno de más.',correccion:'Primer grupo: '+a+'. Entonces '+a+' y '+b+' son '+(a+b)+'.',correcto:fmt(a+b),chkc:ex('a+b',{a,b},a+b,fmt(a+b)),final};}
+  const tot=a+b, sal=R.int(2,tot); const seq=[]; for(let i=1;i<=tot+1;i++) if(i!==sal) seq.push(i); final=tot+1;
+  pasos=[{t:'Cuento el primer grupo: hay '+a+'.',v:a,e:a},{t:'Cuento el segundo grupo: hay '+b+'.',v:b,e:b},{t:'Cuento todos juntos: '+seq.join(', ')+'. Hay '+final+'.',v:final,e:tot}];
+  return {enun:'Así contó '+c.N+' todos los círculos:',dib,pasos,porque:'Al contar todos juntos se saltó el número '+sal+'.',correccion:'1, 2, … sin saltar ninguno: hay '+tot+'.',correcto:fmt(tot),chkc:ex('a+b',{a,b},tot,fmt(tot)),final};};
+ERR.suma=c=>{const {R,g}=c; const nd=g<=1?2:g===2?3:R.int(3,4); let a,b,j,t=0;
+  do{a=R.int(Math.pow(10,nd-1),Math.pow(10,nd)-1); b=R.int(Math.pow(10,nd-1),Math.pow(10,nd)-1); const da=digs(a), db=digs(b); const cand=[]; let cin=0; for(let i=0;i<nd;i++){if(i>0&&cin===1) cand.push(i); cin=da[i]+db[i]+cin>9?1:0;} j=cand.length?R.pick(cand):-1; t++;}while(j<0&&t<300);
+  const da=digs(a), db=digs(b), pasos=[]; let cin=0, res=[];
+  for(let i=0;i<nd;i++){const correcto=da[i]+db[i]+cin; const s=i===j?da[i]+db[i]:correcto; const ult=i===nd-1;
+    const txt0=COL[i]+': '+da[i]+' + '+db[i]+(cin&&i!==j?' + 1 (que llevaba)':'')+' = '+s+'. '+(s>9&&!ult?'Escribo '+(s%10)+' y llevo 1.':'Escribo '+s+'.');
+    pasos.push({t:txt0,v:s,e:correcto}); res.unshift(ult?String(s):String(s%10)); cin=s>9?1:0;}
+  const final=Number(res.join('')); pasos.push({t:'Resultado: '+fmt(final)+'.',v:final,e:final});
+  return {enun:c.N+' sumó '+fmt(a)+' + '+fmt(b)+' en columna:',pasos,porque:'En las '+COL[j].toLowerCase()+' olvidó sumar el 1 que llevaba.',correccion:COL[j]+': '+da[j]+' + '+db[j]+' + 1 = '+(da[j]+db[j]+1)+'.',correcto:fmt(a+b),chkc:ex('a+b',{a,b},a+b,fmt(a+b)),final};};
+ERR.resta=c=>{const {R,g}=c; const nd=g<=1?2:g===2?3:R.int(3,4); let a,b,j,t=0;
+  do{const ta=[],tb=[]; for(let i=0;i<nd;i++){ta.push(R.int(1,9)); tb.push(R.int(0,9));} tb[nd-1]=R.int(1,Math.max(1,ta[nd-1]-1)); a=Number(ta.slice().reverse().join('')); b=Number(tb.slice().reverse().join(''));
+    j=-1; for(let i=0;i<nd-1;i++){ if(ta[i]<tb[i]){j=i;break;} } t++;}while((j<0||a<=b||digs(b)[j]-digs(a)[j]===5)&&t<500);
+  const T=digs(a), B=digs(b); while(B.length<nd) B.push(0); const pasos=[], res=[];
+  for(let i=0;i<nd;i++){ if(i===j){pasos.push({t:COL[i]+': '+B[i]+' − '+T[i]+' = '+(B[i]-T[i])+'. Escribo '+(B[i]-T[i])+'.',v:B[i]-T[i],e:T[i]+10-B[i]}); res.unshift(B[i]-T[i]); continue;}
+    if(T[i]<B[i]){T[i+1]-=1; const v=T[i]+10-B[i]; pasos.push({t:COL[i]+': presto 1 a la siguiente columna: '+(T[i]+10)+' − '+B[i]+' = '+v+'.',v,e:v}); res.unshift(v);} else {const v=T[i]-B[i]; pasos.push({t:COL[i]+': '+T[i]+' − '+B[i]+' = '+v+'.',v,e:v}); res.unshift(v);} }
+  const final=Number(res.join('')); pasos.push({t:'Resultado: '+fmt(final)+'.',v:final,e:final});
+  const D=digs(a);
+  return {enun:c.N+' restó '+fmt(a)+' − '+fmt(b)+' en columna:',pasos,porque:'En las '+COL[j].toLowerCase()+' restó el número pequeño del grande ('+B[j]+' − '+D[j]+') en lugar de pedir prestado.',correccion:COL[j]+': pido 1 prestado: '+(D[j]+10)+' − '+B[j]+' = '+(D[j]+10-B[j])+', y la columna siguiente queda con 1 menos.',correcto:fmt(a-b),chkc:ex('a-b',{a,b},a-b,fmt(a-b)),final};};
+ERR.multdesc=c=>{const {R}=c; const T=R.int(1,9), U=R.int(1,9), m=R.int(3,9), a=T*10+U; const p1=U*m, p2=T*m;
+  const pasos=[{t:'Descompongo: '+a+' = '+(T*10)+' + '+U+'.',v:a,e:a},{t:U+' × '+m+' = '+p1+'.',v:p1,e:p1},{t:(T*10)+' × '+m+' = '+p2+'.',v:p2,e:T*10*m},{t:'Sumo: '+p1+' + '+p2+' = '+(p1+p2)+'.',v:p1+p2,e:p1+p2}];
+  return {enun:c.N+' multiplicó '+a+' × '+m+' descomponiendo:',pasos,porque:'Al multiplicar '+(T*10)+' × '+m+' olvidó el cero: multiplicó '+T+' × '+m+'.',correccion:(T*10)+' × '+m+' = '+(T*10*m)+'; '+p1+' + '+(T*10*m)+' = '+(a*m)+'.',correcto:fmt(a*m),chkc:ex('a*m',{a,m},a*m,fmt(a*m)),final:p1+p2};};
+ERR.mult2=c=>{const {R}=c; const a=R.int(12,c.g>=5?999:99), t=R.int(1,9), u=R.int(1,9), b=10*t+u; const p1=a*u, p2=a*t, final=p1+p2;
+  const pasos=[{t:fmt(a)+' × '+u+' = '+fmt(p1)+'.',v:p1,e:p1},{t:fmt(a)+' × '+t+' = '+fmt(p2)+'; lo escribo debajo, alineado con las unidades.',v:p2,e:p2*10},{t:'Sumo: '+fmt(p1)+' + '+fmt(p2)+' = '+fmt(final)+'.',v:final,e:final}];
+  return {enun:c.N+' multiplicó '+fmt(a)+' × '+b+' en columna:',pasos,porque:'El '+t+' está en las decenas: '+fmt(a)+' × '+t+' decenas = '+fmt(p2*10)+'. Debía correrlo un lugar a la izquierda.',correccion:fmt(p1)+' + '+fmt(p2*10)+' = '+fmt(a*b)+'.',correcto:fmt(a*b),chkc:ex('a*b',{a,b},a*b,fmt(a*b)),final};};
+ERR.division=c=>{const {R}=c; let D,v,q,steps,zi,t=0;
+  do{v=R.int(2,9); const k=R.int(1,9), m=R.int(1,9); q=k*100+m; D=v*q; steps=[]; const dg=String(D).split('').map(Number); let cur=0, started=false;
+    for(let i=0;i<dg.length;i++){cur=cur*10+dg[i]; if(!started&&cur<v&&i<dg.length-1) continue; started=true; const qd=Math.floor(cur/v); steps.push({cur,qd,rem:cur-qd*v}); cur=cur-qd*v;}
+    zi=steps.findIndex((s,i)=>i>0&&s.qd===0); t++;}while(zi<0&&t<100);
+  const pasos=steps.map((s,i)=>i===zi?{t:'Bajo la siguiente cifra: '+s.cur+' ÷ '+v+' no alcanza, así que sigo sin escribir nada en el cociente.',v:'nada',e:'0'}:{t:(i===0?'Tomo ':'Bajo la siguiente cifra: ')+s.cur+' ÷ '+v+' = '+s.qd+', sobra '+s.rem+'. Escribo '+s.qd+'.',v:String(s.qd),e:String(s.qd)});
+  const final=Number(steps.filter((s,i)=>i!==zi).map(s=>s.qd).join('')); pasos.push({t:'Cociente: '+fmt(final)+'.',v:final,e:final});
+  return {enun:c.N+' dividió '+fmt(D)+' ÷ '+v+':',pasos,porque:'Cuando la cifra no alcanza para dividir, hay que escribir 0 en el cociente; '+c.N+' no lo escribió.',correccion:'Escribo 0 en el cociente en ese paso; el cociente es '+fmt(q)+' (comprobación: '+v+' × '+fmt(q)+' = '+fmt(D)+').',correcto:fmt(q),chkc:ex('D/v',{D,v},q,fmt(q)),final};};
+ERR.orden=c=>{const {R}=c; if(R.bool()){let a,b,cc; do{a=R.int(2,20); b=R.int(2,9); cc=R.int(2,9);}while(a+b===b*cc); const s=a+b, W=s*cc;
+    return {enun:c.N+' calculó '+a+' + '+b+' × '+cc+':',pasos:[{t:a+' + '+b+' = '+s+'.',v:s,e:b*cc},{t:s+' × '+cc+' = '+W+'.',v:W,e:W}],porque:'La multiplicación se hace antes que la suma.',correccion:b+' × '+cc+' = '+(b*cc)+'; '+a+' + '+(b*cc)+' = '+(a+b*cc)+'.',correcto:fmt(a+b*cc),chkc:ex('a+b*c',{a,b,c:cc},a+b*cc,fmt(a+b*cc)),final:W};}
+  let a,b,cc,dd; do{a=R.int(2,9); b=R.int(2,9); cc=R.int(2,9); dd=R.int(2,9);}while(a*b+cc===cc*dd); const p=a*b, s=p+cc, W=s*dd;
+  return {enun:c.N+' calculó '+a+' × '+b+' + '+cc+' × '+dd+':',pasos:[{t:a+' × '+b+' = '+p+'.',v:p,e:p},{t:p+' + '+cc+' = '+s+'.',v:s,e:cc*dd},{t:s+' × '+dd+' = '+fmt(W)+'.',v:W,e:W}],porque:'Sumó antes de terminar las multiplicaciones: '+cc+' × '+dd+' se hace primero.',correccion:cc+' × '+dd+' = '+(cc*dd)+'; '+p+' + '+(cc*dd)+' = '+(p+cc*dd)+'.',correcto:fmt(p+cc*dd),chkc:ex('a*b+c*d',{a,b,c:cc,d:dd},p+cc*dd,fmt(p+cc*dd)),final:W};};
+ERR.areaper=c=>{const {R,T}=c; let w,h; do{w=R.int(3,15);h=R.int(2,12);}while(w*h===2*(w+h)); const pideA=R.bool();
+  const P=2*(w+h), A=w*h;
+  if(pideA) return {enun:'¿Cuál es el área de '+T.espacio+', un rectángulo de '+w+' m por '+h+' m? Así lo resolvió '+c.N+':',pasos:[{t:'Datos: largo '+w+' m, ancho '+h+' m.',v:'d',e:'d'},{t:'Área = largo + ancho + largo + ancho.',v:'perimetro',e:'area'},{t:w+' + '+h+' + '+w+' + '+h+' = '+P+'.',v:P,e:P},{t:'El área es '+P+' m².',v:P,e:P}],porque:'Usó la fórmula del perímetro (el borde), no la del área (la superficie).',correccion:'Área = largo × ancho = '+w+' × '+h+' = '+A+' m².',correcto:A+' m²',chkc:ex('w*h',{w,h},A,A+' m²'),final:P};
+  return {enun:'¿Cuántos metros de cerca necesita '+T.espacio+', un rectángulo de '+w+' m por '+h+' m? Así lo resolvió '+c.N+':',pasos:[{t:'Datos: largo '+w+' m, ancho '+h+' m.',v:'d',e:'d'},{t:'Perímetro = largo × ancho.',v:'area',e:'perimetro'},{t:w+' × '+h+' = '+A+'.',v:A,e:A},{t:'Se necesitan '+A+' m.',v:A,e:A}],porque:'Calculó el área (la superficie) en lugar del perímetro (el borde).',correccion:'Perímetro = '+w+' + '+h+' + '+w+' + '+h+' = '+P+' m.',correcto:P+' m',chkc:ex('2*(w+h)',{w,h},P,P+' m'),final:A};};
+ERR.fracciones=c=>{const {R}=c; const misma=R.bool(0.35); let a,b,cc,dd; do{b=R.int(2,9); dd=misma?b:R.int(2,9); a=R.int(1,b-1); cc=R.int(1,dd-1);}while(!misma&&b===dd);
+  const wn=a+cc, wd=misma?2*b:b+dd, ws=simp(wn,wd), L=lcm(b,dd), cn=a*L/b+cc*L/dd, cs=simp(cn,L);
+  const pasos=[{t:'Escribo la suma: '+frH(a,b)+' + '+frH(cc,dd)+'.',v:'s',e:'s'},{t:misma?'Sumo numeradores y también denominadores: '+frH(wn,wd)+'.':'Sumo numeradores con numeradores y denominadores con denominadores: '+frH(wn,wd)+'.',v:wn/wd,e:cn/L},{t:'Simplifico: '+frH(ws[0],ws[1])+'.',v:ws[0]/ws[1],e:ws[0]/ws[1]}];
+  return {enun:c.N+' sumó '+frH(a,b)+' + '+frH(cc,dd)+':',pasos,porque:misma?'Con igual denominador, el denominador se conserva: no se suma.':'Los denominadores no se suman: primero hay que buscar un denominador común.',correccion:misma?a+'/'+b+' + '+cc+'/'+b+' = '+(a+cc)+'/'+b+'.':'m.c.m.('+b+', '+dd+') = '+L+': '+(a*L/b)+'/'+L+' + '+(cc*L/dd)+'/'+L+' = '+cn+'/'+L+'.',correcto:frT(cs[0],cs[1]),chkc:{f:'frac',op:'+',a:[a,b],b:[cc,dd],r:cs,mostrar:frT(cs[0],cs[1])},final:ws[0]/ws[1]};};
+ERR.decimales=c=>{const {R}=c; let A,B; do{A=R.int(101,999); B=R.int(11,299);}while(A%10===0||B%10===0||B<100&&B<20);
+  const S=A+B, wrong=S/100, ok=(A+10*B)/100;
+  const pasos=[{t:'Escribo '+decS(A,2)+' y '+decS(B,1)+' en columna, alineando la última cifra de cada número.',v:'derecha',e:'coma'},{t:'Sumo como si no hubiera comas: '+A+' + '+B+' = '+S+'.',v:S,e:S},{t:'Pongo la coma con dos decimales: '+decS(S,2)+'.',v:wrong,e:wrong}];
+  return {enun:c.N+' sumó '+decS(A,2)+' + '+decS(B,1)+':',pasos,porque:'Alineó los números por la derecha; hay que alinear las comas (unidades con unidades, décimas con décimas).',correccion:decS(A,2)+' + '+decS(B*10,2)+' = '+decS(A+10*B,2)+'.',correcto:decS(A+10*B,2),chkc:ex('a+b',{a:A/100,b:B/10},ok,decS(A+10*B,2),{tol:1e-9}),final:wrong};};
+ERR.enteros=c=>{const {R}=c; const k=R.pick(['restaneg','producto','sumasignos']);
+  if(k==='restaneg'){const a=R.int(2,15), b=R.int(2,15), w=-a-b, ok=-a+b;
+    return {enun:c.N+' calculó (−'+a+') − (−'+b+'):',pasos:[{t:'Escribo la operación: (−'+a+') − (−'+b+').',v:'s',e:'s'},{t:'Restar es sumar el opuesto: (−'+a+') − (−'+b+') = (−'+a+') + (−'+b+').',v:-b,e:b},{t:'(−'+a+') + (−'+b+') = '+fmt(w)+'.',v:w,e:w}],porque:'El opuesto de −'+b+' es +'+b+', no −'+b+'.',correccion:'(−'+a+') + '+b+' = '+fmt(ok)+'.',correcto:fmt(ok),chkc:ex('-a-(-b)',{a,b},ok,fmt(ok)),final:w};}
+  if(k==='producto'){const a=R.int(2,9), b=R.int(2,9), cc=R.int(-20,20), p=-a*b, w=p+cc, ok=a*b+cc;
+    return {enun:c.N+' calculó (−'+a+') × (−'+b+') + '+par(cc)+':',pasos:[{t:'(−'+a+') × (−'+b+') = '+fmt(p)+'.',v:p,e:a*b},{t:fmt(p)+' + '+par(cc)+' = '+fmt(w)+'.',v:w,e:w}],porque:'Menos por menos da más: (−'+a+') × (−'+b+') = +'+(a*b)+'.',correccion:(a*b)+' + '+par(cc)+' = '+fmt(ok)+'.',correcto:fmt(ok),chkc:ex('(-a)*(-b)+c',{a,b,c:cc},ok,fmt(ok)),final:w};}
+  let a,b; do{a=R.int(5,20); b=R.int(2,a-1);}while(a===b);
+  return {enun:c.N+' calculó (−'+a+') + '+b+':',pasos:[{t:'Sumo los valores absolutos: '+a+' + '+b+' = '+(a+b)+'.',v:a+b,e:a-b},{t:'Le pongo el signo del mayor: −'+(a+b)+'.',v:-(a+b),e:-(a+b)}],porque:'Con signos diferentes, los valores absolutos se restan (no se suman).',correccion:a+' − '+b+' = '+(a-b)+', con el signo del mayor: −'+(a-b)+'.',correcto:fmt(b-a),chkc:ex('-a+b',{a,b},b-a,fmt(b-a)),final:-(a+b)};};
+ERR.potencia=c=>{const {R}=c; let a,n; do{a=R.int(2,9); n=R.int(2,4);}while(a*n===Math.pow(a,n)||Math.pow(a,n)>10000); const cc=R.int(1,30), p=Math.pow(a,n);
+  return {enun:c.N+' calculó '+a+'<sup>'+n+'</sup> + '+cc+':',pasos:[{t:a+'<sup>'+n+'</sup> = '+a+' × '+n+' = '+(a*n)+'.',v:a*n,e:p},{t:(a*n)+' + '+cc+' = '+(a*n+cc)+'.',v:a*n+cc,e:a*n+cc}],porque:'La potencia no es base por exponente: es multiplicar la base por sí misma '+n+' veces.',correccion:a+'<sup>'+n+'</sup> = '+Array(n).fill(a).join(' × ')+' = '+fmt(p)+'; '+fmt(p)+' + '+cc+' = '+fmt(p+cc)+'.',correcto:fmt(p+cc),chkc:ex('Math.pow(a,n)+c',{a,n,c:cc},p+cc,fmt(p+cc)),final:a*n+cc};};
+ERR.ecuacion=c=>{const {R}=c; const a=R.int(2,9), k=R.nz(-6,6), b=a*k, x=R.nz(-9,9), cc=a*x+b, W=(cc+b)/a;
+  return {enun:c.N+' resolvió '+poly([a,b])+' = '+fmt(cc)+':',pasos:[{t:'Paso el '+fmt(b)+' al otro lado: '+a+'x = '+fmt(cc)+(b>=0?' + ':' − ')+fmt(Math.abs(b))+' = '+fmt(cc+b)+'.',v:cc+b,e:cc-b},{t:'Divido entre '+a+': x = '+fmt(cc+b)+' ÷ '+a+' = '+fmt(W)+'.',v:W,e:W}],
+    porque:'Al pasar un término al otro lado de la igualdad, cambia de signo ('+(b>0?'lo que suma pasa a restar':'lo que resta pasa a sumar')+').',correccion:a+'x = '+fmt(cc)+(b>0?' − ':' + ')+fmt(Math.abs(b))+' = '+fmt(cc-b)+'; x = '+fmt(x)+'.',correcto:'x = '+fmt(x),chkc:{f:'ecu',a,b,c:0,d:cc,x,mostrar:'x = '+fmt(x)},final:W};};
+ERR.binomio=c=>{const {R,T}=c; const p=R.int(2,12), q=R.int(2,12), w=p*p+q*q, ok=(p+q)*(p+q);
+  return {enun:cap(T.espacio)+' es un cuadrado de lado ('+p+' + '+q+') m. '+c.N+' calculó su área:',pasos:[{t:'('+p+' + '+q+')² = '+p+'² + '+q+'².',v:'p2+q2',e:'p2+2pq+q2'},{t:'= '+(p*p)+' + '+(q*q)+' = '+w+' m².',v:w,e:w}],porque:'El cuadrado de una suma no es la suma de los cuadrados: falta el doble producto 2 × '+p+' × '+q+'.',correccion:'('+p+' + '+q+')² = '+(p+q)+'² = '+ok+' m² (también: '+(p*p)+' + '+(2*p*q)+' + '+(q*q)+').',correcto:ok+' m²',chkc:ex('(p+q)*(p+q)',{p,q},ok,ok+' m²'),final:w};};
+ERR.cuadratica=c=>{const {R}=c; let m,n; do{m=R.nz(-9,9); n=R.nz(-9,9);}while(m===-n);
+  const B=m+n, C=m*n;
+  return {enun:c.N+' resolvió '+poly([1,B,C])+' = 0:',pasos:[{t:'Busco dos números que sumen '+fmt(B)+' y multiplicados den '+fmt(C)+': '+fmt(m)+' y '+fmt(n)+'.',v:m+','+n,e:m+','+n},{t:'Factorizo: (x '+(m<0?'−':'+')+' '+Math.abs(m)+')(x '+(n<0?'−':'+')+' '+Math.abs(n)+') = 0.',v:'f',e:'f'},{t:'Entonces x = '+fmt(m)+' o x = '+fmt(n)+'.',v:m+','+n,e:(-m)+','+(-n)}],
+    porque:'Si (x '+(m<0?'−':'+')+' '+Math.abs(m)+') = 0, entonces x = '+fmt(-m)+': las soluciones tienen el signo contrario.',correccion:'x = '+fmt(-m)+' o x = '+fmt(-n)+'.',correcto:'x = '+fmt(-m)+' o x = '+fmt(-n),chkc:{f:'cuad',a:1,b:B,c:C,raices:[Math.min(-m,-n),Math.max(-m,-n)],mostrar:'x = '+fmt(-m)},final:m};};
+ERR.pitagoras=c=>{const {R}=c; const t=R.pick(TRIPLES), k=R.int(1,2), a=t[0]*k, b=t[1]*k, h=t[2]*k;
+  if(R.bool()) return {enun:'Un triángulo rectángulo tiene catetos de '+a+' cm y '+b+' cm. '+c.N+' halló la hipotenusa:',pasos:[{t:'c² = a² + b².',v:'f',e:'f'},{t:'c² = '+(a*a)+' + '+(b*b)+' = '+(h*h)+'.',v:h*h,e:h*h},{t:'c = '+(h*h)+' cm.',v:h*h,e:h}],porque:'Encontró c², pero no sacó la raíz cuadrada.',correccion:'c = √'+(h*h)+' = '+h+' cm.',correcto:h+' cm',chkc:{f:'pit',a,b,c:h,mostrar:h+' cm'},final:h*h};
+  const S=h*h+a*a, w=Math.round(Math.sqrt(S)*100)/100;
+  return {enun:'La hipotenusa mide '+h+' cm y un cateto '+a+' cm. '+c.N+' halló el otro cateto:',pasos:[{t:'b² = c² + a².',v:'suma',e:'resta'},{t:'b² = '+(h*h)+' + '+(a*a)+' = '+S+'.',v:S,e:S},{t:'b = √'+S+' ≈ '+dec2(w)+' cm.',v:w,e:w}],porque:'Para hallar un cateto se resta: b² = c² − a².',correccion:'b² = '+(h*h)+' − '+(a*a)+' = '+(b*b)+'; b = '+b+' cm.',correcto:b+' cm',chkc:{f:'pit',a,b,c:h,mostrar:b+' cm'},final:w};};
+ERR.porcentaje=c=>{const {R,g}=c; const k=g>=9?R.pick(['ivainv','sucesivos','cambio']):R.pick(['sucesivos','cambio']);
+  if(k==='ivainv'){const B=R.int(2,30)*10000, Q=B*119/100, x=Q*19/100, Y=Q-x;
+    return {enun:'Un artículo cuesta '+money(Q)+' con el IVA (19 %) incluido. '+c.N+' calculó el precio sin IVA:',pasos:[{t:'19 % de '+money(Q)+' = '+money(x)+'.',v:x,e:Q-B},{t:money(Q)+' − '+money(x)+' = '+money(Y)+'.',v:Y,e:Y}],porque:'El 19 % se calcula sobre el precio SIN IVA, no sobre el precio con IVA.',correccion:money(Q)+' ÷ 1,19 = '+money(B)+'.',correcto:money(B),chkc:ex('Q/1.19',{Q},B,money(B),{tol:1e-6}),final:Y};}
+  if(k==='sucesivos'){const P=R.int(2,40)*10000, d1=R.pick([10,20,30]), d2=R.pick([10,20,25]), tot=d1+d2, w=P*(100-tot)/100, ok=P*(100-d1)*(100-d2)/10000;
+    return {enun:'Un precio de '+money(P)+' tiene un descuento del '+d1+' % y, sobre ese nuevo precio, otro del '+d2+' %. '+c.N+' calculó:',pasos:[{t:'Sumo los descuentos: '+d1+' % + '+d2+' % = '+tot+' %.',v:tot,e:100-(100-d1)*(100-d2)/100},{t:tot+' % de '+money(P)+' = '+money(P*tot/100)+'.',v:P*tot/100,e:P*tot/100},{t:money(P)+' − '+money(P*tot/100)+' = '+money(w)+'.',v:w,e:w}],porque:'El segundo descuento se aplica sobre el precio ya rebajado, no sobre el original: los porcentajes no se suman.',correccion:money(P)+' × '+fmt((100-d1)/100)+' = '+money(P*(100-d1)/100)+'; × '+fmt((100-d2)/100)+' = '+money(ok)+'.',correcto:money(ok),chkc:ex('P*(1-a/100)*(1-b/100)',{P,a:d1,b:d2},ok,money(ok),{tol:1e-6}),final:w};}
+  const q=R.pick([[5,4],[2,1],[3,2]]), A=q[1]*R.int(2,20)*1000, B=A*q[0]/q[1], D=B-A, w=D/B*100, ok=D/A*100;
+  return {enun:'Un precio subió de '+money(A)+' a '+money(B)+'. '+c.N+' calculó el porcentaje de aumento:',pasos:[{t:'Aumento: '+money(B)+' − '+money(A)+' = '+money(D)+'.',v:D,e:D},{t:'Divido entre el precio nuevo: '+fmt(D)+' ÷ '+fmt(B)+' = '+dec2(D/B)+'.',v:Math.round(D/B*1e6),e:Math.round(D/A*1e6)},{t:'Aumentó '+dec2(w)+' %.',v:Math.round(w*1e6),e:Math.round(w*1e6)}],porque:'El porcentaje de cambio se calcula sobre el valor INICIAL, no sobre el nuevo.',correccion:fmt(D)+' ÷ '+fmt(A)+' = '+dec2(D/A)+' → '+fmt(ok)+' %.',correcto:fmt(ok)+' %',chkc:ex('(B-A)/A*100',{A,B},ok,fmt(ok)+' %',{tol:1e-9}),final:w};};
+ERR.interes=c=>{const {R}=c; const C=R.int(1,9)*1000000, r=R.pick([5,10,20]), t=R.int(2,3), w=C*(1+r*t/100), ic=interesCompuesto(C,r,t);
+  return {enun:c.N+' calculó cuánto tendrá un CDT de '+money(C)+' al '+r+' % de interés COMPUESTO anual durante '+t+' años:',pasos:[{t:'Uso M = C × (1 + r × t).',v:'simple',e:'compuesto'},{t:'M = '+money(C)+' × (1 + '+fmt(r/100)+' × '+t+') = '+money(w)+'.',v:w,e:w}],porque:'Esa es la fórmula del interés simple. En el compuesto, el interés de cada año también gana interés: M = C × (1 + r)<sup>t</sup>.',correccion:ic.pasos.join('; ')+'.',correcto:money(ic.M),chkc:ex('C*Math.pow(1+r/100,t)',{C,r,t},ic.M,money(ic.M),{tol:0.5}),final:w};};
+ERR.log=c=>{const {R}=c; const b=R.pick([2,3,10]); let m,n; do{m=R.int(1,b===2?5:3); n=R.int(1,b===2?5:3);}while(m*n===m+n||m+n>(b===2?9:5));
+  const x=Math.pow(b,m), y=Math.pow(b,n);
+  return {enun:c.N+' calculó log<sub>'+b+'</sub>('+fmt(x)+' × '+fmt(y)+'):',pasos:[{t:'log<sub>'+b+'</sub>('+fmt(x)+' × '+fmt(y)+') = log<sub>'+b+'</sub> '+fmt(x)+' × log<sub>'+b+'</sub> '+fmt(y)+'.',v:'producto',e:'suma'},{t:'= '+m+' × '+n+' = '+(m*n)+'.',v:m*n,e:m*n}],porque:'El logaritmo de un producto es la SUMA de los logaritmos, no su producto.',correccion:m+' + '+n+' = '+(m+n)+' (comprobación: '+b+'<sup>'+(m+n)+'</sup> = '+fmt(x*y)+').',correcto:fmt(m+n),chkc:ex('Math.log(x*y)/Math.log(b)',{x,y,b},m+n,fmt(m+n),{tol:1e-9}),final:m*n};};
+ERR.trig=c=>{const {R}=c; const t=R.pick(TRIPLES), k=R.int(1,3); let o=t[0]*k, a=t[1]*k; const h=t[2]*k; if(R.bool()){const x=o;o=a;a=x;}
+  const ws=simp(a,h), cs=simp(o,h);
+  return {enun:'En un triángulo rectángulo, el cateto opuesto a θ mide '+o+', el adyacente '+a+' y la hipotenusa '+h+'. '+c.N+' calculó sen θ:',pasos:[{t:'Opuesto = '+o+', adyacente = '+a+', hipotenusa = '+h+'.',v:'d',e:'d'},{t:'sen θ = adyacente ÷ hipotenusa = '+a+'/'+h+'.',v:a/h,e:o/h},{t:'Simplifico: sen θ = '+frT(ws[0],ws[1])+'.',v:ws[0]/ws[1],e:ws[0]/ws[1]}],porque:'El seno es opuesto ÷ hipotenusa; adyacente ÷ hipotenusa es el coseno.',correccion:'sen θ = '+o+'/'+h+' = '+frT(cs[0],cs[1])+'.',correcto:frT(cs[0],cs[1]),chkc:razonChk(o,h),final:a/h};};
+const ERR_GRADO={0:['conteo'],1:['suma','resta','conteo'],2:['suma','resta'],3:['suma','resta','multdesc','orden'],4:['multdesc','mult2','division','orden','areaper','resta'],5:['mult2','division','fracciones','decimales','areaper','orden'],6:['fracciones','decimales','orden','areaper','porcentaje'],7:['enteros','potencia','ecuacion','fracciones','porcentaje'],8:['enteros','potencia','ecuacion','binomio','pitagoras'],9:['ecuacion','binomio','cuadratica','pitagoras','porcentaje'],10:['cuadratica','pitagoras','trig','log','interes','porcentaje'],11:['trig','log','interes','porcentaje','cuadratica']};
+const TIPO_ERROR={nombre:'Encuentra el error',param:'sub',subs:g=>ERR_GRADO[g],
+  nombres:{conteo:'Contar',suma:'Suma con llevada',resta:'Resta con préstamo',multdesc:'Multiplicar descomponiendo',mult2:'Multiplicar por dos cifras',division:'División con cero',orden:'Orden de las operaciones',areaper:'Área y perímetro',fracciones:'Suma de fracciones',decimales:'Decimales',enteros:'Signos de los enteros',potencia:'Potencias',ecuacion:'Ecuaciones',binomio:'Cuadrado de una suma',cuadratica:'Ecuación cuadrática',pitagoras:'Pitágoras',porcentaje:'Porcentajes',interes:'Interés compuesto',log:'Logaritmos',trig:'Trigonometría'},
+  instr:c=>c.g===0?'Tu profe te lee cada paso. Busca el paso que está mal y enciérralo.':'En cada ejercicio hay UN solo paso con error. Enciérralo, explica por qué está mal y corrígelo.',
+  puente:c=>c.N+' resolvió unos ejercicios, pero en cada uno se coló un error. ¡Sé detective y encuéntralo!',
+  gen:(c,sub)=>{const E=ERR[sub](c); const idx=E.pasos.findIndex(p=>p.v!==p.e);
+    const html='<p class="enun">'+E.enun+'</p>'+(E.dib||'')+'<ol class="pasos">'+E.pasos.map(p=>'<li>'+p.t+'</li>').join('')+'</ol>'+
+      (c.g===0?'<div class="respuestas-error"><div>El paso con error es el: <span class="campo"></span></div><div>¿Cuántos hay de verdad? <span class="campo"></span></div></div>':
+      '<div class="respuestas-error"><div>Paso con error: <span class="campo"></span></div><div>¿Por qué está mal? <span class="campo"></span></div><div>Corrección: <span class="campo"></span></div></div>');
+    return {html,clave:'<span class="etq">Paso '+(idx+1)+'.</span> '+E.porque+' <span class="etq">Corrección:</span> '+E.correccion+' <span class="etq">Resultado correcto:</span> <b>'+E.correcto+'</b>',
+      chk:{f:'error',pasos:E.pasos.map(p=>({v:p.v,e:p.e})),idx,final:E.final,correcto:E.chkc,mostrar:'Paso '+(idx+1)+'.'},uid:sub+E.enun+E.pasos.map(p=>p.t).join('')};}};
+
+// =====================================================================
+// Ensamblado de la ficha
+// =====================================================================
+const TIPOS={calculo:TIPO_CALCULO,problemas:TIPO_PROBLEMAS,series:TIPO_SERIES,geometria:TIPO_GEOMETRIA,dinero:TIPO_DINERO,error:TIPO_ERROR};
+const N_DEF={calculo:[8,12,12,15,15,15,12,12,12,10,10,10],problemas:[4,5,5,6,6,6,6,6,6,6,6,6],series:[6,6,8,8,8,8,8,8,6,6,6,6],geometria:[6,6,6,6,6,6,6,6,6,6,6,6],dinero:[6,6,6,8,8,8,8,8,8,8,8,8],error:[4,4,4,5,5,5,5,5,5,5,5,5]};
+function nombreSub(tipo,s){ if(tipo==='calculo'){const o=OPS.find(x=>x[0]===s); return o?o[1]:s;} return (TIPOS[tipo].nombres||{})[s]||s; }
+function normalizar(q){
+  const p={}; const get=k=>q[k]==null||q[k]===''?null:String(q[k]);
+  p.tipo=TIPOS[get('tipo')]?get('tipo'):'calculo';
+  let g=parseInt(get('grado'),10); p.grado=isNaN(g)?3:Math.max(0,Math.min(11,g));
+  p.dificultad=['facil','media','reto'].includes(get('dificultad'))?get('dificultad'):'media';
+  let n=parseInt(get('n'),10); p.n=isNaN(n)?N_DEF[p.tipo][p.grado]:Math.max(4,Math.min(20,n));
+  let s=parseInt(get('semilla'),10); p.semilla=(isNaN(s)||s<1)?1+Math.floor(Math.random()*999999):Math.min(s,2147483646);
+  p.tema=TEMAS.some(t=>t.id===get('tema'))?get('tema'):'';
+  const subs=TIPOS[p.tipo].subs(p.grado), pv=get(TIPOS[p.tipo].param);
+  p.sub=pv&&pv!=='auto'&&subs.includes(pv)?pv:'auto';
+  const mn=parseInt(get('rmin'),10), mx=parseInt(get('rmax'),10);
+  p.rmin=null; p.rmax=null; if(!isNaN(mn)&&!isNaN(mx)&&mn>=0&&mx>mn&&mx<=9999999){p.rmin=mn;p.rmax=mx;}
+  p.llevada=['si','no'].includes(get('llevada'))?get('llevada'):'auto';
+  return p;
+}
+function generar(params){
+  const p=normalizar(params||{}); const TP=TIPOS[p.tipo];
+  const R=Rng(hashStr([p.semilla,p.tipo,p.grado,p.dificultad,p.sub,p.tema,p.rmin,p.rmax,p.llevada].join('|')));
+  const T=p.tema?TEMAS.find(t=>t.id===p.tema):R.pick(TEMAS); const nombres=R.sample(NOMBRES,3);
+  const c={R,g:p.grado,d:{facil:0,media:1,reto:2}[p.dificultad],p,T,N:nombres[0],M:nombres[1],O:nombres[2]};
+  c.lista=listaPrecios(c);
+  const base=p.sub!=='auto'?[p.sub]:(TP.porDefecto?TP.porDefecto(p.grado):TP.subs(p.grado));
+  let plan=[]; while(plan.length<p.n) plan=plan.concat(R.shuffle(base)); plan=plan.slice(0,p.n);
+  if(p.tipo==='calculo'||p.tipo==='series') plan=plan.sort((a,b)=>base.indexOf(a)-base.indexOf(b));
+  const items=[], usados=new Set();
+  plan.forEach(sub=>{let it,t=0; do{it=TP.gen(c,sub); t++;}while(usados.has(it.uid)&&t<40); usados.add(it.uid); it.sub=sub; items.push(it);});
+  const intro=T.intro.replace(/\{N\}/g,c.N).replace(/\{M\}/g,c.M)+' '+TP.puente(c);
+  return {p,titulo:T.titulo,tema:T.id,intro,instr:TP.instr(c),items,lista:p.tipo==='dinero'||(p.tipo==='problemas'&&p.grado>=3)?c.lista:null,tipoNombre:TP.nombre,cols:!!TP.cols&&p.grado>=1&&!['trigonometria','interes','sistemas'].includes(p.sub)};
+}
+function htmlFicha(f){
+  const p=f.p;
+  let h='<header class="ficha-cab"><div class="marca">SABI · Colegio CENTEC <span>Matemáticas · '+GRADOS[p.grado]+' · '+f.tipoNombre+'</span></div>'+
+    '<div class="datos-est"><div>Nombre: <span class="campo"></span></div><div>Curso: <span class="campo"></span></div><div>Fecha: <span class="campo"></span></div></div></header>'+
+    '<h2 class="ficha-titulo">'+f.titulo+'</h2><p class="gancho">'+f.intro+'</p>';
+  if(f.lista) h+='<div class="lista-precios"><h3>Lista de precios</h3><table>'+f.lista.map(x=>'<tr><td>'+cap(x[0])+'</td><td>'+money(x[2])+'</td></tr>').join('')+'</table></div>';
+  h+='<p class="consigna"><strong>Instrucciones:</strong> '+f.instr+'</p>';
+  h+='<ol class="items'+(f.cols?' cols':'')+'">'+f.items.map(it=>'<li class="item">'+it.html+'</li>').join('')+'</ol>';
+  h+='<section class="autoeval"><h3>¿Cómo me fue?</h3><div class="ops"><span>Lo hice solo</span><span>Lo hice con ayuda</span><span>Necesito repasar</span></div><div class="costo">Lo que más me costó fue: <span class="campo"></span></div></section>';
+  h+='<footer class="pie"><span>SABI · Colegio CENTEC</span><span>Ficha n.º '+p.semilla+' · '+GRADOS[p.grado]+' · '+({facil:'fácil',media:'media',reto:'reto'})[p.dificultad]+'</span></footer>';
+  return h;
+}
+function htmlClave(f){const p=f.p;
+  return '<h2>Clave de respuestas</h2><p class="sub">'+f.titulo+' · '+f.tipoNombre+' · '+GRADOS[p.grado]+' · ficha n.º '+p.semilla+'</p><ol class="clave-lista">'+f.items.map(it=>'<li class="clave-item">'+it.clave+'</li>').join('')+'</ol>'+
+    '<footer class="pie"><span>SABI · Colegio CENTEC</span><span>Clave para el docente o la familia</span></footer>';}
+
+// =====================================================================
+// Interfaz
+// =====================================================================
+const $=id=>document.getElementById(id);
+let actual=null;
+function leerURL(){const q={}; new URLSearchParams(location.search).forEach((v,k)=>q[k]=v); return q;}
+function aURL(p){const u=new URLSearchParams(); u.set('tipo',p.tipo); u.set('grado',p.grado); u.set('n',p.n); u.set('dificultad',p.dificultad); u.set('semilla',p.semilla);
+  if(p.tema) u.set('tema',p.tema); if(p.sub!=='auto') u.set(TIPOS[p.tipo].param,p.sub); if(p.tipo==='calculo'){ if(p.rmin!=null){u.set('rmin',p.rmin);u.set('rmax',p.rmax);} if(p.llevada!=='auto') u.set('llevada',p.llevada);} return '?'+u.toString();}
+function llenarSub(p){const s=$('c-sub'); const subs=TIPOS[p.tipo].subs(p.grado); s.innerHTML='<option value="auto">'+(p.tipo==='calculo'?'Según el grado':'Variado (todo lo del grado)')+'</option>'+subs.map(x=>'<option value="'+x+'">'+nombreSub(p.tipo,x)+'</option>').join(''); s.value=p.sub;
+  $('l-sub').firstChild.nodeValue=p.tipo==='calculo'?'Operación':'Enfoque'; $('g-calc').hidden=p.tipo!=='calculo';}
+function pintarControles(p){$('c-tipo').value=p.tipo; $('c-grado').value=p.grado; $('c-dif').value=p.dificultad; $('c-n').value=p.n; $('c-tema').value=p.tema; llenarSub(p);
+  $('c-rmin').value=p.rmin==null?'':p.rmin; $('c-rmax').value=p.rmax==null?'':p.rmax; $('c-llevada').value=p.llevada; $('semilla-info').textContent='Ficha n.º '+p.semilla;}
+function render(params,noURL){const f=generar(params); actual=f; $('ficha').innerHTML=htmlFicha(f); $('clave').innerHTML=htmlClave(f);
+  document.title=f.titulo+' · Fichas SABI'; if(!noURL){try{history.replaceState(null,'',aURL(f.p));}catch(e){}} pintarControles(f.p); return f;}
+function leerControles(){return {tipo:$('c-tipo').value,grado:$('c-grado').value,dificultad:$('c-dif').value,n:$('c-n').value,tema:$('c-tema').value,[TIPOS[$('c-tipo').value].param]:$('c-sub').value,rmin:$('c-rmin').value,rmax:$('c-rmax').value,llevada:$('c-llevada').value,semilla:actual?actual.p.semilla:''};}
+function aviso(t){const a=$('aviso'); a.textContent=t; a.classList.add('ver'); clearTimeout(aviso._t); aviso._t=setTimeout(()=>a.classList.remove('ver'),2200);}
+function iniciar(){
+  $('c-tipo').innerHTML=Object.keys(TIPOS).map(k=>'<option value="'+k+'">'+TIPOS[k].nombre+'</option>').join('');
+  $('c-grado').innerHTML=GRADOS.map((g,i)=>'<option value="'+i+'">'+g+'</option>').join('');
+  $('c-tema').innerHTML='<option value="">Sorpresa (al azar)</option>'+TEMAS.map(t=>'<option value="'+t.id+'">'+t.titulo+'</option>').join('');
+  render(leerURL());
+  const cambio=ev=>{const q=leerControles(); if(ev&&(ev.target.id==='c-tipo'||ev.target.id==='c-grado')){q.n='';q[TIPOS[q.tipo].param]='auto';} render(q);};
+  ['c-tipo','c-grado','c-dif','c-tema','c-sub','c-llevada'].forEach(id=>$(id).addEventListener('change',cambio));
+  ['c-n','c-rmin','c-rmax'].forEach(id=>$(id).addEventListener('change',cambio));
+  $('b-nueva').addEventListener('click',()=>{const q=leerControles(); q.semilla=1+Math.floor(Math.random()*999999); render(q); window.scrollTo({top:$('ficha').offsetTop-10,behavior:'smooth'});});
+  $('b-clave').addEventListener('click',()=>{const c=$('clave'); c.hidden=!c.hidden; $('b-clave').textContent=c.hidden?'Mostrar clave':'Ocultar clave'; $('b-clave').setAttribute('aria-pressed',String(!c.hidden)); if(!c.hidden) c.scrollIntoView({behavior:'smooth'});});
+  $('c-imp-clave').addEventListener('change',e=>document.body.classList.toggle('imprimir-clave',e.target.checked));
+  $('b-imprimir').addEventListener('click',()=>window.print());
+  $('b-copiar').addEventListener('click',()=>{const url=location.href; const ok=()=>aviso('Enlace copiado: esta misma ficha se abrirá igual.');
+    if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(ok,()=>window.prompt('Copia este enlace:',url)); else window.prompt('Copia este enlace:',url);});
+}
+window.__fichas={generar,render,normalizar,temas:TEMAS.map(t=>t.id),tipos:Object.keys(TIPOS),subs:(t,g)=>TIPOS[t].subs(g),fmt,money};
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',iniciar); else iniciar();
 })();
 </script>
+<script src="https://superacion.sabicentec.com/sabi-puerta.js" data-rol="estudiante" data-texto="Aprender con SABI" defer></script>
 </body>
 </html>

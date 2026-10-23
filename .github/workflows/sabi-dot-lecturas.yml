@@ -30,10 +30,9 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           MAX_NUEVOS: "3"
         run: node scripts/dot-lecturas.mjs ${{ inputs.modo == 'cobertura' && 'cobertura' || '' }}
-      - name: Validar datos y el generador de fichas
+      - name: Validar datos
         run: |
           for f in data/lecturas/*.json; do node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" || exit 1; done
-          node scripts/test-taller-mate.mjs
       - name: Abrir Pull Request para aprobación humana
         if: inputs.modo != 'cobertura'
         uses: peter-evans/create-pull-request@v6
@@ -45,5 +44,5 @@ jobs:
           body: |
             El Dot de lectura propone lecturas nuevas. Informe en `data/informes/`.
             Cada respuesta literal fue verificada por código contra el texto.
-            **Aprobar = publicar en fichas.html (panel Lecturas).** Si algo no convence, cierra el PR.
+            **Aprobar = publicar en lecturas.html.** Si algo no convence, cierra el PR.
           labels: lecturas

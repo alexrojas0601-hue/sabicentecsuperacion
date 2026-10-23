@@ -1,0 +1,75 @@
+# SABI · Dot de Continuidad: cada 5 horas mide qué falta del Prompt Maestro y pone a trabajar al Dot
+# que corresponde (completar experimentos o buscar herramientas para el área con menos). Si todo está
+# completo, termina sin gastar. Sus avances se ACUMULAN en un solo Pull Request (rama
+# sabi-continuidad/avance) que coordinación aprueba con Merge.
+# Para que publique solo (sin Merge), crear en Settings → Variables la variable AUTO_PUBLICAR = si.
+name: SABI · Dot de Continuidad
+
+on:
+  schedule:
+    - cron: "17 */5 * * *"   # cada 5 horas
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sabi-continuidad
+  cancel-in-progress: false
+
+jobs:
+  continuar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Partir del avance acumulado (si hay un PR abierto)
+        run: |
+          git config user.name "SABI Dot de Continuidad"
+          git config user.email "sabi-dots@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin sabi-continuidad/avance >/dev/null 2>&1; then
+            git fetch origin sabi-continuidad/avance
+            git checkout -B sabi-continuidad/avance origin/sabi-continuidad/avance
+            git merge --no-edit origin/main || { git merge --abort; git checkout -B sabi-continuidad/avance origin/main; }
+          else
+            git checkout -B sabi-continuidad/avance
+          fi
+      - name: Medir qué falta
+        id: falta
+        run: node scripts/dot-continuidad.mjs
+      - name: Trabajar (Dots investigadores + Dot Auditor Riguroso)
+        if: steps.falta.outputs.modo != 'ninguno'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          AREA: ${{ steps.falta.outputs.area }}
+        run: node scripts/dots-didacticos.mjs ${{ steps.falta.outputs.modo }}
+      - name: Validar
+        if: steps.falta.outputs.modo != 'ninguno'
+        run: |
+          for f in data/herramientas-pedagogicas.json data/experimentos/grado-*.json; do node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" || exit 1; done
+          python3 scripts/validar-experimentos.py
+      - name: Guardar el avance y abrir o actualizar el Pull Request
+        if: steps.falta.outputs.modo != 'ninguno'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AUTO_PUBLICAR: ${{ vars.AUTO_PUBLICAR }}
+        run: |
+          git add data
+          if git diff --cached --quiet; then echo "Sin cambios en esta corrida."; exit 0; fi
+          git commit -m "Dot de Continuidad: ${{ steps.falta.outputs.modo }} ${{ steps.falta.outputs.area }}"
+          git push --force-with-lease origin HEAD:sabi-continuidad/avance
+          if [ "$AUTO_PUBLICAR" = "si" ]; then
+            git checkout main && git pull --ff-only origin main && git merge --no-edit sabi-continuidad/avance && git push origin main
+            exit 0
+          fi
+          gh pr view sabi-continuidad/avance --json state -q .state 2>/dev/null | grep -q OPEN || \
+          gh pr create --base main --head sabi-continuidad/avance \
+            --title "SABI · Dot de Continuidad · avance acumulado (revisión de coordinación)" \
+            --body "Cada 5 horas el Dot de Continuidad completa lo que falta del Prompt Maestro (experimentos por grado y herramientas pedagógicas por Dot) y el Dot Auditor Riguroso lo filtra. Los avances se acumulan aquí. Informes en \`data/informes/\`. **Aprobar = publicar.**" || true
+          gh pr edit sabi-continuidad/avance --add-label investigacion 2>/dev/null || true

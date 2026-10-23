@@ -106,12 +106,11 @@ Archivos: `scripts/dots-didacticos.mjs`, `.github/workflows/sabi-dots-didacticos
 `data/herramientas-pedagogicas.json`, `data/experimentos/`, `PROMPT_MAESTRO_SABI.md`.
 Correr a mano: GitHub → Actions → «SABI · Dots didácticos» → Run workflow (modo y área).
 
-## Fichas y lecturas (`fichas.html`) · 19 de octubre de 2026
+## Lecturas (`lecturas.html`) · octubre de 2026
 
-Complementa los comandos del tutor y el banco de experimentos (`experimentos.html`); no los reemplaza.
+Complementa `fichas.html` (fichas de matemáticas), los comandos del tutor y el banco de experimentos.
 
 | Pieza | Qué hace |
 |---|---|
-| Fichas de matemáticas (`taller-mate.js`) | Generador por código, sin IA: cálculo a medida, problemas cotidianos, series y patrones, geometría visual (dibujos SVG con medidas coherentes), dinero y cambio (pesos colombianos), encuentra el error. Transición a 11°, fichas infinitas; cada ficha abre con una buena idea, trae clave con el porqué y un reto final; el número de ficha la reproduce. Las respuestas las calcula el programa: `node scripts/test-taller-mate.mjs` revisa 3.948 fichas (410.526 comprobaciones). |
 | Lecturas (`data/lecturas/*.json`) | 36 lecturas originales (3 por grado) en siete pasos: lo que dice el texto (4 preguntas literales; el estudiante toca la oración y la página le dice si es la correcta), entre líneas, palabras en contexto, ¿dónde lo pone?, orden y causas, piensa y argumenta, valor. Cada evidencia literal está verificada por código. "Crear lectura con SABI" abre el tutor con `/lectura`. |
 | Dot de lectura (`scripts/dot-lecturas.mjs`, `.github/workflows/sabi-dot-lecturas.yml`) | Cada miércoles escribe una lectura para cada uno de los 3 grados con menos; solo pasa si cada evidencia literal está copiada del texto. Llega como Pull Request: aprobar = publicar. |

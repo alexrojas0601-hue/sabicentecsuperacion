@@ -1,5 +1,5 @@
 // ============================================================================
-// SABI — Dot de lectura: escribe lecturas nuevas para fichas.html (panel Lecturas)
+// SABI — Dot de lectura: escribe lecturas nuevas para lecturas.html
 // ----------------------------------------------------------------------------
 // Corre en GitHub Actions (.github/workflows/sabi-dot-lecturas.yml), cada miércoles.
 // Elige los grados con menos lecturas y escribe una lectura original por grado en siete pasos.
