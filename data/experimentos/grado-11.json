@@ -427,43 +427,46 @@
   "id": "g11-e011",
   "grado": 11,
   "eje": "fuerza-movimiento",
-  "titulo": "Huevos que caen: el casco del motociclista",
+  "titulo": "Caída y frenado: el casco del motociclista",
   "gancho": "Los cascos y los airbags no evitan el golpe, pero salvan vidas. ¿Por qué caer sobre algo blando duele menos?",
   "dba": "Comprende la conservación del momento lineal y la relación entre impulso y cambio de momento para analizar choques e interacciones entre cuerpos.",
-  "prediccion": "Si un huevo cae desde 1 m sobre una almohada o sobre una baldosa, ¿cambia su momento final? ¿Qué cambia entonces?",
+  "prediccion": "Si un objeto cae desde 1 m sobre una almohada o sobre una baldosa, ¿cambia su momento final? ¿Qué cambia entonces?",
   "materiales": [
-   "huevos crudos (en bolsas plásticas cerradas)",
+   "bolitas de plastilina (30-50 g cada una) o masas iguales de arcilla",
    "almohada",
    "toalla doblada",
-   "icopor",
-   "cartón",
+   "icopor de 5 cm",
+   "cartón de 2 cm",
+   "baldosa o piso de cerámica (sin romper)",
    "cinta métrica",
-   "celular para video en cámara lenta"
+   "celular para video en cámara lenta",
+   "bandeja plástica (para contener la plastilina)"
   ],
   "pasos": [
-   "Mete cada huevo en una bolsa con cierre.",
-   "Déjalo caer desde 50 cm sobre cada superficie (empieza por la más blanda).",
-   "Graba en cámara lenta para estimar el tiempo de frenado Δt.",
-   "Aumenta la altura de 25 en 25 cm hasta que el huevo se rompa en cada superficie.",
-   "Calcula la velocidad de impacto v = raíz(2 g h) y el momento p = m · v.",
-   "Estima la fuerza media F = Δp / Δt en cada caso."
+   "Asegúrate de que cada bolita de plastilina tenga la misma masa.",
+   "Deja caer una bolita desde 50 cm sobre cada superficie (empieza por la más blanda).",
+   "Graba en cámara lenta para estimar el tiempo de frenado Δt (desde el primer contacto hasta que se detiene).",
+   "Aumenta la altura de 25 en 25 cm y observa la profundidad de penetración o deformación en cada material.",
+   "Calcula la velocidad de impacto v = √(2gh) y el momento p = m·v.",
+   "Estima la fuerza media F = Δp/Δt comparando los tiempos de frenado en video lento."
   ],
-  "seguridad": "Usa los huevos dentro de bolsas cerradas para evitar contaminación; lávate las manos. No consumas los huevos.",
-  "adulto": false,
-  "que_pasa": "El impulso es el producto de la fuerza por el tiempo y es igual al cambio de momento: F · Δt = Δp. Desde la misma altura el huevo llega con el mismo momento y debe perderlo todo, pero una superficie blanda alarga el tiempo de frenado y reduce la fuerza media. Así funcionan los cascos, los airbags y las colchonetas.",
+  "seguridad": "Trabaja sobre una bandeja plástica para contener la plastilina. Lávate las manos después. No dejes caer objetos sobre pisos de vidrio. Usa gafas de protección si caen fragmentos de icopor.",
+  "adulto": true,
+  "que_pasa": "El impulso es el producto de la fuerza por el tiempo e iguala el cambio de momento: F·Δt = Δp. Desde la misma altura, el objeto llega con el mismo momento inicial y debe perderlo completamente. Una superficie blanda alarga el tiempo de frenado Δt, lo que reduce la fuerza media F necesaria. Esto es el principio detrás de cascos, airbags y colchonetas: distribuyen el cambio de momento en más tiempo para reducir fuerzas letales.",
   "concepto": "Impulso y cantidad de movimiento",
   "vocabulario": [
    "impulso",
    "cantidad de movimiento",
    "fuerza media",
-   "tiempo de impacto"
+   "tiempo de impacto",
+   "momento lineal"
   ],
   "preguntas": [
-   "¿Desde qué altura se rompió el huevo en cada superficie?",
-   "Si el tiempo de frenado se triplica con el mismo cambio de momento, ¿qué le pasa a la fuerza media? (tipo Saber 11)",
-   "¿Por qué el uso del casco certificado es obligatorio para los motociclistas en Colombia?"
+   "¿Qué diferencia observas en la penetración o deformación según el material usado?",
+   "Si el tiempo de frenado se triplica manteniendo el mismo cambio de momento, ¿qué le pasa a la fuerza media? (tipo Saber 11)",
+   "¿Por qué el uso del casco certificado es obligatorio para motociclistas en Colombia? Relaciona tu respuesta con impulso y fuerza."
   ],
-  "reto": "Cambia solo el grosor de la toalla (1, 2 y 4 dobleces) y busca la altura de ruptura.",
+  "reto": "Varía solo el grosor de la toalla (1, 2 y 4 dobleces) desde la misma altura y compara los tiempos de frenado y las deformaciones.",
   "minutos": 45
  },
  {

@@ -437,30 +437,31 @@
    "balanza de cocina"
   ],
   "pasos": [
-   "Pesa el carrito y anota su masa.",
+   "Pesa el carrito (sin hilo) y anota su masa.",
    "Amarra el hilo al carrito; el otro extremo pasa por el borde liso de la mesa y sostiene el vaso colgando.",
-   "Pon 5 monedas en el vaso: esa será la fuerza constante.",
-   "Suelta el carrito y mide el tiempo que tarda en recorrer 1 metro; repite tres veces.",
-   "Agrega masa al carrito (por ejemplo, el doble) sin cambiar las monedas del vaso y repite.",
-   "Calcula la aceleración con a = 2d / t² y registra masa del carro vs. aceleración en una tabla.",
-   "Grafica aceleración contra masa."
+   "Pon 5 monedas en el vaso: esa será la fuerza constante (la tensión del hilo).",
+   "Suelta el carrito desde reposo y mide el tiempo que tarda en recorrer 1 metro; repite tres veces y saca el promedio.",
+   "Agrega masa al carrito (por ejemplo, el doble, con plastilina pegada) sin cambiar las monedas del vaso y repite.",
+   "Calcula la aceleración con a = 2d / t² (donde d = 1 m) y registra masa del carro vs. aceleración en una tabla.",
+   "Grafica aceleración contra masa: debe ser una hipérbola (a es inversamente proporcional a m)."
   ],
-  "seguridad": "Pon un cojín o caja donde cae el vaso para que las monedas no salten. Sujeta el carrito al final para que no caiga de la mesa.",
+  "seguridad": "Pon un cojín o caja donde cae el vaso para que las monedas no salten. Sujeta el carrito al final para que no caiga de la mesa. Retira el vaso antes de que el carrito se caiga del borde.",
   "adulto": false,
-  "que_pasa": "La segunda ley de Newton dice que la aceleración es igual a la fuerza neta dividida entre la masa (a = F/m). Si la fuerza se mantiene y la masa aumenta, la aceleración disminuye y el carro tarda más en recorrer el metro. En rigor la masa que se acelera incluye también la del vaso con monedas, y la fricción resta un poco de fuerza, por eso los datos no son exactos.",
+  "que_pasa": "La segunda ley de Newton dice que la aceleración es igual a la fuerza neta dividida entre la masa total acelerada (a = F_neta / m_total). En este experimento, el vaso colgante también se acelera, pero como su masa es muy pequeña comparada con la del carrito, los cálculos la desprecian (aproximación válida para grado 8). La fuerza que impulsa el sistema es el peso del vaso con monedas (~0,05 N). Si aumentas la masa del carrito y mantienes las monedas, la fuerza neta es la misma pero se reparte entre más masa, por lo que la aceleración disminuye y tarda más en recorrer el metro. La fricción en las ruedas reduce un poco la fuerza efectiva, por eso los datos reales son algo menores a la teoría.",
   "concepto": "Segunda ley de Newton",
   "vocabulario": [
    "fuerza neta",
    "masa",
    "aceleración",
-   "inercia"
+   "inercia",
+   "proporcionalidad inversa"
   ],
   "preguntas": [
    "¿Cuánto tardó el carrito vacío y cuánto el cargado?",
-   "¿Por qué al aumentar la masa disminuyó la aceleración?",
+   "¿Por qué al aumentar la masa disminuyó la aceleración si la fuerza fue la misma?",
    "¿Por qué un bus lleno necesita más distancia para frenar que uno vacío?"
   ],
-  "reto": "Deja fija la masa del carrito y cambia solo el número de monedas del vaso para ver cómo cambia la aceleración con la fuerza.",
+  "reto": "Deja fija la masa del carrito y cambia solo el número de monedas del vaso para ver cómo cambia la aceleración al variar la fuerza. Grafica fuerza (número de monedas) contra aceleración: esta relación debe ser directamente proporcional.",
   "minutos": 45
  },
  {

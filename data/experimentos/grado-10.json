@@ -861,19 +861,20 @@
    "jarra con agua",
    "regla",
    "termómetro",
-   "celular con app analizadora de frecuencia (Hz)",
-   "1 botella de vidrio con cuello para comparar"
+   "celular con app analizadora de frecuencia (Hz), como Frequency Sound Meter (gratuita)",
+   "1 botella de vidrio con cuello para comparar",
+   "cronómetro"
   ],
   "pasos": [
    "Con el tubo vertical, agrega agua para dejar columnas de aire L = 10, 15, 20, 25, 30 y 35 cm; mide también su diámetro interno d.",
-   "Sopla rasante sobre el borde, como en una flauta de pan, hasta obtener un tono estable y mide la frecuencia fundamental f; repite 3 veces por longitud.",
+   "Sopla rasante sobre el borde, como en una flauta de pan, con soplos cortos (máximo 3 segundos cada uno); descansa 10 segundos entre intentos. Obtén un tono estable y mide la frecuencia fundamental f; repite 3 veces por longitud. Si te sientes mareado, detente inmediatamente.",
    "Calcula la longitud efectiva L' = L + 0,3·d (corrección de extremo abierto).",
    "Grafica f contra 1 / (4·L'): la pendiente de la recta que pasa por el origen es la velocidad del sonido v.",
    "Mide la temperatura del aire, calcula v teórica ≈ 331 + 0,6·T (m/s) y el error porcentual.",
-   "Sopla sobre la botella con cuello y comprueba que su frecuencia no coincide con v / (4L); explica la diferencia.",
-   "Golpea el tubo con agua a dos niveles y explica por qué al golpear la tendencia es distinta que al soplar."
+   "Sopla sobre la botella con cuello y comprueba que su frecuencia no coincide con v / (4L); explica que el aire del cuello actúa como masa oscilante sobre el aire del cuerpo (resonador de Helmholtz).",
+   "Observa qué ocurre si golpeas suavemente el tubo con agua en dos niveles (cambio de amortiguamiento) y contrasta con los datos del soplo: el agua amortigua más las resonancias."
   ],
-  "seguridad": "Sopla suave y descansa si te mareas. Si usas vidrio, trabaja sobre un mantel y avisa al docente si algo se rompe; no recojas vidrios con la mano.",
+  "seguridad": "Sopla suave y descansa si te mareas; máximo 3 segundos de soplo continuo. Si usas vidrio, trabaja sobre un mantel y avisa al docente si algo se rompe; no recojas vidrios con la mano. No fuerces el agua dentro del tubo si está presionado.",
   "adulto": false,
   "que_pasa": "Un tubo cerrado en un extremo resuena cuando su longitud efectiva es un cuarto de la longitud de onda: λ = 4·L' y f = v / (4·L'); la corrección 0,3·d existe porque la onda 'sobresale' un poco del extremo abierto. Por eso f contra 1/(4L') es una recta cuya pendiente es la velocidad del sonido, cerca de 346 m/s a 25 °C. Una botella con cuello no se comporta como un tubo: el aire del cuello oscila como una masa sobre el 'resorte' del aire del cuerpo (resonador de Helmholtz) y su frecuencia depende del volumen, no solo del largo. Los resonadores de guadua de la marimba son tubos cerrados cortados para resonar con la nota de su tabla.",
   "concepto": "Resonancia en tubos y velocidad del sonido",
@@ -882,7 +883,8 @@
    "frecuencia fundamental",
    "longitud de onda",
    "corrección de extremo",
-   "resonador de Helmholtz"
+   "resonador de Helmholtz",
+   "amortiguamiento"
   ],
   "preguntas": [
    "¿Qué velocidad del sonido obtuviste y cuál fue tu error porcentual?",

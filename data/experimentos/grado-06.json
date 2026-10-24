@@ -423,7 +423,7 @@
   "titulo": "¿Qué hace que un columpio vaya más rápido o más lento?",
   "gancho": "En el parque del Perro los columpios tienen cadenas largas y en otros parques cortas. ¿Eso cambia cuánto tarda en ir y volver?",
   "dba": "Explica el movimiento de los objetos a partir de las fuerzas que actúan sobre ellos (peso, fricción, empuje, fuerzas a distancia) y describe el movimiento midiendo distancia, tiempo y rapidez.",
-  "prediccion": "Si duplicas el peso que cuelga del péndulo, ¿tardará más o menos en ir y volver?",
+  "prediccion": "Si acortas el hilo a la mitad (de 50 cm a 25 cm), ¿tardará más o menos tiempo en completar una oscilación?",
   "materiales": [
    "hilo de 1 m",
    "tuercas o arandelas",
@@ -435,27 +435,27 @@
   "pasos": [
    "Pega el hilo al borde de la mesa y cuelga una tuerca a 50 cm.",
    "Sepárala unos 20 cm y suéltala sin empujar.",
-   "Cuenta 10 idas y vueltas y mide el tiempo; divide entre 10.",
-   "Cuelga 2 tuercas con el mismo largo y repite.",
-   "Cambia el largo a 25 cm y repite con 1 tuerca.",
-   "Anota los resultados en una tabla."
+   "Cuenta 10 oscilaciones completas (ida y vuelta = 1 oscilación) y mide el tiempo total; divide entre 10 para obtener el período.",
+   "Cuelga 2 tuercas juntas (misma masa total) con el mismo largo de 50 cm y repite el conteo.",
+   "Cambia el largo a 25 cm, regresa a 1 tuerca y repite con 10 oscilaciones.",
+   "Anota los resultados en una tabla comparando largo y masa."
   ],
-  "seguridad": "Ten cuidado de que la tuerca no golpee a nadie al oscilar.",
+  "seguridad": "Ten cuidado de que la tuerca no golpee a nadie al oscilar. Asegura bien el hilo al borde para evitar caídas.",
   "adulto": false,
-  "que_pasa": "Un péndulo oscila porque la gravedad lo hala hacia el punto más bajo. El tiempo de una oscilación completa (periodo) depende sobre todo del largo del hilo: más largo, más lento. La masa casi no cambia el periodo, lo cual sorprende a muchos.",
-  "concepto": "Péndulo y periodo",
+  "que_pasa": "Un péndulo oscila porque la gravedad lo hala hacia el punto más bajo. El tiempo de una oscilación completa (período) depende principalmente del largo del hilo: más largo, más lento. La masa (número de tuercas) casi no cambia el período, lo cual sorprende a muchos.",
+  "concepto": "Péndulo y período",
   "vocabulario": [
    "péndulo",
-   "periodo",
+   "período",
    "oscilación",
    "gravedad"
   ],
   "preguntas": [
-   "¿Cuánto tardó una oscilación con 50 cm y con 25 cm?",
+   "¿Cuánto tardó una oscilación con 50 cm y con 25 cm? ¿Cuál fue más rápido?",
    "¿Por qué medimos 10 oscilaciones y no una sola?",
-   "¿Cómo podrías usar un péndulo para medir un minuto sin reloj?"
+   "¿Cómo cambió el período cuando duplicaste la masa? ¿Fue lo que esperabas?"
   ],
-  "reto": "Mantén largo y masa, y cambia solo la distancia a la que lo sueltas (10, 20 o 30 cm).",
+  "reto": "Mantén largo y masa constantes, y cambia solo la distancia a la que lo sueltas (10, 20 o 30 cm). ¿Cambia el período?",
   "minutos": 30
  },
  {
