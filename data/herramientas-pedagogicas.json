@@ -1302,6 +1302,98 @@
     "nota": "Para máximo impacto en CENTEC: (1) Incluir rúbrica de evaluación visible para docente (competencias SENA específicas medidas en cada reto). (2) Adaptar retos a especialidades CENTEC reales (no genéricos). (3) Registrar observaciones docente sin datos del menor—solo competencias demostradas. (4) Vincular certificado a ruta de profundización SENA posterior. (5) Crear versión autónoma para que docente configure retos según especialidad. (6) Agregar guía de facilitación para docentes sin experiencia gamificada."
    },
    "fecha": "2026-10-24"
+  },
+  {
+   "nombre": "Experience AI (Raspberry Pi Foundation + Google DeepMind)",
+   "tipo": "banco de actividades",
+   "grados": "3° a 11°",
+   "para_que": "Alfabetización en IA: entender qué es machine learning, cómo entrena, riesgos éticos y aplicaciones reales",
+   "como_usarla": "Docente descarga recursos gratuitos (lecciones de 45-60 min, actividades desenchufadas y digitales). Sesión 1: actividad sin tecnología sobre datos en IA. Sesión 2: estudiantes usan simuladores de ML en navegador. Sesión 3: reflexión sobre sesgos en IA.",
+   "comando_sabi": "[[actividad_ia_no_digital]]; [[simulador_ml_browser]]",
+   "evidencia": "Program desarrollado por Raspberry Pi Foundation y Google DeepMind, reconocido internacionalmente para 8-16 años. Incluye curso de formación docente de 3 semanas.",
+   "fuente": "https://experience-ai.org/es-419",
+   "url": "https://experience-ai.org/es-419",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin chat, sin publicidad, sin compras, sin datos personales requeridos.",
+   "area": "Educación digital, programación e IA",
+   "dot": "Dot_EducacionDigital_IA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 5,
+    "nota": "Para máximo impacto en CENTEC: (1) Integrar sesión 1 (desenchufada) en aulas sin tecnología primero, luego sesión 2-3 en laboratorio. (2) Docentes completen la formación de 3 semanas antes de implementar. (3) Añadir evaluación local: que estudiantes identifiquen UN sesgo en IA en su contexto colombiano (ej: algoritmos de inclusión financiera). (4) Documentar casos de uso reales con datos de la región para anclar aprendizaje. (5) Validar acceso a https://experience-ai.org/es-419 desde conexión CENTEC mensualmente."
+   },
+   "fecha": "2026-10-24"
+  },
+  {
+   "nombre": "Quick, Draw! (Google)",
+   "tipo": "juego educativo",
+   "grados": "2° a 7°",
+   "para_que": "Comprender qué son los datos de entrenamiento y cómo aprende una IA a reconocer patrones visuales",
+   "como_usarla": "Sesión 1 (15 min): estudiante dibuja objetos; la IA intenta adivinar. Sesión 2: docente explica que al final el sistema muestra TODOS los dibujos que usó para entrenar. Sesión 3: discusión sobre cantidad de datos vs. precisión.",
+   "comando_sabi": "[[juego_ia_dibujo]]; /lectura (concepto datos entrenamiento)",
+   "evidencia": "Herramienta de Google que enseña visualmente qué son datos de entrenamiento. Muy citada en alfabetización IA para menores (Digital Wings Academy, 2026; Code.org, Hour of AI).",
+   "fuente": "https://digitalwingsacademy.com/herramientas-ia-para-ninos/",
+   "url": "https://quickdraw.withgoogle.com",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Totalmente seguro: sin chat, sin publicidad, sin datos personales, offline excepto envío anónimo de dibujos.",
+   "area": "Educación digital, programación e IA",
+   "dot": "Dot_EducacionDigital_IA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "En CENTEC usar así: (1) Sesión previa: pedir a estudiantes predicción: '¿qué necesita saber una máquina para adivinar qué dibujas?'. (2) Juego sin spoilers de la IA. (3) Momento revelador: mostrar dataset público de Google (https://quickdraw.withgoogle.com/data) → explorar patrones: ¿por qué falla en X?, ¿cuántos dibujos de 'casa' vio?. (4) Cierre cuantitativo: grafiquear precisión vs. cantidad de datos. (5) Transferencia: 'Esto mismo ocurre en reconocimiento facial, diagnóstico médico, recomendaciones'. Evita solo entretenimiento; ancla en datos reales."
+   },
+   "fecha": "2026-10-24"
+  },
+  {
+   "nombre": "Teachable Machine (Google)",
+   "tipo": "simulador",
+   "grados": "3° a 11°",
+   "para_que": "Entrenar un modelo de IA real (imagen, sonido, poses) sin código; experimenta con datos y aprende por qué los sesgos existen",
+   "como_usarla": "Paso 1: abrir teachablemachine.withgoogle.com. Paso 2: elegir tipo (imagen/sonido). Paso 3: grabar/subir ejemplos de cada clase (ej: foto de lápiz vs. goma). Paso 4: entrenar con un click. Paso 5: testear en tiempo real y analizar errores.",
+   "comando_sabi": "[[simulador_ml_visual]]; /worksheet (análisis errores predicción)",
+   "evidencia": "Herramienta gratuita de Google Labs para 8-16 años. Investigación en alfabetización IA: enseña cómo los datos determinan comportamiento de algoritmo (Softzone, 2024). No requiere registro, muy intuitiva, accesible en español.",
+   "fuente": "https://libros.catedu.es/books/aplicacion-de-la-ia-en-el-aula-educacion-infantil-y-primaria-O34/page/teachable-machine-en-el-aula-entrenar-con-ejemplos-imagen-sonido-y-postura",
+   "url": "https://teachablemachine.withgoogle.com",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Muy seguro: sin chat, sin publicidad, sin compras. Puede usar cámara pero datos no se guardan en Google, se procesan localmente.",
+   "area": "Educación digital, programación e IA",
+   "dot": "Dot_EducacionDigital_IA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": ""
+   },
+   "fecha": "2026-10-24"
+  },
+  {
+   "nombre": "Children AI (Actividades desconectadas + digitales)",
+   "tipo": "banco de actividades",
+   "grados": "2° a 7°",
+   "para_que": "Aprender IA mediante juegos sin tecnología y luego digitales; piensa críticamente sobre la IA de forma segura",
+   "como_usarla": "Plataforma con 25+ actividades por edad (4-12 años). Docente selecciona actividad desconectada: ej. 'Juego de clasificación' con tarjetas físicas. Luego versión digital de la misma actividad. Cada una tiene guía docente paso a paso (5-15 min).",
+   "comando_sabi": "[[actividad_ia_no_digital]]; [[actividad_ia_digital_segura]]",
+   "evidencia": "Plataforma de IA para niños basada en investigación de alfabetización responsable. Énfasis en 'sin registro, sin publicidad, sin datos personales'. Organizada por edad, diseñada para familia y escuela.",
+   "fuente": "https://actividades.childrenai.lat/",
+   "url": "https://actividades.childrenai.lat/",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Totalmente seguro por diseño: sin registro, sin publicidad, sin compras, sin datos personales, sin chat.",
+   "area": "Educación digital, programación e IA",
+   "dot": "Dot_EducacionDigital_IA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": ""
+   },
+   "fecha": "2026-10-24"
   }
  ]
 }
