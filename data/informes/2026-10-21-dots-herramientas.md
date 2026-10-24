@@ -1,0 +1,11 @@
+# SABI · Dots didácticos · herramientas · 2026-10-21
+
+## Dot_Tecnico_SENA — Formación técnica SENA y emprendimiento (2026-10-21)
+Propuestas del investigador: 6
+- Rechazada: Canvas de Modelo de Negocio + Iteración Rápida — Aunque pedagógicamente es excelente (ABP estructurado, iteración rápida, competencias SENA verificables) y la seguridad es impecable (material estático, sin datos personales, sin contacto desconocidos), la evidencia científica es INSUFICIENTE. Las fuentes citadas son: 1) un artículo de revista sobre BTS (Brasil) sin DOI verificable, 2) un Substack (blog personal, no peer-reviewed). No hay estudios empiricos directos sobre Canvas de Osterwalder con menores en contexto colombiano SENA. Se requiere validación más robusta.
+- Aprobada: Presupuesto Dinámico + Diario Financiero (enfoque vivencial) (recurso digital, 7° a 11°) → /lectura + [[plantilla presupuesto personal]] + /escape (retos ahorro)
+- Aprobada: Prototipado SAUCE (Sentir-Actuar-Ubicar-Crear-Enseñar) – Bajo Costo (material concreto, 6° a 11°) → docente + [[guía SAUCE Lab-Dii]] + /escape (ciclo iterativo)
+- Rechazada: Simulador de Empresas Escolar (sin internet: versión de mesa) — RECHAZADA por debilidad crítica en evidencia científica. Aunque la herramienta es pedagógicamente sólida (simulación de decisiones reales, pensamiento estratégico, análisis de riesgo alineado con SENA) y segura (sin internet, sin datos de menores, sin cuentas), las fuentes citadas son INSUFICIENTES: García & Martínez (2020) y López & Sánchez (2020) no tienen DOI verificable en bases de datos indexadas (Scopus, WOS, ERIC). El link de Substack es un blog, no evidencia peer-reviewed. La referencia a 'Ministerio España (2022)' es vaga y no enlaza a fuente oficial. Para SENA (contexto de formación técnica con estándares de calidad), esto no cumple criterio de 'evidencia verificable'.
+- Aprobada: Desafíos de Soft Skills mediante Juego de Mesa + Reflexión Guiada (juego, 7° a 11°) → /escape (dilema resolución) + [[tarjetas soft skills]]
+- Aprobada: Aprendizaje-Servicio (ApS) Técnico: Proyecto Comunitario con Competencia Curricular (estrategia, 9° a 11°) → docente + [[guía ApS técnico SENA]] + /escape (ciclo reflexivo)
+Nuevas aprobadas: 4. Total en el banco: 32.
