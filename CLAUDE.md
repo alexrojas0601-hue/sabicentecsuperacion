@@ -20,3 +20,9 @@ El tutor tiene su propio cerebro en `PROMPT_MAESTRO_SABI.md` (v5), aplicado en `
 - No romper lo que funciona: probar en navegador, en computador y en celular, sin errores de JavaScript.
 - Aplicar `/factcheck` y `/selfcheck`, y que un Dot auditor distinto de quien creó el contenido lo revise.
 - Commit en español que diga qué cambió; Cloudflare despliega desde GitHub. Verificar que el despliegue terminó.
+
+## Propiedad y protección (no quitar)
+- Titulares: **SABI CENTEC — Alexander Rojas Zamorano, Paula Andrea Rojas Cairasco y Daniela Rojas Cairasco**. Licencia propietaria en `LICENSE` (todos los derechos reservados, no es código abierto).
+- Se publica la raíz del repositorio (Cloudflare Pages, sin build, con Pages Functions en `functions/`). Cada HTML que se sirve lleva: comentario de derechos tras `<!DOCTYPE html>`, metas `author`/`copyright`/`rights`/`robots noai`/`og:site_name`, JSON-LD con `copyrightHolder` y el pie `.sabi-derechos` («© 2025-2026 SABI CENTEC… Todos los derechos reservados»). Toda página nueva debe llevarlos.
+- `sabi-proteccion.js` (raíz) se carga en todas las páginas públicas. Es disuasivo (aviso «Copia no autorizada» fuera de *.sabicentec.com, bloqueo de marcos ajenos, imágenes protegidas, Ctrl+S/Ctrl+U desactivados, fuente en textos largos copiados): la protección real es el aviso legal + el registro ante la DNDA.
+- `robots.txt` bloquea bots de IA y copiadores; `_headers` agrega cabeceras de derechos y `frame-ancestors` (no agregar CSP completa: el sitio usa CDNs y APIs externas).
