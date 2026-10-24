@@ -1,3 +1,5 @@
+> © 2025-2026 SABI CENTEC · Alexander Rojas Zamorano, Paula Andrea Rojas Cairasco y Daniela Rojas Cairasco. **Todos los derechos reservados.** Software propietario, no es de código abierto: prohibida su copia, reproducción o republicación sin autorización escrita. Ver [LICENSE](LICENSE).
+
 # superacion.sabicentec.com
 
 Sitio institucional de **SABICENTEC SUPERACIÓN** — la familia de maestros de IA
