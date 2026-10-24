@@ -1,5 +1,5 @@
 {
- "version": "2026-10-23",
+ "version": "2026-10-24",
  "nota": "Herramientas pedagógicas encontradas por los Dots investigadores por área y filtradas por el Dot Auditor Riguroso. El tutor (chat.js) las usa según la asignatura. Solo entran con Pull Request aprobado por coordinación académica.",
  "herramientas": [
   {
@@ -1210,6 +1210,98 @@
     "nota": "Para CENTEC: (1) Entrena docentes con demostración vivencial (10 min) antes de guiar estudiantes (reduce resistencia). (2) Crea repositorio SABI de 5-8 audios pre-grabados de 10 min por semana en español neutro/colombiano para garantizar calidad y acceso sin búsqueda externa. (3) Diseña 'tarjeta de sensaciones' impresa (emojis + palabras) para cierre reflexivo en grados 5-7 (andamiaje de introspección verbal). (4) Protocolo: docente registra si algún estudiante reporta ansiedad/incomodidad y contacta orientador(a) (detección temprana). (5) Incluye sesión para padres (2 pág.) sobre qué esperar y cómo soportar en casa. Esto maximiza adherencia y seguridad emocional en entornos escolares vulnerables."
    },
    "fecha": "2026-10-23"
+  },
+  {
+   "nombre": "Canvas Simplificado + Tablero Kanban Físico",
+   "tipo": "material concreto",
+   "grados": "6° a 11°",
+   "para_que": "Convertir ideas de negocio en planes visuales y tangibles, estructurando modelo de negocio y gestionando tareas en iteraciones rápidas",
+   "como_usarla": "1) Entrega a equipo: papel grande (60x40cm) dividido en 9 secciones (Problema-Solución-Clientes-Ingresos-Costos). 2) Lluvia de ideas: 10 min por sección. 3) Tablero Kanban adjunto: Por hacer-Haciendo-Hecho. 4) Iteración: cada 15 min rotan roles. 5) Reflexión: ¿qué aprendimos del negocio? Documenta en foto.",
+   "comando_sabi": "docente",
+   "evidencia": "El ABP favorece trabajo colaborativo, comunicación efectiva y liderazgo (Araujo et al., 2024; Zenodo 17675093). El visual thinking mejora comprensión y transferencia de conocimientos.",
+   "fuente": "https://zenodo.org/records/17675093",
+   "url": "",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin conexión, sin datos, sin terceros",
+   "area": "Formación técnica SENA y emprendimiento",
+   "dot": "Dot_Tecnico_SENA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para máximo impacto en CENTEC: (1) Añadir rúbrica de evaluación de ideas de negocio viables vs. no viables (criterios: mercado validado, costos reales, diferenciador). (2) Documentar en foto o video corto del proceso (sin identificación de menores, solo manos/trabajo). (3) Implementar 'pitch de 2 minutos' al final donde un representante presenta al resto sin exposición pública obligatoria. (4) Guardar canvas en portafolio físico de estudiante para seguimiento trimestral de iteración del mismo modelo de negocio."
+   },
+   "fecha": "2026-10-24"
+  },
+  {
+   "nombre": "Simulador de Flujo de Caja + Cartera de Monedas Didáctica",
+   "tipo": "simulador",
+   "grados": "5° a 11°",
+   "para_que": "Enseñar gestión de ingresos, gastos, ahorro y endeudamiento mediante simulación tangible de ciclos económicos reales",
+   "como_usarla": "1) Presenta escenario real: estudiante con $50.000 (monedas didácticas). 2) Mes 1: ingreso fijo, 3 gastos inesperados (sorteados). 3) Calcula balance. 4) Repite 4 meses. 5) Cuaderno reflexivo: ¿cuándo fue difícil? ¿qué hubiera hecho distinto? 6) Cierra: diferencia ahorrador vs. gastalón.",
+   "comando_sabi": "[[simulador_flujo_caja]] o docente",
+   "evidencia": "Simuladores mejoran comportamiento financiero y conocimiento aplicado (Banco de la República 2012-2024). Experiencias personales correlacionan fuertemente con prácticas financieras (Neme & Forero, 2018, Universidad Santo Tomás).",
+   "fuente": "https://www.banrep.gov.co/docum/ftp/borra687.pdf",
+   "url": "",
+   "costo": "bajo",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Totalmente offline, sin acceso a internet, sin datos",
+   "area": "Formación técnica SENA y emprendimiento",
+   "dot": "Dot_Tecnico_SENA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para CENTEC: (1) Vincular con Ley 1581/2012: el cuaderno reflexivo es privado y no requiere compartir datos. Documentar así. (2) Agregar matriz de indicadores: rastrear decisiones mensuales (% gasto/ingreso, % ahorro) para docente evalúe progreso sin datos nominales. (3) Extensión opcional: comparar 2-3 estudiantes anónimamente para analizar patrones de riesgo financiero. (4) Validar fuente Banco de la República (URL completa del PDF 687). (5) Potencial de mejora: añadir escenario de endeudamiento con tasa de interés simple para grados 10-11 (SENA técnico)."
+   },
+   "fecha": "2026-10-24"
+  },
+  {
+   "nombre": "Rúbrica de Prototipado Iterativo + Bitácora de Fallos",
+   "tipo": "banco de actividades",
+   "grados": "6° a 11°",
+   "para_que": "Estructurar la fase 'Prototipar' del Design Thinking, documentando iteraciones y aprendizajes de errores para transferencia de conocimiento",
+   "como_usarla": "1) Estudiante construye prototipo con materiales de bajo costo (cartón, palos, cinta). 2) Rúbrica de 4 niveles (Idea Inicial - Prototipo 1 - Prototipo 2 - Final) evalúa funcionalidad, creatividad y solución de problema. 3) Tras cada testeo, completa Bitácora: ¿Qué falló? ¿Por qué? ¿Cómo lo mejoré? 4) Foto + reflexión al portafolio.",
+   "comando_sabi": "/escape (reflexión del fracaso) o docente",
+   "evidencia": "Design Thinking desarrolla pensamiento crítico, creatividad e inteligencia emocional (Razzouk & Shute, 2012; Jiménez & Castillo, 2018). La experimentación sin miedo al error es factor clave (Zaguan, 2020, Universidad de Zaragoza). Prototipos ágiles generan retroalimentación rápida.",
+   "fuente": "https://zaguan.unizar.es/record/98069/files/TAZ-TFG-2020-2545.pdf",
+   "url": "",
+   "costo": "gratis",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin conexión, sin datos, sin terceros",
+   "area": "Formación técnica SENA y emprendimiento",
+   "dot": "Dot_Tecnico_SENA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para máxima efectividad en CENTEC: (1) Agregar rúbrica descargable en PDF con descriptores específicos por grado (6-8°, 9-11°) para evaluar 'funcionalidad' con criterios técnicos claros. (2) Incluir plantilla de Bitácora imprimible con campos: 'Prototipo N°', 'Hipótesis fallida', 'Evidencia del fallo (foto)', 'Causa raíz', 'Acción correctiva', 'Resultado'. (3) Vincular a estándares SENA de competencias laborales (ej: resolución de problemas, autonomía). (4) Opcional: portfolio digital (sin sincronización en nube) donde estudiante compile fotos + reflexiones localmente en pendrive."
+   },
+   "fecha": "2026-10-24"
+  },
+  {
+   "nombre": "Escape Room de Competencias Técnicas + Certificado de Logro",
+   "tipo": "juego",
+   "grados": "7° a 11°",
+   "para_que": "Motivar adquisición de competencias técnicas SENA (electricidad, mecánica, confección) mediante juego inmersivo con desafíos anidados y recompensa tangible",
+   "como_usarla": "1) Grupo de 3-4 resuelve 4 retos encadenados (Reto técnico: arma un circuito → Reto matemático: calcula voltaje → Reto colaborativo: docente valida → Reto reflejo: ¿qué aprendiste?). 2) Cada reto desbloquea pista hacia siguiente. 3) Si completan todos, ganan Certificado impreso + reconocimiento grupal. 4) Tiempo: 60-90 min.",
+   "comando_sabi": "/escape",
+   "evidencia": "Gamificación mejora motivación, participación y rendimiento académico en educación técnica (García et al., 2023; León Pluas et al., 2026). Sistemas gamificados fortalecen competencias emprendedoras (Sistema Gamificado, 2025). Elementos de juego: desafío, narrativa, retroalimentación, progreso.",
+   "fuente": "https://dialnet.unirioja.es/descarga/articulo/9586560.pdf",
+   "url": "",
+   "costo": "bajo",
+   "requiere_cuenta": false,
+   "seguridad_menores": "Sin conexión, sin datos, sin terceros (offline)",
+   "area": "Formación técnica SENA y emprendimiento",
+   "dot": "Dot_Tecnico_SENA",
+   "auditoria": {
+    "pedagogico": 5,
+    "seguridad": 5,
+    "evidencia": 4,
+    "nota": "Para máximo impacto en CENTEC: (1) Incluir rúbrica de evaluación visible para docente (competencias SENA específicas medidas en cada reto). (2) Adaptar retos a especialidades CENTEC reales (no genéricos). (3) Registrar observaciones docente sin datos del menor—solo competencias demostradas. (4) Vincular certificado a ruta de profundización SENA posterior. (5) Crear versión autónoma para que docente configure retos según especialidad. (6) Agregar guía de facilitación para docentes sin experiencia gamificada."
+   },
+   "fecha": "2026-10-24"
   }
  ]
 }
