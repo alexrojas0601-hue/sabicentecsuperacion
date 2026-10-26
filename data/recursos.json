@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "actualizado": "2026-10-02",
+  "actualizado": "2026-10-26",
   "recursos": [
     {
       "id": "taller-armar-sabi",
@@ -1739,6 +1739,39 @@
       "estado": "activo",
       "verificado": "2026-10-02",
       "origen": "semilla-2"
+    },
+    {
+      "id": "simularcircuitos-com",
+      "titulo": "SimularCircuitos.com",
+      "url": "https://simularcircuitos.com/",
+      "tipo": [
+        "simulacion",
+        "steam"
+      ],
+      "areas": [
+        "Física",
+        "Tecnología"
+      ],
+      "grados": {
+        "desde": 8,
+        "hasta": 11
+      },
+      "costo": "gratis",
+      "hardware": "ninguno",
+      "idioma": "español",
+      "acceso": "ya",
+      "descripcion": "Simulador de circuitos eléctricos en navegador, 100% en español, sin registro ni instalación. Permite diseñar y probar circuitos en tiempo real con +100 ejemplos guiados, calculadora integrada e instrumentos de medida virtuales.",
+      "reto": {
+        "titulo": "Sistema de iluminación automático para casas de Ciudad Córdoba",
+        "problema": "Muchas casas del barrio no tienen sistemas de iluminación eficiente; estudiantes y familias gastan energía innecesariamente en bombillas tradicionales. Se necesita diseñar un circuito que encienda/apague luces automáticamente según la luz natural.",
+        "producto": "Esquema de circuito simulado con sensor de luz (LDR) y relé, documento PDF con lista de componentes y costo estimado para que la JAC presente a la Alcaldía local."
+      },
+      "proyecto_institucional": "Centec Verde",
+      "bloom": "aplicar",
+      "seguridad": "Plataforma sin crear cuenta, sin chat, sin publicidad de terceros, sin recopilación de datos personales. Funciona 100% en navegador local.",
+      "estado": "activo",
+      "verificado": "2026-10-26",
+      "origen": "curador"
     }
   ]
 }
