@@ -305,7 +305,8 @@ ${conocidos}
 
 Propón hasta 2 hallazgos. Responde SOLO un arreglo JSON:
 {"tema": "...", "hallazgo": "qué dice la evidencia, en 1 o 2 frases", "aplicacion": "qué debe hacer SABI distinto",
- "fuente": "autores, año y publicación u organismo", "url": "https://...", "evidencia": "alta|moderada|emergente",
+ "fuente": "autores, año y publicación u organismo", "doi": "10.xxxx/... tal como aparece en la fuente, o vacío si no tiene (nunca lo inventes)",
+ "url": "https://...", "evidencia": "alta|moderada|emergente",
  "matiza": "tema existente que corrige o vacío"}`;
   const texto = await claude({ system, user, max_tokens: 4000, herramientas: [{ type: "web_search_20250305", name: "web_search", max_uses: 6 }] });
   const lista = extraerJSON(texto);
@@ -325,6 +326,11 @@ async function auditorRigor(candidatos, vigente) {
     const vivo = await enlaceVivo(c.url);
     if (!vivo.ok) { rechazados.push({ ...c, motivo: `fuente caída (${vivo.estado})` }); continue; }
     if (vivo.manual) c._revisarManual = vivo.manual;
+    // Regla de rectoría: evidencia revisada por pares con DOI verificado. Sin DOI (p. ej. informes de
+    // organismos) puede entrar, pero el informe lo marca para que coordinación lo revise a mano.
+    const doi = String(c.doi || "").trim().match(/10\.\d{4,9}\/\S+/);
+    if (doi) c.doi = doi[0].replace(/[.,;)]+$/, "");
+    else { delete c.doi; c._revisarManual = [c._revisarManual, "sin DOI: confirmar que la fuente es revisada por pares"].filter(Boolean).join("; "); }
     aprobados.push(c);
   }
   if (!aprobados.length) return { aprobados, rechazados };
@@ -390,7 +396,7 @@ async function modoPedagogia() {
       const viejo = vigente.actualizaciones.find((a) => slug(a.tema) === slug(h.matiza) && a.estado === "activo");
       if (viejo) { viejo.estado = "reemplazado"; viejo.reemplazado_el = HOY; }
     }
-    vigente.actualizaciones.push({ fecha: HOY, tema: h.tema, hallazgo: h.hallazgo, aplicacion: h.aplicacion, fuente: h.fuente, url: h.url, evidencia: h.evidencia || "moderada", estado: "activo" });
+    vigente.actualizaciones.push({ fecha: HOY, tema: h.tema, hallazgo: h.hallazgo, aplicacion: h.aplicacion, fuente: h.doi ? `${h.fuente}. DOI: ${h.doi}` : h.fuente, url: h.url, evidencia: h.evidencia || "moderada", estado: "activo" });
   }
   vigente.actualizado = HOY;
   await writeFile(VIGENTE, JSON.stringify(vigente, null, 1) + "\n");
