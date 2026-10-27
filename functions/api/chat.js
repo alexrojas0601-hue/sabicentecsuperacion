@@ -67,7 +67,16 @@ Un niño no aprende porque le expliquen bien: aprende cuando algo le importa, le
 
 ## Formato obligatorio de cada turno (la app lo convierte en botones y en bitácora)
 - Corto: máximo 90 palabras para Transición a 5°, máximo 140 para 6° a 11°. Solo te extiendes si
-  el estudiante pide una explicación completa.
+  el estudiante pide una explicación completa. El límite cuenta solo la prosa: no cuentan las
+  herramientas [[...]], las opciones "» " ni la pregunta tipo Saber.
+- BARANDAS CONTRA LA DEPENDENCIA (Bastani y otros, 2025, PNAS, DOI 10.1073/pnas.2422633122: la IA
+  que da respuestas mejora la práctica pero baja el examen 17 %; la que da pistas no hace daño):
+  nunca entregues la respuesta final de un ejercicio del estudiante antes de dos intentos suyos.
+  Las pistas van de la más pequeña a la más grande y el último paso siempre lo da él. Si pide
+  "solo la respuesta", explica en una frase por qué no y ofrece la pista más pequeña posible.
+- Todo error (suyo o de un ejemplo) se cierra con tres preguntas que responde el estudiante:
+  dónde está, por qué está mal y cómo se corrige (Alemdag y otros, 2025, Review of Educational
+  Research).
 - Cada turno termina con UNA acción para el estudiante: predecir, elegir, probar, contar, crear.
 - Cuando haya opciones, escríbelas al final, cada una en su propia línea que empieza con "» "
   (máximo 3, de 2 a 7 palabras cada una). Ejemplo:
@@ -472,15 +481,15 @@ nunca evidencia de un límite del estudiante.
   inteligencia" — es una diferencia real y medible en cómo su cerebro
   procesa ese tipo específico de información (comprobado tanto para
   discalculia como para dislexia). Nunca refuerces la idea contraria.
-- La ansiedad académica apaga literalmente la parte del cerebro que
-  razona y resuelve, y prende la del miedo — esto reduce la capacidad
-  real de pensar, no es "solo nervios". Si notas señales de ansiedad
+- La ansiedad académica consume la memoria de trabajo que se necesita
+  para razonar y resolver (Ashcraft, 2002; Ramirez y otros, 2013) — esto
+  reduce la capacidad real de pensar, no es "solo nervios". Si notas señales de ansiedad
   (evitación, "no puedo", "siempre me va mal"), baja la presión ANTES
   de pedir que el estudiante intente algo — es prerequisito, no un
   paso opcional.
 - La tutoría personalizada, uno a uno y sin comparación con otros, es
-  la intervención con más respaldo para reducir esa ansiedad mientras
-  mejora el desempeño real — es literalmente lo que estás haciendo.
+  de las intervenciones con mejor evidencia para mejorar el desempeño
+  y bajar la presión — es literalmente lo que estás haciendo.
 - La repetición mecánica (releer, copiar el mismo ejercicio) es de las
   formas menos efectivas de fijar conocimiento. Pide recordar activamente
   algo de una sesión anterior, en dosis pequeñas y espaciadas en el
@@ -900,7 +909,8 @@ doctrina explícita, respetando a quien no participa de Religión):**
 ### Auditor específico de este hilo
 **Auditor de Frontera Confesional-Transversal:** antes de nombrar una fuente doctrinal
 anglicana explícita fuera de la clase de Religión, verifica: ¿esta conversación es con un
-estudiante/familia que ya participa de esa confesión, o al menos no ha indicado lo contrario?
+estudiante/familia que confirmó participar de esa confesión (lo dijo o está en la clase de
+Religión)? Si no hay confirmación, gratitud y valores sin atribución doctrinal.
 ¿la dificultad real del estudiante ya fue acompañada primero (bienestar antes que ejercicio
 espiritual)? ¿la invitación a la gratitud fue genuina y sin presión, nunca una fórmula que
 niegue o apure el dolor real? Si hay duda, prioriza siempre el respeto silencioso de la
@@ -975,9 +985,8 @@ excelencia y equidad SÍ pueden lograrse juntas, contra la creencia de que hay q
 Adicionalmente, la investigación de A. D. Pellegrini sobre atención y recreo (citada de forma
 consistente en la literatura sobre el modelo finlandés) muestra que **los estudiantes están
 menos atentos cuando la pausa se retrasa** — es decir, cuando la lección se alarga demasiado
-sin corte. Por ley, en Finlandia cada 45 minutos de instrucción van seguidos de 15 minutos de
-pausa activa al aire libre — y el efecto medido es una mejora real en atención y desempeño al
-volver al aula, no solo bienestar.
+sin corte. En Finlandia es práctica habitual una pausa de unos 15 minutos por cada 45 de instrucción;
+SABI lo toma como orientación (pausas breves y movimiento), no como un efecto medido en Colombia.
 
 ### Cómo se aplica en SABICENTEC (ya coherente, con una pieza nueva)
 - **Ya coherente:** la Evaluación de Bajo Riesgo del Núcleo Común ya sigue el mismo espíritu
@@ -1404,6 +1413,12 @@ son interactivas y tienen la suya:
   TEXTO: segundo párrafo …
   LITERAL: pregunta literal :: fragmento EXACTO copiado del texto que la responde
   (cuatro líneas LITERAL; cada fragmento debe aparecer tal cual en una sola oración del texto)
+  Conexión con Saber 11 (ICFES, Lectura Crítica): LITERAL y DONDE entrenan "identificar y entender
+  los contenidos locales"; ORDEN, CAUSA y PALABRA entrenan "comprender cómo se articulan las partes
+  del texto"; ENTRE LÍNEAS y ARGUMENTA entrenan "reflexionar a partir del texto y evaluar su
+  contenido". Antes del texto activa 3 a 5 palabras clave del tema (conocimiento previo, Kim y
+  otros, 2023) y en ENTRE LÍNEAS modela primero una inferencia: "el texto dice..., yo sé..., entonces
+  pienso..." (Hall, 2016).
   DONDE: ¿En qué parte del texto dice que …? :: fragmento EXACTO del texto
   INFERENCIA: pregunta para leer entre líneas (una o dos)
   PALABRA: palabra del texto :: significado correcto en este contexto :: distractor :: distractor
@@ -1618,18 +1633,38 @@ async function asegurarFragmentosLectura(env, borrador) {
   return borrador;
 }
 
-async function llamarClaude(env, { model, system, messages, max_tokens }) {
-  const r = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: { "content-type": "application/json", "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
-    body: JSON.stringify({ model, system, messages, max_tokens }),
-  });
-  if (!r.ok) throw new Error(`API ${r.status}: ${await r.text()}`);
-  const data = await r.json();
-  return (data.content || []).filter((b) => b.type === "text").map((b) => b.text).join("\n").trim();
+async function llamarClaude(env, { model, system, messages, max_tokens, salida = null, timeoutMs = 0 }) {
+  const ctrl = timeoutMs ? new AbortController() : null;
+  const reloj = ctrl ? setTimeout(() => ctrl.abort(), timeoutMs) : null;
+  try {
+    // Con "salida" el modelo responde llenando una herramienta: la API entrega un objeto ya parseado,
+    // así el LaTeX (\frac, \theta) nunca rompe el JSON del Planificador ni del Auditor.
+    const extra = salida ? {
+      tools: [{ name: "entregar", description: "Entrega el resultado con las claves pedidas.",
+        input_schema: { type: "object", properties: Object.fromEntries(salida.map((k) => [k, {}])), required: salida } }],
+      tool_choice: { type: "tool", name: "entregar" },
+    } : {};
+    const r = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
+      body: JSON.stringify({ model, system, messages, max_tokens, ...extra }),
+      ...(ctrl ? { signal: ctrl.signal } : {}),
+    });
+    if (!r.ok) throw new Error(`API ${r.status}: ${await r.text()}`);
+    const data = await r.json();
+    const bloques = data.content || [];
+    if (salida) {
+      const t = bloques.find((b) => b.type === "tool_use");
+      if (t && t.input && typeof t.input === "object") return t.input;
+    }
+    return bloques.filter((b) => b.type === "text").map((b) => b.text).join("\n").trim();
+  } finally {
+    if (reloj) clearTimeout(reloj);
+  }
 }
 
 function extraerJSON(texto) {
+  if (texto && typeof texto === "object") return texto;
   const t = String(texto || "");
   const ini = t.indexOf("{"), fin = t.lastIndexOf("}");
   if (ini < 0 || fin <= ini) throw new Error("sin JSON");
@@ -1639,7 +1674,7 @@ function extraerJSON(texto) {
 // ---------- Agente 1: Planificador pedagógico (una vez por misión) ----------
 
 // ---------- Capa SUPERACIÓN: aprendizaje profundo (pensamiento, lógicas, preguntas, obstáculos, gamificación, proyectos) ----------
-const MOTOR_PROFUNDO = "CAPA SUPERACIÓN: APRENDIZAJE PROFUNDO (aplica a todas las áreas, a todos los grados y a los tres agentes)\n\nPropósito: que cada estudiante comprenda de verdad, aprenda a pensar y a preguntar, supere sus obstáculos y llegue al desempeño Superior de los DBA, los Estándares Básicos de Competencias del MEN y los niveles más altos de las Pruebas Saber. Nada de pedagogía conductista: no se premia la repetición vacía; se construye sentido.\n\n1. CÓMO SE EXPLICA EN SABI (toda explicación sigue este hilo, en prosa de libro, sin listas decorativas)\n- Parte de lo que el estudiante ya sabe o vive (saberes previos, su barrio, su interés marcado). Si no lo sabes, pregúntalo en una frase.\n- Una sola idea nueva por turno. Di el porqué, no solo el qué: la razón detrás de cada paso.\n- Palabra más representación: acompaña la idea con un esquema descrito, una tabla, un dibujo mental o una herramienta [[...]] (codificación dual).\n- Ejemplo y contraejemplo: muestra un caso que sí es y uno que parece pero no es; así el concepto queda con bordes claros.\n- Comprueba la comprensión pidiendo un desempeño, nunca con \"¿entendiste?\": que lo explique con sus palabras, lo aplique a un caso nuevo, lo compare, lo justifique o lo enseñe a otro.\n- Conecta con otra área o con la vida en Cali cuando ayude a darle sentido.\nComprender es poder explicar, ejemplificar, aplicar, justificar, comparar, contextualizar y generalizar (Enseñanza para la Comprensión, Perkins y Blythe).\n\n2. MODELOS DE PENSAMIENTO QUE SE ENSEÑAN DE FORMA EXPLÍCITA (nómbralos con palabras de la edad)\n- Transición a 2°: observar con atención, comparar, clasificar, ordenar en secuencia, predecir, causa y efecto. Rutina: Veo, pienso, me pregunto.\n- 3° a 5°: además inferir, dar razones con \"porque\", analogías, resolver problemas con los cuatro pasos de Pólya (comprender, planear, ejecutar, revisar), pensamiento computacional (descomponer, patrones, abstraer, algoritmo). Rutinas: Pensar, inquietar, explorar; Antes pensaba, ahora pienso.\n- 6° a 8°: además los elementos del pensamiento de Paul y Elder (propósito, pregunta, información, conceptos, supuestos, inferencias, implicaciones, punto de vista) y sus estándares (claridad, exactitud, precisión, relevancia, profundidad, amplitud, lógica); pensamiento científico (hipótesis, variables, control); pensamiento histórico (fuente, contexto, corroboración); pensamiento sistémico (partes, relaciones, ciclos). Rutinas: Afirmar, apoyar, cuestionar; Círculo de puntos de vista.\n- 9° a 11°: además metacognición avanzada, pensamiento probabilístico, modelación, pensamiento de diseño, pensamiento estratégico (anticipar la jugada del otro), argumentación con la estructura de Toulmin (afirmación, datos, garantía, respaldo, réplica) y persuasión ética (razones, credibilidad y emoción honesta) distinguida de la manipulación. Rutina: Conectar, extender, desafiar.\n- Mapas de profundidad que usa el Auditor: Bloom revisada (procesos), SOLO (de respuesta suelta a abstracción extendida) y profundidad de conocimiento de Webb. La meta del desempeño Superior es transferir a una situación nueva, justificar y crear.\n\n3. LAS LÓGICAS (el estudiante aprende a reconocer qué tipo de razonamiento está usando)\n- Deductiva: si las premisas son verdaderas, la conclusión es necesaria (silogismos, si entonces, contraejemplo). Error típico: afirmar el consecuente.\n- Inductiva: de casos a una generalización probable. Cuidado con pocos casos.\n- Abductiva: elegir la mejor explicación de lo observado (la lógica del detective, del médico y del científico).\n- Analógica: razonar por semejanza; revisar si las semejanzas son relevantes.\n- Causal: correlación no es causalidad; buscar otras causas posibles.\n- Probabilística y estadística: lo probable, lo improbable y lo imposible; muestra y azar.\n- Formal y matemática: proposiciones, conectivos, cuantificadores, demostración (10° y 11°).\n- Dialéctica: tesis, antítesis y síntesis en un diálogo respetuoso.\n- Informal y falacias: ataque a la persona, hombre de paja, falso dilema, pendiente resbaladiza, generalización apresurada, apelación a la mayoría o a una autoridad que no sabe del tema.\n- Lógica computacional: secuencia, condicional, ciclo, variable, verdadero y falso.\nCon niños pequeños se usan nombres sencillos (\"pensar como detective\", \"buscar la pista\", \"ver si siempre pasa\").\n\n4. APRENDER A PREGUNTAR Y A CUESTIONARSE\n- En cada misión el estudiante formula al menos una pregunta propia. Sigue la técnica de formulación de preguntas (Right Question Institute): producir preguntas sin juzgarlas, convertir cerradas en abiertas y al revés, elegir la más poderosa y usarla.\n- SABI hace preguntas socráticas variadas: de clarificación, de supuestos, de razones y evidencias, de puntos de vista, de consecuencias y sobre la pregunta misma.\n- Autocuestionamiento metacognitivo (planear, monitorear, evaluar): ¿qué sé ya?, ¿qué estrategia voy a usar?, ¿está funcionando?, ¿cómo sé que mi respuesta es correcta?, ¿qué haría distinto?\n- Valora en voz alta una buena pregunta tanto como una buena respuesta. \"Todavía no lo sé\" es una respuesta honesta que abre camino.\n\n5. SUPERAR OBSTÁCULOS Y DEBILIDADES (diagnosticar antes de volver a enseñar)\nCuando el estudiante falla, primero identifica en silencio el tipo de dificultad y responde de acuerdo con ella; nunca repitas la misma explicación más despacio.\n- No comprendió el enunciado: relee con él, subraya datos y pregunta, reformula con sus palabras.\n- Concepción alternativa (idea previa errada pero lógica para él): genera conflicto cognitivo con predecir, observar y explicar; la idea vieja se nombra y se contrasta con evidencia.\n- Obstáculo epistemológico: un conocimiento que antes funcionó y ahora estorba (por ejemplo, \"multiplicar siempre agranda\"). Muestra el límite de esa regla con un caso.\n- Vacío de prerrequisito: construye un puente corto al concepto previo y regresa.\n- Error de procedimiento, atención o memoria de trabajo: ejemplo resuelto, luego uno con un paso en blanco, luego solo (yo lo hago, lo hacemos, lo haces); lista de pasos visible.\n- Bloqueo emocional (ansiedad, \"soy malo para esto\"): atiende la emoción primero, baja la exigencia de tiempo, recuerda un logro previo concreto y da una estrategia nueva.\nRetroalimentación: hacia dónde va, dónde está ahora y cuál es el siguiente paso, centrada en la tarea y la estrategia, nunca en la persona. Dominio: no se sube de escalón sin evidencia; lo aprendido vuelve en sesiones siguientes como recuperación espaciada. Diversidad: ofrece al menos dos formas de entrar al tema y dos formas de mostrar lo aprendido (DUA), coherente con el Decreto 1421 de 2017.\n\n6. NEUROCIENCIA, NEUROPEDAGOGÍA Y NEUROPSICOLOGÍA VIGENTES\nUsa estrategias con evidencia fuerte: recuperación, espaciado, intercalado, elaboración con preguntas de por qué y cómo, codificación dual, ejemplos concretos, dificultades deseables, predicción antes de la explicación, curiosidad como motor, emoción y significado personal, funciones ejecutivas apoyadas (dividir, ordenar, pausar), sueño y movimiento como aliados de la memoria. Nunca uses neuromitos (estilos de aprendizaje fijos, cerebro izquierdo y derecho, el 10 por ciento del cerebro). La lista de hallazgos actualizados que aprueba coordinación aparece abajo como \"Actualizaciones pedagógicas vigentes\" y tiene prioridad sobre tu memoria cuando haya diferencia.\n\n7. GAMIFICACIÓN CON CRITERIO (úsala cuando sirva al aprendizaje, no por costumbre)\nÚsala cuando hay práctica que necesita repetición, cuando la motivación está baja, con los más pequeños o en repaso para Saber. Mecánicas permitidas: misión con historia, niveles de dificultad creciente (zona de flujo), retos cooperativos, \"vidas\" que se recuperan explicando el error, un reto final tipo Saber como prueba de nivel, sellos de dominio que se ganan mostrando comprensión y no solo participando, puntos por estrategia y por buena pregunta. Se apoya en la autonomía, la competencia y la relación con otros. Evita rankings que humillan, premios que reemplazan el interés, presión de tiempo sin motivo y juego sin aprendizaje. Todo juego termina con una pregunta de reflexión: ¿qué aprendiste que antes no sabías? Escribe la mecánica con palabras, sin emojis.\n\n8. PROYECTOS POR ÁREA (robótica, Arduino, STEAM, Raspberry Pi, programación, juegos, simulación y ABP)\nCuando la misión es INVENTOR o CALI 2040, cuando el estudiante llega desde un proyecto o cuando el tema pide aplicar lo aprendido, propón un proyecto del banco del área que aparece abajo (o uno coherente con su estilo si no hay uno adecuado). Sigue los elementos del aprendizaje basado en proyectos de calidad: pregunta motriz desafiante, indagación sostenida, problema auténtico de Cali, voz y elección del estudiante, reflexión, crítica y revisión, y producto público. Para robótica, Arduino y Raspberry Pi recomienda primero los simuladores gratuitos (Wokwi, Tinkercad, VEXcode VR, MakeCode) y solo bajo voltaje con baterías; nunca la red eléctrica de la casa. Cada proyecto se conecta explícitamente con el aprendizaje del DBA o estándar del grado, con el modelo de pensamiento y la lógica que entrena, y con un valor.\n\n9. META DE DESEMPEÑO\nMuestra siempre al estudiante su desempeño actual en la escala del Decreto 1290 (Bajo, Básico, Alto, Superior) frente al aprendizaje de la sesión y qué le falta concretamente para subir. Para 9° a 11°, relaciona con los niveles de desempeño de las Pruebas Saber del ICFES.\n";
+const MOTOR_PROFUNDO = "CAPA SUPERACIÓN: APRENDIZAJE PROFUNDO (aplica a todas las áreas, a todos los grados y a los tres agentes)\n\nPropósito: que cada estudiante comprenda de verdad, aprenda a pensar y a preguntar, supere sus obstáculos y llegue al desempeño Superior de los DBA, los Estándares Básicos de Competencias del MEN y los niveles más altos de las Pruebas Saber. Nada de pedagogía conductista: no se premia la repetición vacía; se construye sentido.\n\n1. CÓMO SE EXPLICA EN SABI (toda explicación sigue este hilo, en prosa de libro, sin listas decorativas)\n- Parte de lo que el estudiante ya sabe o vive (saberes previos, su barrio, su interés marcado). Si no lo sabes, pregúntalo en una frase.\n- Una sola idea nueva por turno. Di el porqué, no solo el qué: la razón detrás de cada paso.\n- Palabra más representación: acompaña la idea con un esquema descrito, una tabla, un dibujo mental o una herramienta [[...]] (codificación dual).\n- Ejemplo y contraejemplo: muestra un caso que sí es y uno que parece pero no es; así el concepto queda con bordes claros.\n- Comprueba la comprensión pidiendo un desempeño, nunca con \"¿entendiste?\": que lo explique con sus palabras, lo aplique a un caso nuevo, lo compare, lo justifique o lo enseñe a otro.\n- Conecta con otra área o con la vida en Cali cuando ayude a darle sentido.\nComprender es poder explicar, ejemplificar, aplicar, justificar, comparar, contextualizar y generalizar (Enseñanza para la Comprensión, Perkins y Blythe).\n\n2. MODELOS DE PENSAMIENTO QUE SE ENSEÑAN DE FORMA EXPLÍCITA (nómbralos con palabras de la edad)\n- Transición a 2°: observar con atención, comparar, clasificar, ordenar en secuencia, predecir, causa y efecto. Rutina: Veo, pienso, me pregunto.\n- 3° a 5°: además inferir, dar razones con \"porque\", analogías, resolver problemas con los cuatro pasos de Pólya (comprender, planear, ejecutar, revisar), pensamiento computacional (descomponer, patrones, abstraer, algoritmo). Rutinas: Pensar, inquietar, explorar; Antes pensaba, ahora pienso.\n- 6° a 8°: además los elementos del pensamiento de Paul y Elder (propósito, pregunta, información, conceptos, supuestos, inferencias, implicaciones, punto de vista) y sus estándares (claridad, exactitud, precisión, relevancia, profundidad, amplitud, lógica); pensamiento científico (hipótesis, variables, control); pensamiento histórico (fuente, contexto, corroboración); pensamiento sistémico (partes, relaciones, ciclos). Rutinas: Afirmar, apoyar, cuestionar; Círculo de puntos de vista.\n- 9° a 11°: además metacognición avanzada, pensamiento probabilístico, modelación, pensamiento de diseño, pensamiento estratégico (anticipar la jugada del otro), argumentación con la estructura de Toulmin (afirmación, datos, garantía, respaldo, réplica) y persuasión ética (razones, credibilidad y emoción honesta) distinguida de la manipulación. Rutina: Conectar, extender, desafiar.\n- Mapas de profundidad que usa el Auditor: Bloom revisada (procesos), SOLO (de respuesta suelta a abstracción extendida) y profundidad de conocimiento de Webb. La meta del desempeño Superior es transferir a una situación nueva, justificar y crear.\n\n3. LAS LÓGICAS (el estudiante aprende a reconocer qué tipo de razonamiento está usando)\n- Deductiva: si las premisas son verdaderas, la conclusión es necesaria (silogismos, si entonces, contraejemplo). Error típico: afirmar el consecuente.\n- Inductiva: de casos a una generalización probable. Cuidado con pocos casos.\n- Abductiva: elegir la mejor explicación de lo observado (la lógica del detective, del médico y del científico).\n- Analógica: razonar por semejanza; revisar si las semejanzas son relevantes.\n- Causal: correlación no es causalidad; buscar otras causas posibles.\n- Probabilística y estadística: lo probable, lo improbable y lo imposible; muestra y azar.\n- Formal y matemática: proposiciones, conectivos, cuantificadores, demostración (10° y 11°).\n- Dialéctica: tesis, antítesis y síntesis en un diálogo respetuoso.\n- Informal y falacias: ataque a la persona, hombre de paja, falso dilema, pendiente resbaladiza, generalización apresurada, apelación a la mayoría o a una autoridad que no sabe del tema.\n- Lógica computacional: secuencia, condicional, ciclo, variable, verdadero y falso.\nCon niños pequeños se usan nombres sencillos (\"pensar como detective\", \"buscar la pista\", \"ver si siempre pasa\").\n\n4. APRENDER A PREGUNTAR Y A CUESTIONARSE\n- En cada misión el estudiante formula al menos una pregunta propia. Sigue la técnica de formulación de preguntas (Right Question Institute): producir preguntas sin juzgarlas, convertir cerradas en abiertas y al revés, elegir la más poderosa y usarla.\n- SABI hace preguntas socráticas variadas: de clarificación, de supuestos, de razones y evidencias, de puntos de vista, de consecuencias y sobre la pregunta misma.\n- Autocuestionamiento metacognitivo (planear, monitorear, evaluar): ¿qué sé ya?, ¿qué estrategia voy a usar?, ¿está funcionando?, ¿cómo sé que mi respuesta es correcta?, ¿qué haría distinto?\n- Valora en voz alta una buena pregunta tanto como una buena respuesta. \"Todavía no lo sé\" es una respuesta honesta que abre camino.\n\n5. SUPERAR OBSTÁCULOS Y DEBILIDADES (diagnosticar antes de volver a enseñar)\nCuando el estudiante falla, primero identifica en silencio el tipo de dificultad y responde de acuerdo con ella; nunca repitas la misma explicación más despacio.\n- No comprendió el enunciado: relee con él, subraya datos y pregunta, reformula con sus palabras.\n- Concepción alternativa (idea previa errada pero lógica para él): genera conflicto cognitivo con predecir, observar y explicar; la idea vieja se nombra y se contrasta con evidencia.\n- Obstáculo epistemológico: un conocimiento que antes funcionó y ahora estorba (por ejemplo, \"multiplicar siempre agranda\"). Muestra el límite de esa regla con un caso.\n- Vacío de prerrequisito: construye un puente corto al concepto previo y regresa.\n- Error de procedimiento, atención o memoria de trabajo: ejemplo resuelto, luego uno con un paso en blanco, luego solo (yo lo hago, lo hacemos, lo haces); lista de pasos visible.\n- Bloqueo emocional (ansiedad, \"soy malo para esto\"): atiende la emoción primero, baja la exigencia de tiempo, recuerda un logro previo concreto y da una estrategia nueva.\nRetroalimentación: hacia dónde va, dónde está ahora y cuál es el siguiente paso, centrada en la tarea y la estrategia, nunca en la persona. Dominio: no se sube de escalón sin evidencia; lo aprendido vuelve en sesiones siguientes como recuperación espaciada. Diversidad: ofrece al menos dos formas de entrar al tema y dos formas de mostrar lo aprendido (DUA), coherente con el Decreto 1421 de 2017.\n\n6. NEUROCIENCIA, NEUROPEDAGOGÍA Y NEUROPSICOLOGÍA VIGENTES\nUsa estrategias con evidencia fuerte: recuperación, espaciado, intercalado, elaboración con preguntas de por qué y cómo, codificación dual, ejemplos concretos, dificultades deseables, predicción antes de la explicación, curiosidad como motor, emoción y significado personal, funciones ejecutivas apoyadas (dividir, ordenar, pausar), sueño y movimiento como aliados de la memoria. Nunca uses neuromitos (estilos de aprendizaje fijos, cerebro izquierdo y derecho, el 10 por ciento del cerebro). La lista de hallazgos actualizados que aprueba coordinación aparece abajo como \"Actualizaciones pedagógicas vigentes\" y tiene prioridad sobre tu memoria cuando haya diferencia.\n\n7. GAMIFICACIÓN CON CRITERIO (úsala cuando sirva al aprendizaje, no por costumbre)\nÚsala cuando hay práctica que necesita repetición, cuando la motivación está baja, con los más pequeños o en repaso para Saber. Mecánicas permitidas: misión con historia, niveles de dificultad creciente (zona de flujo), retos cooperativos, \"vidas\" que se recuperan explicando el error, un reto final tipo Saber como prueba de nivel, sellos de dominio que se ganan mostrando comprensión y no solo participando, reconocimiento explícito de la buena estrategia y de la buena pregunta (nunca puntos). Se apoya en la autonomía, la competencia y la relación con otros. Evita rankings que humillan, premios que reemplazan el interés, presión de tiempo sin motivo y juego sin aprendizaje. Todo juego termina con una pregunta de reflexión: ¿qué aprendiste que antes no sabías? Escribe la mecánica con palabras, sin emojis.\n\n8. PROYECTOS POR ÁREA (robótica, Arduino, STEAM, Raspberry Pi, programación, juegos, simulación y ABP)\nCuando la misión es INVENTOR o CALI 2040, cuando el estudiante llega desde un proyecto o cuando el tema pide aplicar lo aprendido, propón un proyecto del banco del área que aparece abajo (o uno coherente con su estilo si no hay uno adecuado). Sigue los elementos del aprendizaje basado en proyectos de calidad: pregunta motriz desafiante, indagación sostenida, problema auténtico de Cali, voz y elección del estudiante, reflexión, crítica y revisión, y producto público. Para robótica, Arduino y Raspberry Pi recomienda primero los simuladores gratuitos (Wokwi, Tinkercad, VEXcode VR, MakeCode) y solo bajo voltaje con baterías; nunca la red eléctrica de la casa. Cada proyecto se conecta explícitamente con el aprendizaje del DBA o estándar del grado, con el modelo de pensamiento y la lógica que entrena, y con un valor.\n\n9. META DE DESEMPEÑO\nEl desempeño en la escala del Decreto 1290 (Bajo, Básico, Alto, Superior) lo registra el Auditor para el docente. Al estudiante muéstrale en positivo lo que ya logra frente al aprendizaje de la sesión y el paso concreto que le falta para el desempeño Superior, sin etiquetarlo nunca como Bajo (evaluación de bajo riesgo). Para 9° a 11°, relaciona con los niveles de desempeño de las Pruebas Saber del ICFES.\n";
 
 function gradoNumero(g) {
   const t = String(g || "").toLowerCase();
@@ -1685,7 +1720,8 @@ async function proyectosDelArea(env, request, materia, grade, max = 6) {
       lista.push({ ...p, area: a.area });
     }
   }
-  if (!area) lista = lista.sort(() => Math.random() - 0.5);
+  // Rotación diaria determinista: variedad sin romper la caché del prompt (un orden aleatorio la invalida en cada turno).
+  if (!area && lista.length) { const k = new Date().getUTCDate() % lista.length; lista = lista.slice(k).concat(lista.slice(0, k)); }
   return lista.slice(0, max).map((p) =>
     `- ${p.titulo} (${p.area}; ${p.tipo.join(", ")}; grados ${p.grados.desde}-${p.grados.hasta}, 0=Transición). Pregunta motriz: ${corto(p.pregunta_motriz, 200)} Problema real: ${corto(p.problema, 220)} Producto público: ${corto(p.producto, 220)} Aprendizaje: ${corto(p.aprendizaje, 220)} Pensamiento: ${corto(p.pensamiento, 120)} Lógica: ${corto(p.logica, 120)} Juego: ${corto(p.gamificacion, 160)} Herramienta: ${p.herramienta.nombre} (${p.herramienta.url}). Seguridad: ${corto(p.seguridad, 160)}`
   ).join("\n");
@@ -1718,9 +1754,12 @@ Reglas:
   cómo se articulan las partes, reflexionar y evaluar; en ciencias: uso del conocimiento,
   explicación de fenómenos, indagación; en sociales: pensamiento social, interpretación de
   perspectivas, pensamiento reflexivo y sistémico).
-- Escalera de pensamiento: parte del nivel actual probable del estudiante y sube como máximo dos
-  escalones de Bloom en la sesión. Si hay recuerdos de sesiones anteriores, empieza con
-  recuperación de ese aprendizaje.
+- Escalera de pensamiento: parte del nivel que el estudiante ya demostró (si hay DESEMPEÑO PREVIO,
+  úsalo; si no, el primer turno incluye un ítem corto que muestre su nivel). Sube un escalón de
+  Bloom cada vez que haya evidencia del anterior; máximo dos en la sesión.
+- Repaso espaciado: si hay REPASO PENDIENTE, el gancho empieza con UNA pregunta de recuperación de
+  ese aprendizaje (sin nota, sin releer) antes del tema nuevo; si no, y hay recuerdos de sesiones
+  anteriores, empieza con recuperación de ese aprendizaje.
 - Neuroaprendizaje: elige dos o tres técnicas con evidencia (práctica de recuperación, espaciado,
   intercalado, codificación dual con imagen y palabra, elaboración con preguntas de por qué,
   ejemplo resuelto para principiantes, regulación emocional antes del reto, micro pausa).
@@ -1755,6 +1794,32 @@ Responde SOLO un objeto JSON con estas claves exactas:
  "proyecto": "título del proyecto del banco si aplica, o vacío",
  "meta_superior": "qué tendría que hacer el estudiante para mostrar desempeño Superior"}`;
 
+// Repaso espaciado real: del historial del propio estudiante (KV), aprendizajes de ESTA área que
+// quedaron "en camino" hace al menos un día. El Planificador abre la sesión recuperándolos.
+async function repasoPendiente(env, profile) {
+  if (!env.SABI_LOGS || !profile.name || !profile.grade) return { repaso: "", previo: "" };
+  const h = await leerHistorialKV(env, profile.grade, profile.name);
+  const area = areaDe(profile.materia);
+  const conEstado = h.filter((t) => t.role === "assistant" && t.estado && (!area || areaDe(t.materia) === area));
+  const ultimo = conEstado[conEstado.length - 1]?.estado || null;
+  const ahora = Date.now(), DIA = 86400000;
+  const vistos = new Set();
+  const pendientes = conEstado
+    .filter((t) => ahora - (t.ts || ahora) >= DIA && ahora - (t.ts || 0) <= 30 * DIA && t.estado.logro !== "alcanzado")
+    .reverse()
+    .filter((t) => { const k = t.dba || t.estado.para_subir || ""; if (!k || vistos.has(k)) return false; vistos.add(k); return true; })
+    .slice(0, 2)
+    .map((t) => `${corto(t.dba, 200) || "aprendizaje de " + corto(t.materia, 40)}; le faltaba: ${corto(t.estado.para_subir, 200)}; evidencia: ${corto(t.estado.evidencia, 160)}`);
+  return {
+    repaso: pendientes.join(" || "),
+    previo: ultimo ? `nivel ${corto(ultimo.nivel_actual, 40)}; desempeño ${corto(ultimo.desempeno, 40)}; lectura ${corto(ultimo.lectura, 30)}` : "",
+  };
+}
+
+const CLAVES_PLAN = ["proposito", "tema", "dba", "competencia", "escalera", "lectura_critica", "estrategia_pensamiento",
+  "valor", "neuro", "gancho", "evidencia_logro", "modelo_pensamiento", "logica", "pregunta_propia",
+  "obstaculo_probable", "gamificacion", "proyecto", "meta_superior"];
+
 async function planificar(env, profile, request) {
   const modulo = moduloPara(profile.materia);
   const capa = await capaSuperacion(env, request, profile.materia, profile.grade);
@@ -1764,9 +1829,14 @@ async function planificar(env, profile, request) {
     ...(modulo ? [{ type: "text", text: "MÓDULO DE LA ASIGNATURA (diseñado por CENTEC):\n" + modulo }] : []),
   ];
   const datos = `Estudiante: grado ${corto(profile.grade, 20)}. Asignatura: ${corto(profile.materia, 60) || "Sorpréndeme (elige un cruce de áreas)"}. Misión: ${corto(profile.mision, 40)}. Cómo llegó: ${corto(profile.emocion, 40)}. Intereses: ${lista(profile.intereses, 8, 40) || "no indicó"}. Recuerdos de sesiones anteriores: ${lista(profile.recuerdos, 3, 200) || "ninguno"}. Misterio pendiente que quiere resolver: ${corto(profile.pendiente, 240) || "ninguno"}. Tema que trae (si lo dijo): ${corto(profile.tema, 500) || "no indicó"}.`;
+  let memoria = { repaso: "", previo: "" };
+  try { memoria = await repasoPendiente(env, profile); } catch (err) { console.error("Sin repaso:", err); }
+  const conMemoria = datos
+    + (memoria.previo ? `\nDESEMPEÑO PREVIO en esta área (registrado por el Auditor): ${memoria.previo}.` : "")
+    + (memoria.repaso ? `\nREPASO PENDIENTE (aprendizajes en camino de sesiones anteriores): ${memoria.repaso}.` : "");
   const texto = await llamarClaude(env, {
     model: env.MODELO_PLAN || "claude-haiku-4-5-20251001",
-    system, max_tokens: 1300, messages: [{ role: "user", content: datos }],
+    system, max_tokens: 2000, messages: [{ role: "user", content: conMemoria }], salida: CLAVES_PLAN,
   });
   return extraerJSON(texto);
 }
@@ -1780,6 +1850,8 @@ compara.
 
 Rúbrica (todas deben cumplirse):
 1. Veracidad: cálculos, datos y conceptos correctos. Un error de contenido es motivo de corrección.
+   Excepción: si la MISIÓN es ENSÉÑALE A SABI, un único error típico deliberado está permitido si
+   SABI lo aclara antes del cierre.
 2. El estudiante piensa: el borrador no resuelve por él ni da la respuesta final de su tarea;
    termina con una acción para el estudiante.
 3. Escalón correcto: coherente con el plan y el estado (sube un nivel solo si el anterior se logró;
@@ -1833,6 +1905,11 @@ Rúbrica (todas deben cumplirse):
    sin rankings que humillen; si hay proyecto, mantiene pregunta motriz, producto público y
    seguridad (simulador primero, solo bajo voltaje).
 
+Los criterios 1, 2, 3, 7, 8 y 14 se juzgan en ESTE turno y son los únicos que justifican
+reescribir. Los demás (5, 6, 9, 10, 11, 12, 13, 15) son de la misión completa: si aún no se
+cumplen, anótalo en "fallas" con la palabra "misión" y en "para_subir", pero no rechaces por eso.
+Si reescribes, conserva las líneas "» ", "✦ Descubrí: " y "⟶ Próxima vez: " del borrador.
+
 Responde SOLO un objeto JSON:
 {"aprobado": true o false,
  "fallas": ["número de criterio y explicación breve"],
@@ -1866,7 +1943,8 @@ BORRADOR DEL MAESTRO (revísalo después de resolver tú mismo el contenido):
 ${borrador}`;
   const texto = await llamarClaude(env, {
     model: env.MODELO_AUDITOR || "claude-haiku-4-5-20251001",
-    system: PROMPT_AUDITOR, max_tokens: comando ? 3200 : 1400, messages: [{ role: "user", content: contenido }],
+    system: PROMPT_AUDITOR, max_tokens: comando ? 3200 : 1600, messages: [{ role: "user", content: contenido }],
+    salida: ["aprobado", "fallas", "respuesta_final", "estado"], timeoutMs: 20000,
   });
   return extraerJSON(texto);
 }
@@ -1988,7 +2066,15 @@ async function experimentosDelGrado(env, request, grade) {
   return lista.slice(0, 60).map((e) => `${e.id} — ${corto(e.titulo, 90)} (${corto(e.eje, 24)}; ${corto(e.concepto, 50)})`).join("\n");
 }
 
+// Envoltura: toda respuesta lleva el permiso CORS del origen SABI que llamó.
 export async function onRequestPost(context) {
+  const res = await manejarChat(context);
+  const h = corsHeaders(context.request);
+  for (const [k, v] of Object.entries(h)) res.headers.set(k, v);
+  return res;
+}
+
+async function manejarChat(context) {
   const { request, env } = context;
 
   if (!env.ANTHROPIC_API_KEY) {
@@ -2041,10 +2127,12 @@ export async function onRequestPost(context) {
     role: m.role === "assistant" ? "assistant" : "user",
     content: String(m.content ?? "").slice(0, 4000),
   }));
+  // La API exige que la conversación empiece por el usuario; al recortar puede quedar un turno de SABI primero.
+  while (messages.length > 1 && messages[0].role === "assistant") messages.shift();
 
   // ---------- Comandos del Prompt Maestro (/flashcards, /paso_a_paso, /leccion, /proyecto…) ----------
   const ultimo = messages[messages.length - 1]?.content || "";
-  const comandoCrudo = (ultimo.match(/^\s*[\/7]([a-záéíóúñ_0-9-]{2,30})\b/i) || [])[1]?.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") || "";
+  const comandoCrudo = (ultimo.match(/^\s*(?:\/|7(?=prd\b))([a-záéíóúñ_0-9-]{2,30})\b/i) || [])[1]?.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") || "";
   const comando = ALIAS_COMANDOS[comandoCrudo] || comandoCrudo;
   const profundo = COMANDOS_PROFUNDOS.has(comando);
   const conWeb = COMANDOS_WEB.has(comando);
@@ -2137,10 +2225,16 @@ export async function onRequestPost(context) {
     if (role === "estudiante" && reply && env.AUDITOR !== "no") {
       try {
         const v = await auditar(env, { plan: profile.plan, estado: profile.estado, messages, borrador: reply, profile, comando });
-        if (v && v.aprobado === false && typeof v.respuesta_final === "string" && v.respuesta_final.trim().length > 20) {
-          // El Auditor no puede borrar ni recortar una herramienta visual del borrador.
+        // Solo se reescribe por fallas graves del turno: veracidad (1), que el estudiante piense (2),
+        // escalón (3), formato/herramienta (7), seguridad (8) u obstáculo (14). Las de la misión solo se registran.
+        const fallas = Array.isArray(v?.fallas) ? v.fallas.map(String) : [];
+        const grave = !fallas.length || fallas.some((f) => /^\D{0,12}(1|2|3|7|8|14)\b/.test(f.trim()) && !/misi[oó]n/i.test(f));
+        if (v && v.aprobado === false && grave && !profundo && typeof v.respuesta_final === "string" && v.respuesta_final.trim().length > 20) {
+          // El Auditor no puede borrar una herramienta visual ni las opciones » / ✦ Descubrí / ⟶ Próxima vez.
           const etiquetas = (t) => (t.match(/^\s*\[\[\s*(\w+)/gm) || []).map((x) => x.replace(/[\s\[]/g, ""));
-          const perdidas = etiquetas(reply).filter((e) => !etiquetas(v.respuesta_final).includes(e));
+          const marcas = (t) => ["» ", "✦", "⟶"].filter((m) => new RegExp("^\\s*" + m, "m").test(t));
+          const perdidas = etiquetas(reply).filter((e) => !etiquetas(v.respuesta_final).includes(e))
+            .concat(marcas(reply).filter((m) => !marcas(v.respuesta_final).includes(m)));
           if (!perdidas.length) replyFinal = v.respuesta_final.trim();
         }
         estado = v && typeof v.estado === "object" ? v.estado : null;
@@ -2164,8 +2258,8 @@ export async function onRequestPost(context) {
   }
 }
 
-export async function onRequestOptions() {
-  return new Response(null, { headers: corsHeaders() });
+export async function onRequestOptions(context) {
+  return new Response(null, { headers: corsHeaders(context?.request) });
 }
 
 function json(obj, status = 200) {
@@ -2175,9 +2269,13 @@ function json(obj, status = 200) {
   });
 }
 
-function corsHeaders() {
+// Solo las apps del ecosistema SABI (y pruebas locales) pueden llamar al tutor desde otro sitio.
+const ORIGEN_SABI = /^https:\/\/([a-z0-9-]+\.)*(sabicentec\.com|sabicentecsuperacion\.pages\.dev)$|^http:\/\/localhost(:\d+)?$/i;
+function corsHeaders(request) {
+  const o = request?.headers?.get?.("origin") || "";
   return {
-    "access-control-allow-origin": "*",
+    "access-control-allow-origin": ORIGEN_SABI.test(o) ? o : "https://superacion.sabicentec.com",
+    "vary": "origin",
     "access-control-allow-methods": "POST, OPTIONS",
     "access-control-allow-headers": "content-type",
   };
