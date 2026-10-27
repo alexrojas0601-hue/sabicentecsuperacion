@@ -306,7 +306,7 @@
 <body>
 
 <header>
-  <img src="sabi-avatar.png" alt="SABI">
+  <img src="sabi-avatar-sm.png" alt="SABI">
   <div class="titulos">
     <h1 id="titulo-header">SABI</h1>
     <span class="mono" id="subtitulo-header">Colegio CENTEC</span>
@@ -323,7 +323,7 @@
 
 <!-- PANTALLA 1: elegir rol -->
 <div id="pantalla-rol">
-  <img src="sabi-avatar.png" alt="SABI">
+  <img src="sabi-avatar-sm.png" alt="SABI">
   <h2>¡Hola! Para ayudarte mejor, cuéntame quién eres.</h2>
   <p>Cada perfil ve solo su propia información — nunca la de otros.</p>
   <div class="roles">
@@ -533,7 +533,7 @@
       <p class="plan-avance" id="plan-avance"></p>
     </section>
     <div class="bienvenida">
-      <img src="sabi-avatar.png" alt="SABI">
+      <img src="sabi-avatar-sm.png" alt="SABI">
       <div class="burbuja" id="mensaje-bienvenida">¡Hola! Soy SABI.</div>
     </div>
   </main>
@@ -574,6 +574,18 @@
 
 <script>
   const LS_KEY = 'sabi_perfil';
+  // El código familiar y la contraseña docente nunca se guardan en localStorage (computadores
+  // compartidos del colegio, Ley 1581): viven solo en esta pestaña (sessionStorage).
+  const SECRETOS = ['familyCode', 'docentePassword'];
+  function guardarPerfil() {
+    try {
+      const p = { ...perfil, profile: { ...perfil.profile } }, s = {};
+      SECRETOS.forEach(k => { if (p.profile[k]) { s[k] = p.profile[k]; delete p.profile[k]; } });
+      delete p.profile.plan; delete p.profile.estado;
+      localStorage.setItem(LS_KEY, JSON.stringify(p));
+      sessionStorage.setItem(LS_KEY + '_s', JSON.stringify(s));
+    } catch { /* sin almacenamiento: la sesión sigue en memoria */ }
+  }
   let perfil = null;
   const historial = [];
 
@@ -612,6 +624,7 @@
   document.getElementById('btn-volver-rol').addEventListener('click', () => mostrarPantalla('rol'));
   btnCambiarRol.addEventListener('click', () => {
     localStorage.removeItem(LS_KEY);
+    try { sessionStorage.removeItem(LS_KEY + '_s'); } catch {}
     perfil = null;
     mostrarPantalla('rol');
     btnCambiarRol.style.display = 'none';
@@ -646,7 +659,7 @@
       perfil = { role: 'docente', profile: { teacherArea, homeroomGrade, docentePassword } };
     }
 
-    localStorage.setItem(LS_KEY, JSON.stringify(perfil));
+    guardarPerfil();
     perfil.role === 'estudiante' ? mostrarMision() : (iniciarChat(), temaDocente());
   });
 
@@ -740,6 +753,11 @@
         const previo = JSON.parse(guardado);
         // Si un enlace pide otro rol (por ejemplo, un docente desde el Laboratorio), no se reutiliza el perfil guardado.
         if (destino.rol && previo.role !== destino.rol && ['estudiante', 'padre', 'docente'].includes(destino.rol)) return;
+        let s = {}; try { s = JSON.parse(sessionStorage.getItem(LS_KEY + '_s') || '{}'); } catch {}
+        SECRETOS.forEach(k => { if (s[k]) previo.profile[k] = s[k]; });
+        // Perfiles viejos guardaban la clave: se limpia. Sin la clave en esta pestaña, se vuelve a pedir.
+        if (SECRETOS.some(k => k in (JSON.parse(guardado).profile || {}))) { perfil = previo; guardarPerfil(); }
+        if ((previo.role === 'padre' && !previo.profile.familyCode) || (previo.role === 'docente' && !previo.profile.docentePassword)) { mostrarPantalla('rol'); return; }
         perfil = previo;
         perfil.role === 'estudiante' ? mostrarMision() : (iniciarChat(), temaDocente());
         return;
@@ -1479,7 +1497,7 @@
     }
     const div = document.createElement('div');
     div.className = 'msg sabi';
-    div.innerHTML = bloques.map(b => b.p ? `<p data-seg>${enLinea(b.p)}</p>` : b.herramienta ? dibujarHerramienta(b.herramienta, b.args) : `<ol>${b.ul.map(x => `<li data-seg>${enLinea(x)}</li>`).join('')}</ol>`).join('')
+    div.innerHTML = bloques.map(b => b.p ? `<p data-seg>${enLinea(b.p)}</p>` : b.herramienta ? (dibujarHerramienta(b.herramienta, b.args) || (/^\s*@/.test(String(b.args || '')) || !String(b.args || '').trim() ? '' : `<p data-seg>${enLinea(String(b.args).replace(/[|:]{1,2}/g, ' · '))}</p>`)) : `<ol>${b.ul.map(x => `<li data-seg>${enLinea(x)}</li>`).join('')}</ol>`).join('')
       + descubrimientos.map(d => `<div class="descubri">${enLinea(d.replace(/^Descubr[ií]:\s*/i, 'Descubriste '))}</div>`).join('')
       + (proxima ? `<div class="proxima">Para la próxima vez: ${enLinea(proxima)}</div>` : '');
     div.insertAdjacentHTML('beforeend', '<button type="button" class="leer">Escuchar en voz alta</button>');
@@ -1506,6 +1524,15 @@
   }
 
   let ocupado = false;
+  // Un fallo de red no obliga al estudiante a reescribir: un botón reenvía el mismo mensaje.
+  function ofrecerReintento(texto, aviso) {
+    const m = agregarMensaje(aviso, 'sabi');
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'opcion'; b.textContent = 'Reintentar';
+    b.addEventListener('click', () => { m.remove(); enviarTexto(texto, { oculto: true }); });
+    m.appendChild(document.createElement('br')); m.appendChild(b);
+  }
+
   async function enviarTexto(texto, { oculto = false } = {}) {
     if (!texto || !perfil || ocupado) return;
     if (vozAutomatica()) asegurarAudio();
@@ -1520,14 +1547,18 @@
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({ messages: historial, role: perfil.role, profile: perfil.profile }),
+        ...(window.AbortSignal && AbortSignal.timeout ? { signal: AbortSignal.timeout(90000) } : {}),
       });
-      const data = await res.json();
+      const bruto = await res.text();
+      let data; try { data = JSON.parse(bruto); } catch { data = { error: 'respuesta no válida', detail: bruto.slice(0, 200) }; }
       cargando.remove();
       if (!res.ok || data.error) {
         historial.pop();
-        agregarMensaje(res.status === 401
-          ? 'Tu acceso no pudo verificarse (código o contraseña incorrectos). Usa "Cambiar de perfil" arriba para intentarlo de nuevo.'
-          : 'No pude responder ahora mismo. Intenta de nuevo en un momento.', 'sabi');
+        if (res.status === 401) {
+          agregarMensaje('Tu acceso no pudo verificarse (código o contraseña incorrectos). Usa "Cambiar de perfil" arriba para intentarlo de nuevo.', 'sabi');
+        } else {
+          ofrecerReintento(texto, 'No pude responder ahora mismo. Tu mensaje no se perdió.');
+        }
         console.error(data);
       } else {
         historial.push({ role: 'assistant', content: data.reply });
@@ -1537,7 +1568,9 @@
     } catch (err) {
       cargando.remove();
       historial.pop();
-      agregarMensaje('Hubo un problema de conexión. Revisa tu internet e intenta de nuevo.', 'sabi');
+      ofrecerReintento(texto, err && err.name === 'TimeoutError'
+        ? 'SABI se demoró más de lo normal. Tu mensaje no se perdió.'
+        : 'Hubo un problema de conexión. Revisa tu internet; tu mensaje no se perdió.');
       console.error(err);
     } finally {
       ocupado = false;

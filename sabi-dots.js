@@ -442,7 +442,7 @@
 
   // =================================================================== CÓMIC
   function personaje(nombre, col) {
-    if (/^sabi$/i.test(nombre)) return `<img src="sabi-avatar.png" alt="SABI" class="c-sabi">`;
+    if (/^sabi$/i.test(nombre)) return `<img src="sabi-avatar-sm.png" alt="SABI" class="c-sabi">`;
     const h = semilla(nombre), pelo = ['#2B1D14', '#5A3A22', '#1B1B18', '#8A5A2B', '#3B2A20'][h % 5], piel = ['#8D5524', '#C68642', '#E0AC69', '#F1C27D', '#6B4226'][(h >> 3) % 5];
     return `<svg viewBox="0 0 80 100" class="c-pj" aria-hidden="true"><rect x="18" y="58" width="44" height="42" rx="14" fill="${col}"/><circle cx="40" cy="36" r="22" fill="${piel}"/>` +
       `<path d="M18 34 Q20 ${10 + (h % 6)} 40 12 Q60 ${10 + ((h >> 2) % 6)} 62 34 Q54 22 40 22 Q26 22 18 34Z" fill="${pelo}"/>` +

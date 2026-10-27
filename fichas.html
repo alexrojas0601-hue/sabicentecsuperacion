@@ -162,6 +162,13 @@
     header.barra a{font-size:.78rem;}
   }
 
+  .practica{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:.45em 0 .2em;}
+  .practica input{font:inherit; padding:6px 10px; border:1.5px solid #C9C3B5; border-radius:8px; min-width:9em; max-width:100%;}
+  .practica .fb{font-size:.92rem;}
+  .practica .fb.bien{color:#1B6B3A;} .practica .fb.mal{color:#8A3B12;}
+  .practica button{font:inherit; font-size:.88rem; background:none; border:none; color:#1A2D7A; text-decoration:underline; cursor:pointer; padding:4px;}
+  .revisar-todo{margin:1em 0 .2em; display:flex; flex-wrap:wrap; gap:10px; align-items:center;}
+  .revisar-todo button{font:inherit; font-weight:600; background:#1A2D7A; color:#fff; border:none; border-radius:10px; padding:10px 18px; cursor:pointer; min-height:44px;}
   @media print{
     @page{margin:13mm 12mm;}
     html, body{background:#fff !important;}
@@ -1202,6 +1209,33 @@ function generar(params){
   const intro=T.intro.replace(/\{N\}/g,c.N).replace(/\{M\}/g,c.M)+' '+TP.puente(c);
   return {p,titulo:T.titulo,tema:T.id,intro,instr:TP.instr(c),items,lista:p.tipo==='dinero'||(p.tipo==='problemas'&&p.grado>=3)?c.lista:null,tipoNombre:TP.nombre,cols:!!TP.cols&&p.grado>=1&&!['trigonometria','interes','sistemas'].includes(p.sub)};
 }
+// ---------- Práctica en pantalla: la ficha acepta y revisa su propia respuesta ----------
+// Solo se revisan automáticamente los ejercicios de UNA respuesta; los de varias se comparan con la clave.
+// Pedagogía (Bastani 2025; Yang 2021): primero "vuelve a intentarlo" sin revelar; la clave del ejercicio
+// aparece solo después de dos intentos.
+function revisable(c){ if(!c||Array.isArray(c)||c.mostrar==null) return false;
+  if(['patron','error','sis','cuad'].includes(c.f)) return false;
+  if(c.f==='serie'&&c.ocultos&&c.ocultos.length!==1) return false;
+  if(c.f==='poli'&&c.pide==='ambos') return false; return true; }
+function normResp(t){ return String(t).replace(/[−–]/g,'-').replace(/^\s*[a-z]\s*=\s*/i,'').trim(); }
+function numsDe(t){ const s=normResp(t).replace(/\$|cop|pesos/gi,'').replace(/(\d)\.(?=\d{3}(\D|$))/g,'$1').replace(/(\d),(\d)/g,'$1.$2');
+  return (s.match(/-?\d+(\.\d+)?(\s*\/\s*\d+)?/g)||[]).map(x=>{const f=x.split('/'); return f.length===2?(+f[0])/(+f[1]):parseFloat(x);}); }
+const planoR=t=>normResp(t).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9ñ/.,-]+/g,' ').trim();
+function respCorrecta(dada,esperada){ if(!String(dada).trim()) return false;
+  const a=numsDe(dada), b=numsDe(esperada);
+  if(b.length===1&&a.length===1) return Math.abs(a[0]-b[0])<(Number.isInteger(b[0])?1e-9:1e-6*Math.max(1,Math.abs(b[0])));
+  return planoR(dada)===planoR(esperada); }
+function activarPractica(f){ const intentos={};
+  const revisar=inp=>{ const i=+inp.dataset.i, it=f.items[i], fb=inp.nextElementSibling; if(!inp.value.trim()){fb.textContent='';return null;}
+    if(respCorrecta(inp.value,it.chk.mostrar)){ fb.className='fb bien'; fb.textContent='Correcto. ¿Podrías explicar cómo lo pensaste?'; return true; }
+    intentos[i]=(intentos[i]||0)+1; fb.className='fb mal';
+    if(intentos[i]<2) fb.textContent='Todavía no. Revisa tu procedimiento y vuelve a intentarlo.';
+    else { fb.innerHTML='Mira la clave, busca dónde cambió tu camino: '+it.clave; }
+    return false; };
+  document.querySelectorAll('#ficha .practica input').forEach(inp=>inp.addEventListener('keydown',e=>{ if(e.key==='Enter'){e.preventDefault(); revisar(inp);} }));
+  const b=document.getElementById('b-revisar'); if(b) b.addEventListener('click',()=>{ let bien=0,total=0;
+    document.querySelectorAll('#ficha .practica input').forEach(inp=>{ const r=revisar(inp); if(r!==null){total++; if(r) bien++;} });
+    document.getElementById('resumen-rev').textContent=total?('Lograste '+bien+' de '+total+' respondidos. '+(bien<total?'Los que faltan son tu mejor pista de qué practicar.':'Ahora intenta una ficha nueva de dificultad mayor.')):'Escribe al menos una respuesta.'; }); }
 function htmlFicha(f){
   const p=f.p;
   let h='<header class="ficha-cab"><div class="marca">SABI · Colegio CENTEC <span>Matemáticas · '+GRADOS[p.grado]+' · '+f.tipoNombre+'</span></div>'+
@@ -1209,7 +1243,8 @@ function htmlFicha(f){
     '<h2 class="ficha-titulo">'+f.titulo+'</h2><p class="gancho">'+f.intro+'</p>';
   if(f.lista) h+='<div class="lista-precios"><h3>Lista de precios</h3><table>'+f.lista.map(x=>'<tr><td>'+cap(x[0])+'</td><td>'+money(x[2])+'</td></tr>').join('')+'</table></div>';
   h+='<p class="consigna"><strong>Instrucciones:</strong> '+f.instr+'</p>';
-  h+='<ol class="items'+(f.cols?' cols':'')+'">'+f.items.map(it=>'<li class="item">'+it.html+'</li>').join('')+'</ol>';
+  h+='<ol class="items'+(f.cols?' cols':'')+'">'+f.items.map((it,i)=>'<li class="item">'+it.html+(revisable(it.chk)?'<div class="practica no-print"><input data-i="'+i+'" inputmode="text" autocomplete="off" aria-label="Tu respuesta al ejercicio '+(i+1)+'" placeholder="Tu respuesta"><span class="fb" role="status"></span></div>':'')+'</li>').join('')+'</ol>';
+  if(f.items.some(it=>revisable(it.chk))) h+='<div class="revisar-todo no-print"><button type="button" id="b-revisar">Revisar mis respuestas</button><span id="resumen-rev" role="status"></span></div>';
   h+='<section class="autoeval"><h3>¿Cómo me fue?</h3><div class="ops"><span>Lo hice solo</span><span>Lo hice con ayuda</span><span>Necesito repasar</span></div><div class="costo">Lo que más me costó fue: <span class="campo"></span></div></section>';
   h+='<footer class="pie"><span>SABI · Colegio CENTEC</span><span>Ficha n.º '+p.semilla+' · '+GRADOS[p.grado]+' · '+({facil:'fácil',media:'media',reto:'reto'})[p.dificultad]+'</span></footer>';
   return h;
@@ -1230,7 +1265,7 @@ function llenarSub(p){const s=$('c-sub'); const subs=TIPOS[p.tipo].subs(p.grado)
   $('l-sub').firstChild.nodeValue=p.tipo==='calculo'?'Operación':'Enfoque'; $('g-calc').hidden=p.tipo!=='calculo';}
 function pintarControles(p){$('c-tipo').value=p.tipo; $('c-grado').value=p.grado; $('c-dif').value=p.dificultad; $('c-n').value=p.n; $('c-tema').value=p.tema; llenarSub(p);
   $('c-rmin').value=p.rmin==null?'':p.rmin; $('c-rmax').value=p.rmax==null?'':p.rmax; $('c-llevada').value=p.llevada; $('semilla-info').textContent='Ficha n.º '+p.semilla;}
-function render(params,noURL){const f=generar(params); actual=f; $('ficha').innerHTML=htmlFicha(f); $('clave').innerHTML=htmlClave(f);
+function render(params,noURL){const f=generar(params); actual=f; $('ficha').innerHTML=htmlFicha(f); activarPractica(f); $('clave').innerHTML=htmlClave(f);
   document.title=f.titulo+' · Fichas SABI'; if(!noURL){try{history.replaceState(null,'',aURL(f.p));}catch(e){}} pintarControles(f.p); return f;}
 function leerControles(){return {tipo:$('c-tipo').value,grado:$('c-grado').value,dificultad:$('c-dif').value,n:$('c-n').value,tema:$('c-tema').value,[TIPOS[$('c-tipo').value].param]:$('c-sub').value,rmin:$('c-rmin').value,rmax:$('c-rmax').value,llevada:$('c-llevada').value,semilla:actual?actual.p.semilla:''};}
 function aviso(t){const a=$('aviso'); a.textContent=t; a.classList.add('ver'); clearTimeout(aviso._t); aviso._t=setTimeout(()=>a.classList.remove('ver'),2200);}
@@ -1249,7 +1284,7 @@ function iniciar(){
   $('b-copiar').addEventListener('click',()=>{const url=location.href; const ok=()=>aviso('Enlace copiado: esta misma ficha se abrirá igual.');
     if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(ok,()=>window.prompt('Copia este enlace:',url)); else window.prompt('Copia este enlace:',url);});
 }
-window.__fichas={generar,render,normalizar,temas:TEMAS.map(t=>t.id),tipos:Object.keys(TIPOS),subs:(t,g)=>TIPOS[t].subs(g),fmt,money};
+window.__fichas={generar,render,normalizar,revisable,respCorrecta,numsDe,temas:TEMAS.map(t=>t.id),tipos:Object.keys(TIPOS),subs:(t,g)=>TIPOS[t].subs(g),fmt,money};
 if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',iniciar); else iniciar();
 })();
 </script>

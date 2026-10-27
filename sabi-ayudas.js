@@ -22,16 +22,17 @@
 
   // Compara respuestas: números (acepta 3,5 = 3.5 = 3½? no) y textos sin tildes ni mayúsculas.
   function numero(t) {
-    const s = String(t).replace(/\$|cop|pesos|\s/gi, '').replace(/\.(?=\d{3}(\D|$))/g, '').replace(',', '.');
+    // El modelo suele escribir el menos tipográfico (−); sin esto "5" y "−5" se daban por iguales.
+    const s = String(t).replace(/[−–]/g, '-').replace(/^\s*[a-z]\s*=\s*/i, '').replace(/\$|cop|pesos|\s/gi, '').replace(/\.(?=\d{3}(\D|$))/g, '').replace(',', '.');
     const f = s.match(/^(-?\d+)\/(\d+)$/); if (f) return +f[1] / +f[2];
     return /^-?\d+(\.\d+)?$/.test(s) ? parseFloat(s) : NaN;
   }
-  const plano = (t) => String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ/.,-]+/g, ' ').trim();
+  const plano = (t) => String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[−–]/g, '-').replace(/[^a-z0-9ñ/.,-]+/g, ' ').trim();
   function correcta(dada, esperada) {
     if (!String(dada).trim()) return false;
     return String(esperada).split(/\s+o\s+|\s*\/\/\s*/).some((op) => {
       const a = numero(dada), b = numero(op);
-      if (!isNaN(a) && !isNaN(b)) return Math.abs(a - b) < 1e-6 * Math.max(1, Math.abs(b));
+      if (!isNaN(a) && !isNaN(b)) return Math.abs(a - b) < (Number.isInteger(b) ? 1e-9 : 1e-6 * Math.max(1, Math.abs(b)));
       return plano(dada) === plano(op);
     });
   }
@@ -53,7 +54,7 @@
     const tipo = normal(t).toLowerCase().replace(/[^a-z]/g, '');
     if (!TIPOS_GEN[tipo]) return '';
     const grado = /transi/i.test(g) ? 0 : Math.min(11, Math.max(0, parseInt(g, 10) || 0));
-    const base = /sabicentecsuperacion|superacion\.sabicentec/.test(location.host) ? '' : 'https://sabicentecsuperacion.pages.dev/';
+    const base = /sabicentecsuperacion|superacion\.sabicentec|tutor\.sabicentec/.test(location.host) ? '' : 'https://sabicentecsuperacion.pages.dev/';
     return caja('generador', nuevoId('gen'), 'Fichas imprimibles', TIPOS_GEN[tipo],
       `<p>Cada ficha sale distinta, con una historia de Cali y su clave de respuestas calculada por código. ${grado ? grado + '°' : 'Transición'}.</p>
        <div class="dots-acciones"><a class="dots-btn" href="${base}fichas.html?tipo=${tipo}&grado=${grado}" target="_blank" rel="noopener">Abrir el generador de fichas</a></div>`);
