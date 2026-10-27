@@ -31,9 +31,11 @@ jobs:
 
       - name: Decidir modo
         id: modo
+        env:
+          MODO_MANUAL: ${{ inputs.modo }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "valor=${{ inputs.modo }}" >> "$GITHUB_OUTPUT"
+            echo "valor=${MODO_MANUAL//[^a-z_-]/}" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.event.schedule }}" = "0 11 * * 2" ]; then
             echo "valor=pedagogia" >> "$GITHUB_OUTPUT"
           else

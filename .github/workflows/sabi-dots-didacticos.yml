@@ -5,7 +5,7 @@ name: SABI · Dots didácticos
 
 on:
   schedule:
-    - cron: "0 12 * * 3"   # miércoles 7:00 a. m. hora Colombia: herramientas pedagógicas del área de la semana
+    # Las herramientas por área las completa el Dot de Continuidad (cada 5 h); un segundo cron chocaba en el mismo archivo.
     - cron: "0 12 * * 6"   # sábado 7:00 a. m.: experimentos (completar y auditar)
   workflow_dispatch:
     inputs:
@@ -31,9 +31,11 @@ jobs:
           node-version: 20
       - name: Decidir modo
         id: modo
+        env:
+          MODO_MANUAL: ${{ inputs.modo }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "valor=${{ inputs.modo }}" >> "$GITHUB_OUTPUT"
+            echo "valor=${MODO_MANUAL//[^a-z_-]/}" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.event.schedule }}" = "0 12 * * 6" ]; then
             echo "valor=experimentos" >> "$GITHUB_OUTPUT"
           else
@@ -47,6 +49,7 @@ jobs:
       - name: Validar JSON
         run: |
           for f in data/herramientas-pedagogicas.json data/experimentos/grado-*.json; do node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" || exit 1; done
+          python3 scripts/validar-experimentos.py
       - name: Abrir Pull Request para aprobación humana
         uses: peter-evans/create-pull-request@v6
         with:

@@ -660,7 +660,7 @@
    "Comprueba equilibrando el mapa sobre la punta de un lápiz en ese punto."
   ],
   "seguridad": "El docente hace o supervisa los agujeros con la puntilla. Usa las tijeras con cuidado.",
-  "adulto": false,
+  "adulto": true,
   "que_pasa": "El centro de masa es el punto donde se puede considerar concentrado todo el peso de un cuerpo. Un objeto colgado se estabiliza con el centro de masa justo debajo del punto de suspensión, por eso la plomada pasa por él; dos o más líneas se cruzan allí. Al apoyarlo en ese punto, los torques del peso a cada lado se equilibran. Ese punto no tiene por qué coincidir con el centro geográfico definido por otros criterios.",
   "concepto": "Centro de masa y equilibrio",
   "vocabulario": [
@@ -1453,7 +1453,7 @@
    "Registra los tiempos de todo el grupo en una tabla y calcula los promedios."
   ],
   "seguridad": "Solo sopla, nunca aspires por el pitillo. Cada estudiante usa su propio pitillo. Quien tenga condiciones cardíacas o respiratorias no hace los saltos.",
-  "adulto": false,
+  "adulto": true,
   "que_pasa": "Las células obtienen energía mediante la respiración celular, que consume oxígeno y produce dióxido de carbono. El CO₂ exhalado se disuelve en el agua y forma ácido carbónico, que baja el pH y cambia el color del indicador. Durante el ejercicio los músculos producen más CO₂; el cuerpo lo detecta y aumenta la respiración para eliminarlo y mantener el pH de la sangre estable (homeostasis).",
   "concepto": "Respiración celular y regulación del CO₂",
   "vocabulario": [
@@ -1753,7 +1753,7 @@
    "Anota y dibuja los cambios de color en la parte sumergida."
   ],
   "seguridad": "No pruebes la solución: contiene iones de cobre. Deséchala como indique el docente y lávate las manos.",
-  "adulto": false,
+  "adulto": true,
   "que_pasa": "El vinagre con sal disuelve la capa oscura de óxido del cobre y deja iones de cobre en la solución. El hierro es más reactivo que el cobre: cede electrones a esos iones, el hierro pasa a la solución y el cobre se deposita sobre el clavo como una capa cobriza. Es una reacción de desplazamiento y de óxido-reducción; según la serie de actividad, un metal más reactivo desplaza de la solución a uno menos reactivo.",
   "concepto": "Reacciones de desplazamiento y serie de actividad",
   "vocabulario": [

@@ -1284,7 +1284,7 @@
    "Compara el modelo con un dibujo de la nefrona."
   ],
   "seguridad": "No pruebes el líquido filtrado. Lávate las manos al terminar.",
-  "adulto": false,
+  "adulto": true,
   "que_pasa": "En el riñón, la sangre pasa por millones de nefronas; en el glomérulo, la presión empuja agua y sustancias pequeñas (sales, glucosa, urea) a través de una membrana, mientras las células y proteínas grandes quedan en la sangre. Luego el riñón reabsorbe lo útil y elimina el resto en la orina. El modelo muestra la filtración por tamaño, pero no la reabsorción, que es un proceso activo de las células.",
   "concepto": "Filtración renal y sistema excretor",
   "vocabulario": [
@@ -2055,7 +2055,7 @@
    "Deja reposar los vasos 1 hora y mide la altura del sedimento."
   ],
   "seguridad": "Si usas cajas de leche, las corta un adulto antes de la clase. Lávate las manos después de manipular tierra.",
-  "adulto": false,
+  "adulto": true,
   "que_pasa": "La lluvia que golpea el suelo desnudo suelta partículas que el agua arrastra ladera abajo: es la erosión. Las hojas amortiguan el golpe de las gotas y las raíces sujetan el suelo y ayudan a que el agua se infiltre. Por eso los bosques de los Farallones protegen las cuencas de los ríos de Cali y reducen el riesgo de deslizamientos.",
   "concepto": "Erosión y cobertura vegetal",
   "vocabulario": [

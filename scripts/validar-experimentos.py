@@ -14,7 +14,7 @@ for g in grados:
     try: arr = json.load(open(f, encoding="utf-8"))
     except Exception as e: err(f"JSON inválido: {e}"); continue
     if not isinstance(arr, list): err("no es un arreglo"); continue
-    if len(arr) != 50: err(f"tiene {len(arr)} experimentos (deben ser 50)")
+    if len(arr) < 50: err(f"tiene {len(arr)} experimentos (mínimo 50)")
     ids = set()
     for i, e in enumerate(arr):
         p = f"#{i+1} {e.get('id')}"
@@ -37,6 +37,15 @@ for g in grados:
             if not isinstance(e.get(k), str) or not e.get(k).strip(): err(f"{p} {k} vacío")
         txt = json.dumps(e, ensure_ascii=False).lower()
         if int(g) < 6 and re.search(r"\b(vela|fósforo|fosforo|encendedor|mechero|encender fuego)\b", txt): err(f"{p} usa fuego antes de 6°")
+        sinnunca = re.sub(r"(nunca|jamás|jamas|sin |no )[^.]*\.", "", txt)  # las prohibiciones no cuentan como uso
+        procedimiento = json.dumps(e.get("pasos", []) + e.get("materiales", []), ensure_ascii=False).lower()
+        if not e.get("adulto") and re.search(r"\b(el|un|una|la) (adulto|docente|profesora?)\b", procedimiento): err(f"{p} los pasos piden un adulto pero adulto=false")
+        if re.search(r"\b(enchufe|tomacorriente|110 ?v|120 ?v|corriente de la casa)\b", sinnunca): err(f"{p} usa la red eléctrica (solo pilas)")
+        circuito = re.sub(r"(linterna|lámpara|lampara|vela|bombillo) led", "", procedimiento)
+        if re.search(r"\bleds?\b", circuito) and re.search(r"\b(pila|cable|caimán|caiman)", procedimiento) and "resistencia" not in txt: err(f"{p} LED sin resistencia")
+        if int(g) < 10 and re.search(r"ácido (clorhídrico|sulfúrico|nítrico)|acido (clorhidrico|sulfurico|nitrico)", sinnunca): err(f"{p} ácido fuerte antes de 10°")
+        if int(g) == 0 and re.search(r"\bglobos?\b", sinnunca): err(f"{p} globo en Transición")
+        if "neodimio" in txt and "docente" not in e.get("seguridad","").lower(): err(f"{p} imán de neodimio sin el docente")
         if re.search(r"\b(cloro|blanqueador|límpido|limpido|amoníaco|amoniaco|ácido muriático|soda cáustica)\b", txt) and "nunca" not in e.get("seguridad","").lower(): err(f"{p} menciona producto peligroso sin advertencia")
     ejes = {e.get("eje") for e in arr}
     if ejes != EJES: err(f"no cubre todos los ejes: faltan {EJES-ejes}")

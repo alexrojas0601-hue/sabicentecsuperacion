@@ -1454,7 +1454,7 @@
    "Conecta el LED (pata larga al cobre del extremo) y comprueba si enciende.",
    "Mide la corriente con el LED conectado y calcula la potencia P = V · I."
   ],
-  "seguridad": "Usa guantes si tienes heridas en las manos; el vinagre irrita. Desecha las arandelas y el cartón en el punto de residuos indicado. No pruebes la solución.",
+  "seguridad": "Usa guantes si tienes heridas en las manos; el vinagre irrita. Desecha las arandelas y el cartón en el punto de residuos indicado. No pruebes la solución. Si usas LED, ponle en serie una resistencia de 220 Ω: la regla de SABI es LED siempre con resistencia.",
   "adulto": false,
   "que_pasa": "En cada celda el zinc se oxida (Zn → Zn²⁺ + 2e⁻) y cede electrones que fluyen por el circuito hacia el cobre, donde se reducen iones H+ del electrolito. La diferencia de potencial de cada celda es cercana a 0,6–0,9 V en estas condiciones; al apilarlas en serie los voltajes se suman. La energía química se convierte en energía eléctrica.",
   "concepto": "Celda galvánica",
@@ -2103,7 +2103,7 @@
    "Discute qué pasa si solo tienes dos estaciones."
   ],
   "seguridad": "Usa el compás con cuidado: tiene punta. Este experimento no requiere materiales de riesgo.",
-  "adulto": false,
+  "adulto": true,
   "que_pasa": "Los sismos generan ondas P (primarias, más rápidas, longitudinales) y ondas S (secundarias, más lentas, transversales). Cuanto más lejos está la estación, mayor es el retraso entre ambas. Con la distancia a tres estaciones se determina un único punto: el epicentro. Con aproximadamente 8 km por cada segundo de diferencia S-P se hace un cálculo rápido.",
   "concepto": "Ondas sísmicas y triangulación",
   "vocabulario": [

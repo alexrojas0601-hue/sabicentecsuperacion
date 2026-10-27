@@ -1714,7 +1714,7 @@
    "Pesa o compara qué parte es mayor."
   ],
   "seguridad": "Usa la bolsa para que los granos no se peguen al imán. No soples la arena ni la frotes en los ojos.",
-  "adulto": false,
+  "adulto": true,
   "que_pasa": "Algunos minerales, como la magnetita, contienen hierro y son atraídos por los imanes; otros granos no. Usar el magnetismo para separar una mezcla se llama separación magnética. Así se separan metales en las plantas de reciclaje.",
   "concepto": "Separación magnética",
   "vocabulario": [

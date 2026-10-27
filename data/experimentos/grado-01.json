@@ -183,7 +183,7 @@
       "Ordena los papeles del que más chupa al que menos."
     ],
     "seguridad": "Usar delantal: el colorante mancha.",
-    "adulto": false,
+    "adulto": true,
     "que_pasa": "El papel está hecho de fibras con espacios muy pequeñitos entre ellas. El agua se mete por esos espacios y sube, aunque vaya hacia arriba. Los papeles más esponjosos tienen más espacios y chupan más agua.",
     "concepto": "Absorción (capilaridad)",
     "vocabulario": [
@@ -703,7 +703,7 @@
       "Haz 3 lanzamientos con cada avión."
     ],
     "seguridad": "Lanzar solo hacia una zona sin personas; nunca hacia la cara.",
-    "adulto": false,
+    "adulto": true,
     "que_pasa": "El aire que pasa por las alas ayuda a sostener el avión mientras avanza. Con alas un poco más anchas, el aire lo sostiene mejor y planea; con alas muy angostas cae más rápido. La forma y el lanzamiento también cuentan, por eso repetimos varias veces.",
     "concepto": "El aire sostiene las alas",
     "vocabulario": [
@@ -1339,7 +1339,7 @@
       "Escribe dos cosas en que se parecen y dos en que son diferentes."
     ],
     "seguridad": "Sin riesgos especiales. Respetar a quien no quiera participar.",
-    "adulto": false,
+    "adulto": true,
     "que_pasa": "Nuestro cuerpo crece y cambia con el tiempo: de bebés éramos más pequeños y seguiremos creciendo. Nos parecemos a nuestra familia en algunas cosas, pero cada persona es única.",
     "concepto": "El cuerpo crece y cambia",
     "vocabulario": [
@@ -1953,7 +1953,7 @@
       "Dibuja las capas que se formaron y mide cada una."
     ],
     "seguridad": "Frasco plástico con tapa segura. Lavarse las manos después de tocar la tierra.",
-    "adulto": false,
+    "adulto": true,
     "que_pasa": "La tierra tiene pedacitos de diferente tamaño. Los más pesados, como las piedritas, bajan primero; luego la arena; y arriba queda el barro más fino. Los restos de hojas y palitos pueden flotar. Así se forman capas.",
     "concepto": "El suelo tiene partículas de distinto tamaño",
     "vocabulario": [

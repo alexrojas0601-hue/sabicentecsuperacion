@@ -1919,7 +1919,7 @@
    "Deja reposar los vasos y mide el sedimento."
   ],
   "seguridad": "Lávate las manos después de manipular la tierra. Seca el agua derramada. Si usas botellas, las corta un adulto antes de la clase.",
-  "adulto": false,
+  "adulto": true,
   "que_pasa": "La erosión es el desgaste y arrastre del suelo por agua o viento. Las raíces sujetan las partículas y la hojarasca frena las gotas de lluvia, por eso hay menos arrastre. Sin cobertura, la lluvia golpea el suelo desnudo y se lleva la capa fértil, lo que aumenta el riesgo de deslizamientos.",
   "concepto": "Erosión hídrica",
   "vocabulario": [

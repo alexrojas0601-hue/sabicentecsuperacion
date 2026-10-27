@@ -144,7 +144,7 @@
       "Cambien de turno con un compañero."
     ],
     "seguridad": "No poner objetos con puntas ni filos en la caja. Objetos grandes que no quepan en la boca.",
-    "adulto": false,
+    "adulto": true,
     "que_pasa": "Nuestra piel siente si algo es liso o rugoso, duro o blando, frío o tibio. Esas son características de los materiales. Con el tacto podemos reconocer objetos aunque no los veamos.",
     "concepto": "Propiedades de los materiales por el tacto",
     "vocabulario": [
@@ -495,7 +495,7 @@
     "prediccion": "¿Cuáles de estos objetos crees que se pegarán al imán?",
     "materiales": [
       "1 imán grande (de barra o de herradura, no imanes pequeños)",
-      "clips metálicos",
+      "clips metálicos grandes (de 5 cm o más)",
       "1 cuchara de metal",
       "1 tapa metálica grande de frasco de mermelada",
       "1 lápiz",
@@ -1088,7 +1088,7 @@
     "dba": "Transición: explora su entorno natural (plantas, animales, agua, suelo, cielo) y describe con sus palabras lo que observa.",
     "prediccion": "Si pones un fríjol en algodón mojado, ¿qué le pasará en unos días?",
     "materiales": [
-      "3 fríjoles",
+      "3 fríjoles grandes (los entrega y recoge el adulto)",
       "1 vaso transparente",
       "algodón",
       "agua"
@@ -1101,8 +1101,8 @@
       "Mira cada día y dibuja lo que ves durante una semana.",
       "Mantén el algodón húmedo."
     ],
-    "seguridad": "Los fríjoles no van a la boca ni a la nariz. Lavarse las manos después.",
-    "adulto": false,
+    "seguridad": "Los fríjoles no van a la boca ni a la nariz. Lavarse las manos después. Los fríjoles los entrega y recoge el adulto: son piezas pequeñas.",
+    "adulto": true,
     "que_pasa": "La semilla tiene adentro una plantita dormida y su comida. Con agua y calor la semilla se despierta: primero sale la raíz hacia abajo y luego el tallo con hojitas hacia arriba. Eso se llama germinar.",
     "concepto": "Germinación",
     "vocabulario": [

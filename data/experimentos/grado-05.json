@@ -394,7 +394,7 @@
       "Repite con las dos hojas arrugadas."
     ],
     "seguridad": "Si te subes a una silla, que sea firme y con un adulto al lado. Mejor aún, suelta las hojas desde la altura de tus brazos.",
-    "adulto": false,
+    "adulto": true,
     "que_pasa": "Las dos hojas tienen la misma masa y la gravedad las atrae igual. La diferencia es el aire: la hoja extendida choca con mucho aire, que la frena (resistencia del aire). La bola tiene menos superficie y cae más rápido. Sin aire, como en la Luna, las dos caerían al mismo tiempo.",
     "concepto": "Gravedad y resistencia del aire",
     "vocabulario": [
@@ -925,7 +925,7 @@
       "Apaga la luz y observa el LED.",
       "Prueba con 2 limones y con 4 limones."
     ],
-    "seguridad": "Un adulto clava los clavos. No comas los limones después del experimento; bótalos a la basura. Lávate las manos.",
+    "seguridad": "Un adulto clava los clavos. No comas los limones después del experimento; bótalos a la basura. Lávate las manos. Si usas LED, ponle en serie una resistencia de 220 Ω: la regla de SABI es LED siempre con resistencia.",
     "adulto": true,
     "que_pasa": "El jugo ácido del limón y los dos metales distintos (zinc y cobre) producen una pequeña corriente eléctrica: es una pila química. Cada limón da menos de 1 voltio, por eso hay que conectar varios en serie para sumar el voltaje. La corriente es muy débil, así que el LED brilla poquito y se ve mejor en la oscuridad.",
     "concepto": "Pila química",
