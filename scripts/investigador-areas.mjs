@@ -15,6 +15,7 @@
 // ============================================================================
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { verificarDOI } from "./verificar-doi.mjs";
 
 const BANCO = "data/proyectos-areas.json";
 const VIGENTE = "data/pedagogia-vigente.json";
@@ -329,8 +330,14 @@ async function auditorRigor(candidatos, vigente) {
     // Regla de rectoría: evidencia revisada por pares con DOI verificado. Sin DOI (p. ej. informes de
     // organismos) puede entrar, pero el informe lo marca para que coordinación lo revise a mano.
     const doi = String(c.doi || "").trim().match(/10\.\d{4,9}\/\S+/);
-    if (doi) c.doi = doi[0].replace(/[.,;)]+$/, "");
-    else { delete c.doi; c._revisarManual = [c._revisarManual, "sin DOI: confirmar que la fuente es revisada por pares"].filter(Boolean).join("; "); }
+    if (doi) {
+      c.doi = doi[0].replace(/[.,;)]+$/, "");
+      // Auditor de referencias: el DOI debe existir en Crossref y corresponder a la cita.
+      const v = await verificarDOI(c.doi, c.fuente);
+      if (v.motivo === "el DOI no existe en Crossref") { rechazados.push({ ...c, motivo: `DOI inexistente (${c.doi})` }); continue; }
+      if (v.ok === false) c._revisarManual = [c._revisarManual, `${v.motivo}; Crossref: ${v.ref}`].filter(Boolean).join("; ");
+      if (v.ok === null) c._revisarManual = [c._revisarManual, `DOI sin verificar (${v.motivo})`].filter(Boolean).join("; ");
+    } else { delete c.doi; c._revisarManual = [c._revisarManual, "sin DOI: confirmar que la fuente es revisada por pares"].filter(Boolean).join("; "); }
     aprobados.push(c);
   }
   if (!aprobados.length) return { aprobados, rechazados };
