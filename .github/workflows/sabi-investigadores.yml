@@ -6,10 +6,11 @@ on:
   schedule:
     - cron: "0 11 * * 2"   # martes 6:00 a. m. hora Colombia: investigador neuropedagógico
     - cron: "0 11 * * 4"   # jueves 6:00 a. m.: investigador de proyectos (llena los vacíos del banco)
+    - cron: "0 12 1 * *"   # día 1 de cada mes, 7:00 a. m.: auditoría de referencias contra Crossref
   workflow_dispatch:
     inputs:
       modo:
-        description: "proyectos | pedagogia | cobertura"
+        description: "proyectos | pedagogia | cobertura | doi"
         default: "proyectos"
       foco:
         description: "Opcional. Proyectos: Física|arduino. Pedagogía: un tema, ej. evaluación formativa"
@@ -38,6 +39,8 @@ jobs:
             echo "valor=${MODO_MANUAL//[^a-z_-]/}" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.event.schedule }}" = "0 11 * * 2" ]; then
             echo "valor=pedagogia" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 12 1 * *" ]; then
+            echo "valor=doi" >> "$GITHUB_OUTPUT"
           else
             echo "valor=proyectos" >> "$GITHUB_OUTPUT"
           fi

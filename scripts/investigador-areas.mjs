@@ -9,6 +9,8 @@
 //   node scripts/investigador-areas.mjs proyectos   -> diseña proyectos nuevos donde el banco tiene vacíos
 //   node scripts/investigador-areas.mjs pedagogia   -> busca hallazgos recientes con evidencia y los propone
 //   node scripts/investigador-areas.mjs cobertura   -> solo informa qué áreas, grados y tipos faltan
+//   node scripts/investigador-areas.mjs doi         -> verifica contra Crossref cada DOI de la pedagogía vigente
+//                                                     (no necesita ANTHROPIC_API_KEY)
 //
 // Variables: ANTHROPIC_API_KEY (obligatoria), MODELO (opcional), MAX_NUEVOS (por defecto 3),
 //            FOCO (opcional, ej. "Física|arduino" o "evaluación formativa")
@@ -135,6 +137,43 @@ async function enlaceVivo(url) {
   if (typeof r.estado === "number" && r.estado < 400) return { ok: true };
   if (r.estado === 404 || r.estado === 410) return { ok: false, estado: r.estado };
   return { ok: true, manual: `no respondió a tiempo (${r.estado}); abrir a mano antes de aprobar` };
+}
+
+// ---------------------------------------------------------------------------
+// Verificación de DOI contra Crossref (registro oficial de DOI de publicaciones académicas).
+// Un DOI vale solo si existe en Crossref Y su primer autor y su año aparecen en la cita.
+// ---------------------------------------------------------------------------
+const sinTildes = (t) => String(t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+  .replace(/[\u2010-\u2015\u2212]/g, "-").toLowerCase();
+
+function doisDe(texto) {
+  return [...String(texto || "").matchAll(/10\.\d{4,9}\/[^\s;,]+/g)].map((m) => m[0].replace(/[.)\]]+$/, ""));
+}
+
+async function verificarDOI(doi, cita) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), 20000);
+  try {
+    const res = await fetch(`https://api.crossref.org/works/${encodeURIComponent(doi)}`, {
+      signal: ctrl.signal, headers: { "user-agent": "SABI-CENTEC-investigador/1.0 (https://superacion.sabicentec.com)" },
+    });
+    if (res.status === 404) return { doi, estado: "inexistente" };
+    if (!res.ok) return { doi, estado: "sin respuesta", detalle: `Crossref ${res.status}` };
+    const m = (await res.json()).message || {};
+    const autor = m.author?.[0]?.family || m.author?.[0]?.name || "";
+    // Una revista registra varias fechas (en línea primero, impresa después): vale cualquiera de ellas.
+    const anios = [...new Set(["issued", "published", "published-online", "published-print"]
+      .map((k) => String(m[k]?.["date-parts"]?.[0]?.[0] || "")).filter(Boolean))];
+    const anio = anios.join("/");
+    const titulo = (m.title || [""])[0];
+    const revista = (m["container-title"] || [""])[0];
+    const c = sinTildes(cita);
+    const coincideAutor = !!autor && c.includes(sinTildes(autor).split(/[\s-]/)[0]);
+    const coincideAnio = anios.some((a) => c.includes(a));
+    return { doi, estado: coincideAutor && coincideAnio ? "verificado" : "no coincide", autor, anio, titulo, revista, tipo: m.type || "" };
+  } catch (e) {
+    return { doi, estado: "sin respuesta", detalle: e.name === "AbortError" ? "timeout" : e.message };
+  } finally { clearTimeout(t); }
 }
 
 function urlSegura(u) {
@@ -332,16 +371,26 @@ async function auditorRigor(candidatos, vigente) {
     if (vivo.manual) c._revisarManual = vivo.manual;
     // Regla de rectoría: evidencia revisada por pares con DOI verificado. Sin DOI (p. ej. informes de
     // organismos) puede entrar, pero el informe lo marca para que coordinación lo revise a mano.
-    const doi = String(c.doi || "").trim().match(/10\.\d{4,9}\/\S+/);
-    if (doi) c.doi = doi[0].replace(/[.,;)]+$/, "");
-    else { delete c.doi; c._revisarManual = [c._revisarManual, "sin DOI: confirmar que la fuente es revisada por pares"].filter(Boolean).join("; "); }
+    const doi = doisDe(c.doi)[0];
+    if (doi) {
+      // El DOI se comprueba en Crossref: si no existe, el hallazgo se rechaza (referencia inventada);
+      // si existe pero no coincide autor y año con la cita, queda para revisión humana.
+      const v = await verificarDOI(doi, c.fuente);
+      if (v.estado === "inexistente") { rechazados.push({ ...c, motivo: `DOI ${doi} no existe en Crossref` }); continue; }
+      c.doi = doi;
+      c._crossref = v;
+      if (v.estado === "no coincide") c._revisarManual = [c._revisarManual, `el DOI corresponde a ${v.autor} (${v.anio}), «${v.titulo}»: confirmar que es la fuente citada`].filter(Boolean).join("; ");
+      if (v.estado === "sin respuesta") c._revisarManual = [c._revisarManual, `Crossref no respondió (${v.detalle}): verificar el DOI a mano`].filter(Boolean).join("; ");
+    } else { delete c.doi; c._revisarManual = [c._revisarManual, "sin DOI: confirmar que la fuente es revisada por pares"].filter(Boolean).join("; "); }
     aprobados.push(c);
   }
   if (!aprobados.length) return { aprobados, rechazados };
   const system = `Eres el Auditor de rigor científico de SABI. ${CONTEXTO}
 Evalúas si cada hallazgo propuesto es fiel a su fuente, si el nivel de evidencia declarado es honesto
 (no exagera), si es aplicable a un tutor de IA con niños y adolescentes y si no contradice la evidencia
-consolidada. Puntúa de 1 a 5: fidelidad, evidencia, aplicabilidad. Si la redacción exagera, corrígela.`;
+consolidada. Cuando un hallazgo trae "_crossref", ese es el registro oficial de la publicación (autor, año,
+título y revista): si el hallazgo no corresponde a ese título, la fidelidad no puede pasar de 2.
+Puntúa de 1 a 5: fidelidad, evidencia, aplicabilidad. Si la redacción exagera, corrígela.`;
   const user = `Hallazgos:\n${JSON.stringify(aprobados.map((c, i) => ({ ...c, _id: i })), null, 2)}\n\nResponde SOLO un arreglo JSON:
 {"_id": n, "puntajes": {"fidelidad": 1-5, "evidencia": 1-5, "aplicabilidad": 1-5}, "observaciones": "...",
  "hallazgo_corregido": "..." o null, "aplicacion_corregida": "..." o null, "evidencia_corregida": "alta|moderada|emergente" o null}`;
@@ -405,7 +454,7 @@ async function modoPedagogia() {
   vigente.actualizado = HOY;
   await writeFile(VIGENTE, JSON.stringify(vigente, null, 1) + "\n");
   const l = [`# Investigador neuropedagógico — ${HOY}`, "", `Tema de la semana: ${tema}.`, "", "> Aprobar el Pull Request = SABI aplica estos hallazgos desde el siguiente turno.", ""];
-  for (const h of r.aprobados) l.push(`## ${h.tema}`, `- Hallazgo: ${h.hallazgo}`, `- En SABI: ${h.aplicacion}`, `- Fuente: ${h.fuente} (${h.url})`, `- Evidencia: ${h.evidencia}`, ...(h.matiza ? [`- Reemplaza a: ${h.matiza}`] : []), ...(h._revisarManual ? [`- Revisar a mano: ${h._revisarManual}`] : []), "");
+  for (const h of r.aprobados) l.push(`## ${h.tema}`, `- Hallazgo: ${h.hallazgo}`, `- En SABI: ${h.aplicacion}`, `- Fuente: ${h.fuente} (${h.url})`, `- Evidencia: ${h.evidencia}`, ...(h._crossref ? [`- Crossref: ${h._crossref.estado} — ${h._crossref.autor} (${h._crossref.anio}), «${h._crossref.titulo}», ${h._crossref.revista}`] : []), ...(h.matiza ? [`- Reemplaza a: ${h.matiza}`] : []), ...(h._revisarManual ? [`- Revisar a mano: ${h._revisarManual}`] : []), "");
   if (r.rechazados.length) { l.push(`## Rechazados (${r.rechazados.length})`, ""); r.rechazados.forEach((x) => l.push(`- ${x.tema || "(sin tema)"}: ${x.motivo}`)); }
   await guardarInforme("pedagogia", l.join("\n"));
 }
@@ -418,8 +467,27 @@ async function modoCobertura() {
   await guardarInforme("cobertura", l.join("\n"));
 }
 
+// Auditoría periódica de referencias: cada DOI citado en la pedagogía vigente se vuelve a consultar en
+// Crossref. Solo informa; no cambia los hallazgos (eso lo decide coordinación).
+async function modoDOI() {
+  const vigente = JSON.parse(await readFile(VIGENTE, "utf8"));
+  const filas = [], sinDoi = [];
+  for (const a of vigente.actualizaciones.filter((x) => x.estado !== "reemplazado")) {
+    const dois = doisDe(a.fuente);
+    if (!dois.length) { sinDoi.push(a); continue; }
+    for (const d of dois) { filas.push({ tema: a.tema, ...(await verificarDOI(d, a.fuente)) }); await new Promise((ok) => setTimeout(ok, 300)); }
+  }
+  const cuenta = (e) => filas.filter((f) => f.estado === e).length;
+  const l = [`# Auditoría de referencias (Crossref) — ${HOY}`, "",
+    `DOI revisados: ${filas.length} · verificados: ${cuenta("verificado")} · no coinciden: ${cuenta("no coincide")} · inexistentes: ${cuenta("inexistente")} · sin respuesta: ${cuenta("sin respuesta")}.`, "",
+    "| Hallazgo | DOI | Estado | Registro en Crossref |", "|---|---|---|---|"];
+  filas.forEach((f) => l.push(`| ${f.tema} | ${f.doi} | ${f.estado} | ${f.autor ? `${f.autor} (${f.anio}), ${String(f.titulo).slice(0, 90)}` : f.detalle || ""} |`));
+  if (sinDoi.length) { l.push("", `## Sin DOI (${sinDoi.length}): informes de organismos o marcos; revisar que la fuente sea confiable`, ""); sinDoi.forEach((a) => l.push(`- ${a.tema}: ${a.fuente}`)); }
+  await guardarInforme("referencias", l.join("\n"));
+}
+
 const modo = process.argv[2] || "proyectos";
-({ proyectos: modoProyectos, pedagogia: modoPedagogia, cobertura: modoCobertura }[modo] || modoProyectos)().catch((e) => {
+({ proyectos: modoProyectos, pedagogia: modoPedagogia, cobertura: modoCobertura, doi: modoDOI }[modo] || modoProyectos)().catch((e) => {
   console.error("El equipo investigador se detuvo sin modificar los datos:", e.message);
   process.exit(1);
 });
