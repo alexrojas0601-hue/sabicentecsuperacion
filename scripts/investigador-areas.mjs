@@ -139,7 +139,8 @@ async function enlaceVivo(url) {
 // Verificación de DOI contra Crossref (registro oficial de DOI de publicaciones académicas).
 // Un DOI vale solo si existe en Crossref Y su primer autor y su año aparecen en la cita.
 // ---------------------------------------------------------------------------
-const sinTildes = (t) => String(t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+const sinTildes = (t) => String(t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+  .replace(/[\u2010-\u2015\u2212]/g, "-").toLowerCase();
 
 function doisDe(texto) {
   return [...String(texto || "").matchAll(/10\.\d{4,9}\/[^\s;,]+/g)].map((m) => m[0].replace(/[.)\]]+$/, ""));
@@ -156,12 +157,15 @@ async function verificarDOI(doi, cita) {
     if (!res.ok) return { doi, estado: "sin respuesta", detalle: `Crossref ${res.status}` };
     const m = (await res.json()).message || {};
     const autor = m.author?.[0]?.family || m.author?.[0]?.name || "";
-    const anio = String((m.issued || m.published || m["published-print"] || {})["date-parts"]?.[0]?.[0] || "");
+    // Una revista registra varias fechas (en línea primero, impresa después): vale cualquiera de ellas.
+    const anios = [...new Set(["issued", "published", "published-online", "published-print"]
+      .map((k) => String(m[k]?.["date-parts"]?.[0]?.[0] || "")).filter(Boolean))];
+    const anio = anios.join("/");
     const titulo = (m.title || [""])[0];
     const revista = (m["container-title"] || [""])[0];
     const c = sinTildes(cita);
     const coincideAutor = !!autor && c.includes(sinTildes(autor).split(/[\s-]/)[0]);
-    const coincideAnio = !!anio && c.includes(anio);
+    const coincideAnio = anios.some((a) => c.includes(a));
     return { doi, estado: coincideAutor && coincideAnio ? "verificado" : "no coincide", autor, anio, titulo, revista, tipo: m.type || "" };
   } catch (e) {
     return { doi, estado: "sin respuesta", detalle: e.name === "AbortError" ? "timeout" : e.message };
