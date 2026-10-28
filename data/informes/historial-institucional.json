@@ -1,0 +1,15 @@
+[
+  {
+    "fecha": "2026-10-28",
+    "general": 4.98,
+    "porCriterio": {
+      "veracidad": 4.94,
+      "pedagogia": 5,
+      "cientifico": 4.94,
+      "neutralidad": 5,
+      "seguridad": 5,
+      "estilo": 5
+    },
+    "fallidas": 0
+  }
+]
