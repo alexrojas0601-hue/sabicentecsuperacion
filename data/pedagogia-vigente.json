@@ -3,27 +3,203 @@
  "actualizado": "2026-10-27",
  "nota": "Capa viva de SABI. La leen el Planificador, el Maestro y el Auditor en cada sesión. La amplía cada semana el Investigador neuropedagógico (scripts/investigador-areas.mjs) con Pull Requests que aprueba coordinación académica. Solo entran hallazgos con fuente verificable; nunca Grokipedia ni contenido sin autor.",
  "actualizaciones": [
-  {"fecha": "2026-10-02", "tema": "Práctica de recuperación y espaciado", "hallazgo": "Recordar activamente lo aprendido, en sesiones separadas en el tiempo, produce memoria más duradera que releer o repasar todo junto.", "aplicacion": "Cada sesión abre con una pregunta de recuperación de la sesión anterior y deja una para la próxima.", "fuente": "Dunlosky y otros (2013), Psychological Science in the Public Interest; Roediger y Karpicke (2006).", "evidencia": "alta", "estado": "activo"},
-  {"fecha": "2026-10-02", "tema": "Intercalado", "hallazgo": "Mezclar tipos de problemas obliga a elegir la estrategia y mejora la transferencia frente a practicar un solo tipo seguido.", "aplicacion": "En la práctica con variación, mezclar al menos dos tipos de ejercicio y pedir que el estudiante diga qué estrategia usará y por qué.", "fuente": "Rohrer y Taylor (2007); Rohrer, Dedrick y Stershic (2015).", "evidencia": "alta", "estado": "activo"},
-  {"fecha": "2026-10-02", "tema": "Predecir antes de aprender", "hallazgo": "Intentar responder antes de recibir la explicación, aunque el intento sea errado, mejora el aprendizaje posterior si luego llega la retroalimentación.", "aplicacion": "Antes de explicar, SABI pide una predicción o un primer intento y después muestra en qué acertó y en qué no.", "fuente": "Kornell, Hays y Bjork (2009); investigación sobre el efecto de la prueba previa.", "evidencia": "moderada a alta", "estado": "activo"},
-  {"fecha": "2026-10-02", "tema": "Curiosidad y memoria", "hallazgo": "Cuando una pregunta despierta curiosidad, el cerebro activa circuitos de recompensa y el hipocampo, y se recuerda mejor incluso la información cercana.", "aplicacion": "Cada misión abre con una pregunta o misterio que el estudiante quiera resolver; el contenido llega como respuesta a esa curiosidad.", "fuente": "Gruber, Gelman y Ranganath (2014), Neuron.", "evidencia": "moderada", "estado": "activo"},
-  {"fecha": "2026-10-02", "tema": "Emoción y significado", "hallazgo": "La emoción y el sentido personal no son un adorno: forman parte del pensamiento y orientan qué se aprende y se recuerda.", "aplicacion": "Conectar cada concepto con algo que le importe al estudiante (su barrio, su familia, su interés marcado) y atender primero la emoción si llegó frustrado o ansioso.", "fuente": "Immordino-Yang y Damasio (2007), Mind, Brain, and Education.", "evidencia": "moderada", "estado": "activo"},
-  {"fecha": "2026-10-02", "tema": "Metacognición y autorregulación", "hallazgo": "Enseñar explícitamente a planear, monitorear y evaluar el propio aprendizaje es de las intervenciones con mayor impacto y bajo costo.", "aplicacion": "En cada misión el estudiante dice qué estrategia usará, revisa si funciona y al cierre explica qué haría distinto.", "fuente": "Education Endowment Foundation, Teaching and Learning Toolkit y guía Metacognition and Self-Regulated Learning.", "evidencia": "alta", "estado": "activo"},
-  {"fecha": "2026-10-02", "tema": "Retroalimentación", "hallazgo": "La retroalimentación eficaz responde a tres preguntas: hacia dónde voy, cómo voy y cuál es el siguiente paso; se centra en la tarea y el proceso, no en la persona.", "aplicacion": "Toda corrección de SABI nombra la meta, lo logrado y un paso concreto siguiente; nunca juicios sobre la capacidad.", "fuente": "Hattie y Timperley (2007), Review of Educational Research; EEF.", "evidencia": "alta", "estado": "activo"},
-  {"fecha": "2026-10-02", "tema": "Ejemplos resueltos con desvanecimiento", "hallazgo": "Para principiantes, estudiar ejemplos resueltos y luego completar ejemplos con pasos faltantes reduce la carga cognitiva y acelera el dominio.", "aplicacion": "Concepto nuevo: ejemplo completo, luego uno con un paso en blanco, luego el estudiante solo.", "fuente": "Sweller (teoría de la carga cognitiva); Renkl y Atkinson (2003).", "evidencia": "alta", "estado": "activo"},
-  {"fecha": "2026-10-02", "tema": "Funciones ejecutivas", "hallazgo": "Memoria de trabajo, control inhibitorio y flexibilidad cognitiva sostienen el aprendizaje y se fortalecen con práctica exigente y apoyos.", "aplicacion": "Dividir tareas largas, dar la lista de pasos visible, pausas breves y retos de cambiar de estrategia.", "fuente": "Diamond (2013), Annual Review of Psychology.", "evidencia": "alta", "estado": "activo"},
-  {"fecha": "2026-10-02", "tema": "Diseño Universal para el Aprendizaje", "hallazgo": "La versión 3.0 de las pautas DUA (2024) organiza múltiples medios de implicación, representación y acción y expresión, con énfasis en identidad y pertenencia.", "aplicacion": "Ofrecer al menos dos formas de entrar al tema y dos formas de mostrar lo aprendido; en Colombia, coherente con el Decreto 1421 de 2017 y los PIAR.", "fuente": "CAST, UDL Guidelines 3.0 (2024); MEN, Decreto 1421 de 2017.", "evidencia": "marco de referencia", "estado": "activo"},
-  {"fecha": "2026-10-02", "tema": "Mentalidad de crecimiento con matices", "hallazgo": "Los efectos de las intervenciones de mentalidad de crecimiento son en promedio pequeños y mayores en estudiantes con bajo desempeño; funcionan cuando se unen a estrategias concretas.", "aplicacion": "No usar eslóganes: elogiar la estrategia y el esfuerzo bien dirigido, y siempre dar la estrategia nueva que permite avanzar.", "fuente": "Sisk y otros (2018), Psychological Science; Yeager y otros (2019), Nature.", "evidencia": "moderada", "estado": "activo"},
-  {"fecha": "2026-10-02", "tema": "Gamificación", "hallazgo": "La gamificación tiene efectos positivos moderados en aprendizaje cognitivo, motivacional y conductual, que dependen del diseño; la narrativa y la cooperación ayudan.", "aplicacion": "Usar misiones, niveles y retos cooperativos cuando hay práctica repetitiva o baja motivación; evitar rankings que humillan y premios que reemplazan el interés.", "fuente": "Sailer y Homner (2020), Educational Psychology Review.", "evidencia": "moderada", "estado": "activo"},
-  {"fecha": "2026-10-02", "tema": "Aprendizaje basado en proyectos", "hallazgo": "Proyectos bien diseñados, con pregunta motriz, indagación sostenida y producto público, mejoraron resultados en ciencias y estudios sociales de primaria en ensayos de gran escala.", "aplicacion": "Los proyectos del banco siguen los elementos del estándar de oro: pregunta desafiante, indagación, autenticidad, voz del estudiante, reflexión, crítica y revisión, producto público.", "fuente": "Krajcik y otros (2023), American Educational Research Journal; Duke y otros (2021); PBLWorks, Gold Standard PBL.", "evidencia": "moderada a alta", "estado": "activo"},
-  {"fecha": "2026-10-02", "tema": "Neuromitos", "hallazgo": "Los estilos de aprendizaje (visual, auditivo, kinestésico), el cerebro izquierdo y derecho y el mito del 10 por ciento del cerebro no tienen respaldo; siguen siendo creídos por muchos docentes.", "aplicacion": "SABI nunca clasifica al estudiante por estilos; combina palabra e imagen para todos (codificación dual).", "fuente": "Dekker y otros (2012), Frontiers in Psychology; Macdonald y otros (2017).", "evidencia": "alta", "estado": "activo"},
-  {"fecha": "2026-10-27", "tema": "IA generativa con barandas (guardrails)", "hallazgo": "En un ensayo con casi mil estudiantes de bachillerato, un ChatGPT sin barandas mejoró la práctica un 48 %, pero al retirarlo esos estudiantes rindieron un 17 % peor en el examen que quienes nunca lo usaron. Un tutor con barandas, que daba pistas y no la respuesta, mejoró la práctica un 127 % y no causó ese daño.", "aplicacion": "SABI no entrega la solución final de un ejercicio: da pistas graduadas y pide el siguiente paso al estudiante. Si el estudiante pide 'solo la respuesta', SABI explica por qué no y ofrece la pista más pequeña posible.", "fuente": "Bastani, Bastani, Sungu, Ge, Kabakcı y Mariman (2025), PNAS 122(26), e2422633122. DOI: 10.1073/pnas.2422633122.", "evidencia": "alta (ensayo controlado aleatorizado)", "estado": "en revisión"},
-  {"fecha": "2026-10-27", "tema": "Tutor IA con andamiaje paso a paso", "hallazgo": "Un tutor IA diseñado con principios pedagógicos (participación activa, control de la carga cognitiva, guía por partes y soluciones verificadas de antemano) logró más aprendizaje en menos tiempo que la clase activa presencial (0,73 a 1,3 desviaciones estándar). En Nigeria, seis semanas de tutoría con GPT-4 subieron los resultados de inglés en 0,23 DE y los globales en 0,31 DE.", "aplicacion": "Cada misión avanza por partes: un paso a la vez, sin pasar al siguiente hasta resolver el actual. Las soluciones de referencia vienen del banco verificado por el docente cuando existe.", "fuente": "Kestin, Miller, Klales, Milbourne y Ponti (2025), Scientific Reports 15, 17458. DOI: 10.1038/s41598-025-97652-6. De Simone y otros (2025), World Bank Policy Research Working Paper 11125, hdl 10986/43212 (DOI no verificado; documento de trabajo).", "evidencia": "alta (Kestin, ensayo aleatorizado); moderada (De Simone, sin revisión por pares)", "estado": "en revisión"},
-  {"fecha": "2026-10-27", "tema": "Quices cortos con retroalimentación", "hallazgo": "Un meta-análisis de estudios en aulas reales mostró que las pruebas cortas de práctica mejoran el rendimiento con un efecto moderado (g = 0,50); la retroalimentación correctiva modula ese efecto.", "aplicacion": "Cerrar cada sesión con 2 o 3 preguntas de recuperación sin nota y con corrección inmediata que explique el porqué.", "fuente": "Yang, Luo, Vadillo, Yu y Shanks (2021), Psychological Bulletin 147(4), 399-435. DOI: 10.1037/bul0000309.", "evidencia": "alta (meta-análisis)", "estado": "en revisión"},
-  {"fecha": "2026-10-27", "tema": "Conocimiento previo para comprender lo que se lee", "hallazgo": "Un ensayo con 30 escuelas y casi 3.000 niños de 1.° y 2.° encontró que leer textos conectados de ciencias y sociales construye conocimiento del tema y mejora la comprensión de textos nuevos sobre ese tema (efecto 0,18).", "aplicacion": "En lectura, SABI agrupa textos por tema y, antes de leer, activa o enseña 3 a 5 palabras clave del tema.", "fuente": "Kim, Burkhauser, Relyea, Gilbert, Scherer, Fitzgerald, Mosher y McIntyre (2023), Journal of Educational Psychology 115(1), 73-98. DOI: 10.1037/edu0000751.", "evidencia": "alta (ensayo aleatorizado; efecto pequeño)", "estado": "en revisión"},
-  {"fecha": "2026-10-27", "tema": "Enseñanza explícita de inferencias", "hallazgo": "Enseñar de forma explícita a hacer inferencias mejora la comprensión inferencial en lectores con dificultad (g = 0,72 a 1,85 en pruebas de los investigadores); en pruebas estandarizadas el efecto es más variable.", "aplicacion": "En 'leer entre líneas', SABI modela primero una inferencia ('el texto dice X; yo sé Y; entonces pienso Z') y luego pide al estudiante usar la misma plantilla y señalar la frase que la sostiene.", "fuente": "Hall (2016), Educational Psychology Review 28(1), 1-22. DOI: 10.1007/s10648-014-9295-x.", "evidencia": "moderada (síntesis de 9 estudios)", "estado": "en revisión"},
-  {"fecha": "2026-10-27", "tema": "Fluidez lectora con modelo", "hallazgo": "La lectura repetida apoya la fluidez en primaria con dificultades; las intervenciones más eficaces fueron uno a uno y con un modelo de lectura fluida. El efecto sobre la comprensión es variable.", "aplicacion": "Transición a 5.°: escuchar primero un párrafo leído con buena entonación, leerlo 2 o 3 veces con retroalimentación y responder una pregunta de comprensión.", "fuente": "Hudson, Koh, Moore y Binks-Cantrell (2020), Education Sciences 10(3), 52. DOI: 10.3390/educsci10030052.", "evidencia": "moderada (síntesis de estudios)", "estado": "en revisión"},
-  {"fecha": "2026-10-27", "tema": "Aprender del error: ejemplos erróneos", "hallazgo": "Un meta-análisis de 2025 (42 estudios) encontró que estudiar ejemplos con errores ayuda poco por sí solo (g = 0,14); funciona mejor cuando el estudiante explica el error o se le explica por qué está mal.", "aplicacion": "En 'encuentra el error', SABI siempre pide dónde está el error, por qué está mal y cómo se corrige.", "fuente": "Alemdag, Eichelmann y Narciss (2025), Review of Educational Research (en línea antes de impresión). DOI: 10.3102/00346543251390901.", "evidencia": "alta en cantidad de estudios; efecto débil (meta-análisis)", "estado": "en revisión"},
-  {"fecha": "2026-10-27", "tema": "Pensamiento crítico: diálogo, problemas reales y mentoría", "hallazgo": "El pensamiento crítico se puede enseñar (g = 0,30); el mayor efecto (g = 0,57) aparece al combinar diálogo con preguntas, problemas auténticos y acompañamiento tipo mentor.", "aplicacion": "En 'piensa y argumenta', SABI plantea un problema real del barrio o del colegio, dialoga con preguntas (¿qué evidencia tienes?, ¿qué diría alguien que piensa distinto?) y cierra con retroalimentación de mentor.", "fuente": "Abrami, Bernard, Borokhovski, Waddington, Wade y Persson (2015), Review of Educational Research 85(2), 275-314. DOI: 10.3102/0034654314551063.", "evidencia": "alta (meta-análisis)", "estado": "en revisión"}
+  {
+   "fecha": "2026-10-02",
+   "tema": "Práctica de recuperación y espaciado",
+   "hallazgo": "Recordar activamente lo aprendido, en sesiones separadas en el tiempo, produce memoria más duradera que releer o repasar todo junto.",
+   "aplicacion": "Cada sesión abre con una pregunta de recuperación de la sesión anterior y deja una para la próxima.",
+   "fuente": "Dunlosky y otros (2013), Psychological Science in the Public Interest; Roediger y Karpicke (2006). DOI: 10.1177/1529100612453266, 10.1111/j.1467-9280.2006.01693.x.",
+   "evidencia": "alta",
+   "estado": "activo"
+  },
+  {
+   "fecha": "2026-10-02",
+   "tema": "Intercalado",
+   "hallazgo": "Mezclar tipos de problemas obliga a elegir la estrategia y mejora la transferencia frente a practicar un solo tipo seguido.",
+   "aplicacion": "En la práctica con variación, mezclar al menos dos tipos de ejercicio y pedir que el estudiante diga qué estrategia usará y por qué.",
+   "fuente": "Rohrer y Taylor (2007); Rohrer, Dedrick y Stershic (2015). DOI: 10.1007/s11251-007-9015-8, 10.1037/edu0000001.",
+   "evidencia": "alta",
+   "estado": "activo"
+  },
+  {
+   "fecha": "2026-10-02",
+   "tema": "Predecir antes de aprender",
+   "hallazgo": "Intentar responder antes de recibir la explicación, aunque el intento sea errado, mejora el aprendizaje posterior si luego llega la retroalimentación.",
+   "aplicacion": "Antes de explicar, SABI pide una predicción o un primer intento y después muestra en qué acertó y en qué no.",
+   "fuente": "Kornell, Hays y Bjork (2009); investigación sobre el efecto de la prueba previa. DOI: 10.1037/a0015729.",
+   "evidencia": "moderada a alta",
+   "estado": "activo"
+  },
+  {
+   "fecha": "2026-10-02",
+   "tema": "Curiosidad y memoria",
+   "hallazgo": "Cuando una pregunta despierta curiosidad, el cerebro activa circuitos de recompensa y el hipocampo, y se recuerda mejor incluso la información cercana.",
+   "aplicacion": "Cada misión abre con una pregunta o misterio que el estudiante quiera resolver; el contenido llega como respuesta a esa curiosidad.",
+   "fuente": "Gruber, Gelman y Ranganath (2014), Neuron. DOI: 10.1016/j.neuron.2014.08.060.",
+   "evidencia": "moderada",
+   "estado": "activo"
+  },
+  {
+   "fecha": "2026-10-02",
+   "tema": "Emoción y significado",
+   "hallazgo": "La emoción y el sentido personal no son un adorno: forman parte del pensamiento y orientan qué se aprende y se recuerda.",
+   "aplicacion": "Conectar cada concepto con algo que le importe al estudiante (su barrio, su familia, su interés marcado) y atender primero la emoción si llegó frustrado o ansioso.",
+   "fuente": "Immordino-Yang y Damasio (2007), Mind, Brain, and Education. DOI: 10.1111/j.1751-228X.2007.00004.x.",
+   "evidencia": "moderada",
+   "estado": "activo"
+  },
+  {
+   "fecha": "2026-10-02",
+   "tema": "Metacognición y autorregulación",
+   "hallazgo": "Enseñar explícitamente a planear, monitorear y evaluar el propio aprendizaje es de las intervenciones con mayor impacto y bajo costo.",
+   "aplicacion": "En cada misión el estudiante dice qué estrategia usará, revisa si funciona y al cierre explica qué haría distinto.",
+   "fuente": "Education Endowment Foundation, Teaching and Learning Toolkit y guía Metacognition and Self-Regulated Learning.",
+   "evidencia": "alta",
+   "estado": "activo"
+  },
+  {
+   "fecha": "2026-10-02",
+   "tema": "Retroalimentación",
+   "hallazgo": "La retroalimentación eficaz responde a tres preguntas: hacia dónde voy, cómo voy y cuál es el siguiente paso; se centra en la tarea y el proceso, no en la persona.",
+   "aplicacion": "Toda corrección de SABI nombra la meta, lo logrado y un paso concreto siguiente; nunca juicios sobre la capacidad.",
+   "fuente": "Hattie y Timperley (2007), Review of Educational Research; EEF. DOI: 10.3102/003465430298487.",
+   "evidencia": "alta",
+   "estado": "activo"
+  },
+  {
+   "fecha": "2026-10-02",
+   "tema": "Ejemplos resueltos con desvanecimiento",
+   "hallazgo": "Para principiantes, estudiar ejemplos resueltos y luego completar ejemplos con pasos faltantes reduce la carga cognitiva y acelera el dominio.",
+   "aplicacion": "Concepto nuevo: ejemplo completo, luego uno con un paso en blanco, luego el estudiante solo.",
+   "fuente": "Sweller (teoría de la carga cognitiva); Renkl y Atkinson (2003). DOI: 10.1207/S15326985EP3801_3.",
+   "evidencia": "alta",
+   "estado": "activo"
+  },
+  {
+   "fecha": "2026-10-02",
+   "tema": "Funciones ejecutivas",
+   "hallazgo": "Memoria de trabajo, control inhibitorio y flexibilidad cognitiva sostienen el aprendizaje y se fortalecen con práctica exigente y apoyos.",
+   "aplicacion": "Dividir tareas largas, dar la lista de pasos visible, pausas breves y retos de cambiar de estrategia.",
+   "fuente": "Diamond (2013), Annual Review of Psychology. DOI: 10.1146/annurev-psych-113011-143750.",
+   "evidencia": "alta",
+   "estado": "activo"
+  },
+  {
+   "fecha": "2026-10-02",
+   "tema": "Diseño Universal para el Aprendizaje",
+   "hallazgo": "La versión 3.0 de las pautas DUA (2024) organiza múltiples medios de implicación, representación y acción y expresión, con énfasis en identidad y pertenencia.",
+   "aplicacion": "Ofrecer al menos dos formas de entrar al tema y dos formas de mostrar lo aprendido; en Colombia, coherente con el Decreto 1421 de 2017 y los PIAR.",
+   "fuente": "CAST, UDL Guidelines 3.0 (2024); MEN, Decreto 1421 de 2017.",
+   "evidencia": "marco de referencia",
+   "estado": "activo"
+  },
+  {
+   "fecha": "2026-10-02",
+   "tema": "Mentalidad de crecimiento con matices",
+   "hallazgo": "Los efectos de las intervenciones de mentalidad de crecimiento son en promedio pequeños y mayores en estudiantes con bajo desempeño; funcionan cuando se unen a estrategias concretas.",
+   "aplicacion": "No usar eslóganes: elogiar la estrategia y el esfuerzo bien dirigido, y siempre dar la estrategia nueva que permite avanzar.",
+   "fuente": "Sisk y otros (2018), Psychological Science; Yeager y otros (2019), Nature. DOI: 10.1177/0956797617739704, 10.1038/s41586-019-1466-y.",
+   "evidencia": "moderada",
+   "estado": "activo"
+  },
+  {
+   "fecha": "2026-10-02",
+   "tema": "Gamificación",
+   "hallazgo": "La gamificación tiene efectos positivos moderados en aprendizaje cognitivo, motivacional y conductual, que dependen del diseño; la narrativa y la cooperación ayudan.",
+   "aplicacion": "Usar misiones, niveles y retos cooperativos cuando hay práctica repetitiva o baja motivación; evitar rankings que humillan y premios que reemplazan el interés.",
+   "fuente": "Sailer y Homner (2020), Educational Psychology Review. DOI: 10.1007/s10648-019-09498-w.",
+   "evidencia": "moderada",
+   "estado": "activo"
+  },
+  {
+   "fecha": "2026-10-02",
+   "tema": "Aprendizaje basado en proyectos",
+   "hallazgo": "Proyectos bien diseñados, con pregunta motriz, indagación sostenida y producto público, mejoraron resultados en ciencias y estudios sociales de primaria en ensayos de gran escala.",
+   "aplicacion": "Los proyectos del banco siguen los elementos del estándar de oro: pregunta desafiante, indagación, autenticidad, voz del estudiante, reflexión, crítica y revisión, producto público.",
+   "fuente": "Krajcik y otros (2023), American Educational Research Journal; Duke y otros (2021); PBLWorks, Gold Standard PBL.",
+   "evidencia": "moderada a alta",
+   "estado": "activo"
+  },
+  {
+   "fecha": "2026-10-02",
+   "tema": "Neuromitos",
+   "hallazgo": "Los estilos de aprendizaje (visual, auditivo, kinestésico), el cerebro izquierdo y derecho y el mito del 10 por ciento del cerebro no tienen respaldo; siguen siendo creídos por muchos docentes.",
+   "aplicacion": "SABI nunca clasifica al estudiante por estilos; combina palabra e imagen para todos (codificación dual).",
+   "fuente": "Dekker y otros (2012), Frontiers in Psychology; Macdonald y otros (2017). DOI: 10.3389/fpsyg.2012.00429, 10.3389/fpsyg.2017.01314.",
+   "evidencia": "alta",
+   "estado": "activo"
+  },
+  {
+   "fecha": "2026-10-27",
+   "tema": "IA generativa con barandas (guardrails)",
+   "hallazgo": "En un ensayo con casi mil estudiantes de bachillerato, un ChatGPT sin barandas mejoró la práctica un 48 %, pero al retirarlo esos estudiantes rindieron un 17 % peor en el examen que quienes nunca lo usaron. Un tutor con barandas, que daba pistas y no la respuesta, mejoró la práctica un 127 % y no causó ese daño.",
+   "aplicacion": "SABI no entrega la solución final de un ejercicio: da pistas graduadas y pide el siguiente paso al estudiante. Si el estudiante pide 'solo la respuesta', SABI explica por qué no y ofrece la pista más pequeña posible.",
+   "fuente": "Bastani, Bastani, Sungu, Ge, Kabakcı y Mariman (2025), PNAS 122(26), e2422633122. DOI: 10.1073/pnas.2422633122.",
+   "evidencia": "alta (ensayo controlado aleatorizado)",
+   "estado": "en revisión"
+  },
+  {
+   "fecha": "2026-10-27",
+   "tema": "Tutor IA con andamiaje paso a paso",
+   "hallazgo": "Un tutor IA diseñado con principios pedagógicos (participación activa, control de la carga cognitiva, guía por partes y soluciones verificadas de antemano) logró más aprendizaje en menos tiempo que la clase activa presencial (0,73 a 1,3 desviaciones estándar). En Nigeria, seis semanas de tutoría con GPT-4 subieron los resultados de inglés en 0,23 DE y los globales en 0,31 DE.",
+   "aplicacion": "Cada misión avanza por partes: un paso a la vez, sin pasar al siguiente hasta resolver el actual. Las soluciones de referencia vienen del banco verificado por el docente cuando existe.",
+   "fuente": "Kestin, Miller, Klales, Milbourne y Ponti (2025), Scientific Reports 15, 17458. DOI: 10.1038/s41598-025-97652-6. De Simone y otros (2025), World Bank Policy Research Working Paper 11125, hdl 10986/43212 (DOI no verificado; documento de trabajo).",
+   "evidencia": "alta (Kestin, ensayo aleatorizado); moderada (De Simone, sin revisión por pares)",
+   "estado": "en revisión"
+  },
+  {
+   "fecha": "2026-10-27",
+   "tema": "Quices cortos con retroalimentación",
+   "hallazgo": "Un meta-análisis de estudios en aulas reales mostró que las pruebas cortas de práctica mejoran el rendimiento con un efecto moderado (g = 0,50); la retroalimentación correctiva modula ese efecto.",
+   "aplicacion": "Cerrar cada sesión con 2 o 3 preguntas de recuperación sin nota y con corrección inmediata que explique el porqué.",
+   "fuente": "Yang, Luo, Vadillo, Yu y Shanks (2021), Psychological Bulletin 147(4), 399-435. DOI: 10.1037/bul0000309.",
+   "evidencia": "alta (meta-análisis)",
+   "estado": "en revisión"
+  },
+  {
+   "fecha": "2026-10-27",
+   "tema": "Conocimiento previo para comprender lo que se lee",
+   "hallazgo": "Un ensayo con 30 escuelas y casi 3.000 niños de 1.° y 2.° encontró que leer textos conectados de ciencias y sociales construye conocimiento del tema y mejora la comprensión de textos nuevos sobre ese tema (efecto 0,18).",
+   "aplicacion": "En lectura, SABI agrupa textos por tema y, antes de leer, activa o enseña 3 a 5 palabras clave del tema.",
+   "fuente": "Kim, Burkhauser, Relyea, Gilbert, Scherer, Fitzgerald, Mosher y McIntyre (2023), Journal of Educational Psychology 115(1), 73-98. DOI: 10.1037/edu0000751.",
+   "evidencia": "alta (ensayo aleatorizado; efecto pequeño)",
+   "estado": "en revisión"
+  },
+  {
+   "fecha": "2026-10-27",
+   "tema": "Enseñanza explícita de inferencias",
+   "hallazgo": "Enseñar de forma explícita a hacer inferencias mejora la comprensión inferencial en lectores con dificultad (g = 0,72 a 1,85 en pruebas de los investigadores); en pruebas estandarizadas el efecto es más variable.",
+   "aplicacion": "En 'leer entre líneas', SABI modela primero una inferencia ('el texto dice X; yo sé Y; entonces pienso Z') y luego pide al estudiante usar la misma plantilla y señalar la frase que la sostiene.",
+   "fuente": "Hall (2016), Educational Psychology Review 28(1), 1-22. DOI: 10.1007/s10648-014-9295-x.",
+   "evidencia": "moderada (síntesis de 9 estudios)",
+   "estado": "en revisión"
+  },
+  {
+   "fecha": "2026-10-27",
+   "tema": "Fluidez lectora con modelo",
+   "hallazgo": "La lectura repetida apoya la fluidez en primaria con dificultades; las intervenciones más eficaces fueron uno a uno y con un modelo de lectura fluida. El efecto sobre la comprensión es variable.",
+   "aplicacion": "Transición a 5.°: escuchar primero un párrafo leído con buena entonación, leerlo 2 o 3 veces con retroalimentación y responder una pregunta de comprensión.",
+   "fuente": "Hudson, Koh, Moore y Binks-Cantrell (2020), Education Sciences 10(3), 52. DOI: 10.3390/educsci10030052.",
+   "evidencia": "moderada (síntesis de estudios)",
+   "estado": "en revisión"
+  },
+  {
+   "fecha": "2026-10-27",
+   "tema": "Aprender del error: ejemplos erróneos",
+   "hallazgo": "Un meta-análisis de 2025 (42 estudios) encontró que estudiar ejemplos con errores ayuda poco por sí solo (g = 0,14); funciona mejor cuando el estudiante explica el error o se le explica por qué está mal.",
+   "aplicacion": "En 'encuentra el error', SABI siempre pide dónde está el error, por qué está mal y cómo se corrige.",
+   "fuente": "Alemdag, Eichelmann y Narciss (2025), Review of Educational Research (en línea antes de impresión). DOI: 10.3102/00346543251390901.",
+   "evidencia": "alta en cantidad de estudios; efecto débil (meta-análisis)",
+   "estado": "en revisión"
+  },
+  {
+   "fecha": "2026-10-27",
+   "tema": "Pensamiento crítico: diálogo, problemas reales y mentoría",
+   "hallazgo": "El pensamiento crítico se puede enseñar (g = 0,30); el mayor efecto (g = 0,57) aparece al combinar diálogo con preguntas, problemas auténticos y acompañamiento tipo mentor.",
+   "aplicacion": "En 'piensa y argumenta', SABI plantea un problema real del barrio o del colegio, dialoga con preguntas (¿qué evidencia tienes?, ¿qué diría alguien que piensa distinto?) y cierra con retroalimentación de mentor.",
+   "fuente": "Abrami, Bernard, Borokhovski, Waddington, Wade y Persson (2015), Review of Educational Research 85(2), 275-314. DOI: 10.3102/0034654314551063.",
+   "evidencia": "alta (meta-análisis)",
+   "estado": "en revisión"
+  }
  ]
 }
