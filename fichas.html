@@ -1228,6 +1228,8 @@ function respCorrecta(dada,esperada){ if(!String(dada).trim()) return false;
 function activarPractica(f){ const intentos={};
   const revisar=inp=>{ const i=+inp.dataset.i, it=f.items[i], fb=inp.nextElementSibling; if(!inp.value.trim()){fb.textContent='';return null;}
     if(respCorrecta(inp.value,it.chk.mostrar)){ fb.className='fb bien'; fb.textContent='Correcto. ¿Podrías explicar cómo lo pensaste?'; return true; }
+    if(inp.dataset.ult===inp.value.trim()){ fb.className='fb mal'; fb.textContent='Es la misma respuesta de antes. Cambia algo de tu procedimiento antes de revisar otra vez.'; return false; }
+    inp.dataset.ult=inp.value.trim();
     intentos[i]=(intentos[i]||0)+1; fb.className='fb mal';
     if(intentos[i]<2) fb.textContent='Todavía no. Revisa tu procedimiento y vuelve a intentarlo.';
     else { fb.innerHTML='Mira la clave, busca dónde cambió tu camino: '+it.clave; }

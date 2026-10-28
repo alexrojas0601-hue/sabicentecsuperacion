@@ -71,7 +71,7 @@ Un niño no aprende porque le expliquen bien: aprende cuando algo le importa, le
   herramientas [[...]], las opciones "» " ni la pregunta tipo Saber.
 - BARANDAS CONTRA LA DEPENDENCIA (Bastani y otros, 2025, PNAS, DOI 10.1073/pnas.2422633122: la IA
   que da respuestas mejora la práctica pero baja el examen 17 %; la que da pistas no hace daño):
-  nunca entregues la respuesta final de un ejercicio del estudiante antes de dos intentos suyos.
+  nunca entregues la respuesta final de un ejercicio del estudiante antes de dos intentos suyos. El ejemplo resuelto paso a paso (o /paso_a_paso) se hace con OTRO problema parecido, nunca con el ejercicio que el estudiante debe resolver.
   Las pistas van de la más pequeña a la más grande y el último paso siempre lo da él. Si pide
   "solo la respuesta", explica en una frase por qué no y ofrece la pista más pequeña posible.
 - Todo error (suyo o de un ejemplo) se cierra con tres preguntas que responde el estudiante:
@@ -1416,12 +1416,6 @@ son interactivas y tienen la suya:
   TEXTO: segundo párrafo …
   LITERAL: pregunta literal :: fragmento EXACTO copiado del texto que la responde
   (cuatro líneas LITERAL; cada fragmento debe aparecer tal cual en una sola oración del texto)
-  Conexión con Saber 11 (ICFES, Lectura Crítica): LITERAL y DONDE entrenan "identificar y entender
-  los contenidos locales"; ORDEN, CAUSA y PALABRA entrenan "comprender cómo se articulan las partes
-  del texto"; ENTRE LÍNEAS y ARGUMENTA entrenan "reflexionar a partir del texto y evaluar su
-  contenido". Antes del texto activa 3 a 5 palabras clave del tema (conocimiento previo, Kim y
-  otros, 2023) y en ENTRE LÍNEAS modela primero una inferencia: "el texto dice..., yo sé..., entonces
-  pienso..." (Hall, 2016).
   DONDE: ¿En qué parte del texto dice que …? :: fragmento EXACTO del texto
   INFERENCIA: pregunta para leer entre líneas (una o dos)
   PALABRA: palabra del texto :: significado correcto en este contexto :: distractor :: distractor
@@ -1430,6 +1424,12 @@ son interactivas y tienen la suya:
   CAUSA: causa :: consecuencia   (una o dos)
   ARGUMENTA: pregunta para pensar y argumentar con evidencia del texto
   [[/lectura]]
+  (Nota para ti, NO va dentro del bloque) Conexión con Saber 11 (ICFES, Lectura Crítica): LITERAL y DONDE entrenan "identificar y entender
+  los contenidos locales"; ORDEN, CAUSA y PALABRA entrenan "comprender cómo se articulan las partes
+  del texto"; ENTRE LÍNEAS y ARGUMENTA entrenan "reflexionar a partir del texto y evaluar su
+  contenido". Antes del texto activa 3 a 5 palabras clave del tema (conocimiento previo, Kim y
+  otros, 2023) y en ENTRE LÍNEAS modela primero una inferencia: "el texto dice..., yo sé..., entonces
+  pienso..." (Hall, 2016).
   Longitud del texto según el grado: Transición a 2° de 60 a 120 palabras; 3° a 5° de 150 a 250;
   6° a 8° de 250 a 400; 9° a 11° de 350 a 550 (puede ser argumentativo, científico o una gráfica
   descrita, como en Saber 11). Leer es comprender, relacionar y pensar.
@@ -1808,6 +1808,7 @@ Responde SOLO un objeto JSON con estas claves exactas:
 async function repasoPendiente(env, profile) {
   if (!env.SABI_LOGS || !profile.name || !profile.grade) return { repaso: "", previo: "" };
   const h = await leerHistorialKV(env, profile.grade, profile.name);
+  if (!Array.isArray(h)) return { repaso: "", previo: "" };
   const area = areaDe(profile.materia);
   const conEstado = h.filter((t) => t.role === "assistant" && t.estado && (!area || areaDe(t.materia) === area));
   const ultimo = conEstado[conEstado.length - 1]?.estado || null;
@@ -1845,7 +1846,7 @@ async function planificar(env, profile, request) {
     + (memoria.repaso ? `\nREPASO PENDIENTE (aprendizajes en camino de sesiones anteriores): ${memoria.repaso}.` : "");
   const texto = await llamarClaude(env, {
     model: env.MODELO_PLAN || "claude-haiku-4-5-20251001",
-    system, max_tokens: 2000, messages: [{ role: "user", content: conMemoria }], salida: CLAVES_PLAN,
+    system, max_tokens: 2000, messages: [{ role: "user", content: conMemoria }], salida: CLAVES_PLAN, timeoutMs: 25000,
   });
   return extraerJSON(texto);
 }
@@ -2042,7 +2043,7 @@ function resumenLegible(historial, maxCaracteres = 6000) {
 const ALIAS_COMANDOS = {
   firstprincipies: "firstprinciples", primerosprincipios: "firstprinciples", tecchnicaldeepdive: "technicaldeepdive",
   codereviwe: "codereview", brinstorm: "brainstorm", casualiza: "casualize", summarizereseearrch: "summarizeresearch",
-  summarizeresearch: "summarizeresearch", tredcheck: "trendcheck", prd: "prd", crossword: "crucigrama", comic: "comics",
+  summarizeresearch: "summarizeresearch", tredcheck: "trendcheck", prd: "prd", "7prd": "prd", crossword: "crucigrama", comic: "comics",
   "step-by-step": "paso_a_paso", lección: "leccion", leccion: "leccion", detectaerror: "encuentraelerror",
   experiment: "experimento", experimentos: "experimento", reading: "lectura", ficha: "worksheet", juego: "boardgame",
   estaciones: "stations", rompecabezas: "puzzle", minilibro: "minibook", manipulativo: "manipulative",
@@ -2077,7 +2078,7 @@ async function experimentosDelGrado(env, request, grade) {
 
 // Envoltura: toda respuesta lleva el permiso CORS del origen SABI que llamó.
 export async function onRequestPost(context) {
-  const res = await manejarChat(context);
+  const res = await manejarChat(context).catch((e) => json({ error: "Error interno. Intenta de nuevo en un momento.", detail: String(e?.message || e) }, 500));
   const h = corsHeaders(context.request);
   for (const [k, v] of Object.entries(h)) res.headers.set(k, v);
   return res;
@@ -2096,6 +2097,7 @@ async function manejarChat(context) {
   } catch {
     return json({ error: "Cuerpo de solicitud inválido." }, 400);
   }
+  if (!body || typeof body !== "object" || Array.isArray(body)) body = {};
 
   const role = ["estudiante", "padre", "docente"].includes(body.role) ? body.role : "estudiante";
   const profile = body.profile || {};
@@ -2236,8 +2238,10 @@ async function manejarChat(context) {
         const v = await auditar(env, { plan: profile.plan, estado: profile.estado, messages, borrador: reply, profile, comando });
         // Solo se reescribe por fallas graves del turno: veracidad (1), que el estudiante piense (2),
         // escalón (3), formato/herramienta (7), seguridad (8) u obstáculo (14). Las de la misión solo se registran.
-        const fallas = Array.isArray(v?.fallas) ? v.fallas.map(String) : [];
-        const grave = !fallas.length || fallas.some((f) => /^\D{0,12}(1|2|3|7|8|14)\b/.test(f.trim()) && !/misi[oó]n/i.test(f));
+        const fallas = (Array.isArray(v?.fallas) ? v.fallas : v?.fallas ? [v.fallas] : []).map((f) => typeof f === "object" ? JSON.stringify(f) : String(f));
+        // Graves: criterios 1, 2, 3, 7, 8 y 14 (veracidad, seguridad, nivel...). Se leen todos los números del texto.
+        const GRAVES = new Set([1, 2, 3, 7, 8, 14]);
+        const grave = !fallas.length || fallas.some((f) => !/misi[oó]n/i.test(f) && (f.match(/(?<![\d.])\d{1,2}(?![\d.]\d)/g) || []).some((n) => GRAVES.has(+n)));
         if (v && v.aprobado === false && grave && !profundo && typeof v.respuesta_final === "string" && v.respuesta_final.trim().length > 20) {
           // El Auditor no puede borrar una herramienta visual ni las opciones » / ✦ Descubrí / ⟶ Próxima vez.
           const etiquetas = (t) => (t.match(/^\s*\[\[\s*(\w+)/gm) || []).map((x) => x.replace(/[\s\[]/g, ""));
