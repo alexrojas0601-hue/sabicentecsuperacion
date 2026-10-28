@@ -1,0 +1,37 @@
+name: SABI · Dot de Calidad (corrector de errores)
+
+# Revisa sin IA y sin costo que nada esté roto: JavaScript de todas las páginas y funciones,
+# JSON de data/ y el banco de experimentos. Si algo falla, abre (o actualiza) un Issue con el
+# detalle para que se corrija antes de que lo note un estudiante.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "23 10 * * *"   # todos los días 5:23 a. m. hora Colombia
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  calidad:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Revisar código y datos
+        id: revisar
+        run: node .github/scripts/sabi-dot-calidad.mjs
+      - name: Abrir o actualizar Issue si hay fallas
+        if: failure() && github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITULO="Dot de Calidad: hay errores por corregir"
+          N=$(gh issue list --state open --search "$TITULO in:title" --json number -q '.[0].number')
+          if [ -n "$N" ]; then gh issue comment "$N" --body-file informe-calidad.md
+          else gh issue create --title "$TITULO" --body-file informe-calidad.md; fi

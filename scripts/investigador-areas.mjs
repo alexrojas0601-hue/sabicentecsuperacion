@@ -54,6 +54,10 @@ const TEMAS_PEDAGOGIA = [
   "uso de la inteligencia artificial en la enseñanza escolar",
   "bienestar socioemocional y aprendizaje",
   "pensamiento computacional y educación en robótica",
+  "diseño curricular a la inversa (backward design) y tareas de transferencia como evidencia de aprendizaje",
+  "medición del progreso del aprendizaje: progresiones de aprendizaje y niveles de profundidad (SOLO, Webb)",
+  "tutoría inteligente con IA: qué la hace eficaz para que el estudiante piense y no copie",
+  "fluidez y comprensión lectora inferencial y crítica en primaria y bachillerato",
 ];
 
 const CONTEXTO = `Colegio CENTEC, colegio privado de Transición a grado 11 en el barrio Ciudad Córdoba,

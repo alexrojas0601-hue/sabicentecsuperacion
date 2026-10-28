@@ -147,6 +147,16 @@
   .btn-bitacora{margin-left:12px; background:none; border:1px solid var(--alba); color:var(--alba-suave); border-radius:8px; padding:6px 12px; font-size:.78rem; cursor:pointer; font-family:inherit;}
   #bitacora{position:fixed; inset:0 0 0 auto; width:min(380px,100%); background:var(--noche-2); border-left:1px solid var(--linea-noche); padding:24px; overflow-y:auto; transform:translateX(100%); transition:transform .25s; z-index:20;}
   #bitacora.abierta{transform:none;}
+  #crecimiento{margin:0 0 18px; padding:12px; border:1px solid var(--linea-noche); border-radius:10px;}
+  #crecimiento h3{font-size:1.05rem; margin-bottom:4px;}
+  .crec-area{margin:10px 0 4px; font-weight:600; font-size:.92rem;}
+  .crec-fila{display:flex; align-items:center; gap:8px; font-size:.78rem; margin:3px 0;}
+  .crec-fila b{font-weight:500; min-width:74px;}
+  .crec-escala{display:flex; gap:3px; flex:1;}
+  .crec-escala i{flex:1; height:8px; border-radius:4px; background:rgba(127,127,127,.25);}
+  .crec-escala i.on{background:#F47C20;}
+  .crec-escala.lect i.on{background:#1A2D7A;}
+  .crec-sig{font-size:.78rem; opacity:.8; margin-top:3px;}
   #bitacora h2{font-size:1.3rem; margin-bottom:6px;}
   #bitacora p.sub{font-size:.85rem; color:rgba(247,243,233,.6); margin-bottom:16px;}
   #bitacora li{list-style:none; border-left:3px solid var(--alba); padding:6px 0 6px 12px; margin-bottom:12px; font-size:.92rem;}
@@ -514,6 +524,11 @@
   <button class="cerrar" id="cerrar-bitacora" aria-label="Cerrar bitácora">×</button>
   <h2>Mi bitácora</h2>
   <p class="sub">Lo que has descubierto tú mismo. Cada línea es un paso de tu camino.</p>
+  <section id="crecimiento" aria-label="Mi crecimiento como aprendiz">
+    <h3>Mi crecimiento</h3>
+    <p class="sub">Lo que has demostrado con tus respuestas, por área. Sube pensando, no repitiendo.</p>
+    <div id="lista-crecimiento"></div>
+  </section>
   <div class="mapa" id="mapa-materias"></div>
   <ul id="lista-bitacora"></ul>
 </aside>
@@ -1445,8 +1460,41 @@
       ? lista.map(d => `<li>${esc(d.texto)}<small>${esc([d.materia, d.mision, d.fecha].filter(Boolean).join(', '))}</small></li>`).join('')
       : '<li>Todavía vacía. Tu primer descubrimiento aparecerá aquí.</li>';
   }
+  // ---------- Mi crecimiento: niveles demostrados (Bloom, lectura, desempeño), solo en este dispositivo ----------
+  const BLOOM = ['recordar', 'comprender', 'aplicar', 'analizar', 'evaluar', 'crear'];
+  const LECT = ['literal', 'inferencial', 'critico'];
+  const DESEMP = ['bajo', 'basico', 'alto', 'superior'];
+  const norm = t => String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const indice = (lista, t) => { const n = norm(t); let k = -1; lista.forEach((w, i) => { if (n.includes(w.slice(0, 6))) k = Math.max(k, i); }); return k; };
+  const claveCrec = () => 'sabi_crecimiento:' + claveAlumno();
+  function leerCrec() { try { return JSON.parse(localStorage.getItem(claveCrec())) || {}; } catch { return {}; } }
+  function registrarCrecimiento(e) {
+    const area = perfil.profile.materia && perfil.profile.materia !== 'Sorpréndeme' ? perfil.profile.materia : 'General';
+    const d = leerCrec(), a = d[area] || { bloom: -1, lectura: -1, desempeno: -1, logros: 0, turnos: 0 };
+    a.bloom = Math.max(a.bloom, indice(BLOOM, e.nivel_actual));
+    a.lectura = Math.max(a.lectura, indice(LECT, e.lectura));
+    const de = indice(DESEMP, e.desempeno); if (de >= 0) a.desempeno = de;
+    if (norm(e.logro) === 'alcanzado' && a.ultimoLogro !== (perfil.profile.plan?.tema || '')) { a.logros++; a.ultimoLogro = perfil.profile.plan?.tema || ''; }
+    if (e.para_subir) a.siguiente = limpiar(e.para_subir).slice(0, 220);
+    a.turnos++; a.fecha = new Date().toLocaleDateString('es-CO');
+    d[area] = a;
+    try { localStorage.setItem(claveCrec(), JSON.stringify(d)); } catch {}
+  }
+  function escala(n, total, cls = '') { return `<span class="crec-escala ${cls}">${Array.from({ length: total }, (_, i) => `<i class="${i <= n ? 'on' : ''}"></i>`).join('')}</span>`; }
+  function pintarCrecimiento() {
+    const d = leerCrec(), areas = Object.entries(d);
+    const cont = document.getElementById('lista-crecimiento');
+    if (!cont) return;
+    cont.innerHTML = areas.length ? areas.map(([m, a]) => `
+      <div class="crec-area">${esc(m)}${a.logros ? ` · ${a.logros} logro${a.logros > 1 ? 's' : ''} demostrado${a.logros > 1 ? 's' : ''}` : ''}</div>
+      <div class="crec-fila"><b>Pensamiento</b>${escala(a.bloom, 6)}<span>${a.bloom >= 0 ? BLOOM[a.bloom] : 'por mostrar'}</span></div>
+      <div class="crec-fila"><b>Lectura</b>${escala(a.lectura, 3, 'lect')}<span>${a.lectura >= 0 ? ['literal', 'inferencial', 'crítica'][a.lectura] : 'por mostrar'}</span></div>
+      ${a.desempeno >= 2 ? `<div class="crec-fila"><b>Desempeño</b><span>${['', '', 'Alto', 'Superior'][a.desempeno]}</span></div>` : ''}
+      ${a.siguiente && a.desempeno < 3 ? `<div class="crec-sig">Siguiente paso: ${esc(a.siguiente)}</div>` : ''}`).join('')
+      : '<p class="sub">Aparecerá cuando resuelvas tu primer reto con SABI.</p>';
+  }
   const panel = document.getElementById('bitacora');
-  document.getElementById('btn-bitacora').addEventListener('click', () => { pintarBitacora(); panel.classList.add('abierta'); });
+  document.getElementById('btn-bitacora').addEventListener('click', () => { pintarBitacora(); pintarCrecimiento(); panel.classList.add('abierta'); });
   document.getElementById('cerrar-bitacora').addEventListener('click', () => panel.classList.remove('abierta'));
 
   // ---------- Lógica del chat ----------
@@ -1562,7 +1610,7 @@
         console.error(data);
       } else {
         historial.push({ role: 'assistant', content: data.reply });
-        if (data.estado && perfil.role === 'estudiante') { perfil.profile.estado = data.estado; pintarAvance(); }
+        if (data.estado && perfil.role === 'estudiante') { perfil.profile.estado = data.estado; pintarAvance(); registrarCrecimiento(data.estado); }
         agregarRespuesta(data.reply);
       }
     } catch (err) {

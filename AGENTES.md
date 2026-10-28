@@ -105,3 +105,9 @@ SABICENTEC y la Instrucción Maestra de educación visual. Detalle completo en e
 Archivos: `scripts/dots-didacticos.mjs`, `.github/workflows/sabi-dots-didacticos.yml`,
 `data/herramientas-pedagogicas.json`, `data/experimentos/`, `PROMPT_MAESTRO_SABI.md`.
 Correr a mano: GitHub → Actions → «SABI · Dots didácticos» → Run workflow (modo y área).
+
+
+## Dot de Calidad (corrector de errores, desde v6)
+| Rol | Cuándo | Qué hace |
+|---|---|---|
+| Dot de Calidad | Diario 5:23 a. m., en cada push a main y en cada PR | `.github/scripts/sabi-dot-calidad.mjs`: sintaxis de todo el JavaScript (archivos y scripts del HTML), JSON de `data/` y `scripts/validar-experimentos.py`. Si falla, abre o actualiza el Issue «Dot de Calidad: hay errores por corregir». No usa IA ni gasta. |

@@ -261,7 +261,10 @@ MANDARÍN
   estándar del grado, la competencia, la escalera de niveles de pensamiento, el nivel de lectura
   crítica que se busca, la estrategia de pensamiento, el valor que se comentará y las técnicas de
   neuroaprendizaje. Ese plan es tu hoja de ruta: cada turno debe acercar al estudiante a la
-  evidencia de logro del plan.
+  evidencia de logro del plan. El plan trae una pregunta_salida (diseño a la inversa): en el
+  cierre, antes de despedirte, plantéala como reto final y deja que la resuelva solo; si se
+  equivoca, diagnostica el obstáculo y dale una segunda oportunidad con una pista, nunca la
+  respuesta.
 - Después de cada turno, el agente Auditor revisa tu respuesta y te devuelve el ESTADO (en qué
   paso y en qué nivel va el estudiante). Usa el estado para decidir el siguiente escalón: si
   logró el nivel actual, sube uno; si no, cambia de representación, nunca de meta.
@@ -1745,6 +1748,11 @@ Derechos Básicos de Aprendizaje (DBA) del Ministerio de Educación Nacional. Di
 sesión corta (unos 20 a 30 minutos) para un estudiante, que luego ejecuta el agente Maestro.
 
 Reglas:
+- DISEÑO A LA INVERSA (primero la meta, luego la evidencia, al final las actividades): antes de
+  pensar en el gancho, define qué tendrá que HACER el estudiante al final para demostrar que
+  aprendió (evidencia_logro) y escribe la pregunta_salida: una tarea corta de TRANSFERENCIA (caso
+  nuevo, no repetido de la sesión) que solo puede resolver quien comprendió. Todo lo demás del
+  plan existe para que pueda responderla con éxito.
 - DBA: describe el aprendizaje del DBA o estándar que corresponde al grado y la asignatura. Escribe
   el número del DBA solo si estás completamente seguro; si no, describe su contenido sin número.
   Nunca inventes una cita normativa. Para áreas sin DBA oficial, usa los Estándares o las
@@ -1786,6 +1794,7 @@ Responde SOLO un objeto JSON con estas claves exactas:
  "lectura_critica": "qué se leerá y cómo se pasará de literal a inferencial a crítico",
  "estrategia_pensamiento": "...", "valor": "...", "neuro": ["...", "..."],
  "gancho": "...", "evidencia_logro": "qué podrá hacer o explicar el estudiante al final",
+ "pregunta_salida": "tarea corta de transferencia que el estudiante resolverá al cierre para demostrar el logro",
  "modelo_pensamiento": "modelo o rutina de pensamiento que se enseñará y cómo se nombrará",
  "logica": "tipo de razonamiento que se entrenará (deductiva, inductiva, abductiva, analógica, causal, probabilística, formal, dialéctica, falacias o computacional) con un ejemplo del tema",
  "pregunta_propia": "momento y forma en que el estudiante formulará su propia pregunta",
@@ -1817,7 +1826,7 @@ async function repasoPendiente(env, profile) {
 }
 
 const CLAVES_PLAN = ["proposito", "tema", "dba", "competencia", "escalera", "lectura_critica", "estrategia_pensamiento",
-  "valor", "neuro", "gancho", "evidencia_logro", "modelo_pensamiento", "logica", "pregunta_propia",
+  "valor", "neuro", "gancho", "evidencia_logro", "pregunta_salida", "modelo_pensamiento", "logica", "pregunta_propia",
   "obstaculo_probable", "gamificacion", "proyecto", "meta_superior"];
 
 async function planificar(env, profile, request) {
@@ -1924,7 +1933,7 @@ Responde SOLO un objeto JSON:
             "pensamiento": "modelo de pensamiento o lógica que el estudiante ya usó con evidencia, o vacío",
             "pregunta_propia": "la pregunta que formuló el estudiante, o vacío",
             "obstaculo": "tipo de dificultad detectada en este turno, o vacío",
-            "logro": "en camino|alcanzado"}}`;
+            "logro": "en camino|alcanzado (solo alcanzado si el estudiante resolvió bien la pregunta_salida del plan o una tarea de transferencia equivalente, por sí mismo; responder lo que SABI ya explicó no cuenta)"}}`;
 
 async function auditar(env, { plan, estado, messages, borrador, profile, comando = "" }) {
   const conversacion = messages.slice(-8).map((m) => `${m.role === "assistant" ? "SABI" : "ESTUDIANTE"}: ${m.content}`).join("\n\n");

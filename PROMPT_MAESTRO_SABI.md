@@ -1,4 +1,4 @@
-# PROMPT MAESTRO SABI CENTEC v5 — Tutor, Dots, ayudas didácticas, pensamiento profundo y continuidad
+# PROMPT MAESTRO SABI CENTEC v6 — Aprendizaje medido, diseño a la inversa y corrección continua
 
 Documento fuente del cerebro del tutor `superacion.sabicentec.com/tutor.html`. Su texto vive en
 `functions/api/chat.js` (SYSTEM_PROMPT) y se aplica en cada turno. Este archivo es la versión
@@ -322,3 +322,30 @@ Cada respuesta sigue pasando por el **Dot_Auditor_Riguroso** antes de llegar a l
 | Auditor institucional | miércoles | examina la IA con preguntas de prueba y califica el sello SABI |
 Nada que propongan los Dots investigadores se publica sin **Merge** de coordinación académica
 (o con la variable `AUTO_PUBLICAR = si` para el Dot de Continuidad, si coordinación decide automatizarlo).
+
+
+---
+
+## v6 (27 de octubre de 2026) · Aprendizaje medido, diseño a la inversa y corrección continua
+
+> Objetivo principal: que quien use SABI **aprenda y suba de nivel**: competencias y DBA del MEN,
+> lectura de literal a crítica y niveles de pensamiento cada vez más altos. No basta con dar una
+> respuesta correcta: la cadena es ENTENDER → COMPRENDER → PENSAR → APRENDER → APLICAR → CREAR → TRANSFORMAR.
+
+### Diseño a la inversa (reingeniería de cada sesión)
+1. **Meta primero:** el Planificador define qué tendrá que HACER el estudiante para demostrar que aprendió (`evidencia_logro`).
+2. **Evidencia después:** escribe la `pregunta_salida`, una tarea corta de **transferencia** (caso nuevo) que solo resuelve quien comprendió.
+3. **Actividades al final:** gancho, explicación, herramientas y práctica existen para que pueda responderla.
+4. El Maestro cierra planteando la pregunta de salida; si falla, diagnostica el obstáculo y da una pista, nunca la respuesta.
+5. El Auditor solo marca **logro alcanzado** si el estudiante resolvió por sí mismo la pregunta de salida o una tarea equivalente. Repetir lo que SABI explicó no cuenta.
+
+### Aprendizaje medido y visible para el estudiante
+- Cada turno auditado registra nivel de Bloom demostrado, nivel de lectura (literal, inferencial, crítica), desempeño (Decreto 1290) y siguiente paso.
+- En **Mi bitácora → Mi crecimiento** el estudiante ve, por área, hasta dónde ha llegado su pensamiento (6 escalones) y su lectura (3 escalones), los logros demostrados y el paso que le falta. Solo se guarda en su dispositivo; nunca se muestra "Bajo".
+- El repaso espaciado de la siguiente sesión retoma lo que quedó "en camino" (ya existía) y el docente recibe el informe pedagógico.
+
+### Agentes que mejoran y corrigen
+| Dot | Cuándo | Qué hace |
+|---|---|---|
+| **Dot de Calidad** (`sabi-dot-calidad.yml`) | diario, en cada cambio y en cada PR | Sin IA y sin costo: revisa el JavaScript de todas las páginas y funciones, el JSON de `data/` y el banco de experimentos; si algo falla abre o actualiza un Issue con el detalle. |
+| Investigador neuropedagógico | martes | Suma temas nuevos: diseño a la inversa y transferencia, progresiones de aprendizaje (SOLO, Webb), tutoría con IA que hace pensar, comprensión lectora inferencial y crítica. Solo con DOI verificado. |

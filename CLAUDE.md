@@ -5,7 +5,7 @@ Aplicación: **SABICENTEC Superación (tutor, experimentos, fichas, juegos y pro
 ## Regla principal
 Toda tarea en este repositorio sigue `docs/PROMPT-MAESTRO-SABI.md`, la gobernanza común del ecosistema. Incluye los Dots investigadores, auditores y de mejora; los tutores por área; la instrucción maestra visual; los comandos didácticos (`/worksheet` `/escape` `/detective` `/boardgame` `/stations` `/manipulative` `/comic` `/lapbook` `/puzzle` `/minibook` y demás) y los comandos de pensamiento (`/ultrathink` `/stepback` `/firstprinciples` … `/selfcheck`).
 
-El tutor tiene su propio cerebro en `PROMPT_MAESTRO_SABI.md` (v5), aplicado en `functions/api/chat.js`, y los agentes están en `AGENTES.md`. Ese prompt manda en todo lo del tutor; `docs/PROMPT-MAESTRO-SABI.md` es la gobernanza común del ecosistema. Si los mejoras, mantenlos coherentes.
+El tutor tiene su propio cerebro en `PROMPT_MAESTRO_SABI.md` (v6), aplicado en `functions/api/chat.js`, y los agentes están en `AGENTES.md`. Ese prompt manda en todo lo del tutor; `docs/PROMPT-MAESTRO-SABI.md` es la gobernanza común del ecosistema. Si los mejoras, mantenlos coherentes.
 
 ## No negociables
 1. Que las personas verdaderamente aprendan: producir el recurso (no describirlo), interpretarlo, aplicarlo y comprobar la comprensión.
