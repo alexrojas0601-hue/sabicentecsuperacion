@@ -1,6 +1,6 @@
 {
  "version": "2026-10-02",
- "actualizado": "2026-10-02",
+ "actualizado": "2026-10-29",
  "nota": "Banco de proyectos por área de SABI Superación. Lo amplían cada semana los agentes investigadores (scripts/investigador-areas.mjs) mediante Pull Requests que aprueba coordinación académica.",
  "areas": [
   {
@@ -2247,6 +2247,36 @@
      "estado": "activo",
      "origen": "sabi",
      "verificado": "2026-10-02"
+    },
+    {
+     "id": "p-mi-corazon-corre-monitoreo-de-frecuencia",
+     "titulo": "Mi corazón corre: monitoreo de frecuencia cardíaca con Raspberry Pi Pico",
+     "tipo": [
+      "raspberry",
+      "simulacion"
+     ],
+     "grados": {
+      "desde": 6,
+      "hasta": 8
+     },
+     "pregunta_motriz": "¿Cómo puedo saber si mi corazón late más rápido cuando corro que cuando estoy sentado, y cómo un Raspberry Pi detecta eso sin ir al hospital?",
+     "problema": "Los estudiantes desconocen cómo el cuerpo se adapta al ejercicio (concepto de frecuencia cardíaca vs. intensidad). No tienen acceso a sensores biométricos. Vivir en Comuna 15 sin recursos para gadgets deportivos limita experiencias STEM en salud.",
+     "producto": "Prototipo con Raspberry Pi Pico W + sensor de pulso óptico (bajo costo, disponible online) + display OLED. El sensor se coloca en dedo. La Pico lee pulsaciones en tiempo real, muestra BPM en pantalla, emite LED rojo que parpadea al ritmo del corazón. Luego, estudiantes corren 2 min y se repite. Se genera gráfico simple (reposo vs. ejercicio) en libreta de ciencias. Simulación en Tinkercad: modelar circuito antes de armar físico.",
+     "aprendizaje": "Concepto fisiológico: respuesta cardiovascular a ejercicio (adaptación del cuerpo). Conceptos de sensores y señales analógicas. Variable dependiente (BPM) vs. independiente (intensidad ejercicio). Cálculo de frecuencia máxima teórica (220 - edad). Lectura de datos biométricos reales = pensamiento científico. Estándar: comprensión de sistemas corporales, relación entre función y estructura.",
+     "pensamiento": "Pensamiento científico experimental: observación → hipótesis (\"mi corazón corre más rápido si corro\") → medición → análisis. Pensamiento computacional: captura de dato analógico → digitalización → visualización.",
+     "logica": "Lógica de sensor-acción: IF pulsación detectada THEN encender LED brevemente ELSE esperar. Lógica de rango: IF BPM < 100 THEN mostrar \"reposo\" ELIF BPM 100-150 THEN mostrar \"moderado\" ELIF BPM > 150 THEN mostrar \"intenso\".",
+     "gamificacion": "Sin juego formal. Desafío de investigación: ¿Quién logra la mayor subida de BPM en 2 minutos? Registro en tabla de datos, análisis estadístico. Bono Centec Verde por aprender sobre salud cardiovascular y cuidados.",
+     "herramienta": {
+      "nombre": "Raspberry Pi Pico W + Sensor de Pulso (óptico, ~$10-15) + OLED SSD1306 (~$5); Tinkercad (simulador)",
+      "url": "https://projects.raspberrypi.org/en/projects/beating-heart/; https://www.tinkercad.com/; https://github.com/Gemmus/HeartRateDetector",
+      "acceso": "codigo",
+      "costo": "freemium"
+     },
+     "seguridad": "Sensor óptico en dedo, no invasivo, bajo voltaje (3.3V Pico). No almacena datos biométricos. Avisar que se toman medidas de ritmo cardíaco. Para menores < 18 años: consentimiento informado Ley 1581 + autorización padres. Evitar si estudiante tiene condición cardíaca conocida; consultar con enfermero/a. Simulación en Tinkercad antes de armar = práctica segura.",
+     "proyecto_institucional": null,
+     "estado": "activo",
+     "origen": "investigador",
+     "verificado": "2026-10-29"
     }
    ]
   },
