@@ -68,6 +68,8 @@
     .paleta button{flex:none} .paleta svg{width:46px;height:46px}
   }
   @media (prefers-reduced-motion: reduce){.fiesta{display:none}.juego{transition:none}}
+  /* SABI Barra + bot SABI: espacio al final para que los botones flotantes no tapen el último juego ni las piezas */
+  #inicio,#juego{padding-bottom:max(88px,calc(72px + env(safe-area-inset-bottom)))}
 </style>
 </head>
 <body>
@@ -395,5 +397,6 @@ function crear() {
 </script>
   <script src="https://ai.sabicentec.com/sabi-vivo.js" defer></script>
 <script src="https://superacion.sabicentec.com/sabi-puerta.js" data-rol="estudiante" data-texto="Aprender con SABI" defer></script>
+<script src="https://sabicentec.com/assets/sabi-barra.js" defer data-app="superacion" data-destino="https://sabicentec.com/" data-posicion="abajo-izquierda" data-adjuntar="no"></script>
 </body>
 </html>
